@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoQuiz</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+        
+        .design {
+            font-family: 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .shape {
+            position: absolute;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .circle {
+            border-radius: 50%;
+            background: #FF9AA2;
+        }
+        
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #FFB7B2;
+        }
+        
+        .square {
+            background: #B5EAD7;
+        }
+        
+        .pentagon {
+            width: 54px;
+            height: 50px;
+            background: #C7CEEA;
+            position: relative;
+        }
+        
+        .pentagon:before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 27px solid transparent;
+            border-right: 27px solid transparent;
+            border-bottom: 25px solid #C7CEEA;
+        }
+        
+        .pentagon:after {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 27px solid transparent;
+            border-right: 27px solid transparent;
+            border-top: 25px solid #C7CEEA;
+        }
+        
+        .upload-container {
+            border: 3px dashed #94a3b8;
+            transition: all 0.3s;
+        }
+        
+        .upload-container:hover {
+            border-color: #6366f1;
+            background-color: rgba(99, 102, 241, 0.05);
+        }
+        
+        .progress-bar {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e2e8f0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #6366f1;
+            transition: width 0.3s;
+        }
+        
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .rotate {
+            animation: rotate 10s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .summary-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quiz-option {
+            transition: all 0.3s;
+        }
+        
+        .quiz-option:hover {
+            transform: scale(1.05);
+        }
+        
+        .correct {
+            background-color: #4ade80 !important;
+        }
+        
+        .incorrect {
+            background-color: #f87171 !important;
+        }
+    </style>
+</head>
+<body class="design">
+    <!-- Background shapes -->
+    <div class="shape circle w-32 h-32 top-20 left-10 rotate"></div>
+    <div class="shape triangle top-1/4 right-20 bounce"></div>
+    <div class="shape square w-24 h-24 bottom-1/3 left-1/4 rotate"></div>
+    <div class="shape pentagon bottom-20 right-1/4 pulse"></div>
+    <div class="shape circle w-40 h-40 bottom-10 right-10 rotate"></div>
+    <div class="shape triangle top-1/3 left-1/3 bounce"></div>
+    
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 mb-4" data-aos="fade-down">GoQuiz</h1>
+            <p class="text-xl text-gray-700" data-aos="fade-up">Turn your documents into fun learning adventures!</p>
+        </header>
+        
+        <!-- Main content area - will be dynamically updated -->
+        <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
+            <!-- Step 1: Upload Document -->
+            <div id="step1" class="step">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your Document</h2>
+                <div class="upload-container rounded-xl p-8 text-center cursor-pointer mb-6" id="dropArea">
+                    <div class="flex flex-col items-center justify-center">
+                        <i data-feather="upload" class="w-16 h-16 text-indigo-500 mb-4"></i>
+                        <p class="text-lg font-medium text-gray-700 mb-2">Drag & drop your file here</p>
+                        <p class="text-gray-500 mb-4">or</p>
+                        <label for="fileInput" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium cursor-pointer hover:bg-indigo-700 transition">
+                            Select File
+                        </label>
+                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                    </div>
+                </div>
+                <div class="text-center text-gray-500">
+                    <p>Supported formats: PDF, Word, JPG, PNG</p>
+                </div>
+            </div>
+            
+            <!-- Step 2: Extracted Text -->
+            <div id="step2" class="step hidden">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 2: Here's What We Found</h2>
+                <div class="bg-gray-100 p-6 rounded-xl mb-6">
+                    <div id="extractedText" class="text-gray-700 whitespace-pre-line"></div>
+                </div>
+                <div class="flex justify-center">
+                    <button id="nextStep2" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                        Next: Make It Simple <i data-feather="arrow-right" class="ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Step 3: Simplified Summary -->
+            <div id="step3" class="step hidden">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 3: Simple Version for You</h2>
+                <div class="summary-box p-6 mb-6">
+                    <div id="simplifiedText" class="text-gray-700 text-lg"></div>
+                </div>
+                <div class="flex justify-center">
+                    <button id="nextStep3" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                        Next: Make a Quiz <i data-feather="arrow-right" class="ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Step 4: Quiz Options -->
+            <div id="step4" class="step hidden">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 4: Quiz Time!</h2>
+                <p class="text-gray-700 mb-8 text-center">How many questions would you like in your quiz?</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="5">5</button>
+                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="10">10</button>
+                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="15">15</button>
+                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="20">20</button>
+                </div>
+                <div class="flex justify-center">
+                    <button id="nextStep4" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                        Create My Quiz <i data-feather="arrow-right" class="ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Step 5: Quiz -->
+            <div id="step5" class="step hidden">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 5: Let's Test Your Knowledge!</h2>
+                <div id="quizContainer" class="mb-8">
+                    <!-- Questions will be inserted here -->
+                </div>
+                <div class="flex justify-center">
+                    <button id="submitQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                        Submit Quiz <i data-feather="check" class="ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Step 6: Results -->
+            <div id="step6" class="step hidden">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 6: Your Results</h2>
+                <div class="text-center mb-8">
+                    <div class="inline-block bg-indigo-100 text-indigo-800 text-4xl font-bold rounded-full w-32 h-32 flex items-center justify-center mb-4">
+                        <span id="score">0</span>%
+                    </div>
+                    <p class="text-xl font-medium text-gray-700" id="resultMessage"></p>
+                </div>
+                <div id="wrongAnswers" class="mb-8">
+                    <!-- Wrong answers will be inserted here -->
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <button id="restartQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                        Try Again <i data-feather="refresh-cw" class="ml-2"></i>
+                    </button>
+                    <button id="newDocument" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-medium hover:bg-gray-300 transition">
+                        New Document <i data-feather="upload" class="ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Loading state -->
+            <div id="loading" class="hidden">
+                <div class="text-center py-12">
+                    <div class="inline-block mb-4">
+                        <i data-feather="loader" class="w-12 h-12 text-indigo-500 animate-spin"></i>
+                    </div>
+                    <p class="text-xl text-gray-700" id="loadingMessage">Processing your document...</p>
+                    <div class="progress-bar w-full max-w-md mx-auto mt-4">
+                        <div id="progressFill" class="progress-fill w-0"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+
+
+<script>
+
+// Initialize AOS and Feather Icons
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+    feather.replace();
+    
+    // Set up the application
+    setupApp();
+});
+
+function setupApp() {
+    // DOM elements
+    const dropArea = document.getElementById('dropArea');
+    const fileInput = document.getElementById('fileInput');
+    const nextStep2 = document.getElementById('nextStep2');
+    const nextStep3 = document.getElementById('nextStep3');
+    const nextStep4 = document.getElementById('nextStep4');
+    const submitQuiz = document.getElementById('submitQuiz');
+    const restartQuiz = document.getElementById('restartQuiz');
+    const newDocument = document.getElementById('newDocument');
+    const quizOptions = document.querySelectorAll('.quiz-option');
+    
+    // Application state
+    let appState = {
+        currentStep: 1,
+        extractedText: '',
+        simplifiedText: '',
+        quizQuestions: 5,
+        quizData: [],
+        userAnswers: [],
+        score: 0
+    };
+    
+    // Event listeners
+    dropArea.addEventListener('click', () => fileInput.click());
+    
+    fileInput.addEventListener('change', handleFileSelect);
+    
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, preventDefaults, false);
+    });
+    
+    ['dragenter', 'dragover'].forEach(eventName => {
+        dropArea.addEventListener(eventName, highlight, false);
+    });
+    
+    ['dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, unhighlight, false);
+    });
+    
+    dropArea.addEventListener('drop', handleDrop, false);
+    
+    nextStep2.addEventListener('click', () => showStep(3));
+    nextStep3.addEventListener('click', () => showStep(4));
+    nextStep4.addEventListener('click', () => generateQuiz());
+    submitQuiz.addEventListener('click', calculateScore);
+    restartQuiz.addEventListener('click', restartQuizFunc);
+    newDocument.addEventListener('click', () => showStep(1));
+    
+    quizOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            quizOptions.forEach(opt => opt.classList.remove('bg-indigo-200'));
+            this.classList.add('bg-indigo-200');
+            appState.quizQuestions = parseInt(this.dataset.questions);
+        });
+    });
+    
+    // Functions
+    function preventDefaults(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    
+    function highlight() {
+        dropArea.classList.add('border-indigo-500', 'bg-indigo-50');
+    }
+    
+    function unhighlight() {
+        dropArea.classList.remove('border-indigo-500', 'bg-indigo-50');
+    }
+    
+    function handleDrop(e) {
+        const dt = e.dataTransfer;
+        const files = dt.files;
+        if (files.length) {
+            fileInput.files = files;
+            handleFileSelect({ target: fileInput });
+        }
+    }
+    
+    async function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        
+        showLoading("Processing your document...");
+        
+        // Simulate processing delay
+        simulateProgress();
+        
+        try {
+            let text = '';
+            const fileType = file.name.split('.').pop().toLowerCase();
+            
+            if (fileType === 'pdf') {
+                text = await extractTextFromPDF(file);
+            } else if (fileType === 'doc' || fileType === 'docx') {
+                text = await extractTextFromWord(file);
+            } else if (fileType === 'jpg' || fileType === 'jpeg' || fileType === 'png') {
+                text = await extractTextFromImage(file);
+            } else {
+                throw new Error('Unsupported file type');
+            }
+            
+            appState.extractedText = text;
+            document.getElementById('extractedText').textContent = text;
+            
+            // Call AI simplification
+            appState.simplifiedText = await simplifyText(text);
+            document.getElementById('simplifiedText').textContent = appState.simplifiedText;
+            hideLoading();
+            showStep(2);
+            
+        } catch (error) {
+            hideLoading();
+            alert('Error processing file: ' + error.message);
+        }
+    }
+    
+    function extractTextFromPDF(file) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            
+            reader.onload = async function(e) {
+                try {
+                    const typedArray = new Uint8Array(e.target.result);
+                    pdfjsLib.getDocument(typedArray).promise.then(function(pdf) {
+                        let text = '';
+                        const numPages = pdf.numPages;
+                        
+                        const getPageText = async (pageNum) => {
+                            const page = await pdf.getPage(pageNum);
+                            const textContent = await page.getTextContent();
+                            const strings = textContent.items.map(item => item.str);
+                            text += strings.join(' ') + '\n\n';
+                            
+                            if (pageNum < numPages) {
+                                await getPageText(pageNum + 1);
+                            } else {
+                                resolve(text);
+                            }
+                        };
+                        
+                        getPageText(1);
+                    });
+                } catch (err) {
+                    reject(err);
+                }
+            };
+            
+            reader.onerror = reject;
+            reader.readAsArrayBuffer(file);
+        });
+    }
+    
+    function extractTextFromWord(file) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                const arrayBuffer = e.target.result;
+                
+                mammoth.extractRawText({ arrayBuffer: arrayBuffer })
+                    .then(function(result) {
+                        resolve(result.value);
+                    })
+                    .catch(function(error) {
+                        reject(error);
+                    });
+            };
+            
+            reader.onerror = reject;
+            reader.readAsArrayBuffer(file);
+        });
+    }
+    
+    // ✅ Google Vision OCR (via backend)
+async function extractTextFromImage(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = async function (e) {
+            try {
+                const base64Data = e.target.result.split(',')[1]; // strip "data:image/png;base64,"
+                const res = await fetch("/api/ocr", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ image: base64Data })
+                });
+                const data = await res.json();
+                if (res.ok && data.text) {
+                    resolve(data.text);
+                } else {
+                    reject(new Error("OCR failed"));
+                }
+            } catch (err) {
+                reject(err);
+            }
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+    });
+}
+
+    
+    async function simplifyText(text) {
+        try {
+            const res = await fetch("/api/simplify", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text })
+            });
+            const data = await res.json();
+            if (res.ok && data.simplified) {
+                return data.simplified;
+            } else {
+                return `Here's a simple version:\n\n${text.slice(0, 500)}...`;
+            }
+        } catch (err) {
+            console.error("Simplify failed:", err);
+            return `Here's a simple version:\n\n${text.slice(0, 500)}...`;
+        }
+    }
+    
+    async function generateQuiz() {
+        showLoading("Creating your quiz...");
+        try {
+            const res = await fetch("/api/quiz", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    text: appState.simplifiedText,
+                    numQuestions: appState.quizQuestions
+                })
+            });
+            const data = await res.json();
+            if (!res.ok || !Array.isArray(data.quiz)) {
+                throw new Error("Quiz API error");
+            }
+            appState.quizData = data.quiz.map(q => ({
+                question: q.question || "Untitled question",
+                options: Array.isArray(q.options) ? q.options.slice(0,4) : ["A","B","C","D"],
+                correct: Number.isInteger(q.correct) ? q.correct : 0
+            }));
+            displayQuiz();
+            hideLoading();
+            showStep(5);
+        } catch (error) {
+            hideLoading();
+            console.error("Error generating quiz:", error);
+            alert("Problem creating quiz. Check console.");
+        }
+    }
+
+    // ✅ Added missing displayQuiz function
+    function displayQuiz() {
+        const quizContainer = document.getElementById('quizContainer');
+        quizContainer.innerHTML = '';
+        appState.userAnswers = [];
+        appState.quizData.forEach((q, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.className = "mb-6 p-4 bg-white shadow rounded-lg";
+            const questionText = document.createElement('h4');
+            questionText.className = "font-medium text-gray-800 mb-3";
+            questionText.textContent = `Q${index + 1}: ${q.question}`;
+            questionDiv.appendChild(questionText);
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = "grid grid-cols-1 gap-2";
+            q.options.forEach((option, optIndex) => {
+                const btn = document.createElement('button');
+                btn.textContent = option;
+                btn.className =
+                    "w-full text-left px-4 py-2 rounded-lg border border-gray-300 hover:bg-indigo-50 transition";
+                btn.addEventListener('click', () => {
+                    appState.userAnswers[index] = optIndex;
+                    Array.from(optionsDiv.children).forEach(child => {
+                        child.classList.remove("bg-indigo-200");
+                    });
+                    btn.classList.add("bg-indigo-200");
+                });
+                optionsDiv.appendChild(btn);
+            });
+            questionDiv.appendChild(optionsDiv);
+            quizContainer.appendChild(questionDiv);
+        });
+    }
+    
+    function calculateScore() {
+        let correctCount = 0;
+        appState.quizData.forEach((q, i) => {
+            if (appState.userAnswers[i] === q.correct) correctCount++;
+        });
+        appState.score = Math.round((correctCount / appState.quizData.length) * 100);
+        document.getElementById('score').textContent = appState.score;
+        const resultMessage = document.getElementById('resultMessage');
+        if (appState.score === 100) {
+            resultMessage.textContent = "Perfect! You're a learning superstar!";
+        } else if (appState.score >= 80) {
+            resultMessage.textContent = "Great job! You know this well!";
+        } else if (appState.score >= 60) {
+            resultMessage.textContent = "Good effort! You're getting there!";
+        } else if (appState.score >= 40) {
+            resultMessage.textContent = "Keep practicing! You'll improve!";
+        } else {
+            resultMessage.textContent = "Nice try! Let's review and try again!";
+        }
+        const wrongAnswersContainer = document.getElementById('wrongAnswers');
+        wrongAnswersContainer.innerHTML = '';
+        let hasWrongAnswers = false;
+        appState.quizData.forEach((q, i) => {
+            if (appState.userAnswers[i] !== q.correct) {
+                hasWrongAnswers = true;
+                const wrongAnswerElement = document.createElement('div');
+                wrongAnswerElement.className = 'mb-6 p-4 bg-gray-100 rounded-lg';
+                wrongAnswerElement.innerHTML = `
+                    <h4 class="font-medium text-gray-800 mb-2">Question: ${q.question}</h4>
+                    <p class="text-red-600 mb-1">Your answer: ${q.options[appState.userAnswers[i]] || 'Not answered'}</p>
+                    <p class="text-green-600">Correct answer: ${q.options[q.correct]}</p>
+                `;
+                wrongAnswersContainer.appendChild(wrongAnswerElement);
+            }
+        });
+        if (!hasWrongAnswers) {
+            wrongAnswersContainer.innerHTML = '<p class="text-center text-gray-600">You got all questions right! Amazing!</p>';
+        }
+        showStep(6);
+    }
+    
+    function restartQuizFunc() {
+        displayQuiz();
+        showStep(5);
+    }
+    
+    function showStep(stepNumber) {
+        appState.currentStep = stepNumber;
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.getElementById(`step${stepNumber}`).classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    function showLoading(message) {
+        document.getElementById('loadingMessage').textContent = message;
+        document.getElementById('loading').classList.remove('hidden');
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+    }
+    
+    function hideLoading() {
+        document.getElementById('loading').classList.add('hidden');
+    }
+    
+    function simulateProgress() {
+        let progress = 0;
+        const progressFill = document.getElementById('progressFill');
+        const interval = setInterval(() => {
+            progress += Math.random() * 10;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(interval);
+            }
+            progressFill.style.width = `${progress}%`;
+        }, 300);
+    }
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>
