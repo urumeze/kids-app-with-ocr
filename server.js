@@ -8,23 +8,23 @@ import vision from "@google-cloud/vision";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load .env file (one file now, not multiple)
+// Load .env file
 dotenv.config();
 
 const app = express();
-
-// Accept larger JSON payloads (important for base64 images)
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
-
-// Serve static frontend files from /public
 app.use(express.static(path.join(__dirname, "public")));
 
-// Initialize Google Vision client with ENV credentials
+// === Google Vision Client ===
+console.log("🔑 GOOGLE_PROJECT_ID:", process.env.GOOGLE_PROJECT_ID);
+console.log("🔑 GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL);
+console.log("🔑 PRIVATE_KEY exists:", !!process.env.GOOGLE_PRIVATE_KEY);
+
 const visionClient = new vision.ImageAnnotatorClient({
   credentials: {
     client_email: process.env.GOOGLE_CLIENT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
+    private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
   },
   projectId: process.env.GOOGLE_PROJECT_ID,
 });
@@ -33,9 +33,16 @@ const visionClient = new vision.ImageAnnotatorClient({
 app.post("/api/ocr", async (req, res) => {
   try {
     const { image } = req.body;
-    if (!image) return res.status(400).json({ error: "No image provided" });
+    if (!image) {
+      console.error("❌ No image received in request");
+      return res.status(400).json({ error: "No image provided" });
+    }
+
+    console.log("📷 Received image, length:", image.length);
 
     const [result] = await visionClient.textDetection({ image: { content: image } });
+
+    console.log("✅ OCR raw result:", JSON.stringify(result, null, 2));
 
     const text =
       result.fullTextAnnotation?.text ||
@@ -44,8 +51,8 @@ app.post("/api/ocr", async (req, res) => {
 
     res.json({ text });
   } catch (err) {
-    console.error("OCR error:", err);
-    res.status(500).json({ error: "OCR failed" });
+    console.error("❌ OCR error:", err);
+    res.status(500).json({ error: "OCR failed", details: err.message });
   }
 });
 
@@ -64,10 +71,7 @@ app.post("/api/extract", async (req, res) => {
       body: JSON.stringify({
         model: "gpt-4o-mini",
         messages: [
-          {
-            role: "system",
-            content: "convert this passage into meaningful text easy to read please",
-          },
+          { role: "system", content: "convert this passage into meaningful text easy to read please" },
           { role: "user", content: text },
         ],
         max_tokens: 600,
@@ -187,14 +191,8 @@ app.post("/api/score", async (req, res) => {
       body: JSON.stringify({
         model: "gpt-4o-mini",
         messages: [
-          {
-            role: "system",
-            content: "You are a quiz grader. Reply only with JSON {\"correct\": true/false}.",
-          },
-          {
-            role: "user",
-            content: `Question: ${question}\nStudent Answer: ${userAnswer}`,
-          },
+          { role: "system", content: "You are a quiz grader. Reply only with JSON {\"correct\": true/false}." },
+          { role: "user", content: `Question: ${question}\nStudent Answer: ${userAnswer}` },
         ],
         max_tokens: 100,
         response_format: { type: "json_object" },
@@ -217,11 +215,13 @@ app.post("/api/score", async (req, res) => {
   }
 });
 
-// Fallback: send frontend for any route
+// Fallback: frontend
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "kids-app.html"));
 });
 
-// Start server (Render requires process.env.PORT)
+// Start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`✅ Server running at http://localhost:${PORT}`);
+});
