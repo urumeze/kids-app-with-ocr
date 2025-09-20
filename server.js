@@ -17,17 +17,8 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // === Google Vision Client ===
-console.log("🔑 GOOGLE_PROJECT_ID:", process.env.GOOGLE_PROJECT_ID);
-console.log("🔑 GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL);
-console.log("🔑 PRIVATE_KEY exists:", !!process.env.GOOGLE_PRIVATE_KEY);
-
-const visionClient = new vision.ImageAnnotatorClient({
-  credentials: {
-    project_id: process.env.GOOGLE_PROJECT_ID,
-    client_email: process.env.GOOGLE_CLIENT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-  },
-});
+// Uses GOOGLE_APPLICATION_CREDENTIALS from .env automatically
+const visionClient = new vision.ImageAnnotatorClient();
 
 // === OCR ENDPOINT ===
 app.post("/api/ocr", async (req, res) => {
@@ -41,8 +32,6 @@ app.post("/api/ocr", async (req, res) => {
     console.log("📷 Received image, length:", image.length);
 
     const [result] = await visionClient.textDetection({ image: { content: image } });
-
-    console.log("✅ OCR raw result:", JSON.stringify(result, null, 2));
 
     const text =
       result.fullTextAnnotation?.text ||
