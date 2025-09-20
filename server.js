@@ -16,15 +16,19 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// === Google Vision Client ===
-console.log("🔑 GOOGLE_PROJECT_ID:", process.env.GOOGLE_PROJECT_ID);
-console.log("🔑 GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL);
-console.log("🔑 PRIVATE_KEY exists:", !!process.env.GOOGLE_PRIVATE_KEY);
+// --- Google Vision Client ---
+if (!process.env.GOOGLE_PROJECT_ID || !process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
+  console.error("❌ Missing Google Vision credentials in .env!");
+  process.exit(1);
+}
+
+// Convert escaped \n into real newlines
+const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n");
 
 const visionClient = new vision.ImageAnnotatorClient({
   credentials: {
     client_email: process.env.GOOGLE_CLIENT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+    private_key: privateKey,
   },
   projectId: process.env.GOOGLE_PROJECT_ID,
 });
@@ -33,16 +37,11 @@ const visionClient = new vision.ImageAnnotatorClient({
 app.post("/api/ocr", async (req, res) => {
   try {
     const { image } = req.body;
-    if (!image) {
-      console.error("❌ No image received in request");
-      return res.status(400).json({ error: "No image provided" });
-    }
+    if (!image) return res.status(400).json({ error: "No image provided" });
 
     console.log("📷 Received image, length:", image.length);
 
     const [result] = await visionClient.textDetection({ image: { content: image } });
-
-    console.log("✅ OCR raw result:", JSON.stringify(result, null, 2));
 
     const text =
       result.fullTextAnnotation?.text ||
@@ -71,7 +70,7 @@ app.post("/api/extract", async (req, res) => {
       body: JSON.stringify({
         model: "gpt-4o-mini",
         messages: [
-          { role: "system", content: "convert this passage into meaningful text easy to read please" },
+          { role: "system", content: "Convert this passage into meaningful text easy to read." },
           { role: "user", content: text },
         ],
         max_tokens: 600,
@@ -136,7 +135,7 @@ app.post("/api/quiz", async (req, res) => {
           {
             role: "system",
             content:
-              "You are a kids quiz generator. Only return valid JSON in this format:\n{\n  \"quiz\": [\n    { \"question\": \"string\", \"options\": [\"A\",\"B\",\"C\",\"D\"], \"correct\": 0 }\n  ]\n}",
+              "You are a kids quiz generator. Only return valid JSON in this format: {\"quiz\": [{\"question\":\"string\",\"options\":[\"A\",\"B\",\"C\",\"D\"],\"correct\":0}]}",
           },
           {
             role: "user",
@@ -150,7 +149,6 @@ app.post("/api/quiz", async (req, res) => {
 
     const data = await response.json();
     let quiz = [];
-
     try {
       quiz = JSON.parse(data.choices?.[0]?.message?.content || "{}").quiz || [];
     } catch (e) {
@@ -201,13 +199,11 @@ app.post("/api/score", async (req, res) => {
 
     const data = await response.json();
     let result = { correct: false };
-
     try {
       result = JSON.parse(data.choices?.[0]?.message?.content || "{}");
     } catch (e) {
       console.error("Score parse error:", e);
     }
-
     res.json(result);
   } catch (err) {
     console.error("Score error:", err);
@@ -215,12 +211,12 @@ app.post("/api/score", async (req, res) => {
   }
 });
 
-// Fallback: frontend
+// --- Fallback frontend ---
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "kids-app.html"));
 });
 
-// Start server
+// --- Start server ---
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
