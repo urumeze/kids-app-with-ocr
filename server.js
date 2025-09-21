@@ -1,9 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
-import fetch from "node-fetch";
+import fetch from "node-fetch"; // Assuming you need this elsewhere
 import path from "path";
 import { fileURLToPath } from "url";
-import vision from "@google-cloud/vision";
+import { ImageAnnotatorClient } from "@google-cloud/vision"; // Corrected import for Vision client
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,10 +16,6 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// === Google Vision Client ===
-// Uses GOOGLE_APPLICATION_CREDENTIALS from .env automatically
-const vision = require('@google-cloud/vision'); // Ensure this is at the top of your file
-
 let visionClient; // Declare visionClient at a scope accessible by the OCR endpoint
 
 // --- VISION CLIENT INITIALIZATION ---
@@ -27,13 +23,12 @@ let visionClient; // Declare visionClient at a scope accessible by the OCR endpo
 if (process.env.GOOGLE_CREDENTIALS_JSON) {
   try {
     const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
-    visionClient = new vision.ImageAnnotatorClient({ credentials });
+    // Initialize the Vision client using the imported ImageAnnotatorClient
+    visionClient = new ImageAnnotatorClient({ credentials });
     console.log("✅ Google Cloud Vision client initialized with explicit credentials.");
   } catch (error) {
     console.error("❌ Error parsing GOOGLE_CREDENTIALS_JSON environment variable:", error);
-    // It's critical to have valid credentials, so exiting is often a good strategy
-    // if the app cannot function without Vision API.
-    process.exit(1);
+    process.exit(1); // It's critical to have valid credentials
   }
 } else {
   console.error("❌ GOOGLE_CREDENTIALS_JSON environment variable not found. " +
@@ -44,7 +39,6 @@ if (process.env.GOOGLE_CREDENTIALS_JSON) {
 
 // === OCR ENDPOINT ===
 app.post("/api/ocr", async (req, res) => {
-  // Add an additional check here in case initialization somehow failed (e.g., if you remove the process.exit calls)
   if (!visionClient) {
     console.error("❌ OCR request received but Vision client was not initialized.");
     return res.status(500).json({ error: "Vision API service unavailable due to initialization failure." });
@@ -59,7 +53,6 @@ app.post("/api/ocr", async (req, res) => {
 
     console.log("📷 Received image, length:", image.length);
 
-    // This line will now use the properly initialized visionClient
     const [result] = await visionClient.textDetection({ image: { content: image } });
 
     const text =
@@ -70,10 +63,12 @@ app.post("/api/ocr", async (req, res) => {
     res.json({ text });
   } catch (err) {
     console.error("❌ OCR error:", err);
-    // Make sure to include err.message for clearer debugging
     res.status(500).json({ error: "OCR failed", details: err.message });
   }
 });
+
+
+
 
 // === 1. EXTRACT ENDPOINT ===
 app.post("/api/extract", async (req, res) => {
@@ -240,7 +235,7 @@ app.get("*", (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
 });
