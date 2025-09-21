@@ -18,10 +18,38 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // === Google Vision Client ===
 // Uses GOOGLE_APPLICATION_CREDENTIALS from .env automatically
-const visionClient = new vision.ImageAnnotatorClient();
+const vision = require('@google-cloud/vision'); // Ensure this is at the top of your file
+
+let visionClient; // Declare visionClient at a scope accessible by the OCR endpoint
+
+// --- VISION CLIENT INITIALIZATION ---
+// This block should run once when your application starts
+if (process.env.GOOGLE_CREDENTIALS_JSON) {
+  try {
+    const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
+    visionClient = new vision.ImageAnnotatorClient({ credentials });
+    console.log("✅ Google Cloud Vision client initialized with explicit credentials.");
+  } catch (error) {
+    console.error("❌ Error parsing GOOGLE_CREDENTIALS_JSON environment variable:", error);
+    // It's critical to have valid credentials, so exiting is often a good strategy
+    // if the app cannot function without Vision API.
+    process.exit(1);
+  }
+} else {
+  console.error("❌ GOOGLE_CREDENTIALS_JSON environment variable not found. " +
+                "Vision API will not work. Please set it on Render.");
+  process.exit(1); // Exit as Vision API is a core feature
+}
+
 
 // === OCR ENDPOINT ===
 app.post("/api/ocr", async (req, res) => {
+  // Add an additional check here in case initialization somehow failed (e.g., if you remove the process.exit calls)
+  if (!visionClient) {
+    console.error("❌ OCR request received but Vision client was not initialized.");
+    return res.status(500).json({ error: "Vision API service unavailable due to initialization failure." });
+  }
+
   try {
     const { image } = req.body;
     if (!image) {
@@ -31,6 +59,7 @@ app.post("/api/ocr", async (req, res) => {
 
     console.log("📷 Received image, length:", image.length);
 
+    // This line will now use the properly initialized visionClient
     const [result] = await visionClient.textDetection({ image: { content: image } });
 
     const text =
@@ -41,6 +70,7 @@ app.post("/api/ocr", async (req, res) => {
     res.json({ text });
   } catch (err) {
     console.error("❌ OCR error:", err);
+    // Make sure to include err.message for clearer debugging
     res.status(500).json({ error: "OCR failed", details: err.message });
   }
 });
