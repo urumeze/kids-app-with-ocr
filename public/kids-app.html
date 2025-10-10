@@ -163,7 +163,7 @@
         <!-- Header -->
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 mb-4" data-aos="fade-down">GoQuiz</h1>
-            <p class="text-xl text-gray-700" data-aos="fade-up">Turn your documents into fun learning adventures!</p>
+            <p class="text-xl text-gray-700" data-aos="fade-up">1. Snap your Kids Note=> 2. Upload=> 3. click Next</p>
         </header>
         
         <!-- Main content area - will be dynamically updated -->
@@ -179,7 +179,7 @@
                         <!--label for="fileInput" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium cursor-pointer hover:bg-indigo-700 transition">
                             Select File
                         </label-->
-                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
                     </div>
                 </div>
                 <div class="text-center text-gray-500">
@@ -377,43 +377,46 @@ function setupApp() {
         }
     }
     
-    async function handleFileSelect(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        
-        showLoading("Processing your document...");
-        
-        // Simulate processing delay
-        simulateProgress();
-        
-        try {
-            let text = '';
+async function handleFileSelect(event) {
+    const files = Array.from(event.target.files);  // ✅ multiple files
+    if (!files.length) return;
+
+    showLoading("Processing your document...");
+    simulateProgress();
+
+    try {
+        let text = '';
+        for (const file of files) {   // ✅ loop through each file
             const fileType = file.name.split('.').pop().toLowerCase();
-            
+
             if (fileType === 'pdf') {
-                text = await extractTextFromPDF(file);
+                text += await extractTextFromPDF(file) + '\n\n';
             } else if (fileType === 'doc' || fileType === 'docx') {
-                text = await extractTextFromWord(file);
-            } else if (fileType === 'jpg' || fileType === 'jpeg' || fileType === 'png') {
-                text = await extractTextFromImage(file);
+                text += await extractTextFromWord(file) + '\n\n';
+            } else if (['jpg', 'jpeg', 'png'].includes(fileType)) {
+                text += await extractTextFromImage(file) + '\n\n';
             } else {
-                throw new Error('Unsupported file type');
+                throw new Error('Unsupported file type: ' + file.name);
             }
-            
-            appState.extractedText = text;
-            document.getElementById('extractedText').textContent = text;
-            
-            // Call AI simplification
-            appState.simplifiedText = await simplifyText(text);
-            document.getElementById('simplifiedText').textContent = appState.simplifiedText;
-            hideLoading();
-            showStep(2);
-            
-        } catch (error) {
-            hideLoading();
-            alert('Error processing file: ' + error.message);
         }
+
+        // ✅ Store combined text
+        appState.extractedText = text;
+        document.getElementById('extractedText').textContent = text;
+
+        // ✅ Simplify combined text
+        appState.simplifiedText = await simplifyText(text);
+        document.getElementById('simplifiedText').textContent = appState.simplifiedText;
+
+        hideLoading();
+        showStep(2);
+
+    } catch (error) {
+        hideLoading();
+        alert('Error processing file: ' + error.message);
     }
+}
+
     
     function extractTextFromPDF(file) {
         return new Promise((resolve, reject) => {
@@ -482,13 +485,13 @@ async function extractTextFromImage(file) {
                 const res = await fetch("/api/ocr", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ image: base64Data })
+                    body: JSON.stringify({ images: [base64Data] }) // 👈 wrap in array
                 });
                 const data = await res.json();
                 if (res.ok && data.text) {
                     resolve(data.text);
                 } else {
-                    reject(new Error("OCR failed"));
+                    reject(new Error(data.error || "OCR failed"));
                 }
             } catch (err) {
                 reject(err);
@@ -498,6 +501,7 @@ async function extractTextFromImage(file) {
         reader.readAsDataURL(file);
     });
 }
+
 
     
     async function simplifyText(text) {
