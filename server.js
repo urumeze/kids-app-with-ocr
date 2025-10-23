@@ -16,15 +16,6 @@ const app = express();
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static("public")); // if your HTML is in public/
-
-// ✅ This is where you add the config route
-app.get("/config", (req, res) => {
-  res.json({
-    apiKey: process.env.FIREBASE_API_KEY
-  });
-});
-
 
 let visionClient;
 

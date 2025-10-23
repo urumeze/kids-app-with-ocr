@@ -230,24 +230,6 @@
 <body class="design">
 
 
-    <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Login">
-  <div class="pulse-wrap" aria-hidden="true">
-    <div class="big-circle" id="bigCircle"></div>
-  </div>
-
-  <div class="login-box" id="loginBox">
-    <div class="logo">GoQuiz</div>
-    <div class="title">Yello!!! GoQuiz.app</div>
-    
-
-    <div class="actions">
-      <button class="btn btn-guest" id="guestBtn" title="Continue as guest">Continue as Guest</button>
-      <button class="btn btn-google" id="googleBtn" title="Sign in with Google">Sign in with Google </button>
-    </div>
-
-    <!--div class="small">By continuing you agree to our friendly terms. This demo uses a simulated Google flow.</div-->
-  </div>
-</div>
 
 <!-- 📚 MENU PANEL -->
 <div id="menuPanel"
@@ -470,34 +452,7 @@
 
 
 <script>
- fetch("/config")
-  .then(res => res.json())
-  .then(({ apiKey }) => {
-    const firebaseConfig = {
-      apiKey,
-      authDomain: "kids-note-app.firebaseapp.com",
-      projectId: "kids-note-app",
-      storageBucket: "kids-note-app.firebasestorage.app",
-      messagingSenderId: "845525258490",
-      appId: "1:845525258490:web:16ab8dad0a98469456b943",
-      measurementId: "G-KHBK5Z52TL"
-    };
-
-    // Initialize Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
-    // Initialize the app after Firebase is ready
-    initApp(auth, db);
-  })
-  .catch(err => {
-    console.error("Error loading Firebase key:", err);
-    alert("Could not initialize app. Please refresh.");
-  });
-
-function initApp(auth, db) {
-
+ 
   // ------------------------------
   // App State
   // ------------------------------
@@ -528,69 +483,8 @@ function initApp(auth, db) {
     });
   });
 
-  // ------------------------------
-  // LOGIN & OVERLAY LOGIC
-  // ------------------------------
-  const overlay = document.getElementById('overlay');
-  const bigCircle = document.getElementById('bigCircle');
-  const guestBtn = document.getElementById('guestBtn');
-  const googleBtn = document.getElementById('googleBtn');
-  const appElement = document.getElementById('app');
-
-  function playLoginAnimation(callback){
-    bigCircle.style.transition = 'none';
-    bigCircle.style.transform = 'scale(0)';
-    bigCircle.style.opacity = '1';
-    void bigCircle.offsetWidth;
-    bigCircle.style.animation = 'circleBurst 2s cubic-bezier(.22,.9,.22,1) forwards';
-    overlay.classList.add('fade-to-app');
-
-    setTimeout(() => {
-      overlay.classList.add('hidden');
-      overlay.setAttribute('aria-hidden','true');
-      appElement.setAttribute('aria-hidden','false');
-      appElement.classList.add('revealed');
-      bigCircle.style.animation = '';
-      bigCircle.style.opacity = '0';
-      if(callback) callback();
-    }, 50);
-  }
-
-  // Guest login
-  guestBtn.addEventListener('click', () => {
-    guestBtn.disabled = true;
-    googleBtn.disabled = true;
-    playLoginAnimation(() => console.log('Guest entry complete'));
-  });
-
-  // Google login
-  googleBtn.addEventListener('click', async () => {
-    googleBtn.disabled = true;
-    guestBtn.disabled = true;
-
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider)
-      .then(result => {
-        const user = result.user;
-        console.log("Signed in as:", user.displayName, user.email);
-        playLoginAnimation(() => console.log('Google auth complete'));
-      })
-      .catch(err => {
-        console.error("Google sign-in error:", err);
-        alert("Google sign-in failed: " + err.message);
-        googleBtn.disabled = false;
-        guestBtn.disabled = false;
-      });
-  });
-
-  // Accessibility: Escape key
-  document.addEventListener('keydown', e => {
-    if(e.key === 'Escape' && !overlay.classList.contains('hidden')){
-      guestBtn.click();
-    }
-  });
-
-  window.addEventListener('load', () => guestBtn.focus());
+ 
+  
 
   // ------------------------------
   // Initialize AOS & Feather Icons
@@ -946,7 +840,8 @@ async function loadPastQuestions(year, subject) {
   try {
     console.log(`Loading ${subject.toUpperCase()} past questions for ${year}...`);
 
-    const response = await fetch(`/api/past-quiz/${year}/${subject}`);
+    const response = await fetch(`past_questions/jamb_${year}_${subject}.json`);
+
     if (!response.ok) throw new Error("Quiz not found");
 
     const data = await response.json();
@@ -1025,33 +920,6 @@ document.querySelectorAll('.subject-btn').forEach(btn => {
 
 
 
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
