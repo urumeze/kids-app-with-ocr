@@ -1,0 +1,444 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Solve for k in the equation (1/8)^(k + 2) = 1",
+      "options": {
+        "A": "2",
+        "B": "-4",
+        "C": "-2",
+        "D": "4"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 2,
+      "question": "Evaluate (101₂)³",
+      "options": {
+        "A": "111101₂",
+        "B": "11111101₂",
+        "C": "1111101₂",
+        "D": "11001₂"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "The shaded portion in the Venn diagram represents?",
+      "options": {
+        "A": "F - (E ∩ F) - (G ∩ F)",
+        "B": "E' ∩ F ∩ G'",
+        "C": "E ∪ F ∪ G",
+        "D": "F"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "question": "If a fair coin is tossed twice, what is the probability of obtaining at least one head?",
+      "options": {
+        "A": "0.25",
+        "B": "0.75",
+        "C": "0.5",
+        "D": "0.33"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "question": "If the mean of 2, 5, (x+1), (x+2), 7 and 9 is 6, find the median",
+      "options": {
+        "A": "5.5",
+        "B": "5",
+        "C": "6.5",
+        "D": "6"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "If sin θ = -3/5 and θ lies in the third quadrant, find cos θ",
+      "options": {
+        "A": "4/5",
+        "B": "-4/5",
+        "C": "3/5",
+        "D": "-3/5"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 7,
+      "question": "Simplify 13√2 - √2 in the form p + q√2",
+      "options": {
+        "A": "7 - 17√2",
+        "B": "7 + 17√2",
+        "C": "3 - 17√2",
+        "D": "3 + √27"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "Find the length of a chord 3 cm from the centre of a circle of radius 5 cm",
+      "options": {
+        "A": "8 cm",
+        "B": "5.6 cm",
+        "C": "7 cm",
+        "D": "6.5 cm"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "question": "Mr Adu spends his annual salary on food(f), rent(r), car maintenance(c), gifts(g), savings(s) and miscellaneous(m) as 28%, 15%, 20%, 14%, 10%, 13%. If represented on a pie chart, what angle represents his spending on food?",
+      "options": {
+        "A": "100.8°",
+        "B": "108°",
+        "C": "98.8°",
+        "D": "120.5°"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "question": "A rectangular pyramid has an area of 24 cm² and height 7.5 cm. Find its volume",
+      "options": {
+        "A": "65.0 cm³",
+        "B": "70.5 cm³",
+        "C": "56.5 cm³",
+        "D": "60.0 cm³"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "The 10th term of an AP is 32. If the first term is 3/2, what is the 4th term?",
+      "options": {
+        "A": "35/3",
+        "B": "64",
+        "C": "16",
+        "D": "35/2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 12,
+      "question": "In the diagram above, angles LNM and YNZ are represented by g and h respectively. Find ∠MNY",
+      "options": {
+        "A": "180º - gº - hº",
+        "B": "360º - (g-h)º",
+        "C": "180º - (g-h)º",
+        "D": "360º - gº - hº"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 13,
+      "question": "In how many ways can the letters of ZOOLOGY be arranged?",
+      "options": {
+        "A": "720",
+        "B": "360",
+        "C": "840",
+        "D": "120"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 14,
+      "question": "Integrate (2x+1)³ dx",
+      "options": {
+        "A": "(2x+1)⁴/8 + C",
+        "B": "(2x+1)⁴/48 + C",
+        "C": "(2x+1)⁴/4 + C",
+        "D": "(2x+1)⁴/6 + C"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 15,
+      "question": "If A = [[2,2],[1,3]] and B = [[3,4],[2,2]], find AB",
+      "options": {
+        "A": "[[18,12],[6,10]]",
+        "B": "[[10,13],[12,10]]",
+        "C": "[[10,12],[11,6]]",
+        "D": "[[10,18],[11,6]]"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 16,
+      "question": "Given that r = √(3v/πh), make v the subject of the formula",
+      "options": {
+        "A": "v = 3r²/πh",
+        "B": "v = πrh³",
+        "C": "v = πr²h/3",
+        "D": "v = 3πrh"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 17,
+      "question": "Find the determinant of the matrix A = [[2,1],[3,3]]",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "5",
+        "D": "3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "Evaluate log₂(8√2)",
+      "options": {
+        "A": "3.0",
+        "B": "4.5",
+        "C": "3.5",
+        "D": "2.5"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 19,
+      "question": "The locus of points equidistant from a fixed point",
+      "options": {
+        "A": "circle",
+        "B": "perpendicular lines",
+        "C": "straight line",
+        "D": "bisector"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "question": "What is the result obtained when the numerator of 96/50 is decreased by 37.5% and its denominator decreased by 20%?",
+      "options": {
+        "A": "1.5",
+        "B": "52",
+        "C": "9648",
+        "D": "0.5"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 21,
+      "question": "A poultry farmer realized 200 eggs from his birds and sold 5/12 crates of eggs. What percentage of eggs are left?",
+      "options": {
+        "A": "82.5%",
+        "B": "15%",
+        "C": "17.5%",
+        "D": "85%"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 22,
+      "question": "If sec²θ + tan²θ = 3, then the angle θ is equal to?",
+      "options": {
+        "A": "90º",
+        "B": "30º",
+        "C": "45º",
+        "D": "60º"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 23,
+      "question": "Find the limit of y = (x³ + 6x - 7)/(x - 1) as x tends to 1",
+      "options": {
+        "A": "9",
+        "B": "8",
+        "C": "0",
+        "D": "7"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 24,
+      "question": "Find the equation of a straight line parallel to the line 2x - y = 5 and having y-intercept of 5",
+      "options": {
+        "A": "2x + y = 5",
+        "B": "2x + y = -5",
+        "C": "2x - y = -5",
+        "D": "2x - y = 5"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 25,
+      "question": "Calculate the median of 14, 17, 10, 13, 18 and 10",
+      "options": {
+        "A": "12.5",
+        "B": "13.5",
+        "C": "13.2",
+        "D": "14.5"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 26,
+      "question": "The equivalent of (10110.011)₂ in base 10 is?",
+      "options": {
+        "A": "26.375",
+        "B": "24.372",
+        "C": "42.443",
+        "D": "22.375"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 27,
+      "question": "The cost C of running a school is directly proportional to the number of students N. If 20 students cost #10,000, how many students can #1,000,000 cover?",
+      "options": {
+        "A": "3000",
+        "B": "1000",
+        "C": "2000",
+        "D": "4000"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 28,
+      "question": "The coordinates of the midpoint of the line joining the points (-3,5) and (2,10) is?",
+      "options": {
+        "A": "(1/2, 15/2)",
+        "B": "(1/2, -15/2)",
+        "C": "(-1/2, -15/2)",
+        "D": "(-1/2, 15/2)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 29,
+      "question": "Evaluate n²+1 C n+5 if n = 3",
+      "options": {
+        "A": "55",
+        "B": "45",
+        "C": "35",
+        "D": "25"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 30,
+      "question": "Given that S = 3t² + 5t - 10 is displacement of a particle in metres, calculate its initial velocity",
+      "options": {
+        "A": "10 m/s",
+        "B": "2 m/s",
+        "C": "5 m/s",
+        "D": "6 m/s"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 31,
+      "question": "In the diagram above, XY = 8 cm and OX = 5 cm. Find OZ",
+      "options": {
+        "A": "9 cm",
+        "B": "3.4 cm",
+        "C": "9.1 cm",
+        "D": "3 cm"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 32,
+      "question": "Let (*) be a binary operation on a natural number defined by a * b = a - b + (ab)². Find 3 * 5",
+      "options": {
+        "A": "223",
+        "B": "232",
+        "C": "32",
+        "D": "-232"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 33,
+      "question": "If y varies inversely as x and x = 3 when y = 4. Find the value of x when y = 12",
+      "options": {
+        "A": "4",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 34,
+      "question": "If 8, p, q and 26 is an A.P., find the values of p and q",
+      "options": {
+        "A": "p = 14 and q = 14",
+        "B": "p = 20 and q = 14",
+        "C": "p = 20 and q = 20",
+        "D": "p = 14 and q = 20"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 35,
+      "question": "Find x if the mean of 2x, 4x, 2x - 13 and 6x is 4",
+      "options": {
+        "A": "1.5",
+        "B": "2.0",
+        "C": "1.0",
+        "D": "0.5"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 36,
+      "question": "Factorize 4a² - 9b²",
+      "options": {
+        "A": "(2a - 3b)(2a + 3b)",
+        "B": "(2a - b)(2a + 3b)",
+        "C": "(2a - 3b)(a + 3b)",
+        "D": "(a - 3b)(a + 3b)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 37,
+      "question": "If n(P) = 20 and n(Q) = 30 and n(P ∪ Q) = 40, find n(P ∩ Q)",
+      "options": {
+        "A": "10",
+        "B": "30",
+        "C": "15",
+        "D": "40"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 38,
+      "question": "Three times a certain number (x), minus 2 is less than the number minus 6. Find the possible values of x",
+      "options": {
+        "A": "x < -2",
+        "B": "x > 2",
+        "C": "x > -2",
+        "D": "x < 2"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 39,
+      "question": "The number line represented by the inequality",
+      "options": {
+        "A": "x ≤ 2",
+        "B": "x < 2",
+        "C": "x ≥ 2",
+        "D": "x > 2"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 40,
+      "question": "If a dress is sold for #3800.00 at 20% discount, what is its original price?",
+      "options": {
+        "A": "#3,000.00",
+        "B": "#4,000.00",
+        "C": "#5,000.00",
+        "D": "#4,750.00"
+      },
+      "correct": "D"
+    }
+  ]
+}

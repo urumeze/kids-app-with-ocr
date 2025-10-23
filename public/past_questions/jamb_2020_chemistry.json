@@ -1,0 +1,243 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "The electronic configuration of an element is 1S2 2S2 2P6 3S2 3P3. How many unpaired electrons are there in the element?",
+    "options": { "A": "5", "B": "4", "C": "3", "D": "2" },
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following can be obtained by fractional distillation?",
+    "options": { "A": "Nitrogen from liquid air", "B": "Sodium Chloride from sea water", "C": "Iodine from solution of Iodine in carbon tetrachloride", "D": "Sulphur from the solution of sulphur in carbon disulphide" },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "Duralumin consists of aluminum, copper?",
+    "options": { "A": "Zinc and Gold", "B": "Lead and Manganese", "C": "Nickel and Silver", "D": "Manganese and Magnesium" },
+    "correct": "D"
+  },
+  {
+    "id": 4,
+    "question": "An example of a polysaccharide is?",
+    "options": { "A": "Dextrose", "B": "Mannose", "C": "Glucose", "D": "Starch" },
+    "correct": "D"
+  },
+  {
+    "id": 5,
+    "question": "8g of CH4 occupies 11.2 at S.T.P. What volume would 22g of CH3CH2CH3 occupy under the same condition?",
+    "options": { "A": "3.7dm3", "B": "11.2dm3", "C": "22.4dm3", "D": "33dm3" },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "The best treatment for a student who accidentally poured concentrated tetraoxosulphate(VI) acid on his skin in the laboratory is to wash his skin with?",
+    "options": { "A": "Cool running water", "B": "Sodium hydroxide solution", "C": "Iodine solution", "D": "Sodium trioxonitrate(V) solution" },
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "question": "Which of the gas laws does this graph illustrate?",
+    "options": { "A": "Boyle", "B": "Charles", "C": "Gay-Lussac", "D": "Graham" },
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "question": "What are the possible oxidation numbers of an element if its atomic number is 17?",
+    "options": { "A": "-1 and 7", "B": "-1 and 6", "C": "-3 and 5", "D": "-2 and 6" },
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "question": "What process would coal undergo to give coal gas, coal tar, ammoniacal liquor and coke?",
+    "options": { "A": "Steam distillation", "B": "Destructive distillation", "C": "Liquefication", "D": "Hydrolysis" },
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "question": "Liquid black soap is made by boiling palm oil with liquid extract of ash. The function of the ash is to provide the?",
+    "options": { "A": "Acid", "B": "Ester of alkanoic acid", "C": "Alkali", "D": "Alkanol" },
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "When water drops are added to calcium carbide in a container and the gas produced is passed through a jet and lighted, the resultant flame is called an?",
+    "options": { "A": "Oxyethene", "B": "Oxyhydrocarbon flame", "C": "Oxyacetylene flame", "D": "Oxymethane flame" },
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following substances is a mixture?",
+    "options": { "A": "Granulated sugar", "B": "Seawater", "C": "Sodium chloride", "D": "Iron filling" },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "If the quantity of oxygen occupying 2.76L container at a pressure of 0.825 atm and 300K is reduced by one-half, what is the pressure exerted by the remaining gas?",
+    "options": { "A": "1.650 atm", "B": "0.825 atm", "C": "0.413 atm", "D": "0.275 atm" },
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "question": "Four elements P, Q, R and S have atomic numbers of 4, 10, 12 and 14 respectively. Which of these elements is a noble gas?",
+    "options": { "A": "P", "B": "Q", "C": "R", "D": "S" },
+    "correct": "B"
+  },
+  {
+    "id": 15,
+    "question": "The products of the thermal decomposition of ammonium trioxonitrate(V) are?",
+    "options": { "A": "Nitrogen(I) oxide and water", "B": "Ammonia and oxide", "C": "Nitrogen and water", "D": "Nitrogen(IV) oxide and water" },
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "How many valence electrons are contained in the element 3115P?",
+    "options": { "A": "3", "B": "4", "C": "15", "D": "31" },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "The number of molecules of Carbon(IV) oxide produced when 10.0 g of CaCO3 is treated with 0.2 dm3 of 1 M HCl in the equation CaCO3 + 2HCl ⇒ CaCl2 + H2O + CO2 is?",
+    "options": { "A": "1.00 X 10^23", "B": "6.02 X 10^23", "C": "6.02 X 10^22", "D": "6.02 X 10^24" },
+    "correct": "C"
+  },
+  {
+    "id": 18,
+    "question": "The volume occupied by 1.58 g of a gas at S.T.P is 500 cm3. What is the relative molecular mass of the gas? [G.M.V at S.T.P = 22.4 dm3]",
+    "options": { "A": "28", "B": "32", "C": "44", "D": "71" },
+    "correct": "D"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following gases will rekindle a glowing splint?",
+    "options": { "A": "NO2", "B": "NO", "C": "N2O", "D": "Cl2" },
+    "correct": "C"
+  },
+  {
+    "id": 20,
+    "question": "The shape of ammonia molecule is?",
+    "options": { "A": "Trigonal planar", "B": "Octahedral", "C": "Square planar", "D": "Tetrahedral" },
+    "correct": "D"
+  },
+  {
+    "id": 21,
+    "question": "A few drops of conc HCl are added to about 10 cm³ of a solution of pH 3.4. The pH of the resulting mixture is?",
+    "options": { "A": "less than 3.4", "B": "greater than 3.4", "C": "unaltered", "D": "the same as that of pure water" },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "Chromatography is used to separate components of a mixture which differ in their rates of?",
+    "options": { "A": "diffusion", "B": "migration", "C": "reaction", "D": "sedimentation" },
+    "correct": "B"
+  },
+  {
+    "id": 23,
+    "question": "Deliquescent substances are also?",
+    "options": { "A": "efflorescent", "B": "anhydrous", "C": "hygroscopic", "D": "insoluble" },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "Helium is used in observation of balloons because it is?",
+    "options": { "A": "light and combustible", "B": "light and non-combustible", "C": "heavy and combustible", "D": "heavy and non-combustible" },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "32 g of anhydrous copper(II) tetraoxosulphate(VI) dissolved in 1 dm³ of water generated 13.0 kJ of heat. The heat of solution is?",
+    "options": { "A": "26.0 kJ/mol", "B": "65.0 kJ/mol", "C": "130.0 kJ/mol", "D": "260.0 kJ/mol" },
+    "correct": "B"
+  },
+  {
+    "id": 26,
+    "question": "A gaseous metallic chloride MCl consists of 20.22% of M by mass. The formula of the chloride is? [M = 27, Cl = 35.5]",
+    "options": { "A": "MCl", "B": "MCl2", "C": "MCl3", "D": "M2Cl6" },
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "question": "What quantity of electricity will liberate 0.125 mole of oxygen molecules during the electrolysis of dilute sodium chloride solution?",
+    "options": { "A": "24,125 C", "B": "48,250 C", "C": "72,375 C", "D": "96,500 C" },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following types of bonding does not involve the formation of new substances?",
+    "options": { "A": "Metallic", "B": "Covalent", "C": "Co-ordinate", "D": "Electrovalent" },
+    "correct": "A"
+  },
+  {
+    "id": 29,
+    "question": "An organic compound that does not undergo a reaction with both hydrogen cyanide and hydroxylamine can be?",
+    "options": { "A": "Alkene", "B": "Alkanal", "C": "Alkanone", "D": "Alkanoic Acid" },
+    "correct": "D"
+  },
+  {
+    "id": 30,
+    "question": "The substance often used for vulcanization of rubber is?",
+    "options": { "A": "Chlorine", "B": "Hydrogen peroxide", "C": "Sulphur", "D": "Tetraoxosulphate(VI) acid" },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "The chlorinated alkane often used industrially to remove grease is?",
+    "options": { "A": "Tetrachloromethane", "B": "Chloromethane", "C": "Trichloromethane", "D": "Dichloromethane" },
+    "correct": "A"
+  },
+  {
+    "id": 32,
+    "question": "What mass of water is produced when 8.0 g of hydrogen reacts with excess oxygen?",
+    "options": { "A": "8.0 g", "B": "16.0 g", "C": "36.0 g", "D": "72.0 g" },
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "question": "Proteins in acid solution undergo?",
+    "options": { "A": "Substitution", "B": "Fermentation", "C": "Hydrolysis", "D": "Polymerisation" },
+    "correct": "C"
+  },
+  {
+    "id": 34,
+    "question": "The general formula for the alkanals is?",
+    "options": { "A": "R2CO", "B": "RCHO", "C": "ROH", "D": "RCOOR" },
+    "correct": "B"
+  },
+  {
+    "id": 35,
+    "question": "When cathode rays are deflected onto the electrode of an electrometer, the instrument becomes?",
+    "options": { "A": "Bipolar", "B": "Negatively charged", "C": "Positively charged", "D": "Neutral" },
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "question": "When a solid substance disappears completely as a gas on heating, the substance is said to have undergone?",
+    "options": { "A": "Sublimation", "B": "Crystallization", "C": "Distillation", "D": "Evaporation" },
+    "correct": "A"
+  },
+  {
+    "id": 37,
+    "question": "An electron can be added to a halogen atom to form a halide ion with?",
+    "options": { "A": "8 valence electrons", "B": "7 valence electrons", "C": "2 valence electrons", "D": "3 valence electrons" },
+    "correct": "A"
+  },
+  {
+    "id": 38,
+    "question": "Aluminum hydroxide is used in the dyeing industry as a?",
+    "options": { "A": "Dye", "B": "Dispersant", "C": "Salt", "D": "Mordant" },
+    "correct": "D"
+  },
+  {
+    "id": 39,
+    "question": "The most important element on the earth's crust is?",
+    "options": { "A": "Nitrogen", "B": "Hydrogen", "C": "Oxygen", "D": "Fluorine" },
+    "correct": "C"
+  },
+  {
+    "id": 40,
+    "question": "To obtain pure carbon(II) oxide from its mixture with carbon(IV) oxide, the mixture should be?",
+    "options": { "A": "Passed over heated copper(II) oxide", "B": "Bubbled through water", "C": "Bubbled through concentrated H2SO4", "D": "Bubbled through concentrated NaOH" },
+    "correct": "D"
+  }
+]
+}

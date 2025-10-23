@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "The sub-atomic particles located in the nucleus of an atom are?",
+    "options": {
+      "A": "Neutron and proton",
+      "B": "Proton and electron",
+      "C": "Proton and ions",
+      "D": "Neutron and electron"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "question": "The IUPAC nomenclature of the structure is?",
+    "options": {
+      "A": "3-chloro-3-methylbutane",
+      "B": "2,2-dichloro-3-methylbutane",
+      "C": "3-methylchlorobutane",
+      "D": "2-chloro-2-methylbutane"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "SO2 + O2 → 2SO3. In the reaction above, the most suitable catalyst is?",
+    "options": {
+      "A": "Chromium(VI) oxide",
+      "B": "Iron(III) oxide",
+      "C": "Copper(I) oxide",
+      "D": "Vanadium(V) oxide"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 4,
+    "question": "In the preparation of salts, the method employed will depend on the?",
+    "options": {
+      "A": "Composition",
+      "B": "Dissociating ability",
+      "C": "Stability to heat",
+      "D": "Precipitating ability"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "The following non-metal form acidic oxides with oxygen except?",
+    "options": {
+      "A": "Phosphorus",
+      "B": "Sulphur",
+      "C": "Carbon",
+      "D": "Chlorine"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 6,
+    "question": "How many neutrons are present in atom with mass number 37 and atomic number 17?",
+    "options": {
+      "A": "18",
+      "B": "20",
+      "C": "37",
+      "D": "17"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "question": "The sulphide that is commonly used in coating electric fluorescent tubes is?",
+    "options": {
+      "A": "Iron(II) sulphide",
+      "B": "Tin(II) sulphide",
+      "C": "Zinc sulphide",
+      "D": "Lead(IV) sulphide"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "question": "An organic compound which liberates carbon(IV) oxide from trioxocarbonate(IV) solution is likely to be?",
+    "options": {
+      "A": "C2H5OH",
+      "B": "C3H4",
+      "C": "C6H6",
+      "D": "CH3COOH"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 9,
+    "question": "Addition of sodium chloride to water to form a solution would lead to?",
+    "options": {
+      "A": "Increase in freezing point and increase in boiling point",
+      "B": "Increase in freezing point and decrease in boiling point",
+      "C": "Decrease in freezing point and decrease in boiling point",
+      "D": "Decrease in freezing point and increase in boiling point"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 10,
+    "question": "A chemical widely used as a fertilizer is?",
+    "options": {
+      "A": "Galena",
+      "B": "Bauxite",
+      "C": "Emerald",
+      "D": "Nitrochalk"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 11,
+    "question": "On the basis of the electrochemical series, which of these ions will show the greater tendency to be discharged at the cathode in an electrolytic cell?",
+    "options": {
+      "A": "Cu2+",
+      "B": "Sn2+",
+      "C": "Fe2+",
+      "D": "Zn2+"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 12,
+    "question": "Addition of charcoal to the filter bed of sand during water treatment for township supply is to?",
+    "options": {
+      "A": "Prevent goiter",
+      "B": "Prevent tooth decay",
+      "C": "Remove odour",
+      "D": "Kill germs"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 13,
+    "question": "Using the metal activity series, the metal that can liberate hydrogen gas from steam is?",
+    "options": {
+      "A": "Iron",
+      "B": "Copper",
+      "C": "Tin",
+      "D": "Lead"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "An organic compound with fishy smell is likely to have a general formula?",
+    "options": {
+      "A": "RCONHR1",
+      "B": "RCONH2",
+      "C": "RNH2",
+      "D": "RCOR1"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "N2O4 ⇔ 2NO2 (Δ = -ve). From the reaction above, which of these conditions would produce the highest equilibrium yield for N2O4?",
+    "options": {
+      "A": "Low temperature and high pressure",
+      "B": "Low temperature and low pressure",
+      "C": "High temperature and low pressure",
+      "D": "High temperature and high pressure"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "Zn + 2HCl → ZnCl2 + H2. What happens to zinc in the above reaction?",
+    "options": {
+      "A": "Oxidized",
+      "B": "A reactant",
+      "C": "Reduced",
+      "D": "A metal"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "An organic functional group which can likely decolorize ammoniacal silver nitrate is?",
+    "options": {
+      "A": "Alkene",
+      "B": "Alkane",
+      "C": "Alkyne",
+      "D": "Alkanol"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 18,
+    "question": "A colored gas that is known to be poisonous and can readily damage the mucous lining of the lungs is?",
+    "options": {
+      "A": "Hydrogen sulphide",
+      "B": "Carbon(II) oxide",
+      "C": "Chlorine",
+      "D": "Sulphur(IV) oxide"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 19,
+    "question": "In order to electroplate a spoon with silver, the arrangement of the electrolytic cell is?",
+    "options": {
+      "A": "The anode is a silver rod and the cathode is the spoon",
+      "B": "The anode is the spoon and the cathode is a silver rod",
+      "C": "The electrolyte is silver trioxonitrate(V) solution and the cathode is a silver rod",
+      "D": "The electrolyte is silver trioxonitrate(V) solution and the anode is the spoon"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "question": "An organic compound which decolorizes bromine water is likely to be?",
+    "options": {
+      "A": "C3H8",
+      "B": "C2H6",
+      "C": "C4H10",
+      "D": "C2H4"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 21,
+    "question": "Crude petroleum is converted to useful products by the process of?",
+    "options": {
+      "A": "Fractional crystallization",
+      "B": "Fractional distillation",
+      "C": "Filtration",
+      "D": "Chromatography"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "question": "An organic compound contains 69% carbon, 15.3% hydrogen and 30.7% oxygen. Calculate the empirical formula [C=12, H=1, O=16]",
+    "options": {
+      "A": "C4H12O",
+      "B": "C3H9O",
+      "C": "C4H9O",
+      "D": "C3H8O"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 23,
+    "question": "2H2 + O2 → 2H2O. From the equation above, calculate the volume of unreacted oxygen gas if a mixture of 50cm³ of hydrogen and 75cm³ of oxygen are involved",
+    "options": {
+      "A": "85cm³",
+      "B": "50cm³",
+      "C": "125cm³",
+      "D": "55cm³"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 24,
+    "question": "In which of the following will hydrogen form an ionic compound?",
+    "options": {
+      "A": "HCl",
+      "B": "NaH",
+      "C": "NH3",
+      "D": "CH4"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "If the volume of a given mass of a gas at 0ºC is 29.5cm³, what will be the volume of the gas at 15ºC, given that the pressure remains constant?",
+    "options": {
+      "A": "31.6",
+      "B": "62.2",
+      "C": "32.7",
+      "D": "31.1"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 26,
+    "question": "The reactions below represent neutralization reactions. In which of them is the value of ΔH highest?",
+    "options": {
+      "A": "CH3CH2COOH + KOH → CH3CH2COOK + H2O",
+      "B": "NH4OH + HCl → NH4 + H2O",
+      "C": "NaOH + HCl → NaCl + H2O",
+      "D": "CH3COOH + NaOH → CH3COONa + H2O"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 27,
+    "question": "The pollutant usually present in a city which generates its electricity from coal?",
+    "options": {
+      "A": "Fog",
+      "B": "Carbon(II) oxide",
+      "C": "Smog",
+      "D": "Sulphur(IV) oxide"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 28,
+    "question": "The dehydration of CH3CH2CH2CH2OH will give?",
+    "options": {
+      "A": "HC≡CCH2CH3",
+      "B": "CH2=CHCH2CH3",
+      "C": "CH3C≡CCH3",
+      "D": "CH3CH=CHCH3"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "question": "When heat is absorbed during a chemical reaction, the reaction is said to be",
+    "options": {
+      "A": "Thermodynamic",
+      "B": "Exothermic",
+      "C": "Isothermal",
+      "D": "Endothermic"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 30,
+    "question": "Which of the following best represents a solid-gas mixture?",
+    "options": {
+      "A": "Milk",
+      "B": "Kerosene",
+      "C": "Soil",
+      "D": "Smoke"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 31,
+    "question": "H+ + OH− → H2O. The equation above illustrates?",
+    "options": {
+      "A": "Precipitation",
+      "B": "Hydration",
+      "C": "Hydrolysis",
+      "D": "Neutralization"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 32,
+    "question": "Electrons enter into orbitals in order of increasing energy as exemplified by?",
+    "options": {
+      "A": "1s2 2s2 2px2 2py2 2pz0 3s0",
+      "B": "1s2 2s2 2px2 2py1 2pz1 3s0",
+      "C": "1s2 2s2 2px1 2py1 2pz1 3s1",
+      "D": "1s2 2s2 2px2 2py2 2pz0 3s1"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "Wrought iron is obtained by heating cast iron in a furnace with?",
+    "options": {
+      "A": "Magnetite",
+      "B": "Haematite",
+      "C": "Carbon(II) oxide",
+      "D": "Calcium trioxosilicate(IV)"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 34,
+    "question": "In the extraction of iron, hot air is introduced into the blast furnace through?",
+    "options": {
+      "A": "Valves",
+      "B": "Open-hearths",
+      "C": "Arcs",
+      "D": "Tuyeres"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 35,
+    "question": "How many bonding pairs are present in carbon(IV) oxide?",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "2",
+      "D": "1"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "question": "2-methylprop-1-ene is a structural isomer of?",
+    "options": {
+      "A": "But-1-yne",
+      "B": "2-methyl But-1-ene",
+      "C": "3-methyl prop-1-yne",
+      "D": "But-2-ene"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 37,
+    "question": "Alkanes are used mainly?",
+    "options": {
+      "A": "In the textile industry",
+      "B": "In the hydrogenation of oils",
+      "C": "As domestic and industrial fuels",
+      "D": "As fine chemicals"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 38,
+    "question": "What volume of water (dm³) will be added to 10 dm³ of 2.0 mol/dm³ HCl acid solution to give a final solution of 0.5 mol/dm³?",
+    "options": {
+      "A": "30",
+      "B": "40",
+      "C": "20",
+      "D": "50"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 39,
+    "question": "The table shows the compositions of the atmosphere of planet X. Which of these gases are present in higher percentages on Earth?",
+    "options": {
+      "A": "CO2 and O2",
+      "B": "N2 and CO2",
+      "C": "CO2, O2 and N2",
+      "D": "O2 and N2"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "question": "Hard water is water with high concentrations of dissolved ions, in particular calcium and?",
+    "options": {
+      "A": "Magnesium ions",
+      "B": "Nitrogen ions",
+      "C": "Phosphorus ions",
+      "D": "Helium ions"
+    },
+    "correct": "A"
+  }
+]
+}

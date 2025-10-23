@@ -1,0 +1,421 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "What did the author of the book study?",
+    "options": {
+      "A": "B.Sc (Ed) Mathematics",
+      "B": "B.A English Language",
+      "C": "B.A Literary Studies",
+      "D": "BSc Political Science"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 2,
+    "question": "The book described Talle as a?",
+    "options": {
+      "A": "The precious child",
+      "B": "The quiet one",
+      "C": "The friendly child",
+      "D": "The holy child"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "Who was Omar's immediate sister?",
+    "options": {
+      "A": "Ummi",
+      "B": "Omar",
+      "C": "Salma",
+      "D": "Teemah"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "question": "Ummi's husband wanted to study law but the providence chose that he study _____",
+    "options": {
+      "A": "commerce",
+      "B": "accounting",
+      "C": "law",
+      "D": "history"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "The full meaning of IPO is ______",
+    "options": {
+      "A": "Independent Police Officer",
+      "B": "International Police Officer",
+      "C": "Investigating Police Officer",
+      "D": "Investigative Police Officer"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "What is Ummi's Occupation?",
+    "options": {
+      "A": "Trader",
+      "B": "Teacher",
+      "C": "Business woman",
+      "D": "Nurse"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 7,
+    "question": "What is Ummi Matric Number?",
+    "options": {
+      "A": "UG0001",
+      "B": "UG00001",
+      "C": "UG001",
+      "D": "UG0011"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "question": "What is full meaning of EMEC?",
+    "options": {
+      "A": "Examination Malpractice and Ethics Committee",
+      "B": "Examining Malpractice and Ethics Committee",
+      "C": "Examination Malpractice and Ethics Convention",
+      "D": "Examination Management and Ethics Committee"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "question": "What is the full name of Salma?",
+    "options": {
+      "A": "Salma Mohammed",
+      "B": "Salma Johnson",
+      "C": "Salma Samuel",
+      "D": "Salma Ahmed"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "Who was the narrator of The Life Changer?",
+    "options": {
+      "A": "Salma",
+      "B": "Ummi",
+      "C": "Omar",
+      "D": "Bint"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "question": "How old is Bint?",
+    "options": {
+      "A": "6 years old",
+      "B": "4 years old",
+      "C": "5 years old",
+      "D": "7 years old"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "question": "What question did Bint ask her teacher?",
+    "options": {
+      "A": "How to say good morning",
+      "B": "How to say what is your name",
+      "C": "How to say you're welcome",
+      "D": "How to say that's very good"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "Who were the people in the car?",
+    "options": {
+      "A": "Lawal and Labaran",
+      "B": "Habib and Labaran",
+      "C": "Lawal and Kabir",
+      "D": "Labara and Zarki"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "How much did Habib give Tomiwa personally?",
+    "options": {
+      "A": "Ten thousand naira",
+      "B": "Five Thousand Naira",
+      "C": "Thirty thousand naira",
+      "D": "Twenty Thousand naira"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 15,
+    "question": "How much did Tomiwa give her roommates?",
+    "options": {
+      "A": "Five thousand naira",
+      "B": "Ten thousand Naira",
+      "C": "Fifteen thousand Naira",
+      "D": "Twenty thousand naira"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "What was Omar's JAMB exam?",
+    "options": {
+      "A": "230",
+      "B": "250",
+      "C": "220",
+      "D": "260"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "question": "What is the full meaning of the acronym EMAL?",
+    "options": {
+      "A": "Examination Malpractice",
+      "B": "Examination misconduct",
+      "C": "Examination management",
+      "D": "Examination Manners"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "question": "Who introduced the snail delicacy?",
+    "options": {
+      "A": "Salma",
+      "B": "Ngozi",
+      "C": "Ada",
+      "D": "Tomiwa"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 19,
+    "question": "\"Nothing happened, My friend didn't feel like giving you her number so she gave you mine instead\" Who is the friend?",
+    "options": {
+      "A": "Salma",
+      "B": "Ada",
+      "C": "Tomiwa",
+      "D": "Ngozi"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "question": "It might be said that there is some kind of sibling rivalry between",
+    "options": {
+      "A": "Teemah and Bint",
+      "B": "Teemah and Omar",
+      "C": "Jamila and Omar",
+      "D": "Jamila and Teemah"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 21,
+    "question": "One reason the narrator had the habit of entering her children's room unannounced was because",
+    "options": {
+      "A": "to monitor their hygiene and tidiness",
+      "B": "to monitor their prayer life",
+      "C": "to check on their welfare",
+      "D": "to keep them studying their books"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "According to the story, one of the following is true",
+    "options": {
+      "A": "Tomiwa and Ngozi are neighbours",
+      "B": "Ada and Salma are course mates",
+      "C": "Salma and Tomiwa are rivals",
+      "D": "Salma and Tomiwa are roommates"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 23,
+    "question": "Early in which month did the southwest monsoon break?",
+    "options": {
+      "A": "August",
+      "B": "May",
+      "C": "July",
+      "D": "June"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 26,
+    "question": "What was Baby's real name?",
+    "options": {
+      "A": "Navomi Ipe",
+      "B": "Estha",
+      "C": "Rachel",
+      "D": "Kochamma"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 27,
+    "question": "From the words lettered A to D, choose the word that rhymes with the given word: Prison",
+    "options": {
+      "A": "rising",
+      "B": "risen",
+      "C": "potion",
+      "D": "motion"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "From the words lettered A to D, choose the word that rhymes with the given word: Crate",
+    "options": {
+      "A": "Great",
+      "B": "Mint",
+      "C": "Creek",
+      "D": "Treat"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 29,
+    "question": "From the words lettered A to D, choose the word that rhymes with the given word: Phone",
+    "options": {
+      "A": "frown",
+      "B": "grown",
+      "C": "gown",
+      "D": "brown"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "question": "Choose the word that has a different stress pattern",
+    "options": {
+      "A": "embrace",
+      "B": "suspect(V)",
+      "C": "member",
+      "D": "project(V)"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "Choose the option that has the same consonant sound as the one represented by the letter(s) underlined: Watched",
+    "options": {
+      "A": "lived",
+      "B": "address",
+      "C": "letter",
+      "D": "match"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 32,
+    "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the options lettered A to D, choose the appropriate answer: John's watch is made of GOLD.",
+    "options": {
+      "A": "Whose watch is made of gold?",
+      "B": "What is made of gold?",
+      "C": "Is John's watch made of silver?",
+      "D": "Is John's necklace made of gold?"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the options lettered A to D, choose the one which is the appropriate answer: She WORKS at the hospital.",
+    "options": {
+      "A": "Who works at the hospital?",
+      "B": "Where does she work?",
+      "C": "Does she work at the hospital?",
+      "D": "What does she do at the hospital?"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 34,
+    "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the options lettered A to D, choose the one which is the appropriate answer: Aderonke STATED she had a right to her privacy.",
+    "options": {
+      "A": "Did Aderonke lament she had a right to her privacy?",
+      "B": "Did Omowunmi state she had a right to her privacy?",
+      "C": "Did Aderonke state she had a right to his privacy?",
+      "D": "Did Aderonke state she had a right to her openness?"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "Choose the option that has the same consonant sound as the one represented by the letter(s) underlined: National",
+    "options": {
+      "A": "sugar",
+      "B": "raise",
+      "C": "glass",
+      "D": "tree"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 36,
+    "question": "Identify the word that has the stress on the first syllable",
+    "options": {
+      "A": "Hotel",
+      "B": "Esteem",
+      "C": "Police",
+      "D": "Table"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 37,
+    "question": "From the options lettered A-D, choose the option that is most nearly opposite in meaning to the underlined word: Twice, he was repulsed with heavy losses",
+    "options": {
+      "A": "repelled",
+      "B": "gratified",
+      "C": "irated",
+      "D": "shocked"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "question": "I only visited Chidi. This means that",
+    "options": {
+      "A": "None of the above",
+      "B": "I didn't do anything aside from visiting Chidi",
+      "C": "I didn't go with anyone to visit Chidi",
+      "D": "I visited Chidi and his friends"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 39,
+    "question": "From the options lettered A-D, choose the option that is most nearly opposite in meaning to the underlined word: My father is parsimonious",
+    "options": {
+      "A": "thrifty",
+      "B": "ungenerous",
+      "C": "frugal",
+      "D": "generous"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "question": "From the options lettered A-D, choose the option that is most nearly opposite in meaning to the underlined word: Last Easter was an austere period.",
+    "options": {
+      "A": "harsh",
+      "B": "severe",
+      "C": "prosperous",
+      "D": "sour"
+    },
+    "correct": "C"
+  }
+]
+}

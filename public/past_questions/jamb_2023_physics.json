@@ -1,0 +1,278 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "The property of wave shown in the diagram above is?",
+    "options": {
+      "A": "Diffraction",
+      "B": "Refraction",
+      "C": "Polarisation",
+      "D": "Interference"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following statements regarding the application of electrical conduction via gases is/are correct? Electrical conduction in gas is applied in: (i) Identification of gases (ii) Lighting/fluorescent tubes (iii) Photocells (iv) Cathode ray oscilloscope/T.V. tubes",
+    "options": {
+      "A": "(i), (iii) and (iv) only",
+      "B": "(i), (ii) and (iv) only",
+      "C": "(ii), (iii) and (iv) only",
+      "D": "(i), (ii) and (iii) only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 3,
+    "question": "Find the tension in the two cords shown in the figure above. Neglect the mass of the cords, angle = 38°, mass = 220 kg. [Take g = 9.8 m/s²]",
+    "options": {
+      "A": "T1 = 2864 N, T2 = 3612 N",
+      "B": "T1 = 3612 N, T2 = 2864 N",
+      "C": "T1 = 3502 N, T2 = 2760 N",
+      "D": "T1 = 2760 N, T2 = 3502 N"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "question": "A missile is launched with a speed of 75 m/s at an angle of 22° above the surface. Find the horizontal range achieved. [Take g = 10 m/s²]",
+    "options": {
+      "A": "195 m",
+      "B": "271 m",
+      "C": "391 m",
+      "D": "136 m"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "question": "On a hot day, temperature = 40°C, partial pressure of water vapor = 38.8 mmHg. Find the relative humidity.",
+    "options": {
+      "A": "70",
+      "B": "62",
+      "C": "80",
+      "D": "42"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 6,
+    "question": "Calculate the absolute pressure at the bottom of a lake at a depth of 32.8 m. Water density = 1000 kg/m³, air pressure = 101.3 kPa. [Take g = 9.8 m/s²]",
+    "options": {
+      "A": "422.7 kPa",
+      "B": "220.14 kPa",
+      "C": "464.53 kPa",
+      "D": "321.74 kPa"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "question": "The terminals of a battery of emf 24 V and internal resistance 1 Ω is connected to an external resistor 5 Ω. Find the terminal p.d.",
+    "options": {
+      "A": "18.0 V",
+      "B": "12.0 V",
+      "C": "16.0 V",
+      "D": "20.0 V"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 8,
+    "question": "A lorry accelerates uniformly at 4 m/s² and covers 250 m in 10 s. How far will it travel in the next 10 s?",
+    "options": {
+      "A": "650 m",
+      "B": "900 m",
+      "C": "800 m",
+      "D": "250 m"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "question": "The half-life of a radioactive material is 12 days. Calculate the decay constant.",
+    "options": {
+      "A": "0.8663 day⁻¹",
+      "B": "0.04331 day⁻¹",
+      "C": "0.17325 day⁻¹",
+      "D": "0.05775 day⁻¹"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 10,
+    "question": "The number of holes in an intrinsic semiconductor",
+    "options": {
+      "A": "is not equal to the number of free electrons",
+      "B": "is greater than the number of free electrons",
+      "C": "is equal to the number of free electrons",
+      "D": "is less than the number of free electrons"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "Name the type of equilibrium for each position of the ball",
+    "options": {
+      "A": "A - unstable, B - neutral, C - stable",
+      "B": "A - stable, B - neutral, C - unstable",
+      "C": "A - stable, B - unstable, C - neutral",
+      "D": "A - unstable, B - stable, C - neutral"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 12,
+    "question": "Rainbow formation is as a result of the combination of which of the following phenomena? (i) Reflection (ii) Dispersion (iii) Total internal reflection (iv) Refraction",
+    "options": {
+      "A": "(ii) and (iv) only",
+      "B": "(i), (iii) and (iv) only",
+      "C": "(ii), (iii) and (iv) only",
+      "D": "(i), (ii) and (iv) only"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 13,
+    "question": "The surface temperature of a swimming pool on a warm day is 25ºC and the temperature at the bottom is 15ºC. The swimming pool has a surface area of 620 m² and a depth of 1.5 m. Find the rate at which energy is transferred by conduction. [Thermal conductivity of water k = 0.6071 W/m·K]",
+    "options": {
+      "A": "2.5 kW",
+      "B": "250 kW",
+      "C": "300 kW",
+      "D": "3.0 kW"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 14,
+    "question": "Which process is responsible for production of energy in stars?",
+    "options": {
+      "A": "Nuclear reaction",
+      "B": "Nuclear fission",
+      "C": "Nuclear fusion",
+      "D": "Radioactive decay"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "How much net work is required to accelerate a 1200 kg car from 10 m/s to 15 m/s?",
+    "options": {
+      "A": "1.95×10^5 J",
+      "B": "1.35×10^4 J",
+      "C": "7.5×10^4 J",
+      "D": "6.0×10^4 J"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "A wire of radius 0.2 mm is extended by 0.5% of its length when supported by a load of 1.5 kg. Determine the Young's modulus for the material of the wire. [Take g = 10 m/s²]",
+    "options": {
+      "A": "2.4×10^10 N/m²",
+      "B": "1.5×10^10 N/m²",
+      "C": "2.4×10^9 N/m²",
+      "D": "1.3×10^10 N/m²"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "A man swung an object of mass 2 kg in a circular path with a rope 1.2 m long. If the object was swung at 120 rev/min, find the tension in the rope.",
+    "options": {
+      "A": "400 N",
+      "B": "288 N",
+      "C": "240 N",
+      "D": "379 N"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "A 200 kg load is raised using a 110 m long lever. The load is 10 m from the pivot P. If the efficiency of the lever is 80%, find the effort E required to lift the load. [Take g = 10 m/s²]",
+    "options": {
+      "A": "250 N",
+      "B": "300 N",
+      "C": "450 N",
+      "D": "200 N"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "An air bubble of radius 4.5 cm initially at a depth of 12 m below the water surface rises to the surface. If the atmospheric pressure is equal to 10.34 m of water, find the radius of the bubble just before it reaches the surface.",
+    "options": {
+      "A": "6.43 cm",
+      "B": "8.24 cm",
+      "C": "4.26 cm",
+      "D": "5.82 cm"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 20,
+    "question": "A parallel plate capacitor separated by an air gap is made of 0.8 m² tin plates and 20 mm apart. It is connected to 120 V battery. Find the charge on each plate. [ε₀ = 8.85×10⁻¹² F/m]",
+    "options": {
+      "A": "3.54 nC",
+      "B": "42.5 nC",
+      "C": "35.4 nC",
+      "D": "4.25 nC"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "question": "What is the amount of heat required to raise the temperature of a 0.02 kg ice cube from −10°C to 10°C? [Specific latent heat of fusion of ice = 3.34×10⁵ J/kg, Specific heat capacity of water = 4200 J/kg·K, Specific heat capacity of ice = 2100 J/kg·K]",
+    "options": {
+      "A": "6680 J",
+      "B": "1680 J",
+      "C": "7520 J",
+      "D": "7940 J"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following thermometers measures temperature from the thermal radiation emitted by objects?",
+    "options": {
+      "A": "Pyrometer thermometer",
+      "B": "Platinum resistance thermometer",
+      "C": "Thermocouple thermometer",
+      "D": "Constant pressure gas thermometer"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "question": "A 400 N box is being pushed across a level floor at a constant speed by a force P of 100 N at an angle of 30° to the horizontal. Find the coefficient of kinetic friction between the box and the floor.",
+    "options": {
+      "A": "0.19",
+      "B": "0.24",
+      "C": "0.40",
+      "D": "0.22"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 24,
+    "question": "Light of wavelength 589 nm in vacuum passes through a piece of fused quartz of index of refraction n = 1.458. What is the frequency of the light in fused quartz? [Speed of light c = 3.00×10⁸ m/s]",
+    "options": {
+      "A": "5.09×10¹⁵ Hz",
+      "B": "5.09×10¹⁴ Hz",
+      "C": "1.77×10¹⁵ Hz",
+      "D": "1.77×10¹⁴ Hz"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "A simple pendulum has a period of 5.77 seconds. When the pendulum is shortened by 3 m, the period is 4.60 seconds. Calculate the new length of the pendulum.",
+    "options": {
+      "A": "5.23 m",
+      "B": "6.42 m",
+      "C": "4.87 m",
+      "D": "7.26 m"
+    },
+    "correct": "B"
+  }
+]
+}

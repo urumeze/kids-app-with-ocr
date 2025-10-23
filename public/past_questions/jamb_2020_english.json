@@ -1,0 +1,423 @@
+{"quiz":[
+  {
+    "id": "Passage",
+    "question": "Theatre in the recent past used to be a very popular art in traditional African society. It used to be a point of intersection where members of the community not only come to entertain themselves, 'but join heads together'. In the traditional context of African drama, theatre was a popular and respectable institution which preserved the people's culture and tradition. Theatre was popular with the people because it emphasized community participation, peace and progress. Presentations focused on the people's lives, their aspirations, fears, and hopes. But today, the situation is different. Theatre is becoming very unpopular.\n\nAfrica of the present age is pre-occupied with many problems yearning for immediate solutions. The continent is facing hydra-head challenges on the political, social, and economic scenes. In a world where Science and Technology are seen as the solutions to these problems, little attention is paid to the arts. Literature generally, and drama in particular is often rated very low on the utility-scale. Many Africans today look at drama and theatre as a mere thing of fun, a joke so to say.\n\nElitism is another barrier that militates against the appreciation of theatre as a communal art. Folk theatre is appreciated by a negligible number of people, contemporary focus is on literary theatre. Unfortunately, literary theatre only pretends to serve the interest of its society while in reality, it has a foreign audience in mind. The use of European and American theatrical conventions by academic playwrights can bear witness to this anomaly.\n\nThe popularity of literary African theatre is further marred by the medium of communication as most literary dramas in Africa are written in foreign languages which are not understood by many Africans. The question often asked is whether the artist should climb down to the level of his community or stay at his exalted height and wait for the community to gradually move up to him.",
+    "options": null,
+    "correct": null
+  },
+  {
+    "id": 2,
+    "question": "Theatre was popular in Africa because__________",
+    "options": {
+      "A": "was traditional and simple in nature",
+      "B": "dealt with the political, social, and economic problems of the society",
+      "C": "was a source of fun",
+      "D": "was communal and reflected the common concerns of the people"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 3,
+    "question": "One of the reasons why theatre is unpopular in modern Africa is that it_________",
+    "options": {
+      "A": "is regarded as not being of much use",
+      "B": "only deals with culture and tradition",
+      "C": "lacks scientific and academic bases",
+      "D": "is always funny and looked down upon"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "question": "In the passage, the term 'theatre' and 'drama' are used _______",
+    "options": {
+      "A": "differently",
+      "B": "concurrently",
+      "C": "interchangeably",
+      "D": "sparingly"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "question": "One of the arguments in the passage is that academic playwrights_______",
+    "options": {
+      "A": "express themselves only in foreign languages",
+      "B": "serve as a catalyst in the society's appreciation of theatre",
+      "C": "work against the common man's appreciation of theatre",
+      "D": "make theatre popular in traditional societies"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "By the expression 'climb down', the author implies that modern playwrights should _______",
+    "options": {
+      "A": "be simplistic in the use of language",
+      "B": "not move up",
+      "C": "use language that is most appreciated by the people",
+      "D": "wait for the community to catch up with them"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 7,
+    "question": "The financing of the university will always be a vexatious problem not only because of the need for it to maintain a level of independence that allows for the thriving of intellectual pursuit but also for the size of the funding that is required to maintain an acceptable level of infrastructure in a modern university. The experience of the Nigerian university in recent years has been almost alarming. The funding levels required constitute sufficient reasons for diversifying the sources. Even if the government was in a position to meet all of the university's financial requirements, it is desirable that every effort be made to reduce such contribution in the interest of university autonomy. The university should seek to become dependent, in a substantial way, on funds generated from within. The sources of funding the university should be diversified as much as possible. We can identify four sources - government, industry, students, and individual philanthropists. Each source has its own set of problems which ought to be addressed.",
+    "options": null,
+    "correct": null
+  },
+  {
+    "id": 8,
+    "question": "It is important for university to be independent so that they can________",
+    "options": {
+      "A": "attract funds from industries",
+      "B": "determine their goals",
+      "C": "be left to expand without any hindrances",
+      "D": "carry out effective research"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "question": "The writer advocates for multiple sources of university funding in order to ______",
+    "options": {
+      "A": "enhance university autonomy",
+      "B": "reduce dependence on the government",
+      "C": "ensure that the numerous needs of the universities are met",
+      "D": "maintain acceptable levels of infrastructural development"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "The expression 'intricate issues of special concern' means________",
+    "options": {
+      "A": "important policy statements",
+      "B": "interwoven topics of significance",
+      "C": "complex matters requiring careful thought",
+      "D": "knotty problems that concern everybody"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "The word 'diversified' as used in the passage means_________",
+    "options": {
+      "A": "differentiated",
+      "B": "varied",
+      "C": "diffused",
+      "D": "widened"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "question": "The source of the university funding emphasized in the passage is________",
+    "options": {
+      "A": "government",
+      "B": "industry",
+      "C": "the general public",
+      "D": "students"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 13,
+    "question": "This set of questions is based on Bolaji Abdullahi's novel 'Sweet Sixteen'.",
+    "options": null,
+    "correct": null
+  },
+  {
+    "id": 14,
+    "question": "_________ almost fainted when he heard that some students were caught on the school's basketball court at night having sex.",
+    "options": {
+      "A": "Mr James",
+      "B": "Aliya",
+      "C": "Mr Bello",
+      "D": "Bolaji"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "Adoringly, Aliya was referred to as ________",
+    "options": {
+      "A": "Journalist",
+      "B": "Sex addict",
+      "C": "Beautiful lady",
+      "D": "First lady"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "question": "KOTL means ___________",
+    "options": {
+      "A": "Kiss on the lips",
+      "B": "Kiss on the lab",
+      "C": "Kiss on-top the lips",
+      "D": "Kiss on-top the legs"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "How old was Aliya in the Novel?",
+    "options": {
+      "A": "16",
+      "B": "18",
+      "C": "17",
+      "D": "19"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "question": "Mr Bello is a/an _______ by profession in the novel?",
+    "options": {
+      "A": "accountant",
+      "B": "engineer",
+      "C": "nurse",
+      "D": "journalist"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 19,
+    "question": "These questions test your knowledge of word stress patterns in English.",
+    "options": null,
+    "correct": null
+  },
+  {
+    "id": 20,
+    "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Choose the one with the different stress pattern",
+    "options": {
+      "A": "commit",
+      "B": "compare",
+      "C": "complete",
+      "D": "column"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 21,
+    "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Choose the one with the different stress pattern",
+    "options": {
+      "A": "apparent",
+      "B": "attractive",
+      "C": "devastate",
+      "D": "infections"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 22,
+    "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Choose the one with the different stress pattern",
+    "options": {
+      "A": "physique",
+      "B": "menace",
+      "C": "challenge",
+      "D": "reckless"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "question": "From the words lettered A to D, choose the one that has the correct stress for 'Calculator'",
+    "options": {
+      "A": "CAL-cu-la-tor",
+      "B": "cal-CU-la-tor",
+      "C": "cal-cu-LA-tor",
+      "D": "cal-cu-la-TOR"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "question": "From the words lettered A to D, choose the one that has the correct stress for 'Criticism'",
+    "options": {
+      "A": "cri-ti-ci-SM",
+      "B": "cri-ti-CI-sm",
+      "C": "cri-TI-ci-sm",
+      "D": "CRI-ti-ci-sm"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "From the words lettered A to D, choose the one that has the correct stress for 'Expenditure'",
+    "options": {
+      "A": "EX-pen-di-ture",
+      "B": "ex-PEN-di-ture",
+      "C": "ex-pen-DI-ture",
+      "D": "ex-pen-di-TURE"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 26,
+    "question": "The man, as well as the woman ________ arrested",
+    "options": {
+      "A": "have been",
+      "B": "has been",
+      "C": "is been",
+      "D": "are being"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 27,
+    "question": "Many a ____________ to understand me",
+    "options": {
+      "A": "man fail",
+      "B": "man fails",
+      "C": "men fail",
+      "D": "men fails"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "It is you that __________ to write the letter",
+    "options": {
+      "A": "is suppose",
+      "B": "is supposed",
+      "C": "are suppose",
+      "D": "are supposed"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 29,
+    "question": "My father _______ on the floor",
+    "options": {
+      "A": "has lied",
+      "B": "have lied",
+      "C": "have laid",
+      "D": "has lain"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 30,
+    "question": "This class __________students and teachers",
+    "options": {
+      "A": "comprise",
+      "B": "comprises",
+      "C": "comprise of",
+      "D": "comprises of"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 31,
+    "question": "Before I arrived, the choir _______ the hymn",
+    "options": {
+      "A": "have sing",
+      "B": "has sing",
+      "C": "had sung",
+      "D": "have sang"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 32,
+    "question": "The soldier _________ his gun on the wall after the armed robber______",
+    "options": {
+      "A": "hang/has been hung",
+      "B": "hung/had been hanged",
+      "C": "hanged/has been hanged",
+      "D": "hung/ has been hunged"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "Thank you for the __________ of presenting my paper.",
+    "options": {
+      "A": "privelege",
+      "B": "priviledge",
+      "C": "privilege",
+      "D": "preveledge"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 34,
+    "question": "My brother graduated from university last year; he will soon_________",
+    "options": {
+      "A": "convocate",
+      "B": "convoke",
+      "C": "convoce",
+      "D": "matriculate"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 35,
+    "question": "You need to __________ your points",
+    "options": {
+      "A": "expanciate",
+      "B": "expaciate",
+      "C": "expatiate",
+      "D": "expantiate"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 36,
+    "question": "All the people in the bus died in that _________ accident",
+    "options": {
+      "A": "serious",
+      "B": "reckless",
+      "C": "fatal",
+      "D": "dangerous"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 37,
+    "question": "All the ________ were stolen by the thieves",
+    "options": {
+      "A": "arm and ammunition",
+      "B": "arms and ammunition",
+      "C": "arm and ammunitions",
+      "D": "arms and ammunitions"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "question": "What a ________! the more you look, the less you see",
+    "options": {
+      "A": "wonder",
+      "B": "miracle",
+      "C": "challenge",
+      "D": "paradox"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 39,
+    "question": "The soldiers pledge their ________ loyalty to the new government",
+    "options": {
+      "A": "enduring",
+      "B": "tireless",
+      "C": "complete",
+      "D": "questionable"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 40,
+    "question": "After interrogation, the police ______ the information from the suspect.",
+    "options": {
+      "A": "exposed",
+      "B": "wrung",
+      "C": "received",
+      "D": "obtained"
+    },
+    "correct": "B"
+  }
+]
+}

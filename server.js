@@ -1,9 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
-import fetch from "node-fetch"; // Assuming you need this elsewhere
+import fetch from "node-fetch";
 import path from "path";
 import { fileURLToPath } from "url";
-import { ImageAnnotatorClient } from "@google-cloud/vision"; // Corrected import for Vision client
+import { ImageAnnotatorClient } from "@google-cloud/vision";
+import fs from "fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,58 +17,106 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
-let visionClient; // Declare visionClient at a scope accessible by the OCR endpoint
+let visionClient;
 
-// --- VISION CLIENT INITIALIZATION ---
-// This block should run once when your application starts
+// --- GOOGLE VISION INITIALIZATION ---
 if (process.env.GOOGLE_CREDENTIALS_JSON) {
+  // Inline JSON (for Render)
   try {
     const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
-    // Initialize the Vision client using the imported ImageAnnotatorClient
     visionClient = new ImageAnnotatorClient({ credentials });
-    console.log("✅ Google Cloud Vision client initialized with explicit credentials.");
+    console.log("✅ Vision client initialized with inline JSON");
   } catch (error) {
-    console.error("❌ Error parsing GOOGLE_CREDENTIALS_JSON environment variable:", error);
-    process.exit(1); // It's critical to have valid credentials
+    console.error("❌ Error parsing GOOGLE_CREDENTIALS_JSON:", error);
+    process.exit(1);
+  }
+} else if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
+  // File path (for local dev)
+  try {
+    if (!fs.existsSync(process.env.GOOGLE_APPLICATION_CREDENTIALS)) {
+      throw new Error("File not found: " + process.env.GOOGLE_APPLICATION_CREDENTIALS);
+    }
+    visionClient = new ImageAnnotatorClient({
+      keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
+    });
+    console.log("✅ Vision client initialized with key file path");
+  } catch (error) {
+    console.error("❌ Error using GOOGLE_APPLICATION_CREDENTIALS path:", error);
+    process.exit(1);
   }
 } else {
-  console.error("❌ GOOGLE_CREDENTIALS_JSON environment variable not found. " +
-                "Vision API will not work. Please set it on Render.");
-  process.exit(1); // Exit as Vision API is a core feature
+  console.error("❌ No Google credentials found");
+  process.exit(1);
 }
-
 
 // === OCR ENDPOINT ===
 app.post("/api/ocr", async (req, res) => {
   if (!visionClient) {
     console.error("❌ OCR request received but Vision client was not initialized.");
-    return res.status(500).json({ error: "Vision API service unavailable due to initialization failure." });
+    return res.status(500).json({ error: "Vision API service unavailable." });
   }
 
   try {
-    const { image } = req.body;
-    if (!image) {
-      console.error("❌ No image received in request");
-      return res.status(400).json({ error: "No image provided" });
+    const { images } = req.body; // expects array of base64 strings
+    if (!images || !Array.isArray(images) || images.length === 0) {
+      return res.status(400).json({ error: "No images provided" });
     }
 
-    console.log("📷 Received image, length:", image.length);
+    console.log("📸 OCR request received. Image count:", images.length);
 
-    const [result] = await visionClient.textDetection({ image: { content: image } });
+    let fullText = "";
 
-    const text =
-      result.fullTextAnnotation?.text ||
-      (result.textAnnotations && result.textAnnotations[0]?.description) ||
-      "";
+    // Run OCR in parallel for speed
+    const results = await Promise.all(
+      images.map((img, idx) => {
+        if (!img) {
+          console.warn(`⚠️ Image at index ${idx} is empty or invalid`);
+          return null;
+        }
 
-    res.json({ text });
+        // strip base64 prefix if included
+        const cleanImg = img.includes("base64,") ? img.split("base64,")[1] : img;
+
+        return visionClient
+          .textDetection({ image: { content: cleanImg } })
+          .catch(err => {
+            console.error(`❌ Vision API error on image ${idx}:`, err.message);
+            return null;
+          });
+      })
+    );
+
+    results.forEach((result, i) => {
+      if (!result) {
+        console.warn(`⚠️ Skipping image ${i}, no OCR result`);
+        return;
+      }
+      const [annotation] = result;
+      const text =
+        annotation.fullTextAnnotation?.text ||
+        (annotation.textAnnotations && annotation.textAnnotations[0]?.description) ||
+        "";
+      if (text) {
+        console.log(`✅ OCR success for image ${i}, extracted length: ${text.length}`);
+      } else {
+        console.warn(`⚠️ No text found in image ${i}`);
+      }
+      fullText += text + "\n\n";
+    });
+
+    if (!fullText.trim()) {
+      return res.status(422).json({ error: "No readable text found in images" });
+    }
+
+    res.json({ text: fullText.trim() });
   } catch (err) {
-    console.error("❌ OCR error:", err);
-    res.status(500).json({ error: "OCR failed", details: err.message });
+    console.error("❌ Unexpected OCR error:", JSON.stringify(err, null, 2));
+    res.status(500).json({
+      error: "OCR failed",
+      details: err.message || err.toString(),
+    });
   }
 });
-
-
 
 
 // === 1. EXTRACT ENDPOINT ===
@@ -229,13 +278,61 @@ app.post("/api/score", async (req, res) => {
   }
 });
 
-// Fallback: frontend
+
+// === 5. PAST QUESTIONS ENDPOINT ===
+/*app.get("/api/past/jamb/:year/:subject", async (req, res) => {
+  try {
+    const { year, subject } = req.params;
+
+    const filePath = path.join(
+      __dirname,
+      "public",
+      "past_questions",
+      `jamb_${year}_${subject}.json`
+    );
+
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: "Questions not found" });
+    }
+
+    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    res.json(data);
+  } catch (error) {
+    console.error("❌ Error loading past questions:", error);
+    res.status(500).json({ error: "Failed to load past questions" });
+  }
+});*/
+
+// GET a past quiz JSON
+app.get("/api/past-quiz/:year/:subject", (req, res) => {
+  try {
+    const { year, subject } = req.params;
+
+    const filePath = path.join(__dirname, "public", "past_questions", `jamb_${year}_${subject}.json`);
+
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: "Past question file not found" });
+    }
+
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    const quizData = JSON.parse(fileContent);
+
+    res.json(quizData);
+  } catch (err) {
+    console.error("Error loading past quiz:", err);
+    res.status(500).json({ error: "Failed to load past quiz" });
+  }
+});
+
+
+
+// Fallback frontend
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "kids-app.html"));
 });
 
 // Start server
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
 });

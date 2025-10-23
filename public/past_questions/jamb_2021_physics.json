@@ -1,0 +1,442 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "The slope of the straight line displacement-time graph indicates?",
+    "options": {
+      "A": "distance traveled",
+      "B": "uniform velocity",
+      "C": "uniform acceleration",
+      "D": "uniform speed"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 2,
+    "question": "A man will exert the greatest pressure when he?",
+    "options": {
+      "A": "lies flat on his back",
+      "B": "lies on his belly",
+      "C": "stands on both feet",
+      "D": "stands on the toes of one foot"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 3,
+    "question": "Which of the units of the following physical quantities are derived?\nI. Area\nII. Thrust\nIII. Pressure\nIV. Mass",
+    "options": {
+      "A": "I, II, III and IV",
+      "B": "I, II, and III only",
+      "C": "I, II, and IV only",
+      "D": "I and IV only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "question": "A ball of mass 0.5 kg moving at 10 m/s collides with another ball of equal mass at rest. If the two balls move off together after the impact, calculate their common velocity.",
+    "options": {
+      "A": "0.2 m/s",
+      "B": "0.5 m/s",
+      "C": "5.0 m/s",
+      "D": "5.5 m/s"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "question": "The motion of a body is simple harmonic if the?",
+    "options": {
+      "A": "acceleration is always directed towards a fixed point",
+      "B": "path of motion is a straight line",
+      "C": "acceleration is proportional to the square of the distance from a fixed point",
+      "D": "acceleration is constant and directed towards a fixed point"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is not correct about the molecules of a substance in a gaseous state? They?",
+    "options": {
+      "A": "are in a constant state of motion",
+      "B": "have different speeds",
+      "C": "have a temperature which is measured by the average kinetic energy",
+      "D": "The collision between the gases is perfectly inelastic"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 7,
+    "question": "A given mass of gas has a pressure of 80 N/m² at a temperature of 47ºC. If the temperature is reduced to 27ºC with volume remaining constant, the new pressure is?",
+    "options": {
+      "A": "46.0 N/m²",
+      "B": "75.0 N/m²",
+      "C": "80.0 N/m²",
+      "D": "85.3 N/m²"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "question": "0.5 kg of water at 10ºC is completely converted to ice at 0ºC by extracting 88,000 J of heat from it. If the specific heat capacity of water is 4200 J/kg°C, calculate the specific latent heat of fusion of ice.",
+    "options": {
+      "A": "9.0 kJ/kg",
+      "B": "84.0 kJ/kg",
+      "C": "134.0 kJ/kg",
+      "D": "168.0 kJ/kg"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following instruments may be used to measure relative humidity?",
+    "options": {
+      "A": "Hydrometer",
+      "B": "Manometer",
+      "C": "Hygrometer",
+      "D": "Hypsometer"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "question": "A source of sound produces waves in air of wavelength 1.65 m. If the speed of sound in air is 330 m/s, the period of vibration in air is?",
+    "options": {
+      "A": "200",
+      "B": "0.005",
+      "C": "0.5",
+      "D": "0.02"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "A boy standing some distance from the foot of a tall cliff claps his hands and hears an echo 0.5 s later. If the speed of sound is 340 m/s, how far is he from the cliff?",
+    "options": {
+      "A": "680 m",
+      "B": "170 m",
+      "C": "34 m",
+      "D": "85 m"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is not a vector quantity?",
+    "options": {
+      "A": "momentum",
+      "B": "force",
+      "C": "temperature",
+      "D": "displacement"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 13,
+    "question": "Calculate the heat energy required to vaporize 50 g of water initially at 80ºC if the specific heat capacity of water is 4.23 J/g°C (specific latent heat of vaporization of water is 2260 J/g).",
+    "options": {
+      "A": "530,000 J",
+      "B": "23,200 J",
+      "C": "17,200 J",
+      "D": "130,000 J"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "In a series R-L-C circuit at resonance, the voltages across the resistor and the inductor are 30 V and 40 V respectively. What is the voltage across the capacitor?",
+    "options": {
+      "A": "30 V",
+      "B": "40 V",
+      "C": "50 V",
+      "D": "70 V"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "If the frequency of an emitted X-ray is 1.6 × 10¹⁶ Hz, the accelerating potential is? [e = 1.6 × 10⁻¹⁹ C, h = 6.63 × 10⁻³⁴ Js]",
+    "options": {
+      "A": "6630.0 V",
+      "B": "663.0 V",
+      "C": "66.3 V",
+      "D": "6.6 V"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "If the fraction of the atoms of a radioactive material left after 120 years is 1/64, what is the half-life of the material?",
+    "options": {
+      "A": "24 years",
+      "B": "20 years",
+      "C": "10 years",
+      "D": "2 years"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "A certain radioactive source emits radiation that was found to be deflected by both magnetic and electric fields. The radiation is?",
+    "options": {
+      "A": "beta rays",
+      "B": "gamma rays",
+      "C": "x-rays",
+      "D": "ultra-violet rays"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "question": "The inner diameter of a test tube can be measured accurately using a?",
+    "options": {
+      "A": "micrometer screw gauge",
+      "B": "pair of dividers",
+      "C": "meter rule",
+      "D": "pair of vernier calipers"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 19,
+    "question": "Two bodies have masses in the ratio 3:1. They experience forces which impart to them acceleration in the ratio 2:9 respectively. Find the ratio of forces the masses experienced.",
+    "options": {
+      "A": "1:4",
+      "B": "2:1",
+      "C": "2:3",
+      "D": "2:5"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "question": "Particles of mass 10⁻² kg is fixed to the tip of a fan blade which rotates with angular velocity of 100 rad/s. If the radius of the blade is 0.2 m, the centripetal force is?",
+    "options": {
+      "A": "2 N",
+      "B": "20 N",
+      "C": "200 N",
+      "D": "400 N"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "question": "A lead bullet of mass 0.05 kg is fired with a velocity of 200 m/s into a block of mass 0.95 kg. Given that the lead block can move freely, the final kinetic energy after impact is?",
+    "options": {
+      "A": "50 J",
+      "B": "100 J",
+      "C": "150 J",
+      "D": "200 J"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "question": "A ball of mass 0.1 kg is thrown vertically upwards with a speed of 10 m/s from the top of a tower 10 m high. Neglecting air resistance, its total energy just before hitting the ground is? (Take g = 10 m/s²)",
+    "options": {
+      "A": "5 J",
+      "B": "10 J",
+      "C": "15 J",
+      "D": "20 J"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 23,
+    "question": "A car of mass 800 kg attains a speed of 25 m/s in 20 seconds. The power developed in the engine is?",
+    "options": {
+      "A": "1.25 × 10⁴ W",
+      "B": "2.50 × 10⁴ W",
+      "C": "1.25 × 10⁶ W",
+      "D": "2.50 × 10⁶ W"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "When the brakes in a car are applied, the frictional force on the tyres is?",
+    "options": {
+      "A": "a disadvantage because it is in the direction of the motion of the car",
+      "B": "a disadvantage because it is in the opposite direction of the motion of the car",
+      "C": "an advantage because it is in the direction of the motion of the car",
+      "D": "an advantage because it is in the opposite direction of the motion of the car"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 25,
+    "question": "If the stress on a wire is 10⁷ N/m² and the wire is stretched from its original length of 10.00 m to 10.05 m. The Young's modulus of the wire is?",
+    "options": {
+      "A": "5.0 × 10⁻⁴ N/m²",
+      "B": "5.0 × 10⁻⁵ N/m²",
+      "C": "2.0 × 10⁻⁸ N/m²",
+      "D": "2.0 × 10⁹ N/m²"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 26,
+    "question": "A solid weighs 10.00 N in air, 6 N when forcefully immersed in water, and 7.0 N when fully immersed in a liquid, X. Calculate the relative density of the liquid X.",
+    "options": {
+      "A": "53",
+      "B": "43",
+      "C": "34",
+      "D": "710"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 27,
+    "question": "When the temperature of a liquid increases, its surface tension",
+    "options": {
+      "A": "decreases",
+      "B": "increases",
+      "C": "remains constant",
+      "D": "increases then decreases"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 28,
+    "question": "A gas at a volume of V₀ in a container at pressure P₀ is compressed to one-fifth of its volume. What will be its pressure if the magnitude of its original temperature T is constant?",
+    "options": {
+      "A": "P₀/5",
+      "B": "4 P₀",
+      "C": "P₀",
+      "D": "5 P₀"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "question": "A piece of substance of specific heat capacity 450 J/kg·K falls through a vertical distance of 20 m from rest. Calculate the rise in temperature of the substance on hitting the ground when all its energies are converted into heat. [g = 10 m/s²]",
+    "options": {
+      "A": "29ºC",
+      "B": "49ºC",
+      "C": "92ºC",
+      "D": "94ºC"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 30,
+    "question": "I. A liquid boils when its saturated vapor pressure is equal to the external pressure\nII. Dissolved substances in pure water lead to an increase in the boiling point.\nIII. When the external pressure is increased, the boiling point increases.\nIV. Dissolved substances in pure water decreases the boiling point \nWhich of the above combinations are peculiarities of the boiling point of a liquid?",
+    "options": {
+      "A": "I, II and III only",
+      "B": "I, II, III, and IV",
+      "C": "I, II, and IV",
+      "D": "II, III, and IV"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 31,
+    "question": "The temperature gradient across a copper rod of thickness 0.02 m, maintained at two temperature junctions of 20ºC and 80ºC respectively is?",
+    "options": {
+      "A": "3.0 × 10² K/m",
+      "B": "3.0 × 10³ K/m",
+      "C": "5.0 × 10³ K/m",
+      "D": "3.0 × 10⁴ K/m"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "Calculate the mass of ice that would melt when 2 kg of copper is quickly transferred from boiling water to a block of ice without heat loss (specific heat capacity of copper = 400 J/kg°C, latent heat of fusion of ice = 3.3 × 10⁵ J/kg).",
+    "options": {
+      "A": "0.833 kg",
+      "B": "3.380 kg",
+      "C": "8033 kg",
+      "D": "3.38 kg"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 33,
+    "question": "The equation of a wave traveling along the positive x-direction is given by y = 0.25 × 10⁻³ sin (500t - 0.025x). Determine the angular velocity of the wave motion.",
+    "options": {
+      "A": "0.25 × 10⁻³ rad/s",
+      "B": "0.25 × 10⁻¹ rad/s",
+      "C": "5.00 × 10² rad/s",
+      "D": "2.50 × 10³ rad/s"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 34,
+    "question": "If a sound wave goes from a cold air region to a hot air region, its wavelength will?",
+    "options": {
+      "A": "increase",
+      "B": "decrease",
+      "C": "decrease then increase",
+      "D": "remain constant"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 35,
+    "question": "The lowest note emitted by a stretched string has a frequency of 40 Hz. How many overtones are there between 40 Hz and 180 Hz?",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "2",
+      "D": "1"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "question": "A man stands 4 m in front of a plane mirror. If the mirror is moved 1 m towards the man, the distance between him and his new image is?",
+    "options": {
+      "A": "3 m",
+      "B": "5 m",
+      "C": "6 m",
+      "D": "10 m"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 37,
+    "question": "The inside portion of part of a hollow metal sphere of diameter 20 cm is polished. The portion will therefore form a?",
+    "options": {
+      "A": "concave mirror of focal length 5 cm",
+      "B": "concave mirror of focal length 10 cm",
+      "C": "convex mirror of focal length 5 cm",
+      "D": "convex mirror of focal length 10 cm"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "question": "The velocities of light in air and glass are 3.0 × 10⁸ m/s and 2.0 × 10⁸ m/s respectively. If the angle of refraction is 30º, the sine of the angle of incidence is?",
+    "options": {
+      "A": "0.33",
+      "B": "0.50",
+      "C": "0.67",
+      "D": "0.75"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 39,
+    "question": "An astronomical telescope is said to be in normal adjustment when the?",
+    "options": {
+      "A": "eye is accommodated",
+      "B": "focal length of an object lens is longer than that of eye piece",
+      "C": "final image is at the near point of eye",
+      "D": "final image is at infinity"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "question": "A 2 H inductor has negligible resistance and is connected to a 50π Hz A.C supply. The reactance of the inductor is?",
+    "options": {
+      "A": "200 Ω",
+      "B": "50 Ω",
+      "C": "100π Ω",
+      "D": "25π Ω"
+    },
+    "correct": "C"
+  }
+]}

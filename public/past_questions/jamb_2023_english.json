@@ -1,0 +1,243 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "Choose the word that has the same rhyme scheme as the following word: battle",
+    "options": {"A": "raffle", "B": "latter", "C": "bitter", "D": "kettle"},
+    "correct": "D"
+  },
+  {
+    "id": 2,
+    "question": "The words in capital letter have the emphatic stress. Choose the option to which the given sentence relates: I bought my WIFE a red dress",
+    "options": {"A": "Did I buy my husband a red dress?", "B": "Did I buy my wife a red shoe?", "C": "Did he buy my wife a red dress?", "D": "Did I buy my wife a black dress?"},
+    "correct": "B"
+  },
+  {
+    "id": 3,
+    "question": "This question is based on 'The Life Changer' novel. Dr. Samuel Johnson is also known as_____",
+    "options": {"A": "SamJson", "B": "Samjohn", "C": "all of the above", "D": "Johnsam"},
+    "correct": "C"
+  },
+  {
+    "id": 4,
+    "question": "Choose the word that has the same CONSONANT SOUND as the one represented by the letter(s) underlined in 'wash'",
+    "options": {"A": "treasure", "B": "occasion", "C": "nation", "D": "equation"},
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "In each of the following sentences, the word that resolves the emphatic stress is written in capital letters. Choose the option that is the appropriate answer: Daddy plays TENNIS on Saturday afternoons",
+    "options": {"A": "Does mummy play tennis on Saturday afternoons?", "B": "Does daddy play tennis on Sunday afternoons?", "C": "Does daddy play tennis on Saturday morning?", "D": "Does daddy play cricket on Saturday afternoon?"},
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "In this question, select the option that best explains the information conveyed in the sentence: If he were here, it could be more fun.",
+    "options": {"A": "He did not show up and so the occasion lacked much fun", "B": "He was expected but did not show up to liven up the occasion", "C": "There was no fun because he was not present", "D": "He was being expected to supply more fun"},
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "question": "In this question, select the option that best explains the information conveyed in the sentence: Though he is our elected representative, he often takes a rather jaundiced view of our problems.",
+    "options": {"A": "He takes a rather hazy view of our problems", "B": "He takes an unfavourable position concerning our problems", "C": "He takes a rather forceful view of our problems", "D": "He takes a sickly view of our problems"},
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined in 'Pin'.",
+    "options": {"A": "Psychology", "B": "Pneumonia", "C": "Pseudonym", "D": "Pragmatic"},
+    "correct": "D"
+  },
+  {
+    "id": 9,
+    "question": "Choose the appropriate stress pattern from the options. The stressed words are in capital letter(s): Fluency",
+    "options": {"A": "flu-EN-cy", "B": "flu-en-CY", "C": "flu-en-cy", "D": "FLU-en-cy"},
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "Choose the word that is opposite in meaning to the underlined word(s): Victor played the role of a haughty prince.",
+    "options": {"A": "a haunted", "B": "a modest", "C": "a disturbed", "D": "an angry"},
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "question": "Choose the word or group of words that is most nearly opposite in meaning to the underlined words: The gradual process of transition to civilian rule came to an _____ end.",
+    "options": {"A": "unhappy", "B": "unnecessary", "C": "abrupt", "D": "anticipated"},
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "question": "Fill in the gap in the sentence below with the appropriate option: Peter and Jane love each other ...... the difficulties they face.",
+    "options": {"A": "therefore", "B": "despite", "C": "however", "D": "besides"},
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "Choose the option that is nearest in meaning to the underlined word: I was skeptical about the story she told me.",
+    "options": {"A": "doubtful", "B": "convinced", "C": "ignorant", "D": "confused"},
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "This question is based on 'The Life Changer' novel. _________ is the euphemism used for Cheat notes.",
+    "options": {"A": "Salvation note of rescue", "B": "note of deliverance", "C": "holy note of rescue", "D": "Notes of salvation"},
+    "correct": "D"
+  },
+  {
+    "id": 15,
+    "question": "This question is based on 'The Life Changer' novel. Why did Omar say he passed his SSCE by no means a small feat?",
+    "options": {"A": "all of the above", "B": "because he failed other subjects but passed maths and English", "C": "because he registered with one of the miracle centers", "D": "Because he passed excellently on his first attempt"},
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "Choose the option that has the same vowel sound as the one represented by the letter[s] underlined: naked",
+    "options": {"A": "friend", "B": "bead", "C": "fed", "D": "bid"},
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "question": "From the list of words in A to D, choose one that best describes the sentence: James and Henry were at daggers drawn when I knew them. This means that they",
+    "options": {"A": "were always angry with each other", "B": "always wore daggers", "C": "were good at drawing daggers", "D": "were fighting everybody"},
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "question": "This question is based on 'The Life Changer' novel. Who among Salma's roommates was reserved and withdrawn yet generous to a fault?",
+    "options": {"A": "Ngozi", "B": "Tomiwa", "C": "Ada", "D": "none of them"},
+    "correct": "C"
+  },
+  {
+    "id": 19,
+    "question": "Choose the word that has the same rhyme scheme as the word below: Day",
+    "options": {"A": "Dare", "B": "Anime", "C": "Flight", "D": "Ball"},
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "question": "In this question, fill each gap with the most appropriate option from the list provided: Without our relentless campaigns, we might ...... sure of victory in the race for the National Assembly.",
+    "options": {"A": "be never", "B": "never have been", "C": "never had been", "D": "have never be"},
+    "correct": "B"
+  },
+  {
+    "id": 21,
+    "question": "In this question, fill each gap with the most appropriate option from the list provided: We are all hungry; we ...... anything to eat since morning.",
+    "options": {"A": "hadn't had", "B": "never had", "C": "haven't had", "D": "didn't have"},
+    "correct": "C"
+  },
+  {
+    "id": 22,
+    "question": "In this question, fill each gap with the most appropriate option from the list provided: To check desertification in the arid zones, ...... trees should be planted.",
+    "options": {"A": "drought-resisting", "B": "drought-resistant", "C": "drought-effective", "D": "drought-proof"},
+    "correct": "B"
+  },
+  {
+    "id": 23,
+    "question": "From the options lettered A-D, choose the option that is most nearly opposite in meaning to the underlined word: My father is parsimonious.",
+    "options": {"A": "thrifty", "B": "frugal", "C": "generous", "D": "ungenerous"},
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "Pick out the option with a different rhyme:",
+    "options": {"A": "Roar", "B": "Four", "C": "Growl", "D": "Bore"},
+    "correct": "C"
+  },
+  {
+    "id": 25,
+    "question": "The primary stress is indicated by writing the syllable on which it occurs in capital letters. From the words lettered A to D choose the one that has the correct stress: category",
+    "options": {"A": "cat-e-GO-ry", "B": "CAT-e-go-ry", "C": "cat-e-go-RY", "D": "cat-E-go-ry"},
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "question": "This question is based on 'The Life Changer' novel. Ummi is an Arabic word that is directly translated to mean_____",
+    "options": {"A": "My mom", "B": "My mother", "C": "grandmother", "D": "Godmother"},
+    "correct": "B"
+  },
+  {
+    "id": 27,
+    "question": "From the words lettered A to D below, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the passage: Bisi has become an indispensable member of staff.",
+    "options": {"A": "vital", "B": "principal", "C": "dedicated", "D": "effective"},
+    "correct": "A"
+  },
+  {
+    "id": 28,
+    "question": "Choose the option that has the same vowel sound as the letter(s) underlined in 'exist'.",
+    "options": {"A": "never", "B": "isle", "C": "meant", "D": "helicopter"},
+    "correct": "C"
+  },
+  {
+    "id": 29,
+    "question": "This question is based on 'The Life Changer' novel. In Lafayette, before a stranger is hosted or accommodated, permission must be requested and granted by_______",
+    "options": {"A": "the Hakimi", "B": "the high priest", "C": "the governor", "D": "community oracle"},
+    "correct": "A"
+  },
+  {
+    "id": 30,
+    "question": "Choose the word that does not have the same vowel sound as the others:",
+    "options": {"A": "shun", "B": "son", "C": "sun", "D": "short"},
+    "correct": "D"
+  },
+  {
+    "id": 31,
+    "question": "Athens had _________ the Greek-states against Persians.",
+    "options": {"A": "refused to help", "B": "wanted to fight", "C": "intervened on behalf", "D": "given orders to fight"},
+    "correct": "C"
+  },
+  {
+    "id": 32,
+    "question": "Darius took drastic steps to __________ the rebellious Athenians.",
+    "options": {"A": "irritate", "B": "weaken", "C": "destroy", "D": "calm"},
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "Their participation _________ to the Athenians.",
+    "options": {"A": "gave hope", "B": "gave honour", "C": "gave comfort", "D": "gave strength"},
+    "correct": "D"
+  },
+  {
+    "id": 34,
+    "question": "The people of Delos did not want to __________ the conquest of Greece.",
+    "options": {"A": "think about", "B": "end", "C": "encourage", "D": "daydream about"},
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "The Athenians were__________ by some soldiers who arrived at Plataea.",
+    "options": {"A": "held", "B": "strengthened", "C": "welcomed", "D": "captured"},
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "question": "This question is based on 'The Life Changer' novel. Salma was looking more stunning on the last day of her exams because_______",
+    "options": {"A": "her classmates had planned to go to the beach after the exam", "B": "her classmates had organized a mini picnic to wrap up the good work", "C": "All of the above", "D": "her classmates had planned a photo shoot with some lecturers"},
+    "correct": "C"
+  },
+  {
+    "id": 37,
+    "question": "This question is based on 'The Life Changer' novel. Why was it a double celebration for Ummi and members of her community when she gained admission into the university?",
+    "options": {"A": "none of the above", "B": "She had given birth to Omar before her admission to the university", "C": "Her husband agreed to marry her before she went for university registration", "D": "she was the first child to leave Lafayette to the university"},
+    "correct": "D"
+  },
+  {
+    "id": 38,
+    "question": "PASSAGE IV: With the most profound respect to the members of the Senate, I do not think that it is within the competence of that ...1... body to pass a motion to ...2... the executive action of the President. What fills gap ...1...?",
+    "options": {"A": "executive", "B": "legislative", "C": "judicial", "D": "administrative"},
+    "correct": "B"
+  },
+  {
+    "id": 39,
+    "question": "PASSAGE IV: What fills gap ...2... in the sentence: 'to pass a motion to ...2... the executive action of the President'?",
+    "options": {"A": "modify", "B": "nullify", "C": "order", "D": "enforce"},
+    "correct": "B"
+  },
+  {
+    "id": 40,
+    "question": "PASSAGE IV: What fills gap ...3... in the sentence: 'The Senate is ...3... of the National Assembly'?",
+    "options": {"A": "an anchor", "B": "a portion", "C": "a wing", "D": "an arm"},
+    "correct": "D"
+  }
+]
+}

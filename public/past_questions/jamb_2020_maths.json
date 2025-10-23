@@ -1,0 +1,445 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Evaluate (212)^3 - (121)^3 + (222)^3.",
+      "options": {
+        "A": "(313)^3",
+        "B": "(312)^3",
+        "C": "(211)^3",
+        "D": "(111)^3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "Simplify: (x^2 - 9)/(x^2 - x - 6).",
+      "options": {
+        "A": "(x+3)/(x-2)",
+        "B": "(x-3)/(x-2)",
+        "C": "(x+3)/(x+2)",
+        "D": "(x-3)/(x+2)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "Find the equation of the line passing through (2, 3) and perpendicular to 2x + 3y = 5.",
+      "options": {
+        "A": "y - 3 = (3/2)(x - 2)",
+        "B": "y - 3 = (-2/3)(x - 2)",
+        "C": "y - 2 = (3/2)(x - 3)",
+        "D": "y - 3 = (2/3)(x - 2)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "Find the gradient of the line joining (4, 6) and (10, 12).",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "1/2",
+        "D": "3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "If 3x - 2 = 10, find the value of x.",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "10"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "Simplify (2x + 3)^2 - (x - 1)(x + 1).",
+      "options": {
+        "A": "3x^2 + 12x + 8",
+        "B": "3x^2 + 10x + 8",
+        "C": "3x^2 + 11x + 8",
+        "D": "3x^2 + 12x + 7"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "Find the sum of the first 10 terms of the arithmetic sequence 2, 5, 8, 11...",
+      "options": {
+        "A": "155",
+        "B": "150",
+        "C": "145",
+        "D": "160"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "Simplify (3x^2y^3 / 6xy^5).",
+      "options": {
+        "A": "(1/2)x y^-2",
+        "B": "(1/2)x y^2",
+        "C": "(1/2)x^-1 y^-2",
+        "D": "(1/2)x y^3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "question": "Find the roots of x^2 - 7x + 10 = 0.",
+      "options": {
+        "A": "x = 2, 5",
+        "B": "x = 3, 4",
+        "C": "x = 1, 10",
+        "D": "x = 5, 2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "question": "If sin θ = 3/5, find cos θ.",
+      "options": {
+        "A": "4/5",
+        "B": "5/4",
+        "C": "3/4",
+        "D": "1/5"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 11,
+      "question": "Simplify: (1/2)^-3.",
+      "options": {
+        "A": "8",
+        "B": "1/8",
+        "C": "4",
+        "D": "2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 12,
+      "question": "Find the value of x if 2^(x+3) = 16.",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 13,
+      "question": "Simplify: (x^2 - 9)/(x - 3).",
+      "options": {
+        "A": "x + 3",
+        "B": "x - 3",
+        "C": "x + 2",
+        "D": "x - 2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 14,
+      "question": "Find the mean of 4, 8, 10, 12, 6.",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "7",
+        "D": "10"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 15,
+      "question": "If y varies directly as x and y = 10 when x = 5, find y when x = 8.",
+      "options": {
+        "A": "16",
+        "B": "15",
+        "C": "12",
+        "D": "20"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "question": "Find the next two terms in the sequence: 2, 6, 18, 54.",
+      "options": {
+        "A": "162, 486",
+        "B": "108, 324",
+        "C": "216, 648",
+        "D": "120, 360"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 17,
+      "question": "Find the area of a triangle with base 10cm and height 8cm.",
+      "options": {
+        "A": "40 cm²",
+        "B": "80 cm²",
+        "C": "60 cm²",
+        "D": "100 cm²"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "Simplify 3(2x + 4) - 2(x + 5).",
+      "options": {
+        "A": "4x + 2",
+        "B": "5x + 3",
+        "C": "4x + 3",
+        "D": "2x + 4"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 19,
+      "question": "Find the simple interest on N5000 for 2 years at 5% per annum.",
+      "options": {
+        "A": "N500",
+        "B": "N250",
+        "C": "N400",
+        "D": "N450"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "question": "Solve for x if 3x - 5 = 10.",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "correct": "A"
+    },
+
+    {
+      "id": 21,
+      "question": "Calculate the standard deviation of the following data: 7, 8, 9, 10, 11, 12, 13",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "12",
+        "D": "17"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 22,
+      "question": "A number is selected at random between 20 and 30 inclusive. Find the probability that the number is prime.",
+      "options": {
+        "A": "2/11",
+        "B": "5/11",
+        "C": "6/11",
+        "D": "8/11"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 23,
+      "question": "The equation of the line in the graph is",
+      "options": {
+        "A": "3y = 3x + 12",
+        "B": "3y = -4x + 12",
+        "C": "3y = -4x + 9",
+        "D": "3y = 4x + 12"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 24,
+      "question": "Express the product of 0.0014 and 0.011 in standard form",
+      "options": {
+        "A": "1.54 × 10^-2",
+        "B": "1.54 × 10^-3",
+        "C": "1.54 × 10^-4",
+        "D": "1.54 × 10^-5"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 25,
+      "question": "A school boy lying 30m from the foot of a water tank observes that the angle of elevation to the top of the tank is 60°. Calculate the height of the tank.",
+      "options": {
+        "A": "60√3 m",
+        "B": "30√3 m",
+        "C": "20√3 m",
+        "D": "10√3 m"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 26,
+      "question": "Find the simple interest rate per annum at which N1000 accumulates to N1240 in 3 years.",
+      "options": {
+        "A": "6%",
+        "B": "8%",
+        "C": "10%",
+        "D": "12%"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 27,
+      "question": "The pie chart shows the income of a civil servant in a month. If his monthly income is N6,000, find his monthly basic salary.",
+      "options": {
+        "A": "N2,050",
+        "B": "N2,600",
+        "C": "N3,100",
+        "D": "N3,450"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 28,
+      "question": "If x is a positive real number, find the range of values for which 13x + 12 > 14x",
+      "options": {
+        "A": "x > -16",
+        "B": "x > 0",
+        "C": "0 < x < 6",
+        "D": "0 < x < 16"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 29,
+      "question": "Find the value of x if 2√(x) + 2√(x) = 1/(x) - 2√(x)",
+      "options": {
+        "A": "3√2 + 4",
+        "B": "3√2 - 4",
+        "C": "3 - 2√2",
+        "D": "4 + 2√2"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 30,
+      "question": "A binary operation x is defined by a x b = ab. If a x 2 = 2 - a, find the possible values of a.",
+      "options": {
+        "A": "1, -2",
+        "B": "2, -1",
+        "C": "2, -2",
+        "D": "1, -1"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 31,
+      "question": "The chord ST of a circle is equal to the radius r of the circle. Find the length of arc ST.",
+      "options": {
+        "A": "πr/3",
+        "B": "πr/2",
+        "C": "πr/12",
+        "D": "πr/6"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 32,
+      "question": "A sector of circle of radius 7.2cm which subtends an angle of 300° at the centre is used to form a cone. What is the radius of the base of the cone?",
+      "options": {
+        "A": "8 cm",
+        "B": "9 cm",
+        "C": "6 cm",
+        "D": "7 cm"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 33,
+      "question": "A cylindrical tank has a capacity of 3080 m³. What is the depth of the tank if the diameter of its base is 14m?",
+      "options": {
+        "A": "25 m",
+        "B": "23 m",
+        "C": "22 m",
+        "D": "20 m"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 34,
+      "question": "The acres for rice, pineapple, cassava, cocoa and palm oil in a district are 2, 5, 3, 11, 9. What is the angle of the sector of cassava in a pie chart?",
+      "options": {
+        "A": "180°",
+        "B": "36°",
+        "C": "60°",
+        "D": "108°"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 35,
+      "question": "Three consecutive terms of a geometric progression are n - 2, n, and n + 3. Find the common ratio.",
+      "options": {
+        "A": "3/2",
+        "B": "2/3",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 36,
+      "question": "In a class of 40 students, 32 offer mathematics, 24 offer physics and 4 offer neither. How many offer both mathematics and physics?",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "16",
+        "D": "20"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 37,
+      "question": "The sum of interior angles of a pentagon is 6x + 6y. Find y in terms of x.",
+      "options": {
+        "A": "y = 6 - x",
+        "B": "y = 90 - x",
+        "C": "y = 120 - x",
+        "D": "y = 150 - x"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 38,
+      "question": "The mean age of some students is 15 years. When the age of a 45-year-old teacher is added, the mean becomes 18 years. Find the number of students.",
+      "options": {
+        "A": "7",
+        "B": "9",
+        "C": "15",
+        "D": "42"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 39,
+      "question": "A surveyor walks 500m up a hill sloping at 30°. Calculate the vertical height he rises.",
+      "options": {
+        "A": "252 m",
+        "B": "500 m",
+        "C": "250 m",
+        "D": "255 m"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 40,
+      "question": "Find the non-zero positive value of x which satisfies the equation ⎡x^10/1 x^10/1 x⎤ = 0",
+      "options": {
+        "A": "2",
+        "B": "√3",
+        "C": "√2",
+        "D": "1"
+      },
+      "correct": "C"
+    }
+  ]
+}

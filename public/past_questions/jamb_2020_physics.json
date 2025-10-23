@@ -1,0 +1,442 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "A few grains of table salt were put in a cup of cold water, kept at constant temperature and left undistributed. Eventually all the water tested salty. This action is due to?",
+    "options": {
+      "A": "convection",
+      "B": "osmosis",
+      "C": "capillarity",
+      "D": "diffusion"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 2,
+    "question": "The force required to make an object of mass m, travelling with velocity v, turn in a circle of radius r is",
+    "options": {
+      "A": "mv2r",
+      "B": "mr2x",
+      "C": "mrv",
+      "D": "mvr2"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "A machine gun with a mass of 5kg fires a 50g bullet at a speed of 100 ms−1. The recoil speed of the machine gun is",
+    "options": {
+      "A": "0.5 ms−1",
+      "B": "1.5 ms−1",
+      "C": "1 ms−1",
+      "D": "2 ms−1"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 4,
+    "question": "If in a simple pendulum experiment the length of the inextensible string is increased by a factor of four, its period is increased by a factor of?",
+    "options": {
+      "A": "4",
+      "B": "π2",
+      "C": "14",
+      "D": "2"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 5,
+    "question": "In what range of temperature is the expansion of water anomalous?",
+    "options": {
+      "A": "+208°C to +212°C",
+      "B": "-80°C to -76°C",
+      "C": "0°C to +4°C",
+      "D": "-4°C to 0°C"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following statements about radioactivity is true?\n(i) Alpha particle is positively charged\n(ii) Beta particle is negatively charged\n(iii) Gamma ray is neutral\n(iv) Beta particle has the same mass as helium atom\n(v) Gamma ray is charged.",
+    "options": {
+      "A": "i, ii, iii, iv only",
+      "B": "i, ii, iii only",
+      "C": "iv and v only",
+      "D": "i, ii and v only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "question": "In the study of Physics, temperature and heat are often confused with each other. Which of the following statements correctly defines these two elements?",
+    "options": {
+      "A": "Temperature is a measure of the average kinetic energy of the molecules of a substance",
+      "B": "Heat is a measure of the total kinetic energy of the molecules in a system",
+      "C": "Different materials require different amounts of heat to cause a given change in temperature",
+      "D": "All of the above"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 8,
+    "question": "The effect of closing the key K in the circuit shown in the figure above would be to?",
+    "options": {
+      "A": "increase the current by 0.4A",
+      "B": "reduce the current by 0.4A",
+      "C": "increase the current by 0.6A",
+      "D": "reduce the current by 0.6A"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following statements on the use of X-rays is incorrect? X-rays are used",
+    "options": {
+      "A": "In a hospital to obtain photographs of tissues and bones in the body",
+      "B": "For the treatment of malignant growths like cancer cells",
+      "C": "In detecting fingerprints",
+      "D": "To reveal hidden flaws in metal castings and welded joints work of art"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "question": "Natural radioactivity consists of emission?",
+    "options": {
+      "A": "α-particles and β-rays",
+      "B": "α-particles and X-rays",
+      "C": "γ-ray and X-rays",
+      "D": "α-particles and β-rays and γ-rays"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 11,
+    "question": "If a source of sound is moving, a stationary listener will hear a sound of different frequency. This is called?",
+    "options": {
+      "A": "doppler effect",
+      "B": "resonance",
+      "C": "ultra sound",
+      "D": "rarefaction"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following can be described as high tension transmission?",
+    "options": {
+      "A": "High resistance and low voltage",
+      "B": "Low current and high voltage",
+      "C": "High current and low voltage",
+      "D": "High current and low resistance"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "What is the cost of running five 50W lamps and four 100W lamps for 10 hours if electrical energy costs 2 Kobo per KWh?",
+    "options": {
+      "A": "N0.65",
+      "B": "N0.39",
+      "C": "N3.90",
+      "D": "N0.13"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 14,
+    "question": "The mass of a proton is approximately equal to that of",
+    "options": {
+      "A": "an α-particle",
+      "B": "a β-particle",
+      "C": "a neutron",
+      "D": "an electron"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "A transformer has 300 turns of wire in the primary coil and 30 turns in the secondary coil. If the input voltage is 100 volts, the output voltage is",
+    "options": {
+      "A": "5 volts",
+      "B": "10 volts",
+      "C": "15 volts",
+      "D": "20 volts"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "A solid weighs 4.8g in air, 2.8g in water and 3.2g in kerosine. The ratio of density of the solid to that of the kerosine is",
+    "options": {
+      "A": "2",
+      "B": "3/2",
+      "C": "2/3",
+      "D": "3"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "One of the following readings represents the measurement of the length of a metal rod using vernier callipers. Taking the reading accuracy into consideration, the most likely one is",
+    "options": {
+      "A": "5.16 cm",
+      "B": "5.165 cm",
+      "C": "5.0 cm",
+      "D": "5.160 cm"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "question": "When a sound wave passes from air into water its",
+    "options": {
+      "A": "speed and frequency increases but its wavelength remains the same",
+      "B": "speed and wavelength increases but its frequency remains the same",
+      "C": "speed decreases",
+      "D": "speed increases but its frequency and wavelength decreases"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "A convex mirror is used as a driving mirror because\n\nI. its image is erect\nII. it has a large field of view\nIII. it has a long focal length\n\nIdentify the CORRECT statement(s)",
+    "options": {
+      "A": "I and III only",
+      "B": "I and II only",
+      "C": "II and III only",
+      "D": "I, II and III only"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "question": "Two mirrors of the same length are arranged as shown in the diagram. A ray of light NO strikes the system at O and emerges along PQ. The emergent ray has been deviated through",
+    "options": {
+      "A": "220°",
+      "B": "200°",
+      "C": "210°",
+      "D": "180°"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 21,
+    "question": "A magnetic needle is suspended first at the earth's north magnetic pole and then at a point on the magnetic equator. The respective angles between the needle and the horizontal are",
+    "options": {
+      "A": "0° and 0°",
+      "B": "60° and 60°",
+      "C": "90° and 90°",
+      "D": "90° and 0°"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 22,
+    "question": "A hydrometer is an instrument for measuring the",
+    "options": {
+      "A": "depth of water in a vessel",
+      "B": "relative density of a liquid by the method of flotation",
+      "C": "relative density of a liquid by finding the apparent loss in weight",
+      "D": "relative humidity of the air"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 23,
+    "question": "Consider the three forces acting at O and in equilibrium as shown in the figure. Which of the following equations is/are CORRECT?\n\nI. P₁cosθ₁ = P₂cosθ₂\nII. P₃ = P₁cosθ₁ + P₂cosθ₂\nIII. P₁sinθ₁ = P₂sinθ₂",
+    "options": {
+      "A": "I only",
+      "B": "II only",
+      "C": "III only",
+      "D": "I, II and III only"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "The refractive index of a liquid is 1.5. If the velocity of light in vacuum is 3.0 × 10⁸ m/s, the velocity of light in the liquid is",
+    "options": {
+      "A": "1.5 × 10⁸ m/s",
+      "B": "2.0 × 10⁸ m/s",
+      "C": "3.0 × 10⁸ m/s",
+      "D": "4.5 × 10⁸ m/s"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "A ship travelling towards a cliff receives the echo of its whistle after 3.5 seconds. A short while later, it receives the echo after 2.5 seconds. If the speed of sound in air under the prevailing condition is 250 m/s, how much closer is the ship to the cliff?",
+    "options": {
+      "A": "10 m",
+      "B": "350 m",
+      "C": "175 m",
+      "D": "125 m"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following statements about defects of vision is/are CORRECT?\n\nI. For a long sighted person, close objects appear blurred\nII. For a short sighted person, distant objects appear blurred\nIII. Short sight is corrected by using a pair of converging lenses",
+    "options": {
+      "A": "I only",
+      "B": "II only",
+      "C": "I and II only",
+      "D": "II and III only"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "question": "Which of the following conditions are necessary and sufficient for total internal reflection to take place at the boundary between two optical media?\n\nI. Light is passing from optically denser medium to optically less dense medium\nII. Light is passing from optically less dense medium to optically denser medium\nIII. Angle of incidence is greater than a certain critical value\nIV. Angle of incidence is lesser than a certain critical value",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "III and IV only",
+      "D": "I and III only"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 28,
+    "question": "The linear expansivity of brass is 2 × 10⁻⁵ °C⁻¹. If the volume of a piece of brass is 10 cm³ at 0°C, what will be its volume at 100°C?",
+    "options": {
+      "A": "10.06 cm³",
+      "B": "10.04 cm³",
+      "C": "10.02 cm³",
+      "D": "10.20 cm³"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 29,
+    "question": "The lower and upper fixed points marked on a mercury-in-glass thermometer are 210 mm apart. The end of the mercury column in the tube is 49 mm above the lower fixed point in a room. What is the temperature of the room in degrees Celsius?",
+    "options": {
+      "A": "55.3°C",
+      "B": "23.3°C",
+      "C": "49.0°C",
+      "D": "16.43°C"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "question": "Heat is supplied uniformly at the rate of 100 W to 1.0 × 10⁻² kg of a liquid for 20 seconds. If the temperature of the liquid rises by 5°C, then the specific heat capacity of the liquid is",
+    "options": {
+      "A": "2.0 × 10² Jkg⁻¹K⁻¹",
+      "B": "2.0 × 10² Jkg⁻¹",
+      "C": "4.0 × 10⁴ Jkg⁻¹K⁻¹",
+      "D": "4.0 × 10⁴ Jkg⁻¹"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "Two divers G and H are at depths 20m and 40m, respectively below the water surface in a lake. The pressure on G is P₁ while the pressure on H is P₂. If the atmospheric pressure is equivalent to 10m of water, then the value of P₂/P₁ is?",
+    "options": {
+      "A": "0.50",
+      "B": "0.60",
+      "C": "1.67",
+      "D": "2.00"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 32,
+    "question": "The figure above represents a block-and-tackle pulley system on which an effort of W Newtons supports a load of 120.0 N. If the efficiency of the machine is 40%, then the value of W is",
+    "options": {
+      "A": "28.0 N",
+      "B": "48.0 N",
+      "C": "288.0 N",
+      "D": "50.0 N"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "question": "In an experiment in which molten naphthalene is allowed to cool, the cooling curve in the figure was obtained. The temperature 80°C is known as the",
+    "options": {
+      "A": "cooling temperature",
+      "B": "boiling point",
+      "C": "melting point",
+      "D": "vaporization point"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 34,
+    "question": "In the figure, the value of R is",
+    "options": {
+      "A": "3Ω",
+      "B": "6Ω",
+      "C": "4Ω",
+      "D": "5Ω"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following instruments consumes the highest current?\n\nI. Electric iron (250V, 1kW)\nII. Television set (220V, 110W)\nIII. Torchlight (6V, 30W)\nIV. Immersion heater (110V, 500W)",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 36,
+    "question": "In which of the following diagrams is the length of the tube equal to one wavelength?",
+    "options": {
+      "A": "a",
+      "B": "b",
+      "C": "c",
+      "D": "d"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following pairs is part of the electromagnetic spectrum?\n\nI. Radio waves\nII. Sound waves\nIII. Gamma rays\nIV. Water waves",
+    "options": {
+      "A": "I and II",
+      "B": "III and IV",
+      "C": "I and III",
+      "D": "II and IV"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 38,
+    "question": "A substance has half-life of 3 min. After 6 min, the count rate was observed to be 400. What was its count rate at zero time?",
+    "options": {
+      "A": "1600",
+      "B": "1200",
+      "C": "200",
+      "D": "2400"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 39,
+    "question": "Question 39 text missing in source, placeholder added.",
+    "options": {
+      "A": "Option A",
+      "B": "Option B",
+      "C": "Option C",
+      "D": "Option D"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 40,
+    "question": "If a dress is sold for #3800.00 at 20% discount, what is its original price?",
+    "options": {
+      "A": "#3,000.00",
+      "B": "#4,000.00",
+      "C": "#5,000.00",
+      "D": "#4,750.00"
+    },
+    "correct": "D"
+  }
+]}

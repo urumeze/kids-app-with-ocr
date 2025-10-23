@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "Give the common name for the following compound (CH3)2CHCH2Br",
+    "options": {
+      "A": "Isobutyl bromide",
+      "B": "Methyl bromide",
+      "C": "Propyl bromide",
+      "D": "Butyl bromide"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "question": "The enzyme that converts glucose to ethyl alcohol is?",
+    "options": {
+      "A": "Maltase",
+      "B": "Zymase",
+      "C": "Diatase",
+      "D": "Invertase"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 3,
+    "question": "The scientist who stated that matter can be converted into energy is?",
+    "options": {
+      "A": "Boyle",
+      "B": "Lavoisier",
+      "C": "Avogadro",
+      "D": "Einstein"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 4,
+    "question": "What is the IUPAC name for the following compound? HC≡CCH3",
+    "options": {
+      "A": "Acetylene",
+      "B": "Methyl acetylene",
+      "C": "Butanol",
+      "D": "Decanoic acid"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 5,
+    "question": "What is the chemical name for the compound CuCO3?",
+    "options": {
+      "A": "Copper (III) carbonate",
+      "B": "Copper (II) carbonate",
+      "C": "Copper (I) carbonate",
+      "D": "Copper"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "A 'breath test' used by traffic police to check drunken driving uses?",
+    "options": {
+      "A": "Tumeric on filter paper",
+      "B": "Silica gel coated with saliva nitrate",
+      "C": "Potassium permanganate-sulphuric acid",
+      "D": "Potassium dichromate-sulphuric acid"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 7,
+    "question": "Which one of the following is not a mixture?",
+    "options": {
+      "A": "Air",
+      "B": "Mercury",
+      "C": "Milk",
+      "D": "Cement"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is a non-metal that remains liquid at room temperature?",
+    "options": {
+      "A": "Chlorine",
+      "B": "Phosphorus",
+      "C": "Bromine",
+      "D": "Helium"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following are chemical changes? I. Cooking of food II. Digestion of food III. Freezing of water IV. Water is heated up",
+    "options": {
+      "A": "I and II",
+      "B": "I, II, and III",
+      "C": "III and IV",
+      "D": "All of the above"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "The atomic weight of nitrogen is?",
+    "options": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "16"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "The gas which causes global warming is?",
+    "options": {
+      "A": "O₂",
+      "B": "CO₂",
+      "C": "N₂",
+      "D": "He"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "question": "Oxygen is absent in?",
+    "options": {
+      "A": "Kerosene",
+      "B": "Soil",
+      "C": "Glass",
+      "D": "Cement"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 13,
+    "question": "A sample of any of the following substances disappears after some time when exposed to air like camphor, naphthalene, or dry ice. This phenomenon is called?",
+    "options": {
+      "A": "Sublimation",
+      "B": "Evaporation",
+      "C": "Diffusion",
+      "D": "Radiation"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "The maximum number of electrons in the N shell is?",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "18",
+      "D": "32"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 15,
+    "question": "Neutrons were discovered by?",
+    "options": {
+      "A": "James Chadwick",
+      "B": "Ernest Rutherford",
+      "C": "J.J. Thomson",
+      "D": "John Dalton"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is a form of calcium carbonate? I. Limestone II. Marble III. Chalk IV. Egg-shells",
+    "options": {
+      "A": "I only",
+      "B": "I, II and IV",
+      "C": "I and II only",
+      "D": "I, II, III and IV"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 17,
+    "question": "Soaps clean surfaces on the principle based on?",
+    "options": {
+      "A": "Viscosity",
+      "B": "Floatation",
+      "C": "Elasticity",
+      "D": "Surface tension"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 18,
+    "question": "The reactivity of fluorine is due to?",
+    "options": {
+      "A": "Its high electronegativity",
+      "B": "Small size of fluorine atom",
+      "C": "Availability of D-orbitals",
+      "D": "Strong F–F bond"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 19,
+    "question": "The mass number of a nucleus is?",
+    "options": {
+      "A": "Always less than its atomic number",
+      "B": "The sum of the number of protons and neutrons present in the nucleus",
+      "C": "Always more than the atomic weight",
+      "D": "A fraction"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "question": "The mass of one Avogadro number of helium atoms is?",
+    "options": {
+      "A": "1.00 gram",
+      "B": "4.00 gram",
+      "C": "8.00 gram",
+      "D": "6.00 gram"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 21,
+    "question": "220 g of carbon dioxide contains ----- moles",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "3",
+      "D": "4"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "question": "The inherited traits of an organism are controlled by?",
+    "options": {
+      "A": "RNA molecules",
+      "B": "Nucleotides",
+      "C": "DNA molecules",
+      "D": "Enzymes"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "question": "The most abundant rare gas in the atmosphere is?",
+    "options": {
+      "A": "He",
+      "B": "Ne",
+      "C": "Ar",
+      "D": "Xe"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "The heat required to raise the temperature of the body by 1 K is called?",
+    "options": {
+      "A": "Specific heat",
+      "B": "Thermal capacity",
+      "C": "Water equivalent",
+      "D": "None of the above"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "question": "The nucleus of a hydrogen atom consists of a?",
+    "options": {
+      "A": "1 proton only",
+      "B": "1 proton, 2 neutrons",
+      "C": "1 neutron only",
+      "D": "1 electron only"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "question": "The metal used to recover copper from a solution of copper sulphate is?",
+    "options": {
+      "A": "Na",
+      "B": "Ag",
+      "C": "Hg",
+      "D": "Fe"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 27,
+    "question": "The nucleus of an atom consists of?",
+    "options": {
+      "A": "Electrons and neutrons",
+      "B": "Electrons and protons",
+      "C": "Protons and neutrons",
+      "D": "None of the above"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "question": "A solution contains 20 g of solute in 180 g of solvent. If the solvent is water, what is the concentration of the solution in terms of mass by mass percentage?",
+    "options": {
+      "A": "11.%",
+      "B": "22.2%",
+      "C": "10%",
+      "D": "20%"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 29,
+    "question": "The only metal that is anti-bacterial is?",
+    "options": {
+      "A": "Iron",
+      "B": "Sodium",
+      "C": "Aluminium",
+      "D": "Copper"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 30,
+    "question": "An element having the atomic number 17 will resemble which of the following elements having atomic number as given below?",
+    "options": {
+      "A": "33",
+      "B": "35",
+      "C": "18",
+      "D": "19"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 31,
+    "question": "A chemical process in which there is a gain of electrons is known as?",
+    "options": {
+      "A": "Sublimation",
+      "B": "Reduction",
+      "C": "Oxidation",
+      "D": "Distillation"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "The reactions involving simultaneous oxidation and reduction?",
+    "options": {
+      "A": "Automatic reactions",
+      "B": "Alternate reactions",
+      "C": "Reduction agency",
+      "D": "Redox reactions"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 33,
+    "question": "A binary compound of oxygen with another element is referred to as?",
+    "options": {
+      "A": "Oxide",
+      "B": "Element",
+      "C": "Carbon",
+      "D": "Nitrogen"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 34,
+    "question": "The process or act of extracting a metal from its ore and refining it is called?",
+    "options": {
+      "A": "Extraction",
+      "B": "Metal mining",
+      "C": "Metallurgy",
+      "D": "Prospecting"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "The compounds made up of only carbon and hydrogen are called?",
+    "options": {
+      "A": "Carbon compounds",
+      "B": "Hydrocarbons",
+      "C": "Atoms",
+      "D": "Carbon hydrolysis"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 36,
+    "question": "One of the following is not a physical property of monosaccharides?",
+    "options": {
+      "A": "Monosaccharides get charred when heated",
+      "B": "Monosaccharides are water-soluble, sweet substances",
+      "C": "They are highly vital to the exploration of metals",
+      "D": "They can be reduced to sugar alcohols"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 37,
+    "question": "In troposphere, the two types of pollutants are?",
+    "options": {
+      "A": "Gaseous and particulate pollutants",
+      "B": "Carbon and metallic pollutants",
+      "C": "Natural and man-made pollutants",
+      "D": "Sulphuric and nitrogenous pollutants"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 38,
+    "question": "The molar enthalpy change accompanying the removal of an electron from a gas phase atom or ion in its ground state is called?",
+    "options": {
+      "A": "Electron gain enthalpy",
+      "B": "Ionization enthalpy",
+      "C": "Enthalpy change",
+      "D": "Enthalpic gas removal"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 39,
+    "question": "The fourteen elements (atomic number 90–103) after actinium are called?",
+    "options": {
+      "A": "Actinoids",
+      "B": "Nucleotides",
+      "C": "Pre-actinium elements",
+      "D": "Atomic elements"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 40,
+    "question": "The process by which salt and water react in a limited way to form an acid or a base is?",
+    "options": {
+      "A": "Neutral process",
+      "B": "Basic acidic process",
+      "C": "Hydrolysis",
+      "D": "Sublimation"
+    },
+    "correct": "C"
+  }
+]
+}

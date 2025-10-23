@@ -1,0 +1,886 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "How many different 8 letter words are possible using the letters of the word SYLLABUS?",
+      "options": {
+        "A": "(8 - 1)!",
+        "B": "8!2!",
+        "C": "8!2!2!",
+        "D": "8!"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 2,
+      "question": "Evaluate: 16^0.16 × 16^0.04 × 2^0.2",
+      "options": {
+        "A": "2",
+        "B": "0",
+        "C": "20",
+        "D": "12"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "Let '*' and '^' be two binary operations such that a * b = a²b and a ^ b = 2a + b. Find (-4 * 2) ^ (7 * -1).",
+      "options": {
+        "A": "-49",
+        "B": "64",
+        "C": "113",
+        "D": "15"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "Evaluate ∫(104x − 6x²)^(1/3) dx",
+      "options": {
+        "A": "-58",
+        "B": "-85",
+        "C": "85",
+        "D": "58"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "question": "The population of a village decreased from 1,230 to 1,040 due to breakout of an epidemic. What is the percentage decrease in the population?",
+      "options": {
+        "A": "15.44%",
+        "B": "15.43%",
+        "C": "15.42%",
+        "D": "15.45%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 6,
+      "question": "The interior angle of a regular polygon is five times the size of its exterior angle. Identify the polygon.",
+      "options": {
+        "A": "dodecagon",
+        "B": "enneadecagon",
+        "C": "icosagon",
+        "D": "hendecagon"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "The area A of a circle is increasing at a constant rate of 1.5 cm²/s. Find, to 3 significant figures, the rate at which the radius r of the circle is increasing when the area of the circle is 2 cm².",
+      "options": {
+        "A": "0.200 cms⁻¹",
+        "B": "0.798 cms⁻¹",
+        "C": "0.300 cms⁻¹",
+        "D": "0.299 cms⁻¹"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "question": "Make x the subject of the formula: y = (3x − 9c)/(4x + 5d)",
+      "options": {
+        "A": "x = −(9c − 5dy)/(4y − 3)",
+        "B": "x = (9c + 5dy)/(4y − 3)",
+        "C": "x = (9c − 5dy)/(4y − 3)",
+        "D": "x = −(9c + 5dy)/(4y − 3)"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "question": "Solve for x: 3(x – 1) ≤ 2(x – 3)",
+      "options": {
+        "A": "x ≤ -3",
+        "B": "x ≥ -3",
+        "C": "x ≤ 3",
+        "D": "x ≥ 3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "question": "Circle with tangents PS and SR, ∠PSR = 36°. Find ∠PQR.",
+      "options": {
+        "A": "720",
+        "B": "360",
+        "C": "1440",
+        "D": "540"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "If a car runs at a constant speed and takes 4.5 hrs to run a distance of 225 km, what time will it take to run 150 km?",
+      "options": {
+        "A": "2 hrs",
+        "B": "4 hrs",
+        "C": "3 hrs",
+        "D": "1 hr"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "Divide 1101001₂ by 101₂",
+      "options": {
+        "A": "11101₂",
+        "B": "111₂",
+        "C": "10111₂",
+        "D": "10101₂"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 13,
+      "question": "If 3 − 3√2 + 3√3 = a + b√3, what are the values a and b?",
+      "options": {
+        "A": "a = 9, b = -5",
+        "B": "a = 5, b = 9",
+        "C": "a = 9, b = 5",
+        "D": "a = -5, b = 9"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 14,
+      "question": "Find the value of t, if the distance between the points P(–3, –14) and Q(t, –5) is 9 units.",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "-3",
+        "D": "-2"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 15,
+      "question": "At simple interest, a man made a deposit of some money in the bank. The amount in his bank account after 10 years is three times the money deposited. If the interest rate stays the same, after how many years will the amount be five times the money deposited?",
+      "options": {
+        "A": "15 years",
+        "B": "25 years",
+        "C": "20 years",
+        "D": "30 years"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 16,
+      "question": "Evaluate the following limit: lim x→2 (x² + 4x − 12)/(x² − 2x)",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "0",
+        "D": "2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 17,
+      "question": "The ages of students in a small primary school were recorded in the table. Estimate the mean.",
+      "options": {
+        "A": "7.7",
+        "B": "7.5",
+        "C": "7.8",
+        "D": "7.6"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "A committee of 5 people is to be chosen from a group of 6 men and 4 women. How many committees are possible if there is to be a majority of women?",
+      "options": {
+        "A": "60",
+        "B": "15",
+        "C": "66",
+        "D": "4"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 19,
+      "question": "If D = [[2,4,1], [-1,1,-3], [3,2,1]], find |D|",
+      "options": {
+        "A": "16",
+        "B": "14",
+        "C": "-23",
+        "D": "-37"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 20,
+      "question": "A boat sails 8 km north from P to Q and then sails 6 km west from Q to R. Calculate the bearing of R from P.",
+      "options": {
+        "A": "217°",
+        "B": "323°",
+        "C": "037°",
+        "D": "053°"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 21,
+      "question": "A coin is thrown 3 times. What is the probability that at least one head is obtained?",
+      "options": {
+        "A": "7/8",
+        "B": "3/8",
+        "C": "None of the above",
+        "D": "1/8"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 22,
+      "question": "Find the equation of straight line passing through (2, 3) and perpendicular to the line 3x + 2y + 4 = 0",
+      "options": {
+        "A": "3y = 5x - 2",
+        "B": "y = 5/3 x - 2",
+        "C": "None of these",
+        "D": "3y = 2x + 5"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 23,
+      "question": "Differentiate the function y = √(x²) * (2x − x²)",
+      "options": {
+        "A": "dy/dx = 10x^(5/3) − 8x^(2/3)",
+        "B": "dy/dx = 10x^(2/3) − 8x^(5/3)",
+        "C": "dy/dx = 10x^(5/3) − 8x^(5/3)",
+        "D": "dy/dx = 10x^(2/3) − 8x^(2/3)"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 24,
+      "question": "Calculate the mean deviation of the first five prime numbers.",
+      "options": {
+        "A": "2.72",
+        "B": "5.6",
+        "C": "5.25",
+        "D": "13.6"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 25,
+      "question": "Determine the area of the region bounded by y = 2x² + 10 and y = 4x + 16",
+      "options": {
+        "A": "18",
+        "B": "-103",
+        "C": "443",
+        "D": "643"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 26,
+      "question": "Find the value of y if 40²y = 10²",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "5",
+        "D": "3"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 27,
+      "question": "Find the value of y, if log(y + 8) + log(y − 8) = 2log3 + 2log5",
+      "options": {
+        "A": "y = ±5",
+        "B": "y = ±10",
+        "C": "y = ±17",
+        "D": "y = ±13"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 28,
+      "question": "In a group of 500 people, 350 people can speak English, and 400 people can speak French. Find how many people can speak both languages.",
+      "options": {
+        "A": "750",
+        "B": "850",
+        "C": "250",
+        "D": "150"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 29,
+      "question": "Factorize: 16x⁴ − y⁴",
+      "options": {
+        "A": "(2x − y)(2x + y)(4x² + y²)",
+        "B": "(2x + y)(2x + y)(4x² + y²)",
+        "C": "(2x − y)(2x − y)(4x² + y²)",
+        "D": "(2x − y)(2x + y)(4x² − y²)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 30,
+      "question": "If A = {1,2,3,4,5,6}, B = {2,4,6,8}. Find (A − B) ⋃ (B − A).",
+      "options": {
+        "A": "{1, 3, 5, 8}",
+        "B": "{8}",
+        "C": "{1,2,3,4,5,6,8}",
+        "D": "{1, 3, 5}"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 31,
+      "question": "A bag contains 8 red balls and some white balls. If the probability of drawing a white ball is half of the probability of drawing a red ball, find the probability of drawing a red ball and a white ball if the balls are drawn without replacement.",
+      "options": {
+        "A": "1/3",
+        "B": "2/9",
+        "C": "2/3",
+        "D": "8/33"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 32,
+      "question": "The ages of students in a small primary school were recorded in the table. Estimate the median.",
+      "options": {
+        "A": "7.725",
+        "B": "6.225",
+        "C": "7.5",
+        "D": "6.5"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 33,
+      "question": "Find the matrix A such that A * [0 2 1; -1 ?] = [2 1 -1; ?]",
+      "options": {
+        "A": "[2 -1/2; 1 -1/2]",
+        "B": "[0 1/2; 1 1/2]",
+        "C": "[2 0 1; -1]",
+        "D": "[2 1/2 2; 1 -2]"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 34,
+      "question": "How many students scored at least 25%?",
+      "options": {
+        "A": "16",
+        "B": "19",
+        "C": "3",
+        "D": "8"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 35,
+      "question": "If −2x³ + 6x² + 17x − 21 is divided by (x + 1), then the remainder is",
+      "options": {
+        "A": "32",
+        "B": "30",
+        "C": "-30",
+        "D": "-32"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 36,
+      "question": "Let a binary operation '*' be defined on a set A. The operation will be commutative if",
+      "options": {
+        "A": "a*b = b*a",
+        "B": "(a*b)*c = a*(b*c)",
+        "C": "(b ο c)*a = (b*a) ο (c*a)",
+        "D": "None of the above"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 37,
+      "question": "Solve the following quadratic inequality: x² − x − 4 ≤ 2",
+      "options": {
+        "A": "-3 < x < 2",
+        "B": "-2 ≤ x ≤ 3",
+        "C": "x ≤ −2, x ≤ 3",
+        "D": "-2 < x < 3"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 38,
+      "question": "What is the general term of the sequence 3, 8, 13, 18, ...?",
+      "options": {
+        "A": "5n - 2",
+        "B": "5n + 2",
+        "C": "5",
+        "D": "5n"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 39,
+      "question": "The locus of a point equidistant from two intersecting lines is",
+      "options": {
+        "A": "where the sum of the distances of two focal points is fixed",
+        "B": "the collection of points that are equally distant from a fixed point and a line",
+        "C": "the perpendicular bisector of the lines",
+        "D": "pair of bisectors of the angles between the two lines"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 40,
+      "question": "Two numbers are respectively 35% and 80% more than a third number. The ratio of the two numbers is",
+      "options": {
+        "A": "7:16",
+        "B": "3:4",
+        "C": "16:7",
+        "D": "4:3"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 41,
+      "question": "The angle of elevation and depression of the top and bottom of another building, measured from the top of a 24 m tall building, is 30° and 60°, respectively. Determine the second building's height.",
+      "options": {
+        "A": "24 m",
+        "B": "32√3 m",
+        "C": "24√3 m",
+        "D": "32 m"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 42,
+      "question": "Calculate, correct to three significant figures, the length AB in the diagram above.",
+      "options": {
+        "A": "36.4 cm",
+        "B": "36.1 cm",
+        "C": "36.2 cm",
+        "D": "36.3 cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 43,
+      "question": "An article when sold for ₦230.00 makes a 15% profit. Find the profit or loss % if it was sold for ₦180.00",
+      "options": {
+        "A": "10% gain",
+        "B": "10% loss",
+        "C": "12% loss",
+        "D": "12% gain"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 44,
+      "question": "Calculate, correct to three significant figures, the length of the arc AB in the diagram above. [Take π = 22/7]",
+      "options": {
+        "A": "32.4 cm",
+        "B": "30.6 cm",
+        "C": "28.8 cm",
+        "D": "30.5 cm"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 45,
+      "question": "A rectangular plot of land has sides with lengths of 38 m and 52 m corrected to the nearest m. Find the range of the possible values of the area of the rectangle.",
+      "options": {
+        "A": "1931.25 m² ≤ A < 2021.25 m²",
+        "B": "1950 m² ≤ A < 2002 m²",
+        "C": "1957 m² ≤ A < 1995 m²",
+        "D": "1931.25 m² ≥ A > 2021.25 m²"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 46,
+      "question": "A man sells different brands of an items. 1/9 of the items he has in his shop are from Brand A, 5/8 of the remainder are from Brand B and the rest are from Brand C. If the total number of Brand C items in the man's shop is 81, how many more Brand B items than Brand C does the shop have?",
+      "options": {
+        "A": "243",
+        "B": "108",
+        "C": "54",
+        "D": "135"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 47,
+      "question": "Find the area, to the nearest cm², of the triangle whose sides are in the ratio 2 : 3 : 4 and whose perimeter is 180 cm.",
+      "options": {
+        "A": "1162 cm²",
+        "B": "1163 cm²",
+        "C": "1160 cm²",
+        "D": "1161 cm²"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 48,
+      "question": "Find the compound interest (CI) on ₦15,700 for 2 years at 8% per annum compounded annually.",
+      "options": {
+        "A": "₦6,212.48",
+        "B": "₦2,834.48",
+        "C": "₦18,312.48",
+        "D": "₦2,612.48"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 49,
+      "question": "Find the volume of the cylinder above [Take π = 22/7]",
+      "options": {
+        "A": "9,856 cm³",
+        "B": "14,784 cm³",
+        "C": "4,928 cm³",
+        "D": "19,712 cm³"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 50,
+      "question": "The third term of an A.P is 6 and the fifth term is 12. Find the sum of its first twelve terms",
+      "options": {
+        "A": "201",
+        "B": "144",
+        "C": "198",
+        "D": "72"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 51,
+      "question": "Express 16.54 x 10⁻⁵ - 6.76 x 10⁻⁸ + 0.23 x 10⁻⁶ in standard form",
+      "options": {
+        "A": "1.66 x 10⁻⁴",
+        "B": "1.66 x 10⁻⁵",
+        "C": "1.65 x 10⁻⁵",
+        "D": "1.65 x 10⁻⁴"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 52,
+      "question": "In the last five seasons, what was the difference in the average performance ratings between Team B and Team A?",
+      "options": {
+        "A": "1.2",
+        "B": "6.4",
+        "C": "4.6",
+        "D": "1.8"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 53,
+      "question": "A student is using a graduated cylinder to measure the volume of water and reports a reading of 18 mL. The teacher reports the value as 18.4 mL. What is the student's percent error?",
+      "options": {
+        "A": "2.17%",
+        "B": "1.73%",
+        "C": "2.23%",
+        "D": "1.96%"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 54,
+      "question": "The difference between an exterior angle of (n - 1) sided regular polygon and an exterior angle of (n + 2) sided regular polygon is 6°. Find n.",
+      "options": {
+        "A": "11",
+        "B": "13",
+        "C": "12",
+        "D": "14"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 55,
+      "question": "Two dice are tossed. What is the probability that the total score is a prime number?",
+      "options": {
+        "A": "5/12",
+        "B": "5/9",
+        "C": "1/6",
+        "D": "1/3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 56,
+      "question": "Find the volume of the composite solid above.",
+      "options": {
+        "A": "2048 cm³",
+        "B": "2568 cm³",
+        "C": "2672 cm³",
+        "D": "1320 cm³"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 57,
+      "question": "Find the area and perimeter of a square whose length of diagonals is 20√2 cm.",
+      "options": {
+        "A": "800 cm², 80 cm",
+        "B": "400 cm², 80 cm",
+        "C": "80 cm, 800 cm²",
+        "D": "400 cm², 80 cm"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 58,
+      "question": "Bello buys an old bicycle for ₦9,200 and spends ₦1,500 on repairs. If he sells the bicycle for ₦13,400, his gain percent is",
+      "options": {
+        "A": "25.23%",
+        "B": "31.34%",
+        "C": "88.81%",
+        "D": "42.54%"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 59,
+      "question": "Evaluate 58 − 34 ÷ 512 × 14",
+      "options": {
+        "A": "-340",
+        "B": "340",
+        "C": "740",
+        "D": "-26340"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 60,
+      "question": "A rectangle has one side that is 6 cm shorter than the other. The area of the rectangle will increase by 68 cm² if we add 2 cm to each side of the rectangle. Find the length of the shorter side.",
+      "options": {
+        "A": "15 cm",
+        "B": "19 cm",
+        "C": "13 cm",
+        "D": "21 cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 61,
+      "question": "The second term of a geometric series is −2/3 and its sum to infinity is 3/2. Find its common ratio.",
+      "options": {
+        "A": "-1/3",
+        "B": "2",
+        "C": "4/3",
+        "D": "2/9"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 62,
+      "question": "Find the value of the angle marked x in the diagram above.",
+      "options": {
+        "A": "60°",
+        "B": "45°",
+        "C": "90°",
+        "D": "30°"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 63,
+      "question": "The line 3y + 6x = 48 passes through the points A(-2, k) and B(4, 8). Find the value of k.",
+      "options": {
+        "A": "16",
+        "B": "20",
+        "C": "8",
+        "D": "-2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 64,
+      "question": "Tickets for the school play were priced at ₦520 each for adults and ₦250 each for kids. How many kids' tickets were sold if the total sales were ₦171,000 and there were 5 times as many adult tickets sold as children's tickets?",
+      "options": {
+        "A": "20",
+        "B": "300",
+        "C": "50",
+        "D": "60"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 65,
+      "question": "Solve the logarithmic equation: log₂(6 − x) = 3 − log₂ x",
+      "options": {
+        "A": "x = 4 or 2",
+        "B": "x = -4 or -2",
+        "C": "x = -4 or 2",
+        "D": "x = 4 or -2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 66,
+      "question": "Calculate the area of the composite figure above.",
+      "options": {
+        "A": "6048 m²",
+        "B": "3969 m²",
+        "C": "4628 m²",
+        "D": "5834 m²"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 67,
+      "question": "Find the value of x in the diagram above.",
+      "options": {
+        "A": "10 units",
+        "B": "15 units",
+        "C": "5 units",
+        "D": "20 units"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 68,
+      "question": "Which inequality describes the graph above?",
+      "options": {
+        "A": "4y + 5x ≥ 20",
+        "B": "5y + 4x ≤ 20",
+        "C": "4y + 5x ≤ 20",
+        "D": "5y + 4x ≥ 20"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 69,
+      "question": "Find the volume of a cone which has a base radius of 5 cm and slant height of 13 cm.",
+      "options": {
+        "A": "300π cm³",
+        "B": "325π cm³",
+        "C": "3253π cm³",
+        "D": "100π cm³"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 70,
+      "question": "Study the given histogram above. What is the total number of students that scored at most 50 marks?",
+      "options": {
+        "A": "380",
+        "B": "340",
+        "C": "360",
+        "D": "240"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 71,
+      "question": "The area of a trapezium is 200 cm². Its parallel sides are in the ratio 2:3 and the perpendicular distance between them is 16 cm. Find the length of each of the parallel sides.",
+      "options": {
+        "A": "10 cm and 15 cm",
+        "B": "8 cm and 12 cm",
+        "C": "6 cm and 9 cm",
+        "D": "12 cm and 18 cm"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 72,
+      "question": "PQRS is a cyclic quadrilateral. Find x + y.",
+      "options": {
+        "A": "50",
+        "B": "60",
+        "C": "15",
+        "D": "0"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 73,
+      "question": "A student pilot was required to fly to an airport and then return as part of his flight training. The average speed to the airport was 120 km/h, and the average speed returning was 150 km/h. If the total flight time was 3 hours, calculate the distance between the two airports.",
+      "options": {
+        "A": "270 km",
+        "B": "200 km",
+        "C": "360 km",
+        "D": "450 km"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 74,
+      "question": "The perimeter of an isosceles right-angled triangle is 2 meters. Find the length of its longer side.",
+      "options": {
+        "A": "2 - √2 m",
+        "B": "-4 + 3√2 m",
+        "C": "It cannot be determined",
+        "D": "-2 + 2√2 m"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 75,
+      "question": "A ship sets sail from port A (86°N, 56°W) for port B (86°N, 64°W). Find the distance the ship covered from port A to port B, correct to the nearest km. [Take π = 3.142 and R = 6370 km]",
+      "options": {
+        "A": "62 km",
+        "B": "97 km",
+        "C": "389 km",
+        "D": "931 km"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 76,
+      "question": "Use the graph of sin(θ) to estimate the value of θ when sin(θ) = -0.6 for 0° ≤ θ ≤ 360°.",
+      "options": {
+        "A": "θ = 223°, 305°",
+        "B": "θ = 210°, 330°",
+        "C": "θ = 185°, 345°",
+        "D": "θ = 218°, 323°"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 77,
+      "question": "A circle has a radius of 13 cm with a chord 12 cm away from the centre of the circle. Calculate the length of the chord.",
+      "options": {
+        "A": "16 cm",
+        "B": "8 cm",
+        "C": "5 cm",
+        "D": "10 cm"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 78,
+      "question": "Give the number of significant figures of the population of a town which has approximately 5,020,700 people.",
+      "options": {
+        "A": "7 significant figures",
+        "B": "3 significant figures",
+        "C": "4 significant figures",
+        "D": "5 significant figures"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 79,
+      "question": "200 tickets were sold for a show. VIP tickets cost ₦1,200 and ₦700 for regular. Total amount realised from the sale of the tickets was ₦180,000. Find the number of VIP tickets sold and the number of regular tickets sold.",
+      "options": {
+        "A": "VIP = 80, Regular = 100",
+        "B": "VIP = 60, Regular = 120",
+        "C": "VIP = 60, Regular = 100",
+        "D": "VIP = 80, Regular = 120"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 80,
+      "question": "It takes 12 men 8 hours a day to finish a piece of work in 4 days. In how many days will it take 4 men working 16 hours a day to complete the same piece of work?",
+      "options": {
+        "A": "6 days",
+        "B": "8 days",
+        "C": "10 days",
+        "D": "12 days"
+      },
+      "correct": "B"
+    }
+
+
+  ]
+}

@@ -1,0 +1,243 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "The hormone which regulates the amount of glucose in the blood is called?",
+    "options": {"A": "Adrenalin", "B": "Auxin", "C": "Insulin", "D": "Thyroxine"},
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "Deamination occurs in the?",
+    "options": {"A": "Kidney", "B": "Pancreas", "C": "Spleen", "D": "Liver"},
+    "correct": "D"
+  },
+  {
+    "id": 3,
+    "question": "In an agricultural ecosystem, the biotic component consist of",
+    "options": {"A": "crops, pests and beneficial insects", "B": "crops, temperature and humidity", "C": "pests, beneficial insects and water", "D": "crops, water and soil"},
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "question": "Epiphytes growing on the branches of trees provide an example of the relationship known as?",
+    "options": {"A": "parasitism", "B": "commensalism", "C": "saprophytism", "D": "holophytism"},
+    "correct": "B"
+  },
+  {
+    "id": 5,
+    "question": "The hypha of rhizopus is said to be non-septate because it",
+    "options": {"A": "does not contain chloropyll", "B": "has no cross wall", "C": "is vacuoled", "D": "stores oil globus"},
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "The function of ribosome in cells is",
+    "options": {"A": "protein synthesis", "B": "starch synthesis", "C": "transport of material", "D": "lipid storage"},
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "question": "In which of the following does external fertilization take place?",
+    "options": {"A": "toad", "B": "lizard", "C": "bird", "D": "cockroach"},
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "question": "The villus in the small intestine is significant because",
+    "options": {"A": "Increases the surface area for absorption", "B": "increases the surface area for digestion", "C": "assists in mixing digested food", "D": "assists in filtering undigested food"},
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "question": "The butterfly is of great economic importance because",
+    "options": {"A": "of it's use in scientific studies", "B": "it sucks nectar from flowers", "C": "it adds to the beauty of the environment", "D": "it pollinates flowers of crops and other plants"},
+    "correct": "D"
+  },
+  {
+    "id": 10,
+    "question": "The bright colours of the comb and feathers in the peacock are for?",
+    "options": {"A": "sex differentiation", "B": "beauty", "C": "courtship", "D": "defence"},
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "What is the term used to describe biotic and abiotic factors in the environment of the organism?",
+    "options": {"A": "habitat", "B": "biome", "C": "ecosystem", "D": "ecological niche"},
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following instruments is NOT used in measuring abiotic factors in any habitat?",
+    "options": {"A": "microscope", "B": "thermometer", "C": "hygrometer", "D": "windvane"},
+    "correct": "A"
+  },
+  {
+    "id": 13,
+    "question": "The smallest living organism which share the characteristics of both living and non-living matter are",
+    "options": {"A": "bacteria", "B": "fungi", "C": "viruses", "D": "protozoa"},
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "question": "The process by which a red blood cell placed in distilled water absorbs water until it bursts and releases its content into the surrounding is known as",
+    "options": {"A": "osmosis", "B": "plasmolysis", "C": "turgidity", "D": "hemolysis"},
+    "correct": "D"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following waste products in plants is excreted through the stomata and lenticles?",
+    "options": {"A": "carbon dioxide", "B": "alkaloids", "C": "tannins", "D": "anthoocyanins"},
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "Use the diagram to answer the question. The vertebra illustrated is",
+    "options": {"A": "lumber", "B": "thoracic", "C": "caudal", "D": "cervical"},
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "question": "Use the diagram to answer the question. The neural arch is labelled",
+    "options": {"A": "i", "B": "ii", "C": "iii", "D": "iv"},
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "The excretory structure in the earthworm is the",
+    "options": {"A": "malphighian tubule", "B": "flame cell", "C": "nephridium", "D": "kidney"},
+    "correct": "C"
+  },
+  {
+    "id": 19,
+    "question": "In which of the following vertebrates does the skin function as a respiratory surface",
+    "options": {"A": "rat", "B": "lizard", "C": "fish", "D": "frog"},
+    "correct": "D"
+  },
+  {
+    "id": 20,
+    "question": "The process of walking is under the control of the part of the brain called",
+    "options": {"A": "optic lobe", "B": "olfactory lobe", "C": "cerebellum", "D": "medulla oblongata"},
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "question": "The ability of the eyes to focus on both near and distance objects is termed",
+    "options": {"A": "image formation", "B": "refraction", "C": "hypermetropia", "D": "accommodation"},
+    "correct": "D"
+  },
+  {
+    "id": 22,
+    "question": "A group of organisms of different species living in a particular area is described as a",
+    "options": {"A": "colony", "B": "community", "C": "population", "D": "niche"},
+    "correct": "B"
+  },
+  {
+    "id": 23,
+    "question": "The biological association that contributes directly to succession in a community is",
+    "options": {"A": "competition", "B": "predation", "C": "parasitism", "D": "commensalism"},
+    "correct": "A"
+  },
+  {
+    "id": 24,
+    "question": "Floating microscopic heterotrophs are mostly grouped as",
+    "options": {"A": "phytoplankton", "B": "zooplankton", "C": "microbes", "D": "nekton"},
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "Vaccination is carried out in order to",
+    "options": {"A": "check the production of poison", "B": "increase the activities of white blood cells", "C": "increase the number of red blood cells", "D": "stimulate the production of anti-bodies"},
+    "correct": "D"
+  },
+  {
+    "id": 26,
+    "question": "For growth to occur in organisms, the rate of",
+    "options": {"A": "anabolism must exceed that of catabolism", "B": "catabolism must exceed that of anabolism", "C": "food storage must be low", "D": "food storage must be high"},
+    "correct": "A"
+  },
+  {
+    "id": 27,
+    "question": "The probability of a baby being a boy or a girl depends on the contribution of the",
+    "options": {"A": "father's sex cells", "B": "father's stomatic chromosome", "C": "mother's sex cell", "D": "mother's X-chromosome"},
+    "correct": "A"
+  },
+  {
+    "id": 28,
+    "question": "Both recessive and dominant characters are found",
+    "options": {"A": "on different chromosome in the cell", "B": "at the same logus of a homologous chromosome", "C": "at a different loci of a homologous chromosome", "D": "on the same chromatid in a chromosome"},
+    "correct": "B"
+  },
+  {
+    "id": 29,
+    "question": "In a population of living things, the parameters of size, height, weight and colours are examples of",
+    "options": {"A": "continuous variation", "B": "non-heritable variation", "C": "discontinuous variation", "D": "physiological variation"},
+    "correct": "A"
+  },
+  {
+    "id": 30,
+    "question": "Use the diagram to answer the question. The process of water loss and intake indicated by the arrows labelled i and ii are respectively",
+    "options": {"A": "evaporation and osmosis", "B": "osmosis and exhalation", "C": "osmosis and diffusion", "D": "urination and diffusion"},
+    "correct": "A"
+  },
+  {
+    "id": 31,
+    "question": "The noticeable adaptation of the animal to its aquatic habitat is the possession of",
+    "options": {"A": "webbed digits", "B": "four limb", "C": "wide mouth", "D": "large eyes"},
+    "correct": "A"
+  },
+  {
+    "id": 32,
+    "question": "Paternity disputes can most accurately be resolved through the use of",
+    "options": {"A": "blood group typing", "B": "finger printing", "C": "tongue rolling", "D": "DNA Analysis"},
+    "correct": "D"
+  },
+  {
+    "id": 33,
+    "question": "Use the table below to answer the question. High relative humidity will be expected in Zones",
+    "options": {"A": "ii and iv", "B": "ii and iii", "C": "i and iii", "D": "i and iv"},
+    "correct": "B"
+  },
+  {
+    "id": 34,
+    "question": "Use the table to answer the question. Which of the zones is likely to be a desert?",
+    "options": {"A": "i", "B": "ii", "C": "iii", "D": "iv"},
+    "correct": "A"
+  },
+  {
+    "id": 35,
+    "question": "When bacteria swim from cold to warm regions, this is known as",
+    "options": {"A": "positive phototaxis", "B": "negative phototaxis", "C": "positive thermotaxis", "D": "negative chemotaxis"},
+    "correct": "C"
+  },
+  {
+    "id": 36,
+    "question": "The only caste in the termite colony whose members can feed themselves are the",
+    "options": {"A": "workers", "B": "reproductives", "C": "soldiers", "D": "nymphs"},
+    "correct": "A"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following is the best explanation for a child who is phenotypically short and born of two tall parents",
+    "options": {"A": "both parent possess genes for shortness", "B": "the father possess a gene for shortness", "C": "nature makes the child short", "D": "none of the above"},
+    "correct": "A"
+  },
+  {
+    "id": 38,
+    "question": "Which of the following vertebrates has the most simple structured heart",
+    "options": {"A": "reptile", "B": "fish", "C": "mammal", "D": "Amphibian"},
+    "correct": "B"
+  },
+  {
+    "id": 39,
+    "question": "Use the diagram to answer the question. The type of protective adaption exhibited by the animal is",
+    "options": {"A": "disruptive colouration", "B": "flash colouration", "C": "countershading colouration", "D": "warning colouration"},
+    "correct": "C"
+  },
+  {
+    "id": 40,
+    "question": "Use the diagram to answer the question. The structure labelled i is",
+    "options": {"A": "photosensitive", "B": "radiosensitive", "C": "chemoreceptive", "D": "tactile"},
+    "correct": "A"
+  }
+]
+}

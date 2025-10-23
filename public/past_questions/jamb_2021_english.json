@@ -1,0 +1,388 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "What is Ummi's Occupation?",
+    "options": {
+      "A": "Nurse",
+      "B": "Teacher",
+      "C": "Businessperson",
+      "D": "Accountant"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "question": "Who can be described as meddlesome?",
+    "options": {
+      "A": "Daddy",
+      "B": "Ummi",
+      "C": "Bint",
+      "D": "Mallam Salihu"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 3,
+    "question": "'Just call yourself Omar Esquire' - Who makes this statement?",
+    "options": {
+      "A": "Teemah",
+      "B": "Bint",
+      "C": "Jamila",
+      "D": "Ummi"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "question": "What position is Bint in the family?",
+    "options": {
+      "A": "Last born",
+      "B": "First child",
+      "C": "Second child",
+      "D": "Third child"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "question": "What was Ummi's reason for her impromptu barging?",
+    "options": {
+      "A": "To monitor her children's activities",
+      "B": "To ensure the children were safe",
+      "C": "To keep them on their feets",
+      "D": "To ensure they maintain cleanliness"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 6,
+    "question": "Talle was imprisoned for?",
+    "options": {
+      "A": "Murder",
+      "B": "Kidnapping and Robbery",
+      "C": "Kidnapping and extortion",
+      "D": "smuggling"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "question": "The novel is written in the ___________",
+    "options": {
+      "A": "First-person and Third person point of view",
+      "B": "Third person Omniscient",
+      "C": "second-person point of view",
+      "D": "limited omniscient"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "question": "What brand of Phone did Salim buy?",
+    "options": {
+      "A": "Nokia",
+      "B": "Iphone",
+      "C": "Itel",
+      "D": "Samsung"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "question": "Omar's achievement was by no means a small feat. This means that?",
+    "options": {
+      "A": "Omar's achievement was difficult",
+      "B": "His accomplishment was small",
+      "C": "Omar's achievement was not as difficult as it seems",
+      "D": "His accomplishment was not by a small feat"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "Habib gives Tomiwa a bundle of _______?",
+    "options": {
+      "A": "One thousand naira notes",
+      "B": "five hundred naira notes",
+      "C": "two hundred naira notes",
+      "D": "dollar notes"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "question": "Salma and her roommates were _________",
+    "options": {
+      "A": "A students",
+      "B": "Outstanding students",
+      "C": "B students",
+      "D": "Average students"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "question": "How old is Bint?",
+    "options": {
+      "A": "7",
+      "B": "6",
+      "C": "5",
+      "D": "4"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 13,
+    "question": "How did Omar check his admission status?",
+    "options": {
+      "A": "visiting a cyber cafe",
+      "B": "through his phone",
+      "C": "by visiting the university",
+      "D": "through a friend's phone"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 14,
+    "question": "What subject is optional in Bint's school?",
+    "options": {
+      "A": "Music",
+      "B": "French",
+      "C": "Fine Art",
+      "D": "Hand writing"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 15,
+    "question": "Omar had ______ credits in the WAEC examination",
+    "options": {
+      "A": "9",
+      "B": "5",
+      "C": "8",
+      "D": "7"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "question": "Who often says 'What you teach a child is like writing on a rock and when dried, it would be difficult to erase'?",
+    "options": {
+      "A": "Ummi",
+      "B": "Omar",
+      "C": "Ummi's Grandmother",
+      "D": "Salma's grandmother"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "Who is Jamila?",
+    "options": {
+      "A": "Salma's roommate",
+      "B": "Salma's friend",
+      "C": "Ummi's second child",
+      "D": "Bint's immediate elder sister"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 18,
+    "question": "Ummi is translated in Arabic as _____?",
+    "options": {
+      "A": "my mentor",
+      "B": "my mother",
+      "C": "my morning star",
+      "D": "my muse"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "Teemah is the first ________ of the family",
+    "options": {
+      "A": "child",
+      "B": "graduate",
+      "C": "daughter",
+      "D": "female"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 20,
+    "question": "Ummi's husband always wanted to study?",
+    "options": {
+      "A": "accounting",
+      "B": "pharmacy",
+      "C": "Linguistics",
+      "D": "Law"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 21,
+    "question": "What reward was Omar expecting for his achievement?",
+    "options": {
+      "A": "a bag",
+      "B": "a shoe",
+      "C": "a phone",
+      "D": "a laptop"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 22,
+    "question": "What was Omar JAMB score?",
+    "options": {
+      "A": "300",
+      "B": "250",
+      "C": "200",
+      "D": "230"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "question": "What was the double celebration in Lafayette?",
+    "options": {
+      "A": "The birth of Talle and his brother",
+      "B": "Ummi's admission and marriage",
+      "C": "Omar's WAEC and JAMB success",
+      "D": "Salma's admission and engagement"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "According to Ummi, what is the first noticeable thing in the university?",
+    "options": {
+      "A": "Different people",
+      "B": "lawlessness and injustice",
+      "C": "Freedom of dressing",
+      "D": "immoral relationships"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "According to the novel, how would you describe Salma?",
+    "options": {
+      "A": "fair complexioned skin, tall and slim",
+      "B": "fair complexioned, short and fat",
+      "C": "dark-complexioned skin, tall and slim",
+      "D": "dark-complexioned girl, short and fat"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "question": "Where did Salma and Ummi first meet?",
+    "options": {
+      "A": "the university",
+      "B": "departmental registration",
+      "C": "School hostel",
+      "D": "Faculty registration"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 27,
+    "question": "What is Salma's surname?",
+    "options": {
+      "A": "Mohammed",
+      "B": "Muhammed",
+      "C": "Moshood",
+      "D": "Moshud"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "question": "Who among the following characters can be described as one with few words?",
+    "options": {
+      "A": "Ada",
+      "B": "secretary to the HOD",
+      "C": "John",
+      "D": "Ngozi"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 29,
+    "question": "What exact incident led to Ummi's development of claustrophobia?",
+    "options": {
+      "A": "She was ill",
+      "B": "She was pregnant",
+      "C": "The HOD had asked if she wanted something to drink",
+      "D": "the HOD was too nice to her"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 30,
+    "question": "What is Ummi's matriculation number?",
+    "options": {
+      "A": "UF0001",
+      "B": "UG0002",
+      "C": "UG0001",
+      "D": "UF0002"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "Who assisted Ummi's husband with Ummi's admission?",
+    "options": {
+      "A": "Mallam Salihu",
+      "B": "Salim",
+      "C": "Kabir",
+      "D": "Samuel"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "Ummi angrily left the HOD's office because?",
+    "options": {
+      "A": "The HOD disrespected her",
+      "B": "He tried to be romantic with her",
+      "C": "Ummi assumed he was trying to make a pass at her",
+      "D": "He delayed her"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "question": "According to the Novel, how would you describe Dr Samuel Johnson?",
+    "options": {
+      "A": "He has a tribal mark and he looks like an Igala man",
+      "B": "He has a tribal mark and he is an Igala man",
+      "C": "He has a tribal mark and he is not a Yoruba man",
+      "D": "He has a tribal mark and he looks like an Edo man"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 34,
+    "question": "Who apologizes to the HOD on behalf of Ummi?",
+    "options": {
+      "A": "Salma",
+      "B": "Ummi's husband",
+      "C": "Kabir",
+      "D": "Salim"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 35,
+    "question": "Who narrated the story of 'the quiet one' to Ummi?",
+    "options": {
+      "A": "Hakimi",
+      "B": "the people of Lafayette",
+      "C": "Zaki",
+      "D": "Ummi's husband"
+    },
+    "correct": "D"
+  }
+]
+}

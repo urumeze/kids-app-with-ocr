@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "Which of these is a derived unit?",
+    "options": {
+      "A": "Kilogram",
+      "B": "Metre",
+      "C": "Newton",
+      "D": "Second"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "A bar magnet is divided into two pieces, which of the following statement is correct?",
+    "options": {
+      "A": "two new magnets are created",
+      "B": "the magnetic field of each separate piece becomes stronger",
+      "C": "the electric field is created",
+      "D": "the bar magnet is demagnetized"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "Consider the wave equation y = 5mm sin [1cm⁻¹ x - 60s⁻¹ t]. The wave number is?",
+    "options": {
+      "A": "0.1 cm⁻¹",
+      "B": "10 cm⁻¹",
+      "C": "1.0 cm⁻¹",
+      "D": "2 cm⁻¹"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 4,
+    "question": "An object 40 cm high is 30 cm from the pinhole camera. If the height of the image formed is 20 cm, what is the distance of the image from the pinhole?",
+    "options": {
+      "A": "15 cm",
+      "B": "70 cm",
+      "C": "40 cm",
+      "D": "40 cm"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "A bar magnet is placed near and lying along the axis of a solenoid connected to a galvanometer. The pointer of the galvanometer shows no deflection when?",
+    "options": {
+      "A": "the magnet is moved towards the stationary solenoid",
+      "B": "there is no relative motion",
+      "C": "the magnet is moved away from the stationary solenoid",
+      "D": "the solenoid is moved away from the stationary magnet"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "Tyres are treaded to?",
+    "options": {
+      "A": "increase weight of tyres",
+      "B": "increase friction",
+      "C": "increase its longevity",
+      "D": "look good"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "question": "A car starts from rest and covers a distance of 40 m in 10 s. Calculate the magnitude of its acceleration.",
+    "options": {
+      "A": "3.20 ms⁻²",
+      "B": "0.25 ms⁻²",
+      "C": "0.80 ms⁻²",
+      "D": "4.00 ms⁻²"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "question": "The relationship between the coefficient of linear expansion α and volumetric expansion γ is:",
+    "options": {
+      "A": "γ = α⁻³",
+      "B": "γ = α",
+      "C": "γ = 3α",
+      "D": "γ = α³"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following is not a consequence of hydrogen bubbles covering the copper plate of a primary cell?",
+    "options": {
+      "A": "formation of hydrogen bubbles on the electrode",
+      "B": "increase in the resistance of the cell",
+      "C": "local action",
+      "D": "polarization"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "A cell whose internal resistance is 0.55Ω delivers a current of 4 A to an external resistor. The lost voltage of the cell is?",
+    "options": {
+      "A": "4.00 V",
+      "B": "2.20 V",
+      "C": "0.15 V",
+      "D": "8.00 V"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following liquids is a poor conductor of electricity?",
+    "options": {
+      "A": "Distilled water",
+      "B": "Tap water",
+      "C": "Sea water",
+      "D": "Drinking water"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 12,
+    "question": "An isotope has an initial activity of 120 Bq. 6 days later its activity is 15 Bq. The half-life is?",
+    "options": {
+      "A": "3 days",
+      "B": "2 days",
+      "C": "1 day",
+      "D": "4 days"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "The secondary pigments consist of?",
+    "options": {
+      "A": "blue, green, and violet",
+      "B": "yellow, green, and magenta",
+      "C": "magenta, yellow, and cyan",
+      "D": "red, green, and blue"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "question": "A person standing waist-deep in a swimming pool appears to have short legs because of light?",
+    "options": {
+      "A": "diffraction",
+      "B": "refraction",
+      "C": "reflection",
+      "D": "interference"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 15,
+    "question": "A tuning fork having a frequency of 312 Hz emits a wave which has a wavelength of 1.10 m. Calculate the velocity of sound",
+    "options": {
+      "A": "312.0 ms⁻¹",
+      "B": "110.0 ms⁻¹",
+      "C": "343.2 ms⁻¹",
+      "D": "686.4 ms⁻¹"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "question": "When the plate area of a capacitor increases?",
+    "options": {
+      "A": "the voltage can withstand increase",
+      "B": "the capacitance decreases",
+      "C": "the capacitance is unaffected",
+      "D": "the capacitance increases"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 17,
+    "question": "A magnet relay is a device used for?",
+    "options": {
+      "A": "reading the magnitude of magnetic flux",
+      "B": "controlling another circuit carrying larger current",
+      "C": "turning in sports",
+      "D": "storing magnetic field"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "According to kinetic molecular model in gases,",
+    "options": {
+      "A": "the particles are closely packed together; they occupy minimum space are usually arranged in a regular pattern",
+      "B": "the particles vibrate about fixed positions and are held together by the strong intermolecular bonds between them",
+      "C": "the molecules are very far apart and occupy all the spaces made available to them",
+      "D": "the particles occur in clusters with molecules slightly further apart"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 19,
+    "question": "A current of 0.5 A flows through a resistor when connected to a 40 V battery. How much energy is dispatched in 2 minutes?",
+    "options": {
+      "A": "2400 J",
+      "B": "9600 J",
+      "C": "1500 J",
+      "D": "1200 J"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "question": "For a pear-shaped conductor shown above, the concentration of charge on the outside is highest at?",
+    "options": {
+      "A": "X",
+      "B": "Z",
+      "C": "Y",
+      "D": "K"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 21,
+    "question": "The vapour pressure?",
+    "options": {
+      "A": "increases non-linearly with measuring temperature",
+      "B": "increases linearly with increasing temperature",
+      "C": "decreases linearly with increasing temperature",
+      "D": "decreases non-linearly ith measuring temperature"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "The potential energy in an elastic string of force constant k, which has an extension X is?",
+    "options": {
+      "A": "kX",
+      "B": "KX2",
+      "C": "½KX2",
+      "D": "½K"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "question": "A reservoir is filled with liquid of density 2000 kg/m³. Calculate the depth at which the pressure in the liquid will be equal to 9100 N/m² (g = 10 m/s²)",
+    "options": {
+      "A": "0.262 m",
+      "B": "0.664 m",
+      "C": "0.819 m",
+      "D": "0.455 m"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 24,
+    "question": "Water is not a good thermometric liquid because it?",
+    "options": {
+      "A": "expands unevenly between 0 ºC and 4 ºC",
+      "B": "maintains fixed density",
+      "C": "has low freezing point",
+      "D": "wets glass"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "question": "Which of these is a second-class lever?",
+    "options": {
+      "A": "sugar tongs",
+      "B": "claw hammer",
+      "C": "plier",
+      "D": "wheelbarrow"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 26,
+    "question": "In the formation of sea breeze, wind blows from?",
+    "options": {
+      "A": "sky to land",
+      "B": "sea to sky",
+      "C": "land to sea",
+      "D": "sea to land"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 27,
+    "question": "Which component of fiber-optic connector has a provision of entry for the fibre along with the fixation to connector housing?",
+    "options": {
+      "A": "coupling device",
+      "B": "cable",
+      "C": "ferrule",
+      "D": "connector housing"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "question": "In order to view the sun, the most suitable instrument to use is?",
+    "options": {
+      "A": "helioscope",
+      "B": "telescope",
+      "C": "stroboscope",
+      "D": "sun meter"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 29,
+    "question": "The eclipse of the moon occurs when?",
+    "options": {
+      "A": "the moon reflects the rays from the sun to the earth",
+      "B": "the moon comes exactly between the earth and the sun",
+      "C": "the earth comes exactly between the moon and the sun",
+      "D": "the sun comes exactly between the earth and the moon"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 30,
+    "question": "The gravitational pull on the moon is 1/6 that of the earth. If a body weighs 6.0 N on the moon, what will be the weight on the earth?",
+    "options": {
+      "A": "6.0 N",
+      "B": "5.0 N",
+      "C": "12.0 N",
+      "D": "36.0 N"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 31,
+    "question": "The amount of energy required to change a kilogram of ice block into water without a change in temperature is?",
+    "options": {
+      "A": "specific latent heat of fusion of ice",
+      "B": "specific heat capacity of ice",
+      "C": "heat capacity of ice",
+      "D": "specific heat of vaporization of ice"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 32,
+    "question": "Which expression gives magnetic flux?",
+    "options": {
+      "A": "qVB sinθ",
+      "B": "μϕI2πr",
+      "C": "BA cos θ",
+      "D": "-N dϕdt"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "question": "The graph of pressure (P) against the reciprocal of the volume (1/V) in Boyle's law is a?",
+    "options": {
+      "A": "hyperbola",
+      "B": "parabola",
+      "C": "curve",
+      "D": "straight line"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 34,
+    "question": "What quantity of heat is required to convert 20 g of ice at 0 ºC to water at the same temperature? (Specific latent heat of ice = 336 J/g)",
+    "options": {
+      "A": "7.06 x 10³ J",
+      "B": "5.38 x 10³ J",
+      "C": "6.72 x 10³ J",
+      "D": "1.35 x 10³ J"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "A train of mass 1600 kg attains a speed of 25 m/s in 20 seconds. The power developed in the engine is?",
+    "options": {
+      "A": "2.5 KW",
+      "B": "80 KW",
+      "C": "25 KW",
+      "D": "50 KW"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 36,
+    "question": "The main factor which affects the speed of sound wave is the?",
+    "options": {
+      "A": "properties of the medium",
+      "B": "amplitude of the sound wave",
+      "C": "intensity of the sound wave",
+      "D": "loudness of the sound wave"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 37,
+    "question": "A semiconductor is formed by?",
+    "options": {
+      "A": "co-ordinate bonds",
+      "B": "electrovalent bonds",
+      "C": "a substance free of bonds",
+      "D": "covalent bonds"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 38,
+    "question": "One of the following is a scalar quantity?",
+    "options": {
+      "A": "weight",
+      "B": "momentum",
+      "C": "potential energy",
+      "D": "displacement"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 39,
+    "question": "The mercury column in the barometer at standard atmospheric pressure has a height of?",
+    "options": {
+      "A": "0.76 cm at sea level",
+      "B": "760 cm at sea level",
+      "C": "7.6 cm at sea level",
+      "D": "76 cm at sea level"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "question": "If an object just begins to slide on a surface inclined at 30º to the horizontal, the coefficient of friction is?",
+    "options": {
+      "A": "√3",
+      "B": "√32",
+      "C": "1√2",
+      "D": "1/√3"
+    },
+    "correct": "D"
+  }
+]
+}

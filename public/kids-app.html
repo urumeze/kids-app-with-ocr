@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoQuiz</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -12,8 +14,83 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+         :root{
+      --bg:#f6fbff;
+      --primary:#5c7cfa; /* friendly blue */
+      --accent:#ff66b3; /* pink */
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.7);
+    }
+
+    *{box-sizing:border-box}
+    body,html{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial}
+
+    /* app shell */
+    .app{
+      min-height:100vh;
+      background: linear-gradient(180deg,#f8feff 0%, #eef6ff 100%);
+      display:flex;align-items:center;justify-content:center;flex-direction:column;padding:32px;
+    }
+    .app h1{color:#0f172a;margin:0 0 8px;font-size:clamp(20px,4vw,32px)}
+    .app p{color:var(--muted);margin:0 0 24px}
+    .card{width:100%;max-width:980px;background:var(--glass);backdrop-filter: blur(6px);border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(16,24,40,0.08);text-align:center}
+
+    /* overlay */
+    .overlay{
+      position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(5,10,25,0.75), rgba(6,12,28,0.6));z-index:9999;transition:opacity .45s ease,visibility .45s ease;}
+    .overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}
+
+    .login-box{
+      width:min(420px,92%);background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,255,0.95));border-radius:12px;padding:28px;box-shadow:0 12px 40px rgba(3,10,30,0.28);text-align:center;position:relative;overflow:hidden
+    }
+    .logo{height:56px;width:80px;border-radius:12px;background:plum;display:inline-grid;place-items:center;color:white;font-weight:800;font-size:20px;margin-bottom:14px}
+    .title{font-weight:700;font-size:18px;color:#07102a;margin-bottom:6px}
+    .subtitle{color:var(--muted);font-size:13px;margin-bottom:18px}
+
+    .actions{display:flex;gap:12px;flex-direction:column}
+    .btn{
+      appearance:none;border:0;padding:12px 14px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px;transition:transform .15s ease,box-shadow .15s ease;display:flex;align-items:center;justify-content:center;gap:10px
+    }
+    .btn:active{transform:translateY(1px)}
+
+    .btn-guest{background:#fff;border:1px solid #eef2ff;color:#0f172a;box-shadow:0 6px 18px rgba(12,24,60,0.06)}
+    .btn-google{display:flex; size: 20px; ;background:blue;color:#fff}
+
+    .small{font-size:12px;color:var(--muted);margin-top:12px}
+
+    /* animated circle */
+    .pulse-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+    .big-circle{
+      width:80px;height:80px;border-radius:50%;transform:scale(0);opacity:0;filter:blur(.4px);
+      background:conic-gradient(from 0deg, #5c7cfa, #ff66b3, #34d399, #ff9f43, #5c7cfa);
+      transition:opacity .15s linear;z-index:10
+    }
+
+    /* keyframes for colorful expand lasting 2s */
+    @keyframes circleBurst{
+      0%{transform:scale(0);opacity:1;filter:blur(0px)}
+      40%{transform:scale(1.05);opacity:1}
+      100%{transform:scale(40);opacity:1;filter:blur(6px)}
+    }
+
+    /* overlay-content hiding while animating */
+    .overlay.fade-to-app .login-box{opacity:0;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease}
+
+    /* final page easing */
+    .app.revealed{opacity:1;transform:none}
+
+    /* small helpful footer */
+    .credit{font-size:12px;color:var(--muted);margin-top:14px}
+
+    /* Responsive */
+    @media (min-width:720px){.actions{flex-direction:row}}
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
         
         .design {
             font-family: 'Comic Neue', cursive;
@@ -151,6 +228,116 @@
     </style>
 </head>
 <body class="design">
+
+
+    <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Login">
+  <div class="pulse-wrap" aria-hidden="true">
+    <div class="big-circle" id="bigCircle"></div>
+  </div>
+
+  <div class="login-box" id="loginBox">
+    <div class="logo">GoQuiz</div>
+    <div class="title">Yello!!! GoQuiz.app</div>
+    
+
+    <div class="actions">
+      <button class="btn btn-guest" id="guestBtn" title="Continue as guest">Continue as Guest</button>
+      <button class="btn btn-google" id="googleBtn" title="Sign in with Google">Sign in with Google </button>
+    </div>
+
+    <!--div class="small">By continuing you agree to our friendly terms. This demo uses a simulated Google flow.</div-->
+  </div>
+</div>
+
+<!-- 📚 MENU PANEL -->
+<div id="menuPanel"
+     class="fixed left-0 top-0 h-full w-64 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+  <div class="p-4 border-b flex justify-between items-center">
+    <h2 class="text-xl font-semibold text-gray-800">Past Exams</h2>
+    <button id="closeMenuBtn" class="text-gray-600 hover:text-black">&times;</button>
+  </div>
+
+  <!-- Menu Content -->
+  <div class="p-4">
+    <h3 class="text-lg font-bold mb-2">JAMB</h3>
+    <ul class="space-y-3">
+      <!-- 2020 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2020 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2020, 'english')" class="subject-btn">English</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'maths')" class="subject-btn">Maths</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'physics')" class="subject-btn">Physics</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'chemistry')" class="subject-btn">Chemistry</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'biology')" class="subject-btn">Biology</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'economics')" class="subject-btn">Economics</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'literature')" class="subject-btn">English Literature</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'history')" class="subject-btn">History</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'geography')" class="subject-btn">Geography</button></li>
+        </ul>
+      </li>
+
+      <!-- 2021 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2021">2021 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2021, 'english')" class="subject-btn">English</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'maths')" class="subject-btn">Maths</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'physics')" class="subject-btn">Physics</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'chemistry')" class="subject-btn">Chemistry</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'biology')" class="subject-btn">Biology</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'economics')" class="subject-btn">Economics</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'literature')" class="subject-btn">English Literature</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'history')" class="subject-btn">History</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'geography')" class="subject-btn">Geography</button></li>
+        </ul>
+      </li>
+
+      <!-- 2022 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2022">2022 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2022, 'english')" class="subject-btn">English</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'maths')" class="subject-btn">Maths</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'physics')" class="subject-btn">Physics</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'chemistry')" class="subject-btn">Chemistry</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'biology')" class="subject-btn">Biology</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'economics')" class="subject-btn">Economics</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'literature')" class="subject-btn">English Literature</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'history')" class="subject-btn">History</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'geography')" class="subject-btn">Geography</button></li>
+        </ul>
+      </li>
+
+      <!-- 2023 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2023">2023 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2023, 'english')" class="subject-btn">English</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'maths')" class="subject-btn">Maths</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'physics')" class="subject-btn">Physics</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'chemistry')" class="subject-btn">Chemistry</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'biology')" class="subject-btn">Biology</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'economics')" class="subject-btn">Economics</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'literature')" class="subject-btn">English Literature</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'history')" class="subject-btn">History</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'geography')" class="subject-btn">Geography</button></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Floating Open Button -->
+<button id="openMenuBtn"
+        class="fixed top-4 left-4 bg-blue-600 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50">
+  ☰
+</button>
+
+
+
+
+
     <!-- Background shapes -->
     <div class="shape circle w-32 h-32 top-20 left-10 rotate"></div>
     <div class="shape triangle top-1/4 right-20 bounce"></div>
@@ -163,14 +350,14 @@
         <!-- Header -->
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 mb-4" data-aos="fade-down">GoQuiz</h1>
-            <p class="text-xl text-gray-700" data-aos="fade-up">Turn your documents into fun learning adventures!</p>
+            <p class="text-xl text-gray-700" data-aos="fade-up">1. Snap your Kids Note=> 2. Upload=> 3. click Next</p>
         </header>
         
         <!-- Main content area - will be dynamically updated -->
         <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
             <!-- Step 1: Upload Document -->
             <div id="step1" class="step">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your Document</h2>
+                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your School Notes here</h2>
                 <div class="upload-container rounded-xl p-8 text-center cursor-pointer mb-6" id="dropArea">
                     <div class="flex flex-col items-center justify-center">
                         <i data-feather="upload" class="w-16 h-16 text-indigo-500 mb-4"></i>
@@ -179,7 +366,7 @@
                         <!--label for="fileInput" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium cursor-pointer hover:bg-indigo-700 transition">
                             Select File
                         </label-->
-                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
                     </div>
                 </div>
                 <div class="text-center text-gray-500">
@@ -283,6 +470,127 @@
 
 
 <script>
+    // Replace with your Firebase project config (from Firebase Console → Project Settings → SDK setup)
+const firebaseConfig = {
+    apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
+    authDomain: "kids-note-app.firebaseapp.com",
+    projectId: "kids-note-app",
+    storageBucket: "kids-note-app.firebasestorage.app",
+    messagingSenderId: "845525258490",
+    appId: "1:845525258490:web:16ab8dad0a98469456b943",
+    measurementId: "G-KHBK5Z52TL"
+};
+
+// Init Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+
+// === MENU PANEL LOGIC ===
+const menuPanel = document.getElementById('menuPanel');
+const openMenuBtn = document.getElementById('openMenuBtn');
+const closeMenuBtn = document.getElementById('closeMenuBtn');
+
+// Open/Close menu
+openMenuBtn.addEventListener('click', () => {
+  menuPanel.classList.remove('-translate-x-full');
+});
+closeMenuBtn.addEventListener('click', () => {
+  menuPanel.classList.add('-translate-x-full');
+});
+
+// Expand/collapse year sections
+document.querySelectorAll('.year-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const nextList = btn.nextElementSibling;
+    nextList.classList.toggle('hidden');
+  });
+});
+
+
+    // Elements
+  const overlay = document.getElementById('overlay');
+  const bigCircle = document.getElementById('bigCircle');
+  const guestBtn = document.getElementById('guestBtn');
+  const googleBtn = document.getElementById('googleBtn');
+  const appElement= document.getElementById('app');
+  const loginBox = document.getElementById('loginBox');
+
+  // Helper to play the 2s circle animation and reveal app
+  function playLoginAnimation(callback){
+    // Reset state
+    bigCircle.style.transition = 'none';
+    bigCircle.style.transform = 'scale(0)';
+    bigCircle.style.opacity = '1';
+
+    // Force reflow then apply animation class via inline style
+    void bigCircle.offsetWidth;
+
+    bigCircle.style.animation = 'circleBurst 2s cubic-bezier(.22,.9,.22,1) forwards';
+    overlay.classList.add('fade-to-app');
+
+    // After the animation ends (50ms) fade out overlay and reveal app
+    setTimeout(()=>{
+      // hide overlay
+      overlay.classList.add('hidden');
+      overlay.setAttribute('aria-hidden','true');
+      appElement.setAttribute('aria-hidden','false');
+      appElement.classList.add('revealed');
+      // clean up animation styles so repeated logins work nicely
+      bigCircle.style.animation = '';
+      bigCircle.style.opacity = '0';
+      if(callback) callback();
+    }, 50);
+  }
+  // Simulate guest login
+  guestBtn.addEventListener('click',()=>{
+    // in a real app you'd create a local guest session here
+    guestBtn.disabled = true;googleBtn.disabled = true;
+    playLoginAnimation(()=>console.log('guest entry complete'));
+  });
+
+  // Simulated Google Auth flow (placeholder)
+    // Real Google Auth flow
+    googleBtn.addEventListener('click', async () => {
+    googleBtn.disabled = true;
+    guestBtn.disabled = true;
+
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider)
+    .then((result) => {
+      const user = result.user;
+      console.log("Signed in as:", user.displayName, user.email);
+      playLoginAnimation(() => console.log('google auth complete'));
+    })
+    .catch((error) => {
+      console.error("Google sign-in error:", error);
+      alert("Google sign-in failed: " + error.message);
+      googleBtn.disabled = false;
+      guestBtn.disabled = false;
+    });
+});
+
+
+  // Accessibility: keyboard fallback to close overlay if user presses Escape (for demos)
+  document.addEventListener('keydown',(e)=>{
+    if(e.key === 'Escape' && !overlay.classList.contains('hidden')){
+      // treat as guest entry for demo
+      guestBtn.click();
+    }
+  });
+
+  // Prevent tab trapping outside overlay for demo (basic)
+  window.addEventListener('load',()=>{
+    // focus first focused control
+    guestBtn.focus();
+  });
+
+
+
+
+
+
 
 // Initialize AOS and Feather Icons
 document.addEventListener('DOMContentLoaded', function() {
@@ -297,6 +605,20 @@ document.addEventListener('DOMContentLoaded', function() {
     setupApp();
 });
 
+// Application state
+    let appState = {
+        currentStep: 1,
+        extractedText: '',
+        simplifiedText: '',
+        quizQuestions: 5,
+        quizData: [],
+        userAnswers: [],
+        score: 0,
+        loadPastQuestions:''
+
+
+    };
+
 function setupApp() {
     // DOM elements
     const dropArea = document.getElementById('dropArea');
@@ -309,16 +631,7 @@ function setupApp() {
     const newDocument = document.getElementById('newDocument');
     const quizOptions = document.querySelectorAll('.quiz-option');
     
-    // Application state
-    let appState = {
-        currentStep: 1,
-        extractedText: '',
-        simplifiedText: '',
-        quizQuestions: 5,
-        quizData: [],
-        userAnswers: [],
-        score: 0
-    };
+    
     
     // Event listeners
     dropArea.addEventListener('click', () => fileInput.click());
@@ -377,43 +690,46 @@ function setupApp() {
         }
     }
     
-    async function handleFileSelect(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        
-        showLoading("Processing your document...");
-        
-        // Simulate processing delay
-        simulateProgress();
-        
-        try {
-            let text = '';
+async function handleFileSelect(event) {
+    const files = Array.from(event.target.files);  // ✅ multiple files
+    if (!files.length) return;
+
+    showLoading("Processing your document...");
+    simulateProgress();
+
+    try {
+        let text = '';
+        for (const file of files) {   // ✅ loop through each file
             const fileType = file.name.split('.').pop().toLowerCase();
-            
+
             if (fileType === 'pdf') {
-                text = await extractTextFromPDF(file);
+                text += await extractTextFromPDF(file) + '\n\n';
             } else if (fileType === 'doc' || fileType === 'docx') {
-                text = await extractTextFromWord(file);
-            } else if (fileType === 'jpg' || fileType === 'jpeg' || fileType === 'png') {
-                text = await extractTextFromImage(file);
+                text += await extractTextFromWord(file) + '\n\n';
+            } else if (['jpg', 'jpeg', 'png'].includes(fileType)) {
+                text += await extractTextFromImage(file) + '\n\n';
             } else {
-                throw new Error('Unsupported file type');
+                throw new Error('Unsupported file type: ' + file.name);
             }
-            
-            appState.extractedText = text;
-            document.getElementById('extractedText').textContent = text;
-            
-            // Call AI simplification
-            appState.simplifiedText = await simplifyText(text);
-            document.getElementById('simplifiedText').textContent = appState.simplifiedText;
-            hideLoading();
-            showStep(2);
-            
-        } catch (error) {
-            hideLoading();
-            alert('Error processing file: ' + error.message);
         }
+
+        // ✅ Store combined text
+        appState.extractedText = text;
+        document.getElementById('extractedText').textContent = text;
+
+        // ✅ Simplify combined text
+        appState.simplifiedText = await simplifyText(text);
+        document.getElementById('simplifiedText').textContent = appState.simplifiedText;
+
+        hideLoading();
+        showStep(2);
+
+    } catch (error) {
+        hideLoading();
+        alert('Error processing file: ' + error.message);
     }
+}
+
     
     function extractTextFromPDF(file) {
         return new Promise((resolve, reject) => {
@@ -482,13 +798,13 @@ async function extractTextFromImage(file) {
                 const res = await fetch("/api/ocr", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ image: base64Data })
+                    body: JSON.stringify({ images: [base64Data] }) // 👈 wrap in array
                 });
                 const data = await res.json();
                 if (res.ok && data.text) {
                     resolve(data.text);
                 } else {
-                    reject(new Error("OCR failed"));
+                    reject(new Error(data.error || "OCR failed"));
                 }
             } catch (err) {
                 reject(err);
@@ -498,6 +814,7 @@ async function extractTextFromImage(file) {
         reader.readAsDataURL(file);
     });
 }
+
 
     
     async function simplifyText(text) {
@@ -582,6 +899,7 @@ async function extractTextFromImage(file) {
         });
     }
     
+
     function calculateScore() {
         let correctCount = 0;
         appState.quizData.forEach((q, i) => {
@@ -657,9 +975,128 @@ async function extractTextFromImage(file) {
             progressFill.style.width = `${progress}%`;
         }, 300);
     }
+// Convert letter "A"/"B"/"C"/"D" → numeric index 0..3 (returns -1 if not found)
+function letterToIndex(letter) {
+  if (!letter || typeof letter !== 'string') return -1;
+  return ['A','B','C','D'].indexOf(letter.toUpperCase());
 }
 
+// Convert numeric index 0..3 → letter "A"/"B"/"C"/"D"
+function indexToLetter(idx) {
+  return ['A','B','C','D'][idx] || null;
+}
+
+
+
+async function loadPastQuestions(year, subject) {
+  const loader = document.getElementById('loading');
+  if (loader) loader.style.display = 'block';
+
+  try {
+    console.log(`Loading ${subject.toUpperCase()} past questions for ${year}...`);
+
+    const response = await fetch(`/api/past-quiz/${year}/${subject}`);
+    if (!response.ok) throw new Error("Quiz not found");
+
+    const data = await response.json();
+    if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
+
+    // Map data to standard format: options -> array, correct -> numeric index
+    const pastQuizData = data.quiz.map((q, qi) => {
+      // q.options may be object {A:...,B:...} or already an array; normalize
+      let optionsArr;
+      if (Array.isArray(q.options)) {
+        optionsArr = q.options.slice(0,4);
+      } else if (q.options && typeof q.options === 'object') {
+        // ensure stable ordering A,B,C,D
+        optionsArr = ['A','B','C','D'].map(k => q.options[k]).filter(v => v !== undefined);
+      } else {
+        optionsArr = ["A","B","C","D"];
+      }
+
+      // Accept either q.correct or q.answer (some files used answer). Could be letter or index.
+      let correctVal = q.correct ?? q.answer ?? q.correctIndex ?? null;
+
+      // If correctVal is a string letter, convert to index
+      let correctIndex = -1;
+      if (typeof correctVal === 'string') {
+        correctIndex = letterToIndex(correctVal);
+      } else if (Number.isInteger(correctVal)) {
+        correctIndex = correctVal;
+      }
+
+      // Fallback: if no valid index, try to infer by matching option text "Correct" (rare)
+      if (correctIndex < 0) {
+        // If JSON used letters as keys but not provided, default to 0
+        correctIndex = 0;
+      }
+
+      return {
+        question: q.question || "Untitled question",
+        options: optionsArr,
+        // ensure correct is numeric index for internal logic
+        correct: correctIndex
+      };
+    });
+
+    // Update app state
+    appState.quizData = pastQuizData;
+    appState.userAnswers = [];
+
+    // Display quiz
+    displayQuiz();
+
+    // Go to quiz step
+    showStep(5);
+    const menuPanel = document.getElementById('menuPanel');
+    if (menuPanel) menuPanel.classList.add('-translate-x-full');
+
+  } catch (err) {
+    console.error("Failed to load past questions:", err);
+    alert("Could not load past questions. See console for details.");
+  } finally {
+    if (loader) loader.style.display = 'none';
+  }
+}
+window.loadPastQuestions = loadPastQuestions;
+
+
+// Attach click handlers
+document.querySelectorAll('.subject-btn').forEach(btn => {
+  const yearBtn = btn.closest('li')?.querySelector('.year-btn');
+  if (!yearBtn) return;
+
+  const year = yearBtn.dataset.year;
+  const subject = btn.textContent.trim().toLowerCase();
+
+  btn.addEventListener('click', () => loadPastQuestions(year, subject));
+});
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
+
+
+
+
 
 
 
