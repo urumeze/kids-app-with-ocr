@@ -1,0 +1,442 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "A firm is at its optimum size when ___________",
+    "options": {
+      "A": "It has a motive to increase output",
+      "B": "It produces the greatest output at a minimum cost",
+      "C": "Marginal cost equals marginal revenue",
+      "D": "Marginal cost is less than marginal revenue"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 2,
+    "question": "Under the ECOWAS agreement, a Nigerian can enter and stay in Ghana without a Visa for a period of ________",
+    "options": {
+      "A": "100 days",
+      "B": "30 days",
+      "C": "90 days",
+      "D": "14 days"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 3,
+    "question": "The petro-chemical industries are located in Rivers State of Nigeria due to ________",
+    "options": {
+      "A": "Coal deposit",
+      "B": "Palm oil products",
+      "C": "Favourable soil",
+      "D": "Oil deposits"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 4,
+    "question": "This table illustrates the law of _________",
+    "options": {
+      "A": "Increasing returns",
+      "B": "Diminishing returns",
+      "C": "Diminishing marginal utility",
+      "D": "Increasing total utility"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "question": "Pricing and Output decisions of sellers are highly inter-dependent in markets known as _________",
+    "options": {
+      "A": "Monopoly",
+      "B": "Oligopoly",
+      "C": "Monopolistic competition",
+      "D": "Perfect competition"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "Full employment is a situation in which _______",
+    "options": {
+      "A": "Every adult is employed",
+      "B": "Only the disabled are not employed",
+      "C": "All adults who can work are employed",
+      "D": "All those who are able and eligible can find employment"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 7,
+    "question": "Mono production economies are those that____",
+    "options": {
+      "A": "Produce one main commodity",
+      "B": "Have a rich cultural heritage",
+      "C": "Specialize in agricultural industries",
+      "D": "Produce only raw materials"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "question": "Petroleum 'glut' in international trade means______",
+    "options": {
+      "A": "Higher prices for the consumption of petroleum",
+      "B": "An Oversupply of petroleum",
+      "C": "A fall in petroleum production",
+      "D": "A higher petroleum price offered by the buyer"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "question": "Retailers in an economy perform the function of ______",
+    "options": {
+      "A": "Distribution",
+      "B": "Exchange",
+      "C": "Investment",
+      "D": "Production"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "In a sole proprietorship, the decisions are made by the ______",
+    "options": {
+      "A": "Government",
+      "B": "Management",
+      "C": "Owner",
+      "D": "Board of Directors"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 11,
+    "question": "Palm oil industry is located in Old Bendel State because the state______",
+    "options": {
+      "A": "Land is suitable for oil",
+      "B": "Is a palm tree growing area",
+      "C": "Soil is unsuitable for other crops",
+      "D": "Imports raw materials for palm oil industry"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following sets fully represents factors of production?",
+    "options": {
+      "A": "Sunlight, machinery, man, land",
+      "B": "Land, water, weather",
+      "C": "Money, market, middlemen",
+      "D": "Land, labour, capital, enterprise, technology"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following countries is not a member of the Economic Community of West African States?",
+    "options": {
+      "A": "Sudan",
+      "B": "Gambia",
+      "C": "Togo",
+      "D": "Nigeria"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "Oligopoly means _________",
+    "options": {
+      "A": "single buyer in the market",
+      "B": "few buyers in the market",
+      "C": "few sellers in the market"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "The Opportunity cost ratio for cocoa and lace for Austria and Nigeria is_______",
+    "options": {
+      "A": "1.5:2",
+      "B": "2:2",
+      "C": "2:1.5",
+      "D": "0.5:1.5"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "question": "From the table, it can be deduced that_______",
+    "options": {
+      "A": "Nigeria should produce cocoa and lace",
+      "B": "Nigeria can benefit from producing lace only",
+      "C": "Austria should produce lace and Nigeria should produce cocoa",
+      "D": "Austria should produce cocoa and lace"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 17,
+    "question": "The PAYE (Pay As You Earn) in Nigeria is an example of ______",
+    "options": {
+      "A": "Flat rate Tax",
+      "B": "Community tax",
+      "C": "Regressive tax",
+      "D": "Progressive tax"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 18,
+    "question": "A good measure of the standard of living usually used for international comparison is_______",
+    "options": {
+      "A": "Per capita income (PCI)",
+      "B": "Gross national product (GND)",
+      "C": "Net national income (NNI)",
+      "D": "Gross domestic product (GDP)"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 19,
+    "question": "What is the most important factor influencing the location of the iron and steel industry at Ajaokuta?",
+    "options": {
+      "A": "Availability of labour in the area",
+      "B": "Availability of power",
+      "C": "Nearness of raw material",
+      "D": "Access to transport facilities"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 20,
+    "question": "The Power Holding Company of Nigeria (PHCN) is a ________",
+    "options": {
+      "A": "Public limited company",
+      "B": "Private authority",
+      "C": "Public Corporation",
+      "D": "Public Liability company"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "question": "Which of the following is NOT a character of perfect competition?",
+    "options": {
+      "A": "Supply and demand are equal",
+      "B": "Products are identical",
+      "C": "There is perfect knowledge",
+      "D": "There is no advertising"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "Inflation is likely to benefit_______",
+    "options": {
+      "A": "Debtors",
+      "B": "Persons with back savings",
+      "C": "Creditors",
+      "D": "Persons who lived on fixed pension funds"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "question": "When a nation's exports are greater than its imports,_________",
+    "options": {
+      "A": "The net foreign trade is zero",
+      "B": "A favourable balance of trade exists",
+      "C": "A favourable balance of payment exists",
+      "D": "An unfavourable balance of trade exists"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "question": "Surplus in balance of payments leads to ________",
+    "options": {
+      "A": "Government budget surplus",
+      "B": "Increase in foreign reserves",
+      "C": "Decrease in foreign reserves",
+      "D": "None of the above"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "Economics may be defined as ________",
+    "options": {
+      "A": "The study of human behaviour in the allocation of scarce resources",
+      "B": "The study of money and banking",
+      "C": "The study of markets and prices",
+      "D": "The study of production and distribution"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "question": "Money becomes a very poor store of value in a period of _______",
+    "options": {
+      "A": "Harvest",
+      "B": "Deflation",
+      "C": "Recession",
+      "D": "Inflation"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 27,
+    "question": "In Nigeria, cheques are not money because________",
+    "options": {
+      "A": "Most Nigerians cannot identify them",
+      "B": "They are not legal tender",
+      "C": "There are no banks in rural areas",
+      "D": "They are not generally acceptable as a medium of exchange"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "Division of Labour is limited by the________",
+    "options": {
+      "A": "Size of labour firm",
+      "B": "Availability of raw material",
+      "C": "Size of the labour force",
+      "D": "Absolute size of the country's population"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 29,
+    "question": "The value of money depends primarily on _________",
+    "options": {
+      "A": "The gold backing of the currency",
+      "B": "The general price level",
+      "C": "Government decree that it is legal tender",
+      "D": "None of the above"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "question": "In a free market economy, the rationing of scarce goods is done principally by_______",
+    "options": {
+      "A": "Consumers",
+      "B": "The government",
+      "C": "The price mechanism",
+      "D": "All of the above"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "If the price of a commodity falls and the quantity purchased does not rise, the commodity can be described as________",
+    "options": {
+      "A": "Scarce",
+      "B": "Normal",
+      "C": "Superior",
+      "D": "Inferior"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 32,
+    "question": "An economic problem arises when________",
+    "options": {
+      "A": "Sellers are few",
+      "B": "Scarcity and choices are involved",
+      "C": "Buyers are many",
+      "D": "Money is in short supply"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "Which of these is not a cause of high population growth in Nigeria?",
+    "options": {
+      "A": "Improved hygiene",
+      "B": "Reduction in death rate",
+      "C": "Family planning unit of Nigeria",
+      "D": "Increased birth rate"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 34,
+    "question": "Inflation can be curbed by _______",
+    "options": {
+      "A": "Deficit budget",
+      "B": "Paying higher wages",
+      "C": "Increased aggregate demand",
+      "D": "Reducing aggregate demand"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 35,
+    "question": "A typical corporate form of business organization is owned by ______",
+    "options": {
+      "A": "Shareholders",
+      "B": "A local government",
+      "C": "The president of a country",
+      "D": "Foreigners and citizens of the country"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 36,
+    "question": "The price mechanism______",
+    "options": {
+      "A": "Rations the consumers",
+      "B": "Rewards the producers",
+      "C": "Regulates supply and demand",
+      "D": "Allocates scarce resources"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 37,
+    "question": "If Mr. A earns N2,000 a year while Mr. B earns N8,000 but Mr. A pays N200 in tax per annum while Mr. B pays N400, such tax is_______",
+    "options": {
+      "A": "Progressive",
+      "B": "Proportional",
+      "C": "Indirect",
+      "D": "Regressive"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 38,
+    "question": "Which of these is not usually the function of a wholesaler?",
+    "options": {
+      "A": "Branding",
+      "B": "Storage",
+      "C": "Transport",
+      "D": "Advertising"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 39,
+    "question": "If the quantity demanded of a commodity increases from 20 to 30 when there is an increase in price from N4 to N5, the elasticity of demand is_______",
+    "options": {
+      "A": "Zero",
+      "B": "10",
+      "C": "2",
+      "D": "1"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "question": "By utility we mean________",
+    "options": {
+      "A": "Uselessness",
+      "B": "Power of satisfying a want",
+      "C": "Beneficial",
+      "D": "Consumable"
+    },
+    "correct": "B"
+  }
+]
+}

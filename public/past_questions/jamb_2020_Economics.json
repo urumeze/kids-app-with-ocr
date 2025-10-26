@@ -1,0 +1,483 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "Suppose that the equilibrium price of an article is N5.00 but the government fixes the price by law at N4.00, the supply will be",
+    "options": {
+      "A": "The same as equilibrium supply",
+      "B": "Greater than equilibrium supply",
+      "C": "Less than the equilibrium supply",
+      "D": "Determined later by government",
+      "E": "None of these"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "A budget deficit means",
+    "options": {
+      "A": "That a country is buying more than is selling",
+      "B": "That a country is selling more than is buying",
+      "C": "That a government is spending more than it takes in taxation",
+      "D": "That a government is spending less than it takes in taxation",
+      "E": "That a government is spending as much as it takes in taxation"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 3,
+    "question": "When elasticity is zero, the demand curve is",
+    "options": {
+      "A": "Perfectly elastic",
+      "B": "Perfectly inelastic",
+      "C": "Concave",
+      "D": "Downward slopping",
+      "E": "Circular"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "question": "The following is NOT a reason for the existence of small firms",
+    "options": {
+      "A": "Scale of production is limited by size of the market",
+      "B": "Expansion brings diminishing returns",
+      "C": "Large firms can cater for wide markets",
+      "D": "Small firms can provide personal services",
+      "E": "All of the above"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 5,
+    "question": "Inferior goods are referred to in Economics as goods",
+    "options": {
+      "A": "Whose quality is low",
+      "B": "Consumed by very poor people",
+      "C": "Whose consumption falls when consumers' income rises",
+      "D": "Which satisfy only the basic needs",
+      "E": "None of the above"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "Malthus became famous through his theory which may be stated simply",
+    "options": {
+      "A": "The death rate may become so high that people may not be able to produce",
+      "B": "Population may outgrow the means of subsistence",
+      "C": "People will eventually decide not to have children",
+      "D": "Migration of people from one place to another may leave some parts of the world barren",
+      "E": "All of the above"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "question": "A commercial bank is unique in that it is the only institution that",
+    "options": {
+      "A": "Makes loans to private people and businessmen",
+      "B": "Accepts deposits",
+      "C": "Can store people's valuables",
+      "D": "Can transfer money from one place to another for its customers",
+      "E": "Saves money through the granting of credits"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "question": "Which is an example of an invisible item in the trade account of Ghana?",
+    "options": {
+      "A": "Export of Cocoa from Ghana",
+      "B": "Import of oil from Nigeria",
+      "C": "A gift of a Peugeot 504 by a firm in Nigeria to a firm in Ghana",
+      "D": "Payment for shipping and insurance by a Ghanaian company to companies outside Ghana",
+      "E": "None of the above"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 9,
+    "question": "Which is NOT a direct effort to increase Agricultural production in Nigeria?",
+    "options": {
+      "A": "Operation feed the Nation",
+      "B": "Nigerian Youth Service Corps",
+      "C": "Increased loans to farmers and cooperatives",
+      "D": "Research in Agric & Extension services",
+      "E": "Mechanization of Agriculture"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "question": "If a company doubles all its inputs and discovers that its output is more than doubles, we can say that the company is experiencing",
+    "options": {
+      "A": "Increasing Marginal utility",
+      "B": "Diseconomies of scale",
+      "C": "Increasing costs",
+      "D": "Constant returns to scale",
+      "E": "Increasing returns to scale"
+    },
+    "correct": "E"
+  },
+  {
+    "id": 11,
+    "question": "Price control cannot work in Nigeria because",
+    "options": {
+      "A": "The population is too large",
+      "B": "The policemen hate to arrest people",
+      "C": "While it is fairly easy to control producers and importing firms, smaller distributors are too many to be controlled",
+      "D": "Control cannot work under military rule",
+      "E": "Too many things are produced in the country"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "question": "The foreign exchange market is a market where",
+    "options": {
+      "A": "Graded commodities like wheat, flour, etc are sold and bought",
+      "B": "Currencies are sold and bought",
+      "C": "Treasury bills are sold and bought",
+      "D": "Government bonds are sold and bought",
+      "E": "Treasury certificates are sold"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following financial assets consist the lowest rate of interest in Nigeria?",
+    "options": {
+      "A": "Commercial bills",
+      "B": "Call money",
+      "C": "Treasury bills",
+      "D": "Development loan stocks",
+      "E": "Deposits with the federal savings bank"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "question": "The effect of the demand for product A caused by a change in the price of a product B is called?",
+    "options": {
+      "A": "Cross-elasticity of demand",
+      "B": "Elasticity of supply",
+      "C": "Competitive demand",
+      "D": "Composite demand",
+      "E": "Joint demand"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following can be regarded as a liability of a commercial bank?",
+    "options": {
+      "A": "Advances",
+      "B": "Deposits",
+      "C": "Treasury bills",
+      "D": "Overdrafts",
+      "E": "Cash"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "A Tax which takes a higher percentage from higher incomes is called?",
+    "options": {
+      "A": "A regressive tax",
+      "B": "A progressive tax",
+      "C": "A proportional tax",
+      "D": "An indirect tax",
+      "E": "A direct tax"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following statements is true?",
+    "options": {
+      "A": "A proportional tax is one which takes from high income people a larger fraction of their income than it takes for low income people",
+      "B": "Taxes on commodities of services which can be shifted elsewhere are usually called direct taxes",
+      "C": "The sole proprietor is a legal entity",
+      "D": "The influence of demand on price will be smallest on the short run",
+      "E": "The cost of production is the most important determining factor of supply in the long run"
+    },
+    "correct": "E"
+  },
+  {
+    "id": 18,
+    "question": "The largest liability appearing in the book of a commercial bank is",
+    "options": {
+      "A": "Cash",
+      "B": "Deposits",
+      "C": "Loans and advances",
+      "D": "Capital and reserves",
+      "E": "Treasury bills"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "The Lagos clearing house is",
+    "options": {
+      "A": "A commodity market",
+      "B": "An import licensing centre",
+      "C": "Another name for the Lagos stock exchange",
+      "D": "An insurance and underwriting centre",
+      "E": "A cheque sorting centre"
+    },
+    "correct": "E"
+  },
+  {
+    "id": 20,
+    "question": "The biggest source of government revenue in Nigeria is",
+    "options": {
+      "A": "Mining, rents and royalties",
+      "B": "Company income tax",
+      "C": "Import duties",
+      "D": "Export duties",
+      "E": "Petroleum profit tax"
+    },
+    "correct": "E"
+  },
+  {
+    "id": 21,
+    "question": "An increase in liquid reserve requirements by the central bank of Nigeria will result in",
+    "options": {
+      "A": "A reduction in commercial banks' excess reserves",
+      "B": "More commercial bank loans to members of the public",
+      "C": "An increase in commercial banks excess reserves",
+      "D": "No change in commercial banks excess reserves",
+      "E": "A reduction in central bank's gold reserves"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "A distinguishing characteristic of a consumers' cooperative is the fact that",
+    "options": {
+      "A": "The customers are the owners",
+      "B": "The customers are the workers",
+      "C": "The customers are the managers",
+      "D": "The customers are low income people",
+      "E": "The customers are high income people"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "question": "Disposable income is the same thing as",
+    "options": {
+      "A": "Personal income minus personal savings",
+      "B": "Personal income minus taxes",
+      "C": "National income minus depreciation",
+      "D": "Exports minus imports",
+      "E": "Savings plus investments"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "question": "Marginal cost is",
+    "options": {
+      "A": "Lowest cost of producing goods",
+      "B": "The cost of production of the most efficient firm in the industry",
+      "C": "Cost of production of the most inefficient firm in the industry",
+      "D": "The cost of production of the last or extra unit of goods produced by a firm",
+      "E": "The cost of production at which the minimum profit is obtained by a firm"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following is not a form of business organization",
+    "options": {
+      "A": "A sole proprietorship",
+      "B": "Cartel",
+      "C": "Partnership",
+      "D": "Joint stock",
+      "E": "Cooperative society"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 26,
+    "question": "As consumption of beer increases, its marginal utility to a drinker will",
+    "options": {
+      "A": "Increase",
+      "B": "Remain constant",
+      "C": "Fluctuate",
+      "D": "Decrease",
+      "E": "Change proportionally"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 27,
+    "question": "Which of the following sector of the economy is estimated to be the largest employer of labour in the country",
+    "options": {
+      "A": "Construction",
+      "B": "Agriculture",
+      "C": "Distribution",
+      "D": "Mining and petroleum",
+      "E": "Transport and communication"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "The expression ‘terms of trade’ is used to describe",
+    "options": {
+      "A": "Quality of export",
+      "B": "The direction of foreign trade",
+      "C": "Terms of purchase on deferred payment basis",
+      "D": "The rate at which export exchange for imports",
+      "E": "Import licensing"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "question": "If the demand of a product with perfectly elastic supply increases, there will be",
+    "options": {
+      "A": "An increase in price and quantity offered",
+      "B": "An increase in quantity offered but price will remain the same",
+      "C": "A reduction in price and quantity offered",
+      "D": "An increase in price but a reduction in quantity offered for sale",
+      "E": "An increase in quantity offered but a reduction in price"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "question": "Which of these would not be included in the fundamental principle of a free enterprise economy",
+    "options": {
+      "A": "Private ownership of factors of production",
+      "B": "The right to organize factor for production purposes",
+      "C": "The right to make private profit",
+      "D": "Government control of mobility of factor of production",
+      "E": "Government effort to encourage competitive capitalism within the law of the country"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 31,
+    "question": "Economics is called a social science because it is",
+    "options": {
+      "A": "A branch of social studies",
+      "B": "A study of the ways man devises to satisfy his unlimited wants from unlimited resources",
+      "C": "A dismissal science in the Malthusian sense",
+      "D": "Governed by scientific law",
+      "E": "The study of human wants by the means of scientific method of observation"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "Opportunity cost is a term which describe",
+    "options": {
+      "A": "The initial cost of setting up a business venture",
+      "B": "Cost of one product in terms of foregone production of others",
+      "C": "The monetary equivalent of the utility of commodity",
+      "D": "Cost related to an optimum level of production",
+      "E": "Implicit cost"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "If the consumer demand for product X increases as the price of product Y decreases we can be fairly certain that X",
+    "options": {
+      "A": "X and Y are complementary commodities",
+      "B": "X and Y are substitute goods",
+      "C": "X and Y are independent goods",
+      "D": "X and Y are jointly supplied",
+      "E": "X and Y are inferior commodities"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 34,
+    "question": "Which of the following item in the balance of payment of account is an invisible transaction?",
+    "options": {
+      "A": "Import of cars",
+      "B": "Export of cocoa",
+      "C": "Export of crude petroleum",
+      "D": "Tourism",
+      "E": "Import of building materials"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is a term used to describe a payment representing a surplus in excess of transfer costs?",
+    "options": {
+      "A": "Interest rates",
+      "B": "Opportunity costs",
+      "C": "Economic rent",
+      "D": "Indirect costs",
+      "E": "Wages"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 36,
+    "question": "Less developed countries obtain foreign exchange reserve mainly from the export of",
+    "options": {
+      "A": "Manufactured goods",
+      "B": "Processed and semi processed commodities",
+      "C": "Invisible items",
+      "D": "Primary product",
+      "E": "All of the above"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 37,
+    "question": "By ‘trade by barter’, we mean",
+    "options": {
+      "A": "Trade done by people in the village",
+      "B": "Exchange of goods for money",
+      "C": "International trade",
+      "D": "Exchange of goods for goods",
+      "E": "The trade of the middle ages"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 38,
+    "question": "In order to build up its capital stock, the typical less developed country should ideally",
+    "options": {
+      "A": "Increase total saving",
+      "B": "Depend on hand-out from foreigners",
+      "C": "Impose tariff on import",
+      "D": "Nationalise all foreign concern",
+      "E": "None of the above"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 39,
+    "question": "The advantage of sole proprietorship is as follow",
+    "options": {
+      "A": "It is always successful",
+      "B": "Continuity is no problem",
+      "C": "Control and supervision is under one man",
+      "D": "Funds are easy to obtain",
+      "E": "Inter-generational equity is assured"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 40,
+    "question": "Which of these should determine, in a planned economy how the factor of production are to be allocated among different production activities",
+    "options": {
+      "A": "Fairness",
+      "B": "The distribution of income and wealth",
+      "C": "Public need which is determined by the government",
+      "D": "Private needs determined by the market",
+      "E": "The ability of individual to make profit"
+    },
+    "correct": "C"
+  }
+]
+}

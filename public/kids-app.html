@@ -20,7 +20,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
     <style>
-         :root{
+          :root{
       --bg:#f6fbff;
       --primary:#5c7cfa; /* friendly blue */
       --accent:#ff66b3; /* pink */
@@ -41,28 +41,7 @@
     .app p{color:var(--muted);margin:0 0 24px}
     .card{width:100%;max-width:980px;background:var(--glass);backdrop-filter: blur(6px);border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(16,24,40,0.08);text-align:center}
 
-    /* overlay */
-    .overlay{
-      position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(5,10,25,0.75), rgba(6,12,28,0.6));z-index:9999;transition:opacity .45s ease,visibility .45s ease;}
-    .overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}
-
-    .login-box{
-      width:min(420px,92%);background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,255,0.95));border-radius:12px;padding:28px;box-shadow:0 12px 40px rgba(3,10,30,0.28);text-align:center;position:relative;overflow:hidden
-    }
-    .logo{height:56px;width:80px;border-radius:12px;background:plum;display:inline-grid;place-items:center;color:white;font-weight:800;font-size:20px;margin-bottom:14px}
-    .title{font-weight:700;font-size:18px;color:#07102a;margin-bottom:6px}
-    .subtitle{color:var(--muted);font-size:13px;margin-bottom:18px}
-
-    .actions{display:flex;gap:12px;flex-direction:column}
-    .btn{
-      appearance:none;border:0;padding:12px 14px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px;transition:transform .15s ease,box-shadow .15s ease;display:flex;align-items:center;justify-content:center;gap:10px
-    }
-    .btn:active{transform:translateY(1px)}
-
-    .btn-guest{background:#fff;border:1px solid #eef2ff;color:#0f172a;box-shadow:0 6px 18px rgba(12,24,60,0.06)}
-    .btn-google{display:flex; size: 20px; ;background:blue;color:#fff}
-
-    .small{font-size:12px;color:var(--muted);margin-top:12px}
+     .actions{display:flex;gap:12px;flex-direction:column}
 
     /* animated circle */
     .pulse-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
@@ -79,8 +58,7 @@
       100%{transform:scale(40);opacity:1;filter:blur(6px)}
     }
 
-    /* overlay-content hiding while animating */
-    .overlay.fade-to-app .login-box{opacity:0;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease}
+    
 
     /* final page easing */
     .app.revealed{opacity:1;transform:none}
@@ -228,10 +206,75 @@
         .incorrect {
             background-color: #f87171 !important;
         }
+
+        .step { display: none; }
+        .step.active { display: block; }
+
+        .overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.75); /* semi-transparent behind video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+/* Video + Buttons */
+.video-container {
+  position: relative;
+  width: 100%;
+  
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 40px 60px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgba(128,128,128,0.5);
+}
+
+/* Button positions */
+.jamb { top: 30%; left: 46%; }
+.ielts { top: 55%; left: 47%; }
+.cibn { top: 85%; left: 47%; }
+
+
     </style>
 </head>
 <body class="design">
 
+ <!-- Fullscreen Overlay -->
+<div id="videoOverlay" class="overlay">
+  <div class="video-container">
+    <video autoplay muted>
+      <source src="dwarf_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <button class="btn jamb" onclick="openPastQuestionsMenu()"></button>
+    <button class="btn ielts" onclick="openPastQuestionsMenu()"></button>
+    <button class="btn cibn" onclick="openPastQuestionsMenu()"></button>
+  </div>
+</div>
 
 
 <!-- 📚 MENU PANEL -->
@@ -316,7 +359,7 @@
 <!-- Floating Open Button -->
 <button id="openMenuBtn"
         class="fixed top-4 left-4 bg-blue-600 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50">
-  ☰
+  Menu
 </button>
 
 
@@ -468,6 +511,23 @@
     userAnswers: [],
     score: 0
   };
+  function openPastQuestionsMenu() {
+  const menuPanel = document.getElementById('menuPanel');
+  if (menuPanel) {
+    menuPanel.classList.remove('-translate-x-full'); // open the menu
+  }
+
+  // Hide overlay if it exists
+  const overlay = document.getElementById('videoOverlay');
+  if (overlay) overlay.classList.add('hidden');
+
+  
+
+  // Optional: scroll the main page to top so menu is fully visible
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+  
 
   // ------------------------------
   // MENU PANEL LOGIC
@@ -486,7 +546,13 @@
     });
   });
 
- 
+ function openMenu() {
+  const menuPanel = document.getElementById('menuPanel');
+  if (menuPanel) {
+    menuPanel.classList.remove('-translate-x-full'); // show the menu
+  }
+}
+
   
 
   // ------------------------------
@@ -537,11 +603,13 @@
         this.classList.add('bg-indigo-200');
         appState.quizQuestions = parseInt(this.dataset.questions);
       });
+      
     });
 
     // ------------------------------
     // FILE PROCESSING
     // ------------------------------
+    
     function preventDefaults(e){ e.preventDefault(); e.stopPropagation(); }
     function highlight(){ dropArea.classList.add('border-indigo-500','bg-indigo-50'); }
     function unhighlight(){ dropArea.classList.remove('border-indigo-500','bg-indigo-50'); }
@@ -920,6 +988,9 @@ document.querySelectorAll('.subject-btn').forEach(btn => {
 
   btn.addEventListener('click', () => loadPastQuestions(year, subject));
 });
+
+
+
 
 
 
