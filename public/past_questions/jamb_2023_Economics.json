@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "A tariff is a tax imposed on",
+    "options": {
+      "A": "Consumer goods",
+      "B": "Domestic goods",
+      "C": "Imported goods",
+      "D": "Exported goods"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "The demand for a good is price inelastic if",
+    "options": {
+      "A": "The price elasticity is less than one",
+      "B": "The price elasticity is one",
+      "C": "The price elasticity is negative",
+      "D": "The price elasticity is greater than one"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is an example of free good?",
+    "options": {
+      "A": "Free education",
+      "B": "Water in the ocean",
+      "C": "Dinner you did not pay for",
+      "D": "Your rented apartment"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "question": "The marginal propensity to consume is",
+    "options": {
+      "A": "Options A, B and C",
+      "B": "ΔC/ΔY",
+      "C": "The slope of the consumption function",
+      "D": "Coefficient c in the equation C = C + cYd"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "The short run can be defined as the period of time during which",
+    "options": {
+      "A": "All inputs are fixed",
+      "B": "At least one of the firm's input is fixed",
+      "C": "At least two inputs are fixed",
+      "D": "All inputs are variable"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "The 'velocity' of money is",
+    "options": {
+      "A": "The real money supply divided by the real GDP",
+      "B": "The money supply multiplied by the price level",
+      "C": "The money supply divided by the price level",
+      "D": "The ratio of real GDP to the real money supply"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 7,
+    "question": "The part of income after tax that is not consumed is defined as",
+    "options": {
+      "A": "Wages and salaries",
+      "B": "Saving",
+      "C": "Capital investment",
+      "D": "Nondurable goods expenditure"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "question": "An industry is",
+    "options": {
+      "A": "A group of firms producing differentiated products",
+      "B": "A group of firms producing distinct commodities",
+      "C": "A group of firms producing related goods",
+      "D": "A group of firms producing unrelated goods"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 9,
+    "question": "The type of unemployment that occurs when an individual cannot find a job as a result of obsolete skill is",
+    "options": {
+      "A": "Structural unemployment",
+      "B": "Cyclical unemployment",
+      "C": "Seasonal unemployment",
+      "D": "Frictional unemployment"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 10,
+    "question": "The theory of ............... was propounded by ..................",
+    "options": {
+      "A": "Comparative advantage; Mercantilists",
+      "B": "Absolute advantage; Adam Smith",
+      "C": "Comparative advantage; Adam Smith",
+      "D": "Absolute advantage; David Ricardo"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "question": "If a business' total economic cost of producing 10,000 units of a product is N750,000 and this output is sold to consumers for N1,000,000, then the firm would earn",
+    "options": {
+      "A": "A normal profit of N750,000",
+      "B": "An economic profit of N750,000",
+      "C": "A normal profit of N1,750,000",
+      "D": "An economic profit of N250,000"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 12,
+    "question": "One major problem facing West African countries is",
+    "options": {
+      "A": "Relations with Colonial Masters",
+      "B": "Joint Military operations in Member States",
+      "C": "Political integration",
+      "D": "Financial crunch of Member States"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 13,
+    "question": "The development of an economic hypothesis through intuition, insight, or logic is associated with",
+    "options": {
+      "A": "Deduction",
+      "B": "Policy economics",
+      "C": "Normative economics",
+      "D": "Induction"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 14,
+    "question": "A major factor contributing to productivity is",
+    "options": {
+      "A": "Immigration of young workers",
+      "B": "The labour force",
+      "C": "The baby boom of generation",
+      "D": "The rate of GDP per year"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 15,
+    "question": ".............is presently used in Nigeria to measure inflation",
+    "options": {
+      "A": "GNP implicit price deflator",
+      "B": "Consumer price index",
+      "C": "Wholesale price index",
+      "D": "Real Gross Domestic Product"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "The fundamental problem of economics is",
+    "options": {
+      "A": "Finding striking determinants between the forces of supply and demand",
+      "B": "The scarcity of productive resources relative to society's unlimited wants",
+      "C": "The establishment of a political framework to determine the what, how and for whom of production",
+      "D": "To establish an equitable distribution of income"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "question": "The diagram above represent",
+    "options": {
+      "A": "Perfect competition",
+      "B": "Monopoly",
+      "C": "Demand curve",
+      "D": "Competitive market"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "What is the lowest price the monopolist can charge",
+    "options": {
+      "A": "P2",
+      "B": "P1",
+      "C": "P3",
+      "D": "P4"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "The maximum price is",
+    "options": {
+      "A": "P1",
+      "B": "P2",
+      "C": "P3",
+      "D": "P4"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 20,
+    "question": "Real cost is",
+    "options": {
+      "A": "Alternative commodities forgone",
+      "B": "Amount of money spent on goods and services",
+      "C": "Cost of goods and services",
+      "D": "True cost"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 21,
+    "question": "..................... is the highest body in ECOWAS organogram",
+    "options": {
+      "A": "Authority of Head of State and Government",
+      "B": "The Executive Secretariat",
+      "C": "The Defense Council",
+      "D": "Council of Ministers"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "Government uses all of the following ways to redistribute income, except",
+    "options": {
+      "A": "Market intervention",
+      "B": "Transfer earnings",
+      "C": "Limited liability",
+      "D": "Taxation"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "question": "The principle that specified that the amount, when and how to pay tax should be made known to tax payer is known as",
+    "options": {
+      "A": "Principle of economy",
+      "B": "Principle of convenience",
+      "C": "Principle of simplicity",
+      "D": "Principle of certainty"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 24,
+    "question": "Money could be defined as",
+    "options": {
+      "A": "Options A, B and C",
+      "B": "Medium of exchange",
+      "C": "Settlement of debt",
+      "D": "Medium of payment"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "question": "Business cycle is associated with",
+    "options": {
+      "A": "Recession",
+      "B": "Unemployment",
+      "C": "Seasonal variation",
+      "D": "Inflation"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "question": "Economic problem occurs when",
+    "options": {
+      "A": "There is scarcity relative to demand",
+      "B": "All raw materials are imported",
+      "C": "Many people are out of work",
+      "D": "There are no buyers for our goods"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 27,
+    "question": "A ............ in the price of the domestic currency in terms of a foreign currency is referred to as .............",
+    "options": {
+      "A": "Decrease, appreciation",
+      "B": "Increase, de-appreciation",
+      "C": "Decrease, depreciation",
+      "D": "Increase, consolidation"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "question": "Among all the determinants of economic growth, the most important one is",
+    "options": {
+      "A": "Human capital",
+      "B": "Increased GDP",
+      "C": "Land and Natural resources",
+      "D": "Technologies"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 29,
+    "question": "An increase in money income with constant price results in",
+    "options": {
+      "A": "Outward shift in the budget line",
+      "B": "Inward parallel shift in the budget line",
+      "C": "Options A and C",
+      "D": "Budget line remain constant"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 30,
+    "question": "The law of supply states that, other things being constant, as price increases",
+    "options": {
+      "A": "Supply increases",
+      "B": "Supply decreases",
+      "C": "Quantity supplied increases",
+      "D": "Quantity supplied decreases"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "The demand for money will fall if",
+    "options": {
+      "A": "People expect deflation soon",
+      "B": "Real GDP rises",
+      "C": "Real interest rates rise",
+      "D": "The GDP deflator rises"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following is an example of expansionary monetary policy by the Central Bank of Nigeria?",
+    "options": {
+      "A": "Lowering income taxes",
+      "B": "Increasing the discount rate",
+      "C": "Increasing the reserve ratio",
+      "D": "Buying Treasury securities from commercial banks"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 33,
+    "question": "If commodities X and Y are substitute, their cross elasticity of demand will be",
+    "options": {
+      "A": "One",
+      "B": "Positive",
+      "C": "Negative",
+      "D": "Zero"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 34,
+    "question": "The term 'investment' in macroeconomics means",
+    "options": {
+      "A": "Profit",
+      "B": "Total amount of money invested in bonds and stocks",
+      "C": "The total amount of capital goods in the country",
+      "D": "The production of goods for immediate consumption"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "The following are economic agents in any economy EXCEPT",
+    "options": {
+      "A": "Central Bank",
+      "B": "Household",
+      "C": "Firm",
+      "D": "Government"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 36,
+    "question": "One major criticism of foreign aid to developing countries is that it",
+    "options": {
+      "A": "Gives too much power and control to world bank",
+      "B": "Encourages growth in government bureaucracy",
+      "C": "Is capital using rather than capital saving",
+      "D": "Provides incentives for capital flight"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "question": "Public corporation is financed with",
+    "options": {
+      "A": "Capital raised from shareholders",
+      "B": "Tax payer's money",
+      "C": "Capital raised from stock exchange",
+      "D": "Capital contributed by owners"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "question": "The type of price elasticity of demand for a commodity whose quantity demanded remain unchanged despite changes in the price is",
+    "options": {
+      "A": "Perfectly elastic",
+      "B": "Infinitely elastic",
+      "C": "Inelastic",
+      "D": "Perfectly inelastic"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 39,
+    "question": "An increase in total production (real GDP) causes the demand for money to ______and the interest rate to _________",
+    "options": {
+      "A": "Increase; decrease",
+      "B": "Decrease; decrease",
+      "C": "Increase; increase",
+      "D": "Decrease; increase"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 40,
+    "question": "Part-time workers who desire full-time employment are:",
+    "options": {
+      "A": "Underemployed and contribute to the unemployment statistic",
+      "B": "Underemployed but do not contribute to the unemployment statistic",
+      "C": "Not part of the labour force and do not contribute to the unemployment statistic",
+      "D": "Cyclical unemployment"
+    },
+    "correct": "B"
+  }
+]
+}

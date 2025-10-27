@@ -1,0 +1,24 @@
+# Prevent heavy or unnecessary files from uploading to Render
+
+# Video files
+public/*.mp4
+public/*.mov
+public/*.avi
+public/*.mkv
+public/*.webm
+
+# Local media or raw assets (if any)
+assets/videos/
+assets/raw/
+*.zip
+*.tar.gz
+
+# Development-only folders
+node_modules/
+logs/
+tmp/
+.cache/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

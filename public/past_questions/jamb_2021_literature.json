@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "One of the following writers is better known as a playwright than as a novelist",
+    "options": {
+      "A": "C. Achebe",
+      "B": "C. Ekwensi",
+      "C": "W. Soyinka",
+      "D": "J.P Clark"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "A narrative poem must",
+    "options": {
+      "A": "Preach a sermon",
+      "B": "Tell a story",
+      "C": "Describe natural scenery",
+      "D": "Argue a question"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 3,
+    "question": "Literature is studied as a subject at school because",
+    "options": {
+      "A": "It exposes students to the realities of life",
+      "B": "It provides entertainment",
+      "C": "It merely gives additional work to students",
+      "D": "It teaches the use of words"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "question": "In 'The Flight to Australia', the line 'Tier upon tier it towered, the terrible Apennines' uses",
+    "options": {
+      "A": "Alliteration",
+      "B": "Litotes",
+      "C": "Exaggeration",
+      "D": "Parody"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "If we describe Kossoh Town Boy as an autobiography, it means that it is",
+    "options": {
+      "A": "A historical novel",
+      "B": "A piece of writing telling us about the life of its author",
+      "C": "A short story",
+      "D": "A narrative tale"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 6,
+    "question": "In the verse 'You cannot know And should not bother Tide and market come and go And so shall your mother', the poet uses",
+    "options": {
+      "A": "Alternate rhymes",
+      "B": "Monomyme",
+      "C": "Couplets",
+      "D": "Triplets"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "question": "In 'Another shoal of cars swam past...', the cars are described in terms of",
+    "options": {
+      "A": "Birds",
+      "B": "Ants",
+      "C": "Fish",
+      "D": "Lampposts"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "question": "Pick out the odd item",
+    "options": {
+      "A": "A Raisin in the Sun",
+      "B": "Twelfth Night",
+      "C": "Ozidi",
+      "D": "The Concubine"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 9,
+    "question": "The mood conveyed in 'That year the harvest was sad, like a funeral...' is",
+    "options": {
+      "A": "Excitement",
+      "B": "Sadness",
+      "C": "Joy",
+      "D": "Triumph"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "question": "One of the following terms applies to the discussion of both tragedy and comedy",
+    "options": {
+      "A": "Climax",
+      "B": "Happy ending",
+      "C": "Tragic hero",
+      "D": "Alliteration"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "question": "A character that is always against the interest of the protagonist is",
+    "options": {
+      "A": "Hero",
+      "B": "Opposition",
+      "C": "Villain",
+      "D": "Heroine"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "question": "The idea of metre as used in a literary piece is",
+    "options": {
+      "A": "Stanza",
+      "B": "Rhythm",
+      "C": "Rhyme",
+      "D": "Verse"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "A hero whose weakness contributes to his downfall is called",
+    "options": {
+      "A": "Deuteragonist",
+      "B": "Periaktos",
+      "C": "Tragic hero",
+      "D": "Tragic flaw"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "question": "A travelogue is",
+    "options": {
+      "A": "A record of the writer's experience during a journey",
+      "B": "The account of the experiences of an individual during his lifeline",
+      "C": "The account of the travails of a character in a novel",
+      "D": "A variant of a novel written in a free style on a writer's journey"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 15,
+    "question": "A literary work that ridicules the shortcomings of people or ideas is",
+    "options": {
+      "A": "A satire",
+      "B": "A masque",
+      "C": "A fable",
+      "D": "An irony"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 16,
+    "question": "The exclusive right given to authors to protect their works from unlawful production is",
+    "options": {
+      "A": "A constitutional provision",
+      "B": "A copyright",
+      "C": "An authority to write",
+      "D": "An author's right"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 17,
+    "question": "Empathy is achieved when the audience",
+    "options": {
+      "A": "Feels betrayed by the director",
+      "B": "Vicariously participates in the stage experience",
+      "C": "Attacks the character foil",
+      "D": "Denounces and humiliates the protagonist"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "Mock-heroic poetry elevates",
+    "options": {
+      "A": "The important tales of heroes of the past era",
+      "B": "Trivial subject-matter by using the style of the classical epic",
+      "C": "The stripping off of appearances in a witty manner",
+      "D": "The beauty in human relationships as exemplified in Homer"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "...... is also called a dynamic character",
+    "options": {
+      "A": "Protagonist",
+      "B": "Round character",
+      "C": "Flat character",
+      "D": "Foil"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "question": "The subject matter of a literary work is the",
+    "options": {
+      "A": "Plot",
+      "B": "Setting",
+      "C": "Theme",
+      "D": "Structure"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "question": "A dramatic type directed against an individual or a private institute with the intent to severely ridicule is called",
+    "options": {
+      "A": "Lampoon",
+      "B": "Caricature",
+      "C": "Burlesque",
+      "D": "Satire"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "'A time to sow, A time to reap, A time to born, A time to die' exemplifies the use of",
+    "options": {
+      "A": "Hendiadys",
+      "B": "Chiasmus",
+      "C": "Anaphora",
+      "D": "Anadiplosis"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "question": "'I am jealous and passionate Like Jehovah, God of the Jews.' – J.P Clark: Olokun. A device used in the second line is",
+    "options": {
+      "A": "Simile",
+      "B": "Paradox",
+      "C": "Metaphor",
+      "D": "Hyperbole"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 24,
+    "question": "Dramatis personae in a play refers to",
+    "options": {
+      "A": "Cast list",
+      "B": "List of characters",
+      "C": "Protagonist and antagonist",
+      "D": "Order of appearance"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "An irredeemable reversal of the hero's fortune in a tragedy is called",
+    "options": {
+      "A": "Purgation",
+      "B": "Peripeteia",
+      "C": "Hubris",
+      "D": "Anagnorisis"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 26,
+    "question": "\"I hate brave cowards like you\" is an example of",
+    "options": {
+      "A": "Irony",
+      "B": "Antithesis",
+      "C": "Eulogy",
+      "D": "Oxymoron"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 27,
+    "question": "The narrator in a prose work who is also a character is",
+    "options": {
+      "A": "Omniscient narrator",
+      "B": "Participatory narrator",
+      "C": "Objective narrator",
+      "D": "Subjective narrator"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "\"Rays of sun peeping through the cloud\" is an example of",
+    "options": {
+      "A": "Synecdoche",
+      "B": "Irony",
+      "C": "Apostrophe",
+      "D": "Personification"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "question": "'To see a world in a grain of sand And a heaven in a wild flower Hold infinity in the palm of your hand And eternity in an hour' – William Blake. The predominant figure of speech is",
+    "options": {
+      "A": "Metaphor",
+      "B": "Simile",
+      "C": "Paradox",
+      "D": "Hyperbole"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 30,
+    "question": "\"I had not taken the first step in knowledge, I had not learnt to let go with the hands\". The above lines is an example of",
+    "options": {
+      "A": "Apostrophe",
+      "B": "Alliteration",
+      "C": "Repetition",
+      "D": "Assonance"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "Chanson is a term denoting a",
+    "options": {
+      "A": "Popular Korean verse",
+      "B": "Song from the middle Ages",
+      "C": "Form of love song",
+      "D": "Poem of varied metrical forms"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "'The fair breeze blew The white foam flew The furrow followed free We were the first that ever burst into that silent sea.' The dominant figure of speech is",
+    "options": {
+      "A": "Repetition",
+      "B": "Alliteration",
+      "C": "Paradox",
+      "D": "Rhyme scheme"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "Which of these is the oldest genre of literature?",
+    "options": {
+      "A": "Poetry",
+      "B": "Prose",
+      "C": "Aroma",
+      "D": "Drama"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 34,
+    "question": "A device used by a writer to recall past events in a literary work is",
+    "options": {
+      "A": "Anti-climax",
+      "B": "Interlude",
+      "C": "Flashback",
+      "D": "Foreshadowing"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "The extract 'The hunter dies and leaves his poverty to his gun...' is an example of",
+    "options": {
+      "A": "Epic",
+      "B": "Eulogy",
+      "C": "Ballad",
+      "D": "Elegy"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 36,
+    "question": "A character who contrasts with the protagonist to highlight particular qualities is called",
+    "options": {
+      "A": "Foil",
+      "B": "Deuteragonist",
+      "C": "Antagonist",
+      "D": "Tragic hero"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 37,
+    "question": "A poem that mourns the death of a person or laments a loss is known as",
+    "options": {
+      "A": "Elegy",
+      "B": "Ode",
+      "C": "Sonnet",
+      "D": "Ballad"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 38,
+    "question": "A dramatic device where a character speaks to the audience but is not heard by other characters is",
+    "options": {
+      "A": "Soliloquy",
+      "B": "Monologue",
+      "C": "Aside",
+      "D": "Chorus"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 39,
+    "question": "The repetition of consonant sounds at the beginning of words in a line is known as",
+    "options": {
+      "A": "Alliteration",
+      "B": "Assonance",
+      "C": "Consonance",
+      "D": "Onomatopoeia"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 40,
+    "question": "A short narrative poem that tells a story often meant to be sung is a",
+    "options": {
+      "A": "Lyric",
+      "B": "Ballad",
+      "C": "Epic",
+      "D": "Ode"
+    },
+    "correct": "B"
+  }
+]
+}

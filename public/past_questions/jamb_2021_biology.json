@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "One of the functions of the xylem is?",
+    "options": {
+      "A": "strengthening the stem",
+      "B": "manufacturing food",
+      "C": "reducing loss of water",
+      "D": "conducting manufactured food"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "question": "Which of the statements below is not characteristic of wind-pollinated flowers?",
+    "options": {
+      "A": "Stigmas are usually large and feathery",
+      "B": "Nectary is usually absent",
+      "C": "The pollen grains have rough spiny surfaces",
+      "D": "The flowers are not scented."
+    },
+    "correct": "C"
+  },
+  {
+    "id": 3,
+    "question": "Some of the features of an animal are scales, teeth, nares, and backbone. The animal is likely to be a?",
+    "options": {
+      "A": "toad",
+      "B": "bird",
+      "C": "lizard",
+      "D": "rat"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 4,
+    "question": "Choose the sequence which represents the correct order of organisms in a food chain",
+    "options": {
+      "A": "Grass, snake, toad, grasshopper, hawk",
+      "B": "Grass, grasshopper, toad, snake, hawk",
+      "C": "Grass, grasshopper, snake, toad, hawk",
+      "D": "Grass, snake, grasshopper, toad, hawk"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 5,
+    "question": "Flatworms and roundworms are said to be invertebrates because?",
+    "options": {
+      "A": "they are small animals",
+      "B": "they can live inside the vertebrates",
+      "C": "some of them are unicellular",
+      "D": "they have no backbones"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 6,
+    "question": "When a Spirogyra cell is immersed in a salt solution more concentrated than its cell sap, it?",
+    "options": {
+      "A": "remains unchanged",
+      "B": "takes tip water and burst",
+      "C": "absorbs a little water",
+      "D": "loses water and shrivels"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is NOT regarded as a pollutant on land or in the air?",
+    "options": {
+      "A": "Smoke",
+      "B": "Nitrogen",
+      "C": "Noise",
+      "D": "Sulphur dioxide"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 8,
+    "question": "The initial volume of water poured into a bag of dry soil was 50ml and the amount that drained through was 35ml. The percentage water content of the fully soaked soil is therefore?",
+    "options": {
+      "A": "46.7",
+      "B": "25.0",
+      "C": "20.0",
+      "D": "30.0"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 9,
+    "question": "When the original king and queen of termites die, they are replaced by",
+    "options": {
+      "A": "the king and queen of another colony",
+      "B": "some adult reproductives from the same colony",
+      "C": "some adult workers which are specially fed to breed",
+      "D": "developing nymphs nurtured as secondary reproductives"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 10,
+    "question": "In demonstrating the importance of mineral elements in plants, the culture bottle must be darkened to?",
+    "options": {
+      "A": "prevent algal growth in culture solution",
+      "B": "allow root growth",
+      "C": "prevent breakdown of mineral elements",
+      "D": "prevents photosynthesis in the root"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "question": "In the mammalian respiratory system, exchange of gases occurs in the?",
+    "options": {
+      "A": "lungs",
+      "B": "bronchi",
+      "C": "bronchioles",
+      "D": "alveoli"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 12,
+    "question": "Aged erythrocytes are destroyed in the?",
+    "options": {
+      "A": "pancreas",
+      "B": "liver",
+      "C": "lymph nodes",
+      "D": "kidney"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "The villus in the small intestine is significant because it?",
+    "options": {
+      "A": "increases the surface area for absorption",
+      "B": "increases the surface area for digestion",
+      "C": "assists in mixing digested food",
+      "D": "assists in filtering undigested food"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following food substances will produce a brick-red colour when warmed with Benedict's solution?",
+    "options": {
+      "A": "Glucose",
+      "B": "Starch",
+      "C": "Egg White",
+      "D": "Maltose"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 15,
+    "question": "The blood vessel which carries blood from the alimentary canal to the liver is the?",
+    "options": {
+      "A": "hepatic artery",
+      "B": "hepatic vein",
+      "C": "hepatic portal vein",
+      "D": "mesenteric artery"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is TRUE of the process of conjugation in Paramecium?",
+    "options": {
+      "A": "Micronucleus disintegrates",
+      "B": "Each ex-conjugant divides only once",
+      "C": "Macronucleus undergoes division",
+      "D": "Each micronucleus divides twice"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 17,
+    "question": "People who suck petrol with their mouths run the risk of increasing in their blood the concentration of?",
+    "options": {
+      "A": "iron",
+      "B": "lead",
+      "C": "calcium",
+      "D": "magnesium"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is a measure for the control of bilharzia?",
+    "options": {
+      "A": "Cutting low bushes around homes",
+      "B": "Application of molluscicides in water bodies",
+      "C": "Screening windows and doors with mosquito nets",
+      "D": "Application of herbicides in water bodies"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "The appendicular skeleton is composed of the pectoral girdle?",
+    "options": {
+      "A": "pelvic girdle, fore and hind limbs",
+      "B": "pelvic girdle and fore limbs",
+      "C": "lumbar vertebrae and pelvic girdle",
+      "D": "lumbar vertebrae, fore and hind limbs"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "question": "A freshwater plant such as water lily can solve the problem of buoyancy by the possession of?",
+    "options": {
+      "A": "aerenchyma tissues",
+      "B": "dissected leaves",
+      "C": "thin cell walls of the epidermis",
+      "D": "water-repelling epidermis"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 21,
+    "question": "The correct sequence for the perception of smell in mammals is?",
+    "options": {
+      "A": "chemicals → olfactory nerve endings → brain",
+      "B": "dissolved chemicals → nasal sensory cells → brain",
+      "C": "chemicals → mucus membrane sensory cells → brain",
+      "D": "dissolved chemicals → sensory cells → olfactory nerve → brain"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 22,
+    "question": "Which combination of the following can cause rapid over-crowding in climax biotic communities and human settlements? I. High birth rate and high immigration rate II. Low birth rate and high immigration rate III. Low mortality rate and low emigration rate IV. High mortality rate and high emigration rate",
+    "options": {
+      "A": "II and III",
+      "B": "I and III",
+      "C": "I and IV",
+      "D": "I and II"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 23,
+    "question": "The number of plant species obtained from a population study of a garden is as follows: Guinea grass (15), Ipomoea spp (5), Sida spp (7) and Imperata spp (23). What is the percentage of occurrence of Imperata spp?",
+    "options": {
+      "A": "35%",
+      "B": "16%",
+      "C": "46%",
+      "D": "23%"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "When a marine fish was taken from the ocean and put in a tank of fresh water, it died after a short period because?",
+    "options": {
+      "A": "the tank was too small compared to the large ocean",
+      "B": "the body cells of the fish swelled and burst as a result of the hypotonic fresh water",
+      "C": "the body cells of the fish shrank as their sap was hypertonic to the freshwater",
+      "D": "there was no food in the tank, so the fish starved"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "If a DNA strand has a base sequence TCA, its complementary strand must be?",
+    "options": {
+      "A": "ATG",
+      "B": "TAG",
+      "C": "GAT",
+      "D": "AGT"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 26,
+    "question": "The two key cations involved in the action potential of nervous transmissions are?",
+    "options": {
+      "A": "Na+ and Fe2+",
+      "B": "Mg2+ and K+",
+      "C": "Na+ and K+",
+      "D": "Fe2+ and Mg2+"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "question": "I. Rattus rattus II. Agama agama III. Bufo regularis IV. Tilapia zillii — The order of evolutionary advancement of the above vertebrates is?",
+    "options": {
+      "A": "I, II, III, IV",
+      "B": "I, IV, III, II",
+      "C": "II, III, IV, I",
+      "D": "IV, III, II, I"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following produces both hormones and enzymes?",
+    "options": {
+      "A": "Ileum",
+      "B": "Pancreas",
+      "C": "Gall bladder",
+      "D": "Kidney"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 29,
+    "question": "The correct sequence of the movement of urea during urine formation is?",
+    "options": {
+      "A": "glomerulus → Bowman's capsule → convoluted tubule → Henle's loop → collecting tubule",
+      "B": "glomerulus → Bowman's capsule → convoluted tubule → Henle's loop → convoluted tubule → collecting tubule",
+      "C": "convoluted tubule → glomerulus → Henle's loop → Bowman's capsule → collecting tubule",
+      "D": "convoluted tubule → Bowman's capsule → Henle's loop → glomerulus → collecting tubule"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "question": "The order of passage of food in the digestive system is?",
+    "options": {
+      "A": "ileum → caecum → large intestine → rectum",
+      "B": "ileum → colon → caecum → rectum",
+      "C": "large intestine → ileum → caecum → rectum",
+      "D": "colon → caecum → ileum → rectum"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 31,
+    "question": "Mass of a crucible = 10g, Mass of a crucible and soil before heating = 29g, Mass of a crucible and soil after heating = 18g. From the information above, determine the percentage of water in the given soil sample?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "40%",
+      "D": "60%"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 32,
+    "question": "I. Stomata → Spirogyra II. Alveoli → Earthworm III. Malpighian tubule → Mammal IV. Contractile vacuole → Protozoa. Which of the above structures is correctly matched with the organisms in which it is found?",
+    "options": {
+      "A": "II",
+      "B": "I",
+      "C": "IV",
+      "D": "III"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "question": "The sequence of the one-way gaseous exchange mechanism in a fish is?",
+    "options": {
+      "A": "mouth → operculum → gills",
+      "B": "mouth → gills → operculum",
+      "C": "operculum → gills → mouth",
+      "D": "gills → operculum → mouth"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 34,
+    "question": "Which of the following is true in blood transfusion?",
+    "options": {
+      "A": "A person of blood group AB can donate blood only to another person of blood group AB",
+      "B": "Persons of blood groups A and B can donate or receive blood from each other",
+      "C": "A person of blood group AB can receive blood only from persons of blood group A or B",
+      "D": "A person of blood group O can donate only to a person of blood group O"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 35,
+    "question": "The plants that grow in deserts or very dry areas are referred to as?",
+    "options": {
+      "A": "hydrophytes",
+      "B": "epiphytes",
+      "C": "xerophytes",
+      "D": "mesophytes"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 36,
+    "question": "The most abundant group of organisms in the animal kingdom is?",
+    "options": {
+      "A": "Mammalia",
+      "B": "Aves",
+      "C": "Insecta",
+      "D": "Annelida"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 37,
+    "question": "The movement of part of a plant in response to an external stimulus of no particular direction is?",
+    "options": {
+      "A": "taxism",
+      "B": "tropism",
+      "C": "haptotropic movement",
+      "D": "nastic movement"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 38,
+    "question": "The mutation theory of organic evolution was propounded by?",
+    "options": {
+      "A": "Gregor Mendel",
+      "B": "Hugo de Vries",
+      "C": "Jean Lamarck",
+      "D": "Charles Darwin"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 39,
+    "question": "If both parents are heterozygous for a trait, the probability that an offspring will be recessive for that trait is?",
+    "options": {
+      "A": "1/2",
+      "B": "1/4",
+      "C": "1",
+      "D": "3/4"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 40,
+    "question": "Blood circulation in a mammal is said to be double because?",
+    "options": {
+      "A": "it passes twice through the heart in a complete circuit",
+      "B": "it moves in both arteries and veins",
+      "C": "it circulates in both the heart and other organs",
+      "D": "the heart contains auricles and ventricles"
+    },
+    "correct": "A"
+  }
+]
+}

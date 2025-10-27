@@ -1,0 +1,431 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "The repetition of a consonant sound in quick succession of sound effect is",
+    "options": {
+      "A": "Alliteration",
+      "B": "Pun",
+      "C": "Onomatopoeia",
+      "D": "Assonance"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 2,
+    "question": "A play in which the acts succeed one another without probable or necessary sequence is",
+    "options": {
+      "A": "Episodic",
+      "B": "Simple",
+      "C": "Linear",
+      "D": "Convoluted"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "A technique by which a previous scene or action can be recalled in a play to shed light on the present action is",
+    "options": {
+      "A": "Climax",
+      "B": "Flashback",
+      "C": "Interlude",
+      "D": "Catharsis"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 4,
+    "question": "Criticism is a literary activity which seeks to",
+    "options": {
+      "A": "Find faults in a literary work",
+      "B": "Analyze and evaluate a literary work",
+      "C": "Compare and contrast novels",
+      "D": "Discover the beauty of a literary work"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 5,
+    "question": "A situation where an actor addresses the audience without the other actors hearing him is called",
+    "options": {
+      "A": "Soliloquy",
+      "B": "Chorus",
+      "C": "Aside",
+      "D": "Solo"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "A band of singers and dancers in drama who acts as a link between the play and the audience is the",
+    "options": {
+      "A": "Chorus",
+      "B": "Clown",
+      "C": "Playwright",
+      "D": "Cast"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 7,
+    "question": "Persona refers to the",
+    "options": {
+      "A": "Central character in a play",
+      "B": "Voice of the character",
+      "C": "The image a character presents",
+      "D": "The personality of a character"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "question": "The three main unities in drama are those of",
+    "options": {
+      "A": "Action, time and place",
+      "B": "Time, space and action",
+      "C": "Place, time and space",
+      "D": "Space, action and time"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "question": "Poems that are not written in meter or regular line length are called",
+    "options": {
+      "A": "Short verses",
+      "B": "Rhythmic verses",
+      "C": "Free verses",
+      "D": "Irregular verses"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "question": "An elegy is a poem that mourns for the",
+    "options": {
+      "A": "Deceased",
+      "B": "Bereaved",
+      "C": "Accused",
+      "D": "King"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "question": "When two statements or comparisons are apparently contradictory, we have an example of",
+    "options": {
+      "A": "Irony",
+      "B": "Paradox",
+      "C": "Contrast",
+      "D": "Parallelism"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "question": "'If Winter comes, can Spring be far behind?' Shelly, 'Ode to the West Wind'. The literary device used here is",
+    "options": {
+      "A": "An apostrophe",
+      "B": "An allegory",
+      "C": "A poetic license",
+      "D": "A rhetoric"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 13,
+    "question": "A melodramatic play is based on",
+    "options": {
+      "A": "A melodious manipulation of events",
+      "B": "Ingredients that mellow down events",
+      "C": "Sensational plot and characters",
+      "D": "The playwright's didactic overtones"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "question": "Romantic poetry emphasizes",
+    "options": {
+      "A": "The beauty of nature",
+      "B": "Intimate relationships",
+      "C": "The love in human nature",
+      "D": "The romance in human aspiration"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 15,
+    "question": "In drama, a conspicuous weakness in the character of the protagonist contributing to his downfall is referred to as",
+    "options": {
+      "A": "An anagnorisis",
+      "B": "A tragic flaw",
+      "C": "A catharsis",
+      "D": "A catastrophe"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "'The woman whose breast I sucked is gone to the worms,' 'Oculi, Orphan'. These lines illustrate the use of",
+    "options": {
+      "A": "Sadism",
+      "B": "Sophism",
+      "C": "Satire",
+      "D": "Euphemism"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 17,
+    "question": "In Femi Osofisan's Morountodun, social change is achieved through",
+    "options": {
+      "A": "Collectivism",
+      "B": "Sectionalism",
+      "C": "Individualism",
+      "D": "Communism"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 18,
+    "question": "In Femi Osofisan's Morountodun, Titubi joins the farmer's revolt",
+    "options": {
+      "A": "To ensure its success",
+      "B": "As a spy for the establishment",
+      "C": "In pursuit of Marshal",
+      "D": "To defy the police"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 19,
+    "question": "In Femi Osofisan's Morountodun, the re-enactment of the Moremi legend in the play can be described as",
+    "options": {
+      "A": "Dramatic epilogue",
+      "B": "Dramatic monologue",
+      "C": "Role-playing",
+      "D": "Flashback"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 20,
+    "question": "In Femi Osofisan's Morountodun, the stage direction at the end of the play reveals",
+    "options": {
+      "A": "The actors in a changing room",
+      "B": "Mama Kayode raising the song of hope",
+      "C": "Moremi and Titubi in harsh spotlight",
+      "D": "The Director making a farewell speech"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 21,
+    "question": "'She bore a mind that envy could not but call fair' – The statement characterizes",
+    "options": {
+      "A": "Maria",
+      "B": "Olivia",
+      "C": "Roderigo",
+      "D": "Viola"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "question": "According to William Shakespeare's Twelfth Night, the Duke of Illyria is fascinated by",
+    "options": {
+      "A": "The idea of love",
+      "B": "The food of love",
+      "C": "Music",
+      "D": "Entertainment"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 23,
+    "question": "DUKE: '... Thou know'st no less but all; I have unclasped to thee the book even of my secret soul.' What exactly has the Duke unclasped?",
+    "options": {
+      "A": "The book of his relationship with Olivia",
+      "B": "The secret of his soul",
+      "C": "The details of his relationship with Viola",
+      "D": "The details of his relationship with Olivia"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "question": "'I'll do my best To woo your lady.' What is the sincere desire of the person who made the statement?",
+    "options": {
+      "A": "That she succeeds in winning the love for the master",
+      "B": "That her best is good enough to win affection",
+      "C": "That she herself becomes the beloved",
+      "D": "That she herself wins the love"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "question": "The significance of the sub-plot dealing with Feste, Toby and Maria is the expression of life's",
+    "options": {
+      "A": "Fragility",
+      "B": "Pleasure",
+      "C": "Comedy",
+      "D": "Romance"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 26,
+    "question": "What would you consider to be the major theme of William Shakespeare's Twelfth Night?",
+    "options": {
+      "A": "Love at first sight",
+      "B": "Unrequited love",
+      "C": "Illusion and reality",
+      "D": "Humor and Tragedy"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "question": "In Abubakar Gimba's Witnesses to Tears, Al-Amin's initial reservations about his daughter's engagement to Lahab are formed by",
+    "options": {
+      "A": "A premonition of his death",
+      "B": "Lahab's doubtful morality",
+      "C": "Hussaina's immaturity",
+      "D": "His fear of loneliness"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 28,
+    "question": "The witnesses to the tears in Abubakar Gimba's Witnesses to Tears are",
+    "options": {
+      "A": "Saahir and Lahab",
+      "B": "Lahab and Hussaina",
+      "C": "Lahab and Sagiir",
+      "D": "Al-Amin and Hussaina"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "question": "The novel Witnesses to Tears is largely set in",
+    "options": {
+      "A": "Futa Toro",
+      "B": "Sabonville city",
+      "C": "Alligator city",
+      "D": "Nuclear city"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 30,
+    "question": "In George Orwell's Animal Farm, Old Major ends his speech to the animals with a song in order to",
+    "options": {
+      "A": "Spur them to action",
+      "B": "Entertain them",
+      "C": "Display his ability to sing",
+      "D": "Teach them how to sing an anthem"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 31,
+    "question": "In George Orwell's Animal Farm, the execution of some of the animals on the orders of Napoleon is to",
+    "options": {
+      "A": "Prevent Snowball from coming back to the farm",
+      "B": "Make the pigs constitute themselves into special classes",
+      "C": "Achieve the pigs' socialite goal"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "The message of George Orwell's Animal Farm is that",
+    "options": {
+      "A": "Capitalism is as bad as communism",
+      "B": "Humanism is better than animalism",
+      "C": "Communism is better than capitalism",
+      "D": "No society exists where everyone is equal"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 33,
+    "question": "After the expulsion of Snowball from the farm, the triumvirate that ran the farm was composed of",
+    "options": {
+      "A": "Minimus, Napoleon and Squealer",
+      "B": "Jesse, Napoleon and Bluebell",
+      "C": "Boxer, Old Major and Napoleon",
+      "D": "Squealer, Boxer and Napoleon"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 34,
+    "question": "Characterization in J.P Clark's The Wives Revolt is",
+    "options": {
+      "A": "Economical but effective",
+      "B": "Economical and effective",
+      "C": "Elaborate but ineffective",
+      "D": "Elaborate and effective"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 35,
+    "question": "J.P Clark's The Wives Revolt is preoccupied with",
+    "options": {
+      "A": "The fight by women to keep their goats",
+      "B": "The evil that oil money breeds",
+      "C": "Women liberation from male domination",
+      "D": "Women's protest against men's wickedness"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 36,
+    "question": "In J.P Clark's The Wives Revolt, the highest measure women in the community can take to register their protest is",
+    "options": {
+      "A": "Take prostitution",
+      "B": "Carry out the nude act",
+      "C": "Abandon their husbands",
+      "D": "Abandon their children"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "question": "In Angira's Expelled, the poet persona laments the",
+    "options": {
+      "A": "Loss of his property",
+      "B": "Harrowing experiences from the stranger's visit",
+      "C": "Presence of the strangers",
+      "D": "Problem of his family and their economic implications"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "question": "Fletcher's Upon An Honest Man's Fortune achieves its lyrical effect through the use of",
+    "options": {
+      "A": "Synecdoche",
+      "B": "Antithesis",
+      "C": "Enjambment",
+      "D": "Ballad"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 39,
+    "question": "Rhythm is achieved in Raleigh's The Soul's Errand through the use of",
+    "options": {
+      "A": "Metaphor",
+      "B": "Alliteration",
+      "C": "Repetition",
+      "D": "Antithesis"
+    },
+    "correct": "C"
+  }
+]
+}

@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "Which of the following statements about living things is correct?",
+    "options": {
+      "A": "Animals respire using carbon(IV)oxide as a raw material",
+      "B": "Growth in plants is limited after some time",
+      "C": "Most plants respond to stimulus slowly",
+      "D": "Higher animals can reproduce asexually"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "question": "Organ level of organization in living things is found in?",
+    "options": {
+      "A": "Waterleaf plant",
+      "B": "Virus particle",
+      "C": "Kidney",
+      "D": "Spermatozoon"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following statements is not correct? Diagrams X and Y are sections of?",
+    "options": {
+      "A": "Roots",
+      "B": "A dicotyledonous root",
+      "C": "Vascular bundles",
+      "D": "Stems"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 4,
+    "question": "Sources of air pollutants are?",
+    "options": {
+      "A": "Industrial chimneys, burning fossil oils and river dams",
+      "B": "Sulphur dioxide, acid rain and pesticides",
+      "C": "Sulphur dioxide, vehicle exhausts, and aerosols",
+      "D": "Sewage, smoke and old vehicles"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 5,
+    "question": "The body of a snail is divided into head?",
+    "options": {
+      "A": "Thorax and abdomen",
+      "B": "Visceral mass and abdomen",
+      "C": "Thorax and foot",
+      "D": "Visceral mass and foot"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 6,
+    "question": "The part responsible for conducting water and dissolved mineral salts from the soil to the leaves is labelled?",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "question": "The part labelled II is the?",
+    "options": {
+      "A": "Pith",
+      "B": "Xylem",
+      "C": "Phloem",
+      "D": "Endodermis"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "question": "The organelles in cells which are also referred to as suicidal bags are the?",
+    "options": {
+      "A": "Mitochondria",
+      "B": "Lysosomes",
+      "C": "Ribosomes",
+      "D": "Nuclei"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "question": "The process that brings about the shrinking of a spirogyra cell when placed in a strong solution is?",
+    "options": {
+      "A": "Osmosis",
+      "B": "Autolysis",
+      "C": "Plasmolysis",
+      "D": "Diffusion"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 10,
+    "question": "The region of a plant stem in which cells divide to increase its diameter is?",
+    "options": {
+      "A": "Cambium",
+      "B": "Phloem",
+      "C": "Xylem",
+      "D": "Collenchyma"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "question": "The total number of caudal vertebrae in animals X and Y is 4 and 27 respectively. The animals are likely to be?",
+    "options": {
+      "A": "Fish and human",
+      "B": "Toad and rat",
+      "C": "Toad and fish",
+      "D": "Humans and rat"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following blood components has the greatest affinity for oxygen and carbon(IV)oxide?",
+    "options": {
+      "A": "Lymphocyte",
+      "B": "Erythrocyte",
+      "C": "Blood plasma",
+      "D": "Thrombocyte"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 13,
+    "question": "Which of the processes take place during inspiration?",
+    "options": {
+      "A": "I and III only",
+      "B": "II and III only",
+      "C": "II and IV only",
+      "D": "III and IV only"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following processes is a direct result of contraction of the intercostal muscles?",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following hormones are I, II, III and IV respectively?",
+    "options": {
+      "A": "ADH, Glucagon, Oestrogen, Adrenaline",
+      "B": "Adrenaline, Glucagon, Oestrogen, ADH",
+      "C": "Glucagon, ADH, Oestrogen, Adrenaline",
+      "D": "Adrenaline, ADH, Oestrogen, Glucagon"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 16,
+    "question": "The hormone responsible for anxiety is?",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "question": "The middle ear is connected to the pharynx by the part labelled?",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "question": "The parts labelled I are the?",
+    "options": {
+      "A": "Semicircular canals",
+      "B": "Ossicles",
+      "C": "Cochlea",
+      "D": "External auditory meatus"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "question": "Which of the parts are correctly grouped?",
+    "options": {
+      "A": "(Inner ear I, IV) (Middle ear III) (Outer ear II)",
+      "B": "(Inner ear III) (Middle ear II, IV) (Outer ear I)",
+      "C": "(Inner ear III) (Middle ear II) (Outer ear III, IV)",
+      "D": "(Inner ear II) (Middle ear I, III) (Outer ear IV)"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 20,
+    "question": "Which parts of P and Q fuse to complete the biological process?",
+    "options": {
+      "A": "III and I",
+      "B": "IV and I",
+      "C": "III and II",
+      "D": "IV and II"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 21,
+    "question": "Which of the following statements about P and Q is correct?",
+    "options": {
+      "A": "Both cells are structures for asexual reproduction",
+      "B": "Both cells normally belong to the same individual",
+      "C": "Both cells are found in plants",
+      "D": "The union of both cells gives rise to a new mammal"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 22,
+    "question": "If the number of chromosomes in the skin cells of mammals is 46, how many chromosomes would be found in P and Q respectively?",
+    "options": {
+      "A": "23 and 23",
+      "B": "23 and 46",
+      "C": "46 and 23",
+      "D": "46 and 46"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 23,
+    "question": "In which of the following structures is simple sugar produced?",
+    "options": {
+      "A": "Vacuole",
+      "B": "Cytoplasm",
+      "C": "Chloroplast",
+      "D": "Cell wall"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "question": "An evidence of the occurrence of photosynthesis in an experiment is the?",
+    "options": {
+      "A": "Release of carbon(IV)oxide",
+      "B": "Release of oxygen",
+      "C": "Formation of water molecules",
+      "D": "Formation and release of fructose"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 25,
+    "question": "The major source of vitamin A are?",
+    "options": {
+      "A": "Egg yolk, carrot and palm oil",
+      "B": "Mango, pawpaw, and eggs",
+      "C": "Sorghum, soya bean and liver",
+      "D": "Rice bran, green vegetables and milk"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 26,
+    "question": "Protease J would react with the particular illustrated substance because enzymes?",
+    "options": {
+      "A": "Are denatured at high frequency",
+      "B": "Are specific in their action",
+      "C": "Remain unchanged after a reaction",
+      "D": "Speed up reactions"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 27,
+    "question": "After a reaction between protease J and the food substance, the end product would be?",
+    "options": {
+      "A": "Fatty acids",
+      "B": "Glucose",
+      "C": "Amino acids",
+      "D": "Water"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "question": "The property of clayey soil that prevents it from supporting thick vegetation is its?",
+    "options": {
+      "A": "Composition of chemically weathered granite rocks",
+      "B": "Inability to retain much water",
+      "C": "Tendency of becoming waterlogged",
+      "D": "Porosity and low water retention ability"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 29,
+    "question": "Which of the following practices will not maintain soil fertility?",
+    "options": {
+      "A": "Preventing soil erosion",
+      "B": "Bush fallowing",
+      "C": "Crop rotation",
+      "D": "Continuous cropping"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 30,
+    "question": "A group of organisms of the same species living in a particular place is known as?",
+    "options": {
+      "A": "Colony",
+      "B": "Ecosystem",
+      "C": "Niche",
+      "D": "Population"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 31,
+    "question": "The organic component of the soil is labelled?",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 32,
+    "question": "The part labelled IV is?",
+    "options": {
+      "A": "Silt",
+      "B": "Sand",
+      "C": "Humus",
+      "D": "Clay"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "Which of the following pyramids is not used in ecology? Pyramid of?",
+    "options": {
+      "A": "Energy",
+      "B": "Numbers",
+      "C": "Biomass",
+      "D": "Organisms"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 34,
+    "question": "Organism J is normally sustained by energy from?",
+    "options": {
+      "A": "Green plants",
+      "B": "Carbohydrates",
+      "C": "Organism",
+      "D": "Sunlight"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following statements about organism L is correct?",
+    "options": {
+      "A": "Feeds on organism J",
+      "B": "Is a primary consumer",
+      "C": "Is the producer",
+      "D": "Is a secondary consumer"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 36,
+    "question": "The position occupied by each of organisms J, K, L, M and N in the food chain is known as the?",
+    "options": {
+      "A": "Energy level",
+      "B": "Trophic level",
+      "C": "Food web",
+      "D": "Pyramid of numbers"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following features is not an adaptation?",
+    "options": {
+      "A": "Breathing roots for entry of air",
+      "B": "Flowers raised above water to attract pollinators",
+      "C": "Spongy tissues containing gases for buoyancy",
+      "D": "Hairy structures on the leaves to reduce water loss"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "question": "The biological association that contributes directly to succession in a community is?",
+    "options": {
+      "A": "Competition",
+      "B": "Predation",
+      "C": "Parasitism",
+      "D": "Commensalism"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 39,
+    "question": "The conservation of natural resources is enhanced by the following practices except?",
+    "options": {
+      "A": "Controlling farm activities",
+      "B": "Protecting endangered species",
+      "C": "Poaching in game reserves",
+      "D": "Establishing parks and gardens"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 40,
+    "question": "The burning of farmlands should be discouraged because?",
+    "options": {
+      "A": "It destroys organic components of the soil",
+      "B": "It increases population of wild animals",
+      "C": "It increases dormancy period of some seeds",
+      "D": "It destroys some plant seeds"
+    },
+    "correct": "A"
+  }
+]
+}

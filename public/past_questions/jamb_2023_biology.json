@@ -1,0 +1,443 @@
+{"quiz":[
+  {
+    "id": 1,
+    "question": "Which of the following is an example of a microorganism in action as a disease vector?",
+    "options": {
+      "A": "Fungi decomposing dead plant material",
+      "B": "Mosquito transmitting malaria",
+      "C": "Bacteria causing food poisoning",
+      "D": "Algae producing oxygen through photosynthesis"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a characteristic of cells related to irritability?",
+    "options": {
+      "A": "Ability to respond to stimuli",
+      "B": "Ability to synthesize proteins",
+      "C": "Ability to generate energy",
+      "D": "Ability to replicate DNA"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "question": "The membrane around the vacuole is known as",
+    "options": {
+      "A": "Elaioplast",
+      "B": "Amyloplast",
+      "C": "Tonoplast",
+      "D": "Cytoplast"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is evidence of evolution?",
+    "options": {
+      "A": "All of the above.",
+      "B": "Similarities in embryonic development",
+      "C": "Fossils of extinct organisms",
+      "D": "Homologous structures in different species"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is an example of an adaptation for survival in social insects?",
+    "options": {
+      "A": "Migration to warmer climates",
+      "B": "Production of venom for defense",
+      "C": "Formation of complex caste systems",
+      "D": "Hibernation during winter months"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is NOT a part of the alimentary canal?",
+    "options": {
+      "A": "Oesophagus",
+      "B": "Large intestine",
+      "C": "Liver",
+      "D": "Small intestine"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is an evolutionary trend commonly observed in organisms?",
+    "options": {
+      "A": "Decreased complexity over time",
+      "B": "Increased dependence on external resources",
+      "C": "Increased genetic diversity within populations",
+      "D": "Decreased adaptation to the environment"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is a characteristic feature of Kingdom Plantae?",
+    "options": {
+      "A": "Presence of chloroplasts",
+      "B": "Ability to perform photosynthesis",
+      "C": "Lack of cell walls",
+      "D": "Heterotrophic mode of nutrition"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 9,
+    "question": "A biome characterized by hot summer, warm winter and treeless vegetation is",
+    "options": {
+      "A": "Steppe grasslands",
+      "B": "Temperate deserts",
+      "C": "Savannah grassland",
+      "D": "Tropical deserts"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is an example of physiological variation in organisms?",
+    "options": {
+      "A": "Variation in blood pressure among individuals",
+      "B": "Variation in beak shape among finches",
+      "C": "Differences in fur color in rabbits",
+      "D": "Variation in leaf shape in plants"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following are components of the skeletal system in humans?",
+    "options": {
+      "A": "Cartilage and blood vessels",
+      "B": "Ligaments and tendons",
+      "C": "Muscles and nerves",
+      "D": "Bones and joints"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following represents an example of ecological management and conservation through a biological association?",
+    "options": {
+      "A": "Construction of a dam for hydroelectric power",
+      "B": "Introduction of an invasive species for pest control",
+      "C": "Clear-cutting of a forest for timber extraction",
+      "D": "Establishment of marine protected areas"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 13,
+    "question": "The term cell was given by",
+    "options": {
+      "A": "Robert Hooke",
+      "B": "Schwann",
+      "C": "De Bary",
+      "D": "Tatum"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is the primary organ involved in gas exchange during respiration in humans?",
+    "options": {
+      "A": "Diaphragm",
+      "B": "Bronchi",
+      "C": "Lungs",
+      "D": "Trachea"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 15,
+    "question": "Which gland is responsible for producing the hormone insulin?",
+    "options": {
+      "A": "Thyroid gland",
+      "B": "Pituitary gland",
+      "C": "Pancreas",
+      "D": "Adrenal gland"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "question": "Most fishes do not sink in water because of the presences of: I. swim bladder II. air bladder III. air sacs IV. air in spongy bones",
+    "options": {
+      "A": "II and III are correct",
+      "B": "I and II are correct",
+      "C": "I, II, III and IV are correct",
+      "D": "III and IV are correct"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 17,
+    "question": "In monohybrid inheritance, if an organism carries two different alleles for a particular gene, it is called:",
+    "options": {
+      "A": "Homozygous",
+      "B": "Dominant",
+      "C": "Heterozygous",
+      "D": "Recessive"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 18,
+    "question": "What is the tissue responsible for transporting water and minerals from the roots to the rest of the plant?",
+    "options": {
+      "A": "Xylem",
+      "B": "Epidermis",
+      "C": "Parenchyma",
+      "D": "Phloem"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is an example of an abiotic ecological factor?",
+    "options": {
+      "A": "Temperature",
+      "B": "Competition",
+      "C": "Predation",
+      "D": "Symbiosis"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following processes is involved in the reproduction of developing organisms?",
+    "options": {
+      "A": "Budding",
+      "B": "Germination",
+      "C": "Fertilization",
+      "D": "Pollination"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 21,
+    "question": "Behavioral adaptation for dealing with a hot climate could include",
+    "options": {
+      "A": "Hibernating during the hottest part of the day",
+      "B": "Large scales on the back of a lizard",
+      "C": "Feeding during the hottest part of the day",
+      "D": "A small kidney to conserve water"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 22,
+    "question": "The natural place of an organism or community is known as",
+    "options": {
+      "A": "Niche",
+      "B": "Habit",
+      "C": "Biome",
+      "D": "Habitat"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 23,
+    "question": "Which process in the nutrient cycle converts atmospheric nitrogen into a form that plants can utilize?",
+    "options": {
+      "A": "Denitrification",
+      "B": "Nitrogen fixation",
+      "C": "Ammonification",
+      "D": "Nitrification"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 24,
+    "question": "Which of the following functions is performed by the skin to help maintain homeostasis in the human body?",
+    "options": {
+      "A": "Regulation of body temperature",
+      "B": "Filtration of blood",
+      "C": "Production of hormones",
+      "D": "Digestion of food"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following soil types becomes less fertile due to the intense leaching caused by tropical rains?",
+    "options": {
+      "A": "Yellow soil",
+      "B": "Laterite soil",
+      "C": "Red soils",
+      "D": "Black soil"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 26,
+    "question": "Which type of reproduction involves the fusion of gametes from two parents?",
+    "options": {
+      "A": "Sexual reproduction",
+      "B": "Asexual reproduction",
+      "C": "Binary fission",
+      "D": "Budding"
+    },
+    "correct": "A"
+  },
+  {
+    "id": 27,
+    "question": "Which processes are involved in nutrient cycling in a functioning ecosystem?",
+    "options": {
+      "A": "Erosion, weathering, and sedimentation",
+      "B": "Decomposition, evaporation, and precipitation",
+      "C": "Nitrogen fixation, denitrification, and ammonification",
+      "D": "Respiration, photosynthesis, and transpiration"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 28,
+    "question": "What is autotrophic nutrition?",
+    "options": {
+      "A": "Nutrition in which organisms obtain food by breaking down complex organic compounds.",
+      "B": "Nutrition in which organisms obtain food from other organisms",
+      "C": "Nutrition in which organisms obtain food by consuming both plants and animals",
+      "D": "Nutrition in which organisms produce their own food using energy from the sun or inorganic substances"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "question": "The theory of evolution can be defined as",
+    "options": {
+      "A": "The belief that all species were created in their current form",
+      "B": "The hypothesis that organisms strive to improve themselves over generations",
+      "C": "The idea that species change over time through natural processes",
+      "D": "The concept that evolution occurs through a series of sudden and dramatic changes"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 30,
+    "question": "Which of the following is a male reproductive organ in humans?",
+    "options": {
+      "A": "Uterus",
+      "B": "Ovary",
+      "C": "Testis",
+      "D": "Fallopian tube"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 31,
+    "question": "Which of the following is an example of a behavioral adaptation for survival in animals?",
+    "options": {
+      "A": "Sharp teeth",
+      "B": "Migration",
+      "C": "Wings",
+      "D": "Camouflage"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following traits is not visible in a person with Down syndrome?",
+    "options": {
+      "A": "Short neck",
+      "B": "High muscle tone",
+      "C": "Small stature",
+      "D": "Slant eyes"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 33,
+    "question": "What is the definition of population ecology?",
+    "options": {
+      "A": "The study of interactions between organisms and their physical environment",
+      "B": "The study of evolutionary processes and their effects on populations",
+      "C": "The study of interactions between different populations in an ecosystem",
+      "D": "The study of the distribution and abundance of individuals within a species"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 34,
+    "question": "What is the term used to describe the maximum number of individuals of a species that an environment can support indefinitely?",
+    "options": {
+      "A": "Ecological niche",
+      "B": "Limiting factor",
+      "C": "Carrying capacity",
+      "D": "Density-dependent factor"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following statements about the heart is true?",
+    "options": {
+      "A": "The heart is responsible for the production of red blood cells",
+      "B": "The heart pumps oxygenated blood to the lungs",
+      "C": "The heart receives blood from the kidneys and filters waste products",
+      "D": "The heart is a muscular organ that contracts to circulate blood throughout the body"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 36,
+    "question": "What is the primary source of variation in a population?",
+    "options": {
+      "A": "Gene flow",
+      "B": "Mutation",
+      "C": "Natural selection",
+      "D": "Genetic drift"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "question": "Which component of blood is responsible for carrying oxygen to the body tissues?",
+    "options": {
+      "A": "Platelets",
+      "B": "White blood cells",
+      "C": "Red blood cells",
+      "D": "Plasma"
+    },
+    "correct": "C"
+  },
+  {
+    "id": 38,
+    "question": "What are the primary products of photosynthesis?",
+    "options": {
+      "A": "Carbon dioxide and water",
+      "B": "Glucose and oxygen",
+      "C": "Glucose and carbon dioxide",
+      "D": "Oxygen and water"
+    },
+    "correct": "B"
+  },
+  {
+    "id": 39,
+    "question": "The alternate form of a gene is",
+    "options": {
+      "A": "Alternate type",
+      "B": "Dominant character",
+      "C": "Recessive character",
+      "D": "Allele"
+    },
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "question": "Which organs are part of the alimentary canal in the human digestive system?",
+    "options": {
+      "A": "Salivary glands, tongue, and pharynx",
+      "B": "Large intestine, appendix, and rectum",
+      "C": "Stomach, liver, and gallbladder",
+      "D": "Oesophagus, pancreas, and small intestine"
+    },
+    "correct": "D"
+  }
+]
+}
