@@ -317,12 +317,7 @@
 
 
 
-    <!-- Clickable overlay buttons -->
-    <button class="btn jamb" data-target="jamb"></button>
-    <button class="btn ielts" data-target="ielts"></button>
-    <button class="btn cibn" data-target="cibn"></button>
-  </div>
-
+ 
 
 
 
@@ -1015,69 +1010,27 @@ document.querySelectorAll('.subject-btn').forEach(btn => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const overlay = document.getElementById("videoOverlay");
-  const buttons = document.querySelectorAll(".video-container .btn");
+  const overlay = document.getElementById("dwarfOverlay");
+  const buttons = overlay.querySelectorAll(".btn");
 
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
-      const target = btn.getAttribute("data-target");
-
       // Fade out overlay
       overlay.classList.add("hidden");
 
+      // After fade completes, hide it and open menu
       setTimeout(() => {
-        if (target === "jamb") {
-          // ✅ Force open the sidebar
-          const menuPanel = document.getElementById("menuPanel");
-          if (menuPanel) {
-            menuPanel.classList.remove("-translate-x-full");
-          }
+        overlay.style.display = "none";
 
-          // ✅ Expand the 2020 JAMB past questions section
-          const yearBtn = document.querySelector('.year-btn[data-year="2020"]');
-          const subjectList = yearBtn?.nextElementSibling;
-
-          if (yearBtn && subjectList) {
-            if (subjectList.classList.contains("hidden")) {
-              yearBtn.click(); // toggle open
-            }
-
-            // Smooth scroll to it and briefly highlight
-            yearBtn.scrollIntoView({ behavior: "smooth", block: "center" });
-            yearBtn.classList.add("highlight");
-            setTimeout(() => yearBtn.classList.remove("highlight"), 1500);
-          }
-
-          // Optional: auto-load English past questions
-          // loadPastQuestions(2020, 'english');
-
-        } else if (target === "ielts") {
-          alert("IELTS mode coming soon!");
-        } else if (target === "cibn") {
-          alert("CIBN mode coming soon!");
+        // Open sidebar menu (menuPanel)
+        const menuPanel = document.getElementById("menuPanel");
+        if (menuPanel) {
+          menuPanel.classList.remove("-translate-x-full");
         }
       }, 800);
     });
   });
 });
-
-
-
-
-
-
-
-function revealGoQuizApp() {
-  const overlay = document.getElementById('dwarfOverlay');
-  overlay.style.transition = 'opacity 0.6s ease';
-  overlay.style.opacity = '0';
-
-  setTimeout(() => {
-    overlay.style.display = 'none';
-  }, 600);
-
-   
-}
 
 
 
