@@ -291,9 +291,32 @@
     </style>
 </head>
 <body class="design">
+<!-- Dwarf Scroll Intro Overlay -->
+<div id="dwarfOverlay" 
+     style="position: fixed; inset: 0; background: black; z-index: 9999; display: flex; justify-content: center; align-items: center;">
+  <div class="video-container" style="position: relative; width: 100%; height: 100%;">
+    <video autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+      <source src="dwarf_video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Transparent clickable zones -->
+    <button class="btn jamb" style="position: absolute; top: 25%; left: 51%; transform: translate(-50%, -50%);
+            background: none; border: none; cursor: pointer; padding: 40px 60px; border-radius: 8px;"
+            onclick="revealGoQuizApp()"></button>
+
+    <button class="btn ielts" style="position: absolute; top: 45%; left: 52%; transform: translate(-50%, -50%);
+            background: none; border: none; cursor: pointer; padding: 40px 60px; border-radius: 8px;"
+            onclick="revealGoQuizApp()"></button>
+
+    <button class="btn cibn" style="position: absolute; top: 75%; left: 52%; transform: translate(-50%, -50%);
+            background: none; border: none; cursor: pointer; padding: 50px 60px; border-radius: 8px;"
+            onclick="revealGoQuizApp()"></button>
+  </div>
+</div>
 
     <video autoplay muted>
-  <source src="https://github.com/urumeze/kids-app-with-ocr/releases/download/video_overlay/dwarf_video.mp4" type="video/mp4">
+  <source src="https://github.com/user-attachments/assets/4701dd6c-ff10-4281-9a9f-03bfdb9438c1">
   Your browser does not support the video tag.
 </video>
 
@@ -1042,6 +1065,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+
+
+
+
+function revealGoQuizApp() {
+  const overlay = document.getElementById('dwarfOverlay');
+  overlay.style.transition = 'opacity 0.6s ease';
+  overlay.style.opacity = '0';
+
+  setTimeout(() => {
+    overlay.style.display = 'none';
+  }, 600);
+
+   
+}
 
 
 
