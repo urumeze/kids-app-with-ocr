@@ -292,16 +292,12 @@
 </head>
 <body class="design">
 <!-- Dwarf Scroll Intro Overlay -->
-<div id="dwarfOverlay" 
-     style="position: fixed; inset: 0; background: black; z-index: 9999; display: flex; justify-content: center; align-items: center;">
-  <div class="video-container" style="position: relative; width: 100%; height: 100%;">
-    <video autoplay muted playsinline preload="auto"
-           style="width: 100%; height: 100%; object-fit: cover;">
-      <source src="dwarf-videoo.mp4" type="video/mp4" />
+<div id="dwarfOverlay" class="video-overlay">
+  <div class="video-container">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="dwarf_videoo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </div>
-</div>
 
 
     <!-- Transparent clickable zones -->
@@ -321,13 +317,12 @@
 
 
 
-
     <!-- Clickable overlay buttons -->
     <button class="btn jamb" data-target="jamb"></button>
     <button class="btn ielts" data-target="ielts"></button>
     <button class="btn cibn" data-target="cibn"></button>
   </div>
-</div>
+
 
 
 
