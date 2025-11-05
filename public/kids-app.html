@@ -18,6 +18,12 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    
+
 
     <style>
          :root{
@@ -287,10 +293,23 @@
   100% { background-color: transparent; }
 }
 
+#google-sign-in-container {
+  position: fixed; /* or absolute */
+  bottom: 20px; /* Adjust as needed for desired position */
+  right: 20px;  /* Adjust as needed for desired position */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  /* Optional: Add styling for a subtle background or shadow */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 
     </style>
 </head>
 <body class="design">
+  
 <!-- Dwarf Scroll Intro Overlay -->
 <div id="dwarfOverlay" class="video-overlay">
   <div class="video-container">
@@ -303,28 +322,38 @@
     <!-- Transparent clickable zones -->
     <button class="btn jamb" style="position: absolute; top: 25%; left: 51%; transform: translate(-50%, -50%);
             background: none; border: none; cursor: pointer; padding: 40px 60px; border-radius: 8px;"
-             onclick="revealGoQuizApp()"></button>
+             ></button>
 
     <button class="btn ielts" style="position: absolute; top: 45%; left: 52%; transform: translate(-50%, -50%);
             background: none; border: none; cursor: pointer; padding: 40px 60px; border-radius: 8px;"
-            onclick="revealGoQuizApp()"></button>
+            ></button>
 
     <button class="btn cibn" style="position: absolute; top: 75%; left: 52%; transform: translate(-50%, -50%);
             background: none; border: none; cursor: pointer; padding: 50px 60px; border-radius: 8px;"
-            onclick="revealGoQuizApp()"></button>
+            ></button>
   </div>
 </div>
 
+<!-- Load Google Identity Services -->
 
 
- 
+<div id="g_id_onload"
+         data-client_id="845525258490-kr08g5n00eevukimo32mdaf65pjc25md.apps.googleusercontent.com"
+         data-context="signin"
+         data-ux_mode="popup"
+         data-callback="handleCredentialResponse"
+         data-nonce=""
+         data-auto_select="true"
+         data-itp_support="true">
+    </div>
+
 
 
 
 
 <!-- 📚 MENU PANEL -->
 <div id="menuPanel"
-     class="fixed left-0 top-0 h-full w-64 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+     class="fixed left-0 top-0 h-full w-25 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
   <div class="p-4 border-b flex justify-between items-center">
     <h2 class="text-xl font-semibold text-gray-800">Past Exams</h2>
     <button id="closeMenuBtn" class="text-gray-600 hover:text-black">&times;</button>
@@ -422,9 +451,14 @@
     <div class="container mx-auto px-4 py-8">
         <!-- Header -->
         <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 mb-4" data-aos="fade-down">GoQuiz</h1>
-            <p class="text-xl text-gray-700" data-aos="fade-up">1. Snap your Kids Note=> 2. Upload=> 3. click Next</p>
-        </header>
+    <h1 id="goquizTitle" class="text-4xl md:text-5xl font-bold text-indigo-600 mb-4">
+        GoQuiz
+    </h1>
+    <p class="text-xl text-gray-700">
+        1. Snap your Kids Note => 2. Upload => 3. Click Next
+    </p>
+</header>
+
         
         <!-- Main content area - will be dynamically updated -->
         <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
@@ -540,6 +574,7 @@
         </main>
     </div>
     
+<script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
 
 
 <script>
@@ -1031,6 +1066,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+const titleElement = document.getElementById("goquizTitle");
+
+// Check localStorage on page load
+const savedFirstName = localStorage.getItem("firstName");
+if (savedFirstName) {
+    titleElement.textContent = `GoQuiz ${savedFirstName}`;
+   
+}
+
+function handleCredentialResponse(response) {
+    if (!response.credential) return;
+
+    const profile = jwt_decode(response.credential);
+    const firstName = profile.given_name || (profile.name ? profile.name.split(" ")[0] : "User");
+
+    // Update header
+    titleElement.textContent = `GoQuiz ${firstName}`;
+
+    // Save to localStorage
+    localStorage.setItem("firstName", firstName);
+
+   
+}
+
+
+
+
+function revealGoQuizApp() {
+  const overlay = document.getElementById('dwarfOverlay');
+  overlay.classList.add('hidden'); // fades it out
+  setTimeout(() => {
+    overlay.style.display = 'none'; // completely remove after fade
+  }, 800); // matches your CSS transition time
+};
+
+
 
 
 </script>
