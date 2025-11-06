@@ -305,6 +305,76 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Fixed header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  .header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Coin container */
+  .coin-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    cursor: default;
+  }
+  /* default styles for inline SVG - you can move to your CSS file too */
+    .coin-svg { display:inline-block; vertical-align:middle; }
+    .coin-svg .shimmerRect { transition: opacity 150ms linear; }
+
+    /* .flash class triggers shimmer and a quick pop */
+    .coin-svg.flash { transform-origin: center; animation: coinPop 300ms ease; }
+    .coin-svg.flash .shimmerRect {
+      opacity: 1;
+      /* animate the rect sliding across the coin */
+      animation: shimmerMove 700ms linear;
+    }
+
+    @keyframes shimmerMove {
+      0%   { transform: translateX(-120px); }
+      100% { transform: translateX(120px); }
+    }
+
+    @keyframes coinPop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+      100% { transform: scale(1); }
+    }
+
+
+  .coin:hover {
+    transform: scale(1.1);
+  }
+
+  /* Number next to coin */
+  .coin-number {
+    font-weight: bold;
+    color: purple;
+  }
+  .coin-caller {
+    font-weight: bold;
+    color: greenyellow;
+  }
+
+
+
+
 
     </style>
 </head>
@@ -333,6 +403,83 @@
             ></button>
   </div>
 </div>
+
+<!-- Fixed coin wrapper -->
+<div id="floatingCoin" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+  <div class="coin-container">
+    
+    <div class="coin-number" id="coinNumber">0</div>
+
+    <!-- Your SVG coin -->
+    <svg class="coin-svg" id="gqCoin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="48" height="48" role="img" aria-label="GQ coin">
+      <defs>
+    <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fff9c4"/>
+      <stop offset="40%" stop-color="#fbc02d"/>
+      <stop offset="80%" stop-color="#f57f17"/>
+      <stop offset="100%" stop-color="#bf360c"/>
+    </radialGradient>
+
+    <linearGradient id="gq_shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="45%" stop-color="rgba(255,255,255,0.9)" />
+      <stop offset="55%" stop-color="rgba(255,255,255,0.9)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+  </defs>
+
+  <!-- outer coin with subtle dark rim -->
+  <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
+
+  <!-- inner rim -->
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
+
+  <!-- embossed center -->
+  <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
+
+  <!-- shimmer band (hidden by default; animated when .flash is added) -->
+  <g class="shimmerGroup">
+    <rect x="-120" y="0" width="240" height="120" fill="url(#gq_shine)" opacity="0" class="shimmerRect"/>
+  </g>
+
+  <!-- letters GQ -->
+  <text x="60" y="74" text-anchor="middle"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-weight="800" font-size="36" fill="#3b2a0c" stroke="#fff6d8" stroke-width="0.6" paint-order="stroke">
+    GQ
+  </text>
+
+  <!-- small highlight ellipse for depth -->
+  <ellipse cx="44" cy="42" rx="28" ry="10" transform="rotate(-20 44 42)" fill="rgba(255,255,255,0.18)" opacity="0.85"/>
+</svg>
+  </div>
+</div>
+
+
+
+<!-- === Public Feed Section === -->
+<main id="publicFeed" class="max-w-3xl mx-auto p-6 space-y-6">
+  <!-- Feed will be populated dynamically from past questions -->
+</main>
+
+
+
+<!-- === My Quiz Modal (Upload) === -->
+<div id="myQuizModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+  <div class="bg-white w-full max-w-lg p-6 rounded-2xl shadow-xl relative">
+    <button id="closeMyQuiz" class="absolute top-3 right-4 text-gray-400 hover:text-red-500 text-xl">×</button>
+
+    <h2 class="text-2xl font-bold text-indigo-600 mb-3">Create Your Quiz</h2>
+    <p class="text-gray-600 mb-6 text-sm">Upload your school note or quiz file — we’ll summarize it and make it interactive.</p>
+
+    <div class="border-2 border-dashed border-indigo-300 rounded-xl p-6 text-center hover:bg-indigo-50 transition">
+      <p class="text-gray-500 mb-4">Drag & drop your file here or click below</p>
+      <input type="file" id="fileInput" class="hidden" accept=".jpg,.png,.pdf,.docx" />
+      <button id="uploadBtn" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">Choose File</button>
+    </div>
+  </div>
+</div>
+
 
 <!-- Load Google Identity Services -->
 
@@ -428,7 +575,31 @@
       </li>
     </ul>
   </div>
+
+<hr class="my-4 border-gray-300">
+
+<h3 class="text-lg font-bold mb-2">My Zone</h3>
+<ul class="space-y-3 mb-6">
+  <li>
+    <button id="myZoneBtn" class="font-semibold text-gray-700 w-full text-left">
+          My Quiz
+    </button>
+  </li>
+</ul>
+
+<h3 class="text-lg font-bold mb-2">   my Story</h3>
+<ul class="space-y-3">
+  <li>
+    <button id="storyBtn" class="font-semibold text-gray-700 w-full text-left">
+       my Story 
+    </button>
+  </li>
+</ul>
+
+
 </div>
+
+
 
 <!-- Floating Open Button -->
 <button id="openMenuBtn"
@@ -523,6 +694,8 @@
                     </button>
                 </div>
             </div>
+
+            
             
             <!-- Step 5: Quiz -->
             <div id="step5" class="step hidden">
@@ -558,6 +731,27 @@
                     </button>
                 </div>
             </div>
+
+
+            <!-- Step 7: Story Feed -->
+  <div id="step7" class="step hidden">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-6">Story Feed</h2>
+
+    <!-- Create Post Box -->
+    <div class="bg-white p-4 rounded-xl shadow mb-6">
+      <textarea id="storyInput" rows="3"
+        class="w-full border border-gray-300 rounded-lg p-2 focus:ring-indigo-500 focus:border-indigo-500"
+        placeholder="Share your quiz idea or post a fun question..."></textarea>
+      <button id="postStoryBtn"
+        class="mt-3 bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition">
+        Post Story
+      </button>
+    </div>
+
+  <!-- Feed List -->
+  <div id="storyFeed" class="space-y-4"></div>
+</div>
+
             
             <!-- Loading state -->
             <div id="loading" class="hidden">
@@ -591,6 +785,25 @@
     userAnswers: [],
     score: 0
   };
+
+  let userCoins = 0; // starting coins
+
+function updateCoinDisplay(amount = 0) {
+  userCoins += amount;
+  if (userCoins < 0) userCoins = 0; // don't go negative
+  const coinNumber = document.getElementById("coinNumber");
+  if (coinNumber) coinNumber.textContent = userCoins;
+
+  // trigger the flash animation
+  const coinSvg = document.getElementById("gqCoin");
+  if (coinSvg) {
+    coinSvg.classList.remove("flash"); // reset
+    void coinSvg.offsetWidth;          // trigger reflow
+    coinSvg.classList.add("flash");    // add animation
+  }
+}
+
+
 
   // ------------------------------
   // MENU PANEL LOGIC
@@ -825,7 +1038,8 @@ async function extractTextFromImage(file) {
             appState.quizData = data.quiz.map(q => ({
                 question: q.question || "Untitled question",
                 options: Array.isArray(q.options) ? q.options.slice(0,4) : ["A","B","C","D"],
-                correct: Number.isInteger(q.correct) ? q.correct : 0
+                correct: letterToIndex(q.correct ?? q.answer) >= 0 ? letterToIndex(q.correct ?? q.answer) : 0,
+
             }));
             displayQuiz();
             hideLoading();
@@ -1102,10 +1316,174 @@ function revealGoQuizApp() {
     overlay.style.display = 'none'; // completely remove after fade
   }, 800); // matches your CSS transition time
 };
+document.getElementById("myZoneBtn").addEventListener("click", () => {
+  showStep(1);
+  menuPanel.classList.add('-translate-x-full'); // close sidebar
+});
 
+
+const storyFeed = document.getElementById("storyFeed");
+const storyInput = document.getElementById("storyInput");
+const postStoryBtn = document.getElementById("postStoryBtn");
+
+document.getElementById("storyBtn").addEventListener("click", () => {
+  showStep(7);
+  menuPanel.classList.add('-translate-x-full');
+});
+
+postStoryBtn.addEventListener("click", () => {
+  const content = storyInput.value.trim();
+  if (!content) return alert("Write something first!");
+  
+  const storyCard = document.createElement("div");
+  storyCard.className = "bg-white p-4 rounded-lg shadow";
+  storyCard.innerHTML = `
+    <p class="text-gray-800 mb-2">${content}</p>
+    <button class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm hover:bg-indigo-200">
+      Answer Quiz
+    </button>
+  `;
+  storyFeed.prepend(storyCard);
+  storyInput.value = "";
+});
+
+
+
+
+// === Menu and Modal Controls ===
+const myQuizModal = document.getElementById("myQuizModal");
+const myQuizBtn = document.getElementById("myQuizBtn"); // from your menu
+const closeMyQuiz = document.getElementById("closeMyQuiz");
+const uploadBtn = document.getElementById("uploadBtn");
+const fileInput = document.getElementById("fileInput");
+
+if (myQuizBtn) {
+  myQuizBtn.addEventListener("click", () => {
+    myQuizModal.classList.remove("hidden");
+  });
+}
+if (closeMyQuiz) {
+  closeMyQuiz.addEventListener("click", () => {
+    myQuizModal.classList.add("hidden");
+  });
+}
+if (uploadBtn) {
+  uploadBtn.addEventListener("click", () => fileInput.click());
+}
+
+// === Load Public Quiz Feed from JAMB past questions ===
+let allQuizzesGlobal = []; // store all quizzes globally
+
+async function loadPublicFeed() {
+    const feed = document.getElementById("publicFeed");
+    feed.innerHTML = ""; // clear old feed
+    allQuizzesGlobal = []; // reset global array
+
+    const authors = ["Ada", "Uche", "Ibrahim", "Chika", "Fatima"];
+    const times = ["3h ago", "5h ago", "1 day ago", "2 days ago", "3 days ago"];
+
+    try {
+        const years = [2020, 2021, 2022, 2023];
+        const subjects = ["english","maths","physics","chemistry","biology","economics","literature","history","geography"];
+
+        for (const year of years) {
+            for (const subject of subjects) {
+                try {
+                    const res = await fetch(`past_questions/jamb_${year}_${subject}.json`);
+                    if (!res.ok) continue;
+                    const data = await res.json();
+                    if (!data.quiz || !Array.isArray(data.quiz)) continue;
+
+                    const normalized = data.quiz.map(q => {
+                        let optionsArr = Array.isArray(q.options) ? q.options.slice(0,4) :
+                                         q.options && typeof q.options === "object" ? ["A","B","C","D"].map(k => q.options[k]).filter(v => v) :
+                                         ["A","B","C","D"];
+                        let correctIndex = typeof q.correct === "string" ? letterToIndex(q.correct) :
+                                           typeof q.answer === "string" ? letterToIndex(q.answer) :
+                                           Number.isInteger(q.correct) ? q.correct :
+                                           Number.isInteger(q.answer) ? q.answer : 0;
+
+                        return {
+                            title: `${subject.charAt(0).toUpperCase() + subject.slice(1)}: ${q.question?.slice(0,50) || "Untitled"}`,
+                            author: authors[Math.floor(Math.random()*authors.length)],
+                            question: q.question || "Untitled question",
+                            options: optionsArr,
+                            correct: correctIndex,
+                            time: times[Math.floor(Math.random()*times.length)]
+                        };
+                    });
+
+                    allQuizzesGlobal.push(...normalized);
+
+                } catch (err) {
+                    console.warn(`Could not load ${year} ${subject}:`, err);
+                }
+            }
+        }
+
+        renderFeedBatch(); // render first 10
+
+    } catch (err) {
+        console.error("Error loading public feed:", err);
+        feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
+    }
+}
+
+// Function to render 10 random quizzes from global array
+function renderFeedBatch() {
+    const feed = document.getElementById("publicFeed");
+    feed.innerHTML = ""; // clear feed
+    if (!allQuizzesGlobal.length) return;
+
+    const feedQuizzes = allQuizzesGlobal.sort(() => 0.5 - Math.random()).slice(0,10);
+
+    feedQuizzes.forEach(quiz => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4";
+        card.innerHTML = `
+            <p class="text-lg font-semibold">${quiz.title}</p>
+            <p class="text-gray-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
+            <p class="text-gray-700 mb-4">${quiz.question}</p>
+            <div class="options flex flex-col gap-2 mb-3"></div>
+        `;
+
+        const optionsDiv = card.querySelector(".options");
+        quiz.options.forEach((opt, i) => {
+            const btn = document.createElement("button");
+            btn.className = "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700";
+            btn.textContent = opt;
+            btn.addEventListener("click", () => {
+              if (i === quiz.correct) {
+                btn.style.backgroundColor = "green";
+                updateCoinDisplay(2); // gain 2 coins
+              } else {
+                btn.style.backgroundColor = "red";
+                updateCoinDisplay(-1); // lose 1 coin
+              }
+
+              // disable all options
+              Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+            });
+
+            updateCoinDisplay();
+            optionsDiv.appendChild(btn);
+        });
+
+        feed.appendChild(card);
+    });
+
+    // Add Load More button
+    const loadMore = document.createElement("button");
+    loadMore.textContent = "Load More";
+    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400";
+    loadMore.addEventListener("click", renderFeedBatch);
+    feed.appendChild(loadMore);
+}
+
+window.addEventListener("DOMContentLoaded", loadPublicFeed);
 
 
 
 </script>
 </body>
-</html>
+</html> 
