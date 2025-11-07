@@ -372,6 +372,11 @@
     color: greenyellow;
   }
 
+  body {
+  padding-top: 80px; /* adjust based on header height */
+}
+
+
 
 
 
@@ -508,7 +513,8 @@
 
   <!-- Menu Content -->
   <div class="p-4">
-    <h3 class="text-lg font-bold mb-2">JAMB</h3>
+    <li>
+    <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">JAMB ▼</button>
     <ul class="space-y-3">
       <!-- 2020 -->
       <li>
@@ -536,7 +542,7 @@
           <li><button onclick="loadPastQuestions(2021, 'biology')" class="subject-btn">Biology</button></li>
           <li><button onclick="loadPastQuestions(2021, 'economics')" class="subject-btn">Economics</button></li>
           <li><button onclick="loadPastQuestions(2021, 'literature')" class="subject-btn">English Literature</button></li>
-         
+        </ul> 
       </li>
 
       <!-- 2022 -->
@@ -569,6 +575,7 @@
         </ul>
       </li>
     </ul>
+    </li>
   </div>
 
 <hr class="my-4 border-gray-300">
@@ -615,21 +622,21 @@
     <div class="shape triangle top-1/3 left-1/3 bounce"></div>
     
     <div class="container mx-auto px-4 py-8">
-        <!-- Header -->
-        <header class="text-center mb-12">
-    <h1 id="goquizTitle" class="text-4xl md:text-5xl font-bold text-indigo-600 mb-4">
-        GoQuiz
-    </h1>
-    <p class="text-xl text-gray-700">
-        1. Snap your Kids Note => 2. Upload => 3. Click Next
-    </p>
-</header>
+        
+        <!-- Floating GoQuiz Header -->
+      <div id="goquizHeader" class="fixed top-0 left-[25%] w-[50%] bg-transparent ">
+  <h1 id="goquizTitle" class="text-2xl md:text-3xl font-bold text-indigo-600">
+    GoQuiz
+  </h1>
+  
+</div>
+
 
         
         <!-- Main content area - will be dynamically updated -->
         <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
             <!-- Step 1: Upload Document -->
-            <div id="step1" class="step">
+            <div id="step1" class="step hidden">
                 <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your School Notes here</h2>
                 <div class="upload-container rounded-xl p-8 text-center cursor-pointer mb-6" id="dropArea">
                     <div class="flex flex-col items-center justify-center">
@@ -833,7 +840,7 @@ function updateCoinDisplay(amount = 0) {
   // MAIN APP LOGIC
   // ------------------------------
   function setupApp() {
-    const dropArea = document.getElementById('dropArea');
+    //const dropArea = document.getElementById('dropArea');
     const fileInput = document.getElementById('fileInput');
     const nextStep2 = document.getElementById('nextStep2');
     const nextStep3 = document.getElementById('nextStep3');
@@ -1300,6 +1307,16 @@ function handleCredentialResponse(response) {
 
    
 }
+
+const myZoneBtn = document.getElementById("myZoneBtn");
+
+myZoneBtn.addEventListener("click", () => {
+  // Show Step 1 with drop area
+  showStep(1);
+  // Close the menu panel
+  menuPanel.classList.add('-translate-x-full');
+});
+
 
 
 
