@@ -390,7 +390,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: 600;
       z-index: 9999;
       opacity: 1;
@@ -1296,7 +1296,7 @@ const titleElement = document.getElementById("goquizTitle");
 // Check localStorage on page load
 const savedFirstName = localStorage.getItem("firstName");
 if (savedFirstName) {
-    titleElement.textContent = `GoQuiz ${savedFirstName}`;}
+    titleElement.textContent = `${savedFirstName},`;}
 
 function handleCredentialResponse(response) {
     if (!response.credential) return;
