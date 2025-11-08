@@ -390,7 +390,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 3rem;
+      font-size: 5rem;
       font-weight: 600;
       z-index: 9999;
       opacity: 1;
@@ -662,7 +662,7 @@
 
         
         <!-- Main content area - will be dynamically updated -->
-        <!--main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in" >
+        <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
             <!-- Step 1: Upload Document -->
             <!--div id="step1" class="step">
                 <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your School Notes here</h2>
@@ -674,7 +674,7 @@
                         <!--label for="fileInput" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium cursor-pointer hover:bg-indigo-700 transition">
                             Select File
                         </label-->
-                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
+                        <!--input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
                     </div>
                 </div>
                 <div class="text-center text-gray-500">
@@ -1296,7 +1296,7 @@ const titleElement = document.getElementById("goquizTitle");
 // Check localStorage on page load
 const savedFirstName = localStorage.getItem("firstName");
 if (savedFirstName) {
-    titleElement.textContent = `${savedFirstName},`;}
+    titleElement.textContent = ` ${savedFirstName},`;}
 
 function handleCredentialResponse(response) {
     if (!response.credential) return;
