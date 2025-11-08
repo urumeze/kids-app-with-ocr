@@ -364,13 +364,74 @@
 
   /* Number next to coin */
   .coin-number {
-    font-weight: bold;
+    font-size: 2rem;
     color: purple;
   }
   .coin-caller {
     font-weight: bold;
     color: greenyellow;
   }
+
+      body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      color: black;
+     
+    }
+
+    /* Fullscreen loader */
+    #loader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #eb6de0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      font-weight: 600;
+      z-index: 9999;
+      opacity: 1;
+      color: white;
+      transition: opacity 1s ease;
+    }
+
+    #loader.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Progress bar container */
+    .progress-container {
+      margin-top: 20px;
+      width: 60%;
+      height: 6px;
+      background:rgb(235, 70, 185); /* light gray track */
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    /* Animated moving bar */
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+      animation: loadBar 3s linear forwards;
+    }
+
+    @keyframes loadBar {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+
+    /* Main app (hidden initially) */
+    #app {
+      display: none;
+      padding: 40px;
+      text-align: center;
+    }
 
 
 
@@ -380,29 +441,16 @@
 </head>
 <body class="design">
   
-<!-- Dwarf Scroll Intro Overlay -->
-<div id="dwarfOverlay" class="video-overlay">
-  <div class="video-container">
-    <video autoplay muted playsinline preload="auto">
-      <source src="intro_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-
-    <!-- Transparent clickable zones -->
-    <button class="btn jamb" style="position: absolute; top: 25%; left: 51%; transform: translate(-50%, -50%);
-            background: none; border: none; cursor: pointer; padding: 40px 60px; border-radius: 8px;"
-             ></button>
-
-    <button class="btn ielts" style="position: absolute; top: 45%; left: 52%; transform: translate(-50%, -50%);
-            background: none; border: none; cursor: pointer; padding: 40px 60px; border-radius: 8px;"
-            ></button>
-
-    <button class="btn cibn" style="position: absolute; top: 75%; left: 52%; transform: translate(-50%, -50%);
-            background: none; border: none; cursor: pointer; padding: 50px 60px; border-radius: 8px;"
-            ></button>
+  <!-- Loader -->
+  <div id="loader">
+    GoQuiz.app
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
   </div>
-</div>
+
+  
+
 
 <!-- Fixed coin wrapper -->
 <div id="floatingCoin" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
@@ -604,7 +652,7 @@
     <div class="container mx-auto px-4 py-8">
        
         <!-- Floating GoQuiz Header -->
-<div id="goquizHeader" class="fixed top-0 left-1/2 w-1/2 -translate-x-1/2 bg-white border-10px">
+<div id="goquizHeader" class="fixed top-0 left-1/2 w-1/2 -translate-x-1/2 bg-transparent border-10px">
   <h1 id="goquizTitle" class="text-2xl md:text-3xl font-bold text-indigo-600 ">
     GoQuiz
   </h1>
@@ -614,9 +662,9 @@
 
         
         <!-- Main content area - will be dynamically updated -->
-        <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
+        <!--main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in" >
             <!-- Step 1: Upload Document -->
-            <div id="step1" class="step">
+            <!--div id="step1" class="step">
                 <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your School Notes here</h2>
                 <div class="upload-container rounded-xl p-8 text-center cursor-pointer mb-6" id="dropArea">
                     <div class="flex flex-col items-center justify-center">
@@ -794,7 +842,7 @@ function updateCoinDisplay(amount = 0) {
   const openMenuBtn = document.getElementById('openMenuBtn');
   const closeMenuBtn = document.getElementById('closeMenuBtn');
 
-  openMenuBtn.addEventListener('click', () => menuPanel.classList.remove('-translate-x-full'));
+  openMenuBtn.addEventListener('click', () => menuPanel.classList.remove('-translate-x-full'))
   closeMenuBtn.addEventListener('click', () => menuPanel.classList.add('-translate-x-full'));
 
   document.querySelectorAll('.year-btn').forEach(btn => {
@@ -1240,28 +1288,7 @@ document.querySelectorAll('.subject-btn').forEach(btn => {
   btn.addEventListener('click', () => loadPastQuestions(year, subject));
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const overlay = document.getElementById("dwarfOverlay");
-  const buttons = overlay.querySelectorAll(".btn");
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      // Fade out overlay
-      overlay.classList.add("hidden");
-
-      // After fade completes, hide it and open menu
-      setTimeout(() => {
-        overlay.style.display = "none";
-
-        // Open sidebar menu (menuPanel)
-        const menuPanel = document.getElementById("menuPanel");
-        if (menuPanel) {
-          menuPanel.classList.add("-translate-x-full");
-        }
-      }, 10);
-    });
-  });
-});
 
 
 const titleElement = document.getElementById("goquizTitle");
@@ -1286,20 +1313,6 @@ function handleCredentialResponse(response) {
    
 };
 
-
-
-
-function revealGoQuizApp() {
-  const overlay = document.getElementById('dwarfOverlay');
-  overlay.classList.add('hidden'); // fades it out
-  setTimeout(() => {
-    overlay.style.display = 'none'; // completely remove after fade
-  }, 800); // matches your CSS transition time
-};
-/*document.getElementById("myZoneBtn").addEventListener("click", () => {
-  showStep(1);
-  menuPanel.classList.add('-translate-x-full'); // close sidebar
-});*/
 
 
 const storyFeed = document.getElementById("storyFeed");
@@ -1421,9 +1434,9 @@ function renderFeedBatch() {
         const card = document.createElement("div");
         card.className = "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4";
         card.innerHTML = `
-            <p class="text-lg font-semibold">${quiz.title}</p>
-            <p class="text-gray-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
-            <p class="text-gray-700 mb-4">${quiz.question}</p>
+            <p class="text-black font-semibold">${quiz.title}</p>
+            <p class="text-pink-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
+            <p class="text-purple-700 mb-4">${quiz.question}</p>
             <div class="options flex flex-col gap-2 mb-3"></div>
         `;
 
@@ -1455,12 +1468,28 @@ function renderFeedBatch() {
     // Add Load More button
     const loadMore = document.createElement("button");
     loadMore.textContent = "Load More";
-    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400";
+    loadMore.className = "bg-gray-300 text-black-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400";
     loadMore.addEventListener("click", renderFeedBatch);
     feed.appendChild(loadMore);
 }
 
 window.addEventListener("DOMContentLoaded", loadPublicFeed);
+
+window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      const app = document.getElementById("app");
+
+      // Wait for 3 seconds while bar animates
+      setTimeout(() => {
+        loader.classList.add("hidden");
+
+        // Wait for fade-out before showing app
+        setTimeout(() => {
+          loader.style.display = "none";
+          app.style.display = "block";
+        }, 1000); // matches fade duration
+      }, 3000);
+    });
 
 
 
