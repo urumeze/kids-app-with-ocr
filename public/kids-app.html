@@ -477,7 +477,7 @@
          data-nonce=""
          data-auto_select="true"
          data-itp_support="true">
-    </div>
+</div>
 
 
 
@@ -1256,9 +1256,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Open sidebar menu (menuPanel)
         const menuPanel = document.getElementById("menuPanel");
         if (menuPanel) {
-          menuPanel.classList.remove("-translate-x-full");
+          menuPanel.classList.add("-translate-x-full");
         }
-      }, 800);
+      }, 10);
     });
   });
 });
@@ -1269,9 +1269,7 @@ const titleElement = document.getElementById("goquizTitle");
 // Check localStorage on page load
 const savedFirstName = localStorage.getItem("firstName");
 if (savedFirstName) {
-    titleElement.textContent = `GoQuiz ${savedFirstName}`;
-   
-}
+    titleElement.textContent = `GoQuiz ${savedFirstName}`;}
 
 function handleCredentialResponse(response) {
     if (!response.credential) return;
@@ -1286,7 +1284,7 @@ function handleCredentialResponse(response) {
     localStorage.setItem("firstName", firstName);
 
    
-}
+};
 
 
 
