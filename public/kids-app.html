@@ -47,26 +47,15 @@
     .app p{color:var(--muted);margin:0 0 24px}
     .card{width:100%;max-width:980px;background:var(--glass);backdrop-filter: blur(6px);border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(16,24,40,0.08);text-align:center}
 
-    /* overlay */
-    .overlay{
-      position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(5,10,25,0.75), rgba(6,12,28,0.6));z-index:9999;transition:opacity .45s ease,visibility .45s ease;}
-    .overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}
-
-    .login-box{
-      width:min(420px,92%);background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,255,0.95));border-radius:12px;padding:28px;box-shadow:0 12px 40px rgba(3,10,30,0.28);text-align:center;position:relative;overflow:hidden
-    }
-    .logo{height:56px;width:80px;border-radius:12px;background:plum;display:inline-grid;place-items:center;color:white;font-weight:800;font-size:20px;margin-bottom:14px}
-    .title{font-weight:700;font-size:18px;color:#07102a;margin-bottom:6px}
+   
+   
     .subtitle{color:var(--muted);font-size:13px;margin-bottom:18px}
 
     .actions{display:flex;gap:12px;flex-direction:column}
     .btn{
       appearance:none;border:0;padding:12px 14px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px;transition:transform .15s ease,box-shadow .15s ease;display:flex;align-items:center;justify-content:center;gap:10px
     }
-    .btn:active{transform:translateY(1px)}
-
-    .btn-guest{background:#fff;border:1px solid #eef2ff;color:#0f172a;box-shadow:0 6px 18px rgba(12,24,60,0.06)}
-    .btn-google{display:flex; size: 20px; ;background:blue;color:#fff}
+   
 
     .small{font-size:12px;color:var(--muted);margin-top:12px}
 
@@ -85,9 +74,7 @@
       100%{transform:scale(40);opacity:1;filter:blur(6px)}
     }
 
-    /* overlay-content hiding while animating */
-    .overlay.fade-to-app .login-box{opacity:0;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease}
-
+   
     /* final page easing */
     .app.revealed{opacity:1;transform:none}
 
@@ -235,64 +222,7 @@
             background-color: #f87171 !important;
         }
 
-        /* === Dwarf Scroll Overlay === */
-.video-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  transition: opacity 0.8s ease;
-}
-
-.video-overlay.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Overlay buttons */
-.video-container .btn {
-  position: absolute;
-  background: none;
-  border: none;
-  border-radius: 8px;
-  padding: 30px 60px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.video-container .btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.btn.jamb { top: 20%; left: 46%; }
-.btn.ielts { top: 45%; left: 47%; }
-.btn.cibn { top: 70%; left: 47%; }
-
-.highlight {
-  animation: flash 1.5s ease;
-}
-
-@keyframes flash {
-  0% { background-color: rgba(255, 255, 0, 0.6); }
-  100% { background-color: transparent; }
-}
-
+        
 #google-sign-in-container {
   position: fixed; /* or absolute */
   bottom: 20px; /* Adjust as needed for desired position */
@@ -364,7 +294,7 @@
 
   /* Number next to coin */
   .coin-number {
-    font-size: 2rem;
+    font-weight: bold;
     color: purple;
   }
   .coin-caller {
@@ -372,84 +302,91 @@
     color: greenyellow;
   }
 
-      body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9fafb;
-      color: black;
-     
-    }
 
-    /* Fullscreen loader */
-    #loader {
+#splash {
       position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: #eb6de0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #800080;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 3rem;
-      font-weight: 600;
       z-index: 9999;
-      opacity: 1;
+      animation: fadeOut 3.5s forwards; /* fade out after loader fills */
+    }
+
+    #splash h1 {
       color: white;
-      transition: opacity 1s ease;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      font-family: sans-serif;
     }
 
-    #loader.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    /* Progress bar container */
-    .progress-container {
-      margin-top: 20px;
-      width: 60%;
-      height: 6px;
-      background:rgb(235, 70, 185); /* light gray track */
-      border-radius: 3px;
+    /* Loader bar container */
+    .loader-bar {
+      width: 300px;
+      height: 8px;
+      background-color: #a64ca6;
+      border-radius: 4px;
       overflow: hidden;
     }
 
-    /* Animated moving bar */
-    .progress-bar {
+    /* Loader bar fill animation */
+    .loader-fill {
       height: 100%;
       width: 0%;
-      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
-      animation: loadBar 3s linear forwards;
+      background-color: #1e90ff;
+      border-radius: 4px;
+      animation: fillBar 3s forwards; /* 3s fill */
     }
 
-    @keyframes loadBar {
+    @keyframes fillBar {
       from { width: 0%; }
       to { width: 100%; }
     }
 
-    /* Main app (hidden initially) */
-    #app {
-      display: none;
-      padding: 40px;
-      text-align: center;
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      85% { opacity: 1; } /* keep visible until almost done */
+      100% { opacity: 0; display: none; }
     }
 
+    /* Hide main content initially */
+    #main-content {
+      display: none;
+    }
 
-
-
+    /* Show main content after splash */
+    #splash.fade-complete + #main-content {
+      display: block;
+    }
 
     </style>
 </head>
 <body class="design">
   
-  <!-- Loader -->
-  <div id="loader">
-    GoQuiz.app
-    <div class="progress-container">
-      <div class="progress-bar"></div>
+<!-- Splash Screen -->
+<div id="splash">
+    <h1>GoQuiz.app</h1>
+    <div class="loader-bar">
+      <div class="loader-fill" id="loader"></div>
     </div>
-  </div>
+</div>
 
-  
+<div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+  <header class="text-center mb-12">
+    <h1 id="goquizTitle" class="fixed top-4 left-1/2 transform -translate-x-1/2 text-4xl font-bold text-white mb-4 bg-indigo-600 ;">
+  GoQuiz
+    </h1>
+
+    
+  </header>
+</div>  
+
 
 
 <!-- Fixed coin wrapper -->
@@ -505,10 +442,6 @@
 
 
 
-<!-- === Public Feed Section === -->
-<main id="publicFeed" class="max-w-3xl mx-auto p-6 space-y-6">
-  <!-- Feed will be populated dynamically from past questions -->
-</main>
 
 
 
@@ -533,15 +466,13 @@
 
 <!-- 📚 MENU PANEL -->
 <div id="menuPanel"
-     class="fixed left-0 top-0 h-full w-25 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+     class="fixed left-0 top-0 h-full w-32 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
   <div class="p-4 border-b flex justify-between items-center">
-    <h2 class="text-xl font-semibold text-gray-800">Past Exams</h2>
     <button id="closeMenuBtn" class="text-gray-600 hover:text-black">&times;</button>
   </div>
 
   <!-- Menu Content -->
   <div class="p-4">
-    <li>
     <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">JAMB ▼</button>
     <ul class="space-y-3">
       <!-- 2020 -->
@@ -570,7 +501,7 @@
           <li><button onclick="loadPastQuestions(2021, 'biology')" class="subject-btn">Biology</button></li>
           <li><button onclick="loadPastQuestions(2021, 'economics')" class="subject-btn">Economics</button></li>
           <li><button onclick="loadPastQuestions(2021, 'literature')" class="subject-btn">English Literature</button></li>
-        </ul> 
+         </ul>
       </li>
 
       <!-- 2022 -->
@@ -603,28 +534,27 @@
         </ul>
       </li>
     </ul>
-    </li>
   </div>
 
-<hr class="my-4 border-gray-300">
+  <hr class="my-4 border-gray-300">
 
-<h3 class="text-lg font-bold mb-2">My Zone</h3>
-<ul class="space-y-3 mb-6">
-  <li>
-    <button id="myZoneBtn" class="font-semibold text-gray-700 w-full text-left">
-          My Quiz
-    </button>
-  </li>
-</ul>
+  <h3 class="text-lg font-bold mb-2">My Zone</h3>
+  <ul class="space-y-3 mb-6">
+    <li>
+      <button id="myZoneBtn" class="font-semibold text-gray-700 w-full text-left">
+            My Quiz
+      </button>
+    </li>
+  </ul>
 
-<h3 class="text-lg font-bold mb-2">   my Story</h3>
-<ul class="space-y-3">
-  <li>
-    <button id="storyBtn" class="font-semibold text-gray-700 w-full text-left">
-       my Story 
-    </button>
-  </li>
-</ul>
+  <h3 class="text-lg font-bold mb-2">   my Story</h3>
+  <ul class="space-y-3">
+    <li>
+      <button id="storyBtn" class="font-semibold text-gray-700 w-full text-left">
+        my Story 
+      </button>
+    </li>
+  </ul>
 
 
 </div>
@@ -633,7 +563,7 @@
 
 <!-- Floating Open Button -->
 <button id="openMenuBtn"
-        class="fixed top-4 left-4 bg-blue-600 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50">
+        class="fixed top-4 left-4 bg-blue-600 wd-24 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50">
   Menu
 </button>
 
@@ -649,154 +579,94 @@
     <div class="shape circle w-40 h-40 bottom-10 right-10 rotate"></div>
     <div class="shape triangle top-1/3 left-1/3 bounce"></div>
     
-    <div class="container mx-auto px-4 py-8">
-       
-        <!-- Floating GoQuiz Header -->
-<div id="goquizHeader" class="fixed top-0 left-1/2 w-1/2 -translate-x-1/2 bg-transparent border-10px">
-  <h1 id="goquizTitle" class="text-2xl md:text-3xl font-bold text-indigo-600 ">
-    GoQuiz
-  </h1>
-  
-</div>
-
-
+   
         
-        <!-- Main content area - will be dynamically updated -->
-        <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8" data-aos="zoom-in">
-            <!-- Step 1: Upload Document -->
-            <div id="step1" class="step">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your School Notes here</h2>
-                <div class="upload-container rounded-xl p-8 text-center cursor-pointer mb-6" id="dropArea">
-                    <div class="flex flex-col items-center justify-center">
-                        <i data-feather="upload" class="w-16 h-16 text-indigo-500 mb-4"></i>
-                        <p class="text-lg font-medium text-gray-700 mb-2">Drag & drop your file here</p>
-                        <p class="text-gray-500 mb-4">or Tap </p>
-                        <!--label for="fileInput" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium cursor-pointer hover:bg-indigo-700 transition">
-                            Select File
-                        </label-->
-                        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
-                    </div>
-                </div>
-                <div class="text-center text-gray-500">
-                    <p>Supported formats: PDF, Word, JPG, PNG</p>
-                </div>
-            </div>
-            
-            <!-- Step 2: Extracted Text -->
-            <div id="step2" class="step hidden">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 2: Here's What We Found</h2>
-                <div class="bg-gray-100 p-6 rounded-xl mb-6">
-                    <div id="extractedText" class="text-gray-700 whitespace-pre-line"></div>
-                </div>
-                <div class="flex justify-center">
-                    <button id="nextStep2" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
-                        Next: Make It Simple <i data-feather="arrow-right" class="ml-2"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Step 3: Simplified Summary -->
-            <div id="step3" class="step hidden">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 3: Simple Version for You</h2>
-                <div class="summary-box p-6 mb-6">
-                    <div id="simplifiedText" class="text-gray-700 text-lg"></div>
-                </div>
-                <div class="flex justify-center">
-                    <button id="nextStep3" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
-                        Next: Make a Quiz <i data-feather="arrow-right" class="ml-2"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Step 4: Quiz Options -->
-            <div id="step4" class="step hidden">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 4: Quiz Time!</h2>
-                <p class="text-gray-700 mb-8 text-center">How many questions would you like in your quiz?</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="5">5</button>
-                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="10">10</button>
-                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="15">15</button>
-                    <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl hover:bg-indigo-200" data-questions="20">20</button>
-                </div>
-                <div class="flex justify-center">
-                    <button id="nextStep4" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
-                        Create My Quiz <i data-feather="arrow-right" class="ml-2"></i>
-                    </button>
-                </div>
-            </div>
-
-            
-            
-            <!-- Step 5: Quiz -->
-            <div id="step5" class="step hidden">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 5: Let's Test Your Knowledge!</h2>
-                <div id="quizContainer" class="mb-8">
-                    <!-- Questions will be inserted here -->
-                </div>
-                <div class="flex justify-center">
-                    <button id="submitQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
-                        Submit Quiz <i data-feather="check" class="ml-2"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Step 6: Results -->
-            <div id="step6" class="step hidden">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 6: Your Results</h2>
-                <div class="text-center mb-8">
-                    <div class="inline-block bg-indigo-100 text-indigo-800 text-4xl font-bold rounded-full w-32 h-32 flex items-center justify-center mb-4">
-                        <span id="score">0</span>%
-                    </div>
-                    <p class="text-xl font-medium text-gray-700" id="resultMessage"></p>
-                </div>
-                <div id="wrongAnswers" class="mb-8">
-                    <!-- Wrong answers will be inserted here -->
-                </div>
-                <div class="flex justify-center space-x-4">
-                    <button id="restartQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
-                        Try Again <i data-feather="refresh-cw" class="ml-2"></i>
-                    </button>
-                    <button id="newDocument" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-medium hover:bg-gray-300 transition">
-                        New Document <i data-feather="upload" class="ml-2"></i>
-                    </button>
-                </div>
-            </div>
 
 
-            <!-- Step 7: Story Feed -->
-  <div id="step7" class="step hidden">
-    <h2 class="text-2xl font-bold text-indigo-600 mb-6">Story Feed</h2>
+<!-- === Main App Wrapper === -->
+<div id="main-content" class="hidden">
+   
+<!-- === Public Feed Section === -->
+  <main id="publicFeed" class="max-w-3xl mx-auto p-6 space-y-6" >
+    <!-- Feed will be populated dynamically from past questions -->
+  </main>  
 
-    <!-- Create Post Box -->
-    <div class="bg-white p-4 rounded-xl shadow mb-6">
-      <textarea id="storyInput" rows="3"
-        class="w-full border border-gray-300 rounded-lg p-2 focus:ring-indigo-500 focus:border-indigo-500"
-        placeholder="Share your quiz idea or post a fun question..."></textarea>
-      <button id="postStoryBtn"
-        class="mt-3 bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition">
-        Post Story
-      </button>
+  <!-- === Step-Based Quiz Flow === -->
+  <main id="app" class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 hidden">
+
+    <!-- Step 1: Upload -->
+    <div id="step1" class="step">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 1: Upload Your School Notes</h2>
+      <div id="dropArea" class="upload-container rounded-xl p-8 text-center cursor-pointer mb-6">
+        <p class="text-gray-500 mb-4">Drag & drop your file or click to upload</p>
+        <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple>
+        <button id="uploadBtn" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">Choose File</button>
+      </div>
     </div>
 
-  <!-- Feed List -->
-  <div id="storyFeed" class="space-y-4"></div>
+    <!-- Step 2: Extracted Text -->
+    <div id="step2" class="step hidden">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 2: Here's What We Found</h2>
+      <div id="extractedText" class="bg-gray-100 p-6 rounded-xl mb-6 text-gray-700 whitespace-pre-line"></div>
+      <button id="nextStep2" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Next: Simplify</button>
+    </div>
+
+    <!-- Step 3: Simplified Summary -->
+    <div id="step3" class="step hidden">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 3: Simple Version</h2>
+      <div id="simplifiedText" class="summary-box p-6 text-gray-700 mb-6"></div>
+      <button id="nextStep3" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Next: Make a Quiz</button>
+    </div>
+
+    <!-- Step 4: Quiz Options -->
+    <div id="step4" class="step hidden">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 4: Quiz Time!</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl" data-questions="5">5</button>
+        <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl" data-questions="10">10</button>
+        <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl" data-questions="15">15</button>
+        <button class="quiz-option bg-indigo-100 text-indigo-700 py-4 rounded-xl font-bold text-xl" data-questions="20">20</button>
+      </div>
+      <button id="nextStep4" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Create My Quiz</button>
+    </div>
+
+    <!-- Step 5: Quiz -->
+    <div id="step5" class="step hidden">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 5: Let's Test Your Knowledge!</h2>
+      <div id="quizContainer" class="mb-8"></div>
+      <button id="submitQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Submit Quiz</button>
+      <button id="closeQuiz" class="ml-2 bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400">Close</button>
+
+    </div>
+
+    <!-- Step 6: Results -->
+    <div id="step6" class="step hidden">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 6: Your Results</h2>
+      <div class="text-center mb-8">
+        <div id="score" class="inline-block bg-indigo-100 text-indigo-800 text-4xl font-bold rounded-full w-32 h-32 flex items-center justify-center">0%</div>
+        <p id="resultMessage" class="text-xl text-gray-700 mt-2"></p>
+      </div>
+      <div id="wrongAnswers" class="mb-8"></div>
+      <button id="restartQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Try Again</button>
+      <button id="newDocument" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full">New Document</button>
+    </div>
+
+    <!-- Step 7: Story Feed -->
+    <div id="step7" class="step hidden">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-6">Story Feed</h2>
+      <textarea id="storyInput" rows="3" class="w-full border border-gray-300 rounded-lg p-2 mb-3" placeholder="Share your quiz idea..."></textarea>
+      <button id="postStoryBtn" class="bg-indigo-600 text-white px-4 py-2 rounded-full mb-6">Post Story</button>
+      <div id="storyFeed" class="space-y-4"></div>
+    </div>
+
+  </main>
 </div>
 
-            
-            <!-- Loading state -->
-            <div id="loading" class="hidden">
-                <div class="text-center py-12">
-                    <div class="inline-block mb-4">
-                        <i data-feather="loader" class="w-12 h-12 text-indigo-500 animate-spin"></i>
-                    </div>
-                    <p class="text-xl text-gray-700" id="loadingMessage">Processing your document...</p>
-                    <div class="progress-bar w-full max-w-md mx-auto mt-4">
-                        <div id="progressFill" class="progress-fill w-0"></div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
+
+
+
+
+<!-- === Script: Step Navigation + Menu Toggle === -->
     
 <script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
 
@@ -842,7 +712,7 @@ function updateCoinDisplay(amount = 0) {
   const openMenuBtn = document.getElementById('openMenuBtn');
   const closeMenuBtn = document.getElementById('closeMenuBtn');
 
-  openMenuBtn.addEventListener('click', () => menuPanel.classList.remove('-translate-x-full'))
+  openMenuBtn.addEventListener('click', () => menuPanel.classList.remove('-translate-x-full'));
   closeMenuBtn.addEventListener('click', () => menuPanel.classList.add('-translate-x-full'));
 
   document.querySelectorAll('.year-btn').forEach(btn => {
@@ -877,6 +747,8 @@ function updateCoinDisplay(amount = 0) {
     const restartQuiz = document.getElementById('restartQuiz');
     const newDocument = document.getElementById('newDocument');
     const quizOptions = document.querySelectorAll('.quiz-option');
+    const closeQuiz = document.getElementById('closeQuiz');
+
 
     // Event listeners
     dropArea.addEventListener('click', () => fileInput.click());
@@ -896,6 +768,12 @@ function updateCoinDisplay(amount = 0) {
     submitQuiz.addEventListener('click', calculateScore);
     restartQuiz.addEventListener('click', restartQuizFunc);
     newDocument.addEventListener('click', () => showStep(1));
+
+    closeQuiz.addEventListener('click', () => {
+  document.getElementById('app').classList.add('hidden');
+  document.getElementById('publicFeed').classList.remove('hidden');
+});
+
 
     quizOptions.forEach(option => {
       option.addEventListener('click', function(){
@@ -1296,7 +1174,9 @@ const titleElement = document.getElementById("goquizTitle");
 // Check localStorage on page load
 const savedFirstName = localStorage.getItem("firstName");
 if (savedFirstName) {
-    titleElement.textContent = `GoQuiz ${savedFirstName}`;}
+    titleElement.textContent = `GoQuiz ${savedFirstName}`;
+   
+}
 
 function handleCredentialResponse(response) {
     if (!response.credential) return;
@@ -1311,8 +1191,14 @@ function handleCredentialResponse(response) {
     localStorage.setItem("firstName", firstName);
 
    
+}
+// Menu toggling
+document.getElementById('openMenuBtn').onclick = () => {
+  document.getElementById('menuPanel').classList.remove('-translate-x-full');
 };
-
+document.getElementById('closeMenuBtn').onclick = () => {
+  document.getElementById('menuPanel').classList.add('-translate-x-full');
+};
 
 
 const storyFeed = document.getElementById("storyFeed");
@@ -1324,45 +1210,11 @@ document.getElementById("storyBtn").addEventListener("click", () => {
   menuPanel.classList.add('-translate-x-full');
 });
 
-postStoryBtn.addEventListener("click", () => {
-  const content = storyInput.value.trim();
-  if (!content) return alert("Write something first!");
-  
-  const storyCard = document.createElement("div");
-  storyCard.className = "bg-white p-4 rounded-lg shadow";
-  storyCard.innerHTML = `
-    <p class="text-gray-800 mb-2">${content}</p>
-    <button class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm hover:bg-indigo-200">
-      Answer Quiz
-    </button>
-  `;
-  storyFeed.prepend(storyCard);
-  storyInput.value = "";
-});
 
 
 
 
-// === Menu and Modal Controls ===
-const myQuizModal = document.getElementById("myQuizModal");
-const myQuizBtn = document.getElementById("myQuizBtn"); // from your menu
-const closeMyQuiz = document.getElementById("closeMyQuiz");
-const uploadBtn = document.getElementById("uploadBtn");
-const fileInput = document.getElementById("fileInput");
 
-if (myQuizBtn) {
-  myQuizBtn.addEventListener("click", () => {
-    myQuizModal.classList.remove("hidden");
-  });
-}
-if (closeMyQuiz) {
-  closeMyQuiz.addEventListener("click", () => {
-    myQuizModal.classList.add("hidden");
-  });
-}
-if (uploadBtn) {
-  uploadBtn.addEventListener("click", () => fileInput.click());
-}
 
 // === Load Public Quiz Feed from JAMB past questions ===
 let allQuizzesGlobal = []; // store all quizzes globally
@@ -1377,7 +1229,7 @@ async function loadPublicFeed() {
 
     try {
         const years = [2020, 2021, 2022, 2023];
-        const subjects = ["english","maths","physics","chemistry","biology","Economics","literature",];
+        const subjects = ["english","maths","physics","chemistry","biology","economics","literature",];
 
         for (const year of years) {
             for (const subject of subjects) {
@@ -1434,9 +1286,9 @@ function renderFeedBatch() {
         const card = document.createElement("div");
         card.className = "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4";
         card.innerHTML = `
-            <p class="text-black font-semibold">${quiz.title}</p>
-            <p class="text-pink-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
-            <p class="text-purple-700 mb-4">${quiz.question}</p>
+            <p class="text-lg font-semibold">${quiz.title}</p>
+            <p class="text-gray-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
+            <p class="text-gray-700 mb-4">${quiz.question}</p>
             <div class="options flex flex-col gap-2 mb-3"></div>
         `;
 
@@ -1468,28 +1320,38 @@ function renderFeedBatch() {
     // Add Load More button
     const loadMore = document.createElement("button");
     loadMore.textContent = "Load More";
-    loadMore.className = "bg-gray-300 text-black-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400";
+    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400";
     loadMore.addEventListener("click", renderFeedBatch);
     feed.appendChild(loadMore);
+  // Show feed, hide quiz app
+    document.getElementById('publicFeed').classList.remove('hidden');
+    document.getElementById('app').classList.add('hidden');
+ 
+
 }
 
 window.addEventListener("DOMContentLoaded", loadPublicFeed);
 
-window.addEventListener("load", () => {
-      const loader = document.getElementById("loader");
-      const app = document.getElementById("app");
+// After 3.5s, hide splash and show main content
+    setTimeout(() => {
+      const splash = document.getElementById('splash');
+      const main = document.getElementById('main-content');
+      splash.style.display = 'none';
+      main.style.display = 'block';
+    }, 2000); // match animation timing
 
-      // Wait for 3 seconds while bar animates
-      setTimeout(() => {
-        loader.classList.add("hidden");
 
-        // Wait for fade-out before showing app
-        setTimeout(() => {
-          loader.style.display = "none";
-          app.style.display = "block";
-        }, 10); // matches fade duration
-      }, 3000);
-    });
+  const steps = document.querySelectorAll('.step');
+function showStep(n) {
+  steps.forEach(s => s.classList.add('hidden'));
+  document.getElementById('app').classList.remove('hidden');
+  document.getElementById('publicFeed').classList.add('hidden'); // hide feed
+  steps[n - 1].classList.remove('hidden');
+}
+
+
+
+
 
 
 
