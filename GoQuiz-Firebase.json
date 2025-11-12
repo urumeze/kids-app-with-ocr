@@ -1,9 +1,0 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
-    authDomain: "kids-note-app.firebaseapp.com",
-    projectId: "kids-note-app",
-    storageBucket: "kids-note-app.firebasestorage.app",
-    messagingSenderId: "845525258490",
-    appId: "1:845525258490:web:16ab8dad0a98469456b943",
-    measurementId: "G-KHBK5Z52TL"
-  };
