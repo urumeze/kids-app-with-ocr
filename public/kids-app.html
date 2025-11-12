@@ -364,6 +364,82 @@
       display: block;
     }
 
+    
+    .music-menu-container {
+  position: fixed;
+  bottom: 1.5rem; /* bottom-6 */
+  right: 1.5rem;  /* right-6 */
+  width: 60px;
+  height: 60px;
+  z-index: 50;
+}
+
+.menu-toggle-button {
+  background-color: #7e22ce; /* purple-700 */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(126, 34, 206, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-toggle-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(126, 34, 206, 0.6);
+}
+
+/* Circular menu background */
+.circular-menu {
+  position: absolute;
+  bottom: 60px; /* opens upward */
+  right: 60px;  /* opens leftward */
+  transform: scale(0);
+  background-color: rgba(126, 34, 206, 0.9);
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 8px 16px rgba(126, 34, 206, 0.3);
+}
+
+.circular-menu.open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Buttons inside the circle */
+.menu-button {
+  background-color: #a855f7; /* purple-500 */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.menu-button:hover {
+  background-color: #9333ea; /* darker purple on hover */
+  transform: scale(1.1);
+}
+
+
+
     </style>
 </head>
 <body class="design">
@@ -387,13 +463,19 @@
   </header>
 </div>  
  
-<div class="music-bar fixed bottom-0 left-0 right-0 bg-white border-t shadow flex items-center justify-center gap-3 p-2 z-40">
-  <button id="prevTrack" class="px-2 py-1 bg-gray-200 rounded">⏮️</button>
-  <button id="playMusic" class="px-3 py-1 bg-indigo-600 text-white rounded">Play</button>
-  <button id="pauseMusic" class="px-2 py-1 bg-gray-200 rounded">⏸️</button>
-  <button id="nextTrack" class="px-2 py-1 bg-gray-200 rounded">⏭️</button>
-  <span id="trackName" class="ml-2 font-medium"></span>
+<div class="music-menu-container fixed bottom-6 right-6 z-50">
+  <button id="menu-toggle" class="menu-toggle-button">🎵</button>
+  <div id="circular-menu" class="circular-menu">
+    <button id="next-button" class="menu-button">⏭</button>
+    <button id="pause-button" class="menu-button">⏸</button>
+    <button id="prev-button" class="menu-button">⏮</button>
+    <button id="play-button" class="menu-button">▶</button>
+    
+  </div>
 </div>
+
+<audio id="audio-player"></audio>
+
 
 
 
@@ -1367,15 +1449,17 @@ function showStep(n) {
 
   
 };
-// 🎶 Music Player Script
-const music = new Audio();
-const playBtn = document.getElementById("playMusic");
-const pauseBtn = document.getElementById("pauseMusic");
-const prevBtn = document.getElementById("prevTrack");
-const nextBtn = document.getElementById("nextTrack");
-const trackName = document.getElementById("trackName");
+// 🎶 Circular Music Menu Script
+const menuToggle = document.getElementById("menu-toggle");
+const circularMenu = document.getElementById("circular-menu");
+const audioPlayer = document.getElementById("audio-player");
 
-// Your music library
+const playButton = document.getElementById("play-button");
+const pauseButton = document.getElementById("pause-button");
+const nextButton = document.getElementById("next-button");
+const prevButton = document.getElementById("prev-button");
+
+// Playlist
 const tracks = [
   { name: "Relaxing Melody", src: "music/track1.mp3" },
   { name: "Focus Beat", src: "music/track2.mp3" },
@@ -1385,40 +1469,51 @@ const tracks = [
 
 let currentTrackIndex = Math.floor(Math.random() * tracks.length);
 
-// Load a track
+// Toggle open/close
+menuToggle.addEventListener("click", () => {
+  circularMenu.classList.toggle("open");
+});
+
+// Load and play a track
 function loadTrack(index) {
   if (index < 0) index = tracks.length - 1;
   if (index >= tracks.length) index = 0;
   currentTrackIndex = index;
+
   const track = tracks[index];
-  music.src = track.src;
-  trackName.textContent = track.name;
-  music.play().catch(err => console.log("Autoplay blocked:", err));
+  audioPlayer.src = track.src;
+  audioPlayer.play().catch(err => console.log("⚠️ Autoplay blocked:", err));
 }
 
-// Start with a random track
-loadTrack(currentTrackIndex);
+// Controls
+playButton.addEventListener("click", () => {
+  if (!audioPlayer.src) loadTrack(currentTrackIndex);
+  else audioPlayer.play();
+});
 
-// Play/Pause controls
-playBtn.addEventListener("click", () => music.play());
-pauseBtn.addEventListener("click", () => music.pause());
+pauseButton.addEventListener("click", () => audioPlayer.pause());
 
-// Next/Prev controls
-nextBtn.addEventListener("click", () => {
+nextButton.addEventListener("click", () => {
   const nextIndex = Math.floor(Math.random() * tracks.length);
   loadTrack(nextIndex);
 });
 
-prevBtn.addEventListener("click", () => {
+prevButton.addEventListener("click", () => {
   const prevIndex = Math.floor(Math.random() * tracks.length);
   loadTrack(prevIndex);
 });
 
-// When one song ends, play another random one
-music.addEventListener("ended", () => {
+// Auto-next
+audioPlayer.addEventListener("ended", () => {
   const nextIndex = Math.floor(Math.random() * tracks.length);
   loadTrack(nextIndex);
 });
+
+// Optional: Start a random track on load
+window.addEventListener("DOMContentLoaded", () => {
+  loadTrack(currentTrackIndex);
+});
+
 
 
 
