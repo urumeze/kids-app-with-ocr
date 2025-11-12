@@ -387,15 +387,14 @@
   </header>
 </div>  
  
-<div class="music-player fixed bottom-4 right-4 bg-white p-3 rounded-lg shadow flex items-center gap-2">
-  
+<div class="music-bar fixed bottom-0 left-0 right-0 bg-white border-t shadow flex items-center justify-center gap-3 p-2 z-40">
+  <button id="prevTrack" class="px-2 py-1 bg-gray-200 rounded">⏮️</button>
   <button id="playMusic" class="px-3 py-1 bg-indigo-600 text-white rounded">Play</button>
-  <button id="pauseMusic" class="px-3 py-1 bg-gray-300 rounded">Pause</button>
-  <button id="nextTrack" class="px-3 py-1 bg-gray-300 rounded">Next</button>
-  
+  <button id="pauseMusic" class="px-2 py-1 bg-gray-200 rounded">⏸️</button>
+  <button id="nextTrack" class="px-2 py-1 bg-gray-200 rounded">⏭️</button>
+  <span id="trackName" class="ml-2 font-medium"></span>
 </div>
 
-<audio id="backgroundMusic"></audio>
 
 
 
@@ -1368,7 +1367,8 @@ function showStep(n) {
 
   
 };
-const music = document.getElementById("backgroundMusic");
+// 🎶 Music Player Script
+const music = new Audio();
 const playBtn = document.getElementById("playMusic");
 const pauseBtn = document.getElementById("pauseMusic");
 const prevBtn = document.getElementById("prevTrack");
@@ -1387,19 +1387,23 @@ let currentTrackIndex = Math.floor(Math.random() * tracks.length);
 
 // Load a track
 function loadTrack(index) {
+  if (index < 0) index = tracks.length - 1;
+  if (index >= tracks.length) index = 0;
   currentTrackIndex = index;
-  music.src = tracks[index].src;
-  trackName.textContent = tracks[index].name;
+  const track = tracks[index];
+  music.src = track.src;
+  trackName.textContent = track.name;
   music.play().catch(err => console.log("Autoplay blocked:", err));
 }
 
-// Play random track on start
+// Start with a random track
 loadTrack(currentTrackIndex);
 
-// Buttons
+// Play/Pause controls
 playBtn.addEventListener("click", () => music.play());
 pauseBtn.addEventListener("click", () => music.pause());
 
+// Next/Prev controls
 nextBtn.addEventListener("click", () => {
   const nextIndex = Math.floor(Math.random() * tracks.length);
   loadTrack(nextIndex);
@@ -1410,17 +1414,11 @@ prevBtn.addEventListener("click", () => {
   loadTrack(prevIndex);
 });
 
-// Auto-next when track ends
+// When one song ends, play another random one
 music.addEventListener("ended", () => {
   const nextIndex = Math.floor(Math.random() * tracks.length);
   loadTrack(nextIndex);
 });
-
-
-
-
-
-
 
 
 
