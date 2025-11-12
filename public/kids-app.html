@@ -379,13 +379,24 @@
 <div class="container mx-auto px-4 py-8">
         <!-- Header -->
   <header class="text-center mb-12">
-    <h1 id="goquizTitle" class="fixed top-4 left-1/2 transform -translate-x-1/2 text-4xl font-bold text-white mb-4 bg-indigo-600 ;">
+    <h1 id="goquizTitle" class="fixed top-4 left-1/2 transform -translate-x-1/2 text-1xl text-white mb-4 bg-indigo-600 ;">
   GoQuiz
     </h1>
 
     
   </header>
 </div>  
+ 
+<div class="music-player fixed bottom-4 right-4 bg-white p-3 rounded-lg shadow flex items-center gap-2">
+  <button id="prevTrack" class="px-3 py-1 bg-gray-300 rounded">Prev</button>
+  <button id="playMusic" class="px-3 py-1 bg-indigo-600 text-white rounded">Play</button>
+  <button id="pauseMusic" class="px-3 py-1 bg-gray-300 rounded">Pause</button>
+  <button id="nextTrack" class="px-3 py-1 bg-gray-300 rounded">Next</button>
+  <span id="trackName" class="ml-2 font-medium"></span>
+</div>
+
+<audio id="backgroundMusic"></audio>
+
 
 
 
@@ -770,8 +781,9 @@ function updateCoinDisplay(amount = 0) {
     newDocument.addEventListener('click', () => showStep(1));
 
     closeQuiz.addEventListener('click', () => {
-  document.getElementById('app').classList.add('hidden');
-  document.getElementById('publicFeed').classList.remove('hidden');
+    document.getElementById('app').classList.add('hidden');
+    document.getElementById('publicFeed').classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 
@@ -1003,12 +1015,16 @@ async function extractTextFromImage(file) {
         const resultMessage = document.getElementById('resultMessage');
         if (appState.score === 100) {
             resultMessage.textContent = "Perfect! You're a learning superstar!";
+            updateCoinDisplay(10);
         } else if (appState.score >= 80) {
             resultMessage.textContent = "Great job! You know this well!";
+            updateCoinDisplay(8);
         } else if (appState.score >= 60) {
             resultMessage.textContent = "Good effort! You're getting there!";
+            updateCoinDisplay(3);
         } else if (appState.score >= 40) {
             resultMessage.textContent = "Keep practicing! You'll improve!";
+            updateCoinDisplay(2);
         } else {
             resultMessage.textContent = "Nice try! Let's review and try again!";
         }
@@ -1196,7 +1212,7 @@ function handleCredentialResponse(response) {
 document.getElementById('openMenuBtn').onclick = () => {
   document.getElementById('menuPanel').classList.remove('-translate-x-full');
 };
-document.getElementById('closeMenuBtn').onclick = () => {
+  document.getElementById('closeMenuBtn').onclick = () => {
   document.getElementById('menuPanel').classList.add('-translate-x-full');
 };
 
@@ -1326,6 +1342,7 @@ function renderFeedBatch() {
   // Show feed, hide quiz app
     document.getElementById('publicFeed').classList.remove('hidden');
     document.getElementById('app').classList.add('hidden');
+   
  
 
 }
@@ -1338,16 +1355,68 @@ window.addEventListener("DOMContentLoaded", loadPublicFeed);
       const main = document.getElementById('main-content');
       splash.style.display = 'none';
       main.style.display = 'block';
-    }, 2000); // match animation timing
+    }, 3500); // match animation timing
 
 
-  const steps = document.querySelectorAll('.step');
+const steps = document.querySelectorAll('.step');
 function showStep(n) {
   steps.forEach(s => s.classList.add('hidden'));
   document.getElementById('app').classList.remove('hidden');
   document.getElementById('publicFeed').classList.add('hidden'); // hide feed
   steps[n - 1].classList.remove('hidden');
+   
+
+  
+};
+const music = document.getElementById("backgroundMusic");
+const playBtn = document.getElementById("playMusic");
+const pauseBtn = document.getElementById("pauseMusic");
+const prevBtn = document.getElementById("prevTrack");
+const nextBtn = document.getElementById("nextTrack");
+const trackName = document.getElementById("trackName");
+
+// Your music library
+const tracks = [
+  { name: "Relaxing Melody", src: "music/track1.mp3" },
+  { name: "Focus Beat", src: "music/track2.mp3" },
+  { name: "Chill Vibes", src: "music/track3.mp3" },
+  { name: "Ambient Tune", src: "music/track4.mp3" }
+];
+
+let currentTrackIndex = Math.floor(Math.random() * tracks.length);
+
+// Load a track
+function loadTrack(index) {
+  currentTrackIndex = index;
+  music.src = tracks[index].src;
+  trackName.textContent = tracks[index].name;
+  music.play().catch(err => console.log("Autoplay blocked:", err));
 }
+
+// Play random track on start
+loadTrack(currentTrackIndex);
+
+// Buttons
+playBtn.addEventListener("click", () => music.play());
+pauseBtn.addEventListener("click", () => music.pause());
+
+nextBtn.addEventListener("click", () => {
+  const nextIndex = Math.floor(Math.random() * tracks.length);
+  loadTrack(nextIndex);
+});
+
+prevBtn.addEventListener("click", () => {
+  const prevIndex = Math.floor(Math.random() * tracks.length);
+  loadTrack(prevIndex);
+});
+
+// Auto-next when track ends
+music.addEventListener("ended", () => {
+  const nextIndex = Math.floor(Math.random() * tracks.length);
+  loadTrack(nextIndex);
+});
+
+
 
 
 
