@@ -1,0 +1,162 @@
+{
+  "subject": "Basic Science and Technology",
+  "year": 2024,
+  "quiz": [
+    {
+      "id": 41,
+      "question": "Which organ is used for tasting?",
+      "options": {
+        "A": "Ear",
+        "B": "Eye",
+        "C": "Nose",
+        "D": "Tongue",
+        "E": "Skin"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 42,
+      "question": "The system that transports blood round the body is called?",
+      "options": {
+        "A": "Circulatory",
+        "B": "Digestive",
+        "C": "Excretory",
+        "D": "Respiratory",
+        "E": "Skeletal"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 43,
+      "question": "Toes and fingers are examples of what type of joints?",
+      "options": {
+        "A": "Gliding",
+        "B": "Hinge",
+        "C": "Pivot",
+        "D": "Saddle",
+        "E": "Suture"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 44,
+      "question": "The part labelled I in the diagram of a flower is the?",
+      "options": {
+        "A": "Anther",
+        "B": "Ovary",
+        "C": "Petal",
+        "D": "Sepal",
+        "E": "Stigma"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 45,
+      "question": "The function of the part labelled II in the flower is to?",
+      "options": {
+        "A": "Attract insects",
+        "B": "Carry the male gamete to the ovary",
+        "C": "House the eggs",
+        "D": "Produce pollen grains",
+        "E": "Protect the floral parts"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 46,
+      "question": "Which of the following parts is a source of protein?",
+      "options": {
+        "A": "Banana and Coconut",
+        "B": "Beans and Rice",
+        "C": "Egg and Fish",
+        "D": "Milk and Maize",
+        "E": "Yam and Apple"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 47,
+      "question": "Football matches are officiated by?",
+      "options": {
+        "A": "Coaches",
+        "B": "Commentators",
+        "C": "Game masters",
+        "D": "Referees",
+        "E": "Spectators"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 48,
+      "question": "A swimming competition usually takes place in the?",
+      "options": {
+        "A": "Arena",
+        "B": "Court",
+        "C": "Field",
+        "D": "Pavilion",
+        "E": "Pool"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 49,
+      "question": "Natural rubber is extracted from which part of the tree?",
+      "options": {
+        "A": "Bark",
+        "B": "Branch",
+        "C": "Flower",
+        "D": "Leaves",
+        "E": "Root"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 50,
+      "question": "Technology simply means the application of ____ ideas in solving problems.",
+      "options": {
+        "A": "Archaic",
+        "B": "Cultural",
+        "C": "Primitive",
+        "D": "Scientific",
+        "E": "Traditional"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 51,
+      "question": "Which of the following is not made from rubber?",
+      "options": {
+        "A": "Balloon",
+        "B": "Bicycle tube",
+        "C": "Rain boot",
+        "D": "Razor blade",
+        "E": "Tyre"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 52,
+      "question": "When a car is faulty, the first step is to ____ it.",
+      "options": {
+        "A": "Correct",
+        "B": "Inspect",
+        "C": "Locate",
+        "D": "Predict",
+        "E": "Replace"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 53,
+      "question": "The part of a cell phone that displays readable information is the?",
+      "options": {
+        "A": "Battery",
+        "B": "Earpiece",
+        "C": "Keypad",
+        "D": "Microphone",
+        "E": "Screen"
+      },
+      "correct": "E"
+    }
+  ]
+}

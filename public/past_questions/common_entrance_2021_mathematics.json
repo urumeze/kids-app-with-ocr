@@ -1,0 +1,471 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Change 478 to Roman numerals.",
+      "options": {
+        "A": "DCLXXXVIII",
+        "B": "CDLXXVIII",
+        "C": "DCLXXVIII",
+        "D": "CDLXXXVIII",
+        "E": "DCLXXVII"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "question": "Write in words 4,690,852.",
+      "options": {
+        "A": "Four million, sixty nine thousand, eight hundred and fifty two",
+        "B": "Four million, six hundred and nine thousand, eight hundred and fifty two",
+        "C": "Four million, six hundred and ninety thousand, eight hundred and two",
+        "D": "Four million, six hundred and ninety thousand, eight hundred and fifty two",
+        "E": "Four million, nine hundred and sixty thousand, eight hundred and fifty two"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 3,
+      "question": "What is the place value of 6 in 123.64?",
+      "options": {
+        "A": "Hundreds",
+        "B": "Hundredth",
+        "C": "Tens",
+        "D": "Tenth",
+        "E": "Thousands"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following numbers, 0, 12, 5, -12, -5, is the lowest?",
+      "options": {
+        "A": "12",
+        "B": "5",
+        "C": "0",
+        "D": "-5",
+        "E": "-12"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 5,
+      "question": "If a sachet of semovita costs N700.00, what will be the cost of 20 sachets?",
+      "options": {
+        "A": "N10,000.00",
+        "B": "N12,000.00",
+        "C": "N14,000.00",
+        "D": "N20,500.00",
+        "E": "N21,000.00"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 6,
+      "question": "Convert 5 days into hours.",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "50",
+        "D": "100",
+        "E": "120"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following numbers is a perfect square?",
+      "options": {
+        "A": "54",
+        "B": "70",
+        "C": "86",
+        "D": "90",
+        "E": "121"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 8,
+      "question": "Simplify: 1/2 + 1/4 - 3/4",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "1/2",
+        "E": "1/4"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 9,
+      "question": "Find the value of 4 + √4 - 3.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5",
+        "E": "6"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "question": "Find the value of 2 1/4 + √16.",
+      "options": {
+        "A": "1/2",
+        "B": "1 3/4",
+        "C": "2 1/4",
+        "D": "3 1/2",
+        "E": "4 3/4"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 11,
+      "question": "If a baby is born on the 1st of July 2014, how old will he be on the 1st of December 2014?",
+      "options": {
+        "A": "4 months",
+        "B": "5 months",
+        "C": "6 months",
+        "D": "7 months",
+        "E": "8 months"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "If the price of a pair of school sandals is reduced from N2,000.00 to N1,500.00, how much is reduced?",
+      "options": {
+        "A": "N1,500.00",
+        "B": "N1,000.00",
+        "C": "N750.00",
+        "D": "N500.00",
+        "E": "N250.00"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "The addition of 8¼ to a certain number gives 10½. Find the number.",
+      "options": {
+        "A": "5",
+        "B": "2",
+        "C": "2¼",
+        "D": "2½",
+        "E": "1¼"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 14,
+      "question": "A boy needs 2½ metres of cloth to make his uniform. How many metres of cloth will be needed for 5 boys?",
+      "options": {
+        "A": "12½",
+        "B": "7¼",
+        "C": "8½",
+        "D": "3½",
+        "E": "2½"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 15,
+      "question": "A trader bought a basket of tomatoes for N10,000.00 and paid 5% as tax. How much did he pay as tax?",
+      "options": {
+        "A": "N500.00",
+        "B": "N1,000.00",
+        "C": "N1,500.00",
+        "D": "N5,000.00",
+        "E": "N10,500.00"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "question": "If 100 envelopes cost N1,000.00, what will be the cost of 650 envelopes?",
+      "options": {
+        "A": "N1,000.00",
+        "B": "N1,500.00",
+        "C": "N2,000.00",
+        "D": "N3,250.00",
+        "E": "N6,500.00"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 17,
+      "question": "Arrange: 35, 23, 13, 65, 115 in ascending order.",
+      "options": {
+        "A": "13, 23, 35, 65, 115",
+        "B": "23, 13, 35, 65, 115",
+        "C": "115, 65, 35, 23, 13",
+        "D": "35, 13, 23, 65, 115",
+        "E": "65, 115, 35, 23, 13"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "Find the square of the Lowest Common Multiple (L.C.M) of 12 and 18.",
+      "options": {
+        "A": "46,656",
+        "B": "1,296",
+        "C": "36",
+        "D": "18",
+        "E": "6"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 19,
+      "question": "If 20% discount is given on an article which costs N20,000.00, how much will a buyer pay?",
+      "options": {
+        "A": "N15,000.00",
+        "B": "N16,000.00",
+        "C": "N18,000.00",
+        "D": "N19,000.00",
+        "E": "N20,000.00"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 20,
+      "question": "Find the value of y in equation y/3 = 9.",
+      "options": {
+        "A": "12",
+        "B": "9",
+        "C": "6",
+        "D": "3",
+        "E": "1"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is divisible by 8 without a remainder?",
+      "options": {
+        "A": "38",
+        "B": "49",
+        "C": "58",
+        "D": "64",
+        "E": "84"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 22,
+      "question": "Find the value of x if 6x + 7 = 25.",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "12",
+        "D": "18",
+        "E": "32"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 23,
+      "question": "Ochuko is 13 years old and her sister is 14 years old. What was the sum of their ages 5 years ago?",
+      "options": {
+        "A": "66 years",
+        "B": "46 years",
+        "C": "36 years",
+        "D": "26 years",
+        "E": "18 years"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "Which of the following numbers is a prime number: 29, 33, 49, 57, 69?",
+      "options": {
+        "A": "29",
+        "B": "33",
+        "C": "49",
+        "D": "57",
+        "E": "69"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 25,
+      "question": "Find the value of x in the equation x + 2¼ = 2½.",
+      "options": {
+        "A": "1",
+        "B": "½",
+        "C": "¼",
+        "D": "-½",
+        "E": "-1"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 26,
+      "question": "Simplify 2a + b, when a = 3 and b = -2.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6",
+        "E": "8"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 27,
+      "question": "Calculate the area of the triangle with base 12cm and height 10cm.",
+      "options": {
+        "A": "7.5cm²",
+        "B": "30.0cm²",
+        "C": "60.0cm²",
+        "D": "78.0cm²",
+        "E": "156.0cm²"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 28,
+      "question": "If x : 2 = 12 : 4, find the value of x.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6",
+        "E": "24"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 29,
+      "question": "If 3y = 150, what is the value of y - 2?",
+      "options": {
+        "A": "48",
+        "B": "49",
+        "C": "50",
+        "D": "51",
+        "E": "52"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 30,
+      "question": "Find the value of k in the given figure (algebraic problem).",
+      "options": {
+        "A": "60cm",
+        "B": "17cm",
+        "C": "13cm",
+        "D": "11cm",
+        "E": "7cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "What is the sum of the angles in a triangle?",
+      "options": {
+        "A": "180°",
+        "B": "120°",
+        "C": "90°",
+        "D": "60°",
+        "E": "45°"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 32,
+      "question": "How many lines of symmetry does a square have?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3",
+        "E": "4"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 33,
+      "question": "Calculate the volume of a cylinder whose radius is 3cm and height 7cm (π = 22/7).",
+      "options": {
+        "A": "132cm³",
+        "B": "162cm³",
+        "C": "198cm³",
+        "D": "203cm³",
+        "E": "300cm³"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 34,
+      "question": "The area of a rectangle is 24cm². If the breadth is 3cm, find the length.",
+      "options": {
+        "A": "9cm",
+        "B": "8cm",
+        "C": "6cm",
+        "D": "3cm",
+        "E": "2cm"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 35,
+      "question": "Find the height of a trapezium whose area is 28cm² and bases are 6cm and 10cm.",
+      "options": {
+        "A": "2.5cm",
+        "B": "3.5cm",
+        "C": "4.5cm",
+        "D": "5.5cm",
+        "E": "6.5cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 36,
+      "question": "Which of the following measures temperature?",
+      "options": {
+        "A": "Atmospheric pressure",
+        "B": "Humidity",
+        "C": "Light intensity",
+        "D": "Rainfall",
+        "E": "Temperature"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 37,
+      "question": "What is the name of a triangle with two equal sides?",
+      "options": {
+        "A": "Complete triangle",
+        "B": "Equilateral triangle",
+        "C": "Isosceles triangle",
+        "D": "Right-angled triangle",
+        "E": "Scalene triangle"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 38,
+      "question": "Find the mode of these numbers: 3, 7, 3, 5, 4, 3, 4, 6, 9.",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "7",
+        "E": "9"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 39,
+      "question": "Find the average of 22, 44, 66, 12.",
+      "options": {
+        "A": "42",
+        "B": "36",
+        "C": "28",
+        "D": "22",
+        "E": "18"
+      },
+      "correct": "B"
+    }
+]}

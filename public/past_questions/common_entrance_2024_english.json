@@ -1,0 +1,617 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Daniel reached home and gave his parents his Common Entrance Examination result slip. Thereafter, his father went to Metropolitan Grammar School and collected the school prospectus. He bought a box, locker, desk, chair, uniforms, sandals, books etc for him. Few days to the day Daniel was to report to the school, his parents gave him some useful advice and suggestions.\n'My son,' Daniel's father began as he cleared his throat, 'In a few days’ time, you will be leaving for the boarding school and I want you to know why you are going there.'\n'Without mincing words, you will be there to face your studies seriously in order to come out with a good result. Your mother and I are ready to make the necessary sacrifices and train you and your siblings up to the university.'\n'You have seen the type of life we are living. We work very hard but with little pay because we did not go to the university. I will not like any of my children to end up like us. Make good use of your time; be diligent in your studies knowing full well that there is no formula for success in life except working hard.'\n'My dear son,' added his mother, 'Avoid bad friends and gangs because evil communication corrupts good manners. Move with the right friends from whom you can copy good things.'"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is not true according to the passage?",
+      "options": {
+        "A": "Daniel gained admission into the Metropolitan Grammar School.",
+        "B": "His father advised him to avoid bad company.",
+        "C": "His father bought some items for him.",
+        "D": "His parents did not attend university.",
+        "E": "His parents promised to train their children up to the university."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "According to the passage, Daniel was going to school to",
+      "options": {
+        "A": "be a good-child",
+        "B": "come out with an excellent result",
+        "C": "know the formula for success",
+        "D": "make his parents proud of him",
+        "E": "make new friends"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "question": "Daniel's parents",
+      "options": {
+        "A": "earned meagre salary",
+        "B": "had so many children",
+        "C": "studied up to the university",
+        "D": "wanted their children to be proud of them",
+        "E": "wanted their children to be successful like them"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following words can replace 'corrupts' as used in the passage?",
+      "options": {
+        "A": "destroys",
+        "B": "dishonours",
+        "C": "disturbs",
+        "D": "pollutes",
+        "E": "retards"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "Daniel's father said that, the sure way to success is",
+      "options": {
+        "A": "accountability",
+        "B": "diligence",
+        "C": "friendliness",
+        "D": "goodness",
+        "E": "obedience"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 7,
+      "type": "passage",
+      "passage": "Poor Kim lost his left hand in a terrible accident. His parents could console him. To cheer him up his father made him join a judo school. As the boy always wanted to learn judo, his father thought that this would make him happy.\nEveryone wondered how a boy with only one hand could learn judo. However, the master happily enrolled him. He trained in judo for about 8 months and practiced nothing but a single stroke. He trained for all 8 months in mastering a single stroke. The boy was surprised and sometimes annoyed that his master taught him only one stroke; yet he said nothing.\nThe boy mastered the stroke and grew in it as nobody else could excel in doing that particular stroke. The boy was picked by the master to compete at the national level judo championship. Everyone made fun of Kim and the master. They wondered how someone with only one hand could win a national championship.\nTo everybody's surprise, Kim easily defeated his six opponents with his single stroke. He gradually moved to the semi-finals and eventually made it to the finals. When the final match began, the opponent was so strong that Kim could not counter attack him. The referee decided to halt the match, as the opponent could harm Kim severely. The referee announced a break and discussed with Kim's master to stop the match and declare the opponent winner of the championship.\nEven Kim agreed to the referee's suggestion to stop the match and was happy that he had advanced very much in the championship. However, his master did not want him to quit the match. He asked him to continue the match after much persuasion. Eventually, Kim won the contest and was declared the champion."
+    },
+    {
+      "id": 8,
+      "question": "Kim, according to the passage",
+      "options": {
+        "A": "did not quit the competition",
+        "B": "did not receive help from his parents",
+        "C": "easily won all the matches",
+        "D": "had the sympathy of his master",
+        "E": "lost everything in a terrible accident"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "question": "People made fun of Kim because",
+      "options": {
+        "A": "he had an accident",
+        "B": "he mastered only one stroke",
+        "C": "he was not competent",
+        "D": "he was selected to compete in the judo championship",
+        "E": "his last opponent was stronger"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "question": "Kim's father cheered him up by",
+      "options": {
+        "A": "appealing to the referee to stop the match",
+        "B": "buying him a judo jacket",
+        "C": "presenting him for a judo championship",
+        "D": "registering him in a judo school",
+        "E": "teaching him an important lesson"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "According to the passage, Kim was annoyed with his master because he",
+      "options": {
+        "A": "did not allow him to quit",
+        "B": "encouraged him to train harder",
+        "C": "forced him to participate in the competition",
+        "D": "refused to enroll him",
+        "E": "taught him only a single stroke"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 12,
+      "question": "The most important lesson learnt from the passage is",
+      "options": {
+        "A": "bravery",
+        "B": "faithfulness",
+        "C": "loyalty",
+        "D": "obedience",
+        "E": "perseverance"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 13,
+      "question": "The brave hunter died a mysterious death.",
+      "options": {
+        "A": "clever",
+        "B": "famous",
+        "C": "fearless",
+        "D": "smart",
+        "E": "wise"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 14,
+      "question": "The little boy abandoned his school bag.",
+      "options": {
+        "A": "left",
+        "B": "lost",
+        "C": "misplaced",
+        "D": "sold",
+        "E": "tore"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 15,
+      "question": "The pupils were punished for being naughty.",
+      "options": {
+        "A": "careless",
+        "B": "dirty",
+        "C": "disobedient",
+        "D": "lazy",
+        "E": "rough"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 16,
+      "question": "The police arrested the man for selling drugs.",
+      "options": {
+        "A": "artificial",
+        "B": "counterfeit",
+        "C": "expired",
+        "D": "illegal",
+        "E": "terror"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 17,
+      "question": "Ali saved up some money for a holiday trip to Lagos.",
+      "options": {
+        "A": "accumulated",
+        "B": "kept",
+        "C": "preserved",
+        "D": "spent",
+        "E": "hid"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "She often visits her mother during holidays.",
+      "options": {
+        "A": "frequently",
+        "B": "rarely",
+        "C": "regularly",
+        "D": "repeatedly",
+        "E": "usually"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 19,
+      "question": "The head teacher commended the boy for being honest.",
+      "options": {
+        "A": "disobedient",
+        "B": "insincere",
+        "C": "insolent",
+        "D": "lazy",
+        "E": "rough"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 20,
+      "question": "The matron was fair in handling the matter.",
+      "options": {
+        "A": "careless",
+        "B": "insensitive",
+        "C": "partial",
+        "D": "thoughtless",
+        "E": "tricky"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 21,
+      "question": "The apple is fresh.",
+      "options": {
+        "A": "bitter",
+        "B": "rotten",
+        "C": "smelly",
+        "D": "sour",
+        "E": "unripe"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 22,
+      "question": "Anne decorated her sitting room with natural flowers.",
+      "options": {
+        "A": "artificial",
+        "B": "beautiful",
+        "C": "normal",
+        "D": "ordinary",
+        "E": "raw"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 23,
+      "question": "He likes drama, _ he?",
+      "options": {
+        "A": "did",
+        "B": "didn't",
+        "C": "does",
+        "D": "doesn't",
+        "E": "wasn't"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "He either works in Kaduna Jos.",
+      "options": {
+        "A": "also",
+        "B": "and",
+        "C": "but",
+        "D": "nor",
+        "E": "or"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 25,
+      "question": "Mathematics is an easy subject, _ it?",
+      "options": {
+        "A": "does",
+        "B": "is",
+        "C": "isn't",
+        "D": "was",
+        "E": "wasn't"
+      },
+      "correct": "C"
+    },
+        
+    {
+      "id": 26,
+      "question": "Ibrahim was sick, so _ visited the clinic for treatment.",
+      "options": {
+        "A": "he",
+        "B": "I",
+        "C": "she",
+        "D": "you",
+        "E": "we"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 27,
+      "question": "He has been driving the car _ five hours now.",
+      "options": {
+        "A": "about",
+        "B": "by",
+        "C": "for",
+        "D": "over",
+        "E": "within"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 28,
+      "question": "The doctor said her condition required a",
+      "options": {
+        "A": "surgeery",
+        "B": "sugery",
+        "C": "surgeri",
+        "D": "surgerry",
+        "E": "surgery"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 29,
+      "question": "Which of these prefixes can be added to 'proper' to form a new word?",
+      "options": {
+        "A": "Dis-",
+        "B": "Im-",
+        "C": "In-",
+        "D": "Mal-",
+        "E": "Un-"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 30,
+      "question": "If one works for a long time, _ will be tired.",
+      "options": {
+        "A": "he",
+        "B": "I",
+        "C": "one",
+        "D": "she",
+        "E": "you"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "Which of these suffixes can be added to 'Success' to form a new word?",
+      "options": {
+        "A": "-es",
+        "B": "-ful",
+        "C": "-ing",
+        "D": "-ment",
+        "E": "-ness"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 32,
+      "question": "The boy had passed the entrance examination, so he was invited for an",
+      "options": {
+        "A": "intaview",
+        "B": "interveiw",
+        "C": "intervieu",
+        "D": "interview",
+        "E": "interviu"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 33,
+      "question": "The hen _ five eggs.",
+      "options": {
+        "A": "laid",
+        "B": "lain",
+        "C": "lay",
+        "D": "layed",
+        "E": "lays"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 34,
+      "question": "It is time we _ for home.",
+      "options": {
+        "A": "are leaving",
+        "B": "had left",
+        "C": "have left",
+        "D": "leave",
+        "E": "left"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 35,
+      "question": "He occasionally _ the orphanage.",
+      "options": {
+        "A": "has visited",
+        "B": "have visited",
+        "C": "visit",
+        "D": "visiting",
+        "E": "visits"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 36,
+      "question": "Each of the girls was given a _ of chocolate.",
+      "options": {
+        "A": "bar",
+        "B": "drop",
+        "C": "loaf",
+        "D": "piece",
+        "E": "scoop"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 37,
+      "question": "Which of these is a consonant symbol?",
+      "options": {
+        "A": "/i/",
+        "B": "/re/",
+        "C": "/u:/",
+        "D": "/k/",
+        "E": "/ʃ/"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 38,
+      "question": "The two kittens played with",
+      "options": {
+        "A": "each other",
+        "B": "one another",
+        "C": "ourselves",
+        "D": "themselves",
+        "E": "yourselves"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 39,
+      "question": "My bag is _ than yours.",
+      "options": {
+        "A": "more smaller",
+        "B": "much small",
+        "C": "small",
+        "D": "smaller",
+        "E": "smallest"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 40,
+      "question": "My dad bought a pair of _ shoes for me.",
+      "options": {
+        "A": "brown expensive Italian",
+        "B": "brown Italian expensive",
+        "C": "expensive brown Italian",
+        "D": "expensive Italian brown",
+        "E": "Italian brown expensive"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 41,
+      "question": "Kikelomo said _ buses over there belonged to her uncle.",
+      "options": {
+        "A": "that",
+        "B": "these",
+        "C": "this",
+        "D": "those",
+        "E": "which"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 42,
+      "question": "Mary is taller than",
+      "options": {
+        "A": "I",
+        "B": "me",
+        "C": "she",
+        "D": "them",
+        "E": "us"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 43,
+      "question": "The following items can be found in a first aid box except",
+      "options": {
+        "A": "antiseptic",
+        "B": "bandage",
+        "C": "plaster",
+        "D": "scissors",
+        "E": "syringe"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 44,
+      "question": "Which of the following is not a communication device?",
+      "options": {
+        "A": "cell phone",
+        "B": "radio",
+        "C": "television",
+        "D": "typewriter",
+        "E": "walkie-talkie"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 45,
+      "question": "A natural source of water is",
+      "options": {
+        "A": "borehole",
+        "B": "rain",
+        "C": "reservoir",
+        "D": "tap",
+        "E": "well"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 46,
+      "question": "Social studies deals with man and his",
+      "options": {
+        "A": "activities",
+        "B": "biography",
+        "C": "environment",
+        "D": "lineage",
+        "E": "religion"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 47,
+      "question": "The existence of various cultures within a society is cultural",
+      "options": {
+        "A": "comparison",
+        "B": "discrimination",
+        "C": "diversity",
+        "D": "superiority",
+        "E": "unification"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 48,
+      "question": "Rivers Niger and Benue meet at",
+      "options": {
+        "A": "Hadeja",
+        "B": "Kaduna",
+        "C": "Lokoja",
+        "D": "Makurdi",
+        "E": "Shiroro"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 49,
+      "question": "The portrait that appears on the two hundred naira note is that of",
+      "options": {
+        "A": "Abubakar Tafawa Balewa",
+        "B": "Ahmadu Bello",
+        "C": "Alvan Ikoku",
+        "D": "Nnamdi Azikiwe",
+        "E": "Obafemi Awolowo"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 50,
+      "question": "The cactus spectabilis on the Nigeria Coat of Arms represents",
+      "options": {
+        "A": "agriculture",
+        "B": "beauty",
+        "C": "culture",
+        "D": "oil",
+        "E": "wealth"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 51,
+      "question": "Nigeria is divided into _ geopolitical zones.",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "12",
+        "D": "36",
+        "E": "37"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 52,
+      "question": "Which of the following can lead to drug abuse?",
+      "options": {
+        "A": "Following doctor's prescription",
+        "B": "Good family background",
+        "C": "Obeying the laws",
+        "D": "Peer group influence",
+        "E": "Resistance to temptation"
+      },
+      "correct": "D"
+    }
+  ]
+}
+
+  
+

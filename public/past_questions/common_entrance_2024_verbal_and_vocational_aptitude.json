@@ -1,0 +1,244 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Which town has the largest iron and steel industry in Nigeria?",
+      "options": {
+        "A": "Ajaokuta",
+        "B": "Aladja",
+        "C": "Jos",
+        "D": "Katsina",
+        "E": "Oshogbo"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "Identify the odd object in the group.",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "How many faces does a cube have?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6",
+        "E": "7"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 4,
+      "question": "The distance between points A and B in the diagram is?",
+      "options": {
+        "A": "2.0 cm",
+        "B": "3.0 cm",
+        "C": "3.7 cm",
+        "D": "3.9 cm",
+        "E": "4.3 cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following converts electrical to heat energy?",
+      "options": {
+        "A": "Air conditioner",
+        "B": "Ceiling fan",
+        "C": "Loudspeaker",
+        "D": "Pressing iron",
+        "E": "Television set"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 6,
+      "question": "Complete the box in the diagram below from the options lettered A-E.",
+      "options": {
+        "A": "Paint",
+        "B": "Polish",
+        "C": "Sandpaper",
+        "D": "Sawdust",
+        "E": "Shelves"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "question": "One box was made from a 4.2 m² sheet-metal. How many boxes can be made from 36 m² of the same material?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "9",
+        "D": "10",
+        "E": "12"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 8,
+      "question": "The tool drawn below is a/an?",
+      "options": {
+        "A": "Axe",
+        "B": "Digger",
+        "C": "Hammer",
+        "D": "Mallet",
+        "E": "Shovel"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is used for safety precaution in a workshop?",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D",
+        "E": "Option E"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "question": "Black and ___ are called neutral colours.",
+      "options": {
+        "A": "Blue",
+        "B": "Green",
+        "C": "Red",
+        "D": "White",
+        "E": "Yellow"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "Decimetre, centimetre, metre, millimeter - choose the correct arrangement.",
+      "options": {
+        "A": "Centimetre, millimetre, metre, decimetre",
+        "B": "Decimetre, centimetre, metre, millimetre",
+        "C": "Metre, centimetre, decimetre, millimetre",
+        "D": "Millimetre, centimetre, decimetre, metre",
+        "E": "Centimetre, decimetre, millimetre, metre"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 12,
+      "question": "Word, sentence, clause, phrase - arrange in ascending order.",
+      "options": {
+        "A": "Clause, phrase, word, sentence",
+        "B": "Phrase, sentence, clause, word",
+        "C": "Sentence, clause, phrase, sentence",
+        "D": "Word, phrase, clause, sentence",
+        "E": "Word, sentence, phrase, clause"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 13,
+      "question": "Hamlet, village, city, town - choose the correct ascending order.",
+      "options": {
+        "A": "City, town, village, hamlet",
+        "B": "Hamlet, city, town, village",
+        "C": "Hamlet, village, town, city",
+        "D": "Town, village, city, hamlet",
+        "E": "Village, hamlet, city, town"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 14,
+      "question": "Bus and road, Train and ....",
+      "options": {
+        "A": "Pathway",
+        "B": "Rail",
+        "C": "Runways",
+        "D": "Station",
+        "E": "Waterways"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 15,
+      "question": "Cattle and calf, Cat and ....",
+      "options": {
+        "A": "Cub",
+        "B": "Foal",
+        "C": "Kid",
+        "D": "Kitten",
+        "E": "Puppy"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 16,
+      "question": "Pencil and lead, Pen and ....",
+      "options": {
+        "A": "Draw",
+        "B": "Ink",
+        "C": "Paint",
+        "D": "Paper",
+        "E": "Write"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 17,
+      "question": "Music and studio, Drama and ....",
+      "options": {
+        "A": "Auditorium",
+        "B": "Hall",
+        "C": "Museum",
+        "D": "Stage",
+        "E": "Theatre"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 18,
+      "question": "Pig and sty, Lion and ....",
+      "options": {
+        "A": "Cage",
+        "B": "Den",
+        "C": "Kennel",
+        "D": "Pen",
+        "E": "Stable"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 19,
+      "question": "Arrange these words in meaningful sequence: Diagnose, Doctor, Fever, Medicine, Prescribe",
+      "options": {
+        "A": "1,3,4,2,5",
+        "B": "2,4,1,3,5",
+        "C": "3,2,1,5,4",
+        "D": "4,2,3,5,1",
+        "E": "5,1,2,3,4"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 20,
+      "question": "Arrange these words in meaningful sequence: Bargain, Purchase, Receipt, Select, Shop",
+      "options": {
+        "A": "1,2,4,3,5",
+        "B": "1,3,4,2,5",
+        "C": "5,4,1,2,3",
+        "D": "5,4,1,3,2",
+        "E": "5,4,3,1,2"
+      },
+      "correct": "D"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "subject": "Mathematics",
+  "year": 2020,
+  "quiz": [
+    {
+      "id": 22,
+      "question": "Find the area of a circle whose diameter is 14cm. (π = 22/7)",
+      "options": {
+        "A": "140cm²",
+        "B": "144cm²",
+        "C": "154cm²",
+        "D": "164cm²",
+        "E": "540cm²"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 23,
+      "question": "If a number multiplies itself to give 289, what is the number?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "13",
+        "D": "15",
+        "E": "17"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 24,
+      "question": "If an orange costs Np, how much will q oranges cost?",
+      "options": {
+        "A": "N(p q)",
+        "B": "N()",
+        "C": "N(p + 1)",
+        "D": "N(p + q)",
+        "E": "N(pq)"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 25,
+      "question": "Simplify (2³ × 5²) + 5.",
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "40",
+        "D": "100",
+        "E": "200"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 35,
+      "question": "What is the value of y in the diagram below?",
+      "options": {
+        "A": "5cm",
+        "B": "8cm",
+        "C": "12cm",
+        "D": "18cm",
+        "E": "20cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 36,
+      "question": "The area of a rectangle is 60cm². Find the length of the rectangle, if its breadth is 5cm.",
+      "options": {
+        "A": "65cm",
+        "B": "25cm",
+        "C": "15cm",
+        "D": "13cm",
+        "E": "12cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 37,
+      "question": "Bello had N550.00 and spent N280.00 on drugs. How much does he have left?",
+      "options": {
+        "A": "N150.00",
+        "B": "N170.00",
+        "C": "N230.00",
+        "D": "N270.00",
+        "E": "N330.00"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 38,
+      "question": "If 1 cm on a map represents 15m, what does 3.5cm represent?",
+      "options": {
+        "A": "4.3m",
+        "B": "11.5m",
+        "C": "18.5m",
+        "D": "23.3m",
+        "E": "52.5m"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 39,
+      "question": "Find the value of x−3, if 14 + x = 3.",
+      "options": {
+        "A": "28",
+        "B": "21",
+        "C": "7",
+        "D": "-14",
+        "E": "3"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 40,
+      "question": "The volume of a cube is 64cm³. Find the length of the cube.",
+      "options": {
+        "A": "3cm",
+        "B": "4cm",
+        "C": "5cm",
+        "D": "6cm",
+        "E": "7cm"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 41,
+      "question": "Calculate the circumference of a circle of radius 3.5cm. (π = 22/7)",
+      "options": {
+        "A": "77cm",
+        "B": "75cm",
+        "C": "44cm",
+        "D": "22cm",
+        "E": "18cm"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 42,
+      "question": "If 2x − 18 = 0, find the value of x.",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "8",
+        "E": "9"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 43,
+      "question": "Solve for y, if 13 = ½ + y.",
+      "options": {
+        "A": "6",
+        "B": "10",
+        "C": "15",
+        "D": "30",
+        "E": "32"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 44,
+      "question": "Find the average of the following set of numbers: 1, 3, 5, 7, 9, 11.",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8",
+        "E": "9"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 45,
+      "question": "Find the volume of a cylinder of radius 2cm and height 14cm. (π = 22/7)",
+      "options": {
+        "A": "120cm³",
+        "B": "136cm³",
+        "C": "142cm³",
+        "D": "151cm³",
+        "E": "176cm³"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 46,
+      "question": "Find the mode of the set of numbers: 4, 3, 7, 5, 3, 6, 7, 3.",
+      "options": {
+        "A": "7",
+        "B": "6",
+        "C": "5",
+        "D": "4",
+        "E": "3"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 47,
+      "question": "If the area of a rectangle is 24cm² and the length is 8cm, find the breadth.",
+      "options": {
+        "A": "16cm",
+        "B": "12cm",
+        "C": "10cm",
+        "D": "6cm",
+        "E": "3cm"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 48,
+      "question": "Find the value of x in the diagram below.",
+      "options": {
+        "A": "115°",
+        "B": "80°",
+        "C": "70°",
+        "D": "65°",
+        "E": "20°"
+      },
+      "correct": "C"
+    }
+  ]
+}

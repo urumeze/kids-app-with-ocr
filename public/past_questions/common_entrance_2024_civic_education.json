@@ -1,0 +1,244 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "The portrait that appears on the two hundred naira note is that of?",
+      "options": {
+        "A": "Abubakar Tafawa Balewa",
+        "B": "Ahmadu Bello",
+        "C": "Alvan Ikoku",
+        "D": "Nnamdi Azikiwe",
+        "E": "Obafemi Awolowo"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "The coctus spectabilis on the Nigeria Coat of Arms represents?",
+      "options": {
+        "A": "Agriculture",
+        "B": "Beauty",
+        "C": "Culture",
+        "D": "Oil",
+        "E": "Wealth"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "Nigeria is divided into how many geopolitical zones?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "12",
+        "D": "36",
+        "E": "37"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following can lead to drug abuse?",
+      "options": {
+        "A": "Following doctor's prescription",
+        "B": "Good family background",
+        "C": "Obeying the laws",
+        "D": "Peer group influence",
+        "E": "Resistance to temptation"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following ethnic groups occupy the South-Eastern part of Nigeria?",
+      "options": {
+        "A": "Esan",
+        "B": "Igbo",
+        "C": "Ijaw",
+        "D": "Tiv",
+        "E": "Yoruba"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "question": "The nuclear family consists of?",
+      "options": {
+        "A": "Father, mother and children",
+        "B": "Father, mother and grandparent",
+        "C": "Mother, brother and cousin",
+        "D": "Niece, children and parent",
+        "E": "Uncle, aunty and nephew"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "Nigeria became a republic in?",
+      "options": {
+        "A": "1960",
+        "B": "1953",
+        "C": "1966",
+        "D": "1967",
+        "E": "1970"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "The Senate in Nigeria consists of how many members?",
+      "options": {
+        "A": "36",
+        "B": "37",
+        "C": "109",
+        "D": "360",
+        "E": "774"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 9,
+      "question": "The horses on the Nigeria Coat of Arms symbolize?",
+      "options": {
+        "A": "Authority",
+        "B": "Democracy",
+        "C": "Dignity",
+        "D": "Peace",
+        "E": "Unity"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "\"To be faithful, loyal and honest\" is a phrase in the Nigeria national?",
+      "options": {
+        "A": "Anthem",
+        "B": "Constitution",
+        "C": "Motto",
+        "D": "Pledge",
+        "E": "Prayer"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 11,
+      "question": "Community relationship can be promoted by?",
+      "options": {
+        "A": "Backbiting",
+        "B": "Malice",
+        "C": "Marriage",
+        "D": "Helping others",
+        "E": "Selfishness"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 12,
+      "question": "Values are maintained in the society to promote?",
+      "options": {
+        "A": "Arrogance",
+        "B": "Dispute",
+        "C": "Modernization",
+        "D": "Orderliness",
+        "E": "Selfishness"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "Personal security can be enhanced by?",
+      "options": {
+        "A": "Avoiding mad people",
+        "B": "Interacting with strangers",
+        "C": "Playing with chemicals",
+        "D": "Tampering with electric wires",
+        "E": "Using fake drugs"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 14,
+      "question": "Which of the following security outfits is community based?",
+      "options": {
+        "A": "Army",
+        "B": "Civil Defence Corps",
+        "C": "Immigration",
+        "D": "Police",
+        "E": "Vigilante"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 15,
+      "question": "The following items can be found in a first aid box except?",
+      "options": {
+        "A": "Antiseptic",
+        "B": "Bandage",
+        "C": "Plaster",
+        "D": "Scissors",
+        "E": "Syringe"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 16,
+      "question": "Mary is taller than?",
+      "options": {
+        "A": "I",
+        "B": "Me",
+        "C": "Us",
+        "D": "She",
+        "E": "Them"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 17,
+      "question": "Kikelomo said buses over there belonged to her uncle. Which word completes the sentence?",
+      "options": {
+        "A": "That",
+        "B": "These",
+        "C": "This",
+        "D": "Those",
+        "E": "Which"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is not a communication device?",
+      "options": {
+        "A": "Cell phone",
+        "B": "Radio",
+        "C": "Television",
+        "D": "Typewriter",
+        "E": "Walkie-talkie"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 19,
+      "question": "Social studies deals with man and his?",
+      "options": {
+        "A": "Activities",
+        "B": "Biography",
+        "C": "Environment",
+        "D": "Lineage",
+        "E": "Religion"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "question": "The existence of various cultures within a society is cultural?",
+      "options": {
+        "A": "Comparison",
+        "B": "Discrimination",
+        "C": "Diversity",
+        "D": "Superiority",
+        "E": "Unification"
+      },
+      "correct": "C"
+    }
+  ]
+}
