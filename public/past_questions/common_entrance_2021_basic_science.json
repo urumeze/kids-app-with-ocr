@@ -1,0 +1,246 @@
+{
+  "subject": "Basic Science and Technology",
+  "year": 2024,
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Which of the following is a temporary change?",
+      "options": {
+        "A": "A little child that grows into an adult",
+        "B": "Cassava processed into garri",
+        "C": "Flower turning into fruit",
+        "D": "Ice turning into water",
+        "E": "Wood burnt into ashes"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 2,
+      "question": "The male part of a flower is made up of",
+      "options": {
+        "A": "Anther and filament",
+        "B": "Anther and stigma",
+        "C": "Anther and style",
+        "D": "Filament and ovary",
+        "E": "Filament and stigma"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "The bone of the human head is called",
+      "options": {
+        "A": "Femur",
+        "B": "Humerus",
+        "C": "Skull",
+        "D": "Tibia",
+        "E": "Ulna"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following items can be found in a first aid box?",
+      "options": {
+        "A": "Bandage",
+        "B": "Chloroquine",
+        "C": "Needle",
+        "D": "Syringe",
+        "E": "Thermometer"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "The game that involves the use of a racket is",
+      "options": {
+        "A": "Badminton",
+        "B": "Basketball",
+        "C": "Hockey",
+        "D": "Soccer",
+        "E": "Volleyball"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a non-communicable disease?",
+      "options": {
+        "A": "Cholera",
+        "B": "Malaria",
+        "C": "Measles",
+        "D": "Smallpox",
+        "E": "Tuberculosis"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 7,
+      "question": "Tyre is a product of",
+      "options": {
+        "A": "Cotton",
+        "B": "Metal",
+        "C": "Plastic",
+        "D": "Rubber",
+        "E": "Wood"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 8,
+      "question": "An example of a good conductor of electricity is",
+      "options": {
+        "A": "Charcoal",
+        "B": "Copper",
+        "C": "Glass",
+        "D": "Paper",
+        "E": "Wool"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is used for safety purposes in a workshop?",
+      "options": {
+        "A": "Goggles",
+        "B": "Necklace",
+        "C": "Necktie",
+        "D": "Slippers",
+        "E": "Wristwatch"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is not a modern farm implement?",
+      "options": {
+        "A": "Tractor",
+        "B": "Harvester",
+        "C": "Harrow",
+        "D": "Hoe",
+        "E": "Sprayer"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is an application software?",
+      "options": {
+        "A": "LINUX",
+        "B": "MacOS",
+        "C": "Microsoft Paint",
+        "D": "Microsoft Windows",
+        "E": "UNIX"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "The following are common IT gadgets except",
+      "options": {
+        "A": "Blender",
+        "B": "Computer",
+        "C": "Drone",
+        "D": "Phone",
+        "E": "Satellite"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 13,
+      "question": "Microsoft Word is an example of what type of software?",
+      "options": {
+        "A": "Anti-virus",
+        "B": "Drawing",
+        "C": "Internet",
+        "D": "Operating system",
+        "E": "Word processing"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 14,
+      "question": "Ctrl + V is used to",
+      "options": {
+        "A": "Copy",
+        "B": "Cut",
+        "C": "Paste",
+        "D": "Print",
+        "E": "Save"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 15,
+      "question": "The disadvantage of using the internet in the society is to",
+      "options": {
+        "A": "Buy and sell",
+        "B": "Defraud people",
+        "C": "Educate people",
+        "D": "Exchange information",
+        "E": "Improve the health sector"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 16,
+      "question": "The instrument used for measuring temperature is called",
+      "options": {
+        "A": "Barometer",
+        "B": "Hygrometer",
+        "C": "Photometer",
+        "D": "Rain gauge",
+        "E": "Thermometer"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following shapes has all sides equal?",
+      "options": {
+        "A": "Complete triangle",
+        "B": "Equilateral triangle",
+        "C": "Isosceles triangle",
+        "D": "Right-angled triangle",
+        "E": "Scalene triangle"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following items should not be worn in a workshop for safety reasons?",
+      "options": {
+        "A": "Goggles",
+        "B": "Apron",
+        "C": "Necktie",
+        "D": "Helmet",
+        "E": "Boots"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 19,
+      "question": "The computer device used to enter data into the system is called",
+      "options": {
+        "A": "Monitor",
+        "B": "Printer",
+        "C": "Keyboard",
+        "D": "Speaker",
+        "E": "Scanner"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 20,
+      "question": "A tractor is commonly used for",
+      "options": {
+        "A": "Harvesting",
+        "B": "Weeding",
+        "C": "Ploughing",
+        "D": "Irrigating",
+        "E": "Spraying"
+      },
+      "correct": "C"
+    }
+  ]
+}

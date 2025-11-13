@@ -1,0 +1,614 @@
+{
+  "subject": "English Studies",
+  "year": 2024,
+  "quiz": [
+    {
+      "id": 1,
+      "passage": "There was famine in the land. The wise old fox was very hungry. He met a lean dog on the way. They wandered everywhere in search of food. At last, they spotted a farmhouse, but the door was locked. Soon, they caught a rat trying to enter the farmhouse. The rat sobbed and pleaded that they should spare his life. The rat soon bore a hole under the door. The three friends were soon eating hungrily inside the farmhouse. The fox ate and peeped through the hole repeatedly. Not quite long the farmer returned. The rat was the first to run out. The farmer pursued the rat with a stick. The fox squeezed himself through the hole and escaped. The greedy dog could not pass through the hole. He was caught by the farmer and tied with a strong cord on the neck."
+    },
+    {
+      "id": 2,
+      "question": "The rat pleaded with the fox and the dog because he",
+      "options": {
+        "A": "knew he was not safe",
+        "B": "wanted to enter the farmhouse",
+        "C": "was hungry",
+        "D": "was scared of being caught",
+        "E": "was smaller than them"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "The animals entered the farmhouse through",
+      "options": {
+        "A": "a hole borne by the fox beneath the door",
+        "B": "a hole dug by the rat beneath the door",
+        "C": "a hole on the roof of the house",
+        "D": "the door",
+        "E": "the window"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "question": "The word 'hungrily' as used in the passage is",
+      "options": {
+        "A": "an adjective",
+        "B": "an adverb",
+        "C": "a noun",
+        "D": "a preposition",
+        "E": "a verb"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "question": "The dog was unable to escape because",
+      "options": {
+        "A": "he could not pass through the hole",
+        "B": "he was still eating",
+        "C": "he was too full",
+        "D": "the farmer caught him",
+        "E": "the farmer tied a rope around his neck"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "Which of these words can replace 'greedy' as used in the passage?",
+      "options": {
+        "A": "Gunny",
+        "B": "Fearful",
+        "C": "Hungry",
+        "D": "Sluggish",
+        "E": "Unsatisfied"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 7,
+      "passage": "There lived in a village a poor but worthy farmer who had to support himself, a wife and seven children on the returns of his small farm. One day, when walking through the fields and thinking of how he could add to his small income, he found a purse of gold which had been dropped by some passers-by. He carried it home and showed it to his wife who advised him to use it or at least a part of it in helping them out of their difficulty. The honest farmer reminded his wife that honesty was the best policy, and refused to use any of the money until he had done his best to find its owner. After a short time, he found that the purse belonged to a wealthy 'Zemindar' who lived in the neighbourhood and gave it back to him, receiving no other reward than the thanks of the owner. When the farmer's wife heard of the way her husband had been treated, she reproached him for his excessive honesty. The man only kept on saying 'honesty is the best policy'. A few months afterwards, the poor but honest farmer received an invitation to dine with the Zemindar whose money he found. After entertaining him, the Zemindar gave him a reward of N200,000.00 and told him that because of his honesty he had been appointed as the overseer of his land on a good salary."
+    },
+    {
+      "id": 8,
+      "question": "The lesson derived from this story is that we should be",
+      "options": {
+        "A": "hardworking",
+        "B": "honest",
+        "C": "patient",
+        "D": "tolerant",
+        "E": "united"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "question": "The farmer was rewarded in the following ways except that he",
+      "options": {
+        "A": "was given N200,000",
+        "B": "had dinner with the Zemindar",
+        "C": "received a letter of commendation",
+        "D": "was appointed an overseer",
+        "E": "was placed on a salary"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "question": "Which of these words can replace 'overseer' as used in the passage?",
+      "options": {
+        "A": "Captain",
+        "B": "Leader",
+        "C": "Owner",
+        "D": "Partner",
+        "E": "Supervisor"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 11,
+      "question": "The farmer's wife was disappointed because her husband",
+      "options": {
+        "A": "found a purse of gold",
+        "B": "found the owner of the purse",
+        "C": "returned the purse to the owner",
+        "D": "was not rewarded immediately",
+        "E": "was very hardworking"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 12,
+      "question": "Which of these statements is not true according to the passage?",
+      "options": {
+        "A": "The farmer was poor",
+        "B": "He had a small farm",
+        "C": "He had seven children",
+        "D": "He found a box of gold",
+        "E": "He lived in a village"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "She constantly stayed back to help her grandmother.",
+      "options": {
+        "A": "always",
+        "B": "hardly",
+        "C": "occasionally",
+        "D": "rarely",
+        "E": "seldomly"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 14,
+      "question": "The boy wandered far into the forest.",
+      "options": {
+        "A": "journeyed",
+        "B": "ran",
+        "C": "roamed",
+        "D": "trekked",
+        "E": "walked"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 15,
+      "question": "Only pupils who were healthy enrolled in the sporting program.",
+      "options": {
+        "A": "agile",
+        "B": "confident",
+        "C": "muscular",
+        "D": "smart",
+        "E": "tall"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "question": "The head teacher told us to note the important points.",
+      "options": {
+        "A": "best",
+        "B": "cold",
+        "C": "difficult",
+        "D": "minor",
+        "E": "relevant"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 17,
+      "question": "The pupils were given enough examples.",
+      "options": {
+        "A": "complete",
+        "B": "few",
+        "C": "more",
+        "D": "sufficient",
+        "E": "suitable"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 18,
+      "question": "Our school team lost to the visiting team.",
+      "options": {
+        "A": "booed",
+        "B": "embraced",
+        "C": "engaged",
+        "D": "invited",
+        "E": "won"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 19,
+      "question": "The little boy spent all the money his parents left for him.",
+      "options": {
+        "A": "hid",
+        "B": "lost",
+        "C": "saved",
+        "D": "shared",
+        "E": "used"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 20,
+      "question": "I believe whatever my brother tells me.",
+      "options": {
+        "A": "accept",
+        "B": "doubt",
+        "C": "hate",
+        "D": "like",
+        "E": "listen to"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 21,
+      "question": "Aisha ___ the piano every week.",
+      "options": {
+        "A": "play",
+        "B": "plays",
+        "C": "played",
+        "D": "is being playing",
+        "E": "is playing"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 22,
+      "question": "He is the ___ of the two brothers.",
+      "options": {
+        "A": "more older",
+        "B": "most oldest",
+        "C": "most old",
+        "D": "older",
+        "E": "oldest"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 23,
+      "question": "All the ___ in my kitchen are blunt.",
+      "options": {
+        "A": "knife",
+        "B": "knifes",
+        "C": "knife's",
+        "D": "knives",
+        "E": "kniveses"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "Ada is the captain of her team, ___ she?",
+      "options": {
+        "A": "couldn't",
+        "B": "is",
+        "C": "isn't",
+        "D": "was",
+        "E": "wasn't"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 25,
+      "question": "Which of the following words contains the /u/ sound?",
+      "options": {
+        "A": "Cat",
+        "B": "Cold",
+        "C": "Fin",
+        "D": "Ten",
+        "E": "Woman"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 26,
+      "question": "The farmer stored his hay ___ a barn.",
+      "options": {
+        "A": "at",
+        "B": "by",
+        "C": "in",
+        "D": "on",
+        "E": "with"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 27,
+      "question": "The prefix ___ will combine with the word 'agree' to form a new word.",
+      "options": {
+        "A": "dis-",
+        "B": "in-",
+        "C": "mis-",
+        "D": "re-",
+        "E": "un-"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 28,
+      "question": "My son took a ___ of the burning house.",
+      "options": {
+        "A": "photugraph",
+        "B": "photograp",
+        "C": "photograph",
+        "D": "potograph",
+        "E": "fotograph"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 29,
+      "question": "The books on the table belong to Ade and Olu. They are ___",
+      "options": {
+        "A": "mine",
+        "B": "theirs",
+        "C": "their's",
+        "D": "ours",
+        "E": "yours"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 30,
+      "question": "Mother said, 'Do not put all your eggs in one basket'. This means that we should",
+      "options": {
+        "A": "not use basket to carry eggs",
+        "B": "not put eggs in one place",
+        "C": "not put our efforts in one thing",
+        "D": "not invest in eggs",
+        "E": "invest our resources in one thing"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "The deceased's children are fighting ___ their father's property.",
+      "options": {
+        "A": "at",
+        "B": "by",
+        "C": "in",
+        "D": "over",
+        "E": "with"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 32,
+      "question": "Direct speech: 'I am travelling by rail,' she said. Indirect Speech: She said that she ___ by rail.",
+      "options": {
+        "A": "has travelled",
+        "B": "is travelling",
+        "C": "travels",
+        "D": "will be travelling",
+        "E": "was travelling"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 33,
+      "question": "Which of the following suffixes can combine with the word 'season' to form a new word?",
+      "options": {
+        "A": "-ment",
+        "B": "-al",
+        "C": "-less",
+        "D": "-ness",
+        "E": "-ly"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 34,
+      "question": "The teachers in the staff room ___ when we arrived.",
+      "options": {
+        "A": "has been",
+        "B": "is",
+        "C": "is being",
+        "D": "was",
+        "E": "were"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 35,
+      "question": "She doesn't plait her hair on Sundays, ___ she?",
+      "options": {
+        "A": "did",
+        "B": "does",
+        "C": "doesn't",
+        "D": "don't",
+        "E": "didn't"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 36,
+      "question": "Grace ___ some mangoes from the market yesterday.",
+      "options": {
+        "A": "bought",
+        "B": "buy",
+        "C": "buys",
+        "D": "has bought",
+        "E": "was buying"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 37,
+      "question": "This is the man from ___ we bought the apples.",
+      "options": {
+        "A": "which",
+        "B": "who",
+        "C": "who's",
+        "D": "whom",
+        "E": "whose"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 38,
+      "question": "My father has a ___ of cars.",
+      "options": {
+        "A": "company",
+        "B": "fleet",
+        "C": "flock",
+        "D": "galaxy",
+        "E": "group"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 39,
+      "question": "Active Voice: Bola saw a big snake. Passive Voice: A big snake ___ by Bola.",
+      "options": {
+        "A": "is being seen",
+        "B": "is seen",
+        "C": "was seeing",
+        "D": "was seen",
+        "E": "were seen"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 40,
+      "question": "The injury caused by boiled water is called",
+      "options": {
+        "A": "burn",
+        "B": "bite",
+        "C": "bruise",
+        "D": "cut",
+        "E": "scald"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 41,
+      "question": "Cultural diversity means ___ in beliefs.",
+      "options": {
+        "A": "distractions",
+        "B": "differences",
+        "C": "similarities",
+        "D": "stability",
+        "E": "unity"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 42,
+      "question": "The annual fishing festival in Northern Nigeria holds in",
+      "options": {
+        "A": "Argungu",
+        "B": "Birnin Kebbi",
+        "C": "Kaduna",
+        "D": "Kano",
+        "E": "Sokoto"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 43,
+      "question": "A sudden event that happens unexpectedly causing injury and damage is a/an",
+      "options": {
+        "A": "accident",
+        "B": "emergency",
+        "C": "hardship",
+        "D": "misfortune",
+        "E": "shock"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 44,
+      "question": "The total way of life of a group of people is",
+      "options": {
+        "A": "association",
+        "B": "culture",
+        "C": "norm",
+        "D": "socialization",
+        "E": "values"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 45,
+      "question": "The aspect of the society that deals with faith and belief is",
+      "options": {
+        "A": "culture",
+        "B": "economy",
+        "C": "politics",
+        "D": "religion",
+        "E": "socialization"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 46,
+      "question": "Taking drugs without a doctor's prescription is drug",
+      "options": {
+        "A": "abuse",
+        "B": "addiction",
+        "C": "pushing",
+        "D": "production",
+        "E": "trafficking"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 47,
+      "question": "A citizen of Nigeria that resides in another country is called a/an",
+      "options": {
+        "A": "ambassador",
+        "B": "businessman",
+        "C": "diplomat",
+        "D": "foreigner",
+        "E": "high commissioner"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 48,
+      "question": "Which of the following sources of water is man-made?",
+      "options": {
+        "A": "Ocean",
+        "B": "Rain",
+        "C": "River",
+        "D": "Stream",
+        "E": "Well"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 49,
+      "question": "An example of loyal service to the nation is",
+      "options": {
+        "A": "dependence on government",
+        "B": "disregard to authorities",
+        "C": "disregard to national symbols",
+        "D": "evading taxes",
+        "E": "paying taxes promptly"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 50,
+      "question": "In Nigeria, ethnic crises can be reduced through",
+      "options": {
+        "A": "inequality",
+        "B": "nepotism",
+        "C": "sectionalism",
+        "D": "tolerance",
+        "E": "tribalism"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 51,
+      "question": "Which of the following is a traditional symbol?",
+      "options": {
+        "A": "Coat of arm",
+        "B": "Constitution",
+        "C": "Currency",
+        "D": "Flag",
+        "E": "Tribal mark"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 52,
+      "question": "For a nation to be great, ___ must be discouraged.",
+      "options": {
+        "A": "accountability",
+        "B": "corruption",
+        "C": "hard work",
+        "D": "honesty",
+        "E": "tolerance"
+      },
+      "correct": "B"
+    }
+  ]
+}

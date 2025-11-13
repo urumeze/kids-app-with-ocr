@@ -558,10 +558,13 @@
 
 <!-- 📚 MENU PANEL -->
 <div id="menuPanel"
-     class="fixed left-0 top-0 h-full w-32 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
-  <div class="p-4 border-b flex justify-between items-center">
-    <button id="closeMenuBtn" class="text-gray-600 hover:text-black">&times;</button>
-  </div>
+     class="fixed left-0 top-0 h-full w-40 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+  <div class="flex justify-end">
+  <button id="closeMenuBtn" class="text-gray-600 hover:text-black">
+    close
+  </button>
+</div>
+
 
   <!-- Menu Content -->
   <div class="p-4">
@@ -570,31 +573,32 @@
     <ul class="space-y-3">
       <!-- 2020 -->
       <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2024 ▼</button>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2020 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2024, 'english', 'common_entrance')">English</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'verbal_and_vocational_aptitude', 'common_entrance')" class="subject-btn">*Verbal aptitude</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'english', 'common_entrance')">English</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'verbal_and_vocational_aptitude', 'common_entrance')" class="subject-btn">*Verbal aptitude</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
+          <li><button onclick="loadPastQuestions(2020, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
           
         </ul>
       </li>
 
       <!-- 2021 -->
       <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2021 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2024, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'mathematics', 'common_entrance')" class="subject-btn">*Maths/button></li>
-          <li><button onclick="loadPastQuestions(2024, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
           
         </ul>
       </li>
@@ -603,27 +607,43 @@
       <li>
         <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2022 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2024, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'mathematics', 'common_entrance')" class="subject-btn">*Maths</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
           
         </ul>
       </li>
 
       <!-- 2023 -->
       <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2021 ▼</button>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2023, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
+          
+        </ul>
+      </li>
+
+      <!-- 2024 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2024 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
           <li><button onclick="loadPastQuestions(2024, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'mathematics', 'common_entrance')" class="subject-btn">*Maths</button></li>
+          <li><button onclick="loadPastQuestions(2024, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
           <li><button onclick="loadPastQuestions(2024, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
           <li><button onclick="loadPastQuestions(2024, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
+          <li><button onclick="loadPastQuestions(2024, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
           <li><button onclick="loadPastQuestions(2024, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
           <li><button onclick="loadPastQuestions(2024, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
           <li><button onclick="loadPastQuestions(2024, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
