@@ -1,0 +1,246 @@
+{
+  "subject": "Basic Science and Technology",
+  "year": 2022,
+  "quiz": [
+    {
+      "id": 41,
+      "question": "Which of the following is NOT an effect of air pollution?",
+      "options": {
+        "A": "Eye irritation",
+        "B": "Lung disease",
+        "C": "Runny nose",
+        "D": "Severe dysentery",
+        "E": "Skin disease"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 42,
+      "question": "Which of the following is a function of the canine teeth?",
+      "options": {
+        "A": "Bitting",
+        "B": "Chewing",
+        "C": "Grinding",
+        "D": "Swallowing",
+        "E": "Tearing"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 43,
+      "question": "The weather symbol represented in the diagram below is (diagram not provided; reconstructed as a cloud with raindrops).",
+      "options": {
+        "A": "Cloudy",
+        "B": "Hazy",
+        "C": "Rainy",
+        "D": "Sunny",
+        "E": "Windy"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 44,
+      "question": "The reaction between oil and caustic potash during soap production is called",
+      "options": {
+        "A": "Condensation",
+        "B": "Purification",
+        "C": "Saponification",
+        "D": "Separation",
+        "E": "Solidification"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 45,
+      "question": "The force that pulls an object from a height to the ground is",
+      "options": {
+        "A": "Electrical",
+        "B": "Frictional",
+        "C": "Gravitational",
+        "D": "Magnetic",
+        "E": "Tension"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 46,
+      "question": "Which of the following is a short distance race?",
+      "options": {
+        "A": "400 metres",
+        "B": "1,500 metres",
+        "C": "3,000 metres",
+        "D": "5,000 metres",
+        "E": "10,000 metres"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 47,
+      "question": "Which of the following is a rhythmic movement?",
+      "options": {
+        "A": "Crawling",
+        "B": "Lifting",
+        "C": "Marching",
+        "D": "Pulling",
+        "E": "Pushing"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 48,
+      "question": "Forward roll is an activity performed in",
+      "options": {
+        "A": "Aquatics",
+        "B": "Athletics",
+        "C": "Gymnastics",
+        "D": "Soccer",
+        "E": "Tennis"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 49,
+      "question": "Strength is commonly measured by pull-ups while balance is measured by",
+      "options": {
+        "A": "Beam walk",
+        "B": "Minute run",
+        "C": "Press-up",
+        "D": "Sit-up",
+        "E": "Toe touch"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 50,
+      "question": "How many players make a team in a game of football?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "13",
+        "D": "20",
+        "E": "22"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 51,
+      "question": "Latex is obtained from the _____ of a rubber tree.",
+      "options": {
+        "A": "Bark",
+        "B": "Branch",
+        "C": "Flower",
+        "D": "Leaf",
+        "E": "Root"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 52,
+      "question": "The diagram below represents which tool? (diagram not provided; reconstructed answer)",
+      "options": {
+        "A": "Crowbar",
+        "B": "Pliers",
+        "C": "Scissors",
+        "D": "Screwdriver",
+        "E": "Tweezers"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 53,
+      "question": "Which of these is an example of a third-class lever?",
+      "options": {
+        "A": "Crowbar",
+        "B": "Hammer",
+        "C": "Pliers",
+        "D": "Seesaw",
+        "E": "Shovel"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 54,
+      "question": "Products of underdeveloped technology include the following EXCEPT:",
+      "options": {
+        "A": "Axe",
+        "B": "Hook",
+        "C": "Cutlass",
+        "D": "Hoe",
+        "E": "Blower"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 55,
+      "question": "Which of the following is the fastest means of modern transportation?",
+      "options": {
+        "A": "Aeroplane",
+        "B": "Car",
+        "C": "Motorbike",
+        "D": "Ship",
+        "E": "Train"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 56,
+      "question": "Google is an example of a/an",
+      "options": {
+        "A": "Antivirus",
+        "B": "Internet browser",
+        "C": "Operating system",
+        "D": "Search engine",
+        "E": "Virus"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 57,
+      "question": "The acronym IT stands for",
+      "options": {
+        "A": "Information Technology",
+        "B": "Information Terminology",
+        "C": "Information Transformation",
+        "D": "Internet Technology",
+        "E": "Internet Terminology"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 58,
+      "question": "The process of starting up a computer is called",
+      "options": {
+        "A": "Booting",
+        "B": "Computing",
+        "C": "Hibernating",
+        "D": "Loading",
+        "E": "Operating"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 59,
+      "question": "Which of the following is NOT a computer hardware?",
+      "options": {
+        "A": "Cursor",
+        "B": "Keyboard",
+        "C": "Monitor",
+        "D": "Motherboard",
+        "E": "Mouse"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 60,
+      "question": "Which key combination is commonly used to initiate a warm reboot?",
+      "options": {
+        "A": "Alt + Esc + Enter",
+        "B": "Ctrl + Alt + Del",
+        "C": "Enter + Ctrl + Alt",
+        "D": "Home + Enter + Alt",
+        "E": "Tab + Home + Backspace"
+      },
+      "correct": "B"
+    }
+  ]
+}

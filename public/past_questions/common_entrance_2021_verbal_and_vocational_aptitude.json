@@ -1,0 +1,246 @@
+{
+  "subject": "National Values and Security Education",
+  "year": 2024,
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Cultural diversity means ______ in beliefs.",
+      "options": {
+        "A": "distractions",
+        "B": "differences",
+        "C": "similarities",
+        "D": "stability",
+        "E": "unity"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "question": "The annual fishing festival in Northern Nigeria holds in ______.",
+      "options": {
+        "A": "Argungu",
+        "B": "Birnin Kebbi",
+        "C": "Kaduna",
+        "D": "Kano",
+        "E": "Sokoto"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "A sudden event that happens unexpectedly causing injury and damage is a/an ______.",
+      "options": {
+        "A": "accident",
+        "B": "emergency",
+        "C": "hardship",
+        "D": "misfortune",
+        "E": "shock"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "The injury of the skin caused by boiled water is called ______.",
+      "options": {
+        "A": "burn",
+        "B": "bite",
+        "C": "bruise",
+        "D": "cut",
+        "E": "scald"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 5,
+      "question": "The total way of life of a group of people is ______.",
+      "options": {
+        "A": "association",
+        "B": "culture",
+        "C": "norm",
+        "D": "socialization",
+        "E": "values"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "question": "An example of loyal service to the nation is ______.",
+      "options": {
+        "A": "dependence on government",
+        "B": "disregard to authorities",
+        "C": "disregard to national symbols",
+        "D": "evading taxes",
+        "E": "paying taxes promptly"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 7,
+      "question": "In Nigeria, ethnic crises can be reduced through ______.",
+      "options": {
+        "A": "inequality",
+        "B": "nepotism",
+        "C": "sectionalism",
+        "D": "tolerance",
+        "E": "tribalism"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a traditional symbol?",
+      "options": {
+        "A": "Coat of arm",
+        "B": "Constitution",
+        "C": "Currency",
+        "D": "Flag",
+        "E": "Tribal mark"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 9,
+      "question": "The aspect of society that deals with faith and belief is ______.",
+      "options": {
+        "A": "culture",
+        "B": "economy",
+        "C": "politics",
+        "D": "religion",
+        "E": "socialization"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is considered healthy for consumption?",
+      "options": {
+        "A": "Expired food",
+        "B": "Illicit drug",
+        "C": "Infested food",
+        "D": "Natural fruit",
+        "E": "Rotten food"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "For a nation to be great, ______ must be discouraged.",
+      "options": {
+        "A": "accountability",
+        "B": "corruption",
+        "C": "hard work",
+        "D": "honesty",
+        "E": "tolerance"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 12,
+      "question": "Civic education helps pupils to ______.",
+      "options": {
+        "A": "acquire wealth",
+        "B": "become bad leaders",
+        "C": "become patriotic citizens",
+        "D": "disobey rules and regulations",
+        "E": "embezzle government funds"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is considered as a positive value?",
+      "options": {
+        "A": "Disobedience",
+        "B": "Fighting",
+        "C": "Honesty",
+        "D": "Kidnapping",
+        "E": "Killing"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 14,
+      "question": "The following are characteristics of a nation except common ______.",
+      "options": {
+        "A": "currency",
+        "B": "economy",
+        "C": "history",
+        "D": "religion",
+        "E": "territory"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 15,
+      "question": "Which of the following can lead to insecurity in our homes?",
+      "options": {
+        "A": "Closing our windows",
+        "B": "Keeping our keys safe",
+        "C": "Leaving our doors open",
+        "D": "Turning on the lights",
+        "E": "Using guard dogs"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is not an example of a crime prevention measure?",
+      "options": {
+        "A": "Barking dogs",
+        "B": "Burglary proofs",
+        "C": "Security cameras",
+        "D": "Streetlights",
+        "E": "Unprotected windows"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 17,
+      "question": "Reporting any suspicious person to law enforcement agents is a sign of ______ security.",
+      "options": {
+        "A": "consciousness",
+        "B": "request",
+        "C": "risk",
+        "D": "sabotage",
+        "E": "threat"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "Taking drugs without a doctor's prescription is drug ______.",
+      "options": {
+        "A": "abuse",
+        "B": "addiction",
+        "C": "pushing",
+        "D": "production",
+        "E": "trafficking"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 19,
+      "question": "A citizen of Nigeria that resides in another country is called a/an ______.",
+      "options": {
+        "A": "ambassador",
+        "B": "businessman",
+        "C": "diplomat",
+        "D": "foreigner",
+        "E": "high commissioner"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 20,
+      "question": "Which of the following sources of water is man-made?",
+      "options": {
+        "A": "Ocean",
+        "B": "Rain",
+        "C": "River",
+        "D": "Stream",
+        "E": "Well"
+      },
+      "correct": "E"
+    }
+  ]
+}
