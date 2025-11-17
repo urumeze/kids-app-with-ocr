@@ -1,0 +1,137 @@
+{
+  "subject": "English Comprehension – Passage 1",
+  "year": 2022,
+  "quiz": [
+    {
+      "id": 1,
+      
+      
+      "question": "A good night sleep is very important for your health. Your brain and your body use that time to do all kinds of things that they cannot do when you are awake. Many experts say that children need about ten hours of sleep per night. Sometimes it is not easy to fall asleep quickly; you may have a lot of energy or be excited or worried about something. You can make it easier to sleep by: keeping a steady bedtime routine, doing calming activities before bed, limiting caffeinated drinks, turning off the TV, avoiding scary shows near bedtime, exercising during the day (but not right before bed), and using your bed only for sleep. If you follow these tips, it will be easier for you to fall asleep and stay asleep."
+    },
+    {
+      "id": 2,
+      "question": "Why is a good night sleep important for children's health?",
+      "options": {
+        "A": "It helps children gain a lot of energy.",
+        "B": "It is a body-building mechanism.",
+        "C": "It is a period for the brain and body to function effectively.",
+        "D": "It keeps the body in a proper routine.",
+        "E": "It strengthens the immune system."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "The main aim of the passage is to",
+      "options": {
+        "A": "Analyse",
+        "B": "Criticize",
+        "C": "Educate",
+        "D": "Entertain",
+        "E": "Persuade"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 4,
+      "question": "According to the passage, the author discourages having a TV in the bedroom in order to",
+      "options": {
+        "A": "Allow children use their beds just for sleeping",
+        "B": "Calm down before bedtime",
+        "C": "Create time for children to study",
+        "D": "Prevent children from sleeping less",
+        "E": "Stop children from watching scary shows"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 5,
+      "question": "According to the writer, caffeinated drinks and foods can",
+      "options": {
+        "A": "Damage the brain",
+        "B": "Keep you awake",
+        "C": "Keep you healthy",
+        "D": "Make you sick",
+        "E": "Make you sleepy"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is NOT true according to the passage?",
+      "options": {
+        "A": "Daytime exercise helps one sleep at night",
+        "B": "Exercising before bed helps one sleep",
+        "C": "Reading is a calming activity",
+        "D": "You should regularize your bedtime",
+        "E": "Turn off TV at bedtime"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 7,
+      
+      "question": "Poor Kim lost his left hand in a terrible accident. His parents could not console him. To cheer him up, his father made him join a judo school. As the boy always wanted to learn judo, his father thought that this would make him happy.\nEveryone wondered how a boy with only one hand could learn judo. However, the master happily enrolled him. He trained in judo for about 8 months and practiced nothing but a single stroke. He trained for all 8 months in mastering a single stroke. The boy was surprised and sometimes annoyed that his master taught him only one stroke; yet he said nothing.\nThe boy mastered the stroke and grew in it as nobody else could excel in doing that particular stroke. The boy was picked by the master to compete at the national level judo championship. Everyone made fun of Kim and the master. They wondered how someone with only one hand could win a national championship.\nTo everybody's surprise, Kim easily defeated his six opponents with his single stroke. He gradually moved to the semi-finals and eventually made it to the finals. When the final match began, the opponent was so strong that Kim could not counter-attack him. The referee decided to halt the match, as the opponent could harm Kim severely. The referee announced a break and discussed with Kim's master to stop the match and declare the opponent the winner.\nEven Kim agreed that the match should stop and was happy that he had advanced so far in the championship. However, his master refused and encouraged him to continue. Eventually, Kim won the contest and was declared the champion."
+    },
+    {
+      "id": 8,
+      "question": "Kim, according to the passage",
+      "options": {
+        "A": "did not quit the competition",
+        "B": "did not receive help from his parents",
+        "C": "easily won all the matches",
+        "D": "had the sympathy of his master",
+        "E": "lost everything in a terrible accident"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "question": "People made fun of Kim because",
+      "options": {
+        "A": "he had an accident",
+        "B": "he mastered only one stroke",
+        "C": "he was not competent",
+        "D": "he was selected to compete in the championship",
+        "E": "his last opponent was stronger"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "question": "Kim's father cheered him up by",
+      "options": {
+        "A": "appealing to the referee to stop the match",
+        "B": "buying him a judo jacket",
+        "C": "presenting him for a judo championship",
+        "D": "registering him in a judo school",
+        "E": "teaching him an important lesson"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "According to the passage, Kim was annoyed with his master because he",
+      "options": {
+        "A": "did not allow him to quit",
+        "B": "encouraged him to train harder",
+        "C": "forced him to participate",
+        "D": "refused to enroll him",
+        "E": "taught him only a single stroke"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 12,
+      "question": "The most important lesson from the passage is",
+      "options": {
+        "A": "bravery",
+        "B": "faithfulness",
+        "C": "loyalty",
+        "D": "obedience",
+        "E": "perseverance"
+      },
+      "correct": "E"
+    }
+  ]
+}

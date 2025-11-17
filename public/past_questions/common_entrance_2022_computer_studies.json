@@ -1,0 +1,66 @@
+{
+  "subject": "Computer Studies",
+  "year": 2022,
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Google is an example of a/an",
+      "options": {
+        "A": "Antivirus",
+        "B": "Internet browser",
+        "C": "Operating system",
+        "D": "Search engine",
+        "E": "Virus"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 2,
+      "question": "The acronym IT stands for",
+      "options": {
+        "A": "Information Technology",
+        "B": "Information Terminology",
+        "C": "Information Transformation",
+        "D": "Internet Technology",
+        "E": "Internet Terminology"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "The process of starting up a computer is called",
+      "options": {
+        "A": "Booting",
+        "B": "Computing",
+        "C": "Hibernating",
+        "D": "Loading",
+        "E": "Operating"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is NOT a computer hardware?",
+      "options": {
+        "A": "Cursor",
+        "B": "Keyboard",
+        "C": "Monitor",
+        "D": "Motherboard",
+        "E": "Mouse"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "Which key combination is commonly used to initiate a warm reboot?",
+      "options": {
+        "A": "Alt + Esc + Enter",
+        "B": "Ctrl + Alt + Del",
+        "C": "Enter + Ctrl + Alt",
+        "D": "Home + Enter + Alt",
+        "E": "Tab + Home + Backspace"
+      },
+      "correct": "B"
+    }
+  ]
+}
