@@ -1,18 +1,18 @@
 {
-  "subject": "ACCA F3 Financial Accounting – Section B (MTQs)",
+  "subject": "ACCA F3 Financial Accounting Section B (MTQs)",
   "year": 2023,
   "quiz": [
     {
-      "question": "MTQ 1: Inventory Valuation under IAS 2",
+      "question": "MTQ 1: Inventory Valuation (IAS 2)",
       "type": "mtq",
       "tasks": [
         {
-          "task": "A company purchased 500 units at £20 each and later purchased 300 units at £25 each. It sold 600 units. Calculate the closing inventory using FIFO.",
+          "task": "Opening inventory = £12,000. Purchases = £40,000. Closing inventory = £15,000. Calculate cost of sales.",
           "input_type": "number",
-          "answer": 5000
+          "answer": 37000
         },
         {
-          "task": "State the basis for inventory valuation under IAS 2.",
+          "task": "State the valuation rule required by IAS 2.",
           "input_type": "written",
           "expected_keywords": ["lower of cost", "net realisable value"]
         }
@@ -23,46 +23,46 @@
       "type": "mtq",
       "tasks": [
         {
-          "task": "Cost of machinery is £80,000 with a residual value of £8,000 and useful life of 8 years. Calculate annual depreciation expense.",
+          "task": "A machine costs £50,000, residual value £5,000, useful life 5 years. Calculate the annual depreciation expense.",
           "input_type": "number",
           "answer": 9000
         },
         {
-          "task": "Calculate carrying amount after 3 years.",
+          "task": "Calculate carrying amount after 2 years.",
           "input_type": "number",
-          "answer": 53000
+          "answer": 32000
         }
       ]
     },
     {
-      "question": "MTQ 3: Accruals and Prepayments",
+      "question": "MTQ 3: Accruals & Prepayments",
       "type": "mtq",
       "tasks": [
         {
-          "task": "An electricity bill of £2,400 covers 12 months to 31 March 2024. The business year ends 31 December 2023. Calculate the expense for 2023.",
+          "task": "Rent is £3,600 per year, paid up to 31 January 2024. Year-end is 31 December 2023. Calculate rent expense for 2023.",
           "input_type": "number",
-          "answer": 1800
+          "answer": 3600
         },
         {
-          "task": "Identify whether this is an accrual or prepayment.",
+          "task": "Identify whether the adjustment at year end is an accrual or a prepayment.",
           "input_type": "written",
           "expected_keywords": ["prepayment"]
         }
       ]
     },
     {
-      "question": "MTQ 4: Trade Receivables & Irrecoverable Debts",
+      "question": "MTQ 4: Irrecoverable Debts & Allowances",
       "type": "mtq",
       "tasks": [
         {
-          "task": "Trade receivables at year end = £45,000. Irrecoverable debts written off = £3,000. Allowance for receivables required = 5%. Calculate allowance amount.",
+          "task": "Trade receivables = £60,000. Irrecoverable debts = £4,000. Required allowance = 3%. Calculate closing allowance.",
           "input_type": "number",
-          "answer": 2100
+          "answer": 1680
         },
         {
-          "task": "Calculate receivables balance to be shown in the Statement of Financial Position.",
+          "task": "Calculate receivables figure to appear in the SOFP.",
           "input_type": "number",
-          "answer": 39800
+          "answer": 54320
         }
       ]
     },
@@ -71,44 +71,44 @@
       "type": "mtq",
       "tasks": [
         {
-          "task": "A contract price is £50,000. Performance obligation satisfied 70%. Calculate revenue to recognise.",
+          "task": "Contract price = £80,000. Performance obligation completed 60%. Calculate revenue to recognise.",
           "input_type": "number",
-          "answer": 35000
+          "answer": 48000
         },
         {
-          "task": "Explain briefly what it means to 'transfer control' under IFRS 15.",
+          "task": "Define 'performance obligation' under IFRS 15.",
           "input_type": "written",
-          "expected_keywords": ["control", "customer", "ability to use", "obtain benefits"]
+          "expected_keywords": ["promise", "transfer", "goods", "services", "customer"]
         }
       ]
     },
     {
-      "question": "MTQ 6: Trial Balance & Error Correction",
+      "question": "MTQ 6: Trial Balance & Errors",
       "type": "mtq",
       "tasks": [
         {
-          "task": "A payment for motor expenses £1,200 was posted to the motor vehicles asset account. What is the correcting journal entry amount?",
+          "task": "Repairs £900 recorded as motor vehicles (asset). What is the correcting journal entry amount?",
           "input_type": "number",
-          "answer": 1200
+          "answer": 900
         },
         {
-          "task": "State whether this is a one-sided or two-sided error.",
+          "task": "State the type of error involved.",
           "input_type": "written",
-          "expected_keywords": ["two sided"]
+          "expected_keywords": ["error of principle"]
         }
       ]
     },
     {
-      "question": "MTQ 7: Statement of Cash Flows – Operating Activities",
+      "question": "MTQ 7: Cash Flow – Operating Activities",
       "type": "mtq",
       "tasks": [
         {
-          "task": "Profit before tax = £30,000. Depreciation = £4,000. Increase in inventory = £2,500. Increase in payables = £1,500. Calculate cash from operating activities.",
+          "task": "Operating profit = £25,000. Depreciation = £6,000. Increase in receivables = £2,000. Decrease in payables = £1,000. Calculate cash from operating activities.",
           "input_type": "number",
-          "answer": 33000
+          "answer": 28000
         },
         {
-          "task": "State one non-cash expense adjusted in operating cash flows.",
+          "task": "State one non-cash item added back in operating cash flows.",
           "input_type": "written",
           "expected_keywords": ["depreciation", "amortisation", "impairment"]
         }
@@ -119,14 +119,14 @@
       "type": "mtq",
       "tasks": [
         {
-          "task": "Cash book balance = £4,800 (debit). Bank statement shows £4,200 (credit). Outstanding cheques = £1,300. Bank charges £100 not recorded. Calculate corrected cash book balance.",
+          "task": "Cash book = £3,900 (debit). Bank statement = £3,200 (credit). Unpresented cheques = £1,100. Bank charges £50 not recorded. Calculate adjusted cash book balance.",
           "input_type": "number",
-          "answer": 4700
+          "answer": 3850
         },
         {
-          "task": "Which item would NOT appear in the bank reconciliation statement?",
+          "task": "Which item does NOT appear on bank reconciliation statement?",
           "input_type": "written",
-          "expected_keywords": ["bank charges", "cash book error"]
+          "expected_keywords": ["bank charges"]
         }
       ]
     },
@@ -135,30 +135,110 @@
       "type": "mtq",
       "tasks": [
         {
-          "task": "Current assets = £60,000. Inventory = £20,000. Current liabilities = £30,000. Calculate quick ratio.",
+          "task": "Current assets = £90,000. Inventory = £30,000. Current liabilities = £40,000. Calculate quick ratio.",
           "input_type": "number",
-          "answer": 1.33
+          "answer": 1.5
         },
         {
-          "task": "Explain what a liquidity ratio measures.",
+          "task": "Define what efficiency ratios measure.",
           "input_type": "written",
-          "expected_keywords": ["ability to pay", "short term", "obligations", "liabilities"]
+          "expected_keywords": ["how well", "assets", "used", "generate revenue"]
         }
       ]
     },
     {
-      "question": "MTQ 10: Statement of Profit or Loss Extract",
+      "question": "MTQ 10: Profit or Loss Extract",
       "type": "mtq",
       "tasks": [
         {
-          "task": "Revenue = £120,000. Cost of sales = £78,000. Distribution expenses = £8,000. Calculate gross profit.",
+          "task": "Revenue = £150,000. Cost of sales = £90,000. Distribution = £12,000. Calculate gross profit.",
           "input_type": "number",
-          "answer": 42000
+          "answer": 60000
         },
         {
           "task": "Calculate profit before tax.",
           "input_type": "number",
-          "answer": 34000
+          "answer": 48000
+        }
+      ]
+    },
+    {
+      "question": "MTQ 11: Payables Ledger Control Account",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Opening balance = £22,000. Credit purchases = £40,000. Payments = £35,000. Discounts received = £2,000. Calculate closing balance.",
+          "input_type": "number",
+          "answer": 25000
+        },
+        {
+          "task": "State one reason the control account may not agree with the list of balances.",
+          "input_type": "written",
+          "expected_keywords": ["error", "omission", "posting", "miscast"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 12: Receivables Ledger Control Account",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Opening balance = £30,000. Credit sales = £55,000. Receipts = £60,000. Irrecoverable debts = £3,000. Calculate closing balance.",
+          "input_type": "number",
+          "answer": 22000
+        },
+        {
+          "task": "State one benefit of maintaining control accounts.",
+          "input_type": "written",
+          "expected_keywords": ["internal check", "error detection", "reconciliation"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 13: Non-Current Assets – Revaluation",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Carrying amount = £80,000. Revalued amount = £95,000. Calculate revaluation surplus.",
+          "input_type": "number",
+          "answer": 15000
+        },
+        {
+          "task": "Where is the revaluation surplus recorded?",
+          "input_type": "written",
+          "expected_keywords": ["other comprehensive income", "equity", "revaluation reserve"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 14: Suspense Account",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "A debit entry of £1,200 was omitted. What is the suspense account difference?",
+          "input_type": "number",
+          "answer": 1200
+        },
+        {
+          "task": "State one type of error that does NOT affect the trial balance.",
+          "input_type": "written",
+          "expected_keywords": ["error of omission", "compensating", "principle"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 15: Cash Discounts",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Invoice amount = £10,000. Discount allowed = 5%. Customer pays within period. Calculate cash received.",
+          "input_type": "number",
+          "answer": 9500
+        },
+        {
+          "task": "State whether discounts allowed are an expense or income.",
+          "input_type": "written",
+          "expected_keywords": ["expense"]
         }
       ]
     }

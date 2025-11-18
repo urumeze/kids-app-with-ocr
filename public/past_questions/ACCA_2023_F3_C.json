@@ -1,124 +1,186 @@
 {
-  "subject": "ACCA F3 Financial Accounting – Section C (Theory)",
+  "subject": "ACCA F3 Financial Accounting – Section C Case Study",
   "year": 2023,
-  "questions": [
+  
+  "quiz": [
     {
-      "question": "Explain the purpose of a trial balance and state two reasons why it may not balance.",
-      "type": "written",
-      "expected_keywords": [
-        "check arithmetic accuracy",
-        "double entry",
-        "error of omission",
-        "error of commission",
-        "error of original entry",
-        "compensating error"
+      "question": "Finora Supplies Ltd prepares its financial statements to 31 December each year. Several year-end adjustments are still outstanding.\n\n1. Inventory: Year-end inventory is $84,600 at cost. Included is a batch that cost $7,000 but can be sold for only $5,000 with selling expenses of $600.\n\n2. Depreciation: Equipment purchased on 1 July 2023 for $48,000 is depreciated at 20% per annum straight-line, with no residual value.\n\n3. Receivables: A customer owing $4,800 has gone bankrupt and must be written off. The allowance for receivables is maintained at 5% of the remaining receivables after write-off.\n\n4. Prepayment – Insurance: $12,000 was paid on 1 October 2023 for a 12-month insurance policy.\n\n5. Accrued Loan Interest: A $100,000 bank loan carries interest at 6% per annum. Interest for the last 3 months is not yet recorded.\n\n6. Error in Sales: Sales of $9,500 were recorded twice.",
+
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "1",
+          "input_type": "number",
+          "answer": 1
+        },
+        {
+          "task": "1.",
+          "input_type": "written",
+          "expected_keywords": ["lower of cost", "net realisable value"]
+        }
+      ]
+    },
+
+
+
+    {
+      "question": "MTQ 1 – Inventory Valuation Adjustment",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Calculate the net realisable value (NRV) of the impaired inventory batch.",
+          "input_type": "number",
+          "answer": 4400
+        },
+        {
+          "task": "State the rule IAS 2 requires for valuing inventory.",
+          "input_type": "written",
+          "expected_keywords": ["lower of cost", "net realisable value"]
+        }
       ]
     },
     {
-      "question": "Describe the difference between capital expenditure and revenue expenditure, with one example for each.",
-      "type": "written",
-      "expected_keywords": [
-        "non-current asset",
-        "long term",
-        "maintenance",
-        "day to day",
-        "improvement",
-        "repairs",
-        "purchase of machinery"
+      "question": "MTQ 2 – Depreciation of Equipment",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Calculate depreciation expense for the equipment for the 6 months to 31 December 2023.",
+          "input_type": "number",
+          "answer": 4800
+        },
+        {
+          "task": "State the depreciation method used.",
+          "input_type": "written",
+          "expected_keywords": ["straight line", "slm"]
+        }
       ]
     },
     {
-      "question": "Define depreciation and explain why businesses must record it in the financial statements.",
-      "type": "written",
-      "expected_keywords": [
-        "allocation",
-        "useful life",
-        "wear and tear",
-        "matching principle",
-        "expense",
-        "non-current asset"
+      "question": "MTQ 3 – Irrecoverable Debt",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "What amount should be written off as an irrecoverable debt?",
+          "input_type": "number",
+          "answer": 4800
+        },
+        {
+          "task": "State the effect of writing off a bad debt on profit.",
+          "input_type": "written",
+          "expected_keywords": ["decrease", "expense", "reduces profit"]
+        }
       ]
     },
     {
-      "question": "Explain the difference between an accrual and a prepayment under the accruals concept.",
-      "type": "written",
-      "expected_keywords": [
-        "expense incurred",
-        "expense paid in advance",
-        "matching",
-        "timing",
-        "financial period"
+      "question": "MTQ 4 – Allowance for Receivables",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "If receivables after writing off the bad debt amount to $60,000, calculate the required allowance at 5%.",
+          "input_type": "number",
+          "answer": 3000
+        },
+        {
+          "task": "Explain why businesses maintain an allowance for receivables.",
+          "input_type": "written",
+          "expected_keywords": ["estimate", "losses", "uncollectible", "prudence", "expected credit"]
+        }
       ]
     },
     {
-      "question": "State the five steps of revenue recognition under IFRS 15.",
-      "type": "written",
-      "expected_keywords": [
-        "contract",
-        "performance obligations",
-        "transaction price",
-        "allocate",
-        "recognise revenue"
+      "question": "MTQ 5 – Prepayment: Insurance",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Calculate the insurance prepaid at 31 December 2023.",
+          "input_type": "number",
+          "answer": 9000
+        },
+        {
+          "task": "State whether a prepayment increases or decreases profit.",
+          "input_type": "written",
+          "expected_keywords": ["increase", "higher profit"]
+        }
       ]
     },
     {
-      "question": "Explain the difference between financial accounting and management accounting.",
-      "type": "written",
-      "expected_keywords": [
-        "external users",
-        "internal users",
-        "historical",
-        "future oriented",
-        "regulation",
-        "IFRS"
+      "question": "MTQ 6 – Accrued Loan Interest",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Calculate the interest accrued for the last 3 months.",
+          "input_type": "number",
+          "answer": 1500
+        },
+        {
+          "task": "State whether an accrual is a liability or an asset.",
+          "input_type": "written",
+          "expected_keywords": ["liability"]
+        }
       ]
     },
     {
-      "question": "What is an intangible asset? Give two examples.",
-      "type": "written",
-      "expected_keywords": [
-        "non-physical",
-        "identifiable",
-        "goodwill",
-        "patents",
-        "trademarks",
-        "licenses"
+      "question": "MTQ 7 – Error Correction: Sales Overstated",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "By how much should revenue be reduced to correct the error?",
+          "input_type": "number",
+          "answer": 9500
+        },
+        {
+          "task": "State the effect of this error on profit before correction.",
+          "input_type": "written",
+          "expected_keywords": ["overstated", "too high"]
+        }
       ]
     },
     {
-      "question": "Explain what is meant by faithful representation in financial reporting.",
-      "type": "written",
-      "expected_keywords": [
-        "complete",
-        "neutral",
-        "free from error",
-        "IFRS",
-        "qualitative characteristics"
+      "question": "MTQ 8 – Statement of Profit or Loss Impact",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Calculate the total increase or decrease in profit from: bad debt (4,800), NRV adjustment (2,600), depreciation (4,800), accrual (1,500). Use negative if profit decreases.",
+          "input_type": "number",
+          "answer": -13700
+        },
+        {
+          "task": "Which accounting principle requires recognising expenses in the period to which they relate?",
+          "input_type": "written",
+          "expected_keywords": ["accruals", "matching"]
+        }
       ]
     },
     {
-      "question": "List four users of financial statements and explain one type of information each user may need.",
-      "type": "written",
-      "expected_keywords": [
-        "investors",
-        "lenders",
-        "employees",
-        "government",
-        "decision making",
-        "profitability",
-        "liquidity",
-        "solvency"
+      "question": "MTQ 9 – Statement of Financial Position Effects",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Calculate the corrected closing inventory figure.",
+          "input_type": "number",
+          "answer": 82000
+        },
+        {
+          "task": "Name one asset and one liability affected in this case study.",
+          "input_type": "written",
+          "expected_keywords": ["inventory", "receivables", "prepayment", "accrual", "loan interest"]
+        }
       ]
     },
     {
-      "question": "Explain what is meant by the going concern assumption and when it might be inappropriate.",
-      "type": "written",
-      "expected_keywords": [
-        "continue operating",
-        "foreseeable future",
-        "liquidation",
-        "financial difficulties",
-        "insolvency"
+      "question": "MTQ 10 – Conceptual Framework: Faithful Representation",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "How many adjustments in the scenario directly affect the Statement of Profit or Loss?",
+          "input_type": "number",
+          "answer": 5
+        },
+        {
+          "task": "What quality of financial information requires correcting errors and recognising adjustments such as NRV and accruals?",
+          "input_type": "written",
+          "expected_keywords": ["faithful representation", "reliable", "complete", "accurate"]
+        }
       ]
     }
   ]

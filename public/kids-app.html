@@ -755,12 +755,12 @@
       </li>
       <!-- 2022 -->
       <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2023">2023 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
           <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li>
           <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li>
           <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn">F3 Section B</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
+          <li><button onclick="loadMTQQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
           <li><button onclick="loadPastQuestions(2023, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
           <li><button onclick="loadPastQuestions(2023, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
          
@@ -897,10 +897,7 @@
       <div id="results" class="mt-6"></div>
 
       <button id="submitQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Submit Quiz</button>
-      <button id="scoreBtn"
-  class="bg-green-600 text-white px-6 py-2 rounded-full hidden">
-  Score
-</button>
+      <button id="scoreBtn">Score Quiz</button>
 
       <button id="closeQuiz" class="ml-2 bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400">Close</button>
 
@@ -1351,50 +1348,6 @@ function indexToLetter(idx) {
   return ['A','B','C','D'][idx] || null;
 }
 
-
-async function loadPastQuestions(year, subject, category = 'jamb') {
-  const loader = document.getElementById('loading');
-  if (loader) loader.style.display = 'block';
-
-  try {
-    console.log(`Loading ${category.toUpperCase()} ${subject.toUpperCase()} past questions for ${year}...`);
-
-    const response = await fetch(`past_questions/${category}_${year}_${subject}.json`);
-    if (!response.ok) throw new Error("Quiz not found");
-
-    const data = await response.json();
-    if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
-
-    const pastQuizData = data.quiz.map((q) => {
-      let optionsArr = Array.isArray(q.options) 
-        ? q.options.slice(0,4)
-        : ['A','B','C','D'].map(k => q.options?.[k]).filter(v => v !== undefined);
-
-      let correctVal = q.correct ?? q.answer ?? q.correctIndex ?? null;
-      let correctIndex = typeof correctVal === 'string' ? letterToIndex(correctVal) : correctVal ?? 0;
-
-      return {
-        question: q.question || "Untitled question",
-        options: optionsArr,
-        correct: correctIndex
-      };
-    });
-
-    appState.quizData = pastQuizData;
-    appState.userAnswers = [];
-    displayQuiz();
-    showStep(5);
-    document.getElementById('menuPanel')?.classList.add('-translate-x-full');
-
-  } catch (err) {
-    console.error("Failed to load past questions:", err);
-    alert("Could not load past questions. See console for details.");
-  } finally {
-    if (loader) loader.style.display = 'none';
-  }
-}
-
-window.loadPastQuestions = loadPastQuestions;
 // Load MTQ quiz from JSON
 async function loadMTQQuestions(year, subject, category = 'ACCA') {
     const loader = document.getElementById('loading');
@@ -1411,6 +1364,7 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
         if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
 
         const quizData = data.quiz; // MTQ structure expected: tasks array per question
+        document.getElementById('menuPanel')?.classList.add('-translate-x-full');
 
         // Clear previous quiz and results
         const quizContainer = document.getElementById('quizContainer');
@@ -1455,6 +1409,8 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
             });
 
             quizContainer.appendChild(questionDiv);
+            showStep(5);
+
         });
 
         // Wire the submit button to calculateMTQScore
@@ -1496,6 +1452,52 @@ function calculateMTQScore(quizData) {
     resultsDiv.innerHTML += `<h3>Total Score: ${total} / ${possible}</h3>`;
 }
 window.loadMTQQuestions = loadMTQQuestions;
+
+
+
+async function loadPastQuestions(year, subject, category = 'jamb') {
+  const loader = document.getElementById('loading');
+  if (loader) loader.style.display = 'block';
+
+  try {
+    console.log(`Loading ${category.toUpperCase()} ${subject.toUpperCase()} past questions for ${year}...`);
+
+    const response = await fetch(`past_questions/${category}_${year}_${subject}.json`);
+    if (!response.ok) throw new Error("Quiz not found");
+
+    const data = await response.json();
+    if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
+
+    const pastQuizData = data.quiz.map((q) => {
+      let optionsArr = Array.isArray(q.options) 
+        ? q.options.slice(0,4)
+        : ['A','B','C','D'].map(k => q.options?.[k]).filter(v => v !== undefined);
+
+      let correctVal = q.correct ?? q.answer ?? q.correctIndex ?? null;
+      let correctIndex = typeof correctVal === 'string' ? letterToIndex(correctVal) : correctVal ?? 0;
+
+      return {
+        question: q.question || "Untitled question",
+        options: optionsArr,
+        correct: correctIndex
+      };
+    });
+
+    appState.quizData = pastQuizData;
+    appState.userAnswers = [];
+    displayQuiz();
+    showStep(5);
+    document.getElementById('menuPanel')?.classList.add('-translate-x-full');
+
+  } catch (err) {
+    console.error("Failed to load past questions:", err);
+    alert("Could not load past questions. See console for details.");
+  } finally {
+    if (loader) loader.style.display = 'none';
+  }
+}
+
+window.loadPastQuestions = loadPastQuestions;
 
 
 // Attach click handlers

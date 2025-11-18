@@ -1,0 +1,171 @@
+{
+  "subject": "ACCA F1 Business and Technology",
+  "year": 2025,
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Which of the following is a primary activity in Porter’s value chain?",
+      "options": ["Firm infrastructure", "Inbound logistics", "Human resource management", "Technology development"],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question": "Which leadership style involves high task focus and low people focus?",
+      "options": ["Democratic", "Autocratic", "Laissez-faire", "Participative"],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "Which organisational structure is based on project teams that report to more than one manager?",
+      "options": ["Functional", "Matrix", "Divisional", "Flat"],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "Which of the following best describes a stakeholder?",
+      "options": [
+        "A person with shares in the company",
+        "Anyone affected by the organisation’s actions",
+        "Only employees of the company",
+        "Only management and owners"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "Which theory states that employees are motivated by unmet needs arranged in a hierarchy?",
+      "options": ["Herzberg", "Taylor", "Maslow", "Vroom"],
+      "answer": 2
+    },
+    {
+      "id": 6,
+      "question": "A tall organisational structure typically has:",
+      "options": ["Few levels and wide spans of control", "Many levels and narrow spans of control", "Matrix reporting lines", "Fully decentralised decision making"],
+      "answer": 1
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is NOT part of corporate governance?",
+      "options": ["Board accountability", "Internal controls", "Shareholder protection", "Advertising strategy"],
+      "answer": 3
+    },
+    {
+      "id": 8,
+      "question": "What is the main purpose of a mission statement?",
+      "options": ["Describe long-term goals", "Define the purpose and reason for existence", "Provide financial forecasts", "Outline operational activities"],
+      "answer": 1
+    },
+    {
+      "id": 9,
+      "question": "Which environment does PESTEL analysis focus on?",
+      "options": ["Internal", "External macro", "Industry-level", "Operational"],
+      "answer": 1
+    },
+    {
+      "id": 10,
+      "question": "Which conflict-handling style involves both high assertiveness and high cooperation?",
+      "options": ["Competing", "Accommodating", "Avoiding", "Collaborating"],
+      "answer": 3
+    },
+    {
+      "id": 11,
+      "question": "Span of control refers to:",
+      "options": [
+        "Number of departments",
+        "Number of subordinates reporting to a manager",
+        "The authority of the board",
+        "The level of outsourcing"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a benefit of decentralisation?",
+      "options": ["Stronger central decision-making", "Increased management motivation", "Higher control at the top level", "Reduced customer focus"],
+      "answer": 1
+    },
+    {
+      "id": 13,
+      "question": "A KPI is used to:",
+      "options": ["Control budgets", "Measure performance", "Create strategy", "Recruit employees"],
+      "answer": 1
+    },
+    {
+      "id": 14,
+      "question": "Which theory suggests that people are motivated by hygiene and motivator factors?",
+      "options": ["Maslow", "McGregor", "Herzberg", "Taylor"],
+      "answer": 2
+    },
+    {
+      "id": 15,
+      "question": "Which of the following is a feature of transactional leadership?",
+      "options": ["Inspires vision", "Focuses on rewards and penalties", "Encourages innovation", "Promotes personal transformation"],
+      "answer": 1
+    },
+    {
+      "id": 16,
+      "question": "What does the term 'outsourcing' mean?",
+      "options": [
+        "Hiring more employees",
+        "Moving operations abroad",
+        "Using external providers to perform activities",
+        "Selling a division"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 17,
+      "question": "The board of directors is primarily responsible for:",
+      "options": ["Daily operations", "Strategic direction", "Hiring junior staff", "Clerical approval"],
+      "answer": 1
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is an example of a soft HRM approach?",
+      "options": ["Strict performance control", "People as valuable assets", "Short-term staffing", "Minimal training"],
+      "answer": 1
+    },
+    {
+      "id": 19,
+      "question": "Which organisational culture emphasizes rules, stability, and procedures?",
+      "options": ["Clan", "Adhocracy", "Market", "Hierarchy"],
+      "answer": 3
+    },
+    {
+      "id": 20,
+      "question": "Which communication method provides immediate feedback?",
+      "options": ["Email", "Letter", "Face-to-face", "Report"],
+      "answer": 2
+    },
+    {
+      "id": 21,
+      "question": "Ethical behaviour in business means:",
+      "options": ["Maximising profits only", "Following laws and moral principles", "Avoiding all risks", "Ignoring stakeholders"],
+      "answer": 1
+    },
+    {
+      "id": 22,
+      "question": "Which of the following best describes a disruptive technology?",
+      "options": ["Improves existing products", "Fundamentally changes industry operations", "Has no market impact", "Reduces staff motivation"],
+      "answer": 1
+    },
+    {
+      "id": 23,
+      "question": "A vision statement is mainly about:",
+      "options": ["Short-term tasks", "Employee duties", "Future aspirations", "Operational processes"],
+      "answer": 2
+    },
+    {
+      "id": 24,
+      "question": "Corporate social responsibility (CSR) focuses on:",
+      "options": ["Only shareholder value", "Impacts on society and environment", "Tax optimisation", "Increasing dividends"],
+      "answer": 1
+    },
+    {
+      "id": 25,
+      "question": "Which motivation theory is linked to expectancy, instrumentality, and valence?",
+      "options": ["Taylor", "Vroom", "Herzberg", "Maslow"],
+      "answer": 1
+    }
+  ]
+}
