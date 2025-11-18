@@ -729,66 +729,20 @@
     <div class="p-4">
     
 <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">ACCA▼</button>
-    <ul class="space-y-3">
-      <!-- 2020 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2025">2021 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2021, 'F1', 'ACCA')">F1</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
-         
-        </ul>
-      </li>
-
-      <!-- 2021 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2022 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2022, 'F1', 'ACCA')">F1</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
-         
-        </ul>
-      </li>
+   
       <!-- 2022 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2023">2023 ▼</button>
+     
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li>
+          <li><button onclick="loadMTQQuestions(2023, 'F1', 'ACCA')">F1</button></li>
           <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li>
           <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn">F3 Section B</button></li>
           <li><button onclick="loadMTQQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
+          
          
         </ul>
-      </li>
-      <!-- 2023 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2024 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2024, 'F1', 'ACCA')">F1</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
-         
-        </ul>
-      </li>
-      <!-- 2024 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2025 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2025, 'F1', 'ACCA')">F1</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
-          <li><button onclick="loadPastQuestions(2025, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
-         
-        </ul>
-      </li>
-    </ul>
+     
+     
   </div>
 
 
@@ -1364,7 +1318,7 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
         if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
 
         const quizData = data.quiz; // MTQ structure expected: tasks array per question
-        document.getElementById('menuPanel')?.classList.add('-translate-x-full');
+        
 
         // Clear previous quiz and results
         const quizContainer = document.getElementById('quizContainer');
@@ -1410,12 +1364,14 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
 
             quizContainer.appendChild(questionDiv);
             showStep(5);
-
+            document.getElementById('menuPanel')?.classList.add('-translate-x-full');
+            
         });
 
-        // Wire the submit button to calculateMTQScore
-        const scoreBtn = document.getElementById('scoreBtn');
-        scoreBtn.onclick = () => calculateMTQScore(quizData);
+            // Wire the submit button to calculateMTQScore
+            const scoreBtn = document.getElementById('scoreBtn');
+            scoreBtn.onclick = () => calculateMTQScore(quizData);
+        
 
     } catch (error) {
         console.error("Error loading MTQ quiz:", error);
@@ -1455,33 +1411,33 @@ window.loadMTQQuestions = loadMTQQuestions;
 
 
 
-async function loadPastQuestions(year, subject, category = 'jamb') {
-  const loader = document.getElementById('loading');
-  if (loader) loader.style.display = 'block';
+  async function loadPastQuestions(year, subject, category = 'jamb') {
+    const loader = document.getElementById('loading');
+    if (loader) loader.style.display = 'block';
 
-  try {
-    console.log(`Loading ${category.toUpperCase()} ${subject.toUpperCase()} past questions for ${year}...`);
+    try {
+      console.log(`Loading ${category.toUpperCase()} ${subject.toUpperCase()} past questions for ${year}...`);
 
-    const response = await fetch(`past_questions/${category}_${year}_${subject}.json`);
-    if (!response.ok) throw new Error("Quiz not found");
+      const response = await fetch(`past_questions/${category}_${year}_${subject}.json`);
+      if (!response.ok) throw new Error("Quiz not found");
 
-    const data = await response.json();
-    if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
+      const data = await response.json();
+      if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
 
-    const pastQuizData = data.quiz.map((q) => {
-      let optionsArr = Array.isArray(q.options) 
-        ? q.options.slice(0,4)
-        : ['A','B','C','D'].map(k => q.options?.[k]).filter(v => v !== undefined);
+      const pastQuizData = data.quiz.map((q) => {
+        let optionsArr = Array.isArray(q.options) 
+          ? q.options.slice(0,4)
+          : ['A','B','C','D'].map(k => q.options?.[k]).filter(v => v !== undefined);
 
-      let correctVal = q.correct ?? q.answer ?? q.correctIndex ?? null;
-      let correctIndex = typeof correctVal === 'string' ? letterToIndex(correctVal) : correctVal ?? 0;
+        let correctVal = q.correct ?? q.answer ?? q.correctIndex ?? null;
+        let correctIndex = typeof correctVal === 'string' ? letterToIndex(correctVal) : correctVal ?? 0;
 
-      return {
-        question: q.question || "Untitled question",
-        options: optionsArr,
-        correct: correctIndex
-      };
-    });
+        return {
+          question: q.question || "Untitled question",
+          options: optionsArr,
+          correct: correctIndex
+        };
+      });
 
     appState.quizData = pastQuizData;
     appState.userAnswers = [];
