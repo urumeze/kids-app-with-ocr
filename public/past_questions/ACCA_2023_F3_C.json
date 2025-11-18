@@ -1,0 +1,125 @@
+{
+  "subject": "ACCA F3 Financial Accounting – Section C (Theory)",
+  "year": 2023,
+  "questions": [
+    {
+      "question": "Explain the purpose of a trial balance and state two reasons why it may not balance.",
+      "type": "written",
+      "expected_keywords": [
+        "check arithmetic accuracy",
+        "double entry",
+        "error of omission",
+        "error of commission",
+        "error of original entry",
+        "compensating error"
+      ]
+    },
+    {
+      "question": "Describe the difference between capital expenditure and revenue expenditure, with one example for each.",
+      "type": "written",
+      "expected_keywords": [
+        "non-current asset",
+        "long term",
+        "maintenance",
+        "day to day",
+        "improvement",
+        "repairs",
+        "purchase of machinery"
+      ]
+    },
+    {
+      "question": "Define depreciation and explain why businesses must record it in the financial statements.",
+      "type": "written",
+      "expected_keywords": [
+        "allocation",
+        "useful life",
+        "wear and tear",
+        "matching principle",
+        "expense",
+        "non-current asset"
+      ]
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepayment under the accruals concept.",
+      "type": "written",
+      "expected_keywords": [
+        "expense incurred",
+        "expense paid in advance",
+        "matching",
+        "timing",
+        "financial period"
+      ]
+    },
+    {
+      "question": "State the five steps of revenue recognition under IFRS 15.",
+      "type": "written",
+      "expected_keywords": [
+        "contract",
+        "performance obligations",
+        "transaction price",
+        "allocate",
+        "recognise revenue"
+      ]
+    },
+    {
+      "question": "Explain the difference between financial accounting and management accounting.",
+      "type": "written",
+      "expected_keywords": [
+        "external users",
+        "internal users",
+        "historical",
+        "future oriented",
+        "regulation",
+        "IFRS"
+      ]
+    },
+    {
+      "question": "What is an intangible asset? Give two examples.",
+      "type": "written",
+      "expected_keywords": [
+        "non-physical",
+        "identifiable",
+        "goodwill",
+        "patents",
+        "trademarks",
+        "licenses"
+      ]
+    },
+    {
+      "question": "Explain what is meant by faithful representation in financial reporting.",
+      "type": "written",
+      "expected_keywords": [
+        "complete",
+        "neutral",
+        "free from error",
+        "IFRS",
+        "qualitative characteristics"
+      ]
+    },
+    {
+      "question": "List four users of financial statements and explain one type of information each user may need.",
+      "type": "written",
+      "expected_keywords": [
+        "investors",
+        "lenders",
+        "employees",
+        "government",
+        "decision making",
+        "profitability",
+        "liquidity",
+        "solvency"
+      ]
+    },
+    {
+      "question": "Explain what is meant by the going concern assumption and when it might be inappropriate.",
+      "type": "written",
+      "expected_keywords": [
+        "continue operating",
+        "foreseeable future",
+        "liquidation",
+        "financial difficulties",
+        "insolvency"
+      ]
+    }
+  ]
+}

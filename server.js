@@ -278,6 +278,94 @@ app.post("/api/score", async (req, res) => {
   }
 });
 
+// === 5. ACCA THEORY MARKING ENDPOINT ===
+app.post("/api/mark-acca", async (req, res) => {
+  try {
+    const { question, userAnswer, modelAnswer, maxScore } = req.body;
+    if (!question || !userAnswer || !modelAnswer) {
+      return res.status(400).json({ error: "Missing required fields" });
+    }
+
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.SCORE_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [
+          {
+            role: "system",
+            content: `
+You are an ACCA exam marker. 
+Score the student's answer using the official marking style.
+
+Return ONLY JSON like:
+{
+  "score": number,
+  "max_score": number,
+  "percentage": number,
+  "feedback": "text feedback"
+}
+
+Marking rules:
+- Award marks for correct points, even if order differs.
+- Allow different wording from model answer.
+- Be fair but strict.
+- Deduct marks for missing points, wrong calculations, or conceptual errors.
+- max_score = the number provided by the frontend.
+`
+          },
+          {
+            role: "user",
+            content: `
+QUESTION:
+${question}
+
+MODEL ANSWER:
+${modelAnswer}
+
+STUDENT ANSWER:
+${userAnswer}
+
+max_score = ${maxScore || 20}
+`
+          }
+        ],
+        max_tokens: 800,
+        response_format: { type: "json_object" }
+      })
+    });
+
+    const data = await response.json();
+    let result = {};
+
+    try {
+      result = JSON.parse(data.choices?.[0]?.message?.content || "{}");
+    } catch (e) {
+      console.error("Parsing error:", e);
+    }
+
+    // Safety fallback
+    if (!result.score) {
+      result = {
+        score: 0,
+        max_score: maxScore || 20,
+        percentage: 0,
+        feedback: "Automatic marking failed. Please try again."
+      };
+    }
+
+    res.json(result);
+
+  } catch (err) {
+    console.error("ACCA Marking Error:", err);
+    res.status(500).json({ error: "Marking failed" });
+  }
+});
+
+
 // Fallback frontend
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "kids-app.html"));

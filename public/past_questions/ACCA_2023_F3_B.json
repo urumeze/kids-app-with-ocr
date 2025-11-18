@@ -1,0 +1,166 @@
+{
+  "subject": "ACCA F3 Financial Accounting – Section B (MTQs)",
+  "year": 2023,
+  "quiz": [
+    {
+      "question": "MTQ 1: Inventory Valuation under IAS 2",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "A company purchased 500 units at £20 each and later purchased 300 units at £25 each. It sold 600 units. Calculate the closing inventory using FIFO.",
+          "input_type": "number",
+          "answer": 5000
+        },
+        {
+          "task": "State the basis for inventory valuation under IAS 2.",
+          "input_type": "written",
+          "expected_keywords": ["lower of cost", "net realisable value"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 2: Depreciation – Straight Line Method",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Cost of machinery is £80,000 with a residual value of £8,000 and useful life of 8 years. Calculate annual depreciation expense.",
+          "input_type": "number",
+          "answer": 9000
+        },
+        {
+          "task": "Calculate carrying amount after 3 years.",
+          "input_type": "number",
+          "answer": 53000
+        }
+      ]
+    },
+    {
+      "question": "MTQ 3: Accruals and Prepayments",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "An electricity bill of £2,400 covers 12 months to 31 March 2024. The business year ends 31 December 2023. Calculate the expense for 2023.",
+          "input_type": "number",
+          "answer": 1800
+        },
+        {
+          "task": "Identify whether this is an accrual or prepayment.",
+          "input_type": "written",
+          "expected_keywords": ["prepayment"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 4: Trade Receivables & Irrecoverable Debts",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Trade receivables at year end = £45,000. Irrecoverable debts written off = £3,000. Allowance for receivables required = 5%. Calculate allowance amount.",
+          "input_type": "number",
+          "answer": 2100
+        },
+        {
+          "task": "Calculate receivables balance to be shown in the Statement of Financial Position.",
+          "input_type": "number",
+          "answer": 39800
+        }
+      ]
+    },
+    {
+      "question": "MTQ 5: Revenue Recognition (IFRS 15)",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "A contract price is £50,000. Performance obligation satisfied 70%. Calculate revenue to recognise.",
+          "input_type": "number",
+          "answer": 35000
+        },
+        {
+          "task": "Explain briefly what it means to 'transfer control' under IFRS 15.",
+          "input_type": "written",
+          "expected_keywords": ["control", "customer", "ability to use", "obtain benefits"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 6: Trial Balance & Error Correction",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "A payment for motor expenses £1,200 was posted to the motor vehicles asset account. What is the correcting journal entry amount?",
+          "input_type": "number",
+          "answer": 1200
+        },
+        {
+          "task": "State whether this is a one-sided or two-sided error.",
+          "input_type": "written",
+          "expected_keywords": ["two sided"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 7: Statement of Cash Flows – Operating Activities",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Profit before tax = £30,000. Depreciation = £4,000. Increase in inventory = £2,500. Increase in payables = £1,500. Calculate cash from operating activities.",
+          "input_type": "number",
+          "answer": 33000
+        },
+        {
+          "task": "State one non-cash expense adjusted in operating cash flows.",
+          "input_type": "written",
+          "expected_keywords": ["depreciation", "amortisation", "impairment"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 8: Bank Reconciliation",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Cash book balance = £4,800 (debit). Bank statement shows £4,200 (credit). Outstanding cheques = £1,300. Bank charges £100 not recorded. Calculate corrected cash book balance.",
+          "input_type": "number",
+          "answer": 4700
+        },
+        {
+          "task": "Which item would NOT appear in the bank reconciliation statement?",
+          "input_type": "written",
+          "expected_keywords": ["bank charges", "cash book error"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 9: Financial Ratios",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Current assets = £60,000. Inventory = £20,000. Current liabilities = £30,000. Calculate quick ratio.",
+          "input_type": "number",
+          "answer": 1.33
+        },
+        {
+          "task": "Explain what a liquidity ratio measures.",
+          "input_type": "written",
+          "expected_keywords": ["ability to pay", "short term", "obligations", "liabilities"]
+        }
+      ]
+    },
+    {
+      "question": "MTQ 10: Statement of Profit or Loss Extract",
+      "type": "mtq",
+      "tasks": [
+        {
+          "task": "Revenue = £120,000. Cost of sales = £78,000. Distribution expenses = £8,000. Calculate gross profit.",
+          "input_type": "number",
+          "answer": 42000
+        },
+        {
+          "task": "Calculate profit before tax.",
+          "input_type": "number",
+          "answer": 34000
+        }
+      ]
+    }
+  ]
+}

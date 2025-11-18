@@ -438,6 +438,11 @@
   transform: scale(1.1);
 }
 
+  .hidden { display: none; }
+  .question { border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; border-radius:5px; }
+  input { width: 100%; padding: 5px; margin-top: 5px; }
+  button { cursor: pointer; }
+
 
 
     </style>
@@ -655,7 +660,7 @@
 
 
 
-  <div class="p-4">
+<div class="p-4">
     
 <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">JAMB ▼</button>
     <ul class="space-y-3">
@@ -719,6 +724,73 @@
       </li>
     </ul>
   </div>
+
+
+    <div class="p-4">
+    
+<button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">ACCA▼</button>
+    <ul class="space-y-3">
+      <!-- 2020 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2025">2021 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2021, 'F1', 'ACCA')">F1</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
+          <li><button onclick="loadPastQuestions(2021, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
+         
+        </ul>
+      </li>
+
+      <!-- 2021 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2022 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2022, 'F1', 'ACCA')">F1</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
+          <li><button onclick="loadPastQuestions(2022, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
+         
+        </ul>
+      </li>
+      <!-- 2022 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li>
+          <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn">F3 Section B</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
+         
+        </ul>
+      </li>
+      <!-- 2023 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2024 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2024, 'F1', 'ACCA')">F1</button></li>
+          <li><button onclick="loadPastQuestions(2024, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
+          <li><button onclick="loadPastQuestions(2024, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
+          <li><button onclick="loadPastQuestions(2024, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
+         
+        </ul>
+      </li>
+      <!-- 2024 -->
+      <li>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2025 ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(2025, 'F1', 'ACCA')">F1</button></li>
+          <li><button onclick="loadPastQuestions(2025, 'F2', 'ACCA')" class="subject-btn">F2</button></li>
+          <li><button onclick="loadPastQuestions(2025, 'Tax', 'ACCA')" class="subject-btn">Tax</button></li>
+          <li><button onclick="loadPastQuestions(2025, 'Audit', 'ACCA')" class="subject-btn">Audit</button></li>
+         
+        </ul>
+      </li>
+    </ul>
+  </div>
+
 
 
   <hr class="my-4 border-gray-300">
@@ -815,12 +887,21 @@
       </div>
       <button id="nextStep4" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Create My Quiz</button>
     </div>
+    <div id="loading" class="hidden">Loading...</div>
+
 
     <!-- Step 5: Quiz -->
     <div id="step5" class="step hidden">
       <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 5: Let's Test Your Knowledge!</h2>
       <div id="quizContainer" class="mb-8"></div>
+      <div id="results" class="mt-6"></div>
+
       <button id="submitQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Submit Quiz</button>
+      <button id="scoreBtn"
+  class="bg-green-600 text-white px-6 py-2 rounded-full hidden">
+  Score
+</button>
+
       <button id="closeQuiz" class="ml-2 bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400">Close</button>
 
     </div>
@@ -1314,6 +1395,107 @@ async function loadPastQuestions(year, subject, category = 'jamb') {
 }
 
 window.loadPastQuestions = loadPastQuestions;
+// Load MTQ quiz from JSON
+async function loadMTQQuestions(year, subject, category = 'ACCA') {
+    const loader = document.getElementById('loading');
+    if (loader) loader.style.display = 'block';
+
+    try {
+        console.log(`Loading ${category.toUpperCase()} ${subject.toUpperCase()} MTQs for ${year}...`);
+
+        // Fetch the MTQ JSON
+        const response = await fetch(`past_questions/${category}_${year}_${subject}.json`);
+        if (!response.ok) throw new Error("Quiz not found");
+
+        const data = await response.json();
+        if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
+
+        const quizData = data.quiz; // MTQ structure expected: tasks array per question
+
+        // Clear previous quiz and results
+        const quizContainer = document.getElementById('quizContainer');
+        const resultsDiv = document.getElementById('results');
+        quizContainer.innerHTML = '';
+        resultsDiv.innerHTML = '';
+        document.getElementById('scoreBtn').style.display = 'block';
+
+        // Initialize userAnswers as 2D array: question -> task
+        appState.userAnswers = [];
+
+        // Render each MTQ question and its tasks
+        quizData.forEach((q, qIndex) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.className = "mb-6 p-4 bg-white shadow rounded-lg";
+
+            const questionText = document.createElement('h4');
+            questionText.className = "font-medium text-gray-800 mb-3";
+            questionText.textContent = `Q${qIndex + 1}: ${q.question}`;
+            questionDiv.appendChild(questionText);
+
+            q.tasks.forEach((task, tIndex) => {
+                if (!appState.userAnswers[qIndex]) appState.userAnswers[qIndex] = [];
+
+                const taskDiv = document.createElement('div');
+                taskDiv.className = "mb-3";
+
+                const inputType = task.input_type === 'number' ? 'number' : 'text';
+                const inputField = document.createElement('input');
+                inputField.type = inputType;
+                inputField.className = "w-full p-2 border rounded";
+                inputField.placeholder = task.input_type === 'number' ? 'Enter number' : 'Enter text';
+
+                // Store user input dynamically
+                inputField.addEventListener('input', e => {
+                    appState.userAnswers[qIndex][tIndex] = e.target.value.trim();
+                });
+
+                taskDiv.innerHTML = `<label>${task.task}</label>`;
+                taskDiv.appendChild(inputField);
+                questionDiv.appendChild(taskDiv);
+            });
+
+            quizContainer.appendChild(questionDiv);
+        });
+
+        // Wire the submit button to calculateMTQScore
+        const scoreBtn = document.getElementById('scoreBtn');
+        scoreBtn.onclick = () => calculateMTQScore(quizData);
+
+    } catch (error) {
+        console.error("Error loading MTQ quiz:", error);
+        alert("Problem loading MTQ quiz. Check console.");
+    } finally {
+        if (loader) loader.style.display = 'none';
+    }
+}
+
+// Calculate MTQ score
+function calculateMTQScore(quizData) {
+    let total = 0, possible = 0;
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
+
+    quizData.forEach((q, qIndex) => {
+        q.tasks.forEach((task, tIndex) => {
+            possible++;
+            const userInput = appState.userAnswers[qIndex]?.[tIndex] || '';
+            let correct = false;
+
+            if (task.input_type === 'number') {
+                correct = parseFloat(userInput) === task.answer;
+            } else if (task.input_type === 'written') {
+                const lowerInput = userInput.toLowerCase();
+                correct = task.expected_keywords.every(k => lowerInput.includes(k.toLowerCase()));
+            }
+
+            if (correct) total++;
+            resultsDiv.innerHTML += `<p>Q${qIndex + 1} Task${tIndex + 1}: <span style="color:${correct ? 'green' : 'red'}">${correct ? 'Correct' : 'Incorrect'}</span></p>`;
+        });
+    });
+
+    resultsDiv.innerHTML += `<h3>Total Score: ${total} / ${possible}</h3>`;
+}
+window.loadMTQQuestions = loadMTQQuestions;
 
 
 // Attach click handlers

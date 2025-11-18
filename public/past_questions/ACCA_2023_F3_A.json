@@ -1,0 +1,251 @@
+{
+  "subject": "ACCA F3 – Financial Accounting",
+  "year": 2023,
+  "section": "A",
+  "type": "mcq",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Which financial statement shows a company’s assets, liabilities, and equity at a point in time?",
+      "options": ["Statement of cash flows", "Statement of financial position", "Income statement", "Statement of changes in equity"],
+      "correct": 1
+    },
+    {
+      "id": 2,
+      "question": "Which concept requires businesses to record expenses in the same period as related revenue?",
+      "options": ["Prudence", "Matching", "Accrual", "Consistency"],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a non-current asset?",
+      "options": ["Inventory", "Trade receivables", "Trade payables", "Plant and machinery"],
+      "correct": 3
+    },
+    {
+      "id": 4,
+      "question": "What type of error occurs when an expense is recorded as an asset?",
+      "options": ["Error of omission", "Error of principle", "Error of commission", "Error of original entry"],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "question": "Which inventory valuation method assumes that the earliest goods purchased are sold first?",
+      "options": ["FIFO", "LIFO", "Weighted average", "Specific identification"],
+      "correct": 0
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is an example of a capital expenditure?",
+      "options": ["Repairs and maintenance", "Purchase of a machine", "Stationery", "Rent"],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "question": "Carriage inwards is treated as:",
+      "options": ["An expense in profit or loss", "Added to purchases", "Subtracted from purchases", "A selling expense"],
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "question": "What is depreciation?",
+      "options": ["A fall in the market value of assets", "Allocation of cost of an asset over its useful life", "A provision for doubtful debts", "A reduction in profit due to expenses"],
+      "correct": 1
+    },
+    {
+      "id": 9,
+      "question": "Which account is credited when goods are sold on credit?",
+      "options": ["Cash", "Sales", "Purchases", "Inventory"],
+      "correct": 1
+    },
+    {
+      "id": 10,
+      "question": "Which financial statement reports cash movements?",
+      "options": ["Income statement", "Statement of financial position", "Statement of cash flows", "Notes to the accounts"],
+      "correct": 2
+    },
+
+    {
+      "id": 11,
+      "question": "If opening inventory = $12,000, purchases = $45,000 and closing inventory = $10,000, what is cost of sales?",
+      "options": ["$43,000", "$47,000", "$55,000", "$57,000"],
+      "correct": 1
+    },
+    {
+      "id": 12,
+      "question": "Which error affects the trial balance agreement?",
+      "options": ["Error of omission", "Error of principle", "Transposition error", "Compensating error"],
+      "correct": 2
+    },
+    {
+      "id": 13,
+      "question": "Which item appears in the statement of changes in equity?",
+      "options": ["Trade receivables", "Share capital issued", "Inventory", "Cost of sales"],
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "question": "A petty cash book is kept under which system?",
+      "options": ["Imprest system", "Accrual system", "Matching system", "Cashbook system"],
+      "correct": 0
+    },
+    {
+      "id": 15,
+      "question": "Which control document is raised when goods are returned to suppliers?",
+      "options": ["Goods received note", "Purchase requisition", "Purchase return note", "Debit note"],
+      "correct": 3
+    },
+    {
+      "id": 16,
+      "question": "Which of the following best describes a liability?",
+      "options": ["A resource controlled by the entity", "A present obligation to transfer economic benefits", "A residual interest in assets", "Income received in advance"],
+      "correct": 1
+    },
+    {
+      "id": 17,
+      "question": "Which depreciation method charges higher expenses in earlier years?",
+      "options": ["Straight line", "Reducing balance", "Units of production", "Revaluation"],
+      "correct": 1
+    },
+    {
+      "id": 18,
+      "question": "Which error does a suspense account help correct?",
+      "options": ["Error of commission", "Error of principle", "One-sided entry error", "Error of omission"],
+      "correct": 2
+    },
+    {
+      "id": 19,
+      "question": "Which ratio measures short-term liquidity?",
+      "options": ["Gross profit margin", "Return on capital employed", "Current ratio", "Asset turnover"],
+      "correct": 2
+    },
+    {
+      "id": 20,
+      "question": "Which document is sent by a supplier before goods are delivered?",
+      "options": ["Quotation", "Invoice", "Credit note", "Statement of account"],
+      "correct": 0
+    },
+
+    {
+      "id": 21,
+      "question": "Which cost is included in the valuation of inventory according to IAS 2?",
+      "options": ["Abnormal waste", "Marketing expenses", "Storage costs", "Conversion costs"],
+      "correct": 3
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is NOT an intangible asset?",
+      "options": ["Goodwill", "Patents", "Trade receivables", "Copyright"],
+      "correct": 2
+    },
+    {
+      "id": 23,
+      "question": "Which statement is true about accruals?",
+      "options": ["They increase profit", "They represent expenses not yet paid", "They reduce liabilities", "They are recorded in cash basis accounting"],
+      "correct": 1
+    },
+    {
+      "id": 24,
+      "question": "Which costing method values closing stock at the most recent purchase price?",
+      "options": ["FIFO", "LIFO", "Weighted average", "Marginal costing"],
+      "correct": 1
+    },
+    {
+      "id": 25,
+      "question": "Which type of error is NOT revealed by a trial balance?",
+      "options": ["Transposition error", "Error of duplication", "Error of omission", "Single-entry error"],
+      "correct": 2
+    },
+    {
+      "id": 26,
+      "question": "What does the receivables collection period measure?",
+      "options": ["Time taken to sell inventory", "Average time customers take to pay", "Time taken to pay suppliers", "Liquidity strength"],
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "question": "Which is a capital income?",
+      "options": ["Rent received", "Sale of non-current assets", "Commission received", "Interest received"],
+      "correct": 1
+    },
+    {
+      "id": 28,
+      "question": "Which is an example of an indirect expense?",
+      "options": ["Direct labour", "Factory rent", "Direct materials", "Prime cost"],
+      "correct": 1
+    },
+    {
+      "id": 29,
+      "question": "Which account is debited when owner takes goods for personal use?",
+      "options": ["Drawings", "Sales", "Purchases", "Capital"],
+      "correct": 0
+    },
+    {
+      "id": 30,
+      "question": "Which statement describes goodwill?",
+      "options": ["A tangible asset", "Excess of purchase price over net assets", "A liability", "A depreciation method"],
+      "correct": 1
+    },
+
+    {
+      "id": 31,
+      "question": "Which term describes income received before it is earned?",
+      "options": ["Accrued income", "Deferred income", "Prepaid expense", "Accrued expense"],
+      "correct": 1
+    },
+    {
+      "id": 32,
+      "question": "What is the double entry for credit purchase of goods?",
+      "options": ["Debit cash, credit purchases", "Debit purchases, credit payables", "Debit payables, credit purchases", "Debit capital, credit purchases"],
+      "correct": 1
+    },
+    {
+      "id": 33,
+      "question": "Which concept prohibits overstating assets?",
+      "options": ["Consistency", "Prudence", "Matching", "Materiality"],
+      "correct": 1
+    },
+    {
+      "id": 34,
+      "question": "Which statement is TRUE about trade payables?",
+      "options": ["They are customers who owe the business", "They are short-term liabilities", "They appear in income statement", "They represent accrued income"],
+      "correct": 1
+    },
+    {
+      "id": 35,
+      "question": "What is carriage outwards classified as?",
+      "options": ["Selling and distribution cost", "Production cost", "Administrative cost", "Direct expense"],
+      "correct": 0
+    },
+    {
+      "id": 36,
+      "question": "Which of the following reduces gross profit?",
+      "options": ["Increase in purchases", "Increase in sales revenue", "Decrease in expenses", "Decrease in cost of sales"],
+      "correct": 0
+    },
+    {
+      "id": 37,
+      "question": "Which statement describes a partnership?",
+      "options": ["Owned by one person", "Owned by shareholders", "Owned by two or more persons", "Registered by law always"],
+      "correct": 2
+    },
+    {
+      "id": 38,
+      "question": "Which account shows profit or loss for the year?",
+      "options": ["Trial balance", "Statement of cash flows", "Statement of financial position", "Income statement"],
+      "correct": 3
+    },
+    {
+      "id": 39,
+      "question": "Which book of prime entry records credit sales?",
+      "options": ["Sales day book", "Purchases day book", "Journal", "Cash book"],
+      "correct": 0
+    },
+    {
+      "id": 40,
+      "question": "Which accounting concept assumes a business will continue into the foreseeable future?",
+      "options": ["Going concern", "Accrual", "Materiality", "Consistency"],
+      "correct": 0
+    }
+  ]
+}
