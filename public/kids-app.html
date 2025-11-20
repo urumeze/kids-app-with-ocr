@@ -851,20 +851,25 @@
       <div id="results" class="mt-6"></div>
 
       <button id="submitQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Submit Quiz</button>
-      <button id="scoreBtn">Score Quiz</button>
+      
 
       <button id="closeQuiz" class="ml-2 bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400">Close</button>
 
     </div>
 
+    
+
     <!-- Step 6: Results -->
     <div id="step6" class="step hidden">
       <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 6: Your Results</h2>
-      <div class="text-center mb-8">
-        <div id="score" class="inline-block bg-indigo-100 text-indigo-800 text-4xl font-bold rounded-full w-32 h-32 flex items-center justify-center">0%</div>
-        <p id="resultMessage" class="text-xl text-gray-700 mt-2"></p>
+      
+      <div class="text-center mb-8  "  >
+        <div id="score" class="inline-block bg-indigo-100 text-indigo-800 text-4xl font-bold rounded-full w-32 h-32 flex items-center justify-center ">0%</div>
+        <p id="resultMessage" class="text-xl text-gray-700 mt-2 "></p>
+
       </div>
-      <div id="wrongAnswers" class="mb-8"></div>
+      
+      <div id="wrongAnswers" class="mb-8 " ></div>
       <button id="restartQuiz" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Try Again</button>
       <button id="newDocument" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full">New Document</button>
     </div>
@@ -876,6 +881,27 @@
       <button id="postStoryBtn" class="bg-indigo-600 text-white px-4 py-2 rounded-full mb-6">Post Story</button>
       <div id="storyFeed" class="space-y-4"></div>
     </div>
+
+    <!-- Step 8: MTQ Results -->
+<div id="step8" class="step hidden">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-6">MTQ Results</h2>
+
+  <!-- Only MTQ results container is visible -->
+  <div id="resultsContainer" class="mt-4 " ></div>
+
+  <!-- Hidden MCQ elements (so Step 8 can reuse Step 6’s layout style if needed) -->
+  <div id="mtqScoreWrapper" class="hidden">
+    <div id="mtqScore" class="inline-block bg-indigo-100 text-indigo-800 text-4xl font-bold rounded-full w-32 h-32 flex items-center justify-center"></div>
+    <p id="mtqMessage" class="text-xl text-gray-700 mt-2"></p>
+  </div>
+
+  <!-- Buttons -->
+  <button id="restartMTQ" class="bg-indigo-600 text-white px-6 py-2 rounded-full">Try Again</button>
+  <button id="newDocumentMTQ" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full">New Document</button>
+</div>
+
+
+    
 
   </main>
 </div>
@@ -890,6 +916,10 @@
 
 
 <script>
+
+
+
+
  
   // ------------------------------
   // App State
@@ -939,7 +969,6 @@ function updateCoinDisplay(amount = 0) {
       nextList.classList.toggle('hidden');
     });
   });
-
  
   
 
@@ -966,6 +995,9 @@ function updateCoinDisplay(amount = 0) {
     const newDocument = document.getElementById('newDocument');
     const quizOptions = document.querySelectorAll('.quiz-option');
     const closeQuiz = document.getElementById('closeQuiz');
+
+
+    
 
 
     // Event listeners
@@ -1318,17 +1350,14 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
         if (!Array.isArray(data.quiz)) throw new Error("Invalid quiz data");
 
         const quizData = data.quiz; // MTQ structure expected: tasks array per question
-        
 
-        // Clear previous quiz and results
+        // Get quiz container and reset
         const quizContainer = document.getElementById('quizContainer');
-        const resultsDiv = document.getElementById('results');
+        if (!quizContainer) throw new Error("Missing #quizContainer element in DOM");
         quizContainer.innerHTML = '';
-        resultsDiv.innerHTML = '';
-        document.getElementById('scoreBtn').style.display = 'block';
 
         // Initialize userAnswers as 2D array: question -> task
-        appState.userAnswers = [];
+        appState.userAnswers = new Array(quizData.length).fill(null).map(() => []);
 
         // Render each MTQ question and its tasks
         quizData.forEach((q, qIndex) => {
@@ -1337,12 +1366,10 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
 
             const questionText = document.createElement('h4');
             questionText.className = "font-medium text-gray-800 mb-3";
-            questionText.textContent = `Q${qIndex + 1}: ${q.question}`;
+            questionText.textContent = `Q${qIndex + 1}: ${q.question || ''}`;
             questionDiv.appendChild(questionText);
 
             q.tasks.forEach((task, tIndex) => {
-                if (!appState.userAnswers[qIndex]) appState.userAnswers[qIndex] = [];
-
                 const taskDiv = document.createElement('div');
                 taskDiv.className = "mb-3";
 
@@ -1357,21 +1384,31 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
                     appState.userAnswers[qIndex][tIndex] = e.target.value.trim();
                 });
 
-                taskDiv.innerHTML = `<label>${task.task}</label>`;
+                const label = document.createElement('label');
+                label.textContent = task.task || '';
+                taskDiv.appendChild(label);
                 taskDiv.appendChild(inputField);
                 questionDiv.appendChild(taskDiv);
             });
 
             quizContainer.appendChild(questionDiv);
-            showStep(5);
-            document.getElementById('menuPanel')?.classList.add('-translate-x-full');
-            
         });
 
-            // Wire the submit button to calculateMTQScore
-            const scoreBtn = document.getElementById('scoreBtn');
-            scoreBtn.onclick = () => calculateMTQScore(quizData);
-        
+        // Show the MTQ step once (after rendering)
+        showStep(5);
+        document.getElementById('menuPanel')?.classList.add('-translate-x-full');
+
+        // Wire the submit button to calculateMTQScore using addEventListener
+        const scoreBtn = document.getElementById('submitQuiz');
+        if (!scoreBtn) throw new Error("Missing #submitQuiz element in DOM");
+
+        // Remove any prior MTQ listener to avoid duplicate calls
+        scoreBtn.removeEventListener('click', scoreBtn._mtqHandler || (() => {}));
+
+        // Create handler and store it for potential removal later
+        const handler = () => calculateMTQScore(quizData);
+        scoreBtn._mtqHandler = handler;
+        scoreBtn.addEventListener('click', handler);
 
     } catch (error) {
         console.error("Error loading MTQ quiz:", error);
@@ -1381,32 +1418,6 @@ async function loadMTQQuestions(year, subject, category = 'ACCA') {
     }
 }
 
-// Calculate MTQ score
-function calculateMTQScore(quizData) {
-    let total = 0, possible = 0;
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
-
-    quizData.forEach((q, qIndex) => {
-        q.tasks.forEach((task, tIndex) => {
-            possible++;
-            const userInput = appState.userAnswers[qIndex]?.[tIndex] || '';
-            let correct = false;
-
-            if (task.input_type === 'number') {
-                correct = parseFloat(userInput) === task.answer;
-            } else if (task.input_type === 'written') {
-                const lowerInput = userInput.toLowerCase();
-                correct = task.expected_keywords.every(k => lowerInput.includes(k.toLowerCase()));
-            }
-
-            if (correct) total++;
-            resultsDiv.innerHTML += `<p>Q${qIndex + 1} Task${tIndex + 1}: <span style="color:${correct ? 'green' : 'red'}">${correct ? 'Correct' : 'Incorrect'}</span></p>`;
-        });
-    });
-
-    resultsDiv.innerHTML += `<h3>Total Score: ${total} / ${possible}</h3>`;
-}
 window.loadMTQQuestions = loadMTQQuestions;
 
 
@@ -1454,6 +1465,95 @@ window.loadMTQQuestions = loadMTQQuestions;
 }
 
 window.loadPastQuestions = loadPastQuestions;
+
+function calculateMTQScore(quizData) {
+    const results = [];
+    let totalTasks = 0;
+    let correctTasks = 0;
+
+    quizData.forEach((q, qIndex) => {
+        q.tasks.forEach((task, tIndex) => {
+            totalTasks++;
+
+            const userAnswer = appState.userAnswers[qIndex][tIndex] ?? "";
+            const correctAnswer = task.correct;
+
+            let isCorrect = false;
+
+            if (task.input_type === "number") {
+                isCorrect = Number(userAnswer) === Number(correctAnswer);
+            } else if (task.expected_keywords) {
+                const ans = String(userAnswer).trim().toLowerCase();
+                isCorrect = task.expected_keywords.some(kw =>
+                    ans.includes(kw.toLowerCase())
+                );
+            } else if (task.expected_keywords) {
+                const ans = String(userAnswer).trim().toLowerCase();
+                isCorrect = task.expected_keywords.some(kw =>
+                    ans.includes(kw.toLowerCase())
+                );
+            } else {
+                isCorrect =
+                    String(userAnswer).trim().toLowerCase() ===
+                    String(correctAnswer).trim().toLowerCase();
+            }
+
+
+
+            if (isCorrect) correctTasks++;
+
+            results.push({
+                questionNumber: qIndex + 1,
+                taskLabel: task.task,
+                userAnswer,
+                correctAnswer,
+                isCorrect
+            });
+        });
+    });
+
+    renderMTQResults(results, correctTasks, totalTasks);
+    showStep(8);
+}
+window.calculateMTQScore = calculateMTQScore;
+
+
+
+function renderMTQResults(results, correctTasks, totalTasks) {
+    const container = document.getElementById('resultsContainer');
+    container.innerHTML = '';
+
+    const scoreDiv = document.createElement('div');
+    scoreDiv.className = "p-4 mb-4 bg-blue-100 rounded shadow";
+    scoreDiv.innerHTML = `
+        <h3 class="text-xl font-semibold mb-2">MTQ Score</h3>
+        <p><strong>${correctTasks}</strong> out of <strong>${totalTasks}</strong> tasks correct</p>
+    `;
+    container.appendChild(scoreDiv);
+
+    results.forEach((r, idx) => {
+        const div = document.createElement('div');
+        div.className =
+            'p-4 mb-3 rounded shadow ' +
+            (r.isCorrect ? 'bg-green-100' : 'bg-red-100');
+
+        div.innerHTML = `
+            <h4 class="font-semibold">Q${r.questionNumber} – ${r.taskLabel}</h4>
+            <p><strong>Your Answer:</strong> ${r.userAnswer || "(blank)"}</p>
+            <p><strong>Correct Answer:</strong> ${r.correctAnswer}</p>
+            <p class="${r.isCorrect ? 'text-green-700' : 'text-red-700'} mt-1">
+                ${r.isCorrect ? 'Correct ✔' : 'Wrong ✘'}
+            </p>
+        `;
+
+        container.appendChild(div);
+    });
+}
+window.renderMTQResults = renderMTQResults;
+
+
+
+
 
 
 // Attach click handlers
@@ -1529,51 +1629,52 @@ async function loadPublicFeed() {
     const times = ["3h ago", "5h ago", "1 day ago", "2 days ago", "3 days ago"];
 
     try {
+        const categories =['jamb', 'common entrance', 'acca']
         const years = [2020, 2021, 2022, 2023];
         const subjects = ["english","maths","physics","chemistry","biology","economics","literature",];
+      
+          for (const year of years) {
+              for (const subject of subjects) {
+                  try {
+                      const res = await fetch(`past_questions/jamb_${year}_${subject}.json`);
+                      if (!res.ok) continue;
+                      const data = await res.json();
+                      if (!data.quiz || !Array.isArray(data.quiz)) continue;
 
-        for (const year of years) {
-            for (const subject of subjects) {
-                try {
-                    const res = await fetch(`past_questions/jamb_${year}_${subject}.json`);
-                    if (!res.ok) continue;
-                    const data = await res.json();
-                    if (!data.quiz || !Array.isArray(data.quiz)) continue;
+                      const normalized = data.quiz.map(q => {
+                          let optionsArr = Array.isArray(q.options) ? q.options.slice(0,4) :
+                                          q.options && typeof q.options === "object" ? ["A","B","C","D"].map(k => q.options[k]).filter(v => v) :
+                                          ["A","B","C","D"];
+                          let correctIndex = typeof q.correct === "string" ? letterToIndex(q.correct) :
+                                            typeof q.answer === "string" ? letterToIndex(q.answer) :
+                                            Number.isInteger(q.correct) ? q.correct :
+                                            Number.isInteger(q.answer) ? q.answer : 0;
 
-                    const normalized = data.quiz.map(q => {
-                        let optionsArr = Array.isArray(q.options) ? q.options.slice(0,4) :
-                                         q.options && typeof q.options === "object" ? ["A","B","C","D"].map(k => q.options[k]).filter(v => v) :
-                                         ["A","B","C","D"];
-                        let correctIndex = typeof q.correct === "string" ? letterToIndex(q.correct) :
-                                           typeof q.answer === "string" ? letterToIndex(q.answer) :
-                                           Number.isInteger(q.correct) ? q.correct :
-                                           Number.isInteger(q.answer) ? q.answer : 0;
+                          return {
+                              title: `${subject.charAt(0).toUpperCase() + subject.slice(1)}: ${q.question?.slice(0,50) || "Untitled"}`,
+                              author: authors[Math.floor(Math.random()*authors.length)],
+                              question: q.question || "Untitled question",
+                              options: optionsArr,
+                              correct: correctIndex,
+                              time: times[Math.floor(Math.random()*times.length)]
+                          };
+                      });
 
-                        return {
-                            title: `${subject.charAt(0).toUpperCase() + subject.slice(1)}: ${q.question?.slice(0,50) || "Untitled"}`,
-                            author: authors[Math.floor(Math.random()*authors.length)],
-                            question: q.question || "Untitled question",
-                            options: optionsArr,
-                            correct: correctIndex,
-                            time: times[Math.floor(Math.random()*times.length)]
-                        };
-                    });
+                      allQuizzesGlobal.push(...normalized);
 
-                    allQuizzesGlobal.push(...normalized);
+                  } catch (err) {
+                      console.warn(`Could not load ${year} ${subject}:`, err);
+                  }
+              }
+          }
 
-                } catch (err) {
-                    console.warn(`Could not load ${year} ${subject}:`, err);
-                }
-            }
-        }
+          renderFeedBatch(); // render first 10
 
-        renderFeedBatch(); // render first 10
-
-    } catch (err) {
-        console.error("Error loading public feed:", err);
-        feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
-    }
-}
+      } catch (err) {
+          console.error("Error loading public feed:", err);
+          feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
+      }
+  }
 
 // Function to render 10 random quizzes from global array
 function renderFeedBatch() {
@@ -1718,8 +1819,6 @@ audioPlayer.addEventListener("ended", () => {
 window.addEventListener("DOMContentLoaded", () => {
   loadTrack(currentTrackIndex);
 });
-
-
 
 
 </script>

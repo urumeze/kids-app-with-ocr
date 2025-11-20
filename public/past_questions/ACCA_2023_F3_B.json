@@ -9,7 +9,7 @@
         {
           "task": "Opening inventory = £12,000. Purchases = £40,000. Closing inventory = £15,000. Calculate cost of sales.",
           "input_type": "number",
-          "answer": 37000
+          "correct": 37000
         },
         {
           "task": "State the valuation rule required by IAS 2.",
@@ -25,12 +25,12 @@
         {
           "task": "A machine costs £50,000, residual value £5,000, useful life 5 years. Calculate the annual depreciation expense.",
           "input_type": "number",
-          "answer": 9000
+          "correct": 9000
         },
         {
           "task": "Calculate carrying amount after 2 years.",
           "input_type": "number",
-          "answer": 32000
+          "correct": 32000
         }
       ]
     },
@@ -41,7 +41,7 @@
         {
           "task": "Rent is £3,600 per year, paid up to 31 January 2024. Year-end is 31 December 2023. Calculate rent expense for 2023.",
           "input_type": "number",
-          "answer": 3600
+          "correct": 3600
         },
         {
           "task": "Identify whether the adjustment at year end is an accrual or a prepayment.",
@@ -57,12 +57,12 @@
         {
           "task": "Trade receivables = £60,000. Irrecoverable debts = £4,000. Required allowance = 3%. Calculate closing allowance.",
           "input_type": "number",
-          "answer": 1680
+          "correct": 1680
         },
         {
           "task": "Calculate receivables figure to appear in the SOFP.",
           "input_type": "number",
-          "answer": 54320
+          "correct": 54320
         }
       ]
     },
@@ -73,7 +73,7 @@
         {
           "task": "Contract price = £80,000. Performance obligation completed 60%. Calculate revenue to recognise.",
           "input_type": "number",
-          "answer": 48000
+          "correct": 48000
         },
         {
           "task": "Define 'performance obligation' under IFRS 15.",
@@ -89,7 +89,7 @@
         {
           "task": "Repairs £900 recorded as motor vehicles (asset). What is the correcting journal entry amount?",
           "input_type": "number",
-          "answer": 900
+          "correct": 900
         },
         {
           "task": "State the type of error involved.",
@@ -105,7 +105,7 @@
         {
           "task": "Operating profit = £25,000. Depreciation = £6,000. Increase in receivables = £2,000. Decrease in payables = £1,000. Calculate cash from operating activities.",
           "input_type": "number",
-          "answer": 28000
+          "correct": 28000
         },
         {
           "task": "State one non-cash item added back in operating cash flows.",
@@ -121,7 +121,7 @@
         {
           "task": "Cash book = £3,900 (debit). Bank statement = £3,200 (credit). Unpresented cheques = £1,100. Bank charges £50 not recorded. Calculate adjusted cash book balance.",
           "input_type": "number",
-          "answer": 3850
+          "correct": 3850
         },
         {
           "task": "Which item does NOT appear on bank reconciliation statement?",
@@ -137,7 +137,7 @@
         {
           "task": "Current assets = £90,000. Inventory = £30,000. Current liabilities = £40,000. Calculate quick ratio.",
           "input_type": "number",
-          "answer": 1.5
+          "correct": 1.5
         },
         {
           "task": "Define what efficiency ratios measure.",
@@ -153,12 +153,12 @@
         {
           "task": "Revenue = £150,000. Cost of sales = £90,000. Distribution = £12,000. Calculate gross profit.",
           "input_type": "number",
-          "answer": 60000
+          "correct": 60000
         },
         {
           "task": "Calculate profit before tax.",
           "input_type": "number",
-          "answer": 48000
+          "correct": 48000
         }
       ]
     },
@@ -169,7 +169,7 @@
         {
           "task": "Opening balance = £22,000. Credit purchases = £40,000. Payments = £35,000. Discounts received = £2,000. Calculate closing balance.",
           "input_type": "number",
-          "answer": 25000
+          "correct": 25000
         },
         {
           "task": "State one reason the control account may not agree with the list of balances.",
@@ -185,7 +185,7 @@
         {
           "task": "Opening balance = £30,000. Credit sales = £55,000. Receipts = £60,000. Irrecoverable debts = £3,000. Calculate closing balance.",
           "input_type": "number",
-          "answer": 22000
+          "correct": 22000
         },
         {
           "task": "State one benefit of maintaining control accounts.",
@@ -201,7 +201,7 @@
         {
           "task": "Carrying amount = £80,000. Revalued amount = £95,000. Calculate revaluation surplus.",
           "input_type": "number",
-          "answer": 15000
+          "correct": 15000
         },
         {
           "task": "Where is the revaluation surplus recorded?",
@@ -217,7 +217,7 @@
         {
           "task": "A debit entry of £1,200 was omitted. What is the suspense account difference?",
           "input_type": "number",
-          "answer": 1200
+          "correct": 1200
         },
         {
           "task": "State one type of error that does NOT affect the trial balance.",
@@ -233,7 +233,7 @@
         {
           "task": "Invoice amount = £10,000. Discount allowed = 5%. Customer pays within period. Calculate cash received.",
           "input_type": "number",
-          "answer": 9500
+          "correct": 9500
         },
         {
           "task": "State whether discounts allowed are an expense or income.",

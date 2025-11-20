@@ -1,0 +1,7 @@
+{"quiz":[
+    {  "id":1,
+      "question": "Opening inventory = £12,000. Purchases = £40,000. Closing inventory = £15,000. Calculate cost of sales.",
+      "input_type": "number",
+      "userInput":"",
+      "correct": 37000
+    } ]}
