@@ -1,0 +1,464 @@
+{
+  "subject": "Mathematics and Basic Science",
+  "year": 2020,
+  "quiz": [
+   
+    {
+      "id": 2,
+      "question": "Find the highest prime factor of 270.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "5",
+        "E": "7"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 3,
+      "question": "Write 3,150,009 in words.",
+      "options": {
+        "A": "Three million, one hundred fifty thousand and nine",
+        "B": "Three million, one thousand and fifty nine",
+        "C": "Three million, fifteen thousand and nine",
+        "D": "Three million, one hundred and fifty nine",
+        "E": "Three million, one hundred and fifty thousand and nine"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 4,
+      "question": "Arrange the numbers 12, 60, 100, 45, 70 in ascending order and find their LCM.",
+      "options": {
+        "A": "60, 100, 45, 70, 12",
+        "B": "12, 60, 100, 45, 70",
+        "C": "12, 45, 60, 70, 100",
+        "D": "12, 60, 45, 70, 100",
+        "E": "45, 12, 60, 70, 100"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "question": "Calculate 68 − 68 + 4",
+      "options": {
+        "A": "4",
+        "B": "0",
+        "C": "68",
+        "D": "−68",
+        "E": "136"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "50% of N80,000.00. How much remains after spending half?",
+      "options": {
+        "A": "N20,000",
+        "B": "N40,000",
+        "C": "N60,000",
+        "D": "N80,000",
+        "E": "N100,000"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 7,
+      "question": "Add 723 + 123 + 456",
+      "options": {
+        "A": "1,200",
+        "B": "1,302",
+        "C": "1,300",
+        "D": "1,303",
+        "E": "1,321"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 8,
+      "question": "Multiply 0.7 × 50",
+      "options": {
+        "A": "3.5",
+        "B": "5",
+        "C": "35",
+        "D": "50",
+        "E": "70"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 9,
+      "question": "Find the square root of 625.",
+      "options": {
+        "A": "20",
+        "B": "24",
+        "C": "30",
+        "D": "25",
+        "E": "35"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "Calculate (1½ × 1¼) + 2",
+      "options": {
+        "A": "2½",
+        "B": "3",
+        "C": "2¾",
+        "D": "3¼",
+        "E": "4"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 11,
+      "question": "Principal = N240,000; Rate = 5%; Time = 3 years. Find Simple Interest.",
+      "options": {
+        "A": "N36,000",
+        "B": "N30,000",
+        "C": "N24,000",
+        "D": "N40,000",
+        "E": "N32,000"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "Write 180 as a product of its prime factors in index form.",
+      "options": {
+        "A": "2 × 2 × 3 × 3 × 5",
+        "B": "2² × 3 × 3 × 5",
+        "C": "2² × 3² × 5",
+        "D": "2 × 3² × 5²",
+        "E": "2² × 3² × 5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 13,
+      "question": "Add 8.2 + 1.8 + 10.0 + 25",
+      "options": {
+        "A": "40",
+        "B": "30",
+        "C": "10",
+        "D": "35",
+        "E": "50"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 14,
+      "question": "Calculate 50% of N1,200",
+      "options": {
+        "A": "N500",
+        "B": "N600",
+        "C": "N550",
+        "D": "N120",
+        "E": "N1,000"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 15,
+      "question": "Convert 7 hours 72 minutes to hours.",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9",
+        "E": "10"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 16,
+      "question": "Cost price = N14,500; loss = 20%. Find selling price.",
+      "options": {
+        "A": "N11,600",
+        "B": "N12,000",
+        "C": "N14,000",
+        "D": "N13,500",
+        "E": "N10,000"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 17,
+      "question": "Volume of a cube = 64 cm³. Find the length of a side.",
+      "options": {
+        "A": "2 cm",
+        "B": "3 cm",
+        "C": "4 cm",
+        "D": "5 cm",
+        "E": "6 cm"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 18,
+      "question": "Circumference of a circle = 66 cm. Find radius.",
+      "options": {
+        "A": "10.5 cm",
+        "B": "12 cm",
+        "C": "11 cm",
+        "D": "13 cm",
+        "E": "14 cm"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 19,
+      "question": "If 1 cm = 20 km, then 2.5 cm represents how many km?",
+      "options": {
+        "A": "45 km",
+        "B": "40 km",
+        "C": "48 km",
+        "D": "50 km",
+        "E": "55 km"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 20,
+      "question": "Area of trapezium with a=4.2cm, b=7.8cm, h=3cm",
+      "options": {
+        "A": "18 cm²",
+        "B": "15 cm²",
+        "C": "20 cm²",
+        "D": "18 cm²",
+        "E": "21 cm²"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 21,
+      "question": "Add 55.20kg + 43.45kg",
+      "options": {
+        "A": "98.55kg",
+        "B": "97.65kg",
+        "C": "98.65kg",
+        "D": "99.65kg",
+        "E": "100kg"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 22,
+      "question": "Add 0.2g + 0.8g + 4.0g + 2.4g",
+      "options": {
+        "A": "6.0 g",
+        "B": "6.2 g",
+        "C": "7.0 g",
+        "D": "7.2 g",
+        "E": "7.4 g"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 23,
+      "question": "1 month = 4 weeks; how many weeks in 5 months?",
+      "options": {
+        "A": "15",
+        "B": "16",
+        "C": "18",
+        "D": "20",
+        "E": "B"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "Solve 3x + 5 = -7",
+      "options": {
+        "A": "-2",
+        "B": "-3",
+        "C": "-5",
+        "D": "-4",
+        "E": "0"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 25,
+      "question": "Mode of numbers 2, 6, 3, 5, 5, 1, 7",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "6",
+        "E": "5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 26,
+      "question": "LCM of 48 and 60",
+      "options": {
+        "A": "120",
+        "B": "240",
+        "C": "180",
+        "D": "60",
+        "E": "300"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 27,
+      "question": "Average speed = 60 km/h; time = 3 h. Find distance.",
+      "options": {
+        "A": "150 km",
+        "B": "160 km",
+        "C": "170 km",
+        "D": "180 km",
+        "E": "190 km"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 28,
+      "question": "Calculate 100,000 × 50k + 70,000 × 70k",
+      "options": {
+        "A": "N100,000",
+        "B": "N149,000",
+        "C": "N149,500",
+        "D": "N49,000",
+        "E": "N50,000"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 29,
+      "question": "Weight of goat = 21kg 720g − 11kg 155g",
+      "options": {
+        "A": "10 kg 565 g",
+        "B": "10 kg 550 g",
+        "C": "11 kg 565 g",
+        "D": "10 kg 565 g",
+        "E": "11 kg 155 g"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 30,
+      "question": "Convert 6,000 m to km",
+      "options": {
+        "A": "6 km",
+        "B": "60 km",
+        "C": "0.6 km",
+        "D": "600 km",
+        "E": "None"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 31,
+      "question": "Area of shaded portion: M = 10×7, N = 6×2",
+      "options": {
+        "A": "58 cm²",
+        "B": "70 cm²",
+        "C": "58 cm²",
+        "D": "68 cm²",
+        "E": "72 cm²"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 32,
+      "question": "If 1 litre of oil weighs 2.0 kg, find the weight of 5 litres",
+      "options": {
+        "A": "8 kg",
+        "B": "9 kg",
+        "C": "10 kg",
+        "D": "12 kg",
+        "E": "15 kg"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 33,
+      "question": "Solve 3x + 5 = -7",
+      "options": {
+        "A": "-3",
+        "B": "-2",
+        "C": "-1",
+        "D": "-4",
+        "E": "0"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 34,
+      "question": "Mode of numbers 2, 6, 3, 5, 5, 1, 7",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "5",
+        "E": "6"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 35,
+      "question": "Solve ix = 10 using cross multiplication",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "16",
+        "D": "12",
+        "E": "20"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 36,
+      "question": "Fraction of shaded portion if total = 4 and shaded = 1",
+      "options": {
+        "A": "¼",
+        "B": "½",
+        "C": "1/3",
+        "D": "¾",
+        "E": "None"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 37,
+      "question": "If 1 dollar = N780, how much is 500 dollars?",
+      "options": {
+        "A": "N380,000",
+        "B": "N390,000",
+        "C": "N400,000",
+        "D": "N420,000",
+        "E": "N500,000"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 38,
+      "question": "Salake is 16 years old. 11 years ago, how old was he?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "5",
+        "D": "5",
+        "E": "7"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 39,
+      "question": "Average of 50, 59, and 71",
+      "options": {
+        "A": "55",
+        "B": "56",
+        "C": "60",
+        "D": "59",
+        "E": "57"
+      },
+      "correct": "C"
+    }
+    
+  ]
+}

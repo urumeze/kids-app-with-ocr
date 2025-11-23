@@ -1,0 +1,150 @@
+{
+  "subject": "Aptitude Test",
+  "year": 2020,
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Select the correct answer: (a) 0.50 (b) 1.25 (c) 1.50 (d) 2.50 (e) 3.25",
+      "options": {
+        "A": "0.50",
+        "B": "1.25",
+        "C": "1.50",
+        "D": "2.50",
+        "E": "3.25"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "question": "Which number comes next? (a) 9 (b) 7 (c) 5 (d) 4 (e) 2",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "5",
+        "D": "4",
+        "E": "2"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "Select the correct answer: (a) 8 (b) 5 (c) 2 (d) 1 (e) 0",
+      "options": {
+        "A": "8",
+        "B": "5",
+        "C": "2",
+        "D": "1",
+        "E": "0"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 41,
+      "question": "Which town has the largest iron and steel industry in Nigeria?",
+      "options": {
+        "A": "Ajaokuta",
+        "B": "Aladja",
+        "C": "Jos",
+        "D": "Katsina",
+        "E": "Oshogbo"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 43,
+      "question": "How many faces does a cube have?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6",
+        "E": "7"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 45,
+      "question": "Which of the following converts electrical energy to heat energy?",
+      "options": {
+        "A": "Air conditioner",
+        "B": "Ceiling fan",
+        "C": "Loudspeaker",
+        "D": "Pressing iron",
+        "E": "Television set"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 5,
+      "question": "Arrange the following in ascending order: Hamlet, village, city, town.",
+      "options": {
+        "A": "city, town, village, hamlet",
+        "B": "hamlet, city, town, village",
+        "C": "hamlet, village, town, city",
+        "D": "town, village, city, hamlet",
+        "E": "village, hamlet, city, town"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 6,
+      "question": "Bus and road : Train and .........",
+      "options": {
+        "A": "pathway",
+        "B": "rail",
+        "C": "runways",
+        "D": "station",
+        "E": "waterways"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 21,
+      "question": "ANIMAL in code",
+      "options": {
+        "A": "l\\zmrzo",
+        "B": "ozmrzn",
+        "C": "zmrnzo",
+        "D": "zrmzno",
+        "E": "znrmoz"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 26,
+      "question": "SAVE is coded 8296. How would VASE be coded?",
+      "options": {
+        "A": "9268",
+        "B": "8629",
+        "C": "9826",
+        "D": "9628",
+        "E": "9286"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "\"John is my sister's son. John and I are related.\" Who is John?",
+      "options": {
+        "A": "I and John's father",
+        "B": "John is my brother",
+        "C": "John is my cousin",
+        "D": "John is my nephew",
+        "E": "John is my step brother"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 36,
+      "question": "Choose the word that pairs with 'gun'.",
+      "options": {
+        "A": "king",
+        "B": "tailor",
+        "C": "driver",
+        "D": "hunter",
+        "E": "none"
+      },
+      "correct": "D"
+    }
+  ]
+}

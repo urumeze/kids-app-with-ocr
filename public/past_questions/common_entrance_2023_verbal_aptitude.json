@@ -1,0 +1,232 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Which of the following is the odd one out? Barley, Oat, Rice, Wheat, Yam",
+      "options": {
+        "A": "Barley",
+        "B": "Oat",
+        "C": "Rice",
+        "D": "Wheat",
+        "E": "Yam"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is the odd one out? Chair, Chalkboard, Desk, Duster, Swing",
+      "options": {
+        "A": "Chair",
+        "B": "Chalkboard",
+        "C": "Desk",
+        "D": "Duster",
+        "E": "Swing"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is the odd one out? Bat, Crocodile, Dolphin, Shark, Whale",
+      "options": {
+        "A": "Bat",
+        "B": "Crocodile",
+        "C": "Dolphin",
+        "D": "Shark",
+        "E": "Whale"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is the odd one out? Ear, Eye, Liver, Skin, Tongue",
+      "options": {
+        "A": "Ear",
+        "B": "Eye",
+        "C": "Liver",
+        "D": "Skin",
+        "E": "Tongue"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is the odd one out? Cabbage, Cucumber, Lettuce, Pawpaw, Spinach",
+      "options": {
+        "A": "Cabbage",
+        "B": "Cucumber",
+        "C": "Lettuce",
+        "D": "Pawpaw",
+        "E": "Spinach"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 6,
+      "question": "Hand is to Wrist as Leg is to?",
+      "options": {
+        "A": "Ankle",
+        "B": "Finger",
+        "C": "Hip",
+        "D": "Knee",
+        "E": "Toe"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "Mango is to Orchard as Tomato is to?",
+      "options": {
+        "A": "Garden",
+        "B": "Plant",
+        "C": "Root",
+        "D": "Seed",
+        "E": "Vegetable"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "Arrange in correct order: The boxer fought with great courage; We were happy; He won the fight",
+      "options": {
+        "A": "1,2,3",
+        "B": "1,3,2",
+        "C": "2,1,3",
+        "D": "2,3,1",
+        "E": "3,2,1"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 9,
+      "question": "Arrange in correct order: We went home; They arrived at the bus station; I waited for Mary and Samantha at the bus station",
+      "options": {
+        "A": "1,2,3",
+        "B": "1,3,2",
+        "C": "2,1,3",
+        "D": "3,1,2",
+        "E": "3,2,1"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "Arrange in correct order: He passed his examination; He got a scholarship; Shiphi studied hard in school",
+      "options": {
+        "A": "1,2,3",
+        "B": "2,1,3",
+        "C": "2,3,1",
+        "D": "3,1,2",
+        "E": "3,2,1"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 11,
+      "question": "Arrange words in alphabetical order: While, Wheat, Whale, Weave, Weight",
+      "options": {
+        "A": "1,2,3,4,5",
+        "B": "2,1,3,5,4",
+        "C": "3,2,5,4,1",
+        "D": "3,4,1,5,2",
+        "E": "4,2,1,3,5"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 12,
+      "question": "Which word describes the others: Rodent, Minute, Plight, Mingle, Triple",
+      "options": {
+        "A": "1,2,3,4,5",
+        "B": "3,4,2,1,5",
+        "C": "4,2,3,1,5",
+        "D": "4,1,2,3,5",
+        "E": "5,4,1,2,3"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "Coding: The word APPLE would be written as?",
+      "options": {
+        "A": "ALPEP",
+        "B": "ELPPA",
+        "C": "LPPEA",
+        "D": "PLPEA",
+        "E": "PPALE"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 14,
+      "question": "Coding: If BORED is 53794, ROBED would be coded as?",
+      "options": {
+        "A": "35794",
+        "B": "37594",
+        "C": "73594",
+        "D": "73954",
+        "E": "75934"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 15,
+      "question": "True or False: Lizards are reptiles",
+      "options": {
+        "A": "Always true",
+        "B": "Often true",
+        "C": "Rarely true",
+        "D": "Undecided",
+        "E": "Never true"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "question": "True or False: Trees grow in the desert",
+      "options": {
+        "A": "Always true",
+        "B": "Often true",
+        "C": "Rarely true",
+        "D": "Undecided",
+        "E": "Never true"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 17,
+      "question": "True or False: All women wear glasses",
+      "options": {
+        "A": "Always true",
+        "B": "Often true",
+        "C": "Rarely true",
+        "D": "Undecided",
+        "E": "Never true"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 18,
+      "question": "True or False: Butterflies are not birds",
+      "options": {
+        "A": "Always true",
+        "B": "Often true",
+        "C": "Rarely true",
+        "D": "Undecided",
+        "E": "Never true"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 19,
+      "question": "True or False: Jewelry beautifies ladies",
+      "options": {
+        "A": "Always true",
+        "B": "Often true",
+        "C": "Rarely true",
+        "D": "Undecided",
+        "E": "Never true"
+      },
+      "correct": "B"
+    }
+  ]
+}

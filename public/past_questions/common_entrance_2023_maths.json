@@ -1,0 +1,332 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2023,
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Multiply 12 by 3 and express your answer in Roman numerals.",
+        "options": {
+          "A": "XVI",
+          "B": "XXIV",
+          "C": "XXVI",
+          "D": "XXXIV",
+          "E": "XXXVI"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 2,
+        "question": "What are the prime factors of 24?",
+        "options": {
+          "A": "1,2",
+          "B": "1,2,3",
+          "C": "1,2,3,4",
+          "D": "2,3",
+          "E": "2,3,4"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 3,
+        "question": "How many seconds are there in 60 minutes?",
+        "options": {
+          "A": "3600",
+          "B": "2800",
+          "C": "2160",
+          "D": "2000",
+          "E": "1500"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 17,
+        "question": "Find the positive difference between 528 and the sum of 310 and 67.",
+        "options": {
+          "A": "141",
+          "B": "151",
+          "C": "156",
+          "D": "162",
+          "E": "187"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 18,
+        "question": "Find the odd number between 17 and 34 that is a multiple of 11.",
+        "options": {
+          "A": "19",
+          "B": "21",
+          "C": "22",
+          "D": "27",
+          "E": "33"
+        },
+        "correct": "E"
+      },
+      {
+        "id": 19,
+        "question": "Find the sum of the square root of 625 and the square of 9.",
+        "options": {
+          "A": "106",
+          "B": "100",
+          "C": "81",
+          "D": "34",
+          "E": "30"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 20,
+        "question": "8 men can plough a field in 10 hours. How long will it take 4 men, if they all work at the same rate?",
+        "options": {
+          "A": "20 hours",
+          "B": "20 hours",
+          "C": "15 hours",
+          "D": "10 hours",
+          "E": "5 hours"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 21,
+        "question": "If a man earns N33,000.00 per month and spends 1/5 of his salary on bills, how much does he have left?",
+        "options": {
+          "A": "N33,000.00",
+          "B": "N30,000.00",
+          "C": "N22,800.00",
+          "D": "N18,000.00",
+          "E": "N11,000.00"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 22,
+        "question": "Find the H.C.F of 108, 27 and 9.",
+        "options": {
+          "A": "9",
+          "B": "7",
+          "C": "5",
+          "D": "3",
+          "E": "2"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 23,
+        "question": "Victor bought a blue pen at N50.00 and sold it for N30.00. What is the percentage loss?",
+        "options": {
+          "A": "20",
+          "B": "30",
+          "C": "40",
+          "D": "50",
+          "E": "60"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 24,
+        "question": "Express 8m in centimetres.",
+        "options": {
+          "A": "80cm",
+          "B": "800cm",
+          "C": "8cm",
+          "D": "8000cm",
+          "E": "0.8cm"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 25,
+        "question": "A class consists of 36 girls and 18 boys. Find the ratio of boys to girls.",
+        "options": {
+          "A": "1:2",
+          "B": "1:3",
+          "C": "2:1",
+          "D": "2:3",
+          "E": "3:1"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 26,
+        "question": "If Ade spends 1/4 of his pocket money on books, what fraction of it remains?",
+        "options": {
+          "A": "1/4",
+          "B": "1/2",
+          "C": "3/4",
+          "D": "1/3",
+          "E": "2/3"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 27,
+        "question": "A ticket to a football match costs N2,400.00. How much should a family of four pay?",
+        "options": {
+          "A": "N1,200.00",
+          "B": "N2,400.00",
+          "C": "N3,600.00",
+          "D": "N4,800.00",
+          "E": "N9,600.00"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 28,
+        "question": "Subtract 2 1/3 from 4 1/2.",
+        "options": {
+          "A": "1 1/6",
+          "B": "1 1/3",
+          "C": "1 1/4",
+          "D": "2",
+          "E": "2 1/6"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 29,
+        "question": "If 12 - x = 8, find the value of x.",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "12",
+          "D": "14",
+          "E": "20"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 30,
+        "question": "Find the value of x in the equation 6x - 3 = 2x + 13.",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5",
+          "E": "6"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 31,
+        "question": "Given that x + 3 = 5, find the value of 2x.",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "6",
+          "D": "8",
+          "E": "10"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 32,
+        "question": "Find the value of the missing number: 25 - □ = 11.",
+        "options": {
+          "A": "10",
+          "B": "12",
+          "C": "14",
+          "D": "16",
+          "E": "18"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 33,
+        "question": "Calculate the circumference of a circle whose diameter is 42cm. (Take π = 22/7)",
+        "options": {
+          "A": "70cm",
+          "B": "88cm",
+          "C": "100cm",
+          "D": "120cm",
+          "E": "132cm"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 34,
+        "question": "How many vertices does a cube have?",
+        "options": {
+          "A": "4",
+          "B": "6",
+          "C": "8",
+          "D": "10",
+          "E": "12"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 35,
+        "question": "Which polygon has seven sides?",
+        "options": {
+          "A": "Heptagon",
+          "B": "Hexagon",
+          "C": "Nonagon",
+          "D": "Octagon",
+          "E": "Pentagon"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 36,
+        "question": "How many lines of symmetry does the given shape have?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "2",
+          "E": "1"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 37,
+        "question": "Which of the following shapes is NOT plane?",
+        "options": {
+          "A": "Cube",
+          "B": "Rectangle",
+          "C": "Rhombus",
+          "D": "Square",
+          "E": "Triangle"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 38,
+        "question": "Calculate the area of a circle whose radius is 7 cm. (Take π = 22/7)",
+        "options": {
+          "A": "154 cm²",
+          "B": "124 cm²",
+          "C": "104 cm²",
+          "D": "94 cm²",
+          "E": "54 cm²"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 39,
+        "question": "Find the average of 10, 4, 6, 3 and 7.",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "6",
+          "D": "7",
+          "E": "10"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 40,
+        "question": "Find the mode of the following numbers: 11, 10, 11, 11, 12, 13, 14, 14, 15, 15, 16.",
+        "options": {
+          "A": "10",
+          "B": "11",
+          "C": "12",
+          "D": "13",
+          "E": "14"
+        },
+        "correct": "B"
+      }
+    ]
+  }
+]

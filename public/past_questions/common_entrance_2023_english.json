@@ -1,0 +1,673 @@
+[
+  {
+    "subject": "English Studies - Comprehension",
+    "year": 2024,
+    "quiz": [
+      {
+        "id": 1,
+        "passage": "Yoghurt has deep roots in history. It has been enjoyed in many cultures for a long time. It is traditionally made by adding warm milk and a small amount of already made yoghurt. This type of yoghurt is a delicious snack in many homes around the world. Many cultures consume yoghurt as a condiment or as an accompaniment to spicy foods.\nIn Western cultures, yoghurt is considered to be a delicious healthy food with beneficial bacteria that aids digestion and satisfies cravings without any form of guilt. Greek yoghurt is popular and considered as one of the best yoghurt one can choose when shopping for yoghurt. Greek yoghurt is very healthy because the whey has been strained out and what is left is a creamy and protein rich treat.\nThese days, people are becoming increasingly aware of the potential health benefits of fermented foods, such as yoghurt. The reason being that, some fermented food contains probiotics, especially yoghurt.\nProbiotics are good bacteria that the body can benefit from which are found in yoghurts, especially traditionally processed yoghurt."
+      },
+      {
+        "id": 2,
+        "question": "According to the first paragraph, yoghurt is made through the use of",
+        "options": {
+          "A": "delicious snack",
+          "B": "little sugar",
+          "C": "more water",
+          "D": "rich cream",
+          "E": "warm milk"
+        },
+        "correct": "E"
+      },
+      {
+        "id": 3,
+        "question": "Greek yoghurt is a healthy choice because it",
+        "options": {
+          "A": "contains little fat",
+          "B": "has little water",
+          "C": "is foreign",
+          "D": "is proteinous",
+          "E": "is popular"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 4,
+        "question": "Which of the following is not true about yoghurt?",
+        "options": {
+          "A": "contains bacteria",
+          "B": "cures stomach disorder",
+          "C": "helps digestion",
+          "D": "is a healthy snack",
+          "E": "is produced through fermentation"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 5,
+        "question": "Another word that can replace 'potential' as used in the passage is",
+        "options": {
+          "A": "hidden",
+          "B": "likely",
+          "C": "perfect",
+          "D": "quality",
+          "E": "serious"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 6,
+        "question": "Yoghurt is a delicious snack in many homes around the world because it",
+        "options": {
+          "A": "contains strained whey",
+          "B": "is a condiment in many cultures",
+          "C": "is deficient in good bacteria",
+          "D": "is taken after eating spicy food",
+          "E": "quenches thirst"
+        },
+        "correct": "A"
+      },
+
+      {
+        "id": 7,
+        "passage": "There was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out, 'Wolf! Wolf! The wolf is chasing the sheep!'\nWhen the villagers heard the cry, they came running up the hill to drive the wolf away. But when they arrived, they saw no wolf. The boy was amused when he saw their angry faces. 'Do not scream boy,' warned the villagers, 'when there is no wolf!' They angrily went back down the hill.\nLater, the shepherd boy cried again, 'Wolf! Wolf! The wolf is chasing the sheep!' To his amusement, he looked on as the villagers came running up the hill to scare the wolf away.\nAs they saw there was no wolf, they said strictly, 'Save your frightened cry for when there really is a wolf! Do not cry wolf when there is no wolf!' But the boy grinned at their words while they walked grumbling down the hill once more.\nLater, the boy saw a real wolf sneaking around the flock. Alarmed, he jumped on his feet and cried out as loud as he could, 'Wolf! Wolf!' But the villagers thought he was fooling them again so they didn't come to help.\nAt sunset, the villagers went looking for the boy who had not returned with their sheep. When they went up the hill, they found him weeping. 'There really was a wolf! The flock is gone! I cried out 'wolf!' but you didn't come,' he wailed.\nAn old man comforted him saying, 'Nobody believes a liar, even when he is telling the truth!'"
+      },
+      {
+        "id": 8,
+        "question": "The villagers were angry because",
+        "options": {
+          "A": "no wolf was seen when they reached the hill",
+          "B": "the boy could chase the wolf alone",
+          "C": "the boy was amused by their angry faces",
+          "D": "the boy was shedding tears",
+          "E": "there was no sheep left"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 9,
+        "question": "From the passage, we can conclude that the boy was",
+        "options": {
+          "A": "brave",
+          "B": "mischievous",
+          "C": "rude",
+          "D": "sincere",
+          "E": "wicked"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 10,
+        "question": "The villagers went up the hill looking for the boy",
+        "options": {
+          "A": "at dawn",
+          "B": "at nightfall",
+          "C": "at noon",
+          "D": "at sunrise",
+          "E": "during the day"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 11,
+        "question": "Which of the following words can replace 'amused' as used in the passage?",
+        "options": {
+          "A": "Calm",
+          "B": "Confused",
+          "C": "Delighted",
+          "D": "Disappointed",
+          "E": "Troubled"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 12,
+        "question": "The villagers went up the hill in search of the boy because",
+        "options": {
+          "A": "he cried wolf",
+          "B": "he was bored",
+          "C": "he was not back as expected",
+          "D": "the wolf chased the sheep",
+          "E": "they wanted to be sure he was alive"
+        },
+        "correct": "C"
+      }
+    ]
+  },
+
+  {
+    "subject": "English Studies - Lexis",
+    "year": 2024,
+    "quiz": [
+      {
+        "id": 13,
+        "question": "Our ailing sister is at home.",
+        "options": {
+          "A": "beautiful",
+          "B": "caring",
+          "C": "hostile",
+          "D": "naughty",
+          "E": "sick"
+        },
+        "correct": "E"
+      },
+      {
+        "id": 14,
+        "question": "The match was postponed because of the heavy rain.",
+        "options": {
+          "A": "cancelled",
+          "B": "deferred",
+          "C": "prolonged",
+          "D": "scheduled",
+          "E": "suspended"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 15,
+        "question": "The government is working hard to control malaria in our society.",
+        "options": {
+          "A": "eradicate",
+          "B": "eliminate",
+          "C": "prevent",
+          "D": "stop",
+          "E": "transmit"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 16,
+        "question": "Drinking dirty water will make you sick.",
+        "options": {
+          "A": "clean",
+          "B": "contaminated",
+          "C": "distilled",
+          "D": "filtered",
+          "E": "treated"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 17,
+        "question": "The head teacher rebuked Adamu for always coming late.",
+        "options": {
+          "A": "advised",
+          "B": "criticized",
+          "C": "hated",
+          "D": "punished",
+          "E": "scolded"
+        },
+        "correct": "E"
+      }
+    ]
+  },
+
+  {
+    "subject": "English Studies - Antonyms",
+    "year": 2024,
+    "quiz": [
+      {
+        "id": 18,
+        "question": "I like meeting interesting people.",
+        "options": {
+          "A": "absorbing",
+          "B": "boring",
+          "C": "fascinating",
+          "D": "happy",
+          "E": "sad"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 19,
+        "question": "The boy was excited when he saw his mother.",
+        "options": {
+          "A": "annoyed",
+          "B": "frightened",
+          "C": "happy",
+          "D": "joyous",
+          "E": "thrilled"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 20,
+        "question": "The weather suddenly became hazy.",
+        "options": {
+          "A": "bright",
+          "B": "cold",
+          "C": "dry",
+          "D": "stormy",
+          "E": "warm"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 21,
+        "question": "Youths nowadays are eager to be rich.",
+        "options": {
+          "A": "keen",
+          "B": "longing",
+          "C": "quick",
+          "D": "reluctant",
+          "E": "striving"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 22,
+        "question": "The stadium was empty during the match.",
+        "options": {
+          "A": "bare",
+          "B": "deserted",
+          "C": "free",
+          "D": "full",
+          "E": "loaded"
+        },
+        "correct": "D"
+      }
+    ]
+  },
+
+  {
+    "subject": "English Studies - Structure",
+    "year": 2024,
+    "quiz": [
+      {
+        "id": 23,
+        "question": "The newly opened ice cream shop is ___ my street.",
+        "options": {
+          "A": "at",
+          "B": "by",
+          "C": "from",
+          "D": "in",
+          "E": "on"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 24,
+        "question": "The prefix ___ will combine with 'direct' to form a new word.",
+        "options": {
+          "A": "dis-",
+          "B": "im-",
+          "C": "pre-",
+          "D": "re-",
+          "E": "un-"
+        },
+        "correct": "A"
+      },
+
+      {
+        "id": 25,
+        "question": "My mother bought a cute shoe during our ___",
+        "options": {
+          "A": "vacasion",
+          "B": "vacation",
+          "C": "vacattion",
+          "D": "vaccation",
+          "E": "vercation"
+        },
+        "correct": "B"
+      },
+
+      {
+        "id": 26,
+        "question": "The golden wrist watch belongs to my father, it is ___",
+        "options": {
+          "A": "hers",
+          "B": "his",
+          "C": "mine",
+          "D": "ours",
+          "E": "yours"
+        },
+        "correct": "B"
+      },
+
+      {
+        "id": 27,
+        "question": "Victor was born with a silver spoon. This means that he was",
+        "options": {
+          "A": "born into a poor family",
+          "B": "born into a wealthy family",
+          "C": "born into an influential family",
+          "D": "fed with a silver spoon",
+          "E": "wealthy at birth"
+        },
+        "correct": "B"
+      },
+
+      {
+        "id": 28,
+        "question": "It has been raining for some days now, ___ it?",
+        "options": {
+          "A": "hadn't",
+          "B": "has",
+          "C": "hasn't",
+          "D": "is",
+          "E": "isn't"
+        },
+        "correct": "C"
+      },
+
+      {
+        "id": 29,
+        "question": "Funmi was given the ___ portion.",
+        "options": {
+          "A": "more smaller",
+          "B": "more smallest",
+          "C": "small",
+          "D": "smaller",
+          "E": "smallest"
+        },
+        "correct": "E"
+      },
+
+      {
+        "id": 30,
+        "question": "Which of the following words contains the /f/ sound?",
+        "options": {
+          "A": "path",
+          "B": "phone",
+          "C": "sigh",
+          "D": "thing",
+          "E": "van"
+        },
+        "correct": "B"
+      },
+
+      {
+        "id": 31,
+        "question": "My mother ___ to the house early yesterday.",
+        "options": {
+          "A": "have returned",
+          "B": "is returning",
+          "C": "return",
+          "D": "returned",
+          "E": "returns"
+        },
+        "correct": "D"
+      },
+
+      {
+        "id": 32,
+        "question": "There will be a conference of governors' ___ at the government house.",
+        "options": {
+          "A": "wife",
+          "B": "wifes",
+          "C": "wive's",
+          "D": "wives",
+          "E": "wives'"
+        },
+        "correct": "E"
+      },
+
+      {
+        "id": 33,
+        "question": "The children always ___ to school although their father is rich.",
+        "options": {
+          "A": "are trekking",
+          "B": "have trekked",
+          "C": "trek",
+          "D": "trekked",
+          "E": "treks"
+        },
+        "correct": "C"
+      },
+
+      {
+        "id": 34,
+        "question": "Neither Joy nor her sisters ___ fruits.",
+        "options": {
+          "A": "are liking",
+          "B": "is liking",
+          "C": "like",
+          "D": "liked",
+          "E": "likes"
+        },
+        "correct": "C"
+      },
+
+      {
+        "id": 35,
+        "question": "The boy wears a smart watch ___ his wrist always.",
+        "options": {
+          "A": "behind",
+          "B": "by",
+          "C": "in",
+          "D": "on",
+          "E": "under"
+        },
+        "correct": "D"
+      },
+
+      {
+        "id": 36,
+        "question": "Umar and ___ will visit our uncle.",
+        "options": {
+          "A": "her",
+          "B": "him",
+          "C": "I",
+          "D": "me",
+          "E": "them"
+        },
+        "correct": "C"
+      },
+
+      {
+        "id": 37,
+        "question": "The ___ are waiting for her across the road.",
+        "options": {
+          "A": "childrens'",
+          "B": "children",
+          "C": "children's",
+          "D": "childrens",
+          "E": "child"
+        },
+        "correct": "C"
+      },
+
+      {
+        "id": 38,
+        "question": "The pupils must all keep quiet, ___ they?",
+        "options": {
+          "A": "aren't",
+          "B": "hadn't",
+          "C": "isn't",
+          "D": "mustn't",
+          "E": "shouldn't"
+        },
+        "correct": "E"
+      },
+
+      {
+        "id": 39,
+        "question": "He was ___ from playing football.",
+        "options": {
+          "A": "descouraged",
+          "B": "descoraged",
+          "C": "discouraged",
+          "D": "discourraged",
+          "E": "discoueraged"
+        },
+        "correct": "C"
+      },
+
+      {
+        "id": 40,
+        "question": "The key ___ belongs to Ada is on the table.",
+        "options": {
+          "A": "which",
+          "B": "who",
+          "C": "who's",
+          "D": "whom",
+          "E": "whose"
+        },
+        "correct": "E"
+      }
+    ]
+  },
+
+  {
+    "subject": "English Studies - National Values",
+    "year": 2024,
+    "quiz": [
+      {
+        "id": 41,
+        "question": "Which of the following groups defines a nuclear family?",
+        "options": {
+          "A": "Father, mother and children",
+          "B": "Father, mother and grandchildren",
+          "C": "Father, mother and nieces",
+          "D": "Father, mother and uncles",
+          "E": "Father, mother and cousins"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 42,
+        "question": "The famous groundnut pyramids were built in ___ state.",
+        "options": {
+          "A": "Adamawa",
+          "B": "Kaduna",
+          "C": "Kano",
+          "D": "Katsina",
+          "E": "Plateau"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 43,
+        "question": "A monarch in Yoruba land is titled",
+        "options": {
+          "A": "Attah",
+          "B": "Eze",
+          "C": "Oba",
+          "D": "Obong",
+          "E": "Shehu"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 44,
+        "question": "The Kanuris inhabit the ___ geo-political zone of Nigeria.",
+        "options": {
+          "A": "North Central",
+          "B": "North East",
+          "C": "South East",
+          "D": "South South",
+          "E": "South West"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 45,
+        "question": "Nigeria is divided into ___ geo-political zones.",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5",
+          "E": "6"
+        },
+        "correct": "E"
+      },
+      {
+        "id": 46,
+        "question": "People related by birth and marriage define",
+        "options": {
+          "A": "peer group",
+          "B": "family",
+          "C": "friendship",
+          "D": "kinship",
+          "E": "age grade"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 47,
+        "question": "Which of the following is an example of material culture?",
+        "options": {
+          "A": "Art",
+          "B": "Folklore",
+          "C": "Language",
+          "D": "Music",
+          "E": "Religion"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 48,
+        "question": "The leading cause of drug abuse in schools is",
+        "options": {
+          "A": "absenteeism",
+          "B": "expensive living",
+          "C": "high crime rate",
+          "D": "peer pressure",
+          "E": "poor security"
+        },
+        "correct": "D"
+      },
+      {
+        "id": 49,
+        "question": "Female genital mutilation is an example of",
+        "options": {
+          "A": "adverse traditional practice",
+          "B": "age-grade initiation",
+          "C": "ethnic cleansing",
+          "D": "gender discrimination",
+          "E": "responsible parenthood"
+        },
+        "correct": "A"
+      },
+      {
+        "id": 50,
+        "question": "The 'agbada' is to the Yorubas as ___ is to the Hausas.",
+        "options": {
+          "A": "aso-oke",
+          "B": "babbar-riga",
+          "C": "dashiki",
+          "D": "isi-agu",
+          "E": "kaftan"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 51,
+        "question": "Children who obey school rules and regulations exhibit",
+        "options": {
+          "A": "commitment",
+          "B": "devotion",
+          "C": "discipline",
+          "D": "selflessness",
+          "E": "tolerance"
+        },
+        "correct": "C"
+      },
+      {
+        "id": 52,
+        "question": "The ___ government is the closest to the people.",
+        "options": {
+          "A": "federal",
+          "B": "local",
+          "C": "national",
+          "D": "regional",
+          "E": "state"
+        },
+        "correct": "B"
+      },
+      {
+        "id": 53,
+        "question": "June 12 is regarded as ___ day in Nigeria.",
+        "options": {
+          "A": "boxing",
+          "B": "children's",
+          "C": "democracy",
+          "D": "independence",
+          "E": "workers'"
+        },
+        "correct": "C"
+      }
+    ]
+  }
+]

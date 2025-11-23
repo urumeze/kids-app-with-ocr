@@ -1,0 +1,124 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "SAMPLE A: Which of the following numbers continues the series?",
+      "options": {
+        "A": "260",
+        "B": "245",
+        "C": "244",
+        "D": "154",
+        "E": "112"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "SAMPLE B: Continue the number series from the pattern provided.",
+      "options": {
+        "A": "16",
+        "B": "12",
+        "C": "8",
+        "D": "4",
+        "E": "2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "SAMPLE C: What comes next in the sequence?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12",
+        "E": "15"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "SAMPLE E: Continue the sequence for question 12.",
+      "options": {
+        "A": "3",
+        "B": "53",
+        "C": "123",
+        "D": "40",
+        "E": "33"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "SAMPLE F: Find the next number in the series for question 12.",
+      "options": {
+        "A": "10",
+        "B": "15",
+        "C": "20",
+        "D": "2.5",
+        "E": "30"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 6,
+      "question": "SAMPLE G: Continue the sequence for question 22.",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "4",
+        "D": "3",
+        "E": "2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "SAMPLE H: What comes next in the sequence for question 32?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "10",
+        "E": "56"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "SAMPLE J: Hand trowel is to mason as soldering iron is to?",
+      "options": {
+        "A": "Carpenter",
+        "B": "Electrician",
+        "C": "Mechanic",
+        "D": "Plumber",
+        "E": "Welder"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 9,
+      "question": "SAMPLE J: The process of changing the metal bar from A to B in the diagram is?",
+      "options": {
+        "A": "Bending",
+        "B": "Cutting",
+        "C": "Hammering",
+        "D": "Twisting",
+        "E": "Welding"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 10,
+      "question": "SAMPLE J: The centre punch is used in marking out points before?",
+      "options": {
+        "A": "Cutting",
+        "B": "Drilling",
+        "C": "Filing",
+        "D": "Planning",
+        "E": "Riveting"
+      },
+      "correct": "B"
+    }
+  ]
+}
