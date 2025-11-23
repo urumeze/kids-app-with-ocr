@@ -2,7 +2,6 @@
   "subject": "Mathematics and Basic Science",
   "year": 2020,
   "quiz": [
-   
     {
       "id": 2,
       "question": "Find the highest prime factor of 270.",
@@ -10,19 +9,19 @@
         "A": "2",
         "B": "3",
         "C": "5",
-        "D": "5",
-        "E": "7"
+        "D": "7",
+        "E": "None"
       },
-      "correct": "D"
+      "correct": "C"
     },
     {
       "id": 3,
       "question": "Write 3,150,009 in words.",
       "options": {
         "A": "Three million, one hundred fifty thousand and nine",
-        "B": "Three million, one thousand and fifty nine",
+        "B": "Three million, one thousand and fifty-nine",
         "C": "Three million, fifteen thousand and nine",
-        "D": "Three million, one hundred and fifty nine",
+        "D": "Three million, one hundred and fifty-nine",
         "E": "Three million, one hundred and fifty thousand and nine"
       },
       "correct": "E"
@@ -46,7 +45,7 @@
         "A": "4",
         "B": "0",
         "C": "68",
-        "D": "−68",
+        "D": "-68",
         "E": "136"
       },
       "correct": "A"
@@ -67,11 +66,11 @@
       "id": 7,
       "question": "Add 723 + 123 + 456",
       "options": {
-        "A": "1,200",
-        "B": "1,302",
-        "C": "1,300",
-        "D": "1,303",
-        "E": "1,321"
+        "A": "1200",
+        "B": "1302",
+        "C": "1300",
+        "D": "1303",
+        "E": "1321"
       },
       "correct": "B"
     },
@@ -121,7 +120,7 @@
         "D": "N40,000",
         "E": "N32,000"
       },
-      "correct": "C"
+      "correct": "A"
     },
     {
       "id": 12,
@@ -133,7 +132,7 @@
         "D": "2 × 3² × 5²",
         "E": "2² × 3² × 5"
       },
-      "correct": "E"
+      "correct": "C"
     },
     {
       "id": 13,
@@ -145,7 +144,7 @@
         "D": "35",
         "E": "50"
       },
-      "correct": "D"
+      "correct": "A"
     },
     {
       "id": 14,
@@ -157,7 +156,7 @@
         "D": "N120",
         "E": "N1,000"
       },
-      "correct": "D"
+      "correct": "B"
     },
     {
       "id": 15,
@@ -197,7 +196,7 @@
     },
     {
       "id": 18,
-      "question": "Circumference of a circle = 66 cm. Find radius.",
+      "question": "Circumference of a circle = 66 cm. Find radius (π = 22/7).",
       "options": {
         "A": "10.5 cm",
         "B": "12 cm",
@@ -229,7 +228,7 @@
         "D": "18 cm²",
         "E": "21 cm²"
       },
-      "correct": "D"
+      "correct": "E"
     },
     {
       "id": 21,
@@ -253,7 +252,7 @@
         "D": "7.2 g",
         "E": "7.4 g"
       },
-      "correct": "E"
+      "correct": "D"
     },
     {
       "id": 23,
@@ -263,7 +262,7 @@
         "B": "16",
         "C": "18",
         "D": "20",
-        "E": "B"
+        "E": "None"
       },
       "correct": "D"
     },
@@ -361,7 +360,7 @@
         "D": "68 cm²",
         "E": "72 cm²"
       },
-      "correct": "C"
+      "correct": "A"
     },
     {
       "id": 32,
@@ -377,30 +376,6 @@
     },
     {
       "id": 33,
-      "question": "Solve 3x + 5 = -7",
-      "options": {
-        "A": "-3",
-        "B": "-2",
-        "C": "-1",
-        "D": "-4",
-        "E": "0"
-      },
-      "correct": "D"
-    },
-    {
-      "id": 34,
-      "question": "Mode of numbers 2, 6, 3, 5, 5, 1, 7",
-      "options": {
-        "A": "1",
-        "B": "2",
-        "C": "3",
-        "D": "5",
-        "E": "6"
-      },
-      "correct": "D"
-    },
-    {
-      "id": 35,
       "question": "Solve ix = 10 using cross multiplication",
       "options": {
         "A": "8",
@@ -412,7 +387,7 @@
       "correct": "C"
     },
     {
-      "id": 36,
+      "id": 34,
       "question": "Fraction of shaded portion if total = 4 and shaded = 1",
       "options": {
         "A": "¼",
@@ -424,7 +399,7 @@
       "correct": "A"
     },
     {
-      "id": 37,
+      "id": 35,
       "question": "If 1 dollar = N780, how much is 500 dollars?",
       "options": {
         "A": "N380,000",
@@ -436,19 +411,19 @@
       "correct": "B"
     },
     {
-      "id": 38,
+      "id": 36,
       "question": "Salake is 16 years old. 11 years ago, how old was he?",
       "options": {
         "A": "4",
         "B": "6",
         "C": "5",
-        "D": "5",
+        "D": "None",
         "E": "7"
       },
-      "correct": "D"
+      "correct": "C"
     },
     {
-      "id": 39,
+      "id": 37,
       "question": "Average of 50, 59, and 71",
       "options": {
         "A": "55",
@@ -459,6 +434,5 @@
       },
       "correct": "C"
     }
-    
   ]
 }

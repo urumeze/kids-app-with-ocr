@@ -3,242 +3,257 @@
     {
       "id": 1,
       "question": "A body of mass 2 kg is acted upon by a force of 10 N. What is its acceleration?",
-      "options": {"A":"2 m/s²","B":"5 m/s²","C":"10 m/s²","D":"20 m/s²"},
-      "correct":"B"
+      "options": {"A": "2 m/s²", "B": "5 m/s²", "C": "10 m/s²", "D": "20 m/s²"},
+      "correct": "B"
     },
     {
       "id": 2,
       "question": "If sin x = 3/5, find tan x.",
-      "options": {"A":"4/3","B":"3/4","C":"5/4","D":"4/5"},
-      "correct":"A"
+      "options": {"A": "4/3", "B": "3/4", "C": "5/4", "D": "4/5"},
+      "correct": "A"
     },
     {
       "id": 3,
       "question": "Find the value of x if 2^(x+1) = 32.",
-      "options": {"A":"4","B":"5","C":"3","D":"2"},
-      "correct":"A"
+      "options": {"A": "4", "B": "5", "C": "3", "D": "2"},
+      "correct": "A"
     },
     {
       "id": 4,
-      "question": "If log₁₀2 = 0.3010 and log₁₀3 = 0.4771, find log₁₀18.",
-      "options": {"A":"1.2551","B":"2.2551","C":"0.7781","D":"1.7781"},
-      "correct":"D"
+      "question": "If log10(2) = 0.3010 and log10(3) = 0.4771, find log10(18).",
+      "options": {"A": "1.2551", "B": "2.2551", "C": "0.7781", "D": "1.7781"},
+      "correct": "D"
     },
     {
       "id": 5,
       "question": "Simplify (81)^(3/4).",
-      "options": {"A":"9","B":"27","C":"16","D":"8"},
-      "correct":"B"
+      "options": {"A": "9", "B": "27", "C": "16", "D": "8"},
+      "correct": "A"
     },
     {
       "id": 6,
       "question": "The roots of the quadratic equation x² + 5x + 6 = 0 are?",
-      "options": {"A":"-3 and -2","B":"3 and 2","C":"6 and 1","D":"-6 and 1"},
-      "correct":"A"
+      "options": {"A": "-3 and -2", "B": "3 and 2", "C": "6 and 1", "D": "-6 and 1"},
+      "correct": "A"
     },
     {
       "id": 7,
       "question": "Find the sum of the first 10 terms of the arithmetic progression 2, 5, 8, ...",
-      "options": {"A":"140","B":"155","C":"170","D":"200"},
-      "correct":"B"
+      "options": {"A": "140", "B": "155", "C": "170", "D": "200"},
+      "correct": "A"
     },
     {
       "id": 8,
       "question": "If the 5th term of a geometric progression is 48 and the 2nd term is 6, find the common ratio.",
-      "options": {"A":"2","B":"3","C":"4","D":"8"},
-      "correct":"B"
+      "options": {"A": "2", "B": "3", "C": "4", "D": "8"},
+      "correct": "A"
     },
     {
       "id": 9,
-      "question": "Simplify (3x²y⁻³z⁴)² × (x⁻¹y³z)³.",
-      "options": {"A":"3x⁴z⁷","B":"9x⁷z¹¹","C":"9x⁴z¹¹","D":"3x⁷z⁷"},
-      "correct":"B"
+      "question": "Simplify (3x²y^-3z⁴)² × (x^-1y³z)³.",
+      "options": {"A": "3x⁴z⁷", "B": "9x⁷z¹¹", "C": "9x⁴z¹¹", "D": "3x⁷z⁷"},
+      "correct": "B"
     },
     {
       "id": 10,
-      "question": "Find x if 3^(2x-1) = 27.",
-      "options": {"A":"2","B":"3","C":"4","D":"5"},
-      "correct":"A"
+      "question": "Find x if 3^(2x - 1) = 27.",
+      "options": {"A": "2", "B": "3", "C": "4", "D": "5"},
+      "correct": "A"
     },
     {
       "id": 11,
       "question": "If y = 2x² + 3x - 5, find dy/dx at x = 2.",
-      "options": {"A":"11","B":"8","C":"9","D":"7"},
-      "correct":"A"
+      "options": {"A": "11", "B": "8", "C": "9", "D": "7"},
+      "correct": "A"
     },
     {
       "id": 12,
       "question": "Find the equation of the line passing through (1, 2) and (3, 8).",
-      "options": {"A":"y = 3x - 1","B":"y = 2x + 1","C":"y = 4x - 2","D":"y = 3x + 1"},
-      "correct":"A"
+      "options": {"A": "y = 3x - 1", "B": "y = 2x + 1", "C": "y = 4x - 2", "D": "y = 3x + 1"},
+      "correct": "A"
     },
     {
       "id": 13,
       "question": "Find the gradient of the curve y = 3x² - 5x + 4 at x = 1.",
-      "options": {"A":"1","B":"3","C":"5","D":"7"},
-      "correct":"C"
+      "options": {"A": "1", "B": "3", "C": "5", "D": "7"},
+      "correct": "C"
     },
     {
       "id": 14,
-      "question": "Evaluate ∫(2x + 3)dx from x = 0 to x = 2.",
-      "options": {"A":"10","B":"12","C":"14","D":"16"},
-      "correct":"A"
+      "question": "Evaluate the integral of (2x + 3) dx from x = 0 to x = 2.",
+      "options": {"A": "10", "B": "12", "C": "14", "D": "16"},
+      "correct": "A"
     },
     {
       "id": 15,
       "question": "If sin A = 3/5, find cos A.",
-      "options": {"A":"4/5","B":"3/4","C":"5/3","D":"2/5"},
-      "correct":"A"
+      "options": {"A": "4/5", "B": "3/4", "C": "5/3", "D": "2/5"},
+      "correct": "A"
     },
     {
       "id": 16,
       "question": "Find the area of a triangle with base 8 cm and height 6 cm.",
-      "options": {"A":"24 cm²","B":"36 cm²","C":"48 cm²","D":"12 cm²"},
-      "correct":"A"
+      "options": {"A": "24 cm²", "B": "36 cm²", "C": "48 cm²", "D": "12 cm²"},
+      "correct": "A"
     },
     {
       "id": 17,
       "question": "If the mean of 5 numbers is 12, find their sum.",
-      "options": {"A":"60","B":"12","C":"24","D":"20"},
-      "correct":"A"
+      "options": {"A": "60", "B": "12", "C": "24", "D": "20"},
+      "correct": "A"
     },
     {
       "id": 18,
       "question": "The mean of 1, 3, 5, 7, 9 is?",
-      "options": {"A":"3","B":"5","C":"7","D":"9"},
-      "correct":"B"
+      "options": {"A": "3", "B": "5", "C": "7", "D": "9"},
+      "correct": "B"
     },
     {
       "id": 19,
-      "question": "Simplify: (x² - y²)/(x - y).",
-      "options": {"A":"x + y","B":"x - y","C":"x² + y²","D":"2x"},
-      "correct":"A"
+      "question": "Simplify (x² - y²) / (x - y).",
+      "options": {"A": "x + y", "B": "x - y", "C": "x² + y²", "D": "2x"},
+      "correct": "A"
     },
     {
       "id": 20,
       "question": "If 5x - 2 = 13, find x.",
-      "options": {"A":"2","B":"3","C":"4","D":"5"},
-      "correct":"C"
+      "options": {"A": "2", "B": "3", "C": "4", "D": "5"},
+      "correct": "C"
     },
     {
       "id": 21,
-      "question": "The locus of a point equidistant from two intersecting straight lines is the?",
-      "options": {"A":"perpendicular bisector","B":"angle bisector","C":"bisector","D":"line parallel to the two lines"},
-      "correct":"B"
+      "question": "The locus of a point equidistant from two intersecting straight lines is the:",
+      "options": {"A": "perpendicular bisector", "B": "angle bisector", "C": "bisector", "D": "line parallel to the two lines"},
+      "correct": "B"
     },
     {
       "id": 22,
-      "question": "4,16,30,20,10,14,26 represented on a pie chart. Sum of angles for numbers ≥16?",
-      "options": {"A":"48°","B":"84°","C":"92°","D":"276°"},
-      "correct":"B"
+      "question": "Given the data 4, 16, 30, 20, 10, 14, 26 represented on a pie chart, find the sum of angles for numbers ≥ 16.",
+      "options": {"A": "48°", "B": "84°", "C": "92°", "D": "276°"},
+      "correct": "D"
     },
     {
       "id": 23,
-      "question": "Mean of ten numbers is 16. Another number added, mean becomes 18. Find eleventh number.",
-      "options": {"A":"3","B":"16","C":"38","D":"30"},
-      "correct":"D"
+      "question": "Mean of ten numbers is 16. Another number is added and the mean becomes 18. Find the eleventh number.",
+      "options": {"A": "3", "B": "16", "C": "38", "D": "30"},
+      "correct": "C"
     },
     {
       "id": 24,
-      "question": "Two numbers removed randomly from 1,2,3,4. Probability sum is even?",
-      "options": {"A":"2/3","B":"1/2","C":"1/3","D":"1/4"},
-      "correct":"B"
+      "question": "Two numbers are removed randomly from the set {1, 2, 3, 4}. What is the probability that their sum is even?",
+      "options": {"A": "2/3", "B": "1/2", "C": "1/3", "D": "1/4"},
+      "correct": "A"
     },
     {
       "id": 25,
-      "question": "Probability that a number selected from 41–56 is a multiple of 9?",
-      "options": {"A":"1/8","B":"2/15","C":"3/16","D":"7/8"},
-      "correct":"C"
+      "question": "What is the probability that a number selected from 41–56 is a multiple of 9?",
+      "options": {"A": "1/8", "B": "2/15", "C": "3/16", "D": "7/8"},
+      "correct": "A"
     },
     {
       "id": 26,
-      "question": "Musa borrows N10 at 2% per month simple interest, repays N8 after 4 months. How much still owed?",
-      "options": {"A":"N10.80","B":"N10.67","C":"N2.80","D":"N2.67"},
-      "correct":"B"
+      "question": "Musa borrows N10 at 2% per month simple interest and repays N8 after 4 months. How much does he still owe?",
+      "options": {"A": "N10.80", "B": "N10.67", "C": "N2.80", "D": "N2.67"},
+      "correct": "A"
     },
     {
       "id": 27,
-      "question": "Simplify 2log25 - log7 2125 + log9",
-      "options": {"A":"1-4log3","B":"-1+2log3","C":"-1+5log2","D":"1-2log2"},
-      "correct":"B"
+      "question": "Simplify: 2 log(25) − log(125) + log(9).",
+      "options": {"A": "1 − 4 log 3", "B": "-1 + 2 log 3", "C": "-1 + 5 log 2", "D": "1 − 2 log 2"},
+      "correct": "B"
     },
     {
       "id": 28,
-      "question": "Car travels Calabar→Enugu distance P km at speed U km/h, then Enugu→Benin Q km at speed W km/h. Average speed?",
-      "options": {"A":"(p+q)pw+qu","B":"uw(p+q)/pw+qu","C":"uw(p+q)/pw","D":"uw/pw+qu"},
-      "correct":"B"
+      "question": "A car travels Calabar→Enugu (P km) at speed U km/h, then Enugu→Benin (Q km) at W km/h. What is the average speed?",
+      "options": {
+        "A": "(P+Q) / (PW + QU)",
+        "B": "UW(P+Q) / (PW + QU)",
+        "C": "UW(P+Q) / PW",
+        "D": "UW / (PW + QU)"
+      },
+      "correct": "B"
     },
     {
       "id": 29,
-      "question": "If w varies inversely as u(v+u) and w=8 when u=2, v=6. Find relationship.",
-      "options": {"A":"uvw=16(u+v)","B":"16uv=3w(u+v)","C":"uvw=12(u+v)","D":"12uvw=u+v"},
-      "correct":"A"
+      "question": "If w varies inversely as u(v+u) and w=8 when u=2, v=6, find the relationship.",
+      "options": {"A": "uvw = 16(u+v)", "B": "16uv = 3w(u+v)", "C": "uvw = 12(u+v)", "D": "12uvw = u+v"},
+      "correct": "A"
     },
     {
       "id": 30,
-      "question": "If g(x)=x²+3x, find g(x+1)-g(x)",
-      "options": {"A":"x+2","B":"2(x+2)","C":"2x+1","D":"x²+4"},
-      "correct":"B"
+      "question": "If g(x)=x²+3x, find g(x+1) − g(x).",
+      "options": {"A": "x+2", "B": "2(x+2)", "C": "2x+1", "D": "x²+4"},
+      "correct": "A"
     },
     {
       "id": 31,
-      "question": "Factorize m³ - m² + 2m - 2",
-      "options": {"A":"(m²+1)(m-2)","B":"(m-1)(m+1)(m+2)","C":"(m-2)(m+1)(m-1)","D":"(m²+2)(m-1)"},
-      "correct":"D"
+      "question": "Factorize m³ − m² + 2m − 2.",
+      "options": {
+        "A": "(m²+1)(m−2)",
+        "B": "(m−1)(m+1)(m+2)",
+        "C": "(m−2)(m+1)(m−1)",
+        "D": "(m²+2)(m−1)"
+      },
+      "correct": "D"
     },
     {
       "id": 32,
-      "question": "Angles of quadrilateral: 5x-30, 4x+60, 60-x, 3x+61. Find smallest angle.",
-      "options": {"A":"5x-30","B":"4x+60","C":"60-x","D":"3x+61"},
-      "correct":"C"
+      "question": "Angles of a quadrilateral are: 5x−30, 4x+60, 60−x, and 3x+61. Find the smallest angle.",
+      "options": {"A": "5x−30", "B": "4x+60", "C": "60−x", "D": "3x+61"},
+      "correct": "C"
     },
     {
       "id": 33,
-      "question": "n-th term of sequence 2,6,12,20...?",
-      "options": {"A":"4n-2","B":"2(3n-1)","C":"n²+n","D":"n²+3n+2"},
-      "correct":"C"
+      "question": "Find the n-th term of the sequence 2, 6, 12, 20...",
+      "options": {"A": "4n−2", "B": "2(3n−1)", "C": "n²+n", "D": "n²+3n+2"},
+      "correct": "C"
     },
     {
       "id": 34,
-      "question": "Binary operation ∗: m∗n=mn+m+n. Find identity element.",
-      "options": {"A":"e=1","B":"e=-1","C":"e=-2","D":"e=0"},
-      "correct":"B"
+      "question": "Binary operation ∗ defined as m ∗ n = mn + m + n. Find the identity element.",
+      "options": {"A": "1", "B": "-1", "C": "-2", "D": "0"},
+      "correct": "B"
     },
     {
       "id": 35,
-      "question": "Factorize 81a⁴-16b⁴",
-      "options": {"A":"(3a+2b)(2a-3b)(9a²+4b²)","B":"(3a-2b)(2a-3b)(4a²-9b²)","C":"(3a-2b)(3a+2b)(9a²+4b²)","D":"(6a-2b)(8a-3b)(4a³-9b²)"},
-      "correct":"C"
+      "question": "Factorize 81a⁴ − 16b⁴.",
+      "options": {
+        "A": "(3a+2b)(2a−3b)(9a²+4b²)",
+        "B": "(3a−2b)(2a−3b)(4a²−9b²)",
+        "C": "(3a−2b)(3a+2b)(9a²+4b²)",
+        "D": "(6a−2b)(8a−3b)(4a³−9b²)"
+      },
+      "correct": "C"
     },
     {
       "id": 36,
-      "question": "Find x if log₉x=1.5",
-      "options": {"A":"27","B":"15","C":"3.5","D":"32"},
-      "correct":"A"
+      "question": "Find x if log₉(x) = 1.5.",
+      "options": {"A": "27", "B": "15", "C": "3.5", "D": "32"},
+      "correct": "A"
     },
     {
       "id": 37,
-      "question": "Integers satisfying -2<2x-6<4?",
-      "options": {"A":"2,3,4,5","B":"2,3","C":"2,5","D":"3,4"},
-      "correct":"D"
+      "question": "Find integers satisfying −2 < 2x − 6 < 4.",
+      "options": {"A": "2, 3, 4, 5", "B": "2, 3", "C": "2, 5", "D": "3, 4"},
+      "correct": "D"
     },
     {
       "id": 38,
-      "question": "X due east of Y, Z 6 km south of Y, ZX=12 km. Bearing of Z from X?",
-      "options": {"A":"240°","B":"150°","C":"60°","D":"270°"},
-      "correct":"B"
+      "question": "X is due east of Y. Z is 6 km south of Y. ZX = 12 km. Find the bearing of Z from X.",
+      "options": {"A": "240°", "B": "150°", "C": "60°", "D": "270°"},
+      "correct": "A"
     },
     {
       "id": 39,
-      "question": "Market women sell yam, plantain, maize. Given numbers for overlap, total women?",
-      "options": {"A":"25","B":"19","C":"18","D":"17"},
-      "correct":"B"
+      "question": "Market women sell yam, plantain, and maize with overlaps given. Find total women.",
+      "options": {"A": "25", "B": "19", "C": "18", "D": "17"},
+      "correct": "B"
     },
     {
       "id": 40,
-      "question": "If (x+2) and (x-1) are factors of Lx + 2kx² +24, find L and k",
-      "options": {"A":"L=-12, k=-6","B":"L=-2, k=1","C":"L=-2, k=-1","D":"L=0, k=1"},
-      "correct":"A"
+      "question": "If (x+2) and (x−1) are factors of Lx + 2kx² + 24, find L and k.",
+      "options": {"A": "L = −12, k = −6", "B": "L = −2, k = 1", "C": "L = −2, k = −1", "D": "L = 0, k = 1"},
+      "correct": "A"
     }
   ]
 }

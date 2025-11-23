@@ -8,10 +8,10 @@
         "question": "Multiply 12 by 3 and express your answer in Roman numerals.",
         "options": {
           "A": "XVI",
-          "B": "XXIV",
+          "B": "XXXVI",
           "C": "XXVI",
           "D": "XXXIV",
-          "E": "XXXVI"
+          "E": "XXIV"
         },
         "correct": "B"
       },
@@ -43,8 +43,8 @@
         "id": 17,
         "question": "Find the positive difference between 528 and the sum of 310 and 67.",
         "options": {
-          "A": "141",
-          "B": "151",
+          "A": "151",
+          "B": "141",
           "C": "156",
           "D": "162",
           "E": "187"
@@ -80,10 +80,10 @@
         "question": "8 men can plough a field in 10 hours. How long will it take 4 men, if they all work at the same rate?",
         "options": {
           "A": "20 hours",
-          "B": "20 hours",
-          "C": "15 hours",
-          "D": "10 hours",
-          "E": "5 hours"
+          "B": "15 hours",
+          "C": "10 hours",
+          "D": "5 hours",
+          "E": "40 hours"
         },
         "correct": "A"
       },
@@ -94,7 +94,7 @@
           "A": "N33,000.00",
           "B": "N30,000.00",
           "C": "N22,800.00",
-          "D": "N18,000.00",
+          "D": "N26,400.00",
           "E": "N11,000.00"
         },
         "correct": "D"
@@ -241,7 +241,7 @@
           "D": "120cm",
           "E": "132cm"
         },
-        "correct": "B"
+        "correct": "E"
       },
       {
         "id": 34,

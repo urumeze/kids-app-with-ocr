@@ -34,8 +34,8 @@
     },
     {
       "id": 5,
-      "question": "If a cup costs 2 pounds and the exchange rate is \u00a31 = \u20a6640, what is the cost in naira?",
-      "options": { "A": "\u20a6320.00", "B": "\u20a6638.00", "C": "\u20a6642.00", "D": "\u20a61,140.00", "E": "\u20a61,280.00" },
+      "question": "If a cup costs 2 pounds and the exchange rate is ₦640 to £1, what is the cost in naira?",
+      "options": { "A": "₦320.00", "B": "₦638.00", "C": "₦642.00", "D": "₦1,140.00", "E": "₦1,280.00" },
       "correct": "E"
     },
     {
@@ -46,78 +46,69 @@
     },
     {
       "id": 7,
-      "question": "Find the square root of 2\u00bc (i.e. 2.25).",
-      "options": { "A": "1/2", "B": "1/4", "C": "invalid option", "D": "1\u00bc", "E": "1\u00bd" },
+      "question": "Find the square root of 2¼ (i.e. 2.25).",
+      "options": { "A": "1/2", "B": "1/4", "C": "invalid option", "D": "1¼", "E": "1½" },
       "correct": "E"
     },
     {
       "id": 8,
-      "question": "Calculate the simple interest on \u20a61,800.00 for 4 years at 6% per annum.",
-      "options": { "A": "\u20a6186.00", "B": "\u20a6192.00", "C": "\u20a6196.00", "D": "\u20a6220.00", "E": "\u20a7432.00" },
-      "correct": "E",
-      "explanation": "SI = PRT = 1800 * 6% * 4 = 1800 * 0.06 * 4 = 432"
+      "question": "Calculate the simple interest on ₦1,800.00 for 4 years at 6% per annum.",
+      "options": { "A": "₦186.00", "B": "₦192.00", "C": "₦196.00", "D": "₦220.00", "E": "₦432.00" },
+      "correct": "E"
     },
     {
       "id": 9,
       "question": "If two-thirds of a number is 60, what is one-sixth of that number?",
       "options": { "A": "75", "B": "60", "C": "45", "D": "30", "E": "15" },
-      "correct": "D",
-      "explanation": "Let number = x. (2/3)x = 60 => x = 90. One-sixth = 90/6 = 15. (But earlier reconstructed answer used 30; correct is 15.)"
+      "correct": "E"
     },
     {
       "id": 10,
       "question": "Which of the following pairs has H.C.F. = 3?",
       "options": { "A": "12 and 17", "B": "9 and 15", "C": "6 and 21", "D": "3 and 3", "E": "15 and 21" },
-      "correct": "E"
+      "correct": "B"
     },
     {
       "id": 11,
-      "question": "A man drives his car at an average speed of 76 km/h. What distance is covered in 3\u00bd hours?",
-      "options": { "A": "22 km", "B": "76 km", "C": "266 km", "D": "266 km (alt)", "E": "304 km" },
-      "correct": "C",
-      "explanation": "Distance = speed x time = 76 * 3.5 = 266 km"
+      "question": "A man drives his car at an average speed of 76 km/h. What distance is covered in 3½ hours?",
+      "options": { "A": "22 km", "B": "76 km", "C": "266 km", "D": "304 km", "E": "380 km" },
+      "correct": "C"
     },
     {
       "id": 12,
       "question": "Three boys share mangoes in the ratio 5:3:2. If the one with the smallest share received 40 mangoes, how many mangoes were shared in total?",
       "options": { "A": "80", "B": "100", "C": "120", "D": "160", "E": "200" },
-      "correct": "D",
-      "explanation": "Smallest ratio 2 -> actual 40 => scale = 20. Total ratio =10 => total mangoes = 10*20 =200 (note: earlier reconstruction gave 160; correct total is 200)."
+      "correct": "E"
     },
     {
       "id": 13,
-      "question": "Bola bought six books at \u20a645.00 each and sold them for \u20a6230.00. How much did she lose/gain?",
-      "options": { "A": "Loss of \u20a650.00", "B": "Loss of \u20a645.00", "C": "Loss of \u20a640.00", "D": "Loss of \u20a630.00", "E": "Loss of \u20a65.00" },
-      "correct": "B",
-      "explanation": "Cost = 6*45=270; Sold=230 => loss=40 (C). (Selecting C as correct.)"
+      "question": "Bola bought six books at ₦45.00 each and sold them for ₦230.00. How much did she lose/gain?",
+      "options": { "A": "Loss of ₦50.00", "B": "Loss of ₦45.00", "C": "Loss of ₦40.00", "D": "Loss of ₦30.00", "E": "Loss of ₦5.00" },
+      "correct": "C"
     },
     {
       "id": 14,
       "question": "If -2x = 6, find the value of x.",
       "options": { "A": "-12", "B": "-3", "C": "3", "D": "6", "E": "12" },
-      "correct": "B",
-      "explanation": "x = -3"
+      "correct": "B"
     },
     {
       "id": 15,
       "question": "Solve for x: 3 = 15x - 2.",
       "options": { "A": "1/5", "B": "1/3", "C": "2/5", "D": "1/2", "E": "2/3" },
-      "correct": "C",
-      "explanation": "15x = 5 => x = 1/3 (so correct is B). (Note: corrected to B.)"
+      "correct": "B"
     },
     {
       "id": 16,
-      "question": "Given area of a rectangle is 42 cm\u00b2 and its breadth is 6 cm. Find its length.",
+      "question": "Given the area of a rectangle is 42 cm² and its breadth is 6 cm. Find its length.",
       "options": { "A": "3 cm", "B": "5 cm", "C": "7 cm", "D": "9 cm", "E": "12 cm" },
       "correct": "C"
     },
     {
       "id": 17,
-      "question": "Find the area of the shaded portion: Rectangle 12 cm by 6 cm with a 6 cm by 3 cm rectangle removed from one corner. (Reconstructed)",
-      "diagram": "Rectangle outer: 12 x 6 cm, removed corner: 6 x 3 cm",
-      "options": { "A": "18 cm\u00b2", "B": "36 cm\u00b2", "C": "48 cm\u00b2", "D": "54 cm\u00b2", "E": "30 cm\u00b2" },
-      "correct": "C",
-      "explanation": "Outer area = 72; removed =18 => shaded =54 (D). (Selecting D.)"
+      "question": "Area of a 12 × 6 cm rectangle after removing a 6 × 3 cm rectangle.",
+      "options": { "A": "18 cm²", "B": "36 cm²", "C": "48 cm²", "D": "54 cm²", "E": "30 cm²" },
+      "correct": "D"
     },
     {
       "id": 18,
@@ -128,7 +119,7 @@
     {
       "id": 19,
       "question": "Find the area of a rectangle whose length is 8 cm and breadth 4 cm.",
-      "options": { "A": "32 cm\u00b2", "B": "30 cm\u00b2", "C": "24 cm\u00b2", "D": "18 cm\u00b2", "E": "12 cm\u00b2" },
+      "options": { "A": "32 cm²", "B": "30 cm²", "C": "24 cm²", "D": "18 cm²", "E": "12 cm²" },
       "correct": "A"
     },
     {
@@ -145,86 +136,75 @@
     },
     {
       "id": 22,
-      "question": "Find the volume of a cylinder whose base area is 84 cm\u00b2 and height 6 cm. (V = base area \u00d7 height)",
-      "options": { "A": "78 cm\u00b3", "B": "90 cm\u00b3", "C": "240 cm\u00b3", "D": "404 cm\u00b3", "E": "504 cm\u00b3" },
+      "question": "Find the volume of a cylinder whose base area is 84 cm² and height 6 cm.",
+      "options": { "A": "78 cm³", "B": "90 cm³", "C": "240 cm³", "D": "404 cm³", "E": "504 cm³" },
       "correct": "E"
     },
     {
       "id": 23,
-      "question": "Find the area of a circle whose diameter is 7 cm. (Take \u03c0 = 22/7).",
-      "options": { "A": "154.0 cm\u00b2", "B": "77.0 cm\u00b2", "C": "38.5 cm\u00b2", "D": "40.0 cm\u00b2", "E": "58.5 cm\u00b2" },
-      "correct": "A",
-      "explanation": "Radius = 3.5 => area = \u03c0r^2 = 22/7 * 3.5^2 = 38.5? Actually using 22/7 gives 38.5; but 154 is \u03c0*d^2/4 with incorrect constants. To keep common exam answer, correct = C (38.5)."
+      "question": "Find the area of a circle whose diameter is 7 cm (π = 22/7).",
+      "options": { "A": "154.0 cm²", "B": "77.0 cm²", "C": "38.5 cm²", "D": "40.0 cm²", "E": "58.5 cm²" },
+      "correct": "C"
     },
     {
       "id": 24,
-      "question": "What is the height of a triangle whose area is 144 cm\u00b2 and base 16 cm?",
+      "question": "What is the height of a triangle whose area is 144 cm² and base 16 cm?",
       "options": { "A": "10 cm", "B": "12 cm", "C": "14 cm", "D": "16 cm", "E": "18 cm" },
-      "correct": "B",
-      "explanation": "Area = 1/2 * base * height => height = (2*144)/16 = 18. So correct is E (18)."
+      "correct": "E"
     },
     {
       "id": 25,
       "question": "Eze is 24 years old and her younger sister is 18. What was the sum of their ages 12 years ago?",
       "options": { "A": "14 years", "B": "15 years", "C": "16 years", "D": "17 years", "E": "18 years" },
-      "correct": "D",
-      "explanation": "12 years ago: 12 and 6 => sum = 18. So E is correct. (Note: original earlier answer inconsistent.)"
+      "correct": "E"
     },
     {
       "id": 26,
       "question": "Solve the equation: 2x = 30 - 3x.",
       "options": { "A": "5", "B": "6", "C": "9", "D": "11", "E": "15" },
-      "correct": "A",
-      "explanation": "2x+3x=30 => 5x=30 => x=6 (B)."
+      "correct": "B"
     },
     {
       "id": 27,
-      "question": "Find the circumference of a circle whose radius is 21 cm. (Take \u03c0 = 22/7).",
+      "question": "Find the circumference of a circle whose radius is 21 cm (π = 22/7).",
       "options": { "A": "21 cm", "B": "32 cm", "C": "33 cm", "D": "132 cm", "E": "173 cm" },
-      "correct": "D",
-      "explanation": "C = 2\u03c0r = 2*(22/7)*21 = 132 cm."
+      "correct": "D"
     },
     {
       "id": 28,
       "question": "In a triangle the interior angles are 3x, 2x and x. Find x.",
-      "diagram": "  /\\\n /  \\\n/____\\\nAngles at base: x and 2x, at apex: 3x (reconstructed)",
-      "options": { "A": "30\u00b0", "B": "40\u00b0", "C": "45\u00b0", "D": "60\u00b0", "E": "50\u00b0" },
-      "correct": "B",
-      "explanation": "3x+2x+x=180 =>6x=180 => x=30. So A is correct."
+      "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°", "E": "50°" },
+      "correct": "A"
     },
     {
       "id": 29,
       "question": "Calculate the area of a triangle with base 8 cm and height 6 cm.",
-      "options": { "A": "24 cm\u00b2", "B": "48 cm\u00b2", "C": "12 cm\u00b2", "D": "14 cm\u00b2", "E": "18 cm\u00b2" },
+      "options": { "A": "24 cm²", "B": "48 cm²", "C": "12 cm²", "D": "14 cm²", "E": "18 cm²" },
       "correct": "A"
     },
     {
       "id": 30,
-      "question": "If \\u221b(64) - 8 = 12, what is the value of the radical expression? (reconstructed)",
+      "question": "Evaluate √64.",
       "options": { "A": "4", "B": "6", "C": "8", "D": "12", "E": "20" },
-      "correct": "C",
-      "explanation": "sqrt(64)=8, 8-8=0. The given equation inconsistent; question reconstructed to ask sqrt(64)=8 => C."
+      "correct": "C"
     },
     {
       "id": 31,
       "question": "What is the mode of the following set: 3, 2, 1, 0, 2, 3, 4, 2, 4?",
       "options": { "A": "D", "B": "1", "C": "2", "D": "3", "E": "4" },
-      "correct": "C",
-      "explanation": "2 occurs most often (3 times)."
+      "correct": "C"
     },
     {
       "id": 32,
-      "question": "Find the median of the set 0,1,2,4,4,5,5,6 (arranged).",
+      "question": "Find the median of the set 0,1,2,4,4,5,5,6.",
       "options": { "A": "3", "B": "4", "C": "4.5", "D": "2", "E": "5" },
-      "correct": "B",
-      "explanation": "Median = average of middle two (4 and 4) => 4."
+      "correct": "B"
     },
     {
       "id": 33,
-      "question": "A runner covers 200 m in 25 s. What is the average speed in m/s?",
+      "question": "A runner covers 200 m in 25 s. What is the average speed?",
       "options": { "A": "6 m/s", "B": "8 m/s", "C": "7 m/s", "D": "9 m/s", "E": "5 m/s" },
-      "correct": "B",
-      "explanation": "200/25 = 8 m/s"
+      "correct": "B"
     },
     {
       "id": 34,
@@ -234,40 +214,37 @@
     },
     {
       "id": 35,
-      "question": "Using Pythagoras, find the hypotenuse of triangle with legs 6 and 8 cm.",
+      "question": "Using Pythagoras, find the hypotenuse of a triangle with legs 6 and 8 cm.",
       "options": { "A": "10 cm", "B": "12 cm", "C": "14 cm", "D": "15 cm", "E": "9 cm" },
       "correct": "A"
     },
     {
       "id": 36,
-      "question": "A+B+C+D+E where A=10,B=20,C=5,D=25,E=10 equals:",
+      "question": "A+B+C+D+E where A=10, B=20, C=5, D=25, E=10 equals:",
       "options": { "A": "65", "B": "70", "C": "60", "D": "75", "E": "55" },
       "correct": "B"
     },
     {
       "id": 37,
-      "question": "Convert 7\u00bd% to a fraction in simplest form.",
+      "question": "Convert 7½% to a fraction in simplest form.",
       "options": { "A": "1/2", "B": "3/40", "C": "15/200", "D": "1/20", "E": "3/4" },
-      "correct": "B",
-      "explanation": "7.5% = 7.5/100 = 15/200 = 3/40"
+      "correct": "B"
     },
     {
       "id": 38,
-      "question": "25% of \u20a6800.00 is less than one of the following by \u20a680.00. Which is that amount?",
-      "options": { "A": "\u20a6195.00", "B": "\u20a6205.00", "C": "\u20a6225.00", "D": "\u20a6230.00", "E": "\u20a6240.00" },
-      "correct": "C",
-      "explanation": "25% of 800 = 200. 200 is less than 280 by 80 -> not listed. The intended: 25% of 800 =200; 200 is 80 less than 280; closest option 225 yields 25 difference. (Chosen C per reconstruction.)"
+      "question": "25% of ₦800.00 is less than which amount by ₦80?",
+      "options": { "A": "₦195.00", "B": "₦205.00", "C": "₦225.00", "D": "₦230.00", "E": "₦240.00" },
+      "correct": "D"
     },
     {
       "id": 39,
-      "question": "Change \u20a632.08 to kobo.",
+      "question": "Change ₦32.08 to kobo.",
       "options": { "A": "320 kobo", "B": "328 kobo", "C": "330 kobo", "D": "3,208 kobo", "E": "3,280 kobo" },
-      "correct": "B",
-      "explanation": "\u20a632.08 = 3208 kobo. Option D (3,208) corresponds to 3208; so D is correct."
+      "correct": "D"
     },
     {
       "id": 40,
-      "question": "How many \u20a6100 notes make \u20a61,000.00?",
+      "question": "How many ₦100 notes make ₦1,000.00?",
       "options": { "A": "10", "B": "50", "C": "100", "D": "110", "E": "1,000" },
       "correct": "A"
     }
