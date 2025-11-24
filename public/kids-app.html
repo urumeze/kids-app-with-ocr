@@ -921,15 +921,24 @@
     score: 0
   };
 
-  let userCoins = 0; // starting coins
+ 
 
+// Load user coins from localStorage on page load
+let userCoins = parseInt(localStorage.getItem("userCoins")) || 0;
+
+// Update coin display and persist
 function updateCoinDisplay(amount = 0) {
   userCoins += amount;
   if (userCoins < 0) userCoins = 0; // don't go negative
+
+  // Save to localStorage
+  localStorage.setItem("userCoins", userCoins);
+
+  // Update UI
   const coinNumber = document.getElementById("coinNumber");
   if (coinNumber) coinNumber.textContent = userCoins;
 
-  // trigger the flash animation
+  // Trigger flash animation
   const coinSvg = document.getElementById("gqCoin");
   if (coinSvg) {
     coinSvg.classList.remove("flash"); // reset
@@ -937,6 +946,11 @@ function updateCoinDisplay(amount = 0) {
     coinSvg.classList.add("flash");    // add animation
   }
 }
+
+
+
+// Initialize display on page load
+updateCoinDisplay(0);
 
 
 
@@ -1758,16 +1772,16 @@ const tracks = [
   { name: "Focus Beat", src: "music/track2.mp3" },
   { name: "Chill Vibes", src: "music/track3.mp3" },
   { name: "Ambient Tune", src: "music/track4.mp3" },
-  { name: "Relaxing Melody", src: "music/track5.mp3" },
+   { name: "Relaxing Melody", src: "music/track5.mp3" },
   { name: "Focus Beat", src: "music/track6.mp3" },
   { name: "Chill Vibes", src: "music/track7.mp3" },
   { name: "Ambient Tune", src: "music/track8.mp3" },
-  { name: "Relaxing Melody", src: "music/track9.mp3" },
+   { name: "Relaxing Melody", src: "music/track9.mp3" },
   { name: "Focus Beat", src: "music/track10.mp3" },
   { name: "Chill Vibes", src: "music/track11.mp3" },
   { name: "Ambient Tune", src: "music/track12.mp3" },
   { name: "Chill Vibes", src: "music/track13.mp3" },
-  { name: "Ambient Tune", src: "music/track14.mp3" }
+  { name: "Ambient Tune", src: "music/track14.mp3" },
 ];
 
 let currentTrackIndex = Math.floor(Math.random() * tracks.length);
