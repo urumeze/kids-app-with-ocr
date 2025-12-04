@@ -395,12 +395,12 @@
 /* Circular menu background */
 .circular-menu {
   position: absolute;
-  bottom: 60px; /* opens upward */
-  right: 60px;  /* opens leftward */
+  bottom: 100px; /* opens upward */
+  right: 1px;  /* opens leftward */
   transform: scale(0);
-  background-color: rgba(126, 34, 206, 0.9);
-  border-radius: 50%;
-  width: 220px;
+  
+  border-radius:10px;
+  width: 30px;
   height: 220px;
   display: flex;
   justify-content: center;
@@ -445,6 +445,88 @@
 
 
 
+.post-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+#postText {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none; /* Prevents vertical resizing */
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: border-color 0.2s;
+}
+
+#postText:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-input {
+    font-size: 14px;
+    color: #555;
+    /* Hide the default input style for better control, often managed by a custom button/icon in real apps */
+    /* display: none; */ 
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.status-message {
+    font-size: 13px;
+    color: #606770;
+    margin: 0 10px 0 0; /* Space between message and button */
+    flex-grow: 1; /* Allows status message to fill available space */
+    text-align: right;
+}
+
+/* Add CSS classes for dynamic status updates via JS if needed */
+/*
+.status-message.error { color: #dc3545; }
+.status-message.success { color: #28a745; }
+*/
+
+
+
+
     </style>
 </head>
 <body class="design">
@@ -463,10 +545,52 @@
     <h1 id="goquizTitle" class="fixed top-4 left-1/2 transform -translate-x-1/2 text-1xl text-white mb-4 bg-indigo-600 ;">
   GoQuiz
     </h1>
-
-    
+  
   </header>
 </div>  
+
+<!-- Trigger Button -->
+<!-- Teacher Button -->
+<button id="openTeacherPost"
+    class="fixed bottom-20 right-4 bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg">
+  Are you a teacher? Post ad
+</button>
+
+<!-- Teacher Form Overlay -->
+<div id="teacherFormOverlay"
+     class="fixed inset-0 bg-black bg-opacity-60 hidden flex justify-center items-center p-4 z-50">
+
+  <div class="bg-white rounded-2xl p-6 w-full max-w-sm space-y-3">
+
+      <h2 class="text-xl font-semibold text-center mb-2">Teacher Profile</h2>
+
+      <input type="text" id="teacherName" placeholder="Name"
+        class="w-full border p-2 rounded-xl"/>
+
+      <select id="teacherGender" class="w-full border p-2 rounded-xl">
+          <option value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+      </select>
+
+      <input type="text" id="teacherSubject" placeholder="Subject"
+        class="w-full border p-2 rounded-xl"/>
+
+      <input type="file" id="teacherImage" accept="image/*"
+        class="w-full"/>
+
+      <button id="submitTeacherPost"
+        class="bg-green-600 text-white w-full py-2 rounded-xl shadow">
+        Submit
+      </button>
+
+      <button id="closeTeacherPost"
+        class="text-gray-600 w-full py-2 underline">
+        Cancel
+      </button>
+  </div>
+</div>
+
  
 <div class="music-menu-container fixed bottom-6 right-6 z-50">
   <button id="menu-toggle" class="menu-toggle-button">🎵</button>
@@ -480,6 +604,9 @@
 </div>
 
 <audio id="audio-player"></audio>
+
+
+
 
 
 
@@ -535,6 +662,8 @@
   <ellipse cx="44" cy="42" rx="28" ry="10" transform="rotate(-20 44 42)" fill="rgba(255,255,255,0.18)" opacity="0.85"/>
 </svg>
   </div>
+
+
 </div>
 
 
@@ -559,6 +688,11 @@
 
 
 
+<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory">
+
+</div>
+
+
 
 
 <!-- 📚 MENU PANEL -->
@@ -572,154 +706,157 @@
 
 
   <!-- Menu Content -->
-  <div class="p-4">
-    
-<button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">COMMON ENTRANCE ▼</button>
-    <ul class="space-y-3">
-      <!-- 2020 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2020 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          
-          <li><button onclick="loadPastQuestions(2020, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'verbal_and_vocational_aptitude', 'common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          
-        </ul>
-      </li>
+<div class="p-4">
 
-      <!-- 2021 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2021 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2021, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'verbal_and_vocational_aptitude', 'common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
-                
-        </ul>
-      </li>
+  <!-- MAIN MENU BUTTON -->
+  <button class="year-btn font-semibold text-gray-700 w-full text-left bg-green-100 rounded-lg">
+  COMMON ENTRANCE ▼
+</button>
 
-      <!-- 2022 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2022 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2022, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          
-          <li><button onclick="loadPastQuestions(2022, 'basic_studies', 'common_entrance')" class="subject-btn">*Basic studies</button></li>
-          
-                    
-        </ul>
-      </li>
 
-      <!-- 2023 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2023, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
-          
-          <li><button onclick="loadPastQuestions(2023, 'Quantitative_aptitude', 'common_entrance')" class="subject-btn">Quantitative aptitude</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'verbal_aptitude', 'common_entrance')" class="subject-btn">Verbal aptitude</button></li>
-          
-        </ul>
-      </li>
+  <!-- MUST be a subject-list so the JS can toggle it -->
+  <ul class="subject-list hidden space-y-3">
 
-      <!-- 2024 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2024 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2024, 'english', 'common_entrance')" class="subject-btn">*English</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'maths', 'common_entrance')" class="subject-btn">*Mathematics</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'basic_technology', 'common_entrance')" class="subject-btn">*Basic technology</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'social_studies', 'common_entrance')" class="subject-btn">*Social studies</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'basic_science', 'common_entrance')" class="subject-btn">*Basic science</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'civic_education', 'common_entrance')" class="subject-btn">*Civic education</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'computer_studies', 'common_entrance')" class="subject-btn">*Computer St.</button></li>
-          <li><button onclick="loadPastQuestions(2024, 'physical_and_health_education', 'common_entrance')" class="subject-btn">*PHE</button></li>
-          
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <!-- 2020 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left ">2020 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2020,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
+        <li><button onclick="loadPastQuestions(2020,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
+        <li><button onclick="loadPastQuestions(2020,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
+      </ul>
+    </li>
+
+    <!-- 2021 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2021 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2021,'english','common_entrance')" class="subject-btn">*English</button></li>
+        <li><button onclick="loadPastQuestions(2021,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
+        <li><button onclick="loadPastQuestions(2021,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
+        <li><button onclick="loadPastQuestions(2021,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
+      </ul>
+    </li>
+
+    <!-- 2022 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2022 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2022,'english','common_entrance')" class="subject-btn">*English</button></li>
+        <li><button onclick="loadPastQuestions(2022,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
+        <li><button onclick="loadPastQuestions(2022,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
+        <li><button onclick="loadPastQuestions(2022,'basic_studies','common_entrance')" class="subject-btn">*Basic studies</button></li>
+      </ul>
+    </li>
+
+    <!-- 2023 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2023 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2023,'english','common_entrance')" class="subject-btn">*English</button></li>
+        <li><button onclick="loadPastQuestions(2023,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
+        <li><button onclick="loadPastQuestions(2023,'Quantitative_aptitude','common_entrance')" class="subject-btn">Quantitative aptitude</button></li>
+        <li><button onclick="loadPastQuestions(2023,'verbal_aptitude','common_entrance')" class="subject-btn">Verbal aptitude</button></li>
+      </ul>
+    </li>
+
+    <!-- 2024 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2024 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2024,'english','common_entrance')" class="subject-btn">*English</button></li>
+        <li><button onclick="loadPastQuestions(2024,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
+        <li><button onclick="loadPastQuestions(2024,'basic_technology','common_entrance')" class="subject-btn">*Basic technology</button></li>
+        <li><button onclick="loadPastQuestions(2024,'social_studies','common_entrance')" class="subject-btn">*Social studies</button></li>
+        <li><button onclick="loadPastQuestions(2024,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
+        <li><button onclick="loadPastQuestions(2024,'civic_education','common_entrance')" class="subject-btn">*Civic education</button></li>
+        <li><button onclick="loadPastQuestions(2024,'computer_studies','common_entrance')" class="subject-btn">*Computer St.</button></li>
+        <li><button onclick="loadPastQuestions(2024,'physical_and_health_education','common_entrance')" class="subject-btn">*PHE</button></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+
 
 
 
 <div class="p-4">
-    
-<button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">JAMB ▼</button>
-    <ul class="space-y-3">
-      <!-- 2020 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2020 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2020, 'english', 'jamb')" class="subject-btn">English</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'maths', 'jamb')" class="subject-btn">Maths</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'physics', 'jamb')" class="subject-btn">Physics</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'chemistry', 'jamb')" class="subject-btn">Chemistry</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'biology', 'jamb')" class="subject-btn">Biology</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'economics', 'jamb')" class="subject-btn">Economics</button></li>
-          <li><button onclick="loadPastQuestions(2020, 'literature', 'jamb')" class="subject-btn">English Literature</button></li>
-          
-        </ul>
-      </li>
 
-      <!-- 2021 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2021">2021 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2021, 'english', 'jamb')" class="subject-btn">English</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'maths', 'jamb')" class="subject-btn">Maths</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'physics', 'jamb')" class="subject-btn">Physics</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'chemistry', 'jamb')" class="subject-btn">Chemistry</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'biology', 'jamb')" class="subject-btn">Biology</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'economics', 'jamb')" class="subject-btn">Economics</button></li>
-          <li><button onclick="loadPastQuestions(2021, 'literature', 'jamb')" class="subject-btn">English Literature</button></li>
-         </ul>
-      </li>
+  <!-- MAIN JAMB BUTTON -->
+  <button class="year-btn font-semibold text-gray-700 w-full text-left bg-blue-100 rounded-lg">JAMB ▼</button>
 
-      <!-- 2022 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2022">2022 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2022, 'english', 'jamb')" class="subject-btn">English</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'maths', 'jamb')" class="subject-btn">Maths</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'physics', 'jamb')" class="subject-btn">Physics</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'chemistry', 'jamb')" class="subject-btn">Chemistry</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'biology', 'jamb')" class="subject-btn">Biology</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'economics', 'jamb')" class="subject-btn">Economics</button></li>
-          <li><button onclick="loadPastQuestions(2022, 'literature', 'jamb')" class="subject-btn">English Literature</button></li>
-          
-        </ul>
-      </li>
+  <!-- MUST be subject-list so JS can toggle it -->
+  <ul class="subject-list hidden space-y-3">
 
-      <!-- 2023 -->
-      <li>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2023">2023 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2023, 'english', 'jamb')" class="subject-btn">English</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'maths', 'jamb')" class="subject-btn">Maths</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'physics', 'jamb')" class="subject-btn">Physics</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'chemistry', 'jamb')" class="subject-btn">Chemistry</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'biology', 'jamb')" class="subject-btn">Biology</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'economics', 'jamb')" class="subject-btn">Economics</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'literature', 'jamb')" class="subject-btn">English Literature</button></li>
-          
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <!-- 2020 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left ">2020 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2020,'english','jamb')" class="subject-btn">English</button></li>
+        <li><button onclick="loadPastQuestions(2020,'maths','jamb')" class="subject-btn">Maths</button></li>
+        <li><button onclick="loadPastQuestions(2020,'physics','jamb')" class="subject-btn">Physics</button></li>
+        <li><button onclick="loadPastQuestions(2020,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2020,'biology','jamb')" class="subject-btn">Biology</button></li>
+        <li><button onclick="loadPastQuestions(2020,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2020,'literature','jamb')" class="subject-btn">English Literature</button></li>
+      </ul>
+    </li>
+
+    <!-- 2021 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2021 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2021,'english','jamb')" class="subject-btn">English</button></li>
+        <li><button onclick="loadPastQuestions(2021,'maths','jamb')" class="subject-btn">Maths</button></li>
+        <li><button onclick="loadPastQuestions(2021,'physics','jamb')" class="subject-btn">Physics</button></li>
+        <li><button onclick="loadPastQuestions(2021,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2021,'biology','jamb')" class="subject-btn">Biology</button></li>
+        <li><button onclick="loadPastQuestions(2021,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2021,'literature','jamb')" class="subject-btn">English Literature</button></li>
+      </ul>
+    </li>
+
+    <!-- 2022 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2022 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2022,'english','jamb')" class="subject-btn">English</button></li>
+        <li><button onclick="loadPastQuestions(2022,'maths','jamb')" class="subject-btn">Maths</button></li>
+        <li><button onclick="loadPastQuestions(2022,'physics','jamb')" class="subject-btn">Physics</button></li>
+        <li><button onclick="loadPastQuestions(2022,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2022,'biology','jamb')" class="subject-btn">Biology</button></li>
+        <li><button onclick="loadPastQuestions(2022,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2022,'literature','jamb')" class="subject-btn">English Literature</button></li>
+      </ul>
+    </li>
+
+    <!-- 2023 -->
+    <li>
+      <button class="year-btn font-semibold text-gray-700 w-full text-left">2023 ▼</button>
+      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+        <li><button onclick="loadPastQuestions(2023,'english','jamb')" class="subject-btn">English</button></li>
+        <li><button onclick="loadPastQuestions(2023,'maths','jamb')" class="subject-btn">Maths</button></li>
+        <li><button onclick="loadPastQuestions(2023,'physics','jamb')" class="subject-btn">Physics</button></li>
+        <li><button onclick="loadPastQuestions(2023,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2023,'biology','jamb')" class="subject-btn">Biology</button></li>
+        <li><button onclick="loadPastQuestions(2023,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2023,'literature','jamb')" class="subject-btn">English Literature</button></li>
+      </ul>
+    </li>
+
+  </ul>
+
+</div>
 
 
     <div class="p-4">
     
-<button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">ACCA▼</button>
+<button class="year-btn font-semibold text-gray-700 w-full text-left bg-red-100 rounded-lg" data-year="2020">ACCA▼</button>
    
       <!-- 2022 -->
      
-        <button class="year-btn font-semibold text-gray-700 w-full text-left" data-year="2020">2023 ▼</button>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">2023 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
           <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li>
           <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li>
@@ -727,34 +864,16 @@
           <li><button onclick="loadMTQQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
           
          
-        </ul>
-     
-     
+        </ul>  
   </div>
 
+  
 
+  
+</div>
 
-  <hr class="my-4 border-gray-300">
-
-  <h3 class="text-lg font-bold mb-2">My Zone</h3>
-  <ul class="space-y-3 mb-6">
-    <li>
-      <button id="myZoneBtn" class="font-semibold text-gray-700 w-full text-left">
-            My Quiz
-      </button>
-    </li>
-  </ul>
-
-  <h3 class="text-lg font-bold mb-2">   my Story</h3>
-  <ul class="space-y-3">
-    <li>
-      <button id="storyBtn" class="font-semibold text-gray-700 w-full text-left">
-        my Story 
-      </button>
-    </li>
-  </ul>
-
-
+<!-- Public Feed -->
+<div id="feed" class="mt-6 space-y-4"></div> 
 </div>
 
 
@@ -787,6 +906,7 @@
    
 <!-- === Public Feed Section === -->
   <main id="publicFeed" class="max-w-3xl mx-auto p-6 space-y-6" >
+    
     <!-- Feed will be populated dynamically from past questions -->
   </main>  
 
@@ -867,6 +987,10 @@
       <textarea id="storyInput" rows="3" class="w-full border border-gray-300 rounded-lg p-2 mb-3" placeholder="Share your quiz idea..."></textarea>
       <button id="postStoryBtn" class="bg-indigo-600 text-white px-4 py-2 rounded-full mb-6">Post Story</button>
       <div id="storyFeed" class="space-y-4"></div>
+
+      
+</div>
+
     </div>
 
     <!-- Step 8: MTQ Results -->
@@ -895,15 +1019,40 @@
 
 
 
+ 
 
 
-<!-- === Script: Step Navigation + Menu Toggle === -->
-    
-<script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
 
 
 <script>
 
+  function handleCredentialResponse(response) {
+  const credential = firebase.auth.GoogleAuthProvider.credential(response.credential);
+  auth.signInWithCredential(credential)
+    .then(result => {
+      const user = result.user;
+      const firstName = user.displayName?.split(" ")[0] || "User";
+      titleElement.textContent = `GoQuiz ${firstName}`;
+      localStorage.setItem("firstName", firstName);
+    })
+    .catch(err => console.error("Firebase sign-in failed:", err));
+}
+
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
+    authDomain: "kids-note-app.firebaseapp.com",
+    projectId: "kids-note-app",
+    storageBucket: "kids-note-app.appspot.com",
+    messagingSenderId: "845525258490",
+    appId: "1:845525258490:web:16ab8dad0a98469456b943",
+    measurementId: "G-KHBK5Z52TL"
+  };
+
+   firebase.initializeApp(firebaseConfig);
+
+   const auth = firebase.auth();
 
 
 
@@ -1603,14 +1752,7 @@ document.getElementById('openMenuBtn').onclick = () => {
 };
 
 
-const storyFeed = document.getElementById("storyFeed");
-const storyInput = document.getElementById("storyInput");
-const postStoryBtn = document.getElementById("postStoryBtn");
 
-document.getElementById("storyBtn").addEventListener("click", () => {
-  showStep(7);
-  menuPanel.classList.add('-translate-x-full');
-});
 
 
 
@@ -1675,6 +1817,8 @@ async function loadPublicFeed() {
           console.error("Error loading public feed:", err);
           feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
       }
+    
+    
   }
 
 // Function to render 10 random quizzes from global array
@@ -1830,6 +1974,137 @@ audioPlayer.addEventListener("ended", () => {
 window.addEventListener("DOMContentLoaded", () => {
   loadTrack(currentTrackIndex);
 });
+
+
+
+// ----------------------
+// Teacher Form Overlay
+// ----------------------
+const openTeacherPost = document.getElementById("openTeacherPost");
+const teacherFormOverlay = document.getElementById("teacherFormOverlay");
+const closeTeacherPost = document.getElementById("closeTeacherPost");
+
+openTeacherPost.onclick = () => teacherFormOverlay.classList.remove("hidden");
+closeTeacherPost.onclick = () => teacherFormOverlay.classList.add("hidden");
+
+// Store Teacher Posts Here
+let teacherPosts = []; 
+let teacherOverlayInterval = null;
+
+document.getElementById("submitTeacherPost").onclick = async () => {
+    const name = document.getElementById("teacherName").value.trim();
+    const gender = document.getElementById("teacherGender").value;
+    const subject = document.getElementById("teacherSubject").value.trim();
+    const imageFile = document.getElementById("teacherImage").files[0];
+
+    if (!name || !gender || !subject) {
+        alert("Please fill all fields");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("gender", gender);
+    formData.append("subject", subject);
+    if (imageFile) formData.append("image", imageFile);
+
+    try {
+        const res = await fetch("/upload/teacher", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            alert("Teacher profile saved!");
+            teacherFormOverlay.classList.add("hidden");
+
+            teacherPosts.push({
+                name,
+                gender,
+                subject,
+                image: data.imageUrl || null
+            });
+
+        } else {
+            alert("Failed to save");
+        }
+    } catch (err) {
+        console.error(err);
+        alert("Error submitting form.");
+    }
+};
+
+
+// ----------------------
+// Rotating Teacher Overlay (Top Bar)
+// ----------------------
+const teacherAdOverlay = document.getElementById("teacherAdOverlay");
+
+function showTeacherAdOverlay() {
+    if (!teacherPosts.length) return;
+
+    teacherAdOverlay.innerHTML = "";
+
+    teacherPosts.forEach(post => {
+        const card = document.createElement("div");
+        card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[200px] shadow";
+
+        card.innerHTML = `
+            <div>
+              <img src="${post.image || post.imageUrl}" class="w-16 h-16 rounded-full object-cover" />
+
+            </div>
+            
+            <div>
+                <p class="font-bold">${post.name}</p>
+                <p class="text-sm">${post.gender}</p> 
+                <p class="font-bold">subject: ${post.subject}</p>
+            </div>
+        `;
+        teacherAdOverlay.appendChild(card);
+    });
+
+    teacherAdOverlay.classList.remove("hidden");
+
+    setTimeout(() => {
+        teacherAdOverlay.classList.add("hidden");
+    }, 30000);
+}
+
+function startTeacherOverlayCycle() {
+    showTeacherAdOverlay();
+
+    if (teacherOverlayInterval) clearInterval(teacherOverlayInterval);
+
+    teacherOverlayInterval = setInterval(showTeacherAdOverlay, 60 * 1000);
+}
+
+// ❌ REMOVED AUTOMATIC START HERE
+// startTeacherOverlayCycle();
+
+
+// ----------------------
+// Fetch teachers from backend (3 only)
+// ----------------------
+async function fetchRandomTeachers() {
+    const res = await fetch("/upload/teachers/random");
+    const data = await res.json();
+
+    if (!data.success) return;
+
+    // Always pick the first 3
+    teacherPosts = data.teachers.slice(0, 3);
+    
+    startTeacherOverlayCycle();
+}
+
+fetchRandomTeachers();
+
+
+
+
 
 
 </script>

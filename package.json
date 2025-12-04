@@ -10,10 +10,16 @@
   },
   "dependencies": {
     "@google-cloud/vision": "^5.3.3",
+    "cloudinary": "^1.41.3",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
+    "firebase-admin": "^13.6.0",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0",
     "node-fetch": "^3.3.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sharp": "^0.34.5",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
