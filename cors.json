@@ -1,8 +1,7 @@
 [
   {
-    "origin": ["*"],
-    "method": ["GET", "HEAD"],
-    "responseHeader": ["Content-Type"],
+    "origin": ["http://localhost:3000", "https://www.goquiz.app", "https://goquiz.app"],
+    "method": ["GET", "POST", "PUT", "HEAD", "DELETE"],
     "maxAgeSeconds": 3600
   }
 ]
