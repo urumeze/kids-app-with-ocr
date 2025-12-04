@@ -9,3 +9,5 @@ build/
 
 node_modules/
 google-credentials.json
+
+serviceAccountKey.json
