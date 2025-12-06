@@ -1038,7 +1038,8 @@
     .catch(err => console.error("Firebase sign-in failed:", err));
 }
 
-
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
     apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
