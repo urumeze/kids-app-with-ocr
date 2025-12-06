@@ -1038,8 +1038,7 @@
     .catch(err => console.error("Firebase sign-in failed:", err));
 }
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
@@ -1052,7 +1051,6 @@ const firebaseConfig = {
   };
 
    firebase.initializeApp(firebaseConfig);
-   const analytics = getAnalytics(app);
 
    const auth = firebase.auth();
 
@@ -2080,7 +2078,7 @@ function startTeacherOverlayCycle() {
 
     if (teacherOverlayInterval) clearInterval(teacherOverlayInterval);
 
-    teacherOverlayInterval = setInterval(showTeacherAdOverlay, 2*60 * 1000);
+    teacherOverlayInterval = setInterval(showTeacherAdOverlay, 60 * 1000);
 }
 
 // ❌ REMOVED AUTOMATIC START HERE
