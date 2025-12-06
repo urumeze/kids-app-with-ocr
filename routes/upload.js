@@ -25,12 +25,16 @@ async function uploadBufferToGCS(buffer, destinationPath, contentType) {
     },
     resumable: false,
   });
+
   await file.setMetadata({ cacheControl: "public, max-age=31536000" });
   return file;
 }
 
 // Helper: get signed URL
-async function getSignedUrl(file, expiresSeconds = parseInt(process.env.SIGNED_URL_EXPIRES || "604800", 10)) {
+async function getSignedUrl(
+  file,
+  expiresSeconds = parseInt(process.env.SIGNED_URL_EXPIRES || "604800", 10)
+) {
   const [url] = await file.getSignedUrl({
     action: "read",
     expires: Date.now() + expiresSeconds * 1000,
@@ -44,7 +48,9 @@ async function getSignedUrl(file, expiresSeconds = parseInt(process.env.SIGNED_U
 router.post("/image", upload.single("image"), async (req, res) => {
   try {
     if (!req.file || !req.file.buffer) {
-      return res.status(400).json({ success: false, error: "No image provided" });
+      return res
+        .status(400)
+        .json({ success: false, error: "No image provided" });
     }
 
     const originalBuffer = req.file.buffer;
@@ -57,18 +63,29 @@ router.post("/image", upload.single("image"), async (req, res) => {
     // Generate thumbnail
     let thumbBuffer;
     try {
-      thumbBuffer = await sharp(originalBuffer).resize({ width: 400 }).webp({ quality: 75 }).toBuffer();
+      thumbBuffer = await sharp(originalBuffer)
+        .resize({ width: 400 })
+        .webp({ quality: 75 })
+        .toBuffer();
     } catch (e) {
       console.warn("Thumbnail generation failed:", e);
     }
 
     // Upload original
-    const originalFile = await uploadBufferToGCS(originalBuffer, originalPath, contentType);
+    const originalFile = await uploadBufferToGCS(
+      originalBuffer,
+      originalPath,
+      contentType
+    );
 
     // Upload thumbnail
     let thumbFile = null;
     if (thumbBuffer) {
-      thumbFile = await uploadBufferToGCS(thumbBuffer, thumbPath, "image/webp");
+      thumbFile = await uploadBufferToGCS(
+        thumbBuffer,
+        thumbPath,
+        "image/webp"
+      );
     }
 
     // Signed URLs
@@ -85,7 +102,9 @@ router.post("/image", upload.single("image"), async (req, res) => {
     });
   } catch (err) {
     console.error("Upload error:", err);
-    res.status(500).json({ success: false, error: "Upload failed" });
+    res
+      .status(500)
+      .json({ success: false, error: "Upload failed" });
   }
 });
 
@@ -95,7 +114,9 @@ router.post("/image", upload.single("image"), async (req, res) => {
 router.post("/teacher", upload.single("image"), async (req, res) => {
   try {
     if (!req.file || !req.file.buffer) {
-      return res.status(400).json({ success: false, error: "No image provided" });
+      return res
+        .status(400)
+        .json({ success: false, error: "No image provided" });
     }
 
     const buffer = req.file.buffer;
@@ -116,7 +137,7 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
       name: req.body.name,
       gender: req.body.gender,
       subject: req.body.subject,
-      imageUrl, // <- used by frontend overlay
+      imageUrl, 
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 
@@ -127,12 +148,35 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
     });
   } catch (err) {
     console.error("Teacher upload error:", err);
-    res.status(500).json({ success: false, error: "Upload failed" });
+    res
+      .status(500)
+      .json({ success: false, error: "Upload failed" });
   }
 });
 
+/* --------------------------------
+   NEW: Get 3 Latest Teachers
+-------------------------------- */
+router.get("/teachers/random", async (req, res) => {
+  try {
+    const firestore = admin.firestore();
 
+    const snapshot = await firestore
+      .collection("teachers")
+      .orderBy("createdAt", "desc")
+      .limit(3)
+      .get();
 
+    const teachers = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
 
+    res.json({ success: true, teachers });
+  } catch (err) {
+    console.error("Random teachers fetch error:", err);
+    res.json({ success: false, teachers: [] });
+  }
+});
 
 export default router;
