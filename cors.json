@@ -6,7 +6,7 @@
       "https://goquiz.app"
     ],
     "method": ["GET", "POST", "PUT", "DELETE"],
-    "responseHeader": ["Content-Type", "Authorization"],
+    "responseHeader": ["Content-Type", "Authorization", "Access-Control-Allow-Origin"],
     "maxAgeSeconds": 3600
   }
 ]
