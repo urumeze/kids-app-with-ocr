@@ -541,96 +541,73 @@
 
 <div class="container mx-auto px-4 py-8">
         <!-- Header -->
-  <header class="text-center mb-12">
-    <h1 id="goquizTitle" class="fixed top-4 left-1/2 transform -translate-x-1/2 text-1xl text-white mb-4 bg-indigo-600 ;">
-  GoQuiz
+  <header class="flex justify-between items-center p-4 bg-gray-900 text-white shadow-lg fixed top-0 left-0 right-0 z-50">
+    <!-- Title Section -->
+    <!-- Removed fixed positioning from h1 as the header itself is now fixed -->
+    <h1 id="goquizTitle" class="text-xl font-bold">
+        GoQuiz
     </h1>
 
-    <!-- Fixed coin wrapper -->
-<div id="floatingCoin" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
-  <div class="coin-container">
-    
-    <div class="coin-number" id="coinNumber">0</div>
+    <!-- Coin & Controls Wrapper -->
+    <!-- Removed fixed positioning from the wrapper as the header itself is now fixed -->
+    <div id="floatingCoin" class="flex items-center gap-4">
+        <!-- Coin & Number Container -->
+        <div class="flex items-center gap-2">
+            <!-- Your SVG coin -->
+            <svg class="coin-svg" id="gqCoin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="36" height="36" role="img" aria-label="GQ coin">
+                <defs>
+                    <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
+                        <stop offset="0%" stop-color="#fff9c4"/>
+                        <stop offset="40%" stop-color="#fbc02d"/>
+                        <stop offset="80%" stop-color="#f57f17"/>
+                        <stop offset="100%" stop-color="#bf360c"/>
+                    </radialGradient>
+                    <!-- ... other SVG defs ... (omitted for brevity) -->
+                    <linearGradient id="gq_shine" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+                        <stop offset="45%" stop-color="rgba(255,255,255,0.9)" />
+                        <stop offset="55%" stop-color="rgba(255,255,255,0.9)" />
+                        <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+                    </linearGradient>
+                </defs>
+                <!-- ... SVG content ... (omitted for brevity) -->
+                <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
+                <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
+                <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
+                <g class="shimmerGroup">
+                    <rect x="-120" y="0" width="240" height="120" fill="url(#gq_shine)" opacity="0" class="shimmerRect"/>
+                </g>
+                <text x="60" y="74" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800" font-size="36" fill="#3b2a0c" stroke="#fff6d8" stroke-width="0.6" paint-order="stroke">
+                    GQ
+                </text>
+                <ellipse cx="44" cy="42" rx="28" ry="10" transform="rotate(-20 44 42)" fill="rgba(255,255,255,0.18)" opacity="0.85"/>
+            </svg>
 
-    <div id="coinControls" style="display: flex; align-items: center; gap: 6px;">
-      <div id="pointsLabel" style="font-weight: 600; font-size: 14px;">pts</div>
+            <!-- Coin Count -->
+            <div 
+              id="GqCount" 
+              class="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600 
+                     transition-transform duration-200 ease-out"
+            >
+              0
+            </div>
+        </div>
 
-      <!-- Converter arrows -->
-      <!-- Removed duplicate div wrappers, keeping only the button for cleaner integration into controls -->
-      <button class="flex items-center p-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 ease-in-out group">
-          <span class="mr-2">Convert</span>
-          <!-- Unicode Right Arrow: &rarr; or → -->
-          <span class="text-2xl transition-transform duration-500 ease-in-out group-hover:[transform:rotate(180deg)]">
-              →
-          </span>
-      </button>
+        <!-- Controls Section -->
+        <div id="coinControls" class="flex items-center gap-2">
+            <div id="pointsLabel" class="font-semibold text-sm">pts</div>
 
-    </div> <!-- Closes coinControls -->
-    <!-- The updated HTML with Tailwind Classes applied -->
-<div 
-  id="GqCount" 
-  class="text-4xl font-black p-2 bg-white rounded-lg shadow-xl text-center min-w-[40px] 
-         /* Custom Text Gradient Classes below */
-         bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600 
-         /* Animation Trigger Class */
-         transition-transform duration-200 ease-out"
->
-  0
-</div>
+            <!-- Converter button (simplified for space) -->
+            <button class="flex items-center p-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in-out group text-sm">
+                <span class="mr-1">Convert</span>
+                <span class="text-xl transition-transform duration-500 ease-in-out group-hover:[transform:rotate(180deg)]">
+                    →
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
 
-    
-    <!-- Your SVG coin -->
-    <svg class="coin-svg" id="gqCoin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="48" height="48" role="img" aria-label="GQ coin">
-      <defs>
-      <!-- ... (SVG defs content) ... -->
-    <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
-      <stop offset="0%" stop-color="#fff9c4"/>
-      <stop offset="40%" stop-color="#fbc02d"/>
-      <stop offset="80%" stop-color="#f57f17"/>
-      <stop offset="100%" stop-color="#bf360c"/>
-    </radialGradient>
-
-    <linearGradient id="gq_shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
-      <stop offset="45%" stop-color="rgba(255,255,255,0.9)" />
-      <stop offset="55%" stop-color="rgba(255,255,255,0.9)" />
-      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
-    </linearGradient>
-  </defs>
-
-  <!-- outer coin with subtle dark rim -->
-  <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
-
-  <!-- inner rim -->
-  <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
-
-  <!-- embossed center -->
-  <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
-
-  <!-- shimmer band (hidden by default; animated when .flash is added) -->
-  <g class="shimmerGroup">
-    <rect x="-120" y="0" width="240" height="120" fill="url(#gq_shine)" opacity="0" class="shimmerRect"/>
-  </g>
-
-  <!-- letters GQ -->
-  <text x="60" y="74" text-anchor="middle"
-        font-family="Inter, Arial, Helvetica, sans-serif"
-        font-weight="800" font-size="36" fill="#3b2a0c" stroke="#fff6d8" stroke-width="0.6" paint-order="stroke">
-    GQ
-  </text>
-
-  <!-- small highlight ellipse for depth -->
-  <ellipse cx="44" cy="42" rx="28" ry="10" transform="rotate(-20 44 42)" fill="rgba(255,255,255,0.18)" opacity="0.85"/>
-</svg>
-
-
-</div> <!-- Closes coin-container -->
-</div> <!-- Closes floatingCoin -->
-
-
-    
-  
-  </header>
 </div>  
 
 
