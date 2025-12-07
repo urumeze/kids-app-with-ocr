@@ -545,11 +545,13 @@
     <h1 id="goquizTitle" class="fixed top-4 left-1/2 transform -translate-x-1/2 text-1xl text-white mb-4 bg-indigo-600 ;">
   GoQuiz
     </h1>
+
+    
   
   </header>
 </div>  
 
-<!-- Trigger Button -->
+
 <!-- Teacher Button -->
 <button id="openTeacherPost"
     class="fixed bottom-20 right-4 bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg">
@@ -612,16 +614,43 @@
 
 
 
-
 <!-- Fixed coin wrapper -->
 <div id="floatingCoin" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
   <div class="coin-container">
     
     <div class="coin-number" id="coinNumber">0</div>
 
+    <div id="coinControls" style="display: flex; align-items: center; gap: 6px;">
+      <div id="pointsLabel" style="font-weight: 600; font-size: 14px;">pts</div>
+
+      <!-- Converter arrows -->
+      <!-- Removed duplicate div wrappers, keeping only the button for cleaner integration into controls -->
+      <button class="flex items-center p-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 ease-in-out group">
+          <span class="mr-2">Convert</span>
+          <!-- Unicode Right Arrow: &rarr; or → -->
+          <span class="text-2xl transition-transform duration-500 ease-in-out group-hover:[transform:rotate(180deg)]">
+              →
+          </span>
+      </button>
+
+    </div> <!-- Closes coinControls -->
+    <!-- The updated HTML with Tailwind Classes applied -->
+<div 
+  id="GqCount" 
+  class="text-4xl font-black p-2 bg-white rounded-lg shadow-xl text-center min-w-[80px] 
+         /* Custom Text Gradient Classes below */
+         bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600 
+         /* Animation Trigger Class */
+         transition-transform duration-200 ease-out"
+>
+  0
+</div>
+
+    
     <!-- Your SVG coin -->
     <svg class="coin-svg" id="gqCoin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="48" height="48" role="img" aria-label="GQ coin">
       <defs>
+      <!-- ... (SVG defs content) ... -->
     <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
       <stop offset="0%" stop-color="#fff9c4"/>
       <stop offset="40%" stop-color="#fbc02d"/>
@@ -661,11 +690,55 @@
   <!-- small highlight ellipse for depth -->
   <ellipse cx="44" cy="42" rx="28" ry="10" transform="rotate(-20 44 42)" fill="rgba(255,255,255,0.18)" opacity="0.85"/>
 </svg>
+
+
+</div> <!-- Closes coin-container -->
+</div> <!-- Closes floatingCoin -->
+
+
+<!-- Conversion Modal -->
+<div id="convertModal" 
+     style="display:none; position: fixed; top:0; left:0; width:100%; height:100%;
+            background:rgba(0,0,0,0.6); backdrop-filter:blur(2px); 
+            z-index:2000; justify-content:center; align-items:center;">
+    
+  <div style="background:white; padding:20px; border-radius:12px; width:320px; box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+    
+    <h2 style="font-size:20px; font-weight:700; margin-bottom:15px;">Convert</h2>
+
+    <!-- FROM dropdown -->
+    <label>From:</label>
+    <select id="convertFrom" class="w-full p-2 border rounded mb-3">
+      <option value="points">Points</option>
+      <option value="gq">GQ</option>
+    </select>
+
+    <!-- TO dropdown -->
+    <label>To:</label>
+    <select id="convertTo" class="w-full p-2 border rounded mb-3">
+      <option value="gq">GQ</option>
+      <option value="points">Points</option>
+    </select>
+
+    <!-- Amount -->
+    <label>Amount to Convert:</label>
+    <input id="convertAmount" 
+           type="number" 
+           class="w-full p-2 border rounded mb-4" 
+           placeholder="Enter amount">
+
+    <!-- Action buttons -->
+    <div style="display:flex; justify-content:space-between; margin-top:10px;">
+      <button id="closeConvertModal" 
+              style="padding:8px 14px; background:#aaa; color:white; border-radius:8px;">Cancel</button>
+
+      <button id="confirmConvert" 
+              style="padding:8px 14px; background:#22c55e; color:white; border-radius:8px;">Convert</button>
+    </div>
+
   </div>
 
-
 </div>
-
 
 
 
@@ -2042,12 +2115,16 @@ document.getElementById("submitTeacherPost").onclick = async () => {
 // ----------------------
 const teacherAdOverlay = document.getElementById("teacherAdOverlay");
 
+// Ensure 'teacherAdOverlay' variable is defined globally or within scope
+// e.g., const teacherAdOverlay = document.getElementById("teacherAdOverlay");
+
 function showTeacherAdOverlay() {
     if (!teacherPosts.length) return;
 
     teacherAdOverlay.innerHTML = "";
 
     teacherPosts.forEach(post => {
+        // ... (your existing card creation logic remains the same) ...
         const card = document.createElement("div");
         card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[200px] shadow";
 
@@ -2066,12 +2143,32 @@ function showTeacherAdOverlay() {
         teacherAdOverlay.appendChild(card);
     });
 
+    // --- ADDED TAILWIND CLASSES HERE ---
+    // These classes make the overlay stick to the top-center of the screen
     teacherAdOverlay.classList.remove("hidden");
+    teacherAdOverlay.classList.add(
+        "fixed",           // Position it relative to the viewport
+        "top-12",           // 1rem from the top
+        "left-1/2",        // Start at the middle horizontal point
+        "-translate-x-1/2",// Pull it back half its own width to center it perfectly
+        "z-50",            // Ensure it appears on top of other content
+        "flex",            // Use flexbox to line up the cards (assuming you want a row of ads)
+        "space-x-4",       // Add spacing between the individual ad cards
+        "p-4",             // Some padding around the entire overlay container
+        "rounded-lg",      // Make the container itself look nice
+        "bg-white",        // Give the container a background
+        "shadow-2xl"       // Strong shadow for visibility
+    );
+
 
     setTimeout(() => {
+        // When hiding, ensure you remove the flex class if "hidden" relies on display: none
         teacherAdOverlay.classList.add("hidden");
+        // Optional: Remove fixed classes if you plan to reuse the element for other purposes later
+        // teacherAdOverlay.classList.remove("fixed", "top-4", "left-1/2", "-translate-x-1/2", "z-50", ...); 
     }, 30000);
 }
+
 
 function startTeacherOverlayCycle() {
     showTeacherAdOverlay();
@@ -2102,6 +2199,105 @@ async function fetchRandomTeachers() {
 
 fetchRandomTeachers();
 
+// -------------------------------
+// POINTS + GQ SYSTEM
+// -------------------------------
+let userPoints = parseInt(localStorage.getItem("userCoins")) || 0;
+let userGQ = parseInt(localStorage.getItem("userGQ")) || 0;
+
+// Update UI
+function updateUI() {
+    document.getElementById("coinNumber").textContent = userPoints;
+    document.getElementById("GqCount").textContent = userGQ;
+
+    // Save
+    localStorage.setItem("userCoins", userPoints);
+    localStorage.setItem("userGQ", userGQ);
+
+    // Animation
+    document.getElementById("GqCount").classList.add("scale-110");
+    setTimeout(() => {
+        document.getElementById("GqCount").classList.remove("scale-110");
+    }, 200);
+}
+
+updateUI();
+
+// -------------------------------
+// OPEN / CLOSE MODAL
+// -------------------------------
+document.querySelector("#coinControls button").onclick = () => {
+    document.getElementById("convertModal").style.display = "flex";
+};
+
+document.getElementById("closeConvertModal").onclick = () => {
+    document.getElementById("convertModal").style.display = "none";
+};
+
+// -------------------------------
+// CONVERSION LOGIC
+// -------------------------------
+document.getElementById("confirmConvert").onclick = () => {
+    const from = document.getElementById("convertFrom").value;
+    const to = document.getElementById("convertTo").value;
+    const amount = parseInt(document.getElementById("convertAmount").value);
+
+    if (!amount || amount <= 0) {
+        alert("Enter a valid amount.");
+        return;
+    }
+
+    // Prevent converting to same type
+    if (from === to) {
+        alert("Cannot convert to the same unit.");
+        return;
+    }
+
+    // POINTS → GQ
+    if (from === "points" && to === "gq") {
+        if (userPoints <= 0) {
+            alert("You don't have enough points.");
+            return;
+        }
+
+        let pointsToUse = Math.min(amount, userPoints);
+        let gqEarned = Math.floor(pointsToUse / 100);
+        let leftover = pointsToUse % 100;
+
+        if (gqEarned === 0) {
+            alert("Not enough points. You need 100pts = 1 GQ.");
+            return;
+        }
+
+        userPoints -= pointsToUse;
+        userPoints += leftover; // return leftover
+
+        userGQ += gqEarned;
+        alert(`Converted ${pointsToUse} points → ${gqEarned} GQ`);
+
+        updateUI();
+    }
+
+    // GQ → POINTS
+    if (from === "gq" && to === "points") {
+        if (userGQ <= 0) {
+            alert("You have no GQ to convert.");
+            return;
+        }
+
+        let gqToUse = Math.min(amount, userGQ);
+        let pointsGained = gqToUse * 100;
+
+        userGQ -= gqToUse;
+        userPoints += pointsGained;
+
+        alert(`Converted ${gqToUse} GQ → ${pointsGained} points`);
+        updateUI();
+    }
+
+    // Close modal after conversion
+    document.getElementById("convertModal").style.display = "none";
+};
 
 
 
