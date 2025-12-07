@@ -542,12 +542,15 @@
 
   <!-- Header -->
   <header class="relative w-full flex items-center justify-center py-3">
-
-    <!-- Title (centered) -->
+    <div>
+      <!-- Title (centered) -->
     <h1 id="goquizTitle"
         class="text-xl font-bold text-white bg-indigo-600 px-4 py-1 rounded-lg">
       GoQuiz
     </h1>
+
+    </div>
+    
 
     <!-- Right-floating coin section -->
     <div id="floatingCoin"
@@ -2174,7 +2177,7 @@ function startTeacherOverlayCycle() {
 
     if (teacherOverlayInterval) clearInterval(teacherOverlayInterval);
 
-    teacherOverlayInterval = setInterval(showTeacherAdOverlay, 60 * 1000);
+    teacherOverlayInterval = setInterval(showTeacherAdOverlay, 5*60 * 1000);
 }
 
 // ❌ REMOVED AUTOMATIC START HERE
