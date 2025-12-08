@@ -538,33 +538,28 @@
       <div class="loader-fill" id="loader"></div>
     </div>
 </div>
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-8 pt-20"> <!-- Added pt-20 here to prevent content overlap -->
 
-  <!-- Header -->
-  <!-- Removed 'relative w-full flex items-center justify-center' from the header itself -->
-  <header class="flex justify-between items-center py-3">
+  <!-- Header is now fixed at the top -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-indigo-100 shadow-md flex justify-between items-center py-3 px-4">
 
-    <!-- Title (Left Aligned by default) -->
+    <!-- Title (Left Aligned) -->
     <h1 id="goquizTitle"
         class="text-xl font-bold text-white bg-indigo-600 px-4 py-1 rounded-lg">
       GoQuiz
     </h1>
 
-    <!-- Floating Coin Widget (Pushed to the Extreme Right via justify-between on header) -->
-    <!-- Changed from flex-col (vertical stack) to flex (horizontal row) -->
-    <!-- Removed 'absolute top-1 right-2 z-50' positioning -->
+    <!-- Right-aligned Coin & Controls Wrapper -->
     <div id="floatingCoin" 
          class="flex items-center gap-3">
 
-      <!-- Points (Combined into the main flex flow) -->
-      <!-- Adjusted sizing for mobile screen real estate -->
+      <!-- Points -->
       <div class="flex items-center gap-1">
-        <div class="bg-white coin-number text-base font-bold px-2 py-0.5 rounded" id="coinNumber">0</div>
+        <div class="bg-gray-100 coin-number text-base font-bold px-2 py-0.5 rounded" id="coinNumber">0</div>
         <div id="pointsLabel" class="font-semibold text-sm text-gray-700">pts</div>
       </div>
 
       <!-- Convert button -->
-      <!-- Adjusted sizing for mobile screen real estate -->
       <button 
         class="flex items-center px-2 py-1 bg-green-500 text-white rounded-md 
                hover:bg-green-600 transition duration-300 ease-in-out group text-sm shadow">
@@ -575,8 +570,7 @@
           </span>
       </button>
 
-      <!-- GQ Counter + Coin (Combined into the main flex flow) -->
-      <!-- Adjusted sizing for mobile screen real estate -->
+      <!-- GQ Counter + Coin -->
       <div class="flex items-center gap-1">
 
         <div 
@@ -589,7 +583,7 @@
         </div>
 
         <!-- Your full SVG preserved -->
-        <svg class="coin-svg" id="gqCoin" xmlns="http://www.w3.org/2000/svg" 
+        <svg class="coin-svg" id="gqCoin" xmlns="www.w3.org" 
              viewBox="0 0 120 120" width="32" height="32" role="img" aria-label="GQ coin">
           <defs>
             <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
@@ -606,16 +600,13 @@
               <stop offset="100%" stop-color="rgba(255,255,255,0)" />
             </linearGradient>
           </defs>
-
           <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
           <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
           <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
-
           <g class="shimmerGroup">
             <rect x="-120" y="0" width="240" height="120" fill="url(#gq_shine)" 
                   opacity="0" class="shimmerRect"/>
           </g>
-
           <text x="60" y="74" text-anchor="middle"
                 font-family="Inter, Arial, Helvetica, sans-serif"
                 font-weight="800" font-size="36" fill="#3b2a0c" 
@@ -630,7 +621,6 @@
 
     </div>
   </header>
-
 </div>
 
 
