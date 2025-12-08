@@ -538,58 +538,100 @@
       <div class="loader-fill" id="loader"></div>
     </div>
 </div>
-<header class="fixed w-full bg-indigo-600 text-white px-2 py-1 flex items-center justify-between shadow-sm">
+<div class="container mx-auto px-4 py-8">
 
-  <!-- LEFT: Title -->
-  <div class="flex-shrink-0">
-    <h1 id="goquizTitle" class="text-sm font-bold leading-none">
+  <!-- Header -->
+  <!-- Removed 'relative w-full flex items-center justify-center' from the header itself -->
+  <header class="flex justify-between items-center py-3">
+
+    <!-- Title (Left Aligned by default) -->
+    <h1 id="goquizTitle"
+        class="text-xl font-bold text-white bg-indigo-600 px-4 py-1 rounded-lg">
       GoQuiz
     </h1>
-  </div>
 
-  <!-- RIGHT: Controls row -->
-  <div class="flex items-center gap-2 flex-shrink-0">
+    <!-- Floating Coin Widget (Pushed to the Extreme Right via justify-between on header) -->
+    <!-- Changed from flex-col (vertical stack) to flex (horizontal row) -->
+    <!-- Removed 'absolute top-1 right-2 z-50' positioning -->
+    <div id="floatingCoin" 
+         class="flex items-center gap-3">
 
-    <!-- Points -->
-    <div class="flex items-center bg-white text-gray-900 px-1 py-0.5 rounded text-xs shadow">
-      <span id="coinNumber" class="font-semibold">0</span>
-      <span id="pointsLabel" class="ml-1 text-[10px] text-gray-600">pts</span>
+      <!-- Points (Combined into the main flex flow) -->
+      <!-- Adjusted sizing for mobile screen real estate -->
+      <div class="flex items-center gap-1">
+        <div class="bg-white coin-number text-base font-bold px-2 py-0.5 rounded" id="coinNumber">0</div>
+        <div id="pointsLabel" class="font-semibold text-sm text-gray-700">pts</div>
+      </div>
+
+      <!-- Convert button -->
+      <!-- Adjusted sizing for mobile screen real estate -->
+      <button 
+        class="flex items-center px-2 py-1 bg-green-500 text-white rounded-md 
+               hover:bg-green-600 transition duration-300 ease-in-out group text-sm shadow">
+          <span class="mr-1">Convert</span>
+          <span class="text-xl transition-transform duration-500 ease-in-out 
+                       group-hover:[transform:rotate(180deg)]">
+            →
+          </span>
+      </button>
+
+      <!-- GQ Counter + Coin (Combined into the main flex flow) -->
+      <!-- Adjusted sizing for mobile screen real estate -->
+      <div class="flex items-center gap-1">
+
+        <div 
+          id="GqCount" 
+          class="text-2xl font-black px-1 py-0.5 bg-white rounded-lg shadow text-center 
+                 min-w-[40px] bg-clip-text text-transparent 
+                 bg-gradient-to-r from-yellow-400 to-amber-600
+                 transition-transform duration-200 ease-out">
+          0
+        </div>
+
+        <!-- Your full SVG preserved -->
+        <svg class="coin-svg" id="gqCoin" xmlns="http://www.w3.org/2000/svg" 
+             viewBox="0 0 120 120" width="32" height="32" role="img" aria-label="GQ coin">
+          <defs>
+            <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
+              <stop offset="0%" stop-color="#fff9c4"/>
+              <stop offset="40%" stop-color="#fbc02d"/>
+              <stop offset="80%" stop-color="#f57f17"/>
+              <stop offset="100%" stop-color="#bf360c"/>
+            </radialGradient>
+
+            <linearGradient id="gq_shine" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+              <stop offset="45%" stop-color="rgba(255,255,255,0.9)" />
+              <stop offset="55%" stop-color="rgba(255,255,255,0.9)" />
+              <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+            </linearGradient>
+          </defs>
+
+          <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
+          <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
+          <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
+
+          <g class="shimmerGroup">
+            <rect x="-120" y="0" width="240" height="120" fill="url(#gq_shine)" 
+                  opacity="0" class="shimmerRect"/>
+          </g>
+
+          <text x="60" y="74" text-anchor="middle"
+                font-family="Inter, Arial, Helvetica, sans-serif"
+                font-weight="800" font-size="36" fill="#3b2a0c" 
+                stroke="#fff6d8" stroke-width="0.6" paint-order="stroke">
+            GQ
+          </text>
+          <ellipse cx="44" cy="42" rx="28" ry="10" transform="rotate(-20 44 42)"
+                   fill="rgba(255,255,255,0.18)" opacity="0.85"/>
+        </svg>
+
+      </div>
+
     </div>
+  </header>
 
-    <!-- Convert -->
-    <button id="openConvert"
-            class="text-[10px] bg-green-500 text-white px-2 py-1 rounded shadow hover:bg-green-600 active:scale-95">
-      Convert →
-    </button>
-
-    <!-- GQ Count -->
-    <div id="GqCount"
-         class="text-xs font-extrabold px-1 py-0.5 bg-white rounded shadow 
-                bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600 min-w-[20px] text-center">
-      0
-    </div>
-
-    <!-- GQ Coin SVG -->
-    <div class="w-5 h-5 flex-shrink-0">
-      <svg id="gqCoin" viewBox="0 0 120 120" class="w-full h-full">
-        <defs>
-          <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
-            <stop offset="0%" stop-color="#fff9c4"/>
-            <stop offset="40%" stop-color="#fbc02d"/>
-            <stop offset="80%" stop-color="#f57f17"/>
-            <stop offset="100%" stop-color="#bf360c"/>
-          </radialGradient>
-        </defs>
-        <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
-        <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
-        <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
-        <text x="60" y="74" text-anchor="middle" font-size="34" font-weight="800"
-              fill="#3b2a0c" stroke="#fff6d8" stroke-width="1">GQ</text>
-      </svg>
-    </div>
-  </div>
-
-</header>
+</div>
 
 
 
