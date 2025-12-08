@@ -518,11 +518,11 @@
     text-align: right;
 }
 
-/* Add CSS classes for dynamic status updates via JS if needed */
-/*
-.status-message.error { color: #dc3545; }
-.status-message.success { color: #28a745; }
-*/
+/* GLOBAL HEADER SHRINK */
+  #goquizHeader {
+    transform: scale(0.70);      /* adjust size */
+    transform-origin: top right; /* keeps alignment clean */
+  }
 
 
 
@@ -541,10 +541,10 @@
 <div class="container mx-auto px-4 py-8">
 
   <div class="container mx-auto px-4 py-8 pt-20">
-
-  <!-- Fixed Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-indigo-100 shadow-md 
-                 flex justify-between items-center py-3 px-4">
+<!-- Fixed Header -->
+<header id="goquizHeader"
+        class="fixed top-0 left-0 right-0 z-50 bg-indigo-100 shadow-md 
+               flex justify-between items-center py-3 px-4 scale-100">
 
     <!-- Title -->
     <h1 id="goquizTitle"
@@ -633,9 +633,10 @@
       </div>
 
     </div>
-  </header>
+</header>
 
-</div>
+
+
 
 
 
