@@ -538,74 +538,57 @@
       <div class="loader-fill" id="loader"></div>
     </div>
 </div>
-<!-- REPLACEMENT HEADER: Paste this instead of your old header -->
-<header class=" fixed w-full bg-indigo-600 text-white shadow-sm">
-  <div class="max-w-5xl mx-auto px-4 py-3">
+<header class="fixed w-full bg-indigo-600 text-white px-2 py-1 flex items-center justify-between shadow-sm">
 
-    <!-- Top row: Title centered -->
-    <div class="w-full flex justify-center">
-      <h1 id="goquizTitle" class="text-base sm:text-lg font-bold bg-indigo-600 px-3 py-1 rounded-md leading-none">
-        GoQuiz
-      </h1>
+  <!-- LEFT: Title -->
+  <div class="flex-shrink-0">
+    <h1 id="goquizTitle" class="text-sm font-bold leading-none">
+      GoQuiz
+    </h1>
+  </div>
+
+  <!-- RIGHT: Controls row -->
+  <div class="flex items-center gap-2 flex-shrink-0">
+
+    <!-- Points -->
+    <div class="flex items-center bg-white text-gray-900 px-1 py-0.5 rounded text-xs shadow">
+      <span id="coinNumber" class="font-semibold">0</span>
+      <span id="pointsLabel" class="ml-1 text-[10px] text-gray-600">pts</span>
     </div>
 
-    <!-- Second row: coin / points / convert
-         Mobile: stacked & centered
-         md+: row aligned to right to save space -->
-    <div class="w-full mt-2">
-      <div class="flex flex-col items-center md:items-end md:flex-row md:justify-end gap-2">
+    <!-- Convert -->
+    <button id="openConvert"
+            class="text-[10px] bg-green-500 text-white px-2 py-1 rounded shadow hover:bg-green-600 active:scale-95">
+      Convert →
+    </button>
 
-        <!-- Points container (keeps same IDs) -->
-        <div class="flex items-center gap-2 bg-white text-gray-900 px-2 py-1 rounded-md shadow-sm">
-          <div id="coinNumber" class="text-sm font-semibold">0</div>
-          <div id="pointsLabel" class="text-xs text-gray-600">pts</div>
-        </div>
+    <!-- GQ Count -->
+    <div id="GqCount"
+         class="text-xs font-extrabold px-1 py-0.5 bg-white rounded shadow 
+                bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600 min-w-[20px] text-center">
+      0
+    </div>
 
-        <!-- Convert button (keeps same structure inside coinControls) -->
-        <div id="coinControls" class="flex items-center gap-2">
-          <button id="openConvert"
-                  class="flex items-center text-xs font-medium bg-green-500 text-white px-2 py-1 rounded-md shadow hover:bg-green-600 active:scale-95 transition">
-            <span class="mr-1">Convert</span>
-            <span class="text-sm">→</span>
-          </button>
-        </div>
-
-        <!-- GQ count -->
-         <div>
-
-         
-        <div id="GqCount"
-             class="text-sm font-extrabold px-2 py-1 bg-white rounded-md shadow text-center
-                    bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600 min-w-[36px]">
-          0
-        </div>
-
-        <!-- Coin SVG -->
-        <div class="w-7 h-7">
-          <svg id="gqCoin" class="w-full h-full" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GQ coin">
-            <defs>
-              <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
-                <stop offset="0%" stop-color="#fff9c4"/>
-                <stop offset="40%" stop-color="#fbc02d"/>
-                <stop offset="80%" stop-color="#f57f17"/>
-                <stop offset="100%" stop-color="#bf360c"/>
-              </radialGradient>
-            </defs>
-
-            <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
-            <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
-            <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
-
-            <text x="60" y="74" text-anchor="middle" font-family="Inter, Arial" font-weight="800" font-size="28" fill="#3b2a0c" stroke="#fff6d8" stroke-width="0.6">
-              GQ
-            </text>
-          </svg>
-        </div>
-        </div>
-
-      </div>
+    <!-- GQ Coin SVG -->
+    <div class="w-5 h-5 flex-shrink-0">
+      <svg id="gqCoin" viewBox="0 0 120 120" class="w-full h-full">
+        <defs>
+          <radialGradient id="gq_g" cx="40%" cy="35%" r="70%">
+            <stop offset="0%" stop-color="#fff9c4"/>
+            <stop offset="40%" stop-color="#fbc02d"/>
+            <stop offset="80%" stop-color="#f57f17"/>
+            <stop offset="100%" stop-color="#bf360c"/>
+          </radialGradient>
+        </defs>
+        <circle cx="60" cy="60" r="55" fill="url(#gq_g)" stroke="#b8860b" stroke-width="4"/>
+        <circle cx="60" cy="60" r="44" fill="none" stroke="#ffecb3" stroke-width="3"/>
+        <circle cx="60" cy="60" r="36" fill="url(#gq_g)" opacity="0.98"/>
+        <text x="60" y="74" text-anchor="middle" font-size="34" font-weight="800"
+              fill="#3b2a0c" stroke="#fff6d8" stroke-width="1">GQ</text>
+      </svg>
     </div>
   </div>
+
 </header>
 
 
