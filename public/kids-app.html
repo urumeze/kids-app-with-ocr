@@ -686,7 +686,7 @@
 </div>
 
  
-<div class="music-menu-container fixed right-6 z-50 bottom-[25vh] ">
+<div class="music-menu-container fixed bottom-6 right-6 z-50">
   <button id="menu-toggle" class="menu-toggle-button">🎵</button>
   <div id="circular-menu" class="circular-menu">
     <button id="next-button" class="menu-button">⏭</button>
@@ -773,7 +773,9 @@
 
 
 
-<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory  scale-[0.7]   "></div>
+<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory">
+
+</div>
 
 
 
@@ -2216,7 +2218,7 @@ function showTeacherAdOverlay() {
     teacherPosts.forEach(post => {
         // ... (your existing card creation logic remains the same) ...
         const card = document.createElement("div");
-        card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[100px] shadow   ";
+        card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[200px] shadow";
 
         card.innerHTML = `
             <div>
