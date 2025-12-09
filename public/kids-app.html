@@ -773,9 +773,7 @@
 
 
 
-<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory">
-
-</div>
+<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory  scale-[0.7]   "></div>
 
 
 
@@ -1135,8 +1133,9 @@
 
   <!-- Teacher Post -->
   <div id="openTeacherPost" class="text-center" onclick="openTeacherPost()">
+    <p class="text-xs text-purple-600 font-semibold">Are a Teacher? </p>
     <span class="material-icons text-purple-600">school</span>
-    <p class="text-xs text-purple-600 font-semibold">are a Teacher? post ad</p>
+    <p class="text-xs text-purple-600 font-semibold"> post ad</p>
   </div>
 
   
@@ -2217,7 +2216,7 @@ function showTeacherAdOverlay() {
     teacherPosts.forEach(post => {
         // ... (your existing card creation logic remains the same) ...
         const card = document.createElement("div");
-        card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[200px] shadow";
+        card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[100px] shadow   ";
 
         card.innerHTML = `
             <div>
