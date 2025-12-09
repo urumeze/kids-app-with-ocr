@@ -540,11 +540,13 @@
       <div class="loader-fill" id="loader"></div>
     </div>
 </div>
+
+
 <div class="container mx-auto px-4 py-8">
 
   <div class="container mx-auto px-4 py-8 pt-20">
-<!-- Fixed Header -->
-<header id="goquizHeader"
+    <!-- Fixed Header -->
+    <header id="goquizHeader"
         class="fixed top-0 left-0 right-0 z-50 bg-indigo-100 shadow-md 
                flex justify-between items-center py-3 px-4 scale-100">
 
@@ -555,15 +557,14 @@
     </h1>
 
 
-    <button onclick="testCreate()">Test Create Teaching Request</button>
+    
 
     <!-- Right Side: Points + Convert + GQ Coin -->
     <div id="floatingCoin" class="flex items-center gap-3">
 
       <!-- Points section -->
       <div class="flex items-center gap-1">
-        <div class="bg-gray-100 coin-number text-base font-bold px-2 py-0.5 rounded" 
-             id="coinNumber">0</div>
+        <div class="bg-gray-100 coin-number text-base font-bold px-2 py-0.5 rounded" id="coinNumber">0</div>
         <div id="pointsLabel" class="font-semibold text-sm text-gray-700">pts</div>
       </div>
 
@@ -639,6 +640,8 @@
 
     </div>
 </header>
+</div>
+</div>
 
 
 
@@ -686,8 +689,9 @@
 </div>
 
  
-<div class="music-menu-container fixed right-6 z-50 bottom-[25vh]">
+<div class="music-menu-container fixed right-6 z-50 bottom-[25vh] scale-[0.7]">
   <button id="menu-toggle" class="menu-toggle-button">🎵</button>
+  
   <div id="circular-menu" class="circular-menu">
     <button id="next-button" class="menu-button">⏭</button>
     <button id="pause-button" class="menu-button">⏸</button>
@@ -698,6 +702,24 @@
 </div>
 
 <audio id="audio-player"></audio>
+
+<button onclick="testCreate()"
+        class="
+          scale-[0.7]
+          fixed right-6 z-50 bottom-[15vh]
+          bg-green-600 hover:bg-green-700 
+          text-white font-extrabold text-sm 
+          py-3 px-6 rounded-full 
+          shadow-lg hover:shadow-xl 
+          transform hover:-translate-y-0.5 
+          transition duration-300 ease-in-out
+          focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50
+        ">
+  request for teacher
+</button>
+
+
+
 
 
 
@@ -773,9 +795,7 @@
 
 
 
-<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory">
-
-</div>
+<div id="teacherAdOverlay" class="flex space-x-4 overflow-x-auto p-2 snap-x snap-mandatory"></div>
 
 
 
