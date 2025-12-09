@@ -6,7 +6,8 @@
     <title>GoQuiz</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    
+    <!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -14,10 +15,11 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
@@ -552,6 +554,9 @@
       GoQuiz
     </h1>
 
+
+    <button onclick="testCreate()">Test Create Teaching Request</button>
+
     <!-- Right Side: Points + Convert + GQ Coin -->
     <div id="floatingCoin" class="flex items-center gap-3">
 
@@ -642,11 +647,8 @@
 
 
 
-<!-- Teacher Button -->
-<button id="openTeacherPost"
-    class="fixed bottom-20 right-4 bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg">
-  Are you a teacher? Post ad
-</button>
+
+
 
 <!-- Teacher Form Overlay -->
 <div id="teacherFormOverlay"
@@ -1100,6 +1102,69 @@
   </main>
 </div>
 
+<!-- Bottom Nav -->
+<div id="bottomNav"
+     class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t 
+            flex justify-around items-center py-2 z-50 scale-[0.7] origin-bottom">
+
+  <!-- Home -->
+  <div class="text-center">
+    <span class="material-icons text-gray-600">home</span>
+    <p class="text-xs">Home</p>
+  </div>
+
+  <!-- Requests (with badge) -->
+  <div class="relative text-center" onclick="openRequests()">
+    <span class="material-icons text-gray-600">list</span>
+    <p class="text-xs">Requests</p>
+    <span id="badge"
+          class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
+                 text-xs w-5 h-5 flex items-center justify-center rounded-full">
+      0
+    </span>
+  </div>
+
+  <!-- Create Request -->
+  <div>
+    <button onclick="openCreateRequest()"
+            class="w-14 h-14 rounded-full bg-indigo-600 text-white 
+                   shadow-xl flex items-center justify-center">
+      <span class="material-icons">add</span>
+    </button>
+  </div>
+
+  <!-- Teacher Post -->
+  <div id="openTeacherPost" class="text-center" onclick="openTeacherPost()">
+    <span class="material-icons text-purple-600">school</span>
+    <p class="text-xs text-purple-600 font-semibold">are a Teacher? post ad</p>
+  </div>
+
+  <!-- Chat -->
+  <div class="text-center">
+    <span class="material-icons text-gray-600">chat</span>
+    <p class="text-xs">Chat</p>
+  </div>
+
+  <!-- Profile -->
+  <div onclick="openProfile()" class="text-center">
+    <img id="footerProfile"
+         class="w-8 h-8 rounded-full mx-auto object-cover border"
+         src="https://via.placeholder.com/150" />
+    <p class="text-xs">You</p>
+  </div>
+</div>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+
+
+
+
+
+
 
 
  
@@ -1137,7 +1202,27 @@ const firebaseConfig = {
 
    const auth = firebase.auth();
 
+ const functions = firebase.functions();
 
+// Cloud Function reference
+const createTeachingRequest = functions.httpsCallable("createTeachingRequest");
+
+function testCreate() {
+  createTeachingRequest({
+    topic: "Math",
+    description: "Need help",
+    mode: "instant",
+    price: 0
+  })
+    .then(result => {
+      console.log("Result:", result.data);
+      alert("Request created! Check Firestore.");
+    })
+    .catch(err => {
+      console.error("Callable error:", err);
+      alert("Error: " + err.message);
+    });
+}
 
  
   // ------------------------------
@@ -2308,6 +2393,42 @@ document.getElementById("confirmConvert").onclick = () => {
     // Close modal after conversion
     document.getElementById("convertModal").style.display = "none";
 };
+
+auth.onAuthStateChanged(user => {
+  if (user) {
+    document.getElementById("footerProfile").src = user.photoURL;
+  }
+});
+const badge = document.getElementById("badge");
+
+function listenForPendingRequests() {
+  db.collection("teachingRequests")
+    .where("status", "==", "pending")
+    .onSnapshot(snapshot => {
+      const count = snapshot.size;
+
+      if (count > 0) {
+        badge.textContent = count;
+        badge.classList.remove("hidden");
+      } else {
+        badge.classList.add("hidden");
+      }
+    });
+}
+
+listenForPendingRequests();
+function openRequests() {
+  document.getElementById("requestsContainer").scrollIntoView({ behavior: "smooth" });
+}
+
+function openCreateRequest() {
+  alert("Open request creation modal...");
+}
+
+function openProfile() {
+  alert("Open user profile...");
+}
+
 
 
 
