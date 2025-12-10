@@ -3,7 +3,8 @@ import express from "express";
 import multer from "multer";
 import sharp from "sharp";
 import { v4 as uuidv4 } from "uuid";
-import initFirebaseAdmin from "../config/firebaseAdmin.js";
+// Make sure this path is correct for your project structure
+import initFirebaseAdmin from "../config/firebaseAdmin.js"; 
 
 const router = express.Router();
 const admin = initFirebaseAdmin();
@@ -109,7 +110,7 @@ router.post("/image", upload.single("image"), async (req, res) => {
 });
 
 /* --------------------------------
-   New Teacher Upload Endpoint
+   New Teacher Upload Endpoint (Original)
 -------------------------------- */
 router.post("/teacher", upload.single("image"), async (req, res) => {
   try {
@@ -154,6 +155,51 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
   }
 });
 
+
+/* --------------------------------
+   NEW: Teacher Request Endpoint (FIXED TO MATCH FRONTEND)
+-------------------------------- */
+router.post("/requestTeacher", upload.single("image"), async (req, res) => {
+  try {
+    let imageUrl = null;
+    let filePath = null;
+
+    if (req.file && req.file.buffer) {
+        const buffer = req.file.buffer;
+        const contentType = req.file.mimetype || "image/jpeg";
+        const ext = contentType.split("/")[1] || "jpg";
+        const idBase = uuidv4();
+        filePath = `teachers_requests/${idBase}.${ext}`; // New path for requests
+
+        // Upload image
+        const file = await uploadBufferToGCS(buffer, filePath, contentType);
+        // Generate signed URL
+        imageUrl = await getSignedUrl(file);
+    }
+    
+    // Save teacher info to Firestore
+    const firestore = admin.firestore();
+    const docRef = await firestore.collection("teacherRequests").add({
+      subject: req.body.subject,
+      topic: req.body.topic,
+      gender: req.body.gender,
+      imageUrl, // Will be null if no image provided
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    res.json({
+      success: true,
+      requestId: docRef.id,
+      imageUrl,
+    });
+  } catch (err) {
+    console.error("Teacher request error:", err);
+    res
+      .status(500)
+      .json({ success: false, error: "Upload failed" });
+  }
+});
+
 /* --------------------------------
    NEW: Get 3 Latest Teachers
 -------------------------------- */
@@ -178,5 +224,93 @@ router.get("/teachers/random", async (req, res) => {
     res.json({ success: false, teachers: [] });
   }
 });
+
+
+/* --------------------------------
+   NEW: Get All Teacher Requests (WITH FILTERS)
+-------------------------------- */
+router.get("/getAllTeacherRequests", async (req, res) => {
+  try {
+    const firestore = admin.firestore();
+    let query = firestore.collection("teacherRequests");
+
+    // Read query parameters
+    const { subject, gender } = req.query;
+
+    // Apply filters conditionally
+    if (subject) {
+      query = query.where("subject", "==", subject);
+    }
+
+    if (gender) {
+      query = query.where("gender", "==", gender);
+    }
+    
+    // Always order and get the snapshot
+    const snapshot = await query
+      .orderBy("createdAt", "desc")
+      .get();
+
+    const requests = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+      createdAt: doc.data().createdAt ? doc.data().createdAt.toMillis() : null,
+    }));
+
+    res.json({ success: true, requests });
+  } catch (err) {
+    console.error("Fetch requests error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
+});
+
+/* --------------------------------
+   NEW: Get Count for Badge
+-------------------------------- */
+router.get("/requestCount", async (req, res) => {
+  try {
+    const firestore = admin.firestore();
+    const snapshot = await firestore.collection("teacherRequests").get();
+    const count = snapshot.size;
+    res.json({ success: true, count });
+  } catch (err) {
+    console.error("Count error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
+});
+
+
+/* --------------------------------
+   NEW: Accept a Teacher Request (Accept Offer)
+-------------------------------- */
+router.put("/acceptRequest/:requestId", async (req, res) => {
+  try {
+    const { requestId } = req.params;
+    // You might also get a userId from req.body or authentication if users are logged in
+    const acceptedByUserId = req.body.userId || "anonymous_user"; 
+
+    const firestore = admin.firestore();
+    const requestRef = firestore.collection("teacherRequests").doc(requestId);
+
+    // Check if the document exists before trying to update
+    const docSnap = await requestRef.get();
+    if (!docSnap.exists) {
+      return res.status(404).json({ success: false, error: "Request not found" });
+    }
+
+    // Use .update() to add the 'acceptedBy' field without overwriting the whole document
+    await requestRef.update({
+      acceptedBy: acceptedByUserId,
+      status: "accepted", // Add a status field for clarity
+      acceptedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    res.json({ success: true, message: `Request ${requestId} accepted.` });
+  } catch (err) {
+    console.error("Accept request error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
+});
+
 
 export default router;

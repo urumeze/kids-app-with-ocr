@@ -19,11 +19,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js"></script>
+    
+
 
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-
+    
+    
     
 
 
@@ -703,7 +706,7 @@
 
 <audio id="audio-player"></audio>
 
-<button onclick="testCreate()"
+<button onclick="openCreateRequest()"
         class="
           scale-[0.7]
           fixed right-6 z-50 bottom-[15vh]
@@ -715,9 +718,45 @@
           transition duration-300 ease-in-out
           focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50
         ">
-  request for teacher
+  Request a Teacher
 </button>
 
+<div id="requestFormOverlay" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white p-6 rounded-xl w-[90%] max-w-md">
+    <h2 class="text-xl font-bold mb-4">Request a Teacher</h2>
+
+    
+
+    <label class="font-semibold">Subject</label>
+    <select id="reqSubject" class="w-full p-2 border rounded mb-3">
+      <option value="">Any</option>
+      <option value="Maths">Maths</option>
+      <option value="English">English</option>
+      <option value="Biology">Biology</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="French">French</option>
+    </select>
+
+    <label class="font-semibold">Topic</label>
+    <input id="reqTopic" class="w-full p-2 border rounded mb-3">
+
+    <label class="font-semibold">Preferred Gender</label>
+    <select id="reqGender" class="w-full p-2 border rounded mb-3">
+      <option value="">Any</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label class="font-semibold">Attach Image (Optional)</label>
+    <input id="reqImage" type="file" accept="image/*" class="w-full mb-4">
+
+    <div class="flex justify-between mt-4">
+      <button onclick="closeCreateRequest()" class="px-4 py-2 bg-gray-300 rounded">Cancel</button>
+      <button id="submitRequest" class="px-6 py-2 bg-green-600 text-white rounded">Submit</button>
+    </div>
+  </div>
+</div>
 
 
 
@@ -1143,16 +1182,19 @@
     <p class="text-xs">Home</p>
   </div>
 
-  <!-- Requests (with badge) -->
-  <div class="relative text-center" onclick="openRequests()">
+<!-- Requests Button (with red badge) -->
+<div class="relative text-center cursor-pointer" onclick="openRequests()">
     <span class="material-icons text-gray-600">list</span>
     <p class="text-xs">Requests</p>
+
     <span id="badge"
-          class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
-                 text-xs w-5 h-5 flex items-center justify-center rounded-full">
-      0
+        class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
+               text-xs w-5 h-5 flex items-center justify-center rounded-full">
+        0
     </span>
-  </div>
+</div>
+
+
 
   <!-- Create Request -->
   <div>
@@ -1179,6 +1221,42 @@
          src="https://via.placeholder.com/150" />
     <p class="text-xs">You</p>
   </div>
+</div>
+
+<!-- Teacher Requests Popup -->
+<div id="requestsPopup"
+     class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    
+    <div class="bg-white w-11/12 max-w-md p-4 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold mb-3">Teacher Requests</h2>
+
+        <!-- ADDED: Filter Controls -->
+        <div class="mb-3 flex gap-2">
+            <select id="filterSubject" onchange="openRequests()" class="p-2 border rounded w-1/2">
+                <option value="">All Subjects</option>
+                <!-- Add specific subjects you offer here -->
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+            </select>
+            
+            <select id="filterGender" onchange="openRequests()" class="p-2 border rounded w-1/2">
+                <option value="">All Genders</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <!-- END ADDED -->
+
+        <div id="requestsList" class="space-y-3 max-h-80 overflow-y-auto">
+            <!-- Requests will be injected here -->
+        </div>
+
+        <button onclick="closeRequests()"
+                class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">
+            Close
+        </button>
+    </div>
 </div>
 
 
@@ -2184,6 +2262,7 @@ closeTeacherPost.onclick = () => teacherFormOverlay.classList.add("hidden");
 let teacherPosts = []; 
 let teacherOverlayInterval = null;
 
+// Function for submitting a new Teacher Post
 document.getElementById("submitTeacherPost").onclick = async () => {
     const name = document.getElementById("teacherName").value.trim();
     const gender = document.getElementById("teacherGender").value;
@@ -2194,15 +2273,24 @@ document.getElementById("submitTeacherPost").onclick = async () => {
         alert("Please fill all fields");
         return;
     }
+    
+    // An image is required for this specific backend endpoint (/api/teacher)
+    if (!imageFile) {
+       alert("An image file is required.");
+       return;
+    }
+
 
     const formData = new FormData();
     formData.append("name", name);
     formData.append("gender", gender);
     formData.append("subject", subject);
-    if (imageFile) formData.append("image", imageFile);
+    // Since we validated above, we know imageFile exists
+    formData.append("image", imageFile); 
 
     try {
-        const res = await fetch("/upload/teacher", {
+        // FIX APPLIED: Changed the fetch URL from /upload/teacher to /api/teacher
+        const res = await fetch("/api/teacher", {
             method: "POST",
             body: formData
         });
@@ -2211,21 +2299,33 @@ document.getElementById("submitTeacherPost").onclick = async () => {
 
         if (data.success) {
             alert("Teacher profile saved!");
-            teacherFormOverlay.classList.add("hidden");
+            // Assuming 'teacherFormOverlay' is defined globally in your script
+            if (typeof teacherFormOverlay !== 'undefined') {
+                teacherFormOverlay.classList.add("hidden");
+                // Optional: Reset the form fields upon success
+                document.getElementById("teacherName").value = "";
+                document.getElementById("teacherGender").value = "";
+                document.getElementById("teacherSubject").value = "";
+                document.getElementById("teacherImage").value = "";
+            }
 
-            teacherPosts.push({
-                name,
-                gender,
-                subject,
-                image: data.imageUrl || null
-            });
+            // Assuming 'teacherPosts' is defined globally in your script
+            if (typeof teacherPosts !== 'undefined') {
+                 teacherPosts.push({
+                    name,
+                    gender,
+                    subject,
+                    image: data.imageUrl || null
+                });
+                // Optional: Call a function to refresh the list of displayed teachers
+            }
 
         } else {
-            alert("Failed to save");
+            alert("Failed to save: " + (data.error || "Unknown error"));
         }
     } catch (err) {
         console.error(err);
-        alert("Error submitting form.");
+        alert("Error submitting form. Check console for details.");
     }
 };
 
@@ -2419,40 +2519,201 @@ document.getElementById("confirmConvert").onclick = () => {
     document.getElementById("convertModal").style.display = "none";
 };
 
-auth.onAuthStateChanged(user => {
-  if (user) {
-    document.getElementById("footerProfile").src = user.photoURL;
-  }
+// ----------------------
+// Request a Teacher Form Overlay
+// ----------------------
+
+// ----------------------
+// Request a Teacher Form Overlay
+// ----------------------
+
+const openRequestButton = document.getElementById("openCreateRequest");
+const requestFormOverlay = document.getElementById("requestFormOverlay");
+
+// Ensure these functions are in the global scope if your HTML uses onclick=...
+window.openCreateRequest = function openCreateRequest() {
+    requestFormOverlay.classList.remove("hidden");
+    requestFormOverlay.classList.add("flex");
+};
+
+window.closeCreateRequest = function closeCreateRequest() {
+    requestFormOverlay.classList.add("hidden");
+    requestFormOverlay.classList.remove("flex");
+
+    document.getElementById("reqSubject").value = "";
+    document.getElementById("reqTopic").value = "";
+    document.getElementById("reqGender").value = "";
+    document.getElementById("reqImage").value = "";
+};
+
+let teacherRequest = []; 
+
+document.getElementById("submitRequest").addEventListener("click", async () => {
+    const subject = document.getElementById("reqSubject").value.trim();
+    const topic = document.getElementById("reqTopic").value.trim();
+    const gender = document.getElementById("reqGender").value.trim();
+    const imageFile = document.getElementById("reqImage").files[0];
+
+    if (!topic || !gender || !subject) {
+        alert("Please fill all fields");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("subject", subject);
+    formData.append("topic", topic);
+    formData.append("gender", gender);
+    if (imageFile) formData.append("image", imageFile);
+
+    try {
+        // FIX APPLIED: Changed the fetch URL from /upload/requestTeacher to /api/requestTeacher
+        const res = await fetch("/api/requestTeacher", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            alert("Teacher request successful!");
+            closeCreateRequest();
+            updateRequestBadge(); // Refresh the badge count after a successful submission
+
+            teacherRequest.push({
+                subject,
+                topic,
+                gender,
+                image: data.imageUrl || null
+            });
+
+        } else {
+            alert("Failed to make request");
+        }
+    } catch (err) {
+        console.error(err);
+        alert("Error submitting form. Check console for details.");
+    }
 });
-const badge = document.getElementById("badge");
 
-function listenForPendingRequests() {
-  db.collection("teachingRequests")
-    .where("status", "==", "pending")
-    .onSnapshot(snapshot => {
-      const count = snapshot.size;
 
-      if (count > 0) {
-        badge.textContent = count;
-        badge.classList.remove("hidden");
-      } else {
-        badge.classList.add("hidden");
-      }
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    updateRequestBadge();
+});
+
+/* Fetch badge count */
+// Ensure this function is in the global scope if accessed elsewhere (e.g. window.updateRequestBadge)
+async function updateRequestBadge() {
+    try {
+        // FIX APPLIED: Changed the fetch URL to the consolidated /api/requestCount
+        const res = await fetch("/api/requestCount");
+        const data = await res.json();
+
+        const badge = document.getElementById("badge");
+
+        if (data.success && data.count > 0) {
+            badge.innerText = data.count;
+            badge.classList.remove("hidden");
+        } else {
+            badge.classList.add("hidden");
+        }
+    } catch {
+        console.log("Badge fetch error");
+    }
 }
 
-listenForPendingRequests();
-function openRequests() {
-  document.getElementById("requestsContainer").scrollIntoView({ behavior: "smooth" });
-}
 
-function openCreateRequest() {
-  alert("Open request creation modal...");
-}
+/* Open Requests Popup (Updated function to include filters) */
+window.openRequests = async function openRequests() {
+    const popup = document.getElementById("requestsPopup");
+    popup.classList.remove("hidden");
 
-function openProfile() {
-  alert("Open user profile...");
+    const container = document.getElementById("requestsList");
+    container.innerHTML = "<p>Loading...</p>";
+
+    // Get the selected values from the new filter dropdowns
+    const subjectFilter = document.getElementById("filterSubject").value;
+    const genderFilter = document.getElementById("filterGender").value;
+
+    // Construct the query parameters string
+    const queryParams = new URLSearchParams();
+    if (subjectFilter) queryParams.append("subject", subjectFilter);
+    if (genderFilter) queryParams.append("gender", genderFilter);
+
+    // Build the final fetch URL with parameters
+    const url = `/api/getAllTeacherRequests?${queryParams.toString()}`;
+
+    try {
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (!data.success || data.requests.length === 0) {
+            container.innerHTML = "<p>No requests matching filters.</p>";
+            return;
+        }
+        // ... (rest of the rendering logic remains the same as previous step) ...
+        container.innerHTML = data.requests.map(req => {
+            const isAccepted = req.status === 'accepted' || req.acceptedBy;
+            const statusText = isAccepted ? `<span class="text-green-600 font-semibold">Accepted by: ${req.acceptedBy}</span>` : '<span class="text-gray-500">Pending</span>';
+            const actionButton = isAccepted 
+                ? '' 
+                : `<button onclick="acceptRequest('${req.id}')" class="mt-2 bg-green-500 hover:bg-green-700 text-white p-2 rounded-lg">Accept Offer</button>`;
+
+            return `
+                <div class="p-3 border rounded shadow-sm">
+                    <p><b>Subject:</b> ${req.subject}</p>
+                    <p><b>Topic:</b> ${req.topic}</p>
+                    <p><b>Gender:</b> ${req.gender}</p>
+                    <div class="mt-2">${statusText}</div>
+                    ${req.imageUrl ? `<img src="${req.imageUrl}" class="mt-2 w-24 h-24 object-cover rounded" />` : ""}
+                    ${actionButton}
+                </div>
+            `;
+        }).join("");
+
+        updateRequestBadge();
+    } catch (err) {
+        container.innerHTML = "<p>Error loading requests.</p>";
+    }
 }
+/* Close Popup */
+// Ensure this function is in the global scope if your HTML uses onclick=...
+window.closeRequests = function closeRequests() {
+    document.getElementById("requestsPopup").classList.add("hidden");
+}
+// Add this new function to your frontend JS file:
+window.acceptRequest = async function acceptRequest(requestId) {
+    if (!confirm("Are you sure you want to accept this request?")) {
+        return;
+    }
+
+    try {
+        // Call the new backend API endpoint using a PUT method
+        const res = await fetch(`/api/acceptRequest/${requestId}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+                // Add any necessary authorization headers here if you use authentication
+            },
+            body: JSON.stringify({ userId: "current_user_id" }) // Send who accepted it
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            alert(data.message);
+            openRequests(); // Refresh the list after acceptance
+        } else {
+            alert(`Failed to accept request: ${data.error}`);
+        }
+    } catch (err) {
+        console.error("Error accepting request:", err);
+        alert("Error accepting request.");
+    }
+};
+
+
+
+
 
 
 
