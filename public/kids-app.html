@@ -6,8 +6,9 @@
     <title>GoQuiz</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="fonts.googleapis.com" rel="stylesheet">
     <!-- Material Icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -735,7 +736,10 @@
       <option value="Biology">Biology</option>
       <option value="Physics">Physics</option>
       <option value="Chemistry">Chemistry</option>
+      <option value="Igbo">Igbo</option>
       <option value="French">French</option>
+      <option value="Yoruba">Yoruba</option>
+      <option value="Hausa">Hausa</option>
     </select>
 
     <label class="font-semibold">Topic</label>
@@ -858,14 +862,14 @@
   
 </div>
 
-
+<div class="scale-[0.7] mt-7">
   <!-- Menu Content -->
-<div class="p-4">
+<div class="p-4 " >
 
   <!-- MAIN MENU BUTTON -->
   <button class="year-btn font-semibold text-gray-700 w-full text-left bg-green-100 rounded-lg">
   COMMON ENTRANCE ▼
-</button>
+  </button>
 
 
   <!-- MUST be a subject-list so the JS can toggle it -->
@@ -1025,6 +1029,7 @@
 
   
 </div>
+</div>
 
 <!-- Public Feed -->
 <div id="feed" class="mt-6 space-y-4"></div> 
@@ -1035,7 +1040,7 @@
 
 <!-- Floating Open Button -->
 <button id="openMenuBtn"
-        class="fixed top-4 left-4 bg-blue-600 wd-24 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50">
+        class="fixed top-4 left-4 bg-blue-600 wd-24 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50 scale-[0.7]">
   Menu
 </button>
 
@@ -1177,15 +1182,15 @@
             flex justify-around items-center py-2 z-50 scale-[0.7] origin-bottom">
 
   <!-- Home -->
-  <div class="text-center">
-    <span class="material-icons text-gray-600">home</span>
-    <p class="text-xs">Home</p>
+  <div class="text-center cursor-pointer">
+    <span class="material-icons text-orange-600" onclick="home()">home</span>
+    <p class="text-xs text-orange-600">Home</p>
   </div>
 
 <!-- Requests Button (with red badge) -->
 <div class="relative text-center cursor-pointer" onclick="openRequests()">
-    <span class="material-icons text-gray-600">list</span>
-    <p class="text-xs">Requests</p>
+    <span class="material-icons text-green-600">list</span>
+    <p class="text-green-600 text-xs">Requests</p>
 
     <span id="badge"
         class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
@@ -1206,7 +1211,7 @@
   </div>
 
   <!-- Teacher Post -->
-  <div id="openTeacherPost" class="text-center" onclick="openTeacherPost()">
+  <div id="openTeacherPost" class="text-center cursor-pointer" onclick="openTeacherPost()">
     <p class="text-xs text-purple-600 font-semibold">Are you a Teacher? </p>
     <span class="material-icons text-purple-600">school</span>
     <p class="text-xs text-purple-600 font-semibold"> post ad</p>
@@ -1215,7 +1220,7 @@
   
 
   <!-- Profile -->
-  <div onclick="openProfile()" class="text-center">
+  <div onclick="openProfile()" class="text-center cursor-pointer">
     <img id="footerProfile"
          class="w-8 h-8 rounded-full mx-auto object-cover border"
          src="https://via.placeholder.com/150" />
@@ -1236,8 +1241,14 @@
                 <option value="">All Subjects</option>
                 <!-- Add specific subjects you offer here -->
                 <option value="Maths">Maths</option>
-                <option value="Science">Science</option>
                 <option value="English">English</option>
+                <option value="Biology">Biology</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Igbo">Igbo</option>
+                <option value="French">French</option>
+                <option value="Yoruba">Yoruba</option>
+                <option value="Hausa">Hausa</option>
             </select>
             
             <select id="filterGender" onchange="openRequests()" class="p-2 border rounded w-1/2">
@@ -2138,7 +2149,7 @@ function renderFeedBatch() {
     // Add Load More button
     const loadMore = document.createElement("button");
     loadMore.textContent = "Load More";
-    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400";
+    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400 ";
     loadMore.addEventListener("click", renderFeedBatch);
     feed.appendChild(loadMore);
   // Show feed, hide quiz app
@@ -2519,9 +2530,7 @@ document.getElementById("confirmConvert").onclick = () => {
     document.getElementById("convertModal").style.display = "none";
 };
 
-// ----------------------
-// Request a Teacher Form Overlay
-// ----------------------
+
 
 // ----------------------
 // Request a Teacher Form Overlay
@@ -2712,7 +2721,10 @@ window.acceptRequest = async function acceptRequest(requestId) {
 };
 
 
-
+function home() {
+  menuPanel.classList.add('-translate-x-full');
+  renderFeedBatch();
+};
 
 
 
