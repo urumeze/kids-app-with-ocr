@@ -11,3 +11,8 @@ node_modules/
 google-credentials.json
 
 serviceAccountKey.json
+credentials.json
+*.key
+*.pem
+
+
