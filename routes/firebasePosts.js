@@ -3,18 +3,17 @@ import express from "express";
 import multer from "multer";
 import sharp from "sharp";
 import { v4 as uuidv4 } from "uuid";
-import initFirebaseAdmin from "../config/firebaseAdmin.js";
+import { firestore, bucket, auth } from "../config/firebaseAdmin.js";
 
-const router = express.Router();
-const admin = initFirebaseAdmin();
-const db = admin.firestore();
-const bucket = admin.storage().bucket(); // uses FIREBASE_STORAGE_BUCKET from init
+
 
 // Multer in-memory
 const upload = multer({
   storage: multer.memoryStorage(),
   limits: { fileSize: 8 * 1024 * 1024 } // 8 MB
 });
+
+const router = express.Router();
 
 // Auth middleware: expects Authorization: Bearer <Firebase ID Token>
 async function verifyAuth(req, res, next) {
@@ -24,7 +23,7 @@ async function verifyAuth(req, res, next) {
   if (!idToken) return res.status(401).json({ error: "Missing auth token" });
 
   try {
-    const decoded = await admin.auth().verifyIdToken(idToken);
+    const decoded = await auth().verifyIdToken(idToken);
     req.user = { uid: decoded.uid, email: decoded.email || null };
     next();
   } catch (err) {
@@ -101,8 +100,8 @@ router.post("/create", verifyAuth, upload.single("image"), async (req, res) => {
       likes: [],
       commentsCount: 0,
       status: "live",
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
-      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      createdAt: firestore.FieldValue.serverTimestamp(),
+      updatedAt: firestore.FieldValue.serverTimestamp(),
     };
 
     const docRef = await db.collection("posts").add(postDoc);
@@ -115,9 +114,7 @@ router.post("/create", verifyAuth, upload.single("image"), async (req, res) => {
   }
 });
 
-// ----------------------
-// TEACHER POST
-// ----------------------
+
 // ----------------------------------------------
 // CREATE TEACHER POST (Name, Gender, Subject, Image)
 // ----------------------------------------------
@@ -175,7 +172,7 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
       gender,
       subject,
       imageUrl,
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      createdAt: firestore.FieldValue.serverTimestamp(),
     };
 
     const docRef = await db.collection("teachers").add(teacherDoc);
@@ -227,7 +224,7 @@ router.post("/like/:postId", verifyAuth, async (req, res) => {
       const index = likes.indexOf(uid);
       if (index === -1) likes.push(uid);
       else likes.splice(index, 1);
-      tx.update(postRef, { likes, updatedAt: admin.firestore.FieldValue.serverTimestamp() });
+      tx.update(postRef, { likes, updatedAt: firestore.FieldValue.serverTimestamp() });
     });
 
     res.json({ success: true });

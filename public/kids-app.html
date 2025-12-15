@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoQuiz</title>
+    <title>GoQuiz Academy</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="fonts.googleapis.com" rel="stylesheet">
@@ -1288,17 +1288,33 @@
 
 <script>
 
+
+
+
   function handleCredentialResponse(response) {
   const credential = firebase.auth.GoogleAuthProvider.credential(response.credential);
+
   auth.signInWithCredential(credential)
     .then(result => {
       const user = result.user;
-      const firstName = user.displayName?.split(" ")[0] || "User";
+
+      const firstName =
+        user.displayName?.split(" ")[0] || "User";
+
+      // Update UI
       titleElement.textContent = `GoQuiz ${firstName}`;
+
+      // ✅ Save REQUIRED login data
       localStorage.setItem("firstName", firstName);
+      localStorage.setItem("userUid", user.uid); // 🔥 THIS FIXES YOUR BUG
+
+      console.log("Logged in as:", user.uid);
     })
-    .catch(err => console.error("Firebase sign-in failed:", err));
+    .catch(err => {
+      console.error("Firebase sign-in failed:", err);
+    });
 }
+
 
 
 
@@ -1315,6 +1331,7 @@ const firebaseConfig = {
    firebase.initializeApp(firebaseConfig);
 
    const auth = firebase.auth();
+   
 
  const functions = firebase.functions();
 
@@ -2004,27 +2021,22 @@ document.querySelectorAll('.subject-btn').forEach(btn => {
 
 const titleElement = document.getElementById("goquizTitle");
 
-// Check localStorage on page load
-const savedFirstName = localStorage.getItem("firstName");
-if (savedFirstName) {
-    titleElement.textContent = `GoQuiz ${savedFirstName}`;
-   
-}
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    const firstName = user.displayName?.split(" ")[0] || "User";
 
-function handleCredentialResponse(response) {
-    if (!response.credential) return;
-
-    const profile = jwt_decode(response.credential);
-    const firstName = profile.given_name || (profile.name ? profile.name.split(" ")[0] : "User");
-
-    // Update header
     titleElement.textContent = `GoQuiz ${firstName}`;
-
-    // Save to localStorage
     localStorage.setItem("firstName", firstName);
+    localStorage.setItem("userUid", user.uid);
+  } else {
+    localStorage.removeItem("userUid");
+  }
+});
 
-   
-}
+
+
+
+
 // Menu toggling
 document.getElementById('openMenuBtn').onclick = () => {
   document.getElementById('menuPanel').classList.remove('-translate-x-full');
@@ -2562,6 +2574,7 @@ document.getElementById("submitRequest").addEventListener("click", async () => {
     const topic = document.getElementById("reqTopic").value.trim();
     const gender = document.getElementById("reqGender").value.trim();
     const imageFile = document.getElementById("reqImage").files[0];
+    const user = firebase.auth().currentUser;
 
     if (!topic || !gender || !subject) {
         alert("Please fill all fields");
@@ -2571,6 +2584,7 @@ document.getElementById("submitRequest").addEventListener("click", async () => {
     const formData = new FormData();
     formData.append("subject", subject);
     formData.append("topic", topic);
+    formData.append("studentEmail", user.email);
     formData.append("gender", gender);
     if (imageFile) formData.append("image", imageFile);
 
@@ -2691,33 +2705,40 @@ window.closeRequests = function closeRequests() {
 }
 // Add this new function to your frontend JS file:
 window.acceptRequest = async function acceptRequest(requestId) {
-    if (!confirm("Are you sure you want to accept this request?")) {
-        return;
+  if (!confirm("Are you sure you want to accept this request?")) return;
+
+  try {
+    // 🔐 Get Firebase ID token of the currently logged-in user
+    const user = firebase.auth().currentUser;
+
+    if (!user) {
+      alert("You must be logged in as a teacher.");
+      return;
     }
 
-    try {
-        // Call the new backend API endpoint using a PUT method
-        const res = await fetch(`/api/acceptRequest/${requestId}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-                // Add any necessary authorization headers here if you use authentication
-            },
-            body: JSON.stringify({ userId: "current_user_id" }) // Send who accepted it
-        });
+    const idToken = await user.getIdToken();
 
-        const data = await res.json();
+    const res = await fetch(`/api/acceptRequest/${requestId}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${idToken}` // ✅ THIS FIXES THE 401
+      }
+    });
 
-        if (data.success) {
-            alert(data.message);
-            openRequests(); // Refresh the list after acceptance
-        } else {
-            alert(`Failed to accept request: ${data.error}`);
-        }
-    } catch (err) {
-        console.error("Error accepting request:", err);
-        alert("Error accepting request.");
+    const data = await res.json();
+
+    if (!res.ok) {
+      alert(`Failed to accept request: ${data.error}`);
+      return;
     }
+
+    alert(data.message);
+    openRequests(); // refresh UI
+  } catch (err) {
+    console.error("Accept request error:", err);
+    alert("Error accepting request.");
+  }
 };
 
 
@@ -2725,6 +2746,8 @@ function home() {
   menuPanel.classList.add('-translate-x-full');
   renderFeedBatch();
 };
+
+
 
 
 

@@ -3,18 +3,45 @@ import express from "express";
 import multer from "multer";
 import sharp from "sharp";
 import { v4 as uuidv4 } from "uuid";
-// Make sure this path is correct for your project structure
-import initFirebaseAdmin from "../config/firebaseAdmin.js"; 
+import { Timestamp } from "firebase-admin/firestore";
+
+
+// --- CRITICAL FIX: Direct imports for firestore, bucket, and auth ---
+// Ensure firebaseAdmin.js exports these as named exports
+import { firestore, bucket, auth} from "../config/firebaseAdmin.js";
+
+import { createMeetEvent } from "./meetingScheduler.js";
+import { sendNotification } from "./emailService.js";
 
 const router = express.Router();
-const admin = initFirebaseAdmin();
-const bucket = admin.storage().bucket(); // uses FIREBASE_STORAGE_BUCKET
 
 // Multer in-memory
 const upload = multer({
   storage: multer.memoryStorage(),
   limits: { fileSize: 8 * 1024 * 1024 }, // 8 MB
 });
+
+// --- Middleware to verify the ID Token ---
+// This is crucial for securely identifying the user who sent the request
+async function verifyIdToken(req, res, next) {
+  const authHeader = req.headers.authorization || "";
+  const match = authHeader.match(/^Bearer (.+)$/);
+  const idToken = match ? match[1] : null;
+
+  if (!idToken) {
+    return res.status(401).json({ success: false, error: "Unauthorized: Missing authentication token." });
+  }
+
+  try {
+    const decodedToken = await auth.verifyIdToken(idToken);
+    req.user = decodedToken; // Attach decoded user info (contains uid, email, etc.) to the request object
+    console.log("Token verified. User UID:", req.user.uid, "Email:", req.user.email);
+    next(); // Proceed to the next handler
+  } catch (error) {
+    console.error("Error verifying ID token:", error);
+    return res.status(401).json({ success: false, error: "Unauthorized: Invalid or expired token." });
+  }
+}
 
 // Helper: upload buffer to GCS and return file object
 async function uploadBufferToGCS(buffer, destinationPath, contentType) {
@@ -132,14 +159,13 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
     // Generate signed URL (public)
     const imageUrl = await getSignedUrl(file);
 
-    // Save teacher info to Firestore
-    const firestore = admin.firestore();
     const docRef = await firestore.collection("teachers").add({
       name: req.body.name,
       gender: req.body.gender,
       subject: req.body.subject,
-      imageUrl, 
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      imageUrl,
+      createdAt: Timestamp.now()
+
     });
 
     res.json({
@@ -162,29 +188,39 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
 router.post("/requestTeacher", upload.single("image"), async (req, res) => {
   try {
     let imageUrl = null;
-    let filePath = null;
 
     if (req.file && req.file.buffer) {
-        const buffer = req.file.buffer;
-        const contentType = req.file.mimetype || "image/jpeg";
-        const ext = contentType.split("/")[1] || "jpg";
-        const idBase = uuidv4();
-        filePath = `teachers_requests/${idBase}.${ext}`; // New path for requests
+      const buffer = req.file.buffer;
+      const contentType = req.file.mimetype || "image/jpeg";
+      const ext = contentType.split("/")[1] || "jpg";
+      const idBase = uuidv4();
+      const filePath = `teachers_requests/${idBase}.${ext}`;
 
-        // Upload image
-        const file = await uploadBufferToGCS(buffer, filePath, contentType);
-        // Generate signed URL
-        imageUrl = await getSignedUrl(file);
+      const file = await uploadBufferToGCS(buffer, filePath, contentType);
+      imageUrl = await getSignedUrl(file);
     }
-    
-    // Save teacher info to Firestore
-    const firestore = admin.firestore();
+
+    // ✅ CRITICAL ADDITION
+    const studentEmail = req.body.studentEmail;
+
+    if (!studentEmail) {
+      return res.status(400).json({
+        success: false,
+        error: "Student email is required to make a request."
+      });
+    }
+
     const docRef = await firestore.collection("teacherRequests").add({
       subject: req.body.subject,
       topic: req.body.topic,
       gender: req.body.gender,
-      imageUrl, // Will be null if no image provided
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      imageUrl,
+
+      // ✅ THIS UNBLOCKS ACCEPT REQUEST
+      studentEmail,
+
+      status: "pending",
+      createdAt: Timestamp.now(),
     });
 
     res.json({
@@ -194,19 +230,16 @@ router.post("/requestTeacher", upload.single("image"), async (req, res) => {
     });
   } catch (err) {
     console.error("Teacher request error:", err);
-    res
-      .status(500)
-      .json({ success: false, error: "Upload failed" });
+    res.status(500).json({ success: false, error: "Upload failed" });
   }
 });
+
 
 /* --------------------------------
    NEW: Get 3 Latest Teachers
 -------------------------------- */
 router.get("/teachers/random", async (req, res) => {
   try {
-    const firestore = admin.firestore();
-
     const snapshot = await firestore
       .collection("teachers")
       .orderBy("createdAt", "desc")
@@ -225,13 +258,11 @@ router.get("/teachers/random", async (req, res) => {
   }
 });
 
-
 /* --------------------------------
    NEW: Get All Teacher Requests (WITH FILTERS)
 -------------------------------- */
 router.get("/getAllTeacherRequests", async (req, res) => {
   try {
-    const firestore = admin.firestore();
     let query = firestore.collection("teacherRequests");
 
     // Read query parameters
@@ -254,6 +285,7 @@ router.get("/getAllTeacherRequests", async (req, res) => {
     const requests = snapshot.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
+      // Ensure createdAt is converted correctly if it exists
       createdAt: doc.data().createdAt ? doc.data().createdAt.toMillis() : null,
     }));
 
@@ -269,7 +301,6 @@ router.get("/getAllTeacherRequests", async (req, res) => {
 -------------------------------- */
 router.get("/requestCount", async (req, res) => {
   try {
-    const firestore = admin.firestore();
     const snapshot = await firestore.collection("teacherRequests").get();
     const count = snapshot.size;
     res.json({ success: true, count });
@@ -281,34 +312,68 @@ router.get("/requestCount", async (req, res) => {
 
 
 /* --------------------------------
-   NEW: Accept a Teacher Request (Accept Offer)
+   NEW: Accept a Teacher Request (Accept Offer) - WITH SECURITY FIX
 -------------------------------- */
-router.put("/acceptRequest/:requestId", async (req, res) => {
+// Apply the verifyIdToken middleware to this route
+router.put("/acceptRequest/:requestId", verifyIdToken, async (req, res) => {
   try {
     const { requestId } = req.params;
-    // You might also get a userId from req.body or authentication if users are logged in
-    const acceptedByUserId = req.body.userId || "anonymous_user"; 
 
-    const firestore = admin.firestore();
+    // --- CRITICAL FIX: Get teacher ID and email from the securely verified token ---
+    const acceptedByTeacherId = req.user.uid;
+    const acceptedByTeacherEmail = req.user.email; // Email is available in the decoded token
+    // -----------------------------------------------------------------------------
+
+    if (!acceptedByTeacherId || !acceptedByTeacherEmail) {
+        // This should theoretically not be hit if verifyIdToken succeeds, but good for safety
+        return res.status(401).json({ success: false, error: "Authenticated user ID or email missing." });
+    }
+
     const requestRef = firestore.collection("teacherRequests").doc(requestId);
-
-    // Check if the document exists before trying to update
     const docSnap = await requestRef.get();
+
     if (!docSnap.exists) {
       return res.status(404).json({ success: false, error: "Request not found" });
     }
 
-    // Use .update() to add the 'acceptedBy' field without overwriting the whole document
+    const requestData = docSnap.data();
+    // Assuming studentEmail is stored in the request document
+    const studentEmail = requestData.studentEmail; 
+
+    if (!studentEmail) {
+        // Essential to have student email for meeting and notifications
+        return res.status(400).json({ success: false, error: "Student email missing from request data." });
+    }
+    
+    // --- Core Feature Logic ---
+    // 1. Generate the Google Meet Link
+    // IMPORTANT: Ensure createMeetEvent matches this signature: (studentEmail, teacherEmail)
+   // const meetLink = await createMeetEvent(studentEmail, acceptedByTeacherEmail);//
+   const meetLink = "https://meet.google.com/new"; // placeholder
+
+
+    // 2. Update Firestore
     await requestRef.update({
-      acceptedBy: acceptedByUserId,
-      status: "accepted", // Add a status field for clarity
-      acceptedAt: admin.firestore.FieldValue.serverTimestamp(),
+      acceptedBy: acceptedByTeacherId, // Save the UID of the teacher
+      status: "accepted",
+      acceptedAt: Timestamp.now(),
+      meetLink: meetLink, // Save the generated link
     });
 
-    res.json({ success: true, message: `Request ${requestId} accepted.` });
+    // 3. Send Notification Emails
+    const subject = "✅ GoQuiz Session Confirmed!";
+    const emailBody = `<p>Hi,</p><p>Your session is ready: <a href="${meetLink}">${meetLink}</a></p>`;
+
+    // IMPORTANT: Ensure sendNotification matches this signature: (email, subject, body)
+    await sendNotification(studentEmail, subject, emailBody);
+    await sendNotification(acceptedByTeacherEmail, subject, emailBody);
+    // -------------------------
+
+    res.json({ success: true, message: `Request ${requestId} accepted.`, meetLink });
+
   } catch (err) {
     console.error("Accept request error:", err);
-    res.status(500).json({ success: false, error: "Server error" });
+    res.status(500).json({ success: false, error: `Server error during processing: ${err.message}` });
   }
 });
 

@@ -13,7 +13,6 @@ import cors from "cors";
 // Import the necessary route handlers
 import firebasePostsRouter from "./routes/firebasePosts.js";
 import uploadRoutes from "./routes/upload.js"; 
-// The problematic import/alias lines have been removed from here.
 
 const app = express(); // 'app' is initialized before being used
 
@@ -30,7 +29,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // --- Routes ---
 app.use("/firebase-posts", firebasePostsRouter);
 
-// FIX APPLIED: Changed 'uploadRouters' to the correct variable name 'uploadRoutes'
+
 app.use("/api", uploadRoutes);
 
 
