@@ -26,6 +26,10 @@
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     
     
     
@@ -752,6 +756,19 @@
       <option value="Female">Female</option>
     </select>
 
+    <label class="block mt-3 text-sm font-semibold">
+  Preferred Date & Time
+</label>
+
+<input
+  type="text"
+  id="reqDateTime"
+  placeholder="Select date & time"
+  class="w-full p-2 border rounded"
+  readonly
+/>
+
+
     <label class="font-semibold">Attach Image (Optional)</label>
     <input id="reqImage" type="file" accept="image/*" class="w-full mb-4">
 
@@ -818,7 +835,114 @@
 </div>
 
 
+<div id="booksHubModal"
+     class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center">
 
+  <div class="bg-white rounded-xl w-11/12 max-w-sm p-5">
+
+    <h3 class="text-center font-bold text-lg mb-4 text-purple-600">
+      Used Books
+    </h3>
+
+    <div class="space-y-3">
+
+      <button onclick="openPostBook()"
+              class="w-full bg-purple-600 text-white py-2 rounded-lg">
+        📚 I want to sell my book
+      </button>
+
+      <button onclick="openRequestBook()"
+              class="w-full bg-indigo-600 text-white py-2 rounded-lg">
+        🔍 I need a book
+      </button>
+
+      <button onclick="openBooks()"
+              class="w-full border border-purple-600 text-purple-600 py-2 rounded-lg">
+        📖 View catalogue
+      </button>
+
+    </div>
+
+    <button onclick="closeBooksHub()"
+            class="mt-4 w-full text-sm text-gray-500">
+      Cancel
+    </button>
+
+  </div>
+</div>
+
+<!-- Sell a Book Modal -->
+<div id="postBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl w-11/12 max-w-md p-6">
+    <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Sell a Book</h3>
+    <form id="postBookForm" class="space-y-3">
+      <input type="text" name="title" placeholder="Book Title" class="w-full border border-gray-300 rounded-lg p-2" required>
+      <input type="text" name="author" placeholder="Author" class="w-full border border-gray-300 rounded-lg p-2" required>
+      <input type="number" name="price" placeholder="Price (₦)" class="w-full border border-gray-300 rounded-lg p-2" required>
+      <!-- Location Field Added -->
+      <input type="text" name="location" placeholder="City or Town (e.g. Owerri, Lagos)" class="w-full border border-gray-300 rounded-lg p-2" required>
+      
+      <select name="condition" class="w-full border border-gray-300 rounded-lg p-2">
+        <option value="">Select condition</option>
+        <option value="like-new">Like New</option>
+        <option value="good">Good</option>
+        <option value="fair">Fair</option>
+      </select>
+      <input type="file" name="image" accept="image/*" class="w-full border border-gray-300 rounded-lg p-2">
+      <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg">Post Book</button>
+    </form>
+    <button onclick="closePostBookModal()" class="mt-3 w-full text-sm text-gray-500">Cancel</button>
+  </div>
+</div>
+
+<!-- Request a Book Modal -->
+<div id="requestBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl w-11/12 max-w-md p-6">
+    <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Request a Book</h3>
+    <form id="requestBookForm" class="space-y-3">
+      <input type="text" name="title" placeholder="Book Title" class="w-full border border-gray-300 rounded-lg p-2" required>
+      <input type="text" name="author" placeholder="Author" class="w-full border border-gray-300 rounded-lg p-2">
+      <!-- Location Field Added -->
+      <input type="text" name="location" placeholder="Your City or Town" class="w-full border border-gray-300 rounded-lg p-2" required>
+      
+      <textarea name="notes" placeholder="Additional Notes" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+      <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-lg">Submit Request</button>
+    </form>
+    <button onclick="closeRequestBookModal()" class="mt-3 w-full text-sm text-gray-500">Cancel</button>
+  </div>
+</div>
+
+
+<!-- Final Books Catalogue Modal -->
+<div id="booksCatalogueModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 overflow-auto flex items-start justify-center py-10">
+  <div class="bg-white rounded-xl w-11/12 max-w-3xl p-6 shadow-2xl">
+    <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Books Catalogue</h3>
+
+    <div class="space-y-3 mb-4">
+      <!-- Ensure this ID matches: catalogueSearch -->
+      <input type="text" id="catalogueSearch" onkeyup="filterCatalogue()" 
+             placeholder="Search title or author..." 
+             class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500">
+      
+      <div class="flex justify-center gap-2">
+        <!-- Ensure these IDs match: btnShowSale and btnShowRequests -->
+        <button id="btnShowSale" onclick="toggleCatalogueView('sale')" 
+                class="px-4 py-1 rounded-full bg-purple-600 text-white text-sm">Available for Sale</button>
+        <button id="btnShowRequests" onclick="toggleCatalogueView('request')" 
+                class="px-4 py-1 rounded-full bg-gray-200 text-gray-700 text-sm">User Requests</button>
+      </div>
+    </div>
+
+    <!-- Container for dynamic cards -->
+    <div id="catalogueList" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[60vh] overflow-y-auto p-1">
+      <!-- JavaScript will inject cards here -->
+    </div>
+
+    <button onclick="closeBooksCatalogueModal()" class="mt-4 w-full py-2 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition">
+      Close
+    </button>
+  </div>
+</div>
 
 
 
@@ -1189,8 +1313,9 @@
 
 <!-- Requests Button (with red badge) -->
 <div class="relative text-center cursor-pointer" onclick="openRequests()">
+    <p class="text-green-600 text-xs">Are you a teacher?</p>
     <span class="material-icons text-green-600">list</span>
-    <p class="text-green-600 text-xs">Requests</p>
+    <p class="text-green-600 text-xs"> a job here +</p>
 
     <span id="badge"
         class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
@@ -1199,16 +1324,25 @@
     </span>
 </div>
 
+<div id="openBooksHub"
+     class="text-center cursor-pointer"
+     onclick="openBooksHub()">
+
+  <p class="text-xs text-blue-500 font-semibold">
+    Sell your old books? +
+  </p>
+
+  <span class="material-icons text-blue-500">
+    menu_book
+  </span>
+
+  <p class="text-xs text-blue-500 font-semibold">
+    Buy an old book? +
+  </p>
+
+</div>
 
 
-  <!-- Create Request -->
-  <div>
-    <button onclick="openCreateRequest()"
-            class="w-14 h-14 rounded-full bg-indigo-600 text-white 
-                   shadow-xl flex items-center justify-center">
-      <span class="material-icons">add</span>
-    </button>
-  </div>
 
   <!-- Teacher Post -->
   <div id="openTeacherPost" class="text-center cursor-pointer" onclick="openTeacherPost()">
@@ -1335,25 +1469,7 @@ const firebaseConfig = {
 
  const functions = firebase.functions();
 
-// Cloud Function reference
-const createTeachingRequest = functions.httpsCallable("createTeachingRequest");
 
-function testCreate() {
-  createTeachingRequest({
-    topic: "Math",
-    description: "Need help",
-    mode: "instant",
-    price: 0
-  })
-    .then(result => {
-      console.log("Result:", result.data);
-      alert("Request created! Check Firestore.");
-    })
-    .catch(err => {
-      console.error("Callable error:", err);
-      alert("Error: " + err.message);
-    });
-}
 
  
   // ------------------------------
@@ -1368,6 +1484,22 @@ function testCreate() {
     userAnswers: [],
     score: 0
   };
+
+
+  let selectedDateTime = null;
+
+flatpickr("#reqDateTime", {
+  enableTime: true,
+  dateFormat: "Y-m-d H:i",
+  minDate: "today",
+  time_24hr: true,
+  onChange: function (selectedDates) {
+    if (selectedDates.length > 0) {
+      selectedDateTime = selectedDates[0];
+    }
+  }
+});
+
 
  
 
@@ -1473,6 +1605,9 @@ updateCoinDisplay(0);
     document.getElementById('publicFeed').classList.remove('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+ 
+
 
 
     quizOptions.forEach(option => {
@@ -2747,9 +2882,235 @@ function home() {
   renderFeedBatch();
 };
 
+// --- Modal Navigation (Unified) ---
+function openBooksHub() {
+    document.getElementById("booksHubModal").classList.remove("hidden");
+}
+function closeBooksHub() {
+    document.getElementById("booksHubModal").classList.add("hidden");
+}
+
+function openPostBook() {
+    closeBooksHub();
+    document.getElementById("postBookModal").classList.remove("hidden");
+}
+function closePostBookModal() {
+    document.getElementById("postBookModal").classList.add("hidden");
+}
+
+function openRequestBook() {
+    closeBooksHub();
+    document.getElementById("requestBookModal").classList.remove("hidden");
+}
+function closeRequestBookModal() {
+    document.getElementById("requestBookModal").classList.add("hidden");
+}
+
+// --- SELL A BOOK HANDLER (Matches Teacher Style) ---
+document.getElementById("postBookForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const user = firebase.auth().currentUser;
+    if (!user) return alert("Please log in first.");
+
+    // Grabbing elements like the teacher request pattern
+    const title = e.target.title.value.trim();
+    const author = e.target.author.value.trim();
+    const price = e.target.price.value.trim();
+    const condition = e.target.condition.value;
+    const imageFile = e.target.image.files[0];
+
+     const location = e.target.location.value.trim(); 
+
+    if (!title || !author || !price) {
+        alert("Please fill all required fields");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("title", title);
+    formData.append("author", author);
+    formData.append("price", price);
+    formData.append("condition", condition);
+    formData.append("location", location);
+    if (imageFile) formData.append("image", imageFile);
+
+    try {
+        const token = await user.getIdToken();
+        const res = await fetch("/api/postBook", {
+            method: "POST",
+            headers: { "Authorization": `Bearer ${token}` }, // SECURE EMAIL CAPTURE
+            body: formData
+        });
+
+        const data = await res.json();
+        if (data.success) {
+            alert("✅ Book listed for sale!");
+            e.target.reset();
+            closePostBookModal();
+        } else {
+            alert("Failed to list book: " + data.error);
+        }
+    } catch (err) {
+        console.error(err);
+        alert("Error submitting form.");
+    }
+});
+
+// --- I NEED A BOOK HANDLER (Matches Teacher Style) ---
+document.getElementById("requestBookForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const user = firebase.auth().currentUser;
+    if (!user) return alert("Please log in first.");
+
+    const title = e.target.title.value.trim();
+    const author = e.target.author.value.trim();
+    const notes = e.target.notes.value.trim();
+    const location = e.target.location.value.trim();
+
+    if (!title) return alert("Book Title is required.");
+
+    try {
+        const token = await user.getIdToken();
+        const res = await fetch("/api/requestBook", {
+            method: "POST",
+            headers: { 
+                "Authorization": `Bearer ${token}`,
+                "Content-Type": "application/json" 
+            },
+            body: JSON.stringify({ title, author, notes, location })
+        });
+
+        const data = await res.json();
+        if (data.success) {
+            alert("✅ Request submitted to catalogue!");
+            e.target.reset();
+            closeRequestBookModal();
+        } else {
+            alert("Failed to submit request.");
+        }
+    } catch (err) {
+        console.error(err);
+    }
+});
 
 
+// --- Global Data Store ---
+let currentCatalogueData = []; 
+let currentView = 'sale'; // 'sale' or 'request'
 
+// --- Navigation Trigger ---
+function openBooks() {
+    if (typeof closeBooksHub === "function") closeBooksHub(); 
+    document.getElementById("booksCatalogueModal").classList.remove("hidden");
+    fetchCatalogueData(); 
+}
+
+// --- Data Fetching (Adapted to separate endpoints) ---
+async function fetchCatalogueData() {
+    const list = document.getElementById("catalogueList");
+    list.innerHTML = "<p class='col-span-2 text-center py-10 text-gray-500 italic'>Loading catalogue...</p>";
+    
+    const endpoint = currentView === 'sale' ? "/api/getAvailableBooks" : "/api/getBookRequests";
+    
+    try {
+        const res = await fetch(endpoint);
+        const data = await res.json();
+        
+        if (data.success) {
+            currentCatalogueData = currentView === 'sale' ? data.books : data.requests;
+            renderCatalogue();
+        } else if (data.error && data.error.includes("index")) {
+            // Specifically catching the index error
+            list.innerHTML = `<p class='col-span-2 text-center py-10 text-amber-600'>
+                <b>Database Index Building...</b><br>
+                Please wait 2-5 minutes for Firebase to prepare the data.
+            </p>`;
+        } else {
+            list.innerHTML = `<p class='col-span-2 text-center py-10 text-red-500'>Error: ${data.error}</p>`;
+        }
+    } catch (err) {
+        console.error("Fetch Error:", err);
+        list.innerHTML = "<p class='col-span-2 text-center py-10 text-red-500'>Server connection failed.</p>";
+    }
+}
+
+// --- Toggle View Switcher ---
+function toggleCatalogueView(view) {
+    currentView = view;
+    // Update button styling
+    document.getElementById("btnShowSale").className = view === 'sale' 
+        ? "px-4 py-1 rounded-full bg-purple-600 text-white text-sm" 
+        : "px-4 py-1 rounded-full bg-gray-200 text-gray-700 text-sm";
+    
+    document.getElementById("btnShowRequests").className = view === 'request' 
+        ? "px-4 py-1 rounded-full bg-purple-600 text-white text-sm" 
+        : "px-4 py-1 rounded-full bg-gray-200 text-gray-700 text-sm";
+    
+    fetchCatalogueData(); // Re-fetch for the new category
+}
+
+// --- Rendering Logic ---
+function renderCatalogue() {
+    const list = document.getElementById("catalogueList");
+    const query = document.getElementById("catalogueSearch").value.toLowerCase();
+    
+    list.innerHTML = "";
+    
+    const filtered = currentCatalogueData.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        (item.author && item.author.toLowerCase().includes(query)) ||
+        (item.location && item.location.toLowerCase().includes(query)) // Now searchable by city too!
+    );
+
+    if (filtered.length === 0) {
+        list.innerHTML = `<p class="col-span-2 text-center text-gray-400 py-10">No ${currentView === 'sale' ? 'books for sale' : 'requests'} found.</p>`;
+        return;
+    }
+
+    filtered.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "border border-gray-200 rounded-lg p-3 shadow-sm bg-white hover:shadow-md transition-all";
+        card.innerHTML = `
+            ${item.imageUrl ? `<img src="${item.imageUrl}" class="w-full h-40 object-cover rounded-lg mb-2">` : ""}
+            <h4 class="font-bold text-gray-800">${item.title}</h4>
+            <p class="text-xs text-gray-500 italic">by ${item.author || 'Unknown'}</p>
+            
+            <!-- LOCATION DISPLAY ADDED HERE -->
+            <div class="flex items-center text-xs text-gray-600 mt-1 bg-gray-100 w-fit px-2 py-0.5 rounded">
+                <span class="material-icons" style="font-size: 14px; margin-right: 4px;">place</span>
+                ${item.location || 'Unknown City'}
+            </div>
+
+            <p class="text-sm mt-2 text-purple-600 font-semibold">${item.price ? `₦${item.price}` : "Status: Pending Request"}</p>
+            
+            <button onclick="handleAction('${item.id}', '${item.type}')" 
+                    class="w-full mt-2 py-2 text-xs font-bold rounded border border-purple-500 text-purple-600 hover:bg-purple-600 hover:text-white transition">
+                ${item.type === 'sale' ? 'Interested' : 'I have this book'}
+            </button>
+        `;
+        list.appendChild(card);
+    });
+}
+
+
+ 
+function closeBooksCatalogueModal() {
+    // 1. Target the modal by its ID
+    const modal = document.getElementById("booksCatalogueModal");
+    
+    if (modal) {
+        // 2. Add the 'hidden' class to hide it (Tailwind CSS)
+        modal.classList.add("hidden");
+    }
+
+    // 3. Cleanup: Clear the search bar so it's empty for the next use
+    const searchInput = document.getElementById("catalogueSearch");
+    if (searchInput) {
+        searchInput.value = "";
+    }
+
+    
+}
 
 
 

@@ -345,9 +345,7 @@ router.put("/acceptRequest/:requestId", verifyIdToken, async (req, res) => {
         return res.status(400).json({ success: false, error: "Student email missing from request data." });
     }
     
-    // --- Core Feature Logic ---
-    // 1. Generate the Google Meet Link
-    // IMPORTANT: Ensure createMeetEvent matches this signature: (studentEmail, teacherEmail)
+  
    // const meetLink = await createMeetEvent(studentEmail, acceptedByTeacherEmail);//
    const meetLink = "https://meet.google.com/new"; // placeholder
 
@@ -361,8 +359,8 @@ router.put("/acceptRequest/:requestId", verifyIdToken, async (req, res) => {
     });
 
     // 3. Send Notification Emails
-    const subject = "✅ GoQuiz Session Confirmed!";
-    const emailBody = `<p>Hi,</p><p>Your session is ready: <a href="${meetLink}">${meetLink}</a></p>`;
+    const subject = "✅ Ta-Da, your GoQuiz session is live!";
+    const emailBody = `<p>Hi,</p><p>Your session is ready . click : <a href="${meetLink}">${meetLink}</a></p>`;
 
     // IMPORTANT: Ensure sendNotification matches this signature: (email, subject, body)
     await sendNotification(studentEmail, subject, emailBody);
@@ -376,6 +374,145 @@ router.put("/acceptRequest/:requestId", verifyIdToken, async (req, res) => {
     res.status(500).json({ success: false, error: `Server error during processing: ${err.message}` });
   }
 });
+
+/* --------------------------------
+   NEW: Post a Book (Sell my book)
+   Captures poster email from verifyIdToken
+-------------------------------- */
+router.post("/postBook", verifyIdToken, upload.single("image"), async (req, res) => {
+  try {
+    const { title, author, price, condition, location } = req.body;
+    let imageUrl = null;
+
+    if (req.file && req.file.buffer) {
+      const filePath = `books/${uuidv4()}_${req.file.originalname}`;
+      const file = await uploadBufferToGCS(req.file.buffer, filePath, req.file.mimetype);
+      imageUrl = await getSignedUrl(file);
+    }
+
+    const docRef = await firestore.collection("books").add({
+      title, author, price, condition,
+      location: location || "Unknown Location", // LOGISTICS ADDITION
+      imageUrl,
+      posterEmail: req.user.email,
+      posterUid: req.user.uid,
+      status: "available",
+      createdAt: Timestamp.now()
+    });
+
+    res.json({ success: true, bookId: docRef.id });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/* --------------------------------
+   BOOKS: Request a Book (Need)
+-------------------------------- */
+router.post("/requestBook", verifyIdToken, async (req, res) => {
+  try {
+    const { title, author, notes, location } = req.body;
+    
+    const docRef = await firestore.collection("bookRequests").add({
+      title, author, notes,
+      location: location || "Unknown Location", // LOGISTICS ADDITION
+      requesterEmail: req.user.email,
+      requesterUid: req.user.uid,
+      status: "pending",
+      createdAt: Timestamp.now()
+    });
+
+    res.json({ success: true, requestId: docRef.id });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/* --------------------------------
+   CATALOGUE: Fetch Data
+-------------------------------- */
+router.get("/getAvailableBooks", async (req, res) => {
+  try {
+    const snapshot = await firestore.collection("books")
+      .where("status", "==", "available")
+      .get(); 
+
+    const books = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), type: 'sale' }));
+    res.json({ success: true, books });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+router.get("/getBookRequests", async (req, res) => {
+  try {
+    const snapshot = await firestore.collection("bookRequests")
+      .where("status", "==", "pending")
+      .get();
+
+    const requests = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), type: 'request' }));
+    res.json({ success: true, requests });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/* --------------------------------
+   ACTIONS: Connect Users
+-------------------------------- */
+router.post("/acceptBook/:bookId", verifyIdToken, async (req, res) => {
+  try {
+    const { bookId } = req.params;
+    const buyerEmail = req.user.email;
+    const bookRef = firestore.collection("books").doc(bookId);
+    const doc = await bookRef.get();
+
+    if (!doc.exists) return res.status(404).json({ error: "Book not found" });
+    const bookData = doc.data();
+
+    await bookRef.update({
+      status: "accepted",
+      acceptedByEmail: buyerEmail,
+      acceptedAt: Timestamp.now()
+    });
+
+    // Notify Seller
+    await sendNotification(bookData.posterEmail, "📚 Book Interest!", `User ${buyerEmail} is interested in "${bookData.title}" located in ${bookData.location}.`);
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.post("/fulfillRequest/:requestId", verifyIdToken, async (req, res) => {
+  try {
+    const { requestId } = req.params;
+    const providerEmail = req.user.email;
+    const requestRef = firestore.collection("bookRequests").doc(requestId);
+    const doc = await requestRef.get();
+
+    if (!doc.exists) return res.status(404).json({ error: "Request not found" });
+    const requestData = doc.data();
+
+    await requestRef.update({
+      status: "fulfilled",
+      fulfilledByEmail: providerEmail,
+      fulfilledAt: Timestamp.now()
+    });
+
+    // Notify Requester
+    await sendNotification(requestData.requesterEmail, "✅ Book Request Fulfilled!", `User ${providerEmail} has the book you requested in ${requestData.location}.`);
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
+
+
+
+
 
 
 export default router;
