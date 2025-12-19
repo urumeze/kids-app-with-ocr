@@ -3112,6 +3112,47 @@ function closeBooksCatalogueModal() {
     
 }
 
+/**
+ * Handles 'Interested' (Sale) and 'I have this book' (Request) actions.
+ * Captures the email of the person responding and connects them to the poster.
+ */
+async function handleAction(id, type) {
+    const user = firebase.auth().currentUser;
+    if (!user) return alert("Please log in to respond to posts.");
+
+    const confirmMsg = type === 'sale' 
+        ? "Interested in buying? The seller will receive your email contact." 
+        : "Do you have this book? The requester will receive your email contact.";
+
+    if (!confirm(confirmMsg)) return;
+
+    try {
+        const token = await user.getIdToken();
+        
+        // Dynamic endpoint mapping
+        // Sale items -> /api/acceptBook | Requests -> /api/fulfillRequest
+        const endpoint = type === 'sale' ? `/api/acceptBook/${id}` : `/api/fulfillRequest/${id}`;
+        
+        const res = await fetch(endpoint, {
+            method: "POST",
+            headers: { 
+                "Authorization": `Bearer ${token}` 
+            }
+        });
+
+        const data = await res.json();
+        if (data.success) {
+            alert("✅ Connection successful! The other user has been notified via email.");
+            // Refresh data to remove the now-accepted item from the catalogue
+            if (typeof fetchCatalogueData === "function") fetchCatalogueData(); 
+        } else {
+            alert("Error: " + (data.error || "Could not complete action."));
+        }
+    } catch (err) {
+        console.error("Action Error:", err);
+        alert("An error occurred. Please check your connection.");
+    }
+}
 
 
 
