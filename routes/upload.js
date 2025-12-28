@@ -379,9 +379,13 @@ router.put("/acceptRequest/:requestId", verifyIdToken, async (req, res) => {
    NEW: Post a Book (Sell my book)
    Captures poster email from verifyIdToken
 -------------------------------- */
+/* --------------------------------
+   BOOKS: Post a Book (Sale)
+-------------------------------- */
 router.post("/postBook", verifyIdToken, upload.single("image"), async (req, res) => {
   try {
-    const { title, author, price, condition, location } = req.body;
+    // Matches HTML: <input name="phoneNumber">
+    const { title, author, price, condition, location, phoneNumber } = req.body;
     let imageUrl = null;
 
     if (req.file && req.file.buffer) {
@@ -392,7 +396,8 @@ router.post("/postBook", verifyIdToken, upload.single("image"), async (req, res)
 
     const docRef = await firestore.collection("books").add({
       title, author, price, condition,
-      location: location || "Unknown Location", // LOGISTICS ADDITION
+      location: location || "Unknown Location",
+      posterPhone: phoneNumber || "Not provided", // Saved but hidden from catalogue
       imageUrl,
       posterEmail: req.user.email,
       posterUid: req.user.uid,
@@ -411,11 +416,13 @@ router.post("/postBook", verifyIdToken, upload.single("image"), async (req, res)
 -------------------------------- */
 router.post("/requestBook", verifyIdToken, async (req, res) => {
   try {
-    const { title, author, notes, location } = req.body;
+    // Matches HTML: <input name="phoneNumber">
+    const { title, author, notes, location, phoneNumber } = req.body;
     
     const docRef = await firestore.collection("bookRequests").add({
       title, author, notes,
-      location: location || "Unknown Location", // LOGISTICS ADDITION
+      location: location || "Unknown Location",
+      requesterPhone: phoneNumber || "Not provided", // Saved but hidden from catalogue
       requesterEmail: req.user.email,
       requesterUid: req.user.uid,
       status: "pending",
@@ -429,15 +436,19 @@ router.post("/requestBook", verifyIdToken, async (req, res) => {
 });
 
 /* --------------------------------
-   CATALOGUE: Fetch Data
+   CATALOGUE: Fetch Data (Excludes Phone)
 -------------------------------- */
 router.get("/getAvailableBooks", async (req, res) => {
   try {
     const snapshot = await firestore.collection("books")
-      .where("status", "==", "available")
-      .get(); 
+      .where("status", "==", "available").get(); 
 
-    const books = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), type: 'sale' }));
+    const books = snapshot.docs.map(doc => {
+      const data = doc.data();
+      // Remove posterPhone before sending to HTML
+      const { posterPhone, ...publicData } = data; 
+      return { id: doc.id, ...publicData, type: 'sale' };
+    });
     res.json({ success: true, books });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
@@ -447,10 +458,14 @@ router.get("/getAvailableBooks", async (req, res) => {
 router.get("/getBookRequests", async (req, res) => {
   try {
     const snapshot = await firestore.collection("bookRequests")
-      .where("status", "==", "pending")
-      .get();
+      .where("status", "==", "pending").get();
 
-    const requests = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data(), type: 'request' }));
+    const requests = snapshot.docs.map(doc => {
+      const data = doc.data();
+      // Remove requesterPhone before sending to HTML
+      const { requesterPhone, ...publicData } = data;
+      return { id: doc.id, ...publicData, type: 'request' };
+    });
     res.json({ success: true, requests });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
@@ -458,55 +473,191 @@ router.get("/getBookRequests", async (req, res) => {
 });
 
 /* --------------------------------
-   ACTIONS: Connect Users
+   ACTIONS: Connect Users (Includes Phone)
 -------------------------------- */
 router.post("/acceptBook/:bookId", verifyIdToken, async (req, res) => {
   try {
     const { bookId } = req.params;
+    // 'accepterPhone' comes from the Payment Modal input
+    const { reference, accepterPhone } = req.body; 
+    
     const buyerEmail = req.user.email;
     const bookRef = firestore.collection("books").doc(bookId);
     const doc = await bookRef.get();
-
+    
     if (!doc.exists) return res.status(404).json({ error: "Book not found" });
     const bookData = doc.data();
 
     await bookRef.update({
       status: "accepted",
       acceptedByEmail: buyerEmail,
+      acceptedByPhone: accepterPhone,
+      paymentReference: reference || "Internal_OK",
       acceptedAt: Timestamp.now()
     });
 
-    // Notify Seller
-    await sendNotification(bookData.posterEmail, "📚 Book Interest!", `User ${buyerEmail} is interested in "${bookData.title}" located in ${bookData.location}.`);
-    res.json({ success: true });
+    const subject = "📚 Contact Details Exchanged: Used Books Hub";
+    const emailBody = `
+      <h3>✅ Connection Successful!</h3>
+      <p>A notification fee was paid to connect you for: <b>"${bookData.title}"</b>.</p>
+      <hr>
+      <h4>Seller Details:</h4>
+      <p>Email: ${bookData.posterEmail}</p>
+      <p>Phone: ${bookData.posterPhone}</p>
+      <p>Location: ${bookData.location}</p>
+      <br>
+      <h4>Buyer Details:</h4>
+      <p>Email: ${buyerEmail}</p>
+      <p>Phone: ${accepterPhone}</p>
+      <hr>
+      <p>Please contact each other to finalize the delivery/pickup.</p>
+    `;
+
+    await sendNotification(bookData.posterEmail, subject, emailBody);
+    await sendNotification(buyerEmail, subject, emailBody);
+
+    res.json({ success: true, message: "Details sent to both users." });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ success: false, error: err.message });
   }
 });
 
 router.post("/fulfillRequest/:requestId", verifyIdToken, async (req, res) => {
   try {
     const { requestId } = req.params;
-    const providerEmail = req.user.email;
+    const { reference, accepterPhone } = req.body; 
+    
+    // IMPORTANT: Verify Paystack here as discussed in previous steps
+    // const isPaymentValid = await verifyPaystack(reference);
+    // if (!isPaymentValid) return res.status(400).json({ error: "Invalid Payment" });
+
+    const supplierEmail = req.user.email; // The person who HAS the book
     const requestRef = firestore.collection("bookRequests").doc(requestId);
     const doc = await requestRef.get();
-
+    
     if (!doc.exists) return res.status(404).json({ error: "Request not found" });
     const requestData = doc.data();
 
+    // Update the request status
     await requestRef.update({
       status: "fulfilled",
-      fulfilledByEmail: providerEmail,
+      fulfilledByEmail: supplierEmail,
+      fulfilledByPhone: accepterPhone,
+      paymentReference: reference,
       fulfilledAt: Timestamp.now()
     });
 
-    // Notify Requester
-    await sendNotification(requestData.requesterEmail, "✅ Book Request Fulfilled!", `User ${providerEmail} has the book you requested in ${requestData.location}.`);
-    res.json({ success: true });
+    const subject = "📖 Connection Made: Book Request Fulfilled";
+    const emailBody = `
+      <h3>✅ You've been connected!</h3>
+      <p>A notification fee was paid to fulfill the request for: <b>"${requestData.title}"</b>.</p>
+      <hr>
+      <h4>Requester Details (Needs Book):</h4>
+      <p>Email: ${requestData.requesterEmail}</p>
+      <p>Phone: ${requestData.requesterPhone}</p>
+      <p>Location: ${requestData.location}</p>
+      <br>
+      <h4>Supplier Details (Has Book):</h4>
+      <p>Email: ${supplierEmail}</p>
+      <p>Phone: ${accepterPhone}</p>
+      <hr>
+      <p>Please coordinate to get the book to the requester.</p>
+    `;
+
+    // Send to both parties
+    await sendNotification(requestData.requesterEmail, subject, emailBody);
+    await sendNotification(supplierEmail, subject, emailBody);
+
+    res.json({ success: true, message: "Connection successful." });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error(err);
+    res.status(500).json({ success: false, error: err.message });
   }
 });
+
+
+/** 
+ * Step 1: Add this Helper to Verify with Paystack 
+ */
+async function verifyPaystack(reference) {
+  try {
+    const response = await fetch(`api.paystack.co{reference}`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`, // MUST be sk_live_...
+      }
+    });
+    const data = await response.json();
+    // Return true only if Paystack confirms success and amount matches N100 (10000 kobo)
+    return data.status && data.data.status === "success" && data.data.amount === 10000;
+  } catch (err) {
+    console.error("Paystack Verification Error:", err);
+    return false;
+  }
+}
+
+/** 
+ * Step 2: Update your acceptBook route 
+ */
+router.post("/acceptBook/:bookId", verifyIdToken, async (req, res) => {
+  try {
+    const { bookId } = req.params;
+    const { reference, accepterPhone } = req.body; 
+    
+    // --- SECURITY: VERIFY PAYMENT BEFORE PROCEEDING ---
+    const isPaymentValid = await verifyPaystack(reference);
+    if (!isPaymentValid) {
+      return res.status(400).json({ success: false, error: "Payment verification failed or invalid reference." });
+    }
+
+    const buyerEmail = req.user.email;
+    const bookRef = firestore.collection("books").doc(bookId);
+    const doc = await bookRef.get();
+    
+    if (!doc.exists) return res.status(404).json({ error: "Book not found" });
+    const bookData = doc.data();
+
+    // Prevent double-acceptance
+    if (bookData.status === "accepted") {
+        return res.status(400).json({ success: false, error: "This item has already been connected." });
+    }
+
+    await bookRef.update({
+      status: "accepted",
+      acceptedByEmail: buyerEmail,
+      acceptedByPhone: accepterPhone,
+      paymentReference: reference,
+      acceptedAt: Timestamp.now()
+    });
+
+    const subject = "📚 Contact Details Exchanged: Used Books Hub";
+    const emailBody = `
+      <h3>✅ Connection Successful!</h3>
+      <p>A notification fee was paid to connect you for: <b>"${bookData.title}"</b>.</p>
+      <hr>
+      <h4>Seller Details:</h4>
+      <p>Email: ${bookData.posterEmail}</p>
+      <p>Phone: ${bookData.posterPhone}</p>
+      <p>Location: ${bookData.location}</p>
+      <br>
+      <h4>Buyer Details:</h4>
+      <p>Email: ${buyerEmail}</p>
+      <p>Phone: ${accepterPhone}</p>
+      <hr>
+      <p>Please contact each other to finalize the delivery/pickup.</p>
+    `;
+
+    // Send emails using your existing service
+    await sendNotification(bookData.posterEmail, subject, emailBody);
+    await sendNotification(buyerEmail, subject, emailBody);
+
+    res.json({ success: true, message: "Details sent to both users." });
+  } catch (err) {
+    console.error("Server Error:", err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 
 
 

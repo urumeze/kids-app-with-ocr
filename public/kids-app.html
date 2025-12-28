@@ -20,6 +20,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js"></script>
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+
     
 
 
@@ -779,6 +781,45 @@
   </div>
 </div>
 
+<!-- Notification/Payment Modal -->
+<div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-60 hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-xl w-full max-w-sm p-6 shadow-2xl relative">
+        <!-- Close button (X) top right -->
+        <button onclick="closePaymentModal()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 material-icons">close</button>
+        
+        <h3 class="text-center font-bold text-lg mb-2 text-green-700">Connect to User</h3>
+        <p class="mb-4 text-center text-sm text-gray-700">
+             Contact details (Email & Phone) will be sent to you via mail 
+        </p>
+        <p class="text-center text-[10px] text-gray-500">
+            Notification costs ₦100 naira
+        </p>
+
+        <!-- ADDED: Phone number input field -->
+        <div class="mb-4">
+            <label class="block text-xs font-semibold text-gray-500 mb-1 ">INPUT YOUR PHONE NUMBER</label>
+            <input type="tel" id="accepterPhone" placeholder="e.g. 08012345678" 
+                   class="w-full border border-gray-300 rounded-lg p-3 text-center focus:ring-2 focus:ring-green-500 outline-none" required>
+        </div>
+
+        <p class="mb-4 text-center text-[10px] text-gray-500 italic">
+             Click OK to proceed to secure payment
+        </p>
+
+        <!-- OKAY button -->
+        <button onclick="proceedToPayment()" 
+                class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+            OK 
+        </button>
+
+        <!-- Hidden inputs to store data temporarily -->
+        <input type="hidden" id="paymentActionId">
+        <input type="hidden" id="paymentActionType">
+    </div>
+</div>
+
+
+
 
 
 
@@ -879,8 +920,10 @@
       <input type="text" name="title" placeholder="Book Title" class="w-full border border-gray-300 rounded-lg p-2" required>
       <input type="text" name="author" placeholder="Author" class="w-full border border-gray-300 rounded-lg p-2" required>
       <input type="number" name="price" placeholder="Price (₦)" class="w-full border border-gray-300 rounded-lg p-2" required>
-      <!-- Location Field Added -->
       <input type="text" name="location" placeholder="City or Town (e.g. Owerri, Lagos)" class="w-full border border-gray-300 rounded-lg p-2" required>
+      
+      <!-- Added Phone Field -->
+      <input type="tel" name="phoneNumber" placeholder="WhatsApp or Phone Number" class="w-full border border-gray-300 rounded-lg p-2" required>
       
       <select name="condition" class="w-full border border-gray-300 rounded-lg p-2">
         <option value="">Select condition</option>
@@ -902,8 +945,10 @@
     <form id="requestBookForm" class="space-y-3">
       <input type="text" name="title" placeholder="Book Title" class="w-full border border-gray-300 rounded-lg p-2" required>
       <input type="text" name="author" placeholder="Author" class="w-full border border-gray-300 rounded-lg p-2">
-      <!-- Location Field Added -->
       <input type="text" name="location" placeholder="Your City or Town" class="w-full border border-gray-300 rounded-lg p-2" required>
+      
+      <!-- Added Phone Field -->
+      <input type="tel" name="phoneNumber" placeholder="WhatsApp or Phone Number" class="w-full border border-gray-300 rounded-lg p-2" required>
       
       <textarea name="notes" placeholder="Additional Notes" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
       <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-lg">Submit Request</button>
@@ -912,20 +957,17 @@
   </div>
 </div>
 
-
 <!-- Final Books Catalogue Modal -->
-<div id="booksCatalogueModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 overflow-auto flex items-start justify-center py-10">
+<div id="booksCatalogueModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-40 overflow-auto flex items-start justify-center py-10">
   <div class="bg-white rounded-xl w-11/12 max-w-3xl p-6 shadow-2xl">
     <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Books Catalogue</h3>
 
     <div class="space-y-3 mb-4">
-      <!-- Ensure this ID matches: catalogueSearch -->
-      <input type="text" id="catalogueSearch" onkeyup="filterCatalogue()" 
-             placeholder="Search title or author..." 
+      <input type="text" id="catalogueSearch" onkeyup="renderCatalogue()" 
+             placeholder="Search title, author, or location..." 
              class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500">
       
       <div class="flex justify-center gap-2">
-        <!-- Ensure these IDs match: btnShowSale and btnShowRequests -->
         <button id="btnShowSale" onclick="toggleCatalogueView('sale')" 
                 class="px-4 py-1 rounded-full bg-purple-600 text-white text-sm">Available for Sale</button>
         <button id="btnShowRequests" onclick="toggleCatalogueView('request')" 
@@ -2882,6 +2924,12 @@ function home() {
   renderFeedBatch();
 };
 
+function closeBooksCatalogueModal() {
+  
+  document.getElementById("booksCatalogueModal").classList.add("hidden")
+  renderFeedBatch();
+};
+
 // --- Modal Navigation (Unified) ---
 function openBooksHub() {
     document.getElementById("booksHubModal").classList.remove("hidden");
@@ -2917,6 +2965,7 @@ document.getElementById("postBookForm").addEventListener("submit", async (e) => 
     const author = e.target.author.value.trim();
     const price = e.target.price.value.trim();
     const condition = e.target.condition.value;
+    const phoneNumber = e.target.phoneNumber.value.trim();
     const imageFile = e.target.image.files[0];
 
      const location = e.target.location.value.trim(); 
@@ -2931,6 +2980,7 @@ document.getElementById("postBookForm").addEventListener("submit", async (e) => 
     formData.append("author", author);
     formData.append("price", price);
     formData.append("condition", condition);
+    formData.append("phoneNumber", phoneNumber);
     formData.append("location", location);
     if (imageFile) formData.append("image", imageFile);
 
@@ -2966,6 +3016,7 @@ document.getElementById("requestBookForm").addEventListener("submit", async (e) 
     const author = e.target.author.value.trim();
     const notes = e.target.notes.value.trim();
     const location = e.target.location.value.trim();
+    const phoneNumber = e.target.phoneNumber.value.trim();
 
     if (!title) return alert("Book Title is required.");
 
@@ -3093,68 +3144,119 @@ function renderCatalogue() {
 }
 
 
- 
-function closeBooksCatalogueModal() {
-    // 1. Target the modal by its ID
-    const modal = document.getElementById("booksCatalogueModal");
-    
-    if (modal) {
-        // 2. Add the 'hidden' class to hide it (Tailwind CSS)
-        modal.classList.add("hidden");
-    }
-
-    // 3. Cleanup: Clear the search bar so it's empty for the next use
-    const searchInput = document.getElementById("catalogueSearch");
-    if (searchInput) {
-        searchInput.value = "";
-    }
-
-    
-}
-
-/**
- * Handles 'Interested' (Sale) and 'I have this book' (Request) actions.
- * Captures the email of the person responding and connects them to the poster.
- */
+ // Step 1: Open the Payment Information Modal
 async function handleAction(id, type) {
     const user = firebase.auth().currentUser;
     if (!user) return alert("Please log in to respond to posts.");
 
-    const confirmMsg = type === 'sale' 
-        ? "Interested in buying? The seller will receive your email contact." 
-        : "Do you have this book? The requester will receive your email contact.";
+    // Store action globally or in a scoped variable
+    pendingAction = { id: id, type: type };
 
-    if (!confirm(confirmMsg)) return;
+    const payModal = document.getElementById("paymentModal");
+    if (payModal) {
+        payModal.classList.remove("hidden");
+    } else {
+        // Fallback confirmation
+        if (confirm("Connection costs ₦100. Your contact details will be shared. Proceed?")) {
+            proceedToPayment();
+        }
+    }
+}
+
+// Step 2: Redirect to Paystack (v2 implementation)
+async function proceedToPayment() {
+    const user = firebase.auth().currentUser;
+    const phoneElement = document.getElementById("accepterPhone");
+    
+    if (!phoneElement || !phoneElement.value.trim()) {
+        return alert("Please enter your phone number first.");
+    }
+
+    const accepterPhone = phoneElement.value.trim();
+
+    try {
+        const paystack = new PaystackPop();
+        paystack.newTransaction({
+            key: "pk_live_055df5963ca6c17db25a027d90a5bc1963b52f67", 
+            email: user.email,
+            amount: 10000, 
+            currency: "NGN",
+            onSuccess: (transaction) => {
+                console.log("Payment Successful. Reference:", transaction.reference);
+                // Call the finalization function immediately
+                completeBookTransaction(transaction.reference, accepterPhone);
+            },
+            onCancel: () => {
+                console.log("User cancelled payment.");
+                alert('Transaction was cancelled.');
+            },
+            onError: (error) => {
+                console.error("Paystack Popup Error:", error);
+            }
+        });
+    } catch (error) {
+        console.error("Initialization Error:", error);
+    }
+}
+
+// UI Helper: Close and Reset
+function closePaymentModal() {
+    const modal = document.getElementById("paymentModal");
+    if (modal) modal.classList.add("hidden");
+    
+    // Ensure this ID matches your HTML input ID
+    const phoneInput = document.getElementById("accepterPhone");
+    if (phoneInput) phoneInput.value = "";
+}
+
+// Step 3: Fulfill record (Server-side verification)
+async function completeBookTransaction(paymentReference, accepterPhone) {
+    // 1. Immediately hide the Paystack popup (handled by library)
+    // 2. Immediately hide your custom HTML modal
+    closePaymentModal(); 
+
+    const { id, type } = pendingAction;
+    const user = firebase.auth().currentUser;
 
     try {
         const token = await user.getIdToken();
-        
-        // Dynamic endpoint mapping
-        // Sale items -> /api/acceptBook | Requests -> /api/fulfillRequest
         const endpoint = type === 'sale' ? `/api/acceptBook/${id}` : `/api/fulfillRequest/${id}`;
-        
+
         const res = await fetch(endpoint, {
             method: "POST",
             headers: { 
-                "Authorization": `Bearer ${token}` 
-            }
+                "Authorization": `Bearer ${token}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ 
+                reference: paymentReference,
+                accepterPhone: accepterPhone 
+            })
         });
 
         const data = await res.json();
+
         if (data.success) {
-            alert("✅ Connection successful! The other user has been notified via email.");
-            // Refresh data to remove the now-accepted item from the catalogue
-            if (typeof fetchCatalogueData === "function") fetchCatalogueData(); 
+            alert("✅ Success! Check your email for details.");
+            if (typeof fetchCatalogueData === "function") fetchCatalogueData();
         } else {
-            alert("Error: " + (data.error || "Could not complete action."));
+            // Re-open modal if there was a server error so they can see the issue
+            document.getElementById("paymentModal").classList.remove("hidden");
+            alert("Payment verified, but record update failed: " + data.error);
         }
     } catch (err) {
-        console.error("Action Error:", err);
-        alert("An error occurred. Please check your connection.");
+        console.error("Finalization Error:", err);
+        alert("An error occurred while saving your transaction.");
     }
 }
 
 
+
+
+// Global scope assignments to ensure HTML onclicks work
+window.handleAction = handleAction;
+window.proceedToPayment = proceedToPayment;
+window.closePaymentModal = closePaymentModal;
 
 
 </script>
