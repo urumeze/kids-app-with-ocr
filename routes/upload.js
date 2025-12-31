@@ -382,32 +382,55 @@ router.put("/acceptRequest/:requestId", verifyIdToken, async (req, res) => {
 /* --------------------------------
    BOOKS: Post a Book (Sale)
 -------------------------------- */
-router.post("/postBook", verifyIdToken, upload.single("image"), async (req, res) => {
+router.post("/postBook", verifyIdToken, upload.array("images"), async (req, res) => {
   try {
-    // Matches HTML: <input name="phoneNumber">
-    const { title, author, price, condition, location, phoneNumber } = req.body;
-    let imageUrl = null;
+    // Location and Phone Number are single values from the global inputs
+    const { location, phoneNumber } = req.body;
+    
+    // The book details (title, author, etc.) will be arrays due to the HTML structure
+    const titles = req.body.title;
+    const authors = req.body.author;
+    const prices = req.body.price;
+    const conditions = req.body.condition;
+    
+    // req.files is an array of uploaded image objects
+    const files = req.files || [];
 
-    if (req.file && req.file.buffer) {
-      const filePath = `books/${uuidv4()}_${req.file.originalname}`;
-      const file = await uploadBufferToGCS(req.file.buffer, filePath, req.file.mimetype);
-      imageUrl = await getSignedUrl(file);
+    const postedBooks = [];
+    const booksCount = titles ? titles.length : 0;
+
+    // Loop through each submitted book
+    for (let i = 0; i < booksCount; i++) {
+      const bookData = {
+        title: titles[i],
+        author: authors[i],
+        price: prices[i],
+        condition: conditions[i],
+        location: location || "Unknown Location",
+        posterPhone: phoneNumber || "Not provided",
+        posterEmail: req.user.email,
+        posterUid: req.user.uid,
+        status: "available",
+        createdAt: Timestamp.now()
+      };
+      
+      // Handle the corresponding image upload for this specific book index 'i'
+      if (files[i] && files[i].buffer) {
+        const filePath = `books/${uuidv4()}_${files[i].originalname}`;
+        const uploadedFile = await uploadBufferToGCS(files[i].buffer, filePath, files[i].mimetype);
+        bookData.imageUrl = await getSignedUrl(uploadedFile);
+      }
+
+      // Add the book data to Firestore
+      const docRef = await firestore.collection("books").add(bookData);
+      postedBooks.push({ bookId: docRef.id, title: bookData.title });
     }
 
-    const docRef = await firestore.collection("books").add({
-      title, author, price, condition,
-      location: location || "Unknown Location",
-      posterPhone: phoneNumber || "Not provided", // Saved but hidden from catalogue
-      imageUrl,
-      posterEmail: req.user.email,
-      posterUid: req.user.uid,
-      status: "available",
-      createdAt: Timestamp.now()
-    });
+    res.json({ success: true, count: postedBooks.length, books: postedBooks });
 
-    res.json({ success: true, bookId: docRef.id });
   } catch (err) {
-    res.status(500).json({ success: false, error: err.message });
+    console.error("Error posting books:", err);
+    res.status(500).json({ success: false, error: "Failed to post books. " + err.message });
   }
 });
 

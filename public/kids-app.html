@@ -912,28 +912,31 @@
   </div>
 </div>
 
-<!-- Sell a Book Modal -->
+
 <div id="postBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center">
-  <div class="bg-white rounded-xl w-11/12 max-w-md p-6">
-    <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Sell a Book</h3>
+  <div class="bg-white rounded-xl w-11/12 max-w-md p-6 max-h-[90vh] overflow-y-auto">
+    <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Sell Books</h3>
+    
     <form id="postBookForm" class="space-y-3">
-      <input type="text" name="title" placeholder="Book Title" class="w-full border border-gray-300 rounded-lg p-2" required>
-      <input type="text" name="author" placeholder="Author" class="w-full border border-gray-300 rounded-lg p-2" required>
-      <input type="number" name="price" placeholder="Price (₦)" class="w-full border border-gray-300 rounded-lg p-2" required>
-      <input type="text" name="location" placeholder="City or Town (e.g. Owerri, Lagos)" class="w-full border border-gray-300 rounded-lg p-2" required>
       
-      <!-- Added Phone Field -->
-      <input type="tel" name="phoneNumber" placeholder="WhatsApp or Phone Number" class="w-full border border-gray-300 rounded-lg p-2" required>
+      <div class="bg-purple-50 p-3 rounded-lg space-y-2 mb-4">
+        <label class="text-xs font-bold text-purple-700 uppercase">Seller Info</label>
+        <input type="tel" name="phoneNumber" placeholder="WhatsApp or Phone Number" class="w-full border border-gray-300 rounded-lg p-2" required>
+        <input type="text" name="location" placeholder="City or Town (e.g. Owerri, Lagos)" class="w-full border border-gray-300 rounded-lg p-2" required>
+      </div>
+
+      <div id="bookEntriesContainer" class="space-y-4">
+        <!-- JavaScript will insert book fields here -->
+      </div>
       
-      <select name="condition" class="w-full border border-gray-300 rounded-lg p-2">
-        <option value="">Select condition</option>
-        <option value="like-new">Like New</option>
-        <option value="good">Good</option>
-        <option value="fair">Fair</option>
-      </select>
-      <input type="file" name="image" accept="image/*" class="w-full border border-gray-300 rounded-lg p-2">
-      <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg">Post Book</button>
+      <button type="button" onclick="addBookEntry()" class="w-full border-2 border-dashed border-purple-300 text-purple-600 py-2 rounded-lg">
+        + Add Another Book
+      </button>
+
+      <hr class="my-4">
+      <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg font-bold">Post All Books</button>
     </form>
+    
     <button onclick="closePostBookModal()" class="mt-3 w-full text-sm text-gray-500">Cancel</button>
   </div>
 </div>
@@ -2921,7 +2924,10 @@ window.acceptRequest = async function acceptRequest(requestId) {
 
 function home() {
   menuPanel.classList.add('-translate-x-full');
+  closePaymentModal()
+  closeBooksCatalogueModal()
   renderFeedBatch();
+
 };
 
 function closeBooksCatalogueModal() {
@@ -2941,9 +2947,55 @@ function closeBooksHub() {
 function openPostBook() {
     closeBooksHub();
     document.getElementById("postBookModal").classList.remove("hidden");
+    
+    // Reset container and add the first book entry automatically
+    const container = document.getElementById("bookEntriesContainer");
+    if (container.children.length === 0) {
+        addBookEntry();
+    }
 }
+
 function closePostBookModal() {
     document.getElementById("postBookModal").classList.add("hidden");
+    // Clear the entries so it starts fresh next time
+    document.getElementById("bookEntriesContainer").innerHTML = '';
+}
+
+// --- Dynamic Book Entries ---
+function addBookEntry() {
+    const container = document.getElementById("bookEntriesContainer");
+    const entryId = Date.now(); 
+    
+    const entryHtml = `
+        <div id="entry-${entryId}" class="p-4 border border-gray-200 rounded-lg bg-gray-50 relative space-y-3">
+            <button type="button" onclick="removeBookEntry(${entryId})" class="absolute top-2 right-2 text-red-500 font-bold text-sm">✕ Remove</button>
+            
+            <input type="text" name="title" placeholder="Book Title" class="w-full border border-gray-300 rounded-lg p-2" required>
+            <div class="grid grid-cols-2 gap-2">
+                <input type="text" name="author" placeholder="Author" class="w-full border border-gray-300 rounded-lg p-2" required>
+                <input type="number" name="price" placeholder="Price (₦)" class="w-full border border-gray-300 rounded-lg p-2" required>
+            </div>
+            <select name="condition" class="w-full border border-gray-300 rounded-lg p-2">
+                <option value="">Select condition</option>
+                <option value="like-new">Like New</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+            </select>
+            <!-- Name MUST be "images" to match upload.array("images") in backend -->
+            <input type="file" name="images" accept="image/*" class="w-full border border-gray-300 rounded-lg p-2">
+        </div>
+    `;
+    container.insertAdjacentHTML('beforeend', entryHtml);
+}
+
+
+function removeBookEntry(id) {
+    const entry = document.getElementById(`entry-${id}`);
+    if (document.querySelectorAll('#bookEntriesContainer > div').length > 1) {
+        entry.remove();
+    } else {
+        alert("You must post at least one book before removing.");
+    }
 }
 
 function openRequestBook() {
@@ -2960,51 +3012,50 @@ document.getElementById("postBookForm").addEventListener("submit", async (e) => 
     const user = firebase.auth().currentUser;
     if (!user) return alert("Please log in first.");
 
-    // Grabbing elements like the teacher request pattern
-    const title = e.target.title.value.trim();
-    const author = e.target.author.value.trim();
-    const price = e.target.price.value.trim();
-    const condition = e.target.condition.value;
-    const phoneNumber = e.target.phoneNumber.value.trim();
-    const imageFile = e.target.image.files[0];
+    const formData = new FormData(e.target);
 
-     const location = e.target.location.value.trim(); 
-
-    if (!title || !author || !price) {
-        alert("Please fill all required fields");
+    // FIX 1: Change "title[]" to "title" to match your HTML names
+    const titles = formData.getAll("title"); 
+    
+    // Check if the first title exists and isn't just empty space
+    if (titles.length === 0 || !titles[0].trim()) {
+        alert("Please add at least one book with a title.");
         return;
     }
 
-    const formData = new FormData();
-    formData.append("title", title);
-    formData.append("author", author);
-    formData.append("price", price);
-    formData.append("condition", condition);
-    formData.append("phoneNumber", phoneNumber);
-    formData.append("location", location);
-    if (imageFile) formData.append("image", imageFile);
-
     try {
         const token = await user.getIdToken();
+        
+        // Note: "/api/postBook" must match your server route exactly
         const res = await fetch("/api/postBook", {
             method: "POST",
-            headers: { "Authorization": `Bearer ${token}` }, // SECURE EMAIL CAPTURE
+            headers: { 
+                "Authorization": `Bearer ${token}` 
+                // DO NOT add 'Content-Type': 'multipart/form-data' here!
+            },
             body: formData
         });
 
         const data = await res.json();
         if (data.success) {
-            alert("✅ Book listed for sale!");
+            alert(`✅ ${data.count || 'Books'} listed for sale!`);
+            
+            // Clean up
             e.target.reset();
+            document.getElementById("bookEntriesContainer").innerHTML = '';
             closePostBookModal();
+            
+            // Optional: Refresh feed to show new books
+            if(window.loadBooks) loadBooks(); 
         } else {
-            alert("Failed to list book: " + data.error);
+            alert("Failed to list books: " + data.error);
         }
     } catch (err) {
-        console.error(err);
-        alert("Error submitting form.");
+        console.error("Submission error:", err);
+        alert("Error submitting form. Is the server running?");
     }
 });
+
 
 // --- I NEED A BOOK HANDLER (Matches Teacher Style) ---
 document.getElementById("requestBookForm").addEventListener("submit", async (e) => {
