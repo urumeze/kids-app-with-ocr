@@ -141,31 +141,31 @@ router.post("/image", upload.single("image"), async (req, res) => {
 -------------------------------- */
 router.post("/teacher", upload.single("image"), async (req, res) => {
   try {
-    if (!req.file || !req.file.buffer) {
-      return res
-        .status(400)
-        .json({ success: false, error: "No image provided" });
+    // 1. Validation
+    const { name, gender, subject } = req.body;
+    if (!name || !gender || !subject || !req.file) {
+      return res.status(400).json({ success: false, error: "Missing required fields or image" });
     }
 
     const buffer = req.file.buffer;
-    const contentType = req.file.mimetype || "image/jpeg";
-    const ext = contentType.split("/")[1] || "jpg";
-    const idBase = uuidv4();
-    const filePath = `teachers/${idBase}.${ext}`;
+    const contentType = req.file.mimetype;
+    const ext = contentType.split("/")[1];
+    const filePath = `teachers/${uuidv4()}.${ext}`;
 
-    // Upload teacher image
+    // 2. Upload to GCS
     const file = await uploadBufferToGCS(buffer, filePath, contentType);
 
-    // Generate signed URL (public)
-    const imageUrl = await getSignedUrl(file);
+    // 3. Make Public & Get Permanent Link
+    // Note: Ensure your GCS bucket allows public read access or call file.makePublic()
+    const imageUrl = `storage.googleapis.com{filePath}`;
 
+    // 4. Save to Firestore
     const docRef = await firestore.collection("teachers").add({
-      name: req.body.name,
-      gender: req.body.gender,
-      subject: req.body.subject,
+      name,
+      gender,
+      subject,
       imageUrl,
       createdAt: Timestamp.now()
-
     });
 
     res.json({
@@ -175,12 +175,27 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
     });
   } catch (err) {
     console.error("Teacher upload error:", err);
-    res
-      .status(500)
-      .json({ success: false, error: "Upload failed" });
+    res.status(500).json({ success: false, error: "Upload failed" });
   }
 });
 
+// GET route to fetch all teacher profiles
+router.get("/teachers", async (req, res) => {
+  try {
+    const snapshot = await firestore.collection("teachers").orderBy("createdAt", "desc").get();
+    
+    // Map the documents into an array of objects
+    const teachers = snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+
+    res.json({ success: true, data: teachers });
+  } catch (err) {
+    console.error("Error fetching teachers:", err);
+    res.status(500).json({ success: false, error: "Failed to fetch profiles" });
+  }
+});
 
 /* --------------------------------
    NEW: Teacher Request Endpoint (FIXED TO MATCH FRONTEND)
@@ -236,29 +251,6 @@ router.post("/requestTeacher", upload.single("image"), async (req, res) => {
 
 
 /* --------------------------------
-   NEW: Get 3 Latest Teachers
--------------------------------- */
-router.get("/teachers/random", async (req, res) => {
-  try {
-    const snapshot = await firestore
-      .collection("teachers")
-      .orderBy("createdAt", "desc")
-      .limit(3)
-      .get();
-
-    const teachers = snapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-
-    res.json({ success: true, teachers });
-  } catch (err) {
-    console.error("Random teachers fetch error:", err);
-    res.json({ success: false, teachers: [] });
-  }
-});
-
-/* --------------------------------
    NEW: Get All Teacher Requests (WITH FILTERS)
 -------------------------------- */
 router.get("/getAllTeacherRequests", async (req, res) => {
@@ -295,6 +287,28 @@ router.get("/getAllTeacherRequests", async (req, res) => {
     res.status(500).json({ success: false, error: "Server error" });
   }
 });
+
+// Add this to your server file (e.g., index.js or routes.js)
+// --- Backend: Get Active Teacher Profiles ---
+router.get("/api/getAvailableTeachers", async (req, res) => {
+  try {
+    // Fetch teachers with 'active' status
+    const snapshot = await firestore.collection("teachers")
+      .where("status", "==", "active").get(); 
+
+    const teachers = snapshot.docs.map(doc => {
+      const data = doc.data();
+      // Following your pattern: strip sensitive fields like phone
+      const { phone, email, ...publicData } = data; 
+      return { id: doc.id, ...publicData, type: 'teacher-profile' };
+    });
+    
+    res.json({ success: true, teachers });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 
 /* --------------------------------
    NEW: Get Count for Badge

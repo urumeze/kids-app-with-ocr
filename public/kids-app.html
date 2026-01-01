@@ -1352,15 +1352,16 @@
 
   <!-- Home -->
   <div class="text-center cursor-pointer">
+    <p class="text-xs text-orange-600">More past questions?</p>
     <span class="material-icons text-orange-600" onclick="home()">home</span>
-    <p class="text-xs text-orange-600">Home</p>
+    <p class="text-xs text-orange-600">click</p>
   </div>
 
 <!-- Requests Button (with red badge) -->
 <div class="relative text-center cursor-pointer" onclick="openRequests()">
     <p class="text-green-600 text-xs">Are you a teacher?</p>
     <span class="material-icons text-green-600">list</span>
-    <p class="text-green-600 text-xs"> a job here +</p>
+    <p class="text-green-600 text-xs"> pick a job here +</p>
 
     <span id="badge"
         class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
@@ -1374,7 +1375,7 @@
      onclick="openBooksHub()">
 
   <p class="text-xs text-blue-500 font-semibold">
-    Sell your old books? +
+    want to sell old books? +
   </p>
 
   <span class="material-icons text-blue-500">
@@ -1382,7 +1383,7 @@
   </span>
 
   <p class="text-xs text-blue-500 font-semibold">
-    Buy an old book? +
+    want a particular book? +
   </p>
 
 </div>
@@ -1399,12 +1400,12 @@
   
 
   <!-- Profile -->
-  <div onclick="openProfile()" class="text-center cursor-pointer">
+  <!--div onclick="openProfile()" class="text-center cursor-pointer">
     <img id="footerProfile"
          class="w-8 h-8 rounded-full mx-auto object-cover border"
          src="https://via.placeholder.com/150" />
     <p class="text-xs">You</p>
-  </div>
+  </div-->
 </div>
 
 <!-- Teacher Requests Popup -->
@@ -2234,66 +2235,84 @@ document.getElementById('openMenuBtn').onclick = () => {
 
 
 
-// === Load Public Quiz Feed from JAMB past questions ===
-let allQuizzesGlobal = []; // store all quizzes globally
+let allQuizzesGlobal = []; 
 
 async function loadPublicFeed() {
     const feed = document.getElementById("publicFeed");
-    feed.innerHTML = ""; // clear old feed
-    allQuizzesGlobal = []; // reset global array
+    feed.innerHTML = ""; 
+    allQuizzesGlobal = []; 
 
     const authors = ["Ada", "Urum", "Ibrahim", "Nwamaka", "Fatima", "Iroha", "Amiri"];
     const times = ["3h ago", "5h ago", "1 day ago", "2 days ago", "3 days ago"];
+    
+    // Define the different exam types and subjects
+    const categories = ['jamb', 'common_entrance', 'ACCA'];
+    const years = [2020, 2021, 2022, 2023];
+    const subjects = ["english", "maths", "physics", "chemistry", "biology", "economics", "literature", "F1", "F3"];
+
+    const fetchPromises = [];
+
+    // 1. Create a promise for every possible file combination
+    for (const cat of categories) {
+        for (const year of years) {
+            for (const subject of subjects) {
+                const url = `past_questions/${cat}_${year}_${subject}.json`;
+                
+                const promise = fetch(url)
+                    .then(async (res) => {
+                        if (!res.ok) return null;
+                        const data = await res.json();
+                        // Add metadata so we know which category/year this data came from
+                        return { data, cat, year, subject };
+                    })
+                    .catch(() => null); // Ignore files that don't exist
+                
+                fetchPromises.push(promise);
+            }
+        }
+    }
 
     try {
-        const categories =['jamb', 'common entrance', 'acca']
-        const years = [2020, 2021, 2022, 2023];
-        const subjects = ["english","maths","physics","chemistry","biology","economics","literature",];
-      
-          for (const year of years) {
-              for (const subject of subjects) {
-                  try {
-                      const res = await fetch(`past_questions/jamb_${year}_${subject}.json`);
-                      if (!res.ok) continue;
-                      const data = await res.json();
-                      if (!data.quiz || !Array.isArray(data.quiz)) continue;
+        // 2. Load all files in parallel for better speed
+        const results = await Promise.all(fetchPromises);
 
-                      const normalized = data.quiz.map(q => {
-                          let optionsArr = Array.isArray(q.options) ? q.options.slice(0,4) :
-                                          q.options && typeof q.options === "object" ? ["A","B","C","D"].map(k => q.options[k]).filter(v => v) :
-                                          ["A","B","C","D"];
-                          let correctIndex = typeof q.correct === "string" ? letterToIndex(q.correct) :
-                                            typeof q.answer === "string" ? letterToIndex(q.answer) :
-                                            Number.isInteger(q.correct) ? q.correct :
-                                            Number.isInteger(q.answer) ? q.answer : 0;
+        for (const item of results) {
+            if (!item || !item.data.quiz || !Array.isArray(item.data.quiz)) continue;
 
-                          return {
-                              title: `${subject.charAt(0).toUpperCase() + subject.slice(1)}: ${q.question?.slice(0,50) || "Untitled"}`,
-                              author: authors[Math.floor(Math.random()*authors.length)],
-                              question: q.question || "Untitled question",
-                              options: optionsArr,
-                              correct: correctIndex,
-                              time: times[Math.floor(Math.random()*times.length)]
-                          };
-                      });
+            const normalized = item.data.quiz.map(q => {
+                // Determine options format (Array vs Object)
+                let optionsArr = Array.isArray(q.options) ? q.options.slice(0, 4) :
+                                q.options && typeof q.options === "object" ? ["A", "B", "C", "D"].map(k => q.options[k]).filter(v => v) :
+                                ["A", "B", "C", "D"];
 
-                      allQuizzesGlobal.push(...normalized);
+                // Convert letter answers to index
+                let correctIndex = typeof q.correct === "string" ? letterToIndex(q.correct) :
+                                  typeof q.answer === "string" ? letterToIndex(q.answer) :
+                                  Number.isInteger(q.correct) ? q.correct : 0;
 
-                  } catch (err) {
-                      console.warn(`Could not load ${year} ${subject}:`, err);
-                  }
-              }
-          }
+                return {
+                    title: `[${item.cat.toUpperCase()}] ${item.subject.charAt(0).toUpperCase() + item.subject.slice(1)} (${item.year})`,
+                    author: authors[Math.floor(Math.random() * authors.length)],
+                    question: q.question || "Untitled question",
+                    options: optionsArr,
+                    correct: correctIndex,
+                    time: times[Math.floor(Math.random() * times.length)]
+                };
+            });
 
-          renderFeedBatch(); // render first 10
+            allQuizzesGlobal.push(...normalized);
+        }
 
-      } catch (err) {
-          console.error("Error loading public feed:", err);
-          feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
-      }
-    
-    
-  }
+        // 3. Shuffle the final feed so different categories are mixed together
+        allQuizzesGlobal.sort(() => Math.random() - 0.5);
+
+        renderFeedBatch(); 
+
+    } catch (err) {
+        console.error("Error loading combined public feed:", err);
+        feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
+    }
+}
 
 // Function to render 10 random quizzes from global array
 function renderFeedBatch() {
@@ -2339,15 +2358,43 @@ function renderFeedBatch() {
     });
 
     // Add Load More button
+  
+document.getElementById('publicFeed').style.paddingBottom = "50vh"; 
+
+// 2. Updated renderFeedBatch logic for the button
+function renderFeedBatch() {
+    const feed = document.getElementById("publicFeed");
+    
+    // Clear old button
+    const existingButton = document.querySelector("#loadMoreBtn");
+    if (existingButton) existingButton.remove();
+
+    // ... (Your logic to slice and append new question cards) ...
+
+    // Add Load More button with high bottom margin
     const loadMore = document.createElement("button");
+    loadMore.id = "loadMoreBtn";
     loadMore.textContent = "Load More";
-    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 hover:bg-gray-400 ";
-    loadMore.addEventListener("click", renderFeedBatch);
+    
+    // mb-40 (10rem) or mb-[25vh] ensures it sits above the footer
+    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 mb-40 hover:bg-gray-400 block mx-auto transition-all";
+    
+    loadMore.addEventListener("click", () => {
+        renderFeedBatch();
+        // Optional: Smooth scroll slightly so the user sees new content
+        window.scrollBy({ top: 150, behavior: 'smooth' });
+    });
+
     feed.appendChild(loadMore);
-  // Show feed, hide quiz app
+
+    // Initial view setup
     document.getElementById('publicFeed').classList.remove('hidden');
     document.getElementById('app').classList.add('hidden');
-    window.scroll({top:0, behavior:"smooth"});
+    
+    // Use scroll-padding-bottom for better browser behavior with fixed elements
+    document.documentElement.style.scrollPaddingBottom = "100px"; 
+}
+
    
  
 
