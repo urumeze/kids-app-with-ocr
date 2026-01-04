@@ -23,7 +23,7 @@ async function verifyAuth(req, res, next) {
   if (!idToken) return res.status(401).json({ error: "Missing auth token" });
 
   try {
-    const decoded = await auth().verifyIdToken(idToken);
+    const decoded = await auth.verifyIdToken(idToken);
     req.user = { uid: decoded.uid, email: decoded.email || null };
     next();
   } catch (err) {
@@ -104,7 +104,7 @@ router.post("/create", verifyAuth, upload.single("image"), async (req, res) => {
       updatedAt: firestore.FieldValue.serverTimestamp(),
     };
 
-    const docRef = await db.collection("posts").add(postDoc);
+    const docRef = await firestore.collection("posts").add(postDoc);
     const saved = await docRef.get();
 
     res.json({ success: true, id: docRef.id, post: { id: docRef.id, ...saved.data() } });
@@ -198,7 +198,7 @@ router.post("/teacher", upload.single("image"), async (req, res) => {
 router.get("/feed", async (req, res) => {
   try {
     const limit = Math.min(parseInt(req.query.limit || "20", 10), 100);
-    const postsSnap = await db.collection("posts").orderBy("createdAt", "desc").limit(limit).get();
+    const postsSnap = await firestore.collection("posts").orderBy("createdAt", "desc").limit(limit).get();
     const posts = postsSnap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     res.json({ success: true, posts });
   } catch (err) {
@@ -214,7 +214,7 @@ router.post("/like/:postId", verifyAuth, async (req, res) => {
   try {
     const uid = req.user.uid;
     const postId = req.params.postId;
-    const postRef = db.collection("posts").doc(postId);
+    const postRef = firestore.collection("posts").doc(postId);
 
     await db.runTransaction(async (tx) => {
       const snap = await tx.get(postRef);

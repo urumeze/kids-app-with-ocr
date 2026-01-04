@@ -664,15 +664,11 @@
 
 
 <!-- Teacher Form Overlay -->
-<div id="teacherFormOverlay"
-     class="fixed inset-0 bg-black bg-opacity-60 hidden flex justify-center items-center p-4 z-50">
-
+<div id="teacherFormOverlay" class="fixed inset-0 bg-black bg-opacity-60 hidden flex justify-center items-center p-4 z-50">
   <div class="bg-white rounded-2xl p-6 w-full max-w-sm space-y-3">
-
       <h2 class="text-xl font-semibold text-center mb-2">Teacher Profile</h2>
 
-      <input type="text" id="teacherName" placeholder="Name"
-        class="w-full border p-2 rounded-xl"/>
+      <input type="text" id="teacherName" placeholder="Full Name" class="w-full border p-2 rounded-xl"/>
 
       <select id="teacherGender" class="w-full border p-2 rounded-xl">
           <option value="">Select gender</option>
@@ -680,19 +676,15 @@
           <option value="Female">Female</option>
       </select>
 
-      <input type="text" id="teacherSubject" placeholder="Subject"
-        class="w-full border p-2 rounded-xl"/>
+      <input type="text" id="teacherSubject" placeholder="Subject (e.g. Maths, English)" class="w-full border p-2 rounded-xl"/>
+      <input type="tel" id="teacherPhoneNumber" placeholder="Phone number or Whatsapp number " class="w-full border p-2 rounded-xl"/>
+      <input type="file" id="teacherImage" accept="image/*" class="w-full"/>
 
-      <input type="file" id="teacherImage" accept="image/*"
-        class="w-full"/>
-
-      <button id="submitTeacherPost"
-        class="bg-green-600 text-white w-full py-2 rounded-xl shadow">
-        Submit
+      <button id="submitTeacherPost" class="bg-green-600 text-white w-full py-2 rounded-xl shadow font-bold">
+        Submit Profile
       </button>
 
-      <button id="closeTeacherPost"
-        class="text-gray-600 w-full py-2 underline">
+      <button id="closeTeacherPost" class="text-gray-600 w-full py-2 underline">
         Cancel
       </button>
   </div>
@@ -782,7 +774,7 @@
 </div>
 
 <!-- Notification/Payment Modal -->
-<div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-60 hidden z-50 flex items-center justify-center p-4">
+<div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-60 hidden z-[60] flex items-center justify-center p-4">
     <div class="bg-white rounded-xl w-full max-w-sm p-6 shadow-2xl relative">
         <!-- Close button (X) top right -->
         <button onclick="closePaymentModal()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 material-icons">close</button>
@@ -913,8 +905,8 @@
 </div>
 
 
-<div id="postBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center">
-  <div class="bg-white rounded-xl w-11/12 max-w-md p-6 max-h-[90vh] overflow-y-auto">
+<div id="postBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center overflow">
+  <div class="bg-white rounded-xl w-11/12 max-w-md p-6 max-h-[70vh] overflow-y-auto">
     <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Sell Books</h3>
     
     <form id="postBookForm" class="space-y-3">
@@ -1359,9 +1351,9 @@
 
 <!-- Requests Button (with red badge) -->
 <div class="relative text-center cursor-pointer" onclick="openRequests()">
-    <p class="text-green-600 text-xs">Are you a teacher?</p>
+    <p class="text-green-600 text-xs">Do u need a teacher?</p>
     <span class="material-icons text-green-600">list</span>
-    <p class="text-green-600 text-xs"> pick a job here +</p>
+    <p class="text-green-600 text-xs"> Meet our teachers +</p>
 
     <span id="badge"
         class="hidden absolute -top-1 -right-2 bg-red-600 text-white 
@@ -1408,47 +1400,109 @@
   </div-->
 </div>
 
-<!-- Teacher Requests Popup -->
-<div id="requestsPopup"
-     class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-    
-    <div class="bg-white w-11/12 max-w-md p-4 rounded-lg shadow-lg">
-        <h2 class="text-xl font-bold mb-3">Teacher Requests</h2>
+<!-- Teacher Profiles Modal -->
+<div id="teacherModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-xl w-full max-w-4xl max-h-[85vh] flex flex-col shadow-2xl">
+        <!-- Header -->
+        <div class="p-5 border-b flex justify-between items-center bg-green-600 text-white rounded-t-xl">
+            <h2 class="text-xl font-bold">Available Teachers</h2>
+            <button onclick="closeModal()" class="hover:bg-green-700 p-1 rounded-full transition">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        
+        <!-- Profile Grid -->
+        <div id="profileGrid" class="p-6 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic cards will appear here -->
+        </div>
+    </div>
+</div>
 
-        <!-- ADDED: Filter Controls -->
-        <div class="mb-3 flex gap-2">
-            <select id="filterSubject" onchange="openRequests()" class="p-2 border rounded w-1/2">
-                <option value="">All Subjects</option>
-                <!-- Add specific subjects you offer here -->
-                <option value="Maths">Maths</option>
-                <option value="English">English</option>
-                <option value="Biology">Biology</option>
-                <option value="Physics">Physics</option>
-                <option value="Chemistry">Chemistry</option>
-                <option value="Igbo">Igbo</option>
-                <option value="French">French</option>
-                <option value="Yoruba">Yoruba</option>
-                <option value="Hausa">Hausa</option>
-            </select>
-            
-            <select id="filterGender" onchange="openRequests()" class="p-2 border rounded w-1/2">
+<!-- Teachers Catalogue Modal -->
+<div id="teachersCatalogueModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl">
+        <!-- Header -->
+        <div class="p-4 border-b flex justify-between items-center bg-green-600 text-white rounded-t-2xl">
+            <h2 class="text-xl font-bold">Our Teachers</h2>
+            <button onclick="closeTeachersModal()" class="text-white hover:bg-green-700 rounded-full p-1 transition">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="p-4 border-b bg-white flex flex-col sm:flex-row gap-3">
+            <div class="relative flex-1">
+                <input type="text" id="teacherSearch" oninput="filterTeachers()" placeholder="Search name or subject..." 
+                       class="w-full pl-3 pr-3 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            <select id="genderFilter" onchange="filterTeachers()" class="py-2 px-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500">
                 <option value="">All Genders</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
         </div>
-        <!-- END ADDED -->
 
-        <div id="requestsList" class="space-y-3 max-h-80 overflow-y-auto">
-            <!-- Requests will be injected here -->
+        <!-- Teacher List Container -->
+        <div id="teacherList" class="p-6 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-gray-50">
+            <!-- Cards will be injected here -->
         </div>
-
-        <button onclick="closeRequests()"
-                class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">
-            Close
-        </button>
     </div>
 </div>
+
+<!-- 🔋 Top Up Wallet Modal -->
+<div id="topupModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 transition-all">
+  <!-- Modal Container -->
+  <div class="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md mx-4 transform transition-all">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-4">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-800">Top Up Wallet</h2>
+        <p class="text-sm text-gray-500">Select a package to continue</p>
+      </div>
+      <button onclick="closeTopupModal()" class="text-gray-400 hover:text-gray-600 p-1">
+        <svg xmlns="www.w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Coin Options -->
+    <div class="space-y-3">
+      <button onclick="selectTopup(100)" class="group w-full border-2 border-gray-100 rounded-xl p-4 flex justify-between items-center hover:border-blue-500 hover:bg-blue-50 transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">💰</span>
+          <span class="font-semibold text-gray-700 group-hover:text-blue-700">100 Coins</span>
+        </div>
+        <span class="bg-gray-100 px-3 py-1 rounded-lg text-sm font-bold text-gray-600 group-hover:bg-blue-100 group-hover:text-blue-700">₦1,000</span>
+      </button>
+
+      <button onclick="selectTopup(250)" class="group w-full border-2 border-gray-100 rounded-xl p-4 flex justify-between items-center hover:border-blue-500 hover:bg-blue-50 transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🪙</span>
+          <span class="font-semibold text-gray-700 group-hover:text-blue-700">250 Coins</span>
+        </div>
+        <span class="bg-gray-100 px-3 py-1 rounded-lg text-sm font-bold text-gray-600 group-hover:bg-blue-100 group-hover:text-blue-700">₦2,000</span>
+      </button>
+
+      <button onclick="selectTopup(500)" class="group w-full border-2 border-gray-100 rounded-xl p-4 flex justify-between items-center hover:border-blue-500 hover:bg-blue-50 transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">💎</span>
+          <span class="font-semibold text-gray-700 group-hover:text-blue-700">500 Coins</span>
+        </div>
+        <span class="bg-gray-100 px-3 py-1 rounded-lg text-sm font-bold text-gray-600 group-hover:bg-blue-100 group-hover:text-blue-700">₦3,000</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-6">
+      <button onclick="closeTopupModal()" class="w-full py-3 text-gray-500 font-medium hover:text-gray-700 transition-colors">
+        Maybe Later
+      </button>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -2504,170 +2558,88 @@ window.addEventListener("DOMContentLoaded", () => {
 const openTeacherPost = document.getElementById("openTeacherPost");
 const teacherFormOverlay = document.getElementById("teacherFormOverlay");
 const closeTeacherPost = document.getElementById("closeTeacherPost");
+const submitTeacherPost = document.getElementById("submitTeacherPost");
 
-openTeacherPost.onclick = () => teacherFormOverlay.classList.remove("hidden");
-closeTeacherPost.onclick = () => teacherFormOverlay.classList.add("hidden");
-
-// Store Teacher Posts Here
+// Store Teacher Posts Locally
 let teacherPosts = []; 
-let teacherOverlayInterval = null;
 
-// Function for submitting a new Teacher Post
-document.getElementById("submitTeacherPost").onclick = async () => {
+// 1. Toggle Overlay
+openTeacherPost.onclick = () => teacherFormOverlay.classList.remove("hidden");
+closeTeacherPost.onclick = () => {
+    teacherFormOverlay.classList.add("hidden");
+    resetTeacherForm();
+};
+
+// 2. Helper to reset form fields
+const resetTeacherForm = () => {
+    document.getElementById("teacherName").value = "";
+    document.getElementById("teacherGender").value = "";
+    document.getElementById("teacherSubject").value = "";
+    document.getElementById("teacherPhoneNumber").value = "";
+    document.getElementById("teacherImage").value = "";
+};
+
+// 3. Submit Handler
+submitTeacherPost.onclick = async () => {
+    // 1. Get the current logged-in user
+    const user = auth.currentUser; 
+    if (!user) {
+        alert("You must be signed in to submit a profile.");
+        return;
+    }
+
+    // Collect values from form
     const name = document.getElementById("teacherName").value.trim();
     const gender = document.getElementById("teacherGender").value;
     const subject = document.getElementById("teacherSubject").value.trim();
+    const phone = document.getElementById("teacherPhoneNumber").value.trim();
     const imageFile = document.getElementById("teacherImage").files[0];
 
-    if (!name || !gender || !subject) {
-        alert("Please fill all fields");
+    if (!name || !gender || !subject || !phone || !imageFile) {
+        alert("All fields including an image are required.");
         return;
     }
-    
-    // An image is required for this specific backend endpoint (/api/teacher)
-    if (!imageFile) {
-       alert("An image file is required.");
-       return;
-    }
 
+    // 2. Fetch the secure ID Token from Firebase
+    const idToken = await user.getIdToken(); 
 
     const formData = new FormData();
     formData.append("name", name);
     formData.append("gender", gender);
     formData.append("subject", subject);
-    // Since we validated above, we know imageFile exists
-    formData.append("image", imageFile); 
+    formData.append("phone", phone);
+    formData.append("image", imageFile);
+    formData.append("teacherEmail", user.email);
+
+    submitTeacherPost.disabled = true;
+    submitTeacherPost.innerText = "Saving...";
 
     try {
-        // FIX APPLIED: Changed the fetch URL from /upload/teacher to /api/teacher
         const res = await fetch("/api/teacher", {
             method: "POST",
+            headers: {
+                // 3. Send the token in the Authorization header
+                "Authorization": `Bearer ${idToken}` 
+            },
             body: formData
         });
 
         const data = await res.json();
-
         if (data.success) {
             alert("Teacher profile saved!");
-            // Assuming 'teacherFormOverlay' is defined globally in your script
-            if (typeof teacherFormOverlay !== 'undefined') {
-                teacherFormOverlay.classList.add("hidden");
-                // Optional: Reset the form fields upon success
-                document.getElementById("teacherName").value = "";
-                document.getElementById("teacherGender").value = "";
-                document.getElementById("teacherSubject").value = "";
-                document.getElementById("teacherImage").value = "";
-            }
-
-            // Assuming 'teacherPosts' is defined globally in your script
-            if (typeof teacherPosts !== 'undefined') {
-                 teacherPosts.push({
-                    name,
-                    gender,
-                    subject,
-                    image: data.imageUrl || null
-                });
-                // Optional: Call a function to refresh the list of displayed teachers
-            }
-
+            teacherFormOverlay.classList.add("hidden");
+            resetTeacherForm();
         } else {
-            alert("Failed to save: " + (data.error || "Unknown error"));
+            alert("Failed: " + (data.error || "Unknown error"));
         }
     } catch (err) {
-        console.error(err);
-        alert("Error submitting form. Check console for details.");
+        console.error("Submission Error:", err);
+    } finally {
+        submitTeacherPost.disabled = false;
+        submitTeacherPost.innerText = "Submit Profile";
     }
 };
 
-
-// ----------------------
-// Rotating Teacher Overlay (Top Bar)
-// ----------------------
-const teacherAdOverlay = document.getElementById("teacherAdOverlay");
-
-// Ensure 'teacherAdOverlay' variable is defined globally or within scope
-// e.g., const teacherAdOverlay = document.getElementById("teacherAdOverlay");
-
-function showTeacherAdOverlay() {
-    if (!teacherPosts.length) return;
-
-    teacherAdOverlay.innerHTML = "";
-
-    teacherPosts.forEach(post => {
-        // ... (your existing card creation logic remains the same) ...
-        const card = document.createElement("div");
-        card.className = "flex bg-gray-100 rounded-lg p-2 items-center space-x-3 min-w-[200px] shadow";
-
-        card.innerHTML = `
-            <div>
-              <img src="${post.image || post.imageUrl}" class="w-16 h-16 rounded-full object-cover" />
-
-            </div>
-            
-            <div>
-                <p class="font-bold">${post.name}</p>
-                <p class="text-sm">${post.gender}</p> 
-                <p class="font-bold">subject: ${post.subject}</p>
-            </div>
-        `;
-        teacherAdOverlay.appendChild(card);
-    });
-
-    // --- ADDED TAILWIND CLASSES HERE ---
-    // These classes make the overlay stick to the top-center of the screen
-    teacherAdOverlay.classList.remove("hidden");
-    teacherAdOverlay.classList.add(
-        "fixed",           // Position it relative to the viewport
-        "top-12",           // 1rem from the top
-        "left-1/2",        // Start at the middle horizontal point
-        "-translate-x-1/2",// Pull it back half its own width to center it perfectly
-        "z-50",            // Ensure it appears on top of other content
-        "flex",            // Use flexbox to line up the cards (assuming you want a row of ads)
-        "space-x-4",       // Add spacing between the individual ad cards
-        "p-4",             // Some padding around the entire overlay container
-        "rounded-lg",      // Make the container itself look nice
-        "bg-white",        // Give the container a background
-        "shadow-2xl"       // Strong shadow for visibility
-    );
-
-
-    setTimeout(() => {
-        // When hiding, ensure you remove the flex class if "hidden" relies on display: none
-        teacherAdOverlay.classList.add("hidden");
-        // Optional: Remove fixed classes if you plan to reuse the element for other purposes later
-        // teacherAdOverlay.classList.remove("fixed", "top-4", "left-1/2", "-translate-x-1/2", "z-50", ...); 
-    }, 30000);
-}
-
-
-function startTeacherOverlayCycle() {
-    showTeacherAdOverlay();
-
-    if (teacherOverlayInterval) clearInterval(teacherOverlayInterval);
-
-    teacherOverlayInterval = setInterval(showTeacherAdOverlay, 5*60 * 1000);
-}
-
-// ❌ REMOVED AUTOMATIC START HERE
-// startTeacherOverlayCycle();
-
-
-// ----------------------
-// Fetch teachers from backend (3 only)
-// ----------------------
-async function fetchRandomTeachers() {
-    const res = await fetch("/upload/teachers/random");
-    const data = await res.json();
-
-    if (!data.success) return;
-
-    // Always pick the first 3
-    teacherPosts = data.teachers.slice(0, 3);
-    
-    startTeacherOverlayCycle();
-}
-
-fetchRandomTeachers();
 
 // -------------------------------
 // POINTS + GQ SYSTEM
@@ -2676,22 +2648,46 @@ let userPoints = parseInt(localStorage.getItem("userCoins")) || 0;
 let userGQ = parseInt(localStorage.getItem("userGQ")) || 0;
 
 // Update UI
-function updateUI() {
-    document.getElementById("coinNumber").textContent = userPoints;
-    document.getElementById("GqCount").textContent = userGQ;
+// Run this once when the user logs in
+function setupWalletListener(uid) {
+    const userRef = firestore.collection("users").doc(uid);
 
-    // Save
+    // This listens for real-time changes in the database
+    userRef.onSnapshot((doc) => {
+        if (doc.exists) {
+            const data = doc.data();
+            
+            // Sync local variables with Database
+            userPoints = data.coinBalance || 0;
+            // If you have a GQ field in Firestore, sync it here too
+            // userGQ = data.gqBalance || 0; 
+
+            // Trigger your existing UI update logic
+            renderWalletUI();
+        }
+    }, (error) => {
+        console.error("Wallet Sync Error:", error);
+    });
+}
+
+// 2. Modified UI Function (Handles only the Visuals)
+function renderWalletUI() {
+    const coinEl = document.getElementById("coinNumber");
+    const gqEl = document.getElementById("GqCount");
+
+    if (coinEl) coinEl.textContent = userPoints;
+    if (gqEl) gqEl.textContent = userGQ;
+
+    // Update localStorage as a backup/cache
     localStorage.setItem("userCoins", userPoints);
     localStorage.setItem("userGQ", userGQ);
 
-    // Animation
-    document.getElementById("GqCount").classList.add("scale-110");
-    setTimeout(() => {
-        document.getElementById("GqCount").classList.remove("scale-110");
-    }, 200);
+    // Trigger your existing animation
+    if (gqEl) {
+        gqEl.classList.add("scale-110", "text-purple-600");
+        setTimeout(() => gqEl.classList.remove("scale-110", "text-purple-600"), 200);
+    }
 }
-
-updateUI();
 
 // -------------------------------
 // OPEN / CLOSE MODAL
@@ -2707,229 +2703,153 @@ document.getElementById("closeConvertModal").onclick = () => {
 // -------------------------------
 // CONVERSION LOGIC
 // -------------------------------
-document.getElementById("confirmConvert").onclick = () => {
+document.getElementById("confirmConvert").onclick = async () => {
     const from = document.getElementById("convertFrom").value;
     const to = document.getElementById("convertTo").value;
     const amount = parseInt(document.getElementById("convertAmount").value);
+    const user = firebase.auth().currentUser;
 
-    if (!amount || amount <= 0) {
-        alert("Enter a valid amount.");
-        return;
-    }
+    if (!user || !amount || amount <= 0) return alert("Invalid entry or not logged in.");
+    if (from === to) return alert("Cannot convert same units.");
 
-    // Prevent converting to same type
-    if (from === to) {
-        alert("Cannot convert to the same unit.");
-        return;
-    }
+    try {
+        const idToken = await user.getIdToken();
+        const res = await fetch("/api/convertCurrency", {
+            method: "POST",
+            headers: { 
+                "Authorization": `Bearer ${idToken}`,
+                "Content-Type": "application/json" 
+            },
+            body: JSON.stringify({ from, to, amount })
+        });
 
-    // POINTS → GQ
-    if (from === "points" && to === "gq") {
-        if (userPoints <= 0) {
-            alert("You don't have enough points.");
-            return;
+        const data = await res.json();
+        if (data.success) {
+            alert("✅ Conversion Successful! Firebase updated.");
+            // No need to manually update userPoints here; 
+            // your onSnapshot listener will handle the UI update automatically.
+            document.getElementById("convertModal").style.display = "none";
+        } else {
+            alert("Failed: " + data.error);
         }
-
-        let pointsToUse = Math.min(amount, userPoints);
-        let gqEarned = Math.floor(pointsToUse / 100);
-        let leftover = pointsToUse % 100;
-
-        if (gqEarned === 0) {
-            alert("Not enough points. You need 100pts = 1 GQ.");
-            return;
-        }
-
-        userPoints -= pointsToUse;
-        userPoints += leftover; // return leftover
-
-        userGQ += gqEarned;
-        alert(`Converted ${pointsToUse} points → ${gqEarned} GQ`);
-
-        updateUI();
+    } catch (err) {
+        console.error("Conversion error:", err);
     }
-
-    // GQ → POINTS
-    if (from === "gq" && to === "points") {
-        if (userGQ <= 0) {
-            alert("You have no GQ to convert.");
-            return;
-        }
-
-        let gqToUse = Math.min(amount, userGQ);
-        let pointsGained = gqToUse * 100;
-
-        userGQ -= gqToUse;
-        userPoints += pointsGained;
-
-        alert(`Converted ${gqToUse} GQ → ${pointsGained} points`);
-        updateUI();
-    }
-
     // Close modal after conversion
     document.getElementById("convertModal").style.display = "none";
 };
 
+    
 
 
-// ----------------------
-// Request a Teacher Form Overlay
-// ----------------------
-
-const openRequestButton = document.getElementById("openCreateRequest");
-const requestFormOverlay = document.getElementById("requestFormOverlay");
-
-// Ensure these functions are in the global scope if your HTML uses onclick=...
-window.openCreateRequest = function openCreateRequest() {
-    requestFormOverlay.classList.remove("hidden");
-    requestFormOverlay.classList.add("flex");
-};
-
-window.closeCreateRequest = function closeCreateRequest() {
-    requestFormOverlay.classList.add("hidden");
-    requestFormOverlay.classList.remove("flex");
-
-    document.getElementById("reqSubject").value = "";
-    document.getElementById("reqTopic").value = "";
-    document.getElementById("reqGender").value = "";
-    document.getElementById("reqImage").value = "";
-};
-
-let teacherRequest = []; 
-
-document.getElementById("submitRequest").addEventListener("click", async () => {
-    const subject = document.getElementById("reqSubject").value.trim();
-    const topic = document.getElementById("reqTopic").value.trim();
-    const gender = document.getElementById("reqGender").value.trim();
-    const imageFile = document.getElementById("reqImage").files[0];
-    const user = firebase.auth().currentUser;
-
-    if (!topic || !gender || !subject) {
-        alert("Please fill all fields");
-        return;
-    }
-
-    const formData = new FormData();
-    formData.append("subject", subject);
-    formData.append("topic", topic);
-    formData.append("studentEmail", user.email);
-    formData.append("gender", gender);
-    if (imageFile) formData.append("image", imageFile);
-
-    try {
-        // FIX APPLIED: Changed the fetch URL from /upload/requestTeacher to /api/requestTeacher
-        const res = await fetch("/api/requestTeacher", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await res.json();
-
-        if (data.success) {
-            alert("Teacher request successful!");
-            closeCreateRequest();
-            updateRequestBadge(); // Refresh the badge count after a successful submission
-
-            teacherRequest.push({
-                subject,
-                topic,
-                gender,
-                image: data.imageUrl || null
-            });
-
-        } else {
-            alert("Failed to make request");
-        }
-    } catch (err) {
-        console.error(err);
-        alert("Error submitting form. Check console for details.");
-    }
-});
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    updateRequestBadge();
-});
-
-/* Fetch badge count */
-// Ensure this function is in the global scope if accessed elsewhere (e.g. window.updateRequestBadge)
-async function updateRequestBadge() {
-    try {
-        // FIX APPLIED: Changed the fetch URL to the consolidated /api/requestCount
-        const res = await fetch("/api/requestCount");
-        const data = await res.json();
-
-        const badge = document.getElementById("badge");
-
-        if (data.success && data.count > 0) {
-            badge.innerText = data.count;
-            badge.classList.remove("hidden");
-        } else {
-            badge.classList.add("hidden");
-        }
-    } catch {
-        console.log("Badge fetch error");
-    }
-}
 
 
 /* Open Requests Popup (Updated function to include filters) */
-window.openRequests = async function openRequests() {
-    const popup = document.getElementById("requestsPopup");
-    popup.classList.remove("hidden");
+const teacherModal = document.getElementById('teacherModal');
+const profileGrid = document.getElementById('profileGrid');
 
-    const container = document.getElementById("requestsList");
-    container.innerHTML = "<p>Loading...</p>";
+// Function to open the modal and fetch profiles
+// --- Navigation Trigger ---
+function openRequests() { // Triggered by your existing "meet our teachers +" button
+    document.getElementById("teachersCatalogueModal").classList.remove("hidden");
+    fetchTeachersData(); 
+}
 
-    // Get the selected values from the new filter dropdowns
-    const subjectFilter = document.getElementById("filterSubject").value;
-    const genderFilter = document.getElementById("filterGender").value;
+function closeTeachersModal() {
+    document.getElementById("teachersCatalogueModal").classList.add("hidden");
+}
 
-    // Construct the query parameters string
-    const queryParams = new URLSearchParams();
-    if (subjectFilter) queryParams.append("subject", subjectFilter);
-    if (genderFilter) queryParams.append("gender", genderFilter);
+// --- Data Fetching (Matching fetchCatalogueData) ---
+/* --- Global State --- */
+let allTeachers = []; // Global variable to store fetched data
 
-    // Build the final fetch URL with parameters
-    const url = `/api/getAllTeacherRequests?${queryParams.toString()}`;
+function openRequests() {
+    document.getElementById("teachersCatalogueModal").classList.remove("hidden");
+    fetchTeachersData(); 
+}
 
+function closeTeachersModal() {
+    document.getElementById("teachersCatalogueModal").classList.add("hidden");
+}
+
+async function fetchTeachersData() {
+    const list = document.getElementById("teacherList");
+    list.innerHTML = "<p class='col-span-full text-center py-10 text-gray-500 italic'>Finding available teachers...</p>";
+    
     try {
-        const res = await fetch(url);
+        const res = await fetch("/api/teachers"); 
         const data = await res.json();
-
-        if (!data.success || data.requests.length === 0) {
-            container.innerHTML = "<p>No requests matching filters.</p>";
-            return;
+        
+        if (data.success) {
+            allTeachers = data.data; // Save data for filtering
+            renderTeachers(allTeachers);
+        } else {
+            list.innerHTML = `<p class='col-span-full text-center py-10 text-red-500'>Error: ${data.error}</p>`;
         }
-        // ... (rest of the rendering logic remains the same as previous step) ...
-        container.innerHTML = data.requests.map(req => {
-            const isAccepted = req.status === 'accepted' || req.acceptedBy;
-            const statusText = isAccepted ? `<span class="text-green-600 font-semibold">Accepted by: ${req.acceptedBy}</span>` : '<span class="text-gray-500">Pending</span>';
-            const actionButton = isAccepted 
-                ? '' 
-                : `<button onclick="acceptRequest('${req.id}')" class="mt-2 bg-green-500 hover:bg-green-700 text-white p-2 rounded-lg">Accept Offer</button>`;
-
-            return `
-                <div class="p-3 border rounded shadow-sm">
-                    <p><b>Subject:</b> ${req.subject}</p>
-                    <p><b>Topic:</b> ${req.topic}</p>
-                    <p><b>Gender:</b> ${req.gender}</p>
-                    <div class="mt-2">${statusText}</div>
-                    ${req.imageUrl ? `<img src="${req.imageUrl}" class="mt-2 w-24 h-24 object-cover rounded" />` : ""}
-                    ${actionButton}
-                </div>
-            `;
-        }).join("");
-
-        updateRequestBadge();
     } catch (err) {
-        container.innerHTML = "<p>Error loading requests.</p>";
+        console.error("Fetch Error:", err);
+        list.innerHTML = "<p class='col-span-full text-center py-10 text-red-500'>Server connection failed.</p>";
     }
 }
-/* Close Popup */
-// Ensure this function is in the global scope if your HTML uses onclick=...
-window.closeRequests = function closeRequests() {
-    document.getElementById("requestsPopup").classList.add("hidden");
+
+// Filter Function
+function filterTeachers() {
+    const searchTerm = document.getElementById("teacherSearch").value.toLowerCase();
+    const genderValue = document.getElementById("genderFilter").value;
+
+    const filtered = allTeachers.filter(teacher => {
+        const matchesSearch = teacher.name.toLowerCase().includes(searchTerm) || 
+                              teacher.subject.toLowerCase().includes(searchTerm);
+        const matchesGender = genderValue === "" || teacher.gender === genderValue;
+        return matchesSearch && matchesGender;
+    });
+
+    renderTeachers(filtered);
 }
+
+function renderTeachers(teachers) {
+    const list = document.getElementById("teacherList");
+    if (!teachers || teachers.length === 0) {
+        list.innerHTML = "<p class='col-span-full text-center py-10 text-gray-500'>No teachers found.</p>";
+        return;
+    }
+
+    list.innerHTML = teachers.map(teacher => `
+        <div class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col items-center">
+            <div class="relative mb-4">
+                <img src="${teacher.imageUrl || 'via.placeholder.com'}" 
+                     class="w-24 h-24 rounded-full object-cover border-4 border-green-50"
+                     alt="${teacher.name}">
+                <div class="absolute bottom-1 right-1 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>
+            </div>
+            
+            <h3 class="font-bold text-gray-800 text-lg">${teacher.name}</h3>
+            <p class="text-green-600 font-medium text-sm mb-3">${teacher.subject}</p>
+            
+            <div class="flex space-x-2 mb-4">
+                <span class="text-[10px] bg-gray-100 px-2 py-1 rounded-full text-gray-500 uppercase font-bold tracking-wider">
+                    ${teacher.gender}
+                </span>
+            </div>
+
+                        
+            <button onclick="handleAction('${teacher.id}', 'teacher')" 
+                    class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-xl text-sm font-bold transition-colors">
+                Contact Teacher
+            </button>co
+
+        </div>
+    `).join('');
+}
+
+/* --- Event Listeners for Filters --- */
+document.getElementById("teacherSearch")?.addEventListener("input", filterTeachers);
+document.getElementById("genderFilter")?.addEventListener("change", filterTeachers);
+
+
+
 // Add this new function to your frontend JS file:
 window.acceptRequest = async function acceptRequest(requestId) {
   if (!confirm("Are you sure you want to accept this request?")) return;
@@ -2974,6 +2894,7 @@ function home() {
   closePaymentModal()
   closeBooksCatalogueModal()
   renderFeedBatch();
+  window.scrollTo({top:0, behavior:"smooth"})
 
 };
 
@@ -3059,26 +2980,27 @@ document.getElementById("postBookForm").addEventListener("submit", async (e) => 
     const user = firebase.auth().currentUser;
     if (!user) return alert("Please log in first.");
 
+    const submitBtn = e.target.querySelector('button[type="submit"]');
     const formData = new FormData(e.target);
-
-    // FIX 1: Change "title[]" to "title" to match your HTML names
     const titles = formData.getAll("title"); 
     
-    // Check if the first title exists and isn't just empty space
     if (titles.length === 0 || !titles[0].trim()) {
         alert("Please add at least one book with a title.");
         return;
     }
 
+    // --- START LOADING STATE ---
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `<span class="animate-pulse">Uploading ${titles.length} Book(s)...</span>`;
+
     try {
         const token = await user.getIdToken();
         
-        // Note: "/api/postBook" must match your server route exactly
         const res = await fetch("/api/postBook", {
             method: "POST",
             headers: { 
                 "Authorization": `Bearer ${token}` 
-                // DO NOT add 'Content-Type': 'multipart/form-data' here!
+                // Reminder: Browser sets multipart/form-data boundary automatically
             },
             body: formData
         });
@@ -3086,20 +3008,20 @@ document.getElementById("postBookForm").addEventListener("submit", async (e) => 
         const data = await res.json();
         if (data.success) {
             alert(`✅ ${data.count || 'Books'} listed for sale!`);
-            
-            // Clean up
             e.target.reset();
             document.getElementById("bookEntriesContainer").innerHTML = '';
             closePostBookModal();
-            
-            // Optional: Refresh feed to show new books
             if(window.loadBooks) loadBooks(); 
         } else {
             alert("Failed to list books: " + data.error);
         }
     } catch (err) {
         console.error("Submission error:", err);
-        alert("Error submitting form. Is the server running?");
+        alert("Server error. Please check your connection.");
+    } finally {
+        // --- END LOADING STATE ---
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Post Book(s)";
     }
 });
 
@@ -3126,7 +3048,7 @@ document.getElementById("requestBookForm").addEventListener("submit", async (e) 
                 "Authorization": `Bearer ${token}`,
                 "Content-Type": "application/json" 
             },
-            body: JSON.stringify({ title, author, notes, location })
+            body: JSON.stringify({ title, author, notes, location,phoneNumber })
         });
 
         const data = await res.json();
@@ -3243,23 +3165,206 @@ function renderCatalogue() {
 
 
  // Step 1: Open the Payment Information Modal
+// Ensure this variable is declared globally in your frontend script
+let pendingAction = null;
+
+function openTopupWalletModal() {
+  document.getElementById("topupModal").classList.remove("hidden");
+  document.getElementById("topupModal").classList.add("flex");
+}
+
+function closeTopupModal() {
+  document.getElementById("topupModal").classList.add("hidden");
+  document.getElementById("topupModal").classList.remove("flex");
+}
+
+function selectTopup(coins) {
+  // 1. Assign selected coins to global variable as per your existing logic
+  selectedTopupCoins = coins;
+
+  // 2. Pricing in kobo (Subunit of NGN)
+  const prices = {
+    100: 100 * 100, // ₦1,000 -> 100,000 kobo
+    250: 2000 * 100, // ₦2,000 -> 200,000 kobo
+    500: 3000 * 100, // ₦3,000 -> 300,000 kobo
+  };
+
+  const user = firebase.auth().currentUser;
+  if (!user) return alert("Login required");
+
+  // 3. Initiate Transaction using V2 syntax
+  user.getIdToken().then(token => {
+    const paystack = new PaystackPop();
+    
+    paystack.newTransaction({
+      key: "pk_live_055df5963ca6c17db25a027d90a5bc1963b52f67", // Public key
+      email: user.email,
+      amount: prices[coins],
+      currency: "NGN",
+      
+      // onSuccess replaces the old callback property
+      onSuccess: (transaction) => {
+        // V2 returns the reference inside the transaction object
+        completeTopup(transaction.reference, coins);
+      },
+      
+      // onCancel replaces the old onClose property
+      onCancel: () => {
+        alert("Top up cancelled");
+      }
+    });
+    // Note: newTransaction() automatically opens the popup; openIframe() is no longer needed.
+  });
+}
+
+
+async function completeTopup(reference) {
+  const user = firebase.auth().currentUser;
+  const token = await user.getIdToken();
+
+  const res = await fetch("/api/wallet/topup", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify({
+      reference,
+      coins: selectedTopupCoins
+    })
+  });
+
+  const data = await res.json();
+
+  if (!data.success) {
+    alert("Top up failed");
+    return;
+  }
+
+  updateUI(data.newBalance);
+  closeTopupModal();
+
+  alert("🎉 Wallet topped up successfully!");
+}
+
+
 async function handleAction(id, type) {
     const user = firebase.auth().currentUser;
     if (!user) return alert("Please log in to respond to posts.");
 
-    // Store action globally or in a scoped variable
-    pendingAction = { id: id, type: type };
+    pendingAction = { id, type };
 
-    const payModal = document.getElementById("paymentModal");
-    if (payModal) {
-        payModal.classList.remove("hidden");
-    } else {
-        // Fallback confirmation
-        if (confirm("Connection costs ₦100. Your contact details will be shared. Proceed?")) {
-            proceedToPayment();
-        }
+    const cost = 5;
+    // Force to Number to ensure comparison works 100% of the time
+    const currentCoins = Number(userPoints) || 0; 
+
+    if (currentCoins < cost) {
+        // Logic: Alert blocks execution until "OK" is clicked
+        alert(`You have insufficient Gocoins. You need ${cost} Gocoins for this action.`);
+        
+        // This opens the modal from your HTML ID
+        openTopupWalletModal(); 
+        return;
+    }
+
+    // If user has enough coins, ask for confirmation
+    if (confirm(`This action will cost ${cost} Gocoins. Do you want to proceed?`)) {
+        await completeTransactionWithWalletDeduction();
     }
 }
+
+
+// Add this to your main <script> tag, NOT nested inside another function
+function updateUI(newBalance = null, newGQ = null) {
+    const coinEl = document.getElementById("coinNumber");
+    const gqEl = document.getElementById("GqCount");
+
+    if (newBalance !== null) {
+        userPoints = newBalance; // Update local state
+        if (coinEl) coinEl.textContent = newBalance;
+    }
+    
+    if (newGQ !== null) {
+        userGQ = newGQ; // Update local state
+        if (gqEl) gqEl.textContent = newGQ;
+    }
+
+    // 2026 UX: Feedback pulse
+    coinEl?.classList.add("text-green-500", "scale-110");
+    setTimeout(() => coinEl?.classList.remove("text-green-500", "scale-110"), 400);
+}
+
+// Global Alias (Fixes ReferenceError across all handlers)
+window.updateUI = updateUI;
+
+
+// --- NEW: Function to handle deduction (replaces the Paystack flow here) ---
+async function completeTransactionWithWalletDeduction() {
+    const { id, type } = pendingAction;
+    const user = firebase.auth().currentUser;
+    if (!user) return alert("Session expired. Please log in again.");
+
+    let endpoint;
+    if (type === 'sale') {
+        endpoint = `/api/acceptBookWithWallet/${id}`;
+    } else if (type === 'request' || type === 'book-request') {
+        endpoint = `/api/fulfillRequestWithWallet/${id}`;
+    } else if (type === 'teacher' || type === 'teacher-request') {
+        endpoint = `/api/acceptRequestWithWallet/${id}`;
+    } else {
+        alert("Unknown action type.");
+        return;
+    }
+
+    const phoneInput = document.getElementById("accepterPhone");
+    const accepterPhone = phoneInput ? phoneInput.value.trim() : "N/A";
+
+    try {
+        const token = await user.getIdToken();
+
+        const res = await fetch(endpoint, {
+            method: "POST",
+            headers: {
+                Authorization: `Bearer ${token}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ accepterPhone })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            alert("✅ Success! Check your email for contact details.");
+
+            if (data.newBalance !== undefined) {
+                userPoints = data.newBalance;
+                updateUI();
+            }
+
+            if (typeof closePaymentModal === "function") closePaymentModal();
+            if (typeof fetchCatalogueData === "function") fetchCatalogueData();
+            if (typeof fetchTeachersData === "function") fetchTeachersData();
+
+            pendingAction = null;
+
+        } else {
+            // 🔥 THIS IS THE IMPORTANT PART
+            if (data.error?.toLowerCase().includes("insufficient")) {
+                openTopupWalletModal();
+                return;
+            }
+
+            alert("Action failed: " + data.error);
+        }
+
+    } catch (err) {
+        console.error("Wallet Action Error:", err);
+        alert("An error occurred. Please try again.");
+    }
+}
+
+// Ensure the updated function is globally accessible
+window.completeTransactionWithWalletDeduction = completeTransactionWithWalletDeduction;
 
 // Step 2: Redirect to Paystack (v2 implementation)
 async function proceedToPayment() {
@@ -3277,19 +3382,25 @@ async function proceedToPayment() {
         paystack.newTransaction({
             key: "pk_live_055df5963ca6c17db25a027d90a5bc1963b52f67", 
             email: user.email,
-            amount: 10000, 
+            amount: 10000, // ₦100.00
             currency: "NGN",
+            // v2 uses 'onSuccess' inside the main object or via .resume()
             onSuccess: (transaction) => {
                 console.log("Payment Successful. Reference:", transaction.reference);
-                // Call the finalization function immediately
-                completeBookTransaction(transaction.reference, accepterPhone);
+                completeTransaction(transaction.reference, accepterPhone);
             },
             onCancel: () => {
-                console.log("User cancelled payment.");
                 alert('Transaction was cancelled.');
             },
-            onError: (error) => {
-                console.error("Paystack Popup Error:", error);
+            // Metadata helps you track the phone number in the Paystack dashboard
+            metadata: {
+                custom_fields: [
+                    {
+                        display_name: "Customer Phone",
+                        variable_name: "customer_phone",
+                        value: accepterPhone
+                    }
+                ]
             }
         });
     } catch (error) {
@@ -3308,17 +3419,26 @@ function closePaymentModal() {
 }
 
 // Step 3: Fulfill record (Server-side verification)
-async function completeBookTransaction(paymentReference, accepterPhone) {
-    // 1. Immediately hide the Paystack popup (handled by library)
-    // 2. Immediately hide your custom HTML modal
+async function completeTransaction(paymentReference, accepterPhone) {
+    // 1. UI Cleanup
     closePaymentModal(); 
 
-    const { id, type } = pendingAction;
+    const { id, type } = pendingAction; // type can now be 'sale', 'book-request', or 'teacher-request'
     const user = firebase.auth().currentUser;
 
     try {
         const token = await user.getIdToken();
-        const endpoint = type === 'sale' ? `/api/acceptBook/${id}` : `/api/fulfillRequest/${id}`;
+        
+        // 2. Determine the correct endpoint based on action type
+        let endpoint;
+        if (type === 'sale') {
+            endpoint = `/api/acceptBook/${id}`;
+        } else if (type === 'book-request') {
+            endpoint = `/api/fulfillRequest/${id}`;
+        } else if (type === 'teacher-request') {
+            // Updated to match your new teacher route
+            endpoint = `/api/fulfillTeacherRequest/${id}`; 
+        }
 
         const res = await fetch(endpoint, {
             method: "POST",
@@ -3335,12 +3455,16 @@ async function completeBookTransaction(paymentReference, accepterPhone) {
         const data = await res.json();
 
         if (data.success) {
-            alert("✅ Success! Check your email for details.");
+            alert("✅ Success! Connection made. Check your email for details.");
+            
+            // Refresh UI data
             if (typeof fetchCatalogueData === "function") fetchCatalogueData();
+            if (typeof fetchTeacherRequests === "function") fetchTeacherRequests();
+            
         } else {
-            // Re-open modal if there was a server error so they can see the issue
+            // 404 Troubleshooting: If you get a 404 here, ensure 'endpoint' matches your backend route exactly
             document.getElementById("paymentModal").classList.remove("hidden");
-            alert("Payment verified, but record update failed: " + data.error);
+            alert("Record update failed: " + data.error);
         }
     } catch (err) {
         console.error("Finalization Error:", err);
@@ -3349,9 +3473,22 @@ async function completeBookTransaction(paymentReference, accepterPhone) {
 }
 
 
+function openCreateRequest() {
+    // This should point to your "I need a book" or "Teacher Request" modal
+    const modal = document.getElementById("requestBookModal"); 
+    if (modal) {
+        modal.classList.remove("hidden");
+    } else {
+        console.warn("Modal 'requestBookModal' not found.");
+    }
+}
+
+let selectedTopupCoins = 0;
 
 
-// Global scope assignments to ensure HTML onclicks work
+
+window.openTopupWalletModal = openTopupWalletModal;
+window.openCreateRequest = openCreateRequest; 
 window.handleAction = handleAction;
 window.proceedToPayment = proceedToPayment;
 window.closePaymentModal = closePaymentModal;
