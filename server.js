@@ -16,6 +16,12 @@ import uploadRoutes from "./routes/upload.js";
 
 
 
+
+
+
+
+
+
 const app = express(); // 'app' is initialized before being used
 
 app.use(cors());
@@ -33,6 +39,7 @@ app.use("/firebase-posts", firebasePostsRouter);
 
 
 app.use("/api", uploadRoutes);
+
 
 
 

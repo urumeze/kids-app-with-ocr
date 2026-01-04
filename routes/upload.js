@@ -947,67 +947,122 @@ router.post("/acceptBookWithWallet/:bookId", verifyIdToken, async (req, res) => 
   }
 });
 
-// 2026 Best Practice: Secure Wallet Top-up
+
+
 router.post("/wallet/topup", verifyIdToken, async (req, res) => {
   try {
-    const { reference, coins } = req.body;
+    const { reference } = req.body;
     const uid = req.user.uid;
 
-        // 1. SECURE VERIFICATION (Fixed URL for 2026)
-    const paystackRes = await fetch(`api.paystack.co{reference}`, {
-      headers: { Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}` }
-    });
-    
+    const paystackRes = await fetch(
+      `https://api.paystack.co/transaction/verify/${reference}`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`
+        }
+      }
+    );
+
     const paystackData = await paystackRes.json();
 
-    // Check if the payment was actually successful
-    if (!paystackData.status || paystackData.data.status !== 'success') {
+    if (!paystackData.status || paystackData.data.status !== "success") {
       return res.status(400).json({ success: false, error: "Payment verification failed." });
     }
 
-    // 2. Data Type Safety
-    const numericCoins = Number(coins);
-    if (isNaN(numericCoins) || numericCoins <= 0) {
-      return res.status(400).json({ success: false, error: "Invalid coin amount." });
+    // 🔒 Amount → Coins mapping
+    const amount = paystackData.data.amount; // kobo
+    let coins = 0;
+
+    if (amount === 100000) coins = 100;
+    else if (amount === 200000) coins = 250;
+    else if (amount === 400000) coins = 500;
+    else {
+      return res.status(400).json({ success: false, error: "Invalid payment amount." });
     }
 
-    // 3. Update Database using FieldValue.increment
     const userRef = firestore.collection("users").doc(uid);
     await userRef.update({
-      coinBalance: FieldValue.increment(numericCoins)
+      coinBalance: FieldValue.increment(coins)
     });
 
-    // 4. Return the updated balance
     const snap = await userRef.get();
-    const finalBalance = snap.data().coinBalance || 0;
 
     res.json({
       success: true,
-      newBalance: finalBalance
+      newBalance: snap.data().coinBalance
     });
 
   } catch (err) {
-    // This will now catch real errors (like database connection issues)
-    console.error("Top-up Error:", err.message);
-    res.status(500).json({ success: false, error: err.message });
+    console.error("Top-up Error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
   }
 });
 
+router.get("/wallet", async (req, res) => {
+  try {
+    const authHeader = req.headers.authorization || "";
+    const match = authHeader.match(/^Bearer (.+)$/);
+    const idToken = match ? match[1] : null;
 
+    if (!idToken) {
+      return res.status(401).json({
+        success: false,
+        error: "Missing auth token"
+      });
+    }
 
+    // 🔐 VERIFY TOKEN
+    const decoded = await auth.verifyIdToken(idToken);
+    const uid = decoded.uid;
 
+    // 🔎 FETCH USER
+    const userSnap = await firestore
+      .collection("users")
+      .doc(uid)
+      .get();
 
+    if (!userSnap.exists) {
+      return res.status(404).json({
+        success: false,
+        error: "User wallet not found"
+      });
+    }
 
+    const { coinBalance } = userSnap.data();
 
+    return res.json({
+      success: true,
+      coinBalance: coinBalance ?? 0
+    });
 
-
-
-
-
-
-
-
-
-
+  } catch (err) {
+    console.error("🔥 WALLET API ERROR:", err);
+    return res.status(500).json({
+      success: false,
+      error: "Server error"
+    });
+  }
+});
 
 export default router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

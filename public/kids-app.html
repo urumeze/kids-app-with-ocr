@@ -566,6 +566,11 @@
       GoQuiz
     </h1>
 
+    <div>
+  
+  
+  <!--span class="text-sm text-gray-600">Gocoins</span-->
+</div>
 
     
 
@@ -579,10 +584,10 @@
       </div>
 
       <!-- REQUIRED WRAPPER FOR JS -->
-      <div id="coinControls">
+      <!--div id="coinControls"-->
 
         <!-- Convert Button -->
-        <button 
+        <!--button 
           class="flex items-center px-2 py-1 bg-green-500 text-white rounded-md 
                  hover:bg-green-600 transition duration-300 ease-in-out group text-sm shadow">
             <span class="mr-1">Convert</span>
@@ -592,13 +597,15 @@
             </span>
         </button>
 
-      </div>
+      </div-->
+
+      <!--span class="font-bold text-lg" id="walletCoinNumber">0</span-->
 
       <!-- GQ Count + Coin -->
       <div class="flex items-center gap-1">
 
         <div 
-          id="GqCount" 
+          id="walletCoinNumber" 
           class="text-2xl font-black px-1 py-0.5 bg-white rounded-lg shadow text-center 
                  min-w-[40px] bg-clip-text text-transparent 
                  bg-gradient-to-r from-yellow-400 to-amber-600
@@ -2641,108 +2648,6 @@ submitTeacherPost.onclick = async () => {
 };
 
 
-// -------------------------------
-// POINTS + GQ SYSTEM
-// -------------------------------
-let userPoints = parseInt(localStorage.getItem("userCoins")) || 0;
-let userGQ = parseInt(localStorage.getItem("userGQ")) || 0;
-
-// Update UI
-// Run this once when the user logs in
-function setupWalletListener(uid) {
-    const userRef = firestore.collection("users").doc(uid);
-
-    // This listens for real-time changes in the database
-    userRef.onSnapshot((doc) => {
-        if (doc.exists) {
-            const data = doc.data();
-            
-            // Sync local variables with Database
-            userPoints = data.coinBalance || 0;
-            // If you have a GQ field in Firestore, sync it here too
-            // userGQ = data.gqBalance || 0; 
-
-            // Trigger your existing UI update logic
-            renderWalletUI();
-        }
-    }, (error) => {
-        console.error("Wallet Sync Error:", error);
-    });
-}
-
-// 2. Modified UI Function (Handles only the Visuals)
-function renderWalletUI() {
-    const coinEl = document.getElementById("coinNumber");
-    const gqEl = document.getElementById("GqCount");
-
-    if (coinEl) coinEl.textContent = userPoints;
-    if (gqEl) gqEl.textContent = userGQ;
-
-    // Update localStorage as a backup/cache
-    localStorage.setItem("userCoins", userPoints);
-    localStorage.setItem("userGQ", userGQ);
-
-    // Trigger your existing animation
-    if (gqEl) {
-        gqEl.classList.add("scale-110", "text-purple-600");
-        setTimeout(() => gqEl.classList.remove("scale-110", "text-purple-600"), 200);
-    }
-}
-
-// -------------------------------
-// OPEN / CLOSE MODAL
-// -------------------------------
-document.querySelector("#coinControls button").onclick = () => {
-    document.getElementById("convertModal").style.display = "flex";
-};
-
-document.getElementById("closeConvertModal").onclick = () => {
-    document.getElementById("convertModal").style.display = "none";
-};
-
-// -------------------------------
-// CONVERSION LOGIC
-// -------------------------------
-document.getElementById("confirmConvert").onclick = async () => {
-    const from = document.getElementById("convertFrom").value;
-    const to = document.getElementById("convertTo").value;
-    const amount = parseInt(document.getElementById("convertAmount").value);
-    const user = firebase.auth().currentUser;
-
-    if (!user || !amount || amount <= 0) return alert("Invalid entry or not logged in.");
-    if (from === to) return alert("Cannot convert same units.");
-
-    try {
-        const idToken = await user.getIdToken();
-        const res = await fetch("/api/convertCurrency", {
-            method: "POST",
-            headers: { 
-                "Authorization": `Bearer ${idToken}`,
-                "Content-Type": "application/json" 
-            },
-            body: JSON.stringify({ from, to, amount })
-        });
-
-        const data = await res.json();
-        if (data.success) {
-            alert("✅ Conversion Successful! Firebase updated.");
-            // No need to manually update userPoints here; 
-            // your onSnapshot listener will handle the UI update automatically.
-            document.getElementById("convertModal").style.display = "none";
-        } else {
-            alert("Failed: " + data.error);
-        }
-    } catch (err) {
-        console.error("Conversion error:", err);
-    }
-    // Close modal after conversion
-    document.getElementById("convertModal").style.display = "none";
-};
-
-    
-
-
-
 
 
 
@@ -3276,7 +3181,7 @@ async function handleAction(id, type) {
 
 // Add this to your main <script> tag, NOT nested inside another function
 function updateUI(newBalance = null, newGQ = null) {
-    const coinEl = document.getElementById("coinNumber");
+    const coinEl = document.getElementById("walletCoinNumber");
     const gqEl = document.getElementById("GqCount");
 
     if (newBalance !== null) {
@@ -3482,6 +3387,43 @@ function openCreateRequest() {
         console.warn("Modal 'requestBookModal' not found.");
     }
 }
+
+
+let userPoints = 0; // global wallet balance
+
+async function fetchUserWallet() {
+  const user = firebase.auth().currentUser;
+  if (!user) return;
+
+  try {
+    const token = await user.getIdToken();
+
+    const res = await fetch("/api/wallet", {
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      userPoints = data.coinBalance;
+      updateUI(userPoints);
+    } else {
+      console.warn("Wallet fetch failed:", data.error);
+    }
+
+  } catch (err) {
+    console.error("Wallet UI Sync Error:", err);
+  }
+}
+
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    fetchUserWallet();
+  }
+});
+
 
 let selectedTopupCoins = 0;
 
