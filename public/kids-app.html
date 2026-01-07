@@ -3429,35 +3429,29 @@ firebase.auth().onAuthStateChanged(user => {
 });
 
 
-firebase.auth().onAuthStateChanged(async (user) => {
-  if (user) {
-    // Fetch premium status (example with Firestore)
-    const doc = await firebase.firestore().collection('users').doc(user.uid).get();
-    const isPremium = doc.data()?.premium || false;
-
-    if (isPremium) {
-      // Pause all AdSense requests for this user
-      (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
-      // Optionally hide any existing ad placeholders
-      document.querySelectorAll('.adsbygoogle').forEach(el => el.style.display = 'none');
-    } else {
-      // Normal: allow ads
-      (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
-    }
-  } else {
-    // Non-logged-in: show ads
-    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
-  }
-
-  // Then load your feed/quiz etc.
-});
 
 
 let selectedTopupCoins = 0;
 
 
 
-let adFreeUntil = 0; // Timestamp in millis
+let adFreeUntil = 0; // Global: expiry in milliseconds
+
+
+// SINGLE unified auth listener — remove all others!
+firebase.auth().onAuthStateChanged(async (user) => {
+  if (user) {
+    await fetchUserWallet();        // Your existing wallet fetch
+    await checkAdFreeStatus();      // Our ad-free check
+  } else {
+    // Logged out
+    userPoints = 0;
+    adFreeUntil = 0;
+    updateUI(0);
+    updateAdFreeButton();
+    controlAdDisplay(); // Show ads
+  }
+});
 
 async function checkAdFreeStatus() {
   const user = firebase.auth().currentUser;
@@ -3470,18 +3464,23 @@ async function checkAdFreeStatus() {
 
   try {
     const userDoc = await firestore.collection("users").doc(user.uid).get();
+    if (!userDoc.exists) return;
+
     const data = userDoc.data();
 
-    userPoints = data?.coinBalance || 0;
+    // Update global coin balance
+    userPoints = data.coinBalance || 0;
     updateUI(userPoints);
 
-    const expiry = data?.adFreeUntil;
+    // Check ad-free expiry
+    const expiry = data.adFreeUntil;
     if (expiry && expiry.toMillis() > Date.now()) {
       adFreeUntil = expiry.toMillis();
     } else {
       adFreeUntil = 0;
     }
 
+    // Always update UI and ad control
     updateAdFreeButton();
     controlAdDisplay();
 
@@ -3494,8 +3493,10 @@ function updateAdFreeButton() {
   const btn = document.getElementById("removeAdsBtn");
   const status = document.getElementById("adFreeStatus");
 
+  if (!btn || !status) return; // Safety
+
   if (adFreeUntil > Date.now()) {
-    const daysLeft = Math.ceil((adFreeUntil - Date.now()) / (1000 * 60 * 60 * 24));
+    const daysLeft = Math.ceil((adFreeUntil - Date.now()) / (86400000)); // 24*60*60*1000
     btn.textContent = `Ad-Free Active (${daysLeft} days left)`;
     btn.disabled = true;
     btn.classList.remove("bg-purple-600", "hover:bg-purple-700");
@@ -3508,27 +3509,27 @@ function updateAdFreeButton() {
     btn.disabled = false;
     btn.classList.add("bg-purple-600", "hover:bg-purple-700");
     btn.classList.remove("bg-green-600", "cursor-not-allowed");
-
     status.classList.add("hidden");
   }
 }
 
 function controlAdDisplay() {
-  const isActive = adFreeUntil > Date.now();
-  if (isActive) {
+  if (adFreeUntil > Date.now()) {
     (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
-    document.querySelectorAll('ins.adsbygoogle').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('ins.adsbygoogle').forEach(el => {
+      el.style.display = 'none';
+    });
   } else {
     (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
   }
 }
 
-// Button click
-document.getElementById("removeAdsBtn").addEventListener("click", async () => {
-  if (adFreeUntil > Date.now()) return; // Already active
+// Purchase button
+document.getElementById("removeAdsBtn")?.addEventListener("click", async () => {
+  if (adFreeUntil > Date.now()) return;
 
   if (userPoints < 100) {
-    alert("You need 100 coins for 30 days ad-free. Keep playing quizzes to earn more!");
+    alert("You need 100 coins for 30 days ad-free!");
     openTopupWalletModal();
     return;
   }
@@ -3544,12 +3545,11 @@ document.getElementById("removeAdsBtn").addEventListener("click", async () => {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` }
     });
-
     const data = await res.json();
 
     if (data.success) {
       userPoints = data.newBalance;
-      adFreeUntil = data.adFreeUntil;
+      adFreeUntil = data.adFreeUntil; // millis from backend
       updateUI(userPoints);
       updateAdFreeButton();
       controlAdDisplay();
@@ -3561,12 +3561,6 @@ document.getElementById("removeAdsBtn").addEventListener("click", async () => {
     alert("Error: " + err.message);
   }
 });
-
-// Call on login and page load
-firebase.auth().onAuthStateChanged(() => {
-  checkAdFreeStatus();
-});
-
 
 
 window.openTopupWalletModal = openTopupWalletModal;
