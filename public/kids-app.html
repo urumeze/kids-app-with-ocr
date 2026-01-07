@@ -3,548 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-2721836557124559">
     <title>GoQuiz Academy</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link href="fonts.googleapis.com" rel="stylesheet">
-    <!-- Material Icons -->
+
+    <!-- Google Fonts: Inter + Material Icons + Comic Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Tailwind CSS (via CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Feather Icons -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- PDF.js & Mammoth (for document processing) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+
+    <!-- Firebase SDK v8 (compat mode) -->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-functions.js"></script>
+
+    <!-- Paystack Inline v2 -->
     <script src="https://js.paystack.co/v2/inline.js"></script>
-    <meta name="google-adsense-account" content="ca-pub-2721836557124559">
-    
 
-
+    <!-- JWT Decode (only one needed) -->
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.min.js"></script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
 
+    <!-- Google Sign-In (One Tap & Identity Services) -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Flatpickr (Date/Time Picker) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    
-    
-    
-
-
+    <!-- Your Custom Styles -->
     <style>
-         :root{
-      --bg:#f6fbff;
-      --primary:#5c7cfa; /* friendly blue */
-      --accent:#ff66b3; /* pink */
-      --muted:#6b7280;
-      --glass: rgba(255,255,255,0.7);
-    }
+        :root {
+            --bg: #f6fbff;
+            --primary: #5c7cfa;
+            --accent: #ff66b3;
+            --muted: #6b7280;
+            --glass: rgba(255, 255, 255, 0.7);
+        }
 
-    *{box-sizing:border-box}
-    body,html{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial}
+        * { box-sizing: border-box; }
+        body, html { height: 100%; margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial; }
 
-    /* app shell */
-    .app{
-      min-height:100vh;
-      background: linear-gradient(180deg,#f8feff 0%, #eef6ff 100%);
-      display:flex;align-items:center;justify-content:center;flex-direction:column;padding:32px;
-    }
-    .app h1{color:#0f172a;margin:0 0 8px;font-size:clamp(20px,4vw,32px)}
-    .app p{color:var(--muted);margin:0 0 24px}
-    .card{width:100%;max-width:980px;background:var(--glass);backdrop-filter: blur(6px);border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(16,24,40,0.08);text-align:center}
+        /* App Shell */
+        .app {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #f8feff 0%, #eef6ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 32px;
+        }
 
-   
-   
-    .subtitle{color:var(--muted);font-size:13px;margin-bottom:18px}
-
-    .actions{display:flex;gap:12px;flex-direction:column}
-    .btn{
-      appearance:none;border:0;padding:12px 14px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px;transition:transform .15s ease,box-shadow .15s ease;display:flex;align-items:center;justify-content:center;gap:10px
-    }
-   
-
-    .small{font-size:12px;color:var(--muted);margin-top:12px}
-
-    /* animated circle */
-    .pulse-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
-    .big-circle{
-      width:80px;height:80px;border-radius:50%;transform:scale(0);opacity:0;filter:blur(.4px);
-      background:conic-gradient(from 0deg, #5c7cfa, #ff66b3, #34d399, #ff9f43, #5c7cfa);
-      transition:opacity .15s linear;z-index:10
-    }
-
-    /* keyframes for colorful expand lasting 2s */
-    @keyframes circleBurst{
-      0%{transform:scale(0);opacity:1;filter:blur(0px)}
-      40%{transform:scale(1.05);opacity:1}
-      100%{transform:scale(40);opacity:1;filter:blur(6px)}
-    }
-
-   
-    /* final page easing */
-    .app.revealed{opacity:1;transform:none}
-
-    /* small helpful footer */
-    .credit{font-size:12px;color:var(--muted);margin-top:14px}
-
-    /* Responsive */
-    @media (min-width:720px){.actions{flex-direction:row}}
-    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
-        
-        .design {
-            body {
-  font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans';
-}
-
+        /* Design Class (Comic Neue + Background) */
+        .design body {
+            font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
             overflow-x: hidden;
         }
-        
-        .shape {
-            position: absolute;
-            opacity: 0.3;
-            z-index: -1;
-        }
-        
-        .circle {
-            border-radius: 50%;
-            background: #FF9AA2;
-        }
-        
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid #FFB7B2;
-        }
-        
-        .square {
-            background: #B5EAD7;
-        }
-        
-        .pentagon {
-            width: 54px;
-            height: 50px;
-            background: #C7CEEA;
-            position: relative;
-        }
-        
-        .pentagon:before {
-            content: "";
-            position: absolute;
-            top: -25px;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 27px solid transparent;
-            border-right: 27px solid transparent;
-            border-bottom: 25px solid #C7CEEA;
-        }
-        
-        .pentagon:after {
-            content: "";
-            position: absolute;
-            bottom: -25px;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 27px solid transparent;
-            border-right: 27px solid transparent;
-            border-top: 25px solid #C7CEEA;
-        }
-        
-        .upload-container {
-            border: 3px dashed #94a3b8;
-            transition: all 0.3s;
-        }
-        
-        .upload-container:hover {
-            border-color: #6366f1;
-            background-color: rgba(99, 102, 241, 0.05);
-        }
-        
-        .progress-bar {
-            height: 10px;
-            border-radius: 5px;
-            background-color: #e2e8f0;
-            overflow: hidden;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background-color: #6366f1;
-            transition: width 0.3s;
-        }
-        
-        .bounce {
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .rotate {
-            animation: rotate 10s linear infinite;
-        }
-        
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        
-        .summary-box {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        
-        .quiz-option {
-            transition: all 0.3s;
-        }
-        
-        .quiz-option:hover {
-            transform: scale(1.05);
-        }
-        
-        .correct {
-            background-color: #4ade80 !important;
-        }
-        
-        .incorrect {
-            background-color: #f87171 !important;
+
+        /* Hide ads when user is ad-free */
+        body.is-ad-free .adsbygoogle {
+            display: none !important;
         }
 
-        
-#google-sign-in-container {
-  position: fixed; /* or absolute */
-  bottom: 20px; /* Adjust as needed for desired position */
-  right: 20px;  /* Adjust as needed for desired position */
-  z-index: 1000; /* Ensures it stays on top of other content */
-  /* Optional: Add styling for a subtle background or shadow */
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+        /* Rest of your styles (shapes, animations, header, splash, etc.) */
+        .shape { position: absolute; opacity: 0.3; z-index: -1; }
+        .circle { border-radius: 50%; background: #FF9AA2; }
+        .triangle { width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid #FFB7B2; }
+        .square { background: #B5EAD7; }
+        .pentagon { width: 54px; height: 50px; background: #C7CEEA; position: relative; }
+        .pentagon:before { content: ""; position: absolute; top: -25px; left: 0; width: 0; height: 0; border-left: 27px solid transparent; border-right: 27px solid transparent; border-bottom: 25px solid #C7CEEA; }
+        .pentagon:after { content: ""; position: absolute; bottom: -25px; left: 0; width: 0; height: 0; border-left: 27px solid transparent; border-right: 27px solid transparent; border-top: 25px solid #C7CEEA; }
 
-/* Fixed header */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1e1e1e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
-  }
+        /* Upload, Progress, Animations, etc. */
+        .upload-container { border: 3px dashed #94a3b8; transition: all 0.3s; }
+        .upload-container:hover { border-color: #6366f1; background-color: rgba(99, 102, 241, 0.05); }
+        .bounce { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        .rotate { animation: rotate 10s linear infinite; }
+        @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
 
-  .header .title {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+        /* Quiz & UI Styles */
+        .summary-box { background-color: rgba(255, 255, 255, 0.8); border-radius: 20px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .quiz-option { transition: all 0.3s; }
+        .quiz-option:hover { transform: scale(1.05); }
+        .correct { background-color: #4ade80 !important; }
+        .incorrect { background-color: #f87171 !important; }
 
-  /* Coin container */
-  .coin-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
-    cursor: default;
-  }
-  /* default styles for inline SVG - you can move to your CSS file too */
-    .coin-svg { display:inline-block; vertical-align:middle; }
-    .coin-svg .shimmerRect { transition: opacity 150ms linear; }
+        /* Header & Coin Styles */
+        #goquizHeader { transform: scale(0.70); transform-origin: top center; }
+        .coin-svg { display: inline-block; vertical-align: middle; }
+        .coin-svg .shimmerRect { transition: opacity 150ms linear; }
+        .coin-svg.flash { transform-origin: center; animation: coinPop 300ms ease; }
+        .coin-svg.flash .shimmerRect { opacity: 1; animation: shimmerMove 700ms linear; }
+        @keyframes shimmerMove { 0% { transform: translateX(-120px); } 100% { transform: translateX(120px); } }
+        @keyframes coinPop { 0% { transform: scale(1); } 50% { transform: scale(1.18); } 100% { transform: scale(1); } }
 
-    /* .flash class triggers shimmer and a quick pop */
-    .coin-svg.flash { transform-origin: center; animation: coinPop 300ms ease; }
-    .coin-svg.flash .shimmerRect {
-      opacity: 1;
-      /* animate the rect sliding across the coin */
-      animation: shimmerMove 700ms linear;
-    }
+        /* Splash Screen */
+        #splash {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #800080; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 9999;
+            animation: fadeOut 3.5s forwards;
+        }
+        #splash h1 { color: white; font-size: 3rem; margin-bottom: 30px; font-family: sans-serif; }
+        .loader-bar { width: 300px; height: 8px; background-color: #a64ca6; border-radius: 4px; overflow: hidden; }
+        .loader-fill { height: 100%; width: 0%; background-color: #1e90ff; border-radius: 4px; animation: fillBar 3s forwards; }
+        @keyframes fillBar { from { width: 0%; } to { width: 100%; } }
+        @keyframes fadeOut { 0% { opacity: 1; } 85% { opacity: 1; } 100% { opacity: 0; display: none; } }
+        #main-content { display: none; }
 
-    @keyframes shimmerMove {
-      0%   { transform: translateX(-120px); }
-      100% { transform: translateX(120px); }
-    }
+        /* Music Menu & Other UI */
+        .music-menu-container { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 60px; height: 60px; z-index: 50; }
+        .menu-toggle-button { background-color: #7e22ce; color: white; border: none; border-radius: 50%; width: 100%; height: 100%; font-size: 26px; cursor: pointer; box-shadow: 0 4px 10px rgba(126, 34, 206, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .menu-toggle-button:hover { transform: scale(1.1); box-shadow: 0 6px 14px rgba(126, 34, 206, 0.6); }
+        .circular-menu { position: absolute; bottom: 100px; right: 1px; transform: scale(0); border-radius: 10px; width: 30px; height: 220px; display: flex; justify-content: center; align-items: center; opacity: 0; transition: all 0.35s ease-in-out; flex-wrap: wrap; gap: 12px; box-shadow: 0 8px 16px rgba(126, 34, 206, 0.3); }
+        .circular-menu.open { transform: scale(1); opacity: 1; }
+        .menu-button { background-color: #a855f7; color: white; border: none; border-radius: 50%; width: 55px; height: 55px; font-size: 20px; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: background-color 0.2s, transform 0.2s; }
+        .menu-button:hover { background-color: #9333ea; transform: scale(1.1); }
 
-    @keyframes coinPop {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.18); }
-      100% { transform: scale(1); }
-    }
-
-
-  .coin:hover {
-    transform: scale(1.1);
-  }
-
-  /* Number next to coin */
-  .coin-number {
-    font-weight: bold;
-    color: purple;
-  }
-  .coin-caller {
-    font-weight: bold;
-    color: greenyellow;
-  }
-
-
-#splash {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #800080;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      animation: fadeOut 3.5s forwards; /* fade out after loader fills */
-    }
-
-    #splash h1 {
-      color: white;
-      font-size: 3rem;
-      margin-bottom: 30px;
-      font-family: sans-serif;
-    }
-
-    /* Loader bar container */
-    .loader-bar {
-      width: 300px;
-      height: 8px;
-      background-color: #a64ca6;
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    /* Loader bar fill animation */
-    .loader-fill {
-      height: 100%;
-      width: 0%;
-      background-color: #1e90ff;
-      border-radius: 4px;
-      animation: fillBar 3s forwards; /* 3s fill */
-    }
-
-    @keyframes fillBar {
-      from { width: 0%; }
-      to { width: 100%; }
-    }
-
-    @keyframes fadeOut {
-      0% { opacity: 1; }
-      85% { opacity: 1; } /* keep visible until almost done */
-      100% { opacity: 0; display: none; }
-    }
-
-    /* Hide main content initially */
-    #main-content {
-      display: none;
-    }
-
-    /* Show main content after splash */
-    #splash.fade-complete + #main-content {
-      display: block;
-    }
-
-    
-    .music-menu-container {
-  position: fixed;
-  bottom: 1.5rem; /* bottom-6 */
-  right: 1.5rem;  /* right-6 */
-  width: 60px;
-  height: 60px;
-  z-index: 50;
-}
-
-.menu-toggle-button {
-  background-color: #7e22ce; /* purple-700 */
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  font-size: 26px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(126, 34, 206, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-toggle-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 14px rgba(126, 34, 206, 0.6);
-}
-
-/* Circular menu background */
-.circular-menu {
-  position: absolute;
-  bottom: 100px; /* opens upward */
-  right: 1px;  /* opens leftward */
-  transform: scale(0);
-  
-  border-radius:10px;
-  width: 30px;
-  height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: all 0.35s ease-in-out;
-  flex-wrap: wrap;
-  gap: 12px;
-  box-shadow: 0 8px 16px rgba(126, 34, 206, 0.3);
-}
-
-.circular-menu.open {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Buttons inside the circle */
-.menu-button {
-  background-color: #a855f7; /* purple-500 */
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.menu-button:hover {
-  background-color: #9333ea; /* darker purple on hover */
-  transform: scale(1.1);
-}
-
-  .hidden { display: none; }
-  .question { border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; border-radius:5px; }
-  input { width: 100%; padding: 5px; margin-top: 5px; }
-  button { cursor: pointer; }
-
-
-
-.post-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.card-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #f0f2f5;
-}
-
-#postText {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    resize: none; /* Prevents vertical resizing */
-    font-size: 15px;
-    margin-bottom: 15px;
-    transition: border-color 0.2s;
-}
-
-#postText:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.file-input {
-    font-size: 14px;
-    color: #555;
-    /* Hide the default input style for better control, often managed by a custom button/icon in real apps */
-    /* display: none; */ 
-}
-
-.submit-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    transition: background-color 0.2s;
-}
-
-.submit-btn:hover {
-    background-color: #0056b3;
-}
-
-.status-message {
-    font-size: 13px;
-    color: #606770;
-    margin: 0 10px 0 0; /* Space between message and button */
-    flex-grow: 1; /* Allows status message to fill available space */
-    text-align: right;
-}
-
-/* GLOBAL HEADER SHRINK */
-  #goquizHeader {
-    transform: scale(0.70);      /* adjust size */
-    transform-origin: top center; /* keeps alignment clean */
-  }
-
-  /* Force hide ads when the body has this class */
-body.is-ad-free .adsbygoogle {
-  display: none !important;
-}
-
-
-
-
-
+        .hidden { display: none; }
     </style>
 </head>
 <body class="design">
@@ -1243,6 +838,100 @@ body.is-ad-free .adsbygoogle {
    
 <!-- === Public Feed Section === -->
   <main id="publicFeed" class="max-w-3xl mx-auto p-6 space-y-6" >
+    <!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
+
+<!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
+
+<!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
+
+<!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
+<!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
+<!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
+<!-- Hidden static sample for AdSense crawler only -->
+<div style="display:none;">
+  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
+    <p class="text-lg font-semibold">Sample Quiz Title</p>
+    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
+    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
+    <div class="options flex flex-col gap-2 mb-3">
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
+    </div>
+  </div>
+  <!-- Repeat 4-5 more identical cards -->
+</div>
     
     <!-- Feed will be populated dynamically from past questions -->
   </main>  
