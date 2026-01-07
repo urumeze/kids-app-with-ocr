@@ -1044,6 +1044,63 @@ router.get("/wallet", async (req, res) => {
   }
 });
 
+// NEW: Remove Ads for 100 Coins
+// NEW: Activate 30-Day Ad-Free for 100 Coins
+router.post("/activateAdFree", verifyIdToken, async (req, res) => {
+  const userUid = req.user.uid;
+  const COST = 100;
+  const DAYS_VALID = 30;
+
+  try {
+    const userRef = firestore.collection("users").doc(userUid);
+
+    const result = await firestore.runTransaction(async (t) => {
+      const userDoc = await t.get(userRef);
+
+      if (!userDoc.exists) {
+        throw new Error("User document not found.");
+      }
+
+      const userData = userDoc.data();
+      const currentBalance = userData.coinBalance || 0;
+
+      // Check if enough coins
+      if (currentBalance < COST) {
+        throw new Error(`Insufficient Gocoins. You need ${COST} coins for 30 days ad-free.`);
+      }
+
+      // Calculate new expiry (extend from now, even if already active)
+      const now = Timestamp.now();
+      const currentExpiry = userData.adFreeUntil ? userData.adFreeUntil.toMillis() : 0;
+      const baseTime = currentExpiry > now.toMillis() ? userData.adFreeUntil : now;
+      const newExpiry = new Timestamp(
+        Math.floor((baseTime.toMillis() + DAYS_VALID * 24 * 60 * 60 * 1000) / 1000),
+        0
+      );
+
+      const newBalance = currentBalance - COST;
+
+      t.update(userRef, {
+        coinBalance: newBalance,
+        adFreeUntil: newExpiry,              // Firestore Timestamp
+        lastAdFreeActivatedAt: Timestamp.now()
+      });
+
+      return { newBalance, adFreeUntil: newExpiry };
+    });
+
+    res.json({
+      success: true,
+      message: "Ad-free activated for 30 days! Enjoy 🎉",
+      newBalance: result.newBalance,
+      adFreeUntil: result.adFreeUntil.toMillis() // Send as millis for frontend
+    });
+
+  } catch (err) {
+    console.error("Activate Ad-Free Error:", err);
+    res.status(400).json({ success: false, error: err.message });
+  }
+});
 export default router;
 
 

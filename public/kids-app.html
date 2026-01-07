@@ -566,10 +566,14 @@
       GoQuiz
     </h1>
 
-    <div>
-  
-  
-  <!--span class="text-sm text-gray-600">Gocoins</span-->
+    
+<div class="p-4 border-t border-gray-200">
+  <button id="removeAdsBtn" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition">
+    🌟 Remove ads
+  </button>
+  <p id="adFreeStatus" class="text-center text-sm text-green-600 mt-2 hidden">
+    ✅ You have ad-free enabled!
+  </p>
 </div>
 
     
@@ -3425,7 +3429,143 @@ firebase.auth().onAuthStateChanged(user => {
 });
 
 
+firebase.auth().onAuthStateChanged(async (user) => {
+  if (user) {
+    // Fetch premium status (example with Firestore)
+    const doc = await firebase.firestore().collection('users').doc(user.uid).get();
+    const isPremium = doc.data()?.premium || false;
+
+    if (isPremium) {
+      // Pause all AdSense requests for this user
+      (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+      // Optionally hide any existing ad placeholders
+      document.querySelectorAll('.adsbygoogle').forEach(el => el.style.display = 'none');
+    } else {
+      // Normal: allow ads
+      (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+    }
+  } else {
+    // Non-logged-in: show ads
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+  }
+
+  // Then load your feed/quiz etc.
+});
+
+
 let selectedTopupCoins = 0;
+
+
+
+let adFreeUntil = 0; // Timestamp in millis
+
+async function checkAdFreeStatus() {
+  const user = firebase.auth().currentUser;
+  if (!user) {
+    adFreeUntil = 0;
+    updateAdFreeButton();
+    controlAdDisplay();
+    return;
+  }
+
+  try {
+    const userDoc = await firestore.collection("users").doc(user.uid).get();
+    const data = userDoc.data();
+
+    userPoints = data?.coinBalance || 0;
+    updateUI(userPoints);
+
+    const expiry = data?.adFreeUntil;
+    if (expiry && expiry.toMillis() > Date.now()) {
+      adFreeUntil = expiry.toMillis();
+    } else {
+      adFreeUntil = 0;
+    }
+
+    updateAdFreeButton();
+    controlAdDisplay();
+
+  } catch (err) {
+    console.error("Error checking ad-free status:", err);
+  }
+}
+
+function updateAdFreeButton() {
+  const btn = document.getElementById("removeAdsBtn");
+  const status = document.getElementById("adFreeStatus");
+
+  if (adFreeUntil > Date.now()) {
+    const daysLeft = Math.ceil((adFreeUntil - Date.now()) / (1000 * 60 * 60 * 24));
+    btn.textContent = `Ad-Free Active (${daysLeft} days left)`;
+    btn.disabled = true;
+    btn.classList.remove("bg-purple-600", "hover:bg-purple-700");
+    btn.classList.add("bg-green-600", "cursor-not-allowed");
+
+    status.textContent = `✅ Ad-free until ${new Date(adFreeUntil).toLocaleDateString()}`;
+    status.classList.remove("hidden");
+  } else {
+    btn.textContent = "🌟 Go Ad-Free for 30 Days (100 Coins)";
+    btn.disabled = false;
+    btn.classList.add("bg-purple-600", "hover:bg-purple-700");
+    btn.classList.remove("bg-green-600", "cursor-not-allowed");
+
+    status.classList.add("hidden");
+  }
+}
+
+function controlAdDisplay() {
+  const isActive = adFreeUntil > Date.now();
+  if (isActive) {
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+    document.querySelectorAll('ins.adsbygoogle').forEach(el => el.style.display = 'none');
+  } else {
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+  }
+}
+
+// Button click
+document.getElementById("removeAdsBtn").addEventListener("click", async () => {
+  if (adFreeUntil > Date.now()) return; // Already active
+
+  if (userPoints < 100) {
+    alert("You need 100 coins for 30 days ad-free. Keep playing quizzes to earn more!");
+    openTopupWalletModal();
+    return;
+  }
+
+  if (!confirm("Activate 30 days ad-free for 100 coins?")) return;
+
+  const user = firebase.auth().currentUser;
+  if (!user) return alert("Please log in.");
+
+  try {
+    const token = await user.getIdToken();
+    const res = await fetch("/api/activateAdFree", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` }
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      userPoints = data.newBalance;
+      adFreeUntil = data.adFreeUntil;
+      updateUI(userPoints);
+      updateAdFreeButton();
+      controlAdDisplay();
+      alert("Ad-free activated for 30 days! 🌟");
+    } else {
+      alert("Failed: " + data.error);
+    }
+  } catch (err) {
+    alert("Error: " + err.message);
+  }
+});
+
+// Call on login and page load
+firebase.auth().onAuthStateChanged(() => {
+  checkAdFreeStatus();
+});
 
 
 
