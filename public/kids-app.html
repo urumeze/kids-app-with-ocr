@@ -536,6 +536,12 @@
     transform-origin: top center; /* keeps alignment clean */
   }
 
+  /* Force hide ads when the body has this class */
+body.is-ad-free .adsbygoogle {
+  display: none !important;
+}
+
+
 
 
 
@@ -3438,29 +3444,24 @@ let selectedTopupCoins = 0;
 let adFreeUntil = 0; // Global: expiry in milliseconds
 
 
-// SINGLE unified auth listener — remove all others!
+// SINGLE auth listener — add this ONCE at the top of your script
 firebase.auth().onAuthStateChanged(async (user) => {
   if (user) {
     await fetchUserWallet();        // Your existing wallet fetch
-    await checkAdFreeStatus();      // Our ad-free check
+    await checkAdFreeStatus();      // Fetch latest ad-free expiry from Firestore
   } else {
-    // Logged out
+    // Logged out: reset
     userPoints = 0;
     adFreeUntil = 0;
     updateUI(0);
     updateAdFreeButton();
-    controlAdDisplay(); // Show ads
+    controlAdDisplay();
   }
 });
 
 async function checkAdFreeStatus() {
   const user = firebase.auth().currentUser;
-  if (!user) {
-    adFreeUntil = 0;
-    updateAdFreeButton();
-    controlAdDisplay();
-    return;
-  }
+  if (!user) return;
 
   try {
     const userDoc = await firestore.collection("users").doc(user.uid).get();
@@ -3468,99 +3469,137 @@ async function checkAdFreeStatus() {
 
     const data = userDoc.data();
 
-    // Update global coin balance
+    // Update coins
     userPoints = data.coinBalance || 0;
     updateUI(userPoints);
 
-    // Check ad-free expiry
-    const expiry = data.adFreeUntil;
-    if (expiry && expiry.toMillis() > Date.now()) {
-      adFreeUntil = expiry.toMillis();
-    } else {
-      adFreeUntil = 0;
-    }
+    // Update ad-free expiry (Firestore Timestamp → millis)
+    const expiry = data?.adFreeUntil;
+    adFreeUntil = expiry && expiry.toMillis() > Date.now() ? expiry.toMillis() : 0;
 
-    // Always update UI and ad control
+    // Refresh UI and ads
     updateAdFreeButton();
     controlAdDisplay();
 
   } catch (err) {
-    console.error("Error checking ad-free status:", err);
+    console.error("Ad-free check error:", err);
   }
 }
 
+/**
+ * Updates the Ad-Free purchase button and status text based on expiry.
+ * Updated for January 2026 standards.
+ */
 function updateAdFreeButton() {
   const btn = document.getElementById("removeAdsBtn");
   const status = document.getElementById("adFreeStatus");
 
-  if (!btn || !status) return; // Safety
+  if (!btn || !status) return;
 
-  if (adFreeUntil > Date.now()) {
-    const daysLeft = Math.ceil((adFreeUntil - Date.now()) / (86400000)); // 24*60*60*1000
-    btn.textContent = `Ad-Free Active (${daysLeft} days left)`;
-    btn.disabled = true;
+  const now = Date.now();
+
+  if (adFreeUntil > now) {
+    // 1. Calculate precise days remaining
+    const diffMs = adFreeUntil - now;
+    const daysLeft = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+
+    // 2. Update Button UI (Still allow clicking to "Extend" if you removed the listener block)
+    // If you want to disable it entirely while active, keep btn.disabled = true
+    btn.textContent = `Ad-Free Active (${daysLeft} ${daysLeft === 1 ? 'day' : 'days'} left)`;
+    btn.disabled = false; // Enabled so users can "Stack/Extend" their time
     btn.classList.remove("bg-purple-600", "hover:bg-purple-700");
-    btn.classList.add("bg-green-600", "cursor-not-allowed");
+    btn.classList.add("bg-green-600", "hover:bg-green-700");
 
-    status.textContent = `✅ Ad-free until ${new Date(adFreeUntil).toLocaleDateString()}`;
+    // 3. Format Date for 2026 (e.g., "January 7, 2026")
+    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+    const expiryDateString = new Date(adFreeUntil).toLocaleDateString(undefined, dateOptions);
+
+    status.textContent = `✅ Ad-free active until ${expiryDateString}`;
     status.classList.remove("hidden");
   } else {
+    // 4. Default State (Not active or expired)
     btn.textContent = "🌟 Go Ad-Free for 30 Days (100 Coins)";
     btn.disabled = false;
     btn.classList.add("bg-purple-600", "hover:bg-purple-700");
-    btn.classList.remove("bg-green-600", "cursor-not-allowed");
+    btn.classList.remove("bg-green-600", "bg-green-700", "cursor-not-allowed");
+    
     status.classList.add("hidden");
+    status.textContent = "";
   }
 }
 
 function controlAdDisplay() {
   if (adFreeUntil > Date.now()) {
-    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
-    document.querySelectorAll('ins.adsbygoogle').forEach(el => {
-      el.style.display = 'none';
-    });
+    document.body.classList.add("is-ad-free");
+    (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
   } else {
-    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+    document.body.classList.remove("is-ad-free");
+    (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
   }
 }
 
-// Purchase button
-document.getElementById("removeAdsBtn")?.addEventListener("click", async () => {
-  if (adFreeUntil > Date.now()) return;
 
+// Purchase button (unchanged, but now stacks)
+document.getElementById("removeAdsBtn")?.addEventListener("click", async () => {
+  
+
+  // 2. Check points before starting the process
   if (userPoints < 100) {
     alert("You need 100 coins for 30 days ad-free!");
-    openTopupWalletModal();
+    if (typeof openTopupWalletModal === "function") openTopupWalletModal();
     return;
   }
 
-  if (!confirm("Activate 30 days ad-free for 100 coins?")) return;
+  // 3. Dynamic confirmation message
+  const isCurrentlyAdFree = adFreeUntil > Date.now();
+  const msg = isCurrentlyAdFree 
+    ? "You are already ad-free. Would you like to add 30 MORE days to your current expiry for 100 coins?" 
+    : "Activate 30 days of ad-free browsing for 100 coins?";
+
+  if (!confirm(msg)) return;
 
   const user = firebase.auth().currentUser;
   if (!user) return alert("Please log in.");
 
   try {
+    // Show a loading state (optional but recommended)
+    const btn = document.getElementById("removeAdsBtn");
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = "Processing...";
+
     const token = await user.getIdToken();
     const res = await fetch("/api/activateAdFree", {
       method: "POST",
-      headers: { Authorization: `Bearer ${token}` }
+      headers: { 
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}` 
+      }
     });
     const data = await res.json();
 
     if (data.success) {
+      // Update global variables with fresh data from the server
       userPoints = data.newBalance;
-      adFreeUntil = data.adFreeUntil; // millis from backend
+      adFreeUntil = data.adFreeUntil; 
+
+      // Refresh the UI
       updateUI(userPoints);
       updateAdFreeButton();
       controlAdDisplay();
-      alert("Ad-free activated for 30 days! 🌟");
+      
+      alert(`Success! Ad-free extended until ${new Date(data.adFreeUntil).toLocaleDateString()}`);
     } else {
       alert("Failed: " + data.error);
+      // Re-enable button if failed
+      btn.disabled = false;
+      btn.textContent = originalText;
     }
   } catch (err) {
-    alert("Error: " + err.message);
+    alert("Error connecting to server: " + err.message);
   }
 });
+
 
 
 window.openTopupWalletModal = openTopupWalletModal;

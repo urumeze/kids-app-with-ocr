@@ -1046,6 +1046,7 @@ router.get("/wallet", async (req, res) => {
 
 // NEW: Remove Ads for 100 Coins
 // NEW: Activate 30-Day Ad-Free for 100 Coins
+// /api/activateAdFree
 router.post("/activateAdFree", verifyIdToken, async (req, res) => {
   const userUid = req.user.uid;
   const COST = 100;
@@ -1056,48 +1057,35 @@ router.post("/activateAdFree", verifyIdToken, async (req, res) => {
 
     const result = await firestore.runTransaction(async (t) => {
       const userDoc = await t.get(userRef);
-
-      if (!userDoc.exists) {
-        throw new Error("User document not found.");
-      }
+      if (!userDoc.exists) throw new Error("User not found.");
 
       const userData = userDoc.data();
       const currentBalance = userData.coinBalance || 0;
+      if (currentBalance < COST) throw new Error("Insufficient coins.");
 
-      // Check if enough coins
-      if (currentBalance < COST) {
-        throw new Error(`Insufficient Gocoins. You need ${COST} coins for 30 days ad-free.`);
-      }
-
-      // Calculate new expiry (extend from now, even if already active)
-      const now = Timestamp.now();
-      const currentExpiry = userData.adFreeUntil ? userData.adFreeUntil.toMillis() : 0;
-      const baseTime = currentExpiry > now.toMillis() ? userData.adFreeUntil : now;
-      const newExpiry = new Timestamp(
-        Math.floor((baseTime.toMillis() + DAYS_VALID * 24 * 60 * 60 * 1000) / 1000),
-        0
-      );
-
-      const newBalance = currentBalance - COST;
+      // Calculate stacking: Start from NOW or FUTURE expiry
+      const nowMs = Date.now();
+      const currentExpiryMs = userData.adFreeUntil ? userData.adFreeUntil.toMillis() : 0;
+      const startTime = Math.max(nowMs, currentExpiryMs);
+      
+      const newExpiryDate = new Date(startTime + (DAYS_VALID * 24 * 60 * 60 * 1000));
+      const newExpiryTimestamp = Timestamp.fromDate(newExpiryDate);
 
       t.update(userRef, {
-        coinBalance: newBalance,
-        adFreeUntil: newExpiry,              // Firestore Timestamp
+        coinBalance: currentBalance - COST,
+        adFreeUntil: newExpiryTimestamp,
         lastAdFreeActivatedAt: Timestamp.now()
       });
 
-      return { newBalance, adFreeUntil: newExpiry };
+      return { newBalance: currentBalance - COST, adFreeUntil: newExpiryTimestamp };
     });
 
     res.json({
       success: true,
-      message: "Ad-free activated for 30 days! Enjoy 🎉",
       newBalance: result.newBalance,
-      adFreeUntil: result.adFreeUntil.toMillis() // Send as millis for frontend
+      adFreeUntil: result.adFreeUntil.toMillis()
     });
-
   } catch (err) {
-    console.error("Activate Ad-Free Error:", err);
     res.status(400).json({ success: false, error: err.message });
   }
 });
