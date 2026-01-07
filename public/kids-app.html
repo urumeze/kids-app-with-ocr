@@ -172,8 +172,8 @@
   <button id="removeAdsBtn" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition">
     🌟 Remove ads
   </button>
-  <p id="adFreeStatus" class="text-center text-sm text-green-600 mt-2 hidden">
-    ✅ You have ad-free enabled!
+  <p id="adFreeStatus" class="text-center text-sm text-green-600 mt-2 hidden  ">
+    ✅ Ad-free!
   </p>
 </div>
 
@@ -276,7 +276,7 @@
 
 
 <!-- Teacher Form Overlay -->
-<div id="teacherFormOverlay" class="fixed inset-0 bg-black bg-opacity-60 hidden flex justify-center items-center p-4 z-50">
+<div id="teacherFormOverlay" class="fixed inset-0 bg-black bg-opacity-60 hidden flex justify-center items-center p-4 z-50 scale-[0.7]">
   <div class="bg-white rounded-2xl p-6 w-full max-w-sm space-y-3">
       <h2 class="text-xl font-semibold text-center mb-2">Teacher Profile</h2>
 
@@ -329,7 +329,7 @@
           transition duration-300 ease-in-out
           focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50
         ">
-  Request a Teacher
+  Ask for a Book
 </button>
 
 <div id="requestFormOverlay" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -546,7 +546,7 @@
 </div>
 
 <!-- Request a Book Modal -->
-<div id="requestBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center">
+<div id="requestBookModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center scale-[0.7]">
   <div class="bg-white rounded-xl w-11/12 max-w-md p-6">
     <h3 class="text-center font-bold text-lg mb-4 text-purple-600">Request a Book</h3>
     <form id="requestBookForm" class="space-y-3">
@@ -814,7 +814,7 @@
 <!-- Floating Open Button -->
 <button id="openMenuBtn"
         class="fixed top-4 left-4 bg-blue-600 wd-24 text-white rounded-full p-3 shadow-md hover:bg-blue-700 z-50 scale-[0.7]">
-  Menu
+  Past questions
 </button>
 
 
@@ -838,100 +838,7 @@
    
 <!-- === Public Feed Section === -->
   <main id="publicFeed" class="max-w-3xl mx-auto p-6 space-y-6" >
-    <!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
-
-<!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
-
-<!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
-
-<!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
-<!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
-<!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
-<!-- Hidden static sample for AdSense crawler only -->
-<div style="display:none;">
-  <div class="bg-white rounded-xl shadow p-5 border border-gray-100 mb-4">
-    <p class="text-lg font-semibold">Sample Quiz Title</p>
-    <p class="text-gray-500 text-sm mb-3">Posted by Sample | 1h ago</p>
-    <p class="text-gray-700 mb-4">This is a sample question for AdSense to detect the feed structure.</p>
-    <div class="options flex flex-col gap-2 mb-3">
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option A</button>
-      <button class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">Option B</button>
-    </div>
-  </div>
-  <!-- Repeat 4-5 more identical cards -->
-</div>
+    
     
     <!-- Feed will be populated dynamically from past questions -->
   </main>  
@@ -1635,94 +1542,154 @@ async function extractTextFromImage(file) {
     
 
     function calculateScore() {
-        let correctCount = 0;
-        appState.quizData.forEach((q, i) => {
-            if (appState.userAnswers[i] === q.correct) correctCount++;
-        });
-        appState.score = Math.round((correctCount / appState.quizData.length) * 100);
-        document.getElementById('score').textContent = appState.score;
-        const resultMessage = document.getElementById('resultMessage');
-        if (appState.score === 100) {
-            resultMessage.textContent = "Perfect! You're a learning superstar!";
-            updateCoinDisplay(10);
-        } else if (appState.score >= 80) {
-            resultMessage.textContent = "Great job! You know this well!";
-            updateCoinDisplay(8);
-        } else if (appState.score >= 60) {
-            resultMessage.textContent = "Good effort! You're getting there!";
-            updateCoinDisplay(3);
-        } else if (appState.score >= 40) {
-            resultMessage.textContent = "Keep practicing! You'll improve!";
-            updateCoinDisplay(2);
-        } else {
-            resultMessage.textContent = "Nice try! Let's review and try again!";
+    let correctCount = 0;
+    appState.quizData.forEach((q, i) => {
+        if (appState.userAnswers[i] === q.correct) correctCount++;
+    });
+    appState.score = Math.round((correctCount / appState.quizData.length) * 100);
+
+    // Update score circle
+    document.getElementById('score').textContent = appState.score;
+
+    // Set result message and award coins
+    const resultMessage = document.getElementById('resultMessage');
+    if (appState.score === 100) {
+        resultMessage.textContent = "Perfect! You're a learning superstar!";
+        updateCoinDisplay(10);
+    } else if (appState.score >= 80) {
+        resultMessage.textContent = "Great job! You know this well!";
+        updateCoinDisplay(8);
+    } else if (appState.score >= 60) {
+        resultMessage.textContent = "Good effort! You're getting there!";
+        updateCoinDisplay(3);
+    } else if (appState.score >= 40) {
+        resultMessage.textContent = "Keep practicing! You'll improve!";
+        updateCoinDisplay(2);
+    } else {
+        resultMessage.textContent = "Nice try! Let's review and try again!";
+        updateCoinDisplay(0);
+    }
+
+    // Prepare wrong answers review
+    const wrongAnswersContainer = document.getElementById('wrongAnswers');
+    wrongAnswersContainer.innerHTML = '';
+    let hasWrongAnswers = false;
+
+    appState.quizData.forEach((q, i) => {
+        if (appState.userAnswers[i] !== q.correct) {
+            hasWrongAnswers = true;
+            const wrongAnswerElement = document.createElement('div');
+            wrongAnswerElement.className = 'mb-6 p-4 bg-gray-100 rounded-lg';
+            wrongAnswerElement.innerHTML = `
+                <h4 class="font-medium text-gray-800 mb-2">Question: ${q.question}</h4>
+                <p class="text-red-600 mb-1">Your answer: ${q.options[appState.userAnswers[i]] || 'Not answered'}</p>
+                <p class="text-green-600">Correct answer: ${q.options[q.correct]}</p>
+            `;
+            wrongAnswersContainer.appendChild(wrongAnswerElement);
         }
-        const wrongAnswersContainer = document.getElementById('wrongAnswers');
-        wrongAnswersContainer.innerHTML = '';
-        let hasWrongAnswers = false;
-        appState.quizData.forEach((q, i) => {
-            if (appState.userAnswers[i] !== q.correct) {
-                hasWrongAnswers = true;
-                const wrongAnswerElement = document.createElement('div');
-                wrongAnswerElement.className = 'mb-6 p-4 bg-gray-100 rounded-lg';
-                wrongAnswerElement.innerHTML = `
-                    <h4 class="font-medium text-gray-800 mb-2">Question: ${q.question}</h4>
-                    <p class="text-red-600 mb-1">Your answer: ${q.options[appState.userAnswers[i]] || 'Not answered'}</p>
-                    <p class="text-green-600">Correct answer: ${q.options[q.correct]}</p>
-                `;
-                wrongAnswersContainer.appendChild(wrongAnswerElement);
-            }
-        });
-        if (!hasWrongAnswers) {
-            wrongAnswersContainer.innerHTML = '<p class="text-center text-gray-600">You got all questions right! Amazing!</p>';
-        }
+    });
+
+    if (!hasWrongAnswers) {
+        wrongAnswersContainer.innerHTML = '<p class="text-center text-gray-600">You got all questions right! Amazing!</p>';
+    }
+
+    // SHOW RESULTS WITH FULL-SCREEN AD FOR FREE USERS
+    showRegularQuizResultsWithAd();
+}
+
+function showRegularQuizResultsWithAd() {
+    // Premium users skip ad instantly
+    if (adFreeUntil > Date.now()) {
         showStep(6);
+        return;
     }
-    
-    function restartQuizFunc() {
-        displayQuiz();
-        showStep(5);
-    }
-    
-    function showStep(stepNumber) {
-        appState.currentStep = stepNumber;
-        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
-        document.getElementById(`step${stepNumber}`).classList.remove('hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    
-    function showLoading(message) {
-        document.getElementById('loadingMessage').textContent = message;
-        document.getElementById('loading').classList.remove('hidden');
-        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
-    }
-    
-    function hideLoading() {
-        document.getElementById('loading').classList.add('hidden');
-    }
-    
-    function simulateProgress() {
-        let progress = 0;
-        const progressFill = document.getElementById('progressFill');
-        const interval = setInterval(() => {
-            progress += Math.random() * 10;
-            if (progress >= 100) {
-                progress = 100;
-                clearInterval(interval);
-            }
-            progressFill.style.width = `${progress}%`;
-        }, 300);
-    }
-// Convert letter "A"/"B"/"C"/"D" → numeric index 0..3 (returns -1 if not found)
+
+    // Free users: full-screen interstitial ad
+    const overlay = document.createElement("div");
+    overlay.id = "regularQuizAdOverlay";
+    overlay.className = "fixed inset-0 z-50 bg-white flex flex-col items-center justify-center p-6 overflow-hidden";
+
+    overlay.innerHTML = `
+        <div class="text-center mb-8 max-w-md">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4">Quiz Complete!</h2>
+            <p class="text-lg text-gray-600">One quick ad before your score...</p>
+        </div>
+
+        <div class="w-full max-w-lg mx-auto">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2721836557124559"
+                 data-ad-slot="2394125748"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <p class="text-sm text-gray-500 mt-8">Ad closes automatically</p>
+    `;
+
+    document.body.appendChild(overlay);
+
+    // Load the ad
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+    const showResults = () => {
+        overlay.remove();
+        showStep(6);
+    };
+
+    // Normal close after 5 seconds
+    setTimeout(showResults, 5000);
+
+    // Fallback max 8 seconds
+    setTimeout(showResults, 8000);
+}
+
+function restartQuizFunc() {
+    displayQuiz();
+    showStep(5);
+}
+
+function showStep(stepNumber) {
+    appState.currentStep = stepNumber;
+    document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+    document.getElementById(`step${stepNumber}`).classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showLoading(message) {
+    document.getElementById('loadingMessage').textContent = message;
+    document.getElementById('loading').classList.remove('hidden');
+    document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+}
+
+function hideLoading() {
+    document.getElementById('loading').classList.add('hidden');
+}
+
+function simulateProgress() {
+    let progress = 0;
+    const progressFill = document.getElementById('progressFill');
+    const interval = setInterval(() => {
+        progress += Math.random() * 10;
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+        }
+        progressFill.style.width = `${progress}%`;
+    }, 300);
+}
+
+// Convert letter "A"/"B"/"C"/"D" → numeric index 0..3
 function letterToIndex(letter) {
-  if (!letter || typeof letter !== 'string') return -1;
-  return ['A','B','C','D'].indexOf(letter.toUpperCase());
+    if (!letter || typeof letter !== 'string') return -1;
+    return ['A', 'B', 'C', 'D'].indexOf(letter.toUpperCase());
 }
 
 // Convert numeric index 0..3 → letter "A"/"B"/"C"/"D"
 function indexToLetter(idx) {
-  return ['A','B','C','D'][idx] || null;
+    return ['A', 'B', 'C', 'D'][idx] || null;
 }
+
 
 // Load MTQ quiz from JSON
 async function loadMTQQuestions(year, subject, category = 'ACCA') {
@@ -1877,18 +1844,12 @@ function calculateMTQScore(quizData) {
                 isCorrect = task.expected_keywords.some(kw =>
                     ans.includes(kw.toLowerCase())
                 );
-            } else if (task.expected_keywords) {
-                const ans = String(userAnswer).trim().toLowerCase();
-                isCorrect = task.expected_keywords.some(kw =>
-                    ans.includes(kw.toLowerCase())
-                );
             } else {
+                // Default: exact match (case-insensitive, trimmed)
                 isCorrect =
                     String(userAnswer).trim().toLowerCase() ===
                     String(correctAnswer).trim().toLowerCase();
             }
-
-
 
             if (isCorrect) correctTasks++;
 
@@ -1902,9 +1863,11 @@ function calculateMTQScore(quizData) {
         });
     });
 
-    renderMTQResults(results, correctTasks, totalTasks);
-    showStep(8);
+    // ONLY CALL THIS — it handles everything (ad + results)
+    showMTQResultsWithAd(results, correctTasks, totalTasks);
 }
+
+
 window.calculateMTQScore = calculateMTQScore;
 
 
@@ -1938,6 +1901,59 @@ function renderMTQResults(results, correctTasks, totalTasks) {
 
         container.appendChild(div);
     });
+}
+
+function showMTQResultsWithAd(results, correctTasks, totalTasks) {
+    // Premium users skip ad completely
+    if (adFreeUntil > Date.now()) {
+        renderMTQResults(results, correctTasks, totalTasks);
+        showStep(8);
+        return;
+    }
+
+    // Free users: Full-screen ad overlay
+    const overlay = document.createElement("div");
+    overlay.id = "mtqAdOverlay";
+    overlay.className = "fixed inset-0 z-50 bg-white flex flex-col items-center justify-center p-6 overflow-hidden";
+
+    overlay.innerHTML = `
+        <div class="text-center mb-8 max-w-md">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4">Your Results Are Ready!</h2>
+            <p class="text-lg text-gray-600">Watch this quick ad to see them</p>
+        </div>
+
+        <div class="w-full max-w-lg mx-auto">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2721836557124559"
+                 data-ad-slot="2394125748"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <p class="text-sm text-gray-500 mt-8">Ad closes automatically...</p>
+    `;
+
+    document.body.appendChild(overlay);
+
+    // Load the ad
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+    // Single function to close ad and show results
+    const showResults = () => {
+        overlay.remove();
+        renderMTQResults(results, correctTasks, totalTasks);
+        showStep(8);
+    };
+
+    // Close after 5 seconds (normal)
+    const normalTimer = setTimeout(showResults, 5000);
+
+    // Fallback: close after 8 seconds max
+    const maxTimer = setTimeout(() => {
+        clearTimeout(normalTimer); // Prevent double call
+        showResults();
+    }, 8000);
 }
 window.renderMTQResults = renderMTQResults;
 
@@ -1995,57 +2011,49 @@ document.getElementById('openMenuBtn').onclick = () => {
 
 
 
-let allQuizzesGlobal = []; 
+let allQuizzesGlobal = [];
 
 async function loadPublicFeed() {
     const feed = document.getElementById("publicFeed");
-    feed.innerHTML = ""; 
-    allQuizzesGlobal = []; 
+    feed.innerHTML = "";
+    allQuizzesGlobal = [];
 
     const authors = ["Ada", "Urum", "Ibrahim", "Nwamaka", "Fatima", "Iroha", "Amiri"];
     const times = ["3h ago", "5h ago", "1 day ago", "2 days ago", "3 days ago"];
-    
-    // Define the different exam types and subjects
+
     const categories = ['jamb', 'common_entrance', 'ACCA'];
     const years = [2020, 2021, 2022, 2023];
     const subjects = ["english", "maths", "physics", "chemistry", "biology", "economics", "literature", "F1", "F3"];
 
     const fetchPromises = [];
 
-    // 1. Create a promise for every possible file combination
     for (const cat of categories) {
         for (const year of years) {
             for (const subject of subjects) {
                 const url = `past_questions/${cat}_${year}_${subject}.json`;
-                
                 const promise = fetch(url)
                     .then(async (res) => {
                         if (!res.ok) return null;
                         const data = await res.json();
-                        // Add metadata so we know which category/year this data came from
                         return { data, cat, year, subject };
                     })
-                    .catch(() => null); // Ignore files that don't exist
-                
+                    .catch(() => null);
                 fetchPromises.push(promise);
             }
         }
     }
 
     try {
-        // 2. Load all files in parallel for better speed
         const results = await Promise.all(fetchPromises);
 
         for (const item of results) {
             if (!item || !item.data.quiz || !Array.isArray(item.data.quiz)) continue;
 
             const normalized = item.data.quiz.map(q => {
-                // Determine options format (Array vs Object)
                 let optionsArr = Array.isArray(q.options) ? q.options.slice(0, 4) :
                                 q.options && typeof q.options === "object" ? ["A", "B", "C", "D"].map(k => q.options[k]).filter(v => v) :
                                 ["A", "B", "C", "D"];
 
-                // Convert letter answers to index
                 let correctIndex = typeof q.correct === "string" ? letterToIndex(q.correct) :
                                   typeof q.answer === "string" ? letterToIndex(q.answer) :
                                   Number.isInteger(q.correct) ? q.correct : 0;
@@ -2063,28 +2071,33 @@ async function loadPublicFeed() {
             allQuizzesGlobal.push(...normalized);
         }
 
-        // 3. Shuffle the final feed so different categories are mixed together
         allQuizzesGlobal.sort(() => Math.random() - 0.5);
-
-        renderFeedBatch(); 
+        renderFeedBatch();
 
     } catch (err) {
         console.error("Error loading combined public feed:", err);
-        feed.innerHTML = `<p class="text-center text-gray-500">Failed to load feed.</p>`;
+        feed.innerHTML = `<p class="text-center text-gray-500 py-10">Failed to load feed.</p>`;
     }
 }
 
-// Function to render 10 random quizzes from global array
 function renderFeedBatch() {
     const feed = document.getElementById("publicFeed");
-    feed.innerHTML = ""; // clear feed
-    if (!allQuizzesGlobal.length) return;
+    feed.innerHTML = ""; // Clear previous content
 
-    const feedQuizzes = allQuizzesGlobal.sort(() => 0.5 - Math.random()).slice(0,10);
+    // Remove old Load More button
+    const oldButton = document.querySelector("#loadMoreBtn");
+    if (oldButton) oldButton.remove();
 
-    feedQuizzes.forEach(quiz => {
+    if (!allQuizzesGlobal.length) {
+        feed.innerHTML = "<p class='text-center text-gray-500 py-10'>No quizzes available yet.</p>";
+        return;
+    }
+
+    const feedQuizzes = allQuizzesGlobal.sort(() => 0.5 - Math.random()).slice(0, 10);
+
+    feedQuizzes.forEach((quiz, index) => {
         const card = document.createElement("div");
-        card.className = "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4";
+        card.className = "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4 max-w-2xl mx-auto";
         card.innerHTML = `
             <p class="text-lg font-semibold">${quiz.title}</p>
             <p class="text-gray-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
@@ -2095,92 +2108,91 @@ function renderFeedBatch() {
         const optionsDiv = card.querySelector(".options");
         quiz.options.forEach((opt, i) => {
             const btn = document.createElement("button");
-            btn.className = "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700";
+            btn.className = "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
             btn.textContent = opt;
             btn.addEventListener("click", () => {
-              if (i === quiz.correct) {
-                btn.style.backgroundColor = "green";
-                updateCoinDisplay(2); // gain 2 coins
-              } else {
-                btn.style.backgroundColor = "red";
-                updateCoinDisplay(-1); // lose 1 coin
-              }
-
-              // disable all options
-              Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+                if (i === quiz.correct) {
+                    btn.style.backgroundColor = "green";
+                    updateCoinDisplay(2);
+                } else {
+                    btn.style.backgroundColor = "red";
+                    updateCoinDisplay(-1);
+                }
+                Array.from(optionsDiv.children).forEach(b => b.disabled = true);
             });
-
-            updateCoinDisplay();
             optionsDiv.appendChild(btn);
         });
 
         feed.appendChild(card);
+
+        // IN-FEED AD EVERY 5 CARDS
+        if ((index + 1) % 5 === 0) {
+            const adWrapper = document.createElement("div");
+            adWrapper.className = "mb-4 bg-white rounded-xl shadow p-5 border border-gray-100 max-w-2xl mx-auto";
+            adWrapper.innerHTML = `
+                <div class="text-xs text-gray-500 text-center mb-3 opacity-70">Sponsored</div>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-eb+6a-2e-5p+jd"
+                     data-ad-client="ca-pub-2721836557124559"
+                     data-ad-slot="8794531493"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                <\/script>
+            `;
+            feed.appendChild(adWrapper);
+        }
     });
 
-    // Add Load More button
-  
-document.getElementById('publicFeed').style.paddingBottom = "50vh"; 
+    // BIG, ALWAYS-VISIBLE LOAD MORE BUTTON
+    const loadMoreWrapper = document.createElement("div");
+    loadMoreWrapper.className = "flex justify-center my-12 pb-40";
+    loadMoreWrapper.innerHTML = `
+        <button id="loadMoreBtn"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-2xl text-lg transition transform hover:scale-105">
+            Load More Quizzes
+        </button>
+    `;
+    feed.appendChild(loadMoreWrapper);
 
-// 2. Updated renderFeedBatch logic for the button
-function renderFeedBatch() {
-    const feed = document.getElementById("publicFeed");
-    
-    // Clear old button
-    const existingButton = document.querySelector("#loadMoreBtn");
-    if (existingButton) existingButton.remove();
-
-    // ... (Your logic to slice and append new question cards) ...
-
-    // Add Load More button with high bottom margin
-    const loadMore = document.createElement("button");
-    loadMore.id = "loadMoreBtn";
-    loadMore.textContent = "Load More";
-    
-    // mb-40 (10rem) or mb-[25vh] ensures it sits above the footer
-    loadMore.className = "bg-gray-300 text-gray-800 px-6 py-2 rounded-full mt-4 mb-40 hover:bg-gray-400 block mx-auto transition-all";
-    
-    loadMore.addEventListener("click", () => {
+    // Safe click listener (no duplicates)
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    loadMoreBtn.onclick = null; // Clear any old listener
+    loadMoreBtn.addEventListener("click", () => {
         renderFeedBatch();
-        // Optional: Smooth scroll slightly so the user sees new content
-        window.scrollBy({ top: 150, behavior: 'smooth' });
+        // Gentle scroll up to show new content
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    feed.appendChild(loadMore);
-
-    // Initial view setup
+    // Show feed
     document.getElementById('publicFeed').classList.remove('hidden');
     document.getElementById('app').classList.add('hidden');
-    
-    // Use scroll-padding-bottom for better browser behavior with fixed elements
-    document.documentElement.style.scrollPaddingBottom = "100px"; 
+    document.documentElement.style.scrollPaddingBottom = "160px";
 }
 
-   
- 
-
-}
-
+// Load feed on page load
 window.addEventListener("DOMContentLoaded", loadPublicFeed);
 
-// After 3.5s, hide splash and show main content
-    setTimeout(() => {
-      const splash = document.getElementById('splash');
-      const main = document.getElementById('main-content');
-      splash.style.display = 'none';
-      main.style.display = 'block';
-    }, 3500); // match animation timing
+// Hide splash screen
+setTimeout(() => {
+    const splash = document.getElementById('splash');
+    const main = document.getElementById('main-content');
+    if (splash) splash.style.display = 'none';
+    if (main) main.style.display = 'block';
+}, 3500);
 
-
+// Quiz step navigation
 const steps = document.querySelectorAll('.step');
 function showStep(n) {
-  steps.forEach(s => s.classList.add('hidden'));
-  document.getElementById('app').classList.remove('hidden');
-  document.getElementById('publicFeed').classList.add('hidden'); // hide feed
-  steps[n - 1].classList.remove('hidden');
-   
+    steps.forEach(s => s.classList.add('hidden'));
+    document.getElementById('app').classList.remove('hidden');
+    document.getElementById('publicFeed').classList.add('hidden');
+    if (steps[n - 1]) steps[n - 1].classList.remove('hidden');
+}
 
-  
-};
+
+
 // 🎶 Circular Music Menu Script
 const menuToggle = document.getElementById("menu-toggle");
 const circularMenu = document.getElementById("circular-menu");
@@ -3194,7 +3206,7 @@ function updateAdFreeButton() {
 
     // 2. Update Button UI (Still allow clicking to "Extend" if you removed the listener block)
     // If you want to disable it entirely while active, keep btn.disabled = true
-    btn.textContent = `Ad-Free Active (${daysLeft} ${daysLeft === 1 ? 'day' : 'days'} left)`;
+    btn.textContent = `Ad-Free `;
     btn.disabled = false; // Enabled so users can "Stack/Extend" their time
     btn.classList.remove("bg-purple-600", "hover:bg-purple-700");
     btn.classList.add("bg-green-600", "hover:bg-green-700");
@@ -3203,7 +3215,7 @@ function updateAdFreeButton() {
     const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     const expiryDateString = new Date(adFreeUntil).toLocaleDateString(undefined, dateOptions);
 
-    status.textContent = `✅ Ad-free active until ${expiryDateString}`;
+    status.textContent = `✅ Till ${expiryDateString}`;
     status.classList.remove("hidden");
   } else {
     // 4. Default State (Not active or expired)
