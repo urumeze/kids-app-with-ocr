@@ -46,9 +46,23 @@
     <!-- Google AdSense Core Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2721836557124559"
      crossorigin="anonymous"></script>
+     <head>
+    <!-- Load AdSense library once here -->
+    <script async src="pagead2.googlesyndication.com"
+     crossorigin="anonymous"></script>
+</head>
+
+   
+      
 
     <!-- Your Custom Styles -->
     <style>
+
+      body.is-ad-free .adsbygoogle, 
+body.is-ad-free #regularQuizAdOverlay { 
+    display: none !important; 
+}
+
         :root {
             --bg: #f6fbff;
             --primary: #5c7cfa;
@@ -1156,7 +1170,7 @@
 
       // ✅ Save REQUIRED login data
       localStorage.setItem("firstName", firstName);
-      localStorage.setItem("userUid", user.uid); // 🔥 THIS FIXES YOUR BUG
+      localStorage.setItem("userUid", user.uid); 
 
       console.log("Logged in as:", user.uid);
     })
@@ -1601,17 +1615,18 @@ async function extractTextFromImage(file) {
 }
 
 function showRegularQuizResultsWithAd() {
-    // Premium users skip ad instantly
+    // 1. Premium users skip ad instantly
     if (adFreeUntil > Date.now()) {
         showStep(6);
         return;
     }
 
-    // Free users: full-screen interstitial ad
+    // 2. Create the overlay
     const overlay = document.createElement("div");
     overlay.id = "regularQuizAdOverlay";
     overlay.className = "fixed inset-0 z-50 bg-white flex flex-col items-center justify-center p-6 overflow-hidden";
 
+    // Only inject the HTML structure (NO <script> tags inside here)
     overlay.innerHTML = `
         <div class="text-center mb-8 max-w-md">
             <h2 class="text-3xl font-bold text-indigo-700 mb-4">Quiz Complete!</h2>
@@ -1619,33 +1634,40 @@ function showRegularQuizResultsWithAd() {
         </div>
 
         <div class="w-full max-w-lg mx-auto">
-                <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-format="fluid"
-                  data-ad-layout-key="-e5+6n-34-bt+x0"
-                  data-ad-client="ca-pub-2721836557124559"
-                  data-ad-slot="2394125748">
-                </ins>
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-e5+6n-34-bt+x0"
+              data-ad-client="ca-pub-2721836557124559"
+              data-ad-slot="2394125748"></ins>
         </div>
 
-        <p class="text-sm text-gray-500 mt-8">Ad closes automatically</p>
+        <p class="text-sm text-gray-500 mt-8 italic text-indigo-400 animate-pulse">Processing results...</p>
     `;
 
     document.body.appendChild(overlay);
 
-    // Load the ad
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    // 3. Trigger the AdSense push NOW that the 'ins' tag is in the DOM
+    try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+        console.warn("AdSense failed to load (likely an ad-blocker).");
+    }
 
     const showResults = () => {
-        overlay.remove();
-        showStep(6);
+        // Ensure we don't try to remove it twice
+        if (document.getElementById("regularQuizAdOverlay")) {
+            overlay.remove();
+            showStep(6);
+        }
     };
 
-    // Normal close after 5 seconds
-    setTimeout(showResults, 5000);
+    // 4. Timers for UX
+    // In 2026, users prefer faster transitions. Consider 5-7 seconds.
+    setTimeout(showResults, 6000); 
 
-    // Fallback max 8 seconds
-    setTimeout(showResults, 8000);
+    // Fallback security timer
+    setTimeout(showResults, 9000);
 }
 
 function restartQuizFunc() {
@@ -1906,7 +1928,6 @@ function renderMTQResults(results, correctTasks, totalTasks) {
         container.appendChild(div);
     });
 }
-
 function showMTQResultsWithAd(results, correctTasks, totalTasks) {
     // Premium users skip ad completely
     if (adFreeUntil > Date.now()) {
@@ -1915,51 +1936,77 @@ function showMTQResultsWithAd(results, correctTasks, totalTasks) {
         return;
     }
 
-    // Free users: Full-screen ad overlay
+    // Create overlay
     const overlay = document.createElement("div");
     overlay.id = "mtqAdOverlay";
-    overlay.className = "fixed inset-0 z-50 bg-white flex flex-col items-center justify-center p-6 overflow-hidden";
+    overlay.className =
+        "fixed inset-0 z-50 bg-white flex flex-col items-center justify-center p-6 overflow-hidden";
 
     overlay.innerHTML = `
         <div class="text-center mb-8 max-w-md">
-            <h2 class="text-3xl font-bold text-indigo-700 mb-4">Your Results Are Ready!</h2>
-            <p class="text-lg text-gray-600">Watch this quick ad to see them</p>
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4">
+                Your Results Are Ready
+            </h2>
+            <p class="text-lg text-gray-600">
+                Please wait while content loads
+            </p>
         </div>
 
         <div class="w-full max-w-lg mx-auto">
             <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2721836557124559"
-                 data-ad-slot="2394125748"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-e5+6n-34-bt+x0"
+                data-ad-client="ca-pub-2721836557124559"
+                data-ad-slot="2394125748">
+            </ins>
         </div>
 
-        <p class="text-sm text-gray-500 mt-8">Ad closes automatically...</p>
+        <p class="text-sm text-gray-500 mt-8">
+            This will close automatically…
+        </p>
     `;
 
     document.body.appendChild(overlay);
 
-    // Load the ad
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    // Load AdSense script ONCE globally
+    if (!window.adsenseLoaded) {
+        const script = document.createElement("script");
+        script.async = true;
+        script.src =
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2721836557124559";
+        script.crossOrigin = "anonymous";
+        document.head.appendChild(script);
+        window.adsenseLoaded = true;
+    }
 
-    // Single function to close ad and show results
+    // Safely push ad
+    try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+        console.warn("Adsense not ready yet", e);
+    }
+
     const showResults = () => {
-        overlay.remove();
+        if (document.getElementById("mtqAdOverlay")) {
+            overlay.remove();
+        }
         renderMTQResults(results, correctTasks, totalTasks);
         showStep(8);
     };
 
-    // Close after 5 seconds (normal)
+    // Normal close
     const normalTimer = setTimeout(showResults, 5000);
 
-    // Fallback: close after 8 seconds max
+    // Hard fallback
     const maxTimer = setTimeout(() => {
-        clearTimeout(normalTimer); // Prevent double call
+        clearTimeout(normalTimer);
         showResults();
     }, 8000);
 }
+
 window.renderMTQResults = renderMTQResults;
+
 
 
 
@@ -2084,36 +2131,61 @@ async function loadPublicFeed() {
     }
 }
 
+function loadAdsenseOnce() {
+    if (window.adsenseLoaded) return;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2721836557124559";
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+
+    window.adsenseLoaded = true;
+}
+
 function renderFeedBatch() {
+    loadAdsenseOnce();
+
     const feed = document.getElementById("publicFeed");
-    feed.innerHTML = ""; // Clear previous content
+    feed.innerHTML = "";
 
     // Remove old Load More button
     const oldButton = document.querySelector("#loadMoreBtn");
     if (oldButton) oldButton.remove();
 
     if (!allQuizzesGlobal.length) {
-        feed.innerHTML = "<p class='text-center text-gray-500 py-10'>No quizzes available yet.</p>";
+        feed.innerHTML =
+            "<p class='text-center text-gray-500 py-10'>No quizzes available yet.</p>";
         return;
     }
 
-    const feedQuizzes = allQuizzesGlobal.sort(() => 0.5 - Math.random()).slice(0, 10);
+    const feedQuizzes = allQuizzesGlobal
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 10);
 
     feedQuizzes.forEach((quiz, index) => {
         const card = document.createElement("div");
-        card.className = "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4 max-w-2xl mx-auto";
+        card.className =
+            "bg-white rounded-xl shadow p-5 hover:shadow-md transition border border-gray-100 mb-4 max-w-2xl mx-auto";
+
         card.innerHTML = `
             <p class="text-lg font-semibold">${quiz.title}</p>
-            <p class="text-gray-500 text-sm mb-3">Posted by ${quiz.author} | ${quiz.time}</p>
+            <p class="text-gray-500 text-sm mb-3">
+                Posted by ${quiz.author} | ${quiz.time}
+            </p>
             <p class="text-gray-700 mb-4">${quiz.question}</p>
             <div class="options flex flex-col gap-2 mb-3"></div>
         `;
 
         const optionsDiv = card.querySelector(".options");
+
         quiz.options.forEach((opt, i) => {
             const btn = document.createElement("button");
-            btn.className = "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
+            btn.className =
+                "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
             btn.textContent = opt;
+
             btn.addEventListener("click", () => {
                 if (i === quiz.correct) {
                     btn.style.backgroundColor = "green";
@@ -2122,56 +2194,66 @@ function renderFeedBatch() {
                     btn.style.backgroundColor = "red";
                     updateCoinDisplay(-1);
                 }
-                Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+                Array.from(optionsDiv.children).forEach(
+                    (b) => (b.disabled = true)
+                );
             });
+
             optionsDiv.appendChild(btn);
         });
 
         feed.appendChild(card);
 
-        // IN-FEED AD EVERY 5 CARDS
+        // ✅ IN-FEED AD EVERY 5 CARDS
         if ((index + 1) % 5 === 0) {
             const adWrapper = document.createElement("div");
-            adWrapper.className = "mb-4 bg-white rounded-xl shadow p-5 border border-gray-100 max-w-2xl mx-auto";
+            adWrapper.className =
+                "mb-4 bg-white rounded-xl shadow p-5 border border-gray-100 max-w-2xl mx-auto";
+
             adWrapper.innerHTML = `
-                <div class="text-xs text-gray-500 text-center mb-3 opacity-70">Sponsored</div>
+                <div class="text-xs text-gray-500 text-center mb-3 opacity-70">
+                    Sponsored
+                </div>
                 <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-format="fluid"
-                     data-ad-layout-key="-eb+6a-2e-5p+jd"
-                     data-ad-client="ca-pub-2721836557124559"
-                     data-ad-slot="8794531493"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                <\/script>
+                    style="display:block"
+                    data-ad-format="fluid"
+                    data-ad-layout-key="-eb+6a-2e-5p+jd"
+                    data-ad-client="ca-pub-2721836557124559"
+                    data-ad-slot="8794531493">
+                </ins>
             `;
+
             feed.appendChild(adWrapper);
+
+            try {
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.warn("Adsense not ready", e);
+            }
         }
     });
 
-    // BIG, ALWAYS-VISIBLE LOAD MORE BUTTON
+    // BIG LOAD MORE BUTTON
     const loadMoreWrapper = document.createElement("div");
     loadMoreWrapper.className = "flex justify-center my-12 pb-40";
     loadMoreWrapper.innerHTML = `
         <button id="loadMoreBtn"
-                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-2xl text-lg transition transform hover:scale-105">
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-full shadow-2xl text-lg transition transform hover:scale-105">
             Load More Quizzes
         </button>
     `;
     feed.appendChild(loadMoreWrapper);
 
-    // Safe click listener (no duplicates)
     const loadMoreBtn = document.getElementById("loadMoreBtn");
-    loadMoreBtn.onclick = null; // Clear any old listener
+    loadMoreBtn.onclick = null;
     loadMoreBtn.addEventListener("click", () => {
         renderFeedBatch();
-        // Gentle scroll up to show new content
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     // Show feed
-    document.getElementById('publicFeed').classList.remove('hidden');
-    document.getElementById('app').classList.add('hidden');
+    document.getElementById("publicFeed").classList.remove("hidden");
+    document.getElementById("app").classList.add("hidden");
     document.documentElement.style.scrollPaddingBottom = "160px";
 }
 
@@ -2180,10 +2262,10 @@ window.addEventListener("DOMContentLoaded", loadPublicFeed);
 
 // Hide splash screen
 setTimeout(() => {
-    const splash = document.getElementById('splash');
-    const main = document.getElementById('main-content');
-    if (splash) splash.style.display = 'none';
-    if (main) main.style.display = 'block';
+    const splash = document.getElementById("splash");
+    const main = document.getElementById("main-content");
+    if (splash) splash.style.display = "none";
+    if (main) main.style.display = "block";
 }, 3500);
 
 // Quiz step navigation
@@ -2458,7 +2540,7 @@ function renderTeachers(teachers) {
             <button onclick="handleAction('${teacher.id}', 'teacher')" 
                     class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-xl text-sm font-bold transition-colors">
                 Contact Teacher
-            </button>co
+            </button>
 
         </div>
     `).join('');
