@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
@@ -53,10 +54,7 @@
     <!-- Your Custom Styles -->
     <style>
 
-      body.is-ad-free .adsbygoogle, 
-body.is-ad-free #regularQuizAdOverlay { 
-    display: none !important; 
-}
+
 
         :root {
             --bg: #f6fbff;
@@ -1147,6 +1145,46 @@ body.is-ad-free #regularQuizAdOverlay {
 
 <script>
 
+  function safeAdsensePush(retries = 8) {
+    // 1️⃣ AdSense must exist
+    if (
+        typeof window.adsbygoogle === "undefined" ||
+        typeof window.adsbygoogle.push !== "function"
+    ) {
+        return;
+    }
+
+    // 2️⃣ Find the next unprocessed ad
+    const ad = document.querySelector(
+        'ins.adsbygoogle:not([data-goquiz-loaded])'
+    );
+    if (!ad) return;
+
+    // 3️⃣ Ensure ad is actually visible in layout
+    const rect = ad.getBoundingClientRect();
+    const width = rect.width;
+
+    if (width < 250) {
+        if (retries > 0) {
+            requestAnimationFrame(() => safeAdsensePush(retries - 1));
+        }
+        return;
+    }
+
+    // 4️⃣ Lock BEFORE pushing (prevents duplicates)
+    ad.dataset.goquizLoaded = "true";
+
+    // 5️⃣ Safe push
+    try {
+        window.adsbygoogle.push({});
+    } catch (e) {
+        console.warn("AdSense push failed", e);
+    }
+}
+
+
+
+
 
 
 
@@ -1628,14 +1666,16 @@ function showRegularQuizResultsWithAd() {
             <p class="text-lg text-gray-600">One quick ad before your score...</p>
         </div>
 
-        <div class="w-full max-w-lg mx-auto">
-          <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-format="fluid"
-              data-ad-layout-key="-e5+6n-34-bt+x0"
-              data-ad-client="ca-pub-2721836557124559"
-              data-ad-slot="2394125748"></ins>
+        <div class="w-full max-w-lg mx-auto" style="min-width: 250px; min-height: 100px;">
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-format="fluid"
+        data-ad-layout-key="-e5+6n-34-bt+x0"
+        data-ad-client="ca-pub-2721836557124559"
+        data-ad-slot="2394125748">
+        </ins>
         </div>
+
 
         <p class="text-sm text-gray-500 mt-8 italic text-indigo-400 animate-pulse">Processing results...</p>
     `;
@@ -2126,23 +2166,11 @@ async function loadPublicFeed() {
     }
 }
 
-function loadAdsenseOnce() {
-    if (window.adsenseLoaded) return;
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src =
-        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2721836557124559";
-    script.crossOrigin = "anonymous";
-    document.head.appendChild(script);
-
-    window.adsenseLoaded = true;
-}
 
 function renderFeedBatch() {
-    loadAdsenseOnce();
-
     const feed = document.getElementById("publicFeed");
+    feed.classList.remove("hidden");
+    feed.style.display = "block";
     feed.innerHTML = "";
 
     // Remove old Load More button
@@ -2189,9 +2217,7 @@ function renderFeedBatch() {
                     btn.style.backgroundColor = "red";
                     updateCoinDisplay(-1);
                 }
-                Array.from(optionsDiv.children).forEach(
-                    (b) => (b.disabled = true)
-                );
+                Array.from(optionsDiv.children).forEach(b => b.disabled = true);
             });
 
             optionsDiv.appendChild(btn);
@@ -2210,7 +2236,7 @@ function renderFeedBatch() {
                     Sponsored
                 </div>
                 <ins class="adsbygoogle"
-                    style="display:block"
+                    style="display:block; min-width:250px"
                     data-ad-format="fluid"
                     data-ad-layout-key="-eb+6a-2e-5p+jd"
                     data-ad-client="ca-pub-2721836557124559"
@@ -2220,11 +2246,8 @@ function renderFeedBatch() {
 
             feed.appendChild(adWrapper);
 
-            try {
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-            } catch (e) {
-                console.warn("Adsense not ready", e);
-            }
+            // ✅ SAFE delayed push
+            safeAdsensePush(400);
         }
     });
 
@@ -2239,15 +2262,11 @@ function renderFeedBatch() {
     `;
     feed.appendChild(loadMoreWrapper);
 
-    const loadMoreBtn = document.getElementById("loadMoreBtn");
-    loadMoreBtn.onclick = null;
-    loadMoreBtn.addEventListener("click", () => {
+    document.getElementById("loadMoreBtn").onclick = () => {
         renderFeedBatch();
         window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    };
 
-    // Show feed
-    document.getElementById("publicFeed").classList.remove("hidden");
     document.getElementById("app").classList.add("hidden");
     document.documentElement.style.scrollPaddingBottom = "160px";
 }
@@ -3241,31 +3260,32 @@ firebase.auth().onAuthStateChanged(async (user) => {
   }
 });
 
-async function checkAdFreeStatus() {
-  const user = firebase.auth().currentUser;
-  if (!user) return;
+async function checkAdFreeStatus(user) {
+    if (!user) {
+        // User not logged in → show ads
+        document.body.classList.remove("ad-free");
+        return false;
+    }
 
-  try {
-    const userDoc = await firestore.collection("users").doc(user.uid).get();
-    if (!userDoc.exists) return;
+    if (typeof firestore === "undefined") {
+        console.warn("Firestore not initialized");
+        return false;
+    }
 
-    const data = userDoc.data();
+    try {
+        const doc = await firestore
+            .collection("adFreeUsers")
+            .doc(user.uid)
+            .get();
 
-    // Update coins
-    userPoints = data.coinBalance || 0;
-    updateUI(userPoints);
+        const isAdFree = doc.exists && doc.data()?.adFree === true;
 
-    // Update ad-free expiry (Firestore Timestamp → millis)
-    const expiry = data?.adFreeUntil;
-    adFreeUntil = expiry && expiry.toMillis() > Date.now() ? expiry.toMillis() : 0;
-
-    // Refresh UI and ads
-    updateAdFreeButton();
-    controlAdDisplay();
-
-  } catch (err) {
-    console.error("Ad-free check error:", err);
-  }
+        document.body.classList.toggle("ad-free", isAdFree);
+        return isAdFree;
+    } catch (err) {
+        console.warn("Ad-free check failed", err);
+        return false;
+    }
 }
 
 /**
