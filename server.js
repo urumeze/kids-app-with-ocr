@@ -7,171 +7,193 @@ import fetch from "node-fetch";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
-import { ImageAnnotatorClient } from "@google-cloud/vision";
 import cors from "cors";
+import { ImageAnnotatorClient } from "@google-cloud/vision";
 
-// Import the necessary route handlers
+// Routes
 import firebasePostsRouter from "./routes/firebasePosts.js";
-import uploadRoutes from "./routes/upload.js"; 
+import uploadRoutes from "./routes/upload.js";
 
+// -------------------------------------------------------------------
+// App initialization (MUST be first before usage)
+// -------------------------------------------------------------------
+const app = express();
 
-app.use('/api', (req, res, next) => {
-  const isBot = /bot|google|bing|crawl|spider/i.test(
-    req.headers['user-agent'] || ''
-  );
-
-  if (isBot) {
-    return res.status(410).send('Gone');
-  }
-
-  next();
-});
-
-app.get("/api/*", (req, res) => {
-  res.status(404).send("Not Found");
-});
-
-
-
-
-
-
-
-const app = express(); // 'app' is initialized before being used
-
-app.use(cors());
-
+// -------------------------------------------------------------------
+// Path helpers
+// -------------------------------------------------------------------
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// --- Middleware ---
+// -------------------------------------------------------------------
+// Middleware
+// -------------------------------------------------------------------
+app.use(cors());
+
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// --- Routes ---
+// 🚫 Prevent Google from indexing APIs
+app.use("/api", (req, res, next) => {
+  res.set("X-Robots-Tag", "noindex, nofollow");
+  next();
+});
+
+// -------------------------------------------------------------------
+// Routes
+// -------------------------------------------------------------------
 app.use("/firebase-posts", firebasePostsRouter);
-
-
 app.use("/api", uploadRoutes);
 
+// ❌ Catch invalid API routes (must come AFTER real API routes)
+app.all("/api/*", (req, res) => {
+  res.status(404).json({ error: "API endpoint not found" });
+});
 
-
-
-
+// -------------------------------------------------------------------
+// Google Vision Initialization
+// -------------------------------------------------------------------
 let visionClient;
 
-// --- GOOGLE VISION INITIALIZATION ---
 if (process.env.GOOGLE_CREDENTIALS_JSON) {
   try {
     const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);
     visionClient = new ImageAnnotatorClient({ credentials });
     console.log("✅ Vision client initialized with inline JSON");
-  } catch (error) {
-    console.error("❌ Error parsing GOOGLE_CREDENTIALS_JSON:", error);
+  } catch (err) {
+    console.error("❌ Invalid GOOGLE_CREDENTIALS_JSON", err);
     process.exit(1);
   }
 } else if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
-  try {
-    if (!fs.existsSync(process.env.GOOGLE_APPLICATION_CREDENTIALS)) {
-      throw new Error("File not found: " + process.env.GOOGLE_APPLICATION_CREDENTIALS);
-    }
-    visionClient = new ImageAnnotatorClient({
-      keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
-    });
-    console.log("✅ Vision client initialized with key file path");
-  } catch (error) {
-    console.error("❌ Error using GOOGLE_APPLICATION_CREDENTIALS path:", error);
+  if (!fs.existsSync(process.env.GOOGLE_APPLICATION_CREDENTIALS)) {
+    console.error("❌ Vision credentials file not found");
     process.exit(1);
   }
+  visionClient = new ImageAnnotatorClient({
+    keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
+  });
+  console.log("✅ Vision client initialized with key file");
 } else {
-  console.error("❌ No Google credentials found");
+  console.error("❌ No Google Vision credentials found");
   process.exit(1);
 }
 
-// --- OCR Endpoint ---
+// -------------------------------------------------------------------
+// OCR Endpoint
+// -------------------------------------------------------------------
 app.post("/api/ocr", async (req, res) => {
-  if (!visionClient) return res.status(500).json({ error: "Vision API service unavailable." });
+  if (!visionClient) {
+    return res.status(500).json({ error: "Vision API unavailable" });
+  }
+
+  const { images } = req.body;
+  if (!Array.isArray(images) || !images.length) {
+    return res.status(400).json({ error: "No images provided" });
+  }
 
   try {
-    const { images } = req.body;
-    if (!images || !Array.isArray(images) || images.length === 0) {
-      return res.status(400).json({ error: "No images provided" });
-    }
-
     let fullText = "";
+
     const results = await Promise.all(
-      images.map((img, idx) => {
+      images.map(img => {
         if (!img) return null;
-        const cleanImg = img.includes("base64,") ? img.split("base64,") : img;
-        return visionClient.textDetection({ image: { content: cleanImg } }).catch(() => null);
+        const clean = img.includes("base64,") ? img.split("base64,")[1] : img;
+        return visionClient.textDetection({ image: { content: clean } });
       })
     );
 
-    results.forEach((result) => {
-      if (!result) return;
-      const [annotation] = result;
-      // FIX APPLIED: Removed extra optional chaining '?.'.
-      const text = annotation.fullTextAnnotation?.text || annotation.textAnnotations?.[0]?.description || "";
-      fullText += text + "\n\n";
+    results.forEach(r => {
+      if (!r) return;
+      const [annotation] = r;
+      fullText +=
+        annotation.fullTextAnnotation?.text ||
+        annotation.textAnnotations?.[0]?.description ||
+        "";
+      fullText += "\n\n";
     });
 
-    if (!fullText.trim()) return res.status(422).json({ error: "No readable text found" });
+    if (!fullText.trim()) {
+      return res.status(422).json({ error: "No readable text found" });
+    }
+
     res.json({ text: fullText.trim() });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "OCR failed", details: err.message });
+    res.status(500).json({ error: "OCR failed" });
   }
 });
 
-// --- OpenAI endpoints helper ---
+// -------------------------------------------------------------------
+// OpenAI Helper (FIXED)
+// -------------------------------------------------------------------
 async function callOpenAI(apiKey, messages, max_tokens = 500) {
-  const response = await fetch("api.openai.com", {
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
     },
-    body: JSON.stringify({ model: "gpt-4o-mini", messages, max_tokens }),
+    body: JSON.stringify({
+      model: "gpt-4o-mini",
+      messages,
+      max_tokens,
+    }),
   });
+
+  if (!response.ok) {
+    const err = await response.text();
+    throw new Error(err);
+  }
+
   return response.json();
 }
 
-// --- Extract Endpoint ---
+// -------------------------------------------------------------------
+// Extract Endpoint
+// -------------------------------------------------------------------
 app.post("/api/extract", async (req, res) => {
   const { text } = req.body;
   if (!text) return res.status(400).json({ error: "Missing text" });
+
   try {
     const data = await callOpenAI(process.env.EXTRACT_API_KEY, [
-      { role: "system", content: "Convert this passage into meaningful text easy to read." },
+      { role: "system", content: "Convert this passage into clean readable text." },
       { role: "user", content: text },
     ], 600);
-    // FIX APPLIED: Removed extra optional chaining '?.'.
-    res.json({ extracted: data.choices?.[0]?.message?.content || "Could not extract text." });
+
+    res.json({
+      extracted: data.choices?.[0]?.message?.content || "Extraction failed",
+    });
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: "Extract failed" });
   }
 });
 
-// --- Simplify Endpoint ---
+// -------------------------------------------------------------------
+// Simplify Endpoint
+// -------------------------------------------------------------------
 app.post("/api/simplify", async (req, res) => {
   const { text } = req.body;
   if (!text) return res.status(400).json({ error: "Missing text" });
+
   try {
     const data = await callOpenAI(process.env.SUMMARY_API_KEY, [
-      { role: "system", content: "Simplify text for kids to understand." },
+      { role: "system", content: "Simplify this for kids." },
       { role: "user", content: text },
     ], 500);
-    // FIX APPLIED: Removed extra optional chaining '?.'.
-    res.json({ simplified: data.choices?.[0]?.message?.content || "Could not simplify." });
-  } catch (err) {
-    console.error(err);
+
+    res.json({
+      simplified: data.choices?.[0]?.message?.content || "Simplification failed",
+    });
+  } catch {
     res.status(500).json({ error: "Simplify failed" });
   }
 });
 
-// --- Quiz Endpoint ---
+// -------------------------------------------------------------------
+// Quiz Generator
+// -------------------------------------------------------------------
 app.post("/api/quiz", async (req, res) => {
   const { text, numQuestions } = req.body;
   if (!text) return res.status(400).json({ error: "Missing text" });
@@ -180,100 +202,65 @@ app.post("/api/quiz", async (req, res) => {
     const data = await callOpenAI(process.env.QUIZ_API_KEY, [
       {
         role: "system",
-        content: "You are a kids quiz generator. Only return valid JSON in this format: {\"quiz\":[{\"question\":\"string\",\"options\":[\"A\",\"B\",\"C\",\"D\"],\"correct\":0}]}"
+        content:
+          "Return ONLY valid JSON: {\"quiz\":[{\"question\":\"\",\"options\":[\"A\",\"B\",\"C\",\"D\"],\"correct\":0}]}",
       },
       {
         role: "user",
-        content: `Make ${numQuestions || 5} multiple-choice questions (4 options each) from this text:\n\n${text}`
-      }
+        content: `Create ${numQuestions || 5} questions from:\n${text}`,
+      },
     ], 800);
 
     let quiz = [];
     try {
-      // FIX APPLIED: Removed extra optional chaining '?.'.
       quiz = JSON.parse(data.choices?.[0]?.message?.content || "{}").quiz || [];
     } catch {}
-    if (!quiz.length) quiz = [{ question: "Fallback question?", options: ["A","B","C","D"], correct: 0 }];
+
     res.json({ quiz });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Quiz failed" });
+  } catch {
+    res.status(500).json({ error: "Quiz generation failed" });
   }
 });
 
-// --- Score Endpoint ---
-app.post("/api/score", async (req, res) => {
-  const { question, userAnswer } = req.body;
-  if (!question || !userAnswer) return res.status(400).json({ error: "Missing inputs" });
-
-  try {
-    const data = await callOpenAI(process.env.SCORE_API_KEY, [
-      { role: "system", content: "You are a quiz grader. Reply only with JSON {\"correct\": true/false}." },
-      { role: "user", content: `Question: ${question}\nStudent Answer: ${userAnswer}` }
-    ], 100);
-
-    let result = { correct: false };
-    try { 
-      // FIX APPLIED: Removed extra optional chaining '?.'.
-      result = JSON.parse(data.choices?.[0]?.message?.content || "{}"); 
-    } catch {}
-    res.json(result);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Score failed" });
-  }
-});
-
-// --- ACCA Marking Endpoint ---
+// -------------------------------------------------------------------
+// ACCA Marking
+// -------------------------------------------------------------------
 app.post("/api/mark-acca", async (req, res) => {
-  const { question, userAnswer, modelAnswer, maxScore } = req.body;
-  if (!question || !userAnswer || !modelAnswer) return res.status(400).json({ error: "Missing required fields" });
+  const { question, userAnswer, modelAnswer, maxScore = 20 } = req.body;
+  if (!question || !userAnswer || !modelAnswer) {
+    return res.status(400).json({ error: "Missing fields" });
+  }
 
   try {
     const data = await callOpenAI(process.env.SCORE_API_KEY, [
       {
         role: "system",
-        content: `
-You are an ACCA exam marker. Score using official marking style.
-Return ONLY JSON like:
-{"score": number,"max_score": number,"percentage": number,"feedback": "text feedback"}
-Mark fairly, deduct missing points or errors.
-max_score = ${maxScore || 20}`
+        content:
+          "You are an ACCA marker. Return ONLY JSON {score,max_score,percentage,feedback}.",
       },
       {
         role: "user",
-        content: `
-QUESTION:
-${question}
-
-MODEL ANSWER:
-${modelAnswer}
-
-STUDENT ANSWER:
-${userAnswer}
-
-max_score = ${maxScore || 20}`
-      }
+        content: `Q:${question}\nMODEL:${modelAnswer}\nSTUDENT:${userAnswer}\nMAX:${maxScore}`,
+      },
     ], 800);
 
-    let result = {};
-    try { 
-      // FIX APPLIED: Removed extra optional chaining '?.'.
-      result = JSON.parse(data.choices?.[0]?.message?.content || "{}"); 
-    } catch {}
-    if (!result.score) result = { score: 0, max_score: maxScore || 20, percentage: 0, feedback: "Automatic marking failed." };
-    res.json(result);
-  } catch (err) {
-    console.error(err);
+    res.json(JSON.parse(data.choices?.[0]?.message?.content || "{}"));
+  } catch {
     res.status(500).json({ error: "Marking failed" });
   }
 });
 
-// --- Fallback frontend ---
+// -------------------------------------------------------------------
+// Frontend fallback
+// -------------------------------------------------------------------
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "kids-app.html"));
 });
 
-// --- Start server ---
+// -------------------------------------------------------------------
+// Start Server
+// -------------------------------------------------------------------
 const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => console.log(`✅ Server running at http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`✅ Server running on http://localhost:${PORT}`);
+});
