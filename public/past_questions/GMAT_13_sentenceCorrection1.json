@@ -1,0 +1,847 @@
+{
+  "subject": "GMAT Sentence Correction",
+  "year": 2013,
+  "source": "The Official Guide for GMAT Review 13th Edition",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "In a review of 2,000 studies of human behavior that date back to the 1940s, two Swiss psychologists, declaring that since most of the studies had failed to control for such variables as social class and family size, none could be taken seriously.",
+      "options": {
+        "A": "psychologists, declaring that since most of the studies had failed to control for such variables as social class and family size,",
+        "B": "psychologists, declaring that most of the studies failed in not controlling for such variables like social class and family size, and",
+        "C": "psychologists declared that since most of the studies, having failed to control for such variables as social class and family size,",
+        "D": "psychologists declared that since most of the studies fail in controlling for such variables like social class and family size,",
+        "E": "psychologists declared that since most of the studies had failed to control for variables such as social class and family size,"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 2,
+      "question": "Manufacturers rate batteries in watt-hours; if they rate the watt-hour higher, the longer the battery can be expected to last.",
+      "options": {
+        "A": "if they rate the watt-hour higher, the longer",
+        "B": "rating the watt-hour higher, it is that much longer",
+        "C": "the higher the watt-hour rating, the longer",
+        "D": "the higher the watt-hour rating, it is that much longer that",
+        "E": "when the watt-hour rating is higher, the longer it is"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "Although a surge in retail sales have raised hopes that there is a recovery finally under way, many economists say that without a large amount of spending the recovery might not last.",
+      "options": {
+        "A": "have raised hopes that there is a recovery finally",
+        "B": "raised hopes for there being a recovery finally",
+        "C": "had raised hopes for a recovery finally being",
+        "D": "has raised hopes that a recovery is finally",
+        "E": "raised hopes for a recovery finally"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 4,
+      "question": "At the end of the 1930s, Duke Ellington was looking for a composer to assist him—someone not only who could arrange music for his successful big band, but mirroring his eccentric writing style as well in order to finish the many pieces he had started but never completed.",
+      "options": {
+        "A": "someone not only who could arrange music for his successful big band, but mirroring his eccentric writing style as well in order to finish",
+        "B": "someone who could not only arrange music for his successful big band, but also mirror his eccentric writing style in order to finish",
+        "C": "someone who not only could arrange music for his successful big band, but also to mirror his eccentric writing style in finishing",
+        "D": "that being someone who could not only arrange music for his successful big band, but mirroring his eccentric writing style for finishing",
+        "E": "being someone not only who could arrange music for his successful big band, but mirror his eccentric writing style as well, finishing"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "question": "Of all the vast tides of migration that have swept through history, maybe none is more concentrated as the wave that brought 12 million immigrants onto American shores in little more than three decades.",
+      "options": {
+        "A": "maybe none is more concentrated as",
+        "B": "it may be that none is more concentrated as",
+        "C": "perhaps it is none that is more concentrated than",
+        "D": "maybe it is none that was more concentrated than",
+        "E": "perhaps none was more concentrated than"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 6,
+      "question": "Diabetes, together with its serious complications, ranks as the nation’s third leading cause of death, surpassed only by heart disease and cancer.",
+      "options": {
+        "A": "ranks as the nation’s third leading cause of death, surpassed only",
+        "B": "rank as the nation’s third leading cause of death, only surpassed",
+        "C": "has the rank of the nation’s third leading cause of death, only surpassed",
+        "D": "are the nation’s third leading causes of death, surpassed only",
+        "E": "have been ranked as the nation’s third leading causes of death, only surpassed"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "The intricate structure of the compound insect eye, having hundreds of miniature eyes called ommatidia, help explain why scientists have assumed that it evolved independently of the vertebrate eye.",
+      "options": {
+        "A": "having hundreds of miniature eyes called ommatidia, help explain why scientists have assumed that it",
+        "B": "having hundreds of miniature eyes that are called ommatidia, helps explain why scientists have assumed that they",
+        "C": "with its hundreds of miniature eyes that are called ommatidia, helps explain scientists’ assuming that they",
+        "D": "with its hundreds of miniature eyes called ommatidia, help explain scientists’ assuming that it",
+        "E": "with its hundreds of miniature eyes called ommatidia, helps explain why scientists have assumed that it"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 8,
+      "question": "In late 1997, the chambers inside the pyramid of the Pharaoh Menkaure at Giza were closed to visitors for cleaning and repair due to moisture exhaled by tourists, which raised its humidity to such levels so that salt from the stone was crystallizing and fungus was growing on the walls.",
+      "options": {
+        "A": "due to moisture exhaled by tourists, which raised its humidity to such levels so that salt from the stone was crystallizing",
+        "B": "due to moisture that tourists had exhaled, thereby raising its humidity to such levels that salt from the stone would crystallize",
+        "C": "because tourists were exhaling moisture, which had raised the humidity within them to levels such that salt from the stone would crystallize",
+        "D": "because of moisture that was exhaled by tourists raising the humidity within them to levels so high as to make the salt from the stone crystallize",
+        "E": "because moisture exhaled by tourists had raised the humidity within them to such levels that salt from the stone was crystallizing"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 9,
+      "question": "In 1979 lack of rain reduced India’s rice production to about 41 million tons, nearly 25 percent less than those of the 1978 harvest.",
+      "options": {
+        "A": "less than those of the 1978 harvest",
+        "B": "less than the 1978 harvest",
+        "C": "less than 1978",
+        "D": "fewer than 1978",
+        "E": "fewer than that of India’s 1978 harvest"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "question": "The widely accepted big bang theory holds that the universe began in an explosive instant ten to twenty billion years ago and has been expanding ever since.",
+      "options": {
+        "A": "that the universe began in an explosive instant ten to twenty billion years ago and has been expanding",
+        "B": "that the universe had begun in an explosive instant ten to twenty billion years ago and had been expanding",
+        "C": "that the beginning of the universe was an explosive instant ten to twenty billion years ago that has expanded",
+        "D": "the beginning of the universe to have been an explosive instant ten to twenty billion years ago and has been expanding",
+        "E": "the universe to have begun in an explosive instant ten to twenty billion years ago and has been expanding"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 11,
+      "question": "Like the idolization accorded the Brontës and Brownings, James Joyce and Virginia Woolf are often subjected to the kind of veneration that blurs the distinction between the artist and the human being.",
+      "options": {
+        "A": "Like the idolization accorded the Brontës and Brownings,",
+        "B": "As the Brontës’ and Brownings’ idolization,",
+        "C": "Like that accorded to the Brontës and Brownings,",
+        "D": "As it is of the Brontës and Brownings,",
+        "E": "Like the Brontës and Brownings,"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "Carnivorous mammals can endure what would otherwise be lethal levels of body heat because they have a heat-exchange network which kept the brain from getting too hot.",
+      "options": {
+        "A": "which kept",
+        "B": "that keeps",
+        "C": "which has kept",
+        "D": "that has been keeping",
+        "E": "having kept"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 13,
+      "question": "There are several ways to build solid walls using just mud or clay, but the most extensively used method has been the forming of bricks out of mud or clay, and, after some preliminary air drying or sun drying, they are laid in the wall in mud mortar.",
+      "options": {
+        "A": "the forming of bricks out of mud or clay, and, after some preliminary air drying or sun drying, they are laid",
+        "B": "forming the mud or clay into bricks, and, after some preliminary air drying or sun drying, to lay them",
+        "C": "having bricks formed from mud or clay, and, after some preliminary air drying or sun drying, they were laid",
+        "D": "to form the mud or clay into bricks, and, after some preliminary air drying or sun drying, to lay them",
+        "E": "that bricks were formed from mud or clay, which, after some preliminary air drying or sun drying, were laid"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 14,
+      "question": "Rising inventories, when unaccompanied correspondingly by increases in sales, can lead to production cutbacks that would hamper economic growth.",
+      "options": {
+        "A": "when unaccompanied correspondingly by increases in sales, can lead",
+        "B": "when not accompanied by corresponding increases in sales, possibly leads",
+        "C": "when they were unaccompanied by corresponding sales increases, can lead",
+        "D": "if not accompanied by correspondingly increased sales, possibly leads",
+        "E": "if not accompanied by corresponding increases in sales, can lead"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 15,
+      "question": "Many experts regarded the large increase in credit card borrowing in March not as a sign that households were pressed for cash and forced to borrow, rather a sign of confidence by households that they could safely handle new debt.",
+      "options": {
+        "A": "rather a sign of confidence by households that they could safely",
+        "B": "yet as a sign of households’ confidence that it was safe for them to",
+        "C": "but a sign of confidence by households that they could safely",
+        "D": "but as a sign that households were confident they could safely",
+        "E": "but also as a sign that households were confident in their ability safely to"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 16,
+      "question": "A surge in new home sales and a drop in weekly unemployment claims suggest that the economy might not be as weak as some analysts previously thought.",
+      "options": {
+        "A": "claims suggest that the economy might not be as weak as some analysts previously thought",
+        "B": "claims suggests that the economy might not be so weak as some analysts have previously thought",
+        "C": "claims suggest that the economy might not be as weak as have been previously thought by some analysts",
+        "D": "claims, suggesting about the economy that it might not be so weak as previously thought by some analysts",
+        "E": "claims, suggesting the economy might not be as weak as previously thought to be by some analysts"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 17,
+      "question": "Sunspots, vortices of gas associated with strong electromagnetic activity, are visible as dark spots on the surface of the Sun but have never been sighted on the Sun’s poles or equator.",
+      "options": {
+        "A": "are visible as dark spots on the surface of the Sun but have never been sighted on",
+        "B": "are visible as dark spots that never have been sighted on the surface of the Sun",
+        "C": "appear on the surface of the Sun as dark spots although never sighted at",
+        "D": "appear as dark spots on the surface of the Sun, although never having been sighted at",
+        "E": "appear as dark spots on the Sun’s surface, which have never been sighted on"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 18,
+      "question": "Warning that computers in the United States are not secure, the National Academy of Sciences has urged the nation to revamp computer security procedures, institute new emergency response teams, creating a special nongovernment organization to take charge of computer security planning.",
+      "options": {
+        "A": "creating a special nongovernment organization to take",
+        "B": "creating a special nongovernment organization that takes",
+        "C": "creating a special nongovernment organization for taking",
+        "D": "and create a special nongovernment organization for taking",
+        "E": "and create a special nongovernment organization to take"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 19,
+      "question": "A pioneer journalist, Nellie Bly’s exploits included circling the globe faster than Jules Verne’s fictional Phileas Fogg.",
+      "options": {
+        "A": "A pioneer journalist, Nellie Bly’s exploits included",
+        "B": "The exploits of Nellie Bly, a pioneer journalist, included",
+        "C": "Nellie Bly was a pioneer journalist including in her exploits the",
+        "D": "Included in the pioneer journalist Nellie Bly’s exploits are",
+        "E": "The pioneer journalist’s exploits of Nellie Bly included"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 20,
+      "question": "Retail sales rose 0.8 of 1 percent in August, intensifying expectations that personal spending in the July–September quarter more than doubled that of the 1.4 percent growth rate in personal spending for the previous quarter.",
+      "options": {
+        "A": "that personal spending in the July–September quarter more than doubled that of",
+        "B": "that personal spending in the July–September quarter would more than double",
+        "C": "of personal spending in the July–September quarter, that it more than doubled",
+        "D": "of personal spending in the July–September quarter more than doubling that of",
+        "E": "of personal spending in the July–September quarter, that it would more than double that of"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 21,
+      "question": "The commission has directed advertisers to restrict the use of the word “natural” to foods that do not contain color or flavor additives, chemical preservatives, or nothing that has been synthesized.",
+      "options": {
+        "A": "or nothing that has been",
+        "B": "or that has been",
+        "C": "and nothing that is",
+        "D": "or anything that has been",
+        "E": "and anything"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 22,
+      "question": "Plants are more efficient at acquiring carbon than are fungi, in the form of carbon dioxide, and converting it to energy-rich sugars.",
+      "options": {
+        "A": "Plants are more efficient at acquiring carbon than are fungi,",
+        "B": "Plants are more efficient at acquiring carbon than fungi,",
+        "C": "Plants are more efficient than fungi at acquiring carbon,",
+        "D": "Plants, more efficient than fungi at acquiring carbon,",
+        "E": "Plants acquire carbon more efficiently than fungi,"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 23,
+      "question": "The Iroquois were primarily planters, but supplementing their cultivation of maize, squash, and beans with fishing and hunting.",
+      "options": {
+        "A": "but supplementing",
+        "B": "and had supplemented",
+        "C": "and even though they supplemented",
+        "D": "although they supplemented",
+        "E": "but with supplementing"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "As contrasted with the honeybee, the yellow jacket can sting repeatedly without dying and carries a potent venom that can cause intense pain.",
+      "options": {
+        "A": "As contrasted with the honeybee,",
+        "B": "In contrast to the honeybee’s,",
+        "C": "Unlike the sting of the honeybee,",
+        "D": "Unlike that of the honeybee,",
+        "E": "Unlike the honeybee,"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 25,
+      "question": "Neuroscientists, having amassed a wealth of knowledge over the past twenty years about the brain and its development from birth to adulthood, are now drawing solid conclusions about how the human brain grows and how babies acquire language.",
+      "options": {
+        "A": "Neuroscientists, having amassed a wealth of knowledge over the past twenty years about the brain and its development from birth to adulthood, are",
+        "B": "Neuroscientists, having amassed a wealth of knowledge about the brain and its development from birth to adulthood over the past twenty years, and are",
+        "C": "Neuroscientists amassing a wealth of knowledge about the brain and its development from birth to adulthood over the past twenty years, and are",
+        "D": "Neuroscientists have amassed a wealth of knowledge over the past twenty years about the brain and its development from birth to adulthood,",
+        "E": "Neuroscientists have amassed, over the past twenty years, a wealth of knowledge about the brain and its development from birth to adulthood,"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 26,
+      "question": "Tropical bats play important roles in the rain forest ecosystem, aiding in the dispersal of cashew, date, and fig seeds; pollinating banana, breadfruit, and mango trees; and indirectly help produce tequila by pollinating agave plants.",
+      "options": {
+        "A": "pollinating banana, breadfruit, and mango trees; and indirectly help produce",
+        "B": "pollinating banana, breadfruit, and mango trees; and indirectly helping to produce",
+        "C": "pollinating banana, breadfruit, and mango trees; and they indirectly help to produce",
+        "D": "they pollinate banana, breadfruit, and mango trees; and indirectly help producing",
+        "E": "they pollinate banana, breadfruit, and mango trees; indirectly helping the producing of"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 27,
+      "question": "None of the attempts to specify the causes of crime explains why most of the people exposed to the alleged causes do not commit crimes and, conversely, why so many of those not so exposed have.",
+      "options": {
+        "A": "have",
+        "B": "has",
+        "C": "shall",
+        "D": "do",
+        "E": "could"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 28,
+      "question": "In virtually all types of tissue in every animal species, dioxin induces the production of enzymes that are the organism’s trying to metabolize, or render harmless, the chemical that is irritating it.",
+      "options": {
+        "A": "trying to metabolize, or render harmless, the chemical that is irritating it",
+        "B": "trying that it metabolize, or render harmless, the chemical irritant",
+        "C": "attempt to try to metabolize, or render harmless, such a chemical irritant",
+        "D": "attempt to try and metabolize, or render harmless, the chemical irritating it",
+        "E": "attempt to metabolize, or render harmless, the chemical irritant"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 29,
+      "question": "Emily Dickinson’s letters to Susan Huntington Dickinson were written over a period beginning a few years before Susan’s marriage to Emily’s brother and ending shortly before Emily’s death in 1886, outnumbering her letters to anyone else.",
+      "options": {
+        "A": "Dickinson were written over a period beginning a few years before Susan’s marriage to Emily’s brother and ending shortly before Emily’s death in 1886, outnumbering",
+        "B": "Dickinson were written over a period that begins a few years before Susan’s marriage to Emily’s brother and ended shortly before Emily’s death in 1886, outnumber",
+        "C": "Dickinson, written over a period beginning a few years before Susan’s marriage to Emily’s brother and that ends shortly before Emily’s death in 1886 and outnumbering",
+        "D": "Dickinson, which were written over a period beginning a few years before Susan’s marriage to Emily’s brother, ending shortly before Emily’s death in 1886, and outnumbering",
+        "E": "Dickinson, which were written over a period beginning a few years before Susan’s marriage to Emily’s brother and ending shortly before Emily’s death in 1886, outnumber"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 30,
+      "question": "Paleontologists believe that fragments of a primate jawbone unearthed in Burma and estimated at 40 to 44 million years old provide evidence of a crucial step along the evolutionary path that led to human beings.",
+      "options": {
+        "A": "at 40 to 44 million years old provide evidence of",
+        "B": "as being 40 to 44 million years old provides evidence of",
+        "C": "that it is 40 to 44 million years old provides evidence of what was",
+        "D": "to be 40 to 44 million years old provide evidence of",
+        "E": "as 40 to 44 million years old provides evidence"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 31,
+      "question": "Unlike the conviction held by many of her colleagues that genes were relatively simple and static, Barbara McClintock adhered to her own more complicated ideas about how genes might operate, and in 1983, at the age of 81, was awarded a Nobel Prize for her discovery that the genes in corn are capable of moving from one chromosomal site to another.",
+      "options": {
+        "A": "Unlike the conviction held by many of her colleagues that genes were",
+        "B": "Although many of her colleagues were of the conviction of genes being",
+        "C": "Contrary to many of her colleagues being convinced that genes were",
+        "D": "Even though many of her colleagues were convinced that genes were",
+        "E": "Even with many of her colleagues convinced of genes being"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 32,
+      "question": "Galileo was convinced that natural phenomena, as manifestations of the laws of physics, would appear the same to someone on the deck of a ship moving smoothly and uniformly through the water as a person standing on land.",
+      "options": {
+        "A": "water as a",
+        "B": "water as to a",
+        "C": "water; just as it would to a",
+        "D": "water, as it would to the",
+        "E": "water; just as to the"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 33,
+      "question": "Because an oversupply of computer chips has sent prices plunging, the manufacturer has announced that it will cut production by closing its factories for two days a month.",
+      "options": {
+        "A": "Because an oversupply of computer chips has sent prices plunging,",
+        "B": "Because of plunging prices for computer chips, which is due to an oversupply,",
+        "C": "Because computer chip prices have been sent plunging, which resulted from an oversupply,",
+        "D": "Due to plunging computer chip prices from an oversupply,",
+        "E": "Due to an oversupply, with the result that computer chip prices have been sent plunging,"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 34,
+      "question": "Beyond the immediate cash flow crisis that the museum faces, its survival depends on if it can broaden its membership and leave its cramped quarters for a site where it can store and exhibit its more than 12,000 artifacts.",
+      "options": {
+        "A": "if it can broaden its membership and leave",
+        "B": "whether it can broaden its membership and leave",
+        "C": "whether or not it has the capability to broaden its membership and can leave",
+        "D": "its ability for broadening its membership and leaving",
+        "E": "the ability for it to broaden its membership and leave"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 35,
+      "question": "By 1940, the pilot Jacqueline Cochran held seventeen official national and international speed records, and she earned them at a time when aviation was still so new for many of the planes she flew to be of dangerously experimental design.",
+      "options": {
+        "A": "and she earned them at a time when aviation was still so new for many of the planes she flew to be",
+        "B": "earning them at a time that aviation was still so new for many of the planes she flew to be",
+        "C": "earning these at a time where aviation was still so new that many of the planes she flew were",
+        "D": "earned at a time in which aviation was still so new such that many of the planes she flew were",
+        "E": "earned at a time when aviation was still so new that many of the planes she flew were"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 36,
+      "question": "Along with the drop in producer prices announced yesterday, the strong retail sales figures released today seem like it is indicative that the economy, although growing slowly, is not nearing a recession.",
+      "options": {
+        "A": "like it is indicative that",
+        "B": "as if to indicate",
+        "C": "to indicate that",
+        "D": "indicative of",
+        "E": "like an indication of"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 37,
+      "question": "Dressed as a man and using the name Robert Shurtleff, Deborah Sampson, the first woman to draw a soldier’s pension, joined the Continental Army in 1782 at the age of 22, was injured three times, and was discharged in 1783 because she had become too ill to serve.",
+      "options": {
+        "A": "22, was injured three times, and was discharged in 1783 because she had become",
+        "B": "22, was injured three times, while being discharged in 1783 because she had become",
+        "C": "22 and was injured three times, and discharged in 1783, being",
+        "D": "22, injured three times, and was discharged in 1783 because she was",
+        "E": "22, having been injured three times and discharged in 1783, being"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 38,
+      "question": "Bengal-born writer, philosopher, and educator Rabindranath Tagore had the greatest admiration for Mohandas K. Gandhi the person and also as a politician, but Tagore had been skeptical of Gandhi’s form of nationalism and his conservative opinions about India’s cultural traditions.",
+      "options": {
+        "A": "for Mohandas K. Gandhi the person and also as a politician, but Tagore had been",
+        "B": "for Mohandas K. Gandhi as a person and as a politician, but Tagore was also",
+        "C": "for Mohandas K. Gandhi not only as a person and as a politician, but Tagore was also",
+        "D": "of Mohandas K. Gandhi as a person and as also a politician, but Tagore was",
+        "E": "of Mohandas K. Gandhi not only as a person and as a politician, but Tagore had also been"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 39,
+      "question": "Although schistosomiasis is not often fatal, it is so debilitating that it has become an economic drain on many developing countries.",
+      "options": {
+        "A": "it is so debilitating that it has become an economic",
+        "B": "it is of such debilitation, it has become an economical",
+        "C": "so debilitating is it as to become an economic",
+        "D": "such is its debilitation, it becomes an economical",
+        "E": "there is so much debilitation that it has become an economical"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 40,
+      "question": "The Organization of Petroleum Exporting Countries (OPEC) had long been expected to announce a reduction in output to bolster sagging oil prices, but officials of the organization just recently announced that the group will pare daily production by 1.5 million barrels by the beginning of next year, but only if non-OPEC nations, including Norway, Mexico, and Russia, were to trim output by a total of 500,000 barrels a day.",
+      "options": {
+        "A": "year, but only if non-OPEC nations, including Norway, Mexico, and Russia, were to trim output",
+        "B": "year, but only if the output of non-OPEC nations, which includes Norway, Mexico, and Russia, is trimmed",
+        "C": "year only if the output of non-OPEC nations, including Norway, Mexico, and Russia, would be trimmed",
+        "D": "year only if non-OPEC nations, which includes Norway, Mexico, and Russia, were trimming output",
+        "E": "year only if non-OPEC nations, including Norway, Mexico, and Russia, trim output"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 41,
+      "question": "In 1850, Lucretia Mott published her Discourse on Women, arguing in a treatise for women to have equal political and legal rights and for changes in the married women’s property laws.",
+      "options": {
+        "A": "arguing in a treatise for women to have equal political and legal rights",
+        "B": "arguing in a treatise for equal political and legal rights for women",
+        "C": "a treatise that advocates women’s equal political and legal rights",
+        "D": "a treatise advocating women’s equal political and legal rights",
+        "E": "a treatise that argued for equal political and legal rights for women"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 42,
+      "question": "To develop more accurate population forecasts, demographers have to know a great deal more than now about the social and economic determinants of fertility.",
+      "options": {
+        "A": "have to know a great deal more than now about the social and economic",
+        "B": "have to know a great deal more than they do now about the social and economical",
+        "C": "would have to know a great deal more than they do now about the social and economical",
+        "D": "would have to know a great deal more than they do now about the social and economic",
+        "E": "would have to know a great deal more than now about the social and economic"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 43,
+      "question": "Laos has a land area about the same as Great Britain but only four million in population, where many are members of hill tribes ensconced in the virtually inaccessible mountain valleys of the north.",
+      "options": {
+        "A": "about the same as Great Britain but only four million in population, where many",
+        "B": "of about the same size as Great Britain is, but in Laos there is a population of only four million, and many",
+        "C": "that is about the same size as Great Britain’s land area, but in Laos with a population of only four million people, many of them",
+        "D": "comparable to the size of Great Britain, but only four million in population, and many",
+        "E": "comparable to that of Great Britain but a population of only four million people, many of whom"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 44,
+      "question": "The plot of The Bostonians centers on the rivalry between Olive Chancellor, an active feminist, with her charming and cynical cousin, Basil Ransom, when they find themselves drawn to the same radiant young woman whose talent for public speaking has won her an ardent following.",
+      "options": {
+        "A": "rivalry between Olive Chancellor, an active feminist, with her charming and cynical cousin, Basil Ransom,",
+        "B": "rivals Olive Chancellor, an active feminist, against her charming and cynical cousin, Basil Ransom,",
+        "C": "rivalry that develops between Olive Chancellor, an active feminist, and Basil Ransom, her charming and cynical cousin,",
+        "D": "developing rivalry between Olive Chancellor, an active feminist, with Basil Ransom, her charming and cynical cousin,",
+        "E": "active feminist, Olive Chancellor, and the rivalry with her charming and cynical cousin Basil Ransom,"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 45,
+      "question": "Quasars, at billions of light-years from Earth the most distant observable objects in the universe, believed to be the cores of galaxies in an early stage of development.",
+      "options": {
+        "A": "believed to be",
+        "B": "are believed to be",
+        "C": "some believe them to be",
+        "D": "some believe they are",
+        "E": "it is believed that they are"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 46,
+      "question": "In ancient Thailand, much of the local artisans’ creative energy was expended for the creation of Buddha images and when they constructed and decorated the temples that enshrined them.",
+      "options": {
+        "A": "much of the local artisans’ creative energy was expended for the creation of Buddha images and when they constructed and decorated the temples that enshrined them",
+        "B": "much of the local artisans’ creative energy was expended on the creation of Buddha images and on construction and decoration of the temples in which they were enshrined",
+        "C": "much of the local artisans’ creative energy was expended on the creation of Buddha images as well as constructing and decoration of the temples in which they were enshrined",
+        "D": "creating images of Buddha accounted for much of the local artisans’ creative energy, and also constructing and decorating the temples enshrining them",
+        "E": "the creation of Buddha images accounted for much of the local artisans’ creative energy as well as construction and decoration of the temples that enshrined them"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 47,
+      "question": "In 1713, Alexander Pope began his translation of the Iliad, a work that, taking him seven years until completion, and that literary critic Samuel Johnson, Pope’s contemporary, pronounced the greatest translation in any language.",
+      "options": {
+        "A": "his translation of the Iliad, a work that, taking him seven years until completion, and that literary critic Samuel Johnson, Pope’s contemporary, pronounced",
+        "B": "his translation of the Iliad, a work that took him seven years to complete and that literary critic Samuel Johnson, Pope’s contemporary, pronounced",
+        "C": "his translation of the Iliad, a work that had taken seven years to complete and that literary critic Samuel Johnson, Pope’s contemporary, pronounced it as",
+        "D": "translating the Iliad, a work that took seven years until completion and that literary critic Samuel Johnson, Pope’s contemporary, pronounced it as",
+        "E": "translating the Iliad, a work that had taken seven years to complete and literary critic Samuel Johnson, Pope’s contemporary, pronounced it"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 48,
+      "question": "It is called a sea, but the landlocked Caspian is actually the largest lake on Earth, which covers more than four times the surface area of its closest rival in size, North America’s Lake Superior.",
+      "options": {
+        "A": "It is called a sea, but the landlocked Caspian is actually the largest lake on Earth, which covers",
+        "B": "Although it is called a sea, actually the landlocked Caspian is the largest lake on Earth, which covers",
+        "C": "Though called a sea, the landlocked Caspian is actually the largest lake on Earth, covering",
+        "D": "Though called a sea but it actually is the largest lake on Earth, the landlocked Caspian covers",
+        "E": "Despite being called a sea, the largest lake on Earth is actually the landlocked Caspian, covering"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 49,
+      "question": "The automotive conveyor-belt system, which Henry Ford modeled after an assembly-line technique introduced by Ransom Olds, reduced from a day and a half to 93 minutes the required time of assembling a Model T.",
+      "options": {
+        "A": "from a day and a half to 93 minutes the required time of assembling a Model T",
+        "B": "the time being required to assemble a Model T, from a day and a half down to 93 minutes",
+        "C": "the time being required to assemble a Model T, a day and a half to 93 minutes",
+        "D": "the time required to assemble a Model T from a day and a half to 93 minutes",
+        "E": "from a day and a half to 93 minutes, the time required for the assembling of a Model T"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 50,
+      "question": "According to some analysts, the gains in the stock market reflect growing confidence that the economy will avoid the recession that many had feared earlier in the year and instead come in for a “soft landing,” followed by a gradual increase in business activity.",
+      "options": {
+        "A": "that the economy will avoid the recession that many had feared earlier in the year and instead come",
+        "B": "in the economy to avoid the recession, what many feared earlier in the year, rather to come",
+        "C": "in the economy’s ability to avoid the recession, something earlier in the year many had feared, and instead to come",
+        "D": "in the economy to avoid the recession many were fearing earlier in the year, and rather to come",
+        "E": "that the economy will avoid the recession that was feared earlier this year by many, with it instead coming"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 51,
+      "question": "A new study suggests that the conversational pace of everyday life may be so brisk it hampers the ability of some children for distinguishing discrete sounds and words and, the result is, to make sense of speech.",
+      "options": {
+        "A": "it hampers the ability of some children for distinguishing discrete sounds and words and, the result is, to make",
+        "B": "that it hampers the ability of some children to distinguish discrete sounds and words and, as a result, to make",
+        "C": "that it hampers the ability of some children to distinguish discrete sounds and words and, the result of this, they are unable to make",
+        "D": "that it hampers the ability of some children to distinguish discrete sounds and words, and results in not making",
+        "E": "as to hamper the ability of some children for distinguishing discrete sounds and words, resulting in being unable to make"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 52,
+      "question": "To Josephine Baker, Paris was her home long before it was fashionable to be an expatriate, and she remained in France during the Second World War as a performer and an intelligence agent for the Resistance.",
+      "options": {
+        "A": "To Josephine Baker, Paris was her home long before it was fashionable to be an expatriate,",
+        "B": "For Josephine Baker, long before it was fashionable to be an expatriate, Paris was her home,",
+        "C": "Josephine Baker made Paris her home long before to be an expatriate was fashionable,",
+        "D": "Long before it was fashionable to be an expatriate, Josephine Baker made Paris her home,",
+        "E": "Long before it was fashionable being an expatriate, Paris was home to Josephine Baker,"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 53,
+      "question": "The nineteenth-century chemist Humphry Davy presented the results of his early experiments in his “Essay on Heat and Light,” a critique of all chemistry since Robert Boyle as well as a vision of a new chemistry that Davy hoped to found.",
+      "options": {
+        "A": "a critique of all chemistry since Robert Boyle as well as a vision of a",
+        "B": "a critique of all chemistry following Robert Boyle and also his envisioning of a",
+        "C": "a critique of all chemistry after Robert Boyle and envisioning as well",
+        "D": "critiquing all chemistry from Robert Boyle forward and also a vision of",
+        "E": "critiquing all the chemistry done since Robert Boyle as well as his own envisioning of"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 54,
+      "question": "The report recommended that the hospital should eliminate unneeded beds, expensive services should be consolidated, and use space in other hospitals.",
+      "options": {
+        "A": "should eliminate unneeded beds, expensive services should be consolidated, and use space in other hospitals",
+        "B": "should eliminate unneeded beds, expensive services should be consolidated, and other hospitals’ space be used",
+        "C": "should eliminate unneeded beds, expensive services should be consolidated, and to use space in other hospitals",
+        "D": "eliminate unneeded beds, consolidate expensive services, and other hospitals’ space used",
+        "E": "eliminate unneeded beds, consolidate expensive services, and use space in other hospitals"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 55,
+      "question": "Many house builders offer rent-to-buy programs that enable a family with insufficient savings for a conventional down payment to be able to move into new housing and to apply part of the rent to a purchase later.",
+      "options": {
+        "A": "programs that enable a family with insufficient savings for a conventional down payment to be able to move into new housing and to apply",
+        "B": "programs that enable a family with insufficient savings for a conventional down payment to move into new housing and to apply",
+        "C": "programs; that enables a family with insufficient savings for a conventional down payment to move into new housing, to apply",
+        "D": "programs, which enables a family with insufficient savings for a conventional down payment to move into new housing, applying",
+        "E": "programs, which enable a family with insufficient savings for a conventional down payment to be able to move into new housing, applying"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 56,
+      "question": "Elizabeth Barber, the author of both Prehistoric Textiles, a comprehensive work on cloth in the early cultures of the Mediterranean, and also of Women’s Work, a more general account of early cloth manufacture, is an expert authority on textiles in ancient societies.",
+      "options": {
+        "A": "also of Women’s Work, a more general account of early cloth manufacture, is an expert authority on",
+        "B": "also Women’s Work, a more general account of cloth manufacture, is an expert authority about",
+        "C": "of Women’s Work, a more general account about early cloth manufacture, is an authority on",
+        "D": "of Women’s Work, a more general account about early cloth manufacture, is an expert authority about",
+        "E": "Women’s Work, a more general account of early cloth manufacture, is an authority on"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 57,
+      "question": "Many of the earliest known images of Hindu deities in India date from the time of the Kushan Empire, fashioned either from the spotted sandstone of Mathura or Gandharan grey schist.",
+      "options": {
+        "A": "Empire, fashioned either from the spotted sandstone of Mathura or",
+        "B": "Empire, fashioned from either the spotted sandstone of Mathura or from",
+        "C": "Empire, either fashioned from the spotted sandstone of Mathura or",
+        "D": "Empire and either fashioned from the spotted sandstone of Mathura or from",
+        "E": "Empire and were fashioned either from the spotted sandstone of Mathura or from"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 58,
+      "question": "That educators have not anticipated the impact of microcomputer technology can hardly be said that it is their fault: Alvin Toffler, one of the most prominent students of the future, did not even mention microcomputers in Future Shock, published in 1970.",
+      "options": {
+        "A": "That educators have not anticipated the impact of microcomputer technology can hardly be said that it is their fault",
+        "B": "That educators have not anticipated the impact of microcomputer technology can hardly be said to be at fault",
+        "C": "It can hardly be said that it is the fault of educators who have not anticipated the impact of microcomputer technology",
+        "D": "It can hardly be said that educators are at fault for not anticipating the impact of microcomputer technology",
+        "E": "The fact that educators are at fault for not anticipating the impact of microcomputer technology can hardly be said"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 59,
+      "question": "A leading figure in the Scottish Enlightenment, Adam Smith’s two major books are to democratic capitalism what Marx’s Das Kapital is to socialism.",
+      "options": {
+        "A": "Adam Smith’s two major books are to democratic capitalism what",
+        "B": "Adam Smith’s two major books are to democratic capitalism like",
+        "C": "Adam Smith’s two major books are to democratic capitalism just as",
+        "D": "Adam Smith wrote two major books that are to democratic capitalism similar to",
+        "E": "Adam Smith wrote two major books that are to democratic capitalism what"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 60,
+      "question": "The Olympic Games helped to keep peace among the pugnacious states of the Greek world in that a sacred truce was proclaimed during the festival’s month.",
+      "options": {
+        "A": "world in that a sacred truce was proclaimed during the festival’s month",
+        "B": "world, proclaiming a sacred truce during the festival’s month",
+        "C": "world when they proclaimed a sacred truce for the festival month",
+        "D": "world, for a sacred truce was proclaimed during the month of the festival",
+        "E": "world by proclamation of a sacred truce that was for the month of the festival"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 61,
+      "question": "While all states face similar industrial waste problems, the predominating industries and the regulatory environment of the states obviously determines the types and amounts of waste produced, as well as the cost of disposal.",
+      "options": {
+        "A": "all states face similar industrial waste problems, the predominating industries and the regulatory environment of the states obviously determines",
+        "B": "each state faces a similar industrial waste problem, their predominant industries and regulatory environment obviously determine",
+        "C": "all states face a similar industrial waste problem; their predominating industries and regulatory environment obviously determines",
+        "D": "each state faces similar industrial waste problems, the predominant industries and the regulatory environment of each state obviously determines",
+        "E": "all states face similar industrial waste problems, the predominant industries and the regulatory environment of each state obviously determine"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 62,
+      "question": "Rivaling the pyramids of Egypt or even the ancient cities of the Maya as an achievement, the army of terra-cotta warriors created to protect Qin Shi Huang, China’s first emperor, in his afterlife is more than 2,000 years old and took 700,000 artisans more than 36 years to complete.",
+      "options": {
+        "A": "the army of terra-cotta warriors created to protect Qin Shi Huang, China’s first emperor, in his afterlife is more than 2,000 years old and took 700,000 artisans more than 36 years to complete",
+        "B": "Qin Shi Huang, China’s first emperor, was protected in his afterlife by an army of terra-cotta warriors that was created more than 2,000 years ago by 700,000 artisans who took more than 36 years to complete it",
+        "C": "it took 700,000 artisans more than 36 years to create an army of terra-cotta warriors more than 2,000 years ago that would protect Qin Shi Huang, China’s first emperor, in his afterlife",
+        "D": "more than 2,000 years ago, 700,000 artisans worked more than 36 years to create an army of terra-cotta warriors to protect Qin Shi Huang, China’s first emperor, in his afterlife",
+        "E": "more than 36 years were needed to complete the army of terra-cotta warriors that 700,000 artisans created 2,000 years ago to protect Qin Shi Huang, China’s first emperor, in his afterlife"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 63,
+      "question": "When Congress reconvenes, some newly elected members from rural states will try and establish tighter restrictions for the amount of grain farmers are to be allowed to grow and to encourage more aggressive sales of United States farm products overseas.",
+      "options": {
+        "A": "and establish tighter restrictions for the amount of grain farmers are to be allowed to grow and to encourage",
+        "B": "and establish tighter restrictions on the amount of grain able to be grown by farmers and encouraging",
+        "C": "establishing tighter restrictions for the amount of grain farmers are allowed to grow and to encourage",
+        "D": "to establish tighter restrictions on the amount of grain capable of being grown by farmers and encouraging",
+        "E": "to establish tighter restrictions on the amount of grain farmers will be allowed to grow and to encourage"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 64,
+      "question": "Doctors generally agree that such factors as cigarette smoking, eating rich foods high in fats, and alcohol consumption not only do damage by themselves but also aggravate genetic predispositions toward certain diseases.",
+      "options": {
+        "A": "not only do damage by themselves but also aggravate",
+        "B": "do damage by themselves but also are aggravating to",
+        "C": "are damaging by themselves but also are aggravating",
+        "D": "not only do damage by themselves, they are also aggravating to",
+        "E": "are doing damage by themselves, and they are also aggravating"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 65,
+      "question": "Digging in sediments in northern China, evidence has been gathered by scientists suggesting that complex life-forms emerged much earlier than they had previously thought.",
+      "options": {
+        "A": "evidence has been gathered by scientists suggesting that complex life-forms emerged much earlier than they had",
+        "B": "evidence gathered by scientists suggests a much earlier emergence of complex life-forms than had been",
+        "C": "scientists have gathered evidence suggesting that complex life-forms emerged much earlier than",
+        "D": "scientists have gathered evidence that suggests a much earlier emergence of complex life-forms than that which was",
+        "E": "scientists have gathered evidence which suggests a much earlier emergence of complex life-forms than that"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 66,
+      "question": "In a plan to stop the erosion of East Coast beaches, the Army Corps of Engineers proposed building parallel to shore a breakwater of rocks that would rise six feet above the waterline and act as a buffer, so that it absorbs the energy of crashing waves and protecting the beaches.",
+      "options": {
+        "A": "act as a buffer, so that it absorbs",
+        "B": "act like a buffer so as to absorb",
+        "C": "act as a buffer, absorbing",
+        "D": "acting as a buffer, absorbing",
+        "E": "acting like a buffer, absorb"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 67,
+      "question": "The 32 species that make up the dolphin family are closely related to whales and in fact include the animal known as the killer whale, which can grow to be 30 feet long and is famous for its aggressive hunting pods.",
+      "options": {
+        "A": "include the animal known as the killer whale, which can grow to be 30 feet long and is",
+        "B": "include the animal known as the killer whale, growing as big as 30 feet long and",
+        "C": "include the animal known as the killer whale, growing up to 30 feet long and being",
+        "D": "includes the animal known as the killer whale, which can grow as big as 30 feet long and is",
+        "E": "includes the animal known as the killer whale, which can grow to be 30 feet long and it is"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 68,
+      "question": "Outlining his strategy for nursing the troubled conglomerate back to health, the chief executive’s plans were announced on Wednesday for cutting the company’s huge debt by selling nearly $12 billion in assets over the next 18 months.",
+      "options": {
+        "A": "executive’s plans were announced on Wednesday for cutting the company’s huge debt by selling nearly $12 billion in assets over the next 18 months",
+        "B": "executive’s plans, which are to cut the company’s huge debt by selling nearly $12 billion in assets over the next 18 months, were announced on Wednesday",
+        "C": "executive’s plans for cutting the company’s huge debt by selling nearly $12 billion in assets over the next 18 months were announced on Wednesday",
+        "D": "executive announced plans Wednesday to cut the company’s huge debt by selling nearly $12 billion in assets over the next 18 months",
+        "E": "executive announced plans Wednesday that are to cut the company’s huge debt by selling nearly $12 billion in assets over the next 18 months"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 69,
+      "question": "Affording strategic proximity to the Strait of Gibraltar, Morocco was also of interest to the French throughout the first half of the twentieth century because they assumed that if they did not hold it, their grip on Algeria was always insecure.",
+      "options": {
+        "A": "if they did not hold it, their grip on Algeria was always insecure",
+        "B": "without it their grip on Algeria would never be secure",
+        "C": "their grip on Algeria was not ever secure if they did not hold it",
+        "D": "without that, they could never be secure about their grip on Algeria",
+        "E": "never would their grip on Algeria be secure if they did not hold it"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 70,
+      "question": "The first trenches that were cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence for centrally administered complex societies in northern regions of the Middle East that were arising simultaneously with but independently of the more celebrated city-states of southern Mesopotamia, in what is now southern Iraq.",
+      "options": {
+        "A": "that were cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence for centrally administered complex societies in northern regions of the Middle East that were arising simultaneously with but",
+        "B": "that were cut into a 500-acre site at Tell Hamoukar, Syria, yields strong evidence that centrally administered complex societies in northern regions of the Middle East were arising simultaneously with but also",
+        "C": "having been cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence that centrally administered complex societies in northern regions of the Middle East were arising simultaneously but",
+        "D": "cut into a 500-acre site at Tell Hamoukar, Syria, yields strong evidence of centrally administered complex societies in northern regions of the Middle East arising simultaneously but also",
+        "E": "cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence that centrally administered complex societies in northern regions of the Middle East arose simultaneously with but"
+      },
+      "correct": "E"
+    }
+  ]
+}

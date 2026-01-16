@@ -1,0 +1,727 @@
+{
+  "subject": "GMAT Critical Reasoning",
+  "year": 2013,
+  "source": "The Official Guide for GMAT Review 13th Edition",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Snowmaking machines work by spraying a mist that freezes immediately on contact with cold air. Because the sudden freezing kills bacteria, QuickFreeze is planning to market a wastewater purification system that works on the same principle. The process works only when temperatures are cold, however, so municipalities using it will still need to maintain a conventional system. Which of the following, if true, provides the strongest grounds for a prediction that municipalities will buy QuickFreeze’s purification system despite the need to maintain a conventional purification system as well?",
+      "options": {
+        "A": "Bacteria are not the only impurities that must be removed from wastewater.",
+        "B": "Many municipalities have old wastewater purification systems that need to be replaced.",
+        "C": "Conventional wastewater purification systems have not been fully successful in killing bacteria at cold temperatures.",
+        "D": "During times of warm weather, when it is not in use, QuickFreeze’s purification system requires relatively little maintenance.",
+        "E": "Places where the winters are cold rarely have a problem of water shortage."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 2,
+      "question": "Homeowners aged 40 to 50 are more likely to purchase ice cream and are more likely to purchase it in larger amounts than are members of any other demographic group. The popular belief that teenagers eat more ice cream than adults must, therefore, be false. The argument is flawed primarily because the author",
+      "options": {
+        "A": "fails to distinguish between purchasing and consuming",
+        "B": "does not supply information about homeowners in age groups other than 40 to 50",
+        "C": "depends on popular belief rather than on documented research findings",
+        "D": "does not specify the precise amount of ice cream purchased by any demographic group",
+        "E": "discusses ice cream rather than more nutritious and healthful foods"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 3,
+      "question": "Suncorp, a new corporation with limited funds, has been clearing large sections of the tropical Amazon forest for cattle ranching. This practice continues even though greater profits can be made from rubber tapping, which does not destroy the forest, than from cattle ranching, which does destroy the forest. Which of the following, if true, most helps to explain why Suncorp has been pursuing the less profitable of the two economic activities mentioned above?",
+      "options": {
+        "A": "The soil of the Amazon forest is very rich in nutrients that are important in the development of grazing lands.",
+        "B": "Cattle-ranching operations that are located in tropical climates are more profitable than cattle-ranching operations that are located in cold-weather climates.",
+        "C": "In certain districts, profits made from cattle ranching are more heavily taxed than profits made from any other industry.",
+        "D": "Some of the cattle that are raised on land cleared in the Amazon are killed by wildcats.",
+        "E": "The amount of money required to begin a rubber-tapping operation is twice as high as the amount needed to begin a cattle ranch."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 4,
+      "question": "According to a prediction of the not-so-distant future published in 1940, electricity would revolutionize agriculture. Electrodes would be inserted into the soil, and the current between them would kill bugs and weeds and make crop plants stronger. Which of the following, if true, most strongly indicates that the logic of the prediction above is flawed?",
+      "options": {
+        "A": "In order for farmers to avoid electric shock while working in the fields, the current could be turned off at such times without diminishing the intended effects.",
+        "B": "If the proposed plan for using electricity were put into practice, farmers would save on chemicals now being added to the soil.",
+        "C": "It cannot be taken for granted that the use of electricity is always beneficial.",
+        "D": "Since weeds are plants, electricity would affect weeds in the same way as it would affect crop plants.",
+        "E": "Because a planting machine would need to avoid coming into contact with the electrodes, new parts for planting machines would need to be designed."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 5,
+      "question": "A company is considering changing its policy concerning daily working hours. Currently, this company requires all employees to arrive at work at 8 a.m. The proposed policy would permit each employee to decide when to arrive—from as early as 6 a.m. to as late as 11 a.m. The adoption of this policy would be most likely to decrease employees’ productivity if the employees’ job functions required them to",
+      "options": {
+        "A": "work without interruption from other employees",
+        "B": "consult at least once a day with employees from other companies",
+        "C": "submit their work for a supervisor’s eventual approval",
+        "D": "interact frequently with each other throughout the entire workday",
+        "E": "undertake projects that take several days to complete"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 6,
+      "question": "Parland’s alligator population has been declining in recent years, primarily because of hunting. Alligators prey heavily on a species of freshwater fish that is highly valued as food by Parlanders, who had hoped that the decline in the alligator population would lead to an increase in the numbers of these fish available for human consumption. Yet the population of this fish species has also declined, even though the annual number caught for human consumption has not increased. Which of the following, if true, most helps to explain the decline in the population of the fish species?",
+      "options": {
+        "A": "The decline in the alligator population has meant that fishers can work in some parts of lakes and rivers that were formerly too dangerous.",
+        "B": "Over the last few years, Parland’s commercial fishing enterprises have increased the number of fishing boats they use.",
+        "C": "The main predator of these fish is another species of fish on which alligators also prey.",
+        "D": "Many Parlanders who hunt alligators do so because of the high market price of alligator skins, not because of the threat alligators pose to the fish population.",
+        "E": "In several neighboring countries through which Parland’s rivers also flow, alligators are at risk of extinction as a result of extensive hunting."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "question": "The amount of time it takes for most of a worker’s occupational knowledge and skills to become obsolete has been declining because of the introduction of advanced manufacturing technology (AMT). Given the rate at which AMT is currently being introduced in manufacturing, the average worker’s old skills become obsolete and new skills are required within as little as five years. Which of the following plans, if feasible, would allow a company to prepare most effectively for the rapid obsolescence of skills described above?",
+      "options": {
+        "A": "The company will develop a program to offer selected employees the opportunity to receive training six years after they were originally hired.",
+        "B": "The company will increase its investment in AMT every year for a period of at least five years.",
+        "C": "The company will periodically survey its employees to determine how the introduction of AMT has affected them.",
+        "D": "Before the introduction of AMT, the company will institute an educational program to inform its employees of the probable consequences of the introduction of AMT.",
+        "E": "The company will ensure that it can offer its employees any training necessary for meeting their job requirements."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 8,
+      "question": "In virtually any industry, technological improvements increase labor productivity, which is the output of goods and services per person-hour worked. In Parland’s industries, labor productivity is significantly higher than it is in Vergia’s industries. Clearly, therefore, Parland’s industries must, on the whole, be further advanced technologically than Vergia’s are. The argument is most vulnerable to which of the following criticisms?",
+      "options": {
+        "A": "It offers a conclusion that is no more than a paraphrase of one of the pieces of information provided in its support.",
+        "B": "It presents as evidence in support of a claim information that is inconsistent with other evidence presented in support of the same claim.",
+        "C": "It takes one possible cause of a condition to be the actual cause of that condition without considering any other possible causes.",
+        "D": "It takes a condition to be the effect of something that happened only after the condition already existed.",
+        "E": "It makes a distinction that presupposes the truth of the conclusion that is to be established."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 9,
+      "question": "While many people think of genetic manipulation of food crops as being aimed at developing larger and larger plant varieties, some plant breeders have in fact concentrated on discovering or producing dwarf varieties, which are roughly half as tall as normal varieties. Which of the following would, if true, most help to explain the strategy of the plant breeders referred to above?",
+      "options": {
+        "A": "Plant varieties used as food by some are used as ornamentals by others.",
+        "B": "The wholesale prices of a given crop decrease as the supply of it increases.",
+        "C": "Crops once produced exclusively for human consumption are often now used for animal feed.",
+        "D": "Short plants are less vulnerable to strong wind and heavy rains.",
+        "E": "Nations with large industrial sectors tend to consume more processed grains."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "Traverton’s city council wants to minimize the city’s average yearly expenditures on its traffic signal lights and so is considering replacing the incandescent bulbs currently in use with arrays of light-emitting diodes (LEDs) as the incandescent bulbs burn out. Compared to incandescent bulbs, LED arrays consume significantly less energy and cost no more to purchase. Moreover, the costs associated with the conversion of existing fixtures so as to accept LED arrays would be minimal. Which of the following would it be most useful to know in determining whether switching to LED arrays would be likely to help minimize Traverton’s yearly maintenance costs?",
+      "options": {
+        "A": "Whether the expected service life of LED arrays is at least as long as that of the currently used incandescent bulbs",
+        "B": "Whether any cities have switched from incandescent lights in their traffic signals to lighting elements other than LED arrays",
+        "C": "Whether the company from which Traverton currently buys incandescent bulbs for traffic signals also sells LED arrays",
+        "D": "Whether Traverton’s city council plans to increase the number of traffic signal lights in Traverton",
+        "E": "Whether the crews that currently replace incandescent bulbs in Traverton’s traffic signals know how to convert the existing fixtures so as to accept LED arrays"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 11,
+      "question": "The Maxilux car company’s design for its new luxury model, the Max 100, included a special design for the tires that was intended to complement the model’s image. The winning bid for supplying these tires was submitted by Rubco. Analysts concluded that the bid would only just cover Rubco’s costs on the tires, but Rubco executives claim that winning the bid will actually make a profit for the company. Which of the following, if true, most strongly justifies the claim made by Rubco’s executives?",
+      "options": {
+        "A": "In any Maxilux model, the spare tire is exactly the same make and model as the tires that are mounted on the wheels.",
+        "B": "Rubco holds exclusive contracts to supply Maxilux with the tires for a number of other models made by Maxilux.",
+        "C": "The production facilities for the Max 100 and those for the tires to be supplied by Rubco are located very near each other.",
+        "D": "When people who have purchased a carefully designed luxury automobile need to replace a worn part of it, they almost invariably replace it with a part of exactly the same make and type.",
+        "E": "When Maxilux awarded the tire contract to Rubco, the only criterion on which Rubco’s bid was clearly ahead of its competitors’ bids was price."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following most logically completes the passage? Most bicycle helmets provide good protection for the top and back of the head, but little or no protection for the temple regions on the sides of the head. A study of head injuries resulting from bicycle accidents showed that a large proportion were caused by blows to the temple area. Therefore, if bicycle helmets protected this area, the risk of serious head injury in bicycle accidents would be greatly reduced, especially since",
+      "options": {
+        "A": "among the bicyclists included in the study’s sample of head injuries, only a very small proportion had been wearing a helmet at the time of their accident",
+        "B": "even those bicyclists who regularly wear helmets have a poor understanding of the degree and kind of protection that helmets afford",
+        "C": "a helmet that included protection for the temples would have to be somewhat larger and heavier than current helmets",
+        "D": "the bone in the temple area is relatively thin and impacts in that area are thus very likely to cause brain injury",
+        "E": "bicyclists generally land on their arm or shoulder when they fall to the side, which reduces the likelihood of severe impacts on the side of the head"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "In order to reduce the number of items damaged while in transit to customers, packaging consultants recommended that the TrueSave mail-order company increase the amount of packing material so as to fill any empty spaces in its cartons. Accordingly, TrueSave officials instructed the company’s packers to use more packing material than before, and the packers zealously acted on these instructions and used as much as they could. Nevertheless, customer reports of damaged items rose somewhat. Which of the following, if true, most helps to explain why acting on the consultants’ recommendation failed to achieve its goal?",
+      "options": {
+        "A": "The change in packing policy led to an increase in expenditure on packing material and labor.",
+        "B": "When packing material is compressed too densely, it loses some of its capacity to absorb shock.",
+        "C": "The amount of packing material used in a carton does not significantly influence the ease with which a customer can unpack the package.",
+        "D": "Most of the goods that TrueSave ships are electronic products that are highly vulnerable to being damaged in transit.",
+        "E": "TrueSave has lost some of its regular customers as a result of the high number of damaged items they received."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 14,
+      "question": "Wood smoke contains dangerous toxins that cause changes in human cells. Because wood smoke presents such a high health risk, legislation is needed to regulate the use of open-air fires and wood-burning stoves. Which of the following, if true, provides the most support for the argument above?",
+      "options": {
+        "A": "The amount of dangerous toxins contained in wood smoke is much less than the amount contained in an equal volume of automobile exhaust.",
+        "B": "Within the jurisdiction covered by the proposed legislation, most heating and cooking is done with oil or natural gas.",
+        "C": "Smoke produced by coal-burning stoves is significantly more toxic than smoke from wood burning stoves.",
+        "D": "No significant beneficial effect on air quality would result if open-air fires were banned within the jurisdiction covered by the proposed legislation.",
+        "E": "In valleys where wood is used as the primary heating fuel, the concentration of smoke results in poor air quality."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 15,
+      "question": "A certain automaker aims to increase its market share by deeply discounting its vehicles’ prices for the next several months. The discounts will cut into profits, but because they will be heavily advertised the manufacturer hopes that they will attract buyers away from rival manufacturers’ cars. In the longer term, the automaker envisions that customers initially attracted by the discounts may become loyal customers. In assessing the plan’s chances of achieving its aim, it would be most useful to know which of the following?",
+      "options": {
+        "A": "Whether the automaker’s competitors are likely to respond by offering deep discounts on their own products",
+        "B": "Whether the advertisements will be created by the manufacturer’s current advertising agency",
+        "C": "Whether some of the automaker’s models will be more deeply discounted than others",
+        "D": "Whether the automaker will be able to cut costs sufficiently to maintain profit margins even when the discounts are in effect",
+        "E": "Whether an alternative strategy might enable the automaker to enhance its profitability while holding a constant or diminishing share of the market"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 16,
+      "question": "In Washington County, attendance at the movies is just large enough for the cinema operators to make modest profits. The size of the county’s population is stable and is not expected to increase much. Yet there are investors ready to double the number of movie screens in the county within five years, and they are predicting solid profits both for themselves and for the established cinema operators. Which of the following, if true about Washington County, most helps to provide a justification for the investors’ prediction?",
+      "options": {
+        "A": "Over the next ten years, people in their teenage years, the prime moviegoing age, will be a rapidly growing proportion of the county’s population.",
+        "B": "As distinct from the existing cinemas, most of the cinemas being planned would be located in downtown areas, in hopes of stimulating an economic revitalization of those areas.",
+        "C": "Spending on video purchases, as well as spending on video rentals, has been increasing modestly each year for the past ten years.",
+        "D": "The average number of screens per cinema is lower among existing cinemas than it is among cinemas still in the planning stages.",
+        "E": "The sale of snacks and drinks in cinemas accounts for a steadily growing share of most cinema operators’ profits."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 17,
+      "question": "Hollywood restaurant is replacing some of its standard tables with tall tables and stools. The restaurant already fills every available seat during its operating hours, and the change in seating arrangements will not result in an increase in the restaurant’s seating capacity. Nonetheless, the restaurant’s management expects revenue to increase as a result of the seating change without any concurrent change in menu, prices, or operating hours. Which of the following, if true, provides the best reason for the expectation?",
+      "options": {
+        "A": "One of the taller tables takes up less floor space than one of the standard tables.",
+        "B": "Diners seated on stools typically do not linger over dinner as long as diners seated at standard tables.",
+        "C": "Since the restaurant will replace only some of its standard tables, it can continue to accommodate customers who do not care for the taller tables.",
+        "D": "Few diners are likely to avoid the restaurant because of the new seating arrangement.",
+        "E": "The standard tables being replaced by tall tables would otherwise have to be replaced with new standard tables at a greater expense."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 18,
+      "question": "Hunter: Many people blame hunters alone for the decline in Greenrock National Forest’s deer population over the past ten years. Yet clearly, black bears have also played an important role in this decline. In the past ten years, the forest’s protected black bear population has risen sharply, and examination of black bears found dead in the forest during the deer hunting season showed that a number of them had recently fed on deer. In the hunter’s argument, the portion in boldface plays which of the following roles?",
+      "options": {
+        "A": "It is the main conclusion of the argument.",
+        "B": "It is a finding that the argument seeks to explain.",
+        "C": "It is an explanation that the argument concludes is correct.",
+        "D": "It provides evidence in support of the main conclusion of the argument.",
+        "E": "It introduces a judgment that the argument opposes."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 19,
+      "question": "A major network news organization experienced a drop in viewership in the week following the airing of a controversial report on the economy. The network also received a very large number of complaints regarding the report. The network, however, maintains that negative reactions to the report had nothing to do with its loss of viewers. Which of the following, if true, most strongly supports the network’s position?",
+      "options": {
+        "A": "The other major network news organizations reported similar reductions in viewership during the same week.",
+        "B": "The viewers who registered complaints with the network were regular viewers of the news organization’s programs.",
+        "C": "Major network news organizations publicly attribute drops in viewership to their own reports only when they receive complaints about those reports.",
+        "D": "This was not the first time that this network news organization has aired a controversial report on the economy that has inspired viewers to complain to the network.",
+        "E": "Most network news viewers rely on network news broadcasts as their primary source of information regarding the economy."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "question": "Physician: The hormone melatonin has shown promise as a medication for sleep disorders when taken in synthesized form. Because the long-term side effects of synthetic melatonin are unknown, however, I cannot recommend its use at this time. Patient: Your position is inconsistent with your usual practice. You prescribe many medications that you know have serious side effects, so concern about side effects cannot be the real reason you will not prescribe melatonin. The patient’s argument is flawed because it fails to consider that",
+      "options": {
+        "A": "the side effects of synthetic melatonin might be different from those of naturally produced melatonin",
+        "B": "it is possible that the physician does not believe that melatonin has been conclusively shown to be effective",
+        "C": "sleep disorders, if left untreated, might lead to serious medical complications",
+        "D": "the side effects of a medication can take some time to manifest themselves",
+        "E": "known risks can be weighed against known benefits, but unknown risks cannot"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 21,
+      "question": "In recent years, many cabinetmakers have been winning acclaim as artists. But since furniture must be useful, cabinetmakers must exercise their craft with an eye to the practical utility of their product. For this reason, cabinetmaking is not art. Which of the following is an assumption that supports drawing the conclusion above from the reason given for that conclusion?",
+      "options": {
+        "A": "Some furniture is made to be placed in museums, where it will not be used by anyone.",
+        "B": "Some cabinetmakers are more concerned than others with the practical utility of the products they produce.",
+        "C": "Cabinetmakers should be more concerned with the practical utility of their products than they currently are.",
+        "D": "An object is not an art object if its maker pays attention to the object’s practical utility.",
+        "E": "Artists are not concerned with the monetary value of their products."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 22,
+      "question": "Only a reduction of 10 percent in the number of scheduled flights using Greentown’s airport will allow the delays that are so common there to be avoided. Hevelia airstrip, 40 miles away, would, if upgraded and expanded, be an attractive alternative for fully 20 percent of the passengers using Greentown airport. Nevertheless, experts reject the claim that turning Hevelia into a full-service airport would end the chronic delays at Greentown. Which of the following, if true, most helps to justify the experts’ position?",
+      "options": {
+        "A": "Turning Hevelia into a full-service airport would require not only substantial construction at the airport itself, but also the construction of new access highways.",
+        "B": "A second largely undeveloped airstrip close to Greentown airport would be a more attractive alternative than Hevelia for many passengers who now use Greentown.",
+        "C": "Hevelia airstrip lies in a relatively undeveloped area but would, if it became a full-service airport, be a magnet for commercial and residential development.",
+        "D": "If an airplane has to wait to land, the extra jet fuel required adds significantly to the airline’s costs.",
+        "E": "Several airlines use Greentown as a regional hub, so that most flights landing at Greentown have many passengers who then take different flights to reach their final destinations."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 23,
+      "question": "Male bowerbirds construct elaborately decorated nests, or bowers. Basing their judgment on the fact that different local populations of bowerbirds of the same species build bowers that exhibit different building and decorative styles, researchers have concluded that the bowerbirds’ building styles are a culturally acquired, rather than a genetically transmitted, trait. Which of the following, if true, would most strengthen the conclusion drawn by the researchers?",
+      "options": {
+        "A": "There are more common characteristics than there are differences among the bower-building styles of the local bowerbird population that has been studied most extensively.",
+        "B": "Young male bowerbirds are inept at bower building and apparently spend years watching their elders before becoming accomplished in the local bower style.",
+        "C": "The bowers of one species of bowerbird lack the towers and ornamentation characteristic of the bowers of most other species of bowerbird.",
+        "D": "Bowerbirds are found only in New Guinea and Australia, where local populations of the birds apparently seldom have contact with one another.",
+        "E": "It is well known that the song dialects of some songbirds are learned rather than transmitted genetically."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 24,
+      "question": "Plan: Concerned about the welfare of its senior citizens, the government of Runagia decided two years ago to increase by 20 percent the government-provided pension paid to all Runagians age sixty-five and older. Result: Many Runagian senior citizens are no better off financially now than they were before the increase. Further information: The annual rate of inflation since the pension increase has been below 5 percent, and the increased pension has been duly received by all eligible Runagians. In light of the further information, which of the following, if true, does most to explain the result that followed implementation of the plan?",
+      "options": {
+        "A": "The majority of senior citizens whose financial position has not improved rely entirely on the government pension for their income.",
+        "B": "The Runagian banking system is so inefficient that cashing a pension check can take as much as three weeks.",
+        "C": "The prices of goods and services that meet the special needs of many senior citizens have increased at a rate much higher than the rate of inflation.",
+        "D": "The pension increase occurred at a time when the number of Runagians age sixty-five and older who were living below the poverty level was at an all-time high.",
+        "E": "The most recent pension increase was only the second such increase in the last ten years."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 25,
+      "question": "A drug that is highly effective in treating many types of infection can, at present, be obtained only from the bark of the ibora, a tree that is quite rare in the wild. It takes the bark of 5,000 trees to make one kilogram of the drug. It follows, therefore, that continued production of the drug must inevitably lead to the ibora’s extinction. Which of the following, if true, most seriously weakens the argument above?",
+      "options": {
+        "A": "The drug made from ibora bark is dispensed to doctors from a central authority.",
+        "B": "The drug made from ibora bark is expensive to produce.",
+        "C": "The leaves of the ibora are used in a number of medical products.",
+        "D": "The ibora can be propagated from cuttings and grown under cultivation.",
+        "E": "The ibora generally grows in largely inaccessible places."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 26,
+      "question": "When a polygraph test is judged inconclusive, this is no reflection on the examinee. Rather, such a judgment means that the test has failed to show whether the examinee was truthful or untruthful. Nevertheless, employers will sometimes refuse to hire a job applicant because of an inconclusive polygraph test result. Which of the following conclusions can most properly be drawn from the information above?",
+      "options": {
+        "A": "Most examinees with inconclusive polygraph test results are in fact untruthful.",
+        "B": "Polygraph tests should not be used by employers in the consideration of job applicants.",
+        "C": "An inconclusive polygraph test result is sometimes unfairly held against the examinee.",
+        "D": "A polygraph test indicating that an examinee is untruthful can sometimes be mistaken.",
+        "E": "Some employers have refused to consider the results of polygraph tests when evaluating job applicants."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 27,
+      "question": "For similar cars and comparable drivers, automobile insurance for collision damage has always cost more in Greatport than in Fairmont. Police studies, however, show that cars owned by Greatport residents are, on average, slightly less likely to be involved in a collision than cars in Fairmont. Clearly, therefore, insurance companies are making a greater profit on collision damage insurance in Greatport than in Fairmont. In evaluating the argument, it would be most useful to compare",
+      "options": {
+        "A": "the level of traffic congestion in Greatport with the level of traffic congestion in Fairmont",
+        "B": "the cost of repairing collision damage in Greatport with the cost of repairing collision damage in Fairmont",
+        "C": "the rates Greatport residents pay for other forms of insurance with the rates paid for similar insurance by residents of Fairmont",
+        "D": "the condition of Greatport’s roads and streets with the condition of Fairmont’s roads and streets",
+        "E": "the cost of collision-damage insurance in Greatport and Fairmont with that in other cities"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 28,
+      "question": "Last year a record number of new manufacturing jobs were created. Will this year bring another record? Well, a new manufacturing job is created either within an existing company or by the start-up of a new company. Within existing firms, new jobs have been created this year at well below last year’s record pace. At the same time, there is considerable evidence that the number of new companies starting up will be no higher this year than it was last year, and surely the new companies starting up this year will create no more jobs per company than did last year’s start-ups. Clearly, it can be concluded that the number of new jobs created this year will fall short of last year’s record. In the argument given, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is a prediction that, if accurate, would provide support for the main conclusion of the argument; the second is that main conclusion.",
+        "B": "The first is a prediction that, if accurate, would provide support for the main conclusion of the argument; the second is a conclusion drawn in order to support that main conclusion.",
+        "C": "The first is an objection that the argument rejects; the second is the main conclusion of the argument.",
+        "D": "The first is an objection that the argument rejects; the second presents a conclusion that could be drawn if that objection were allowed to stand.",
+        "E": "The first is a claim that has been advanced in support of a position that the argument opposes; the second is a claim advanced in support of the main conclusion of the argument."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 29,
+      "question": "The tulu, a popular ornamental plant, does not reproduce naturally, and is only bred and sold by specialized horticultural companies. Unfortunately, the tulu is easily devastated by a contagious fungal rot. The government ministry plans to reassure worried gardeners by requiring all tulu plants to be tested for fungal rot before being sold. However, infected plants less than 30 weeks old have generally not built up enough fungal rot in their systems to be detected reliably. And many tulu plants are sold before they are 24 weeks old. Which of the following, if performed by the government ministry, could logically be expected to overcome the problem with their plan to test for the fungal rot?",
+      "options": {
+        "A": "Releasing a general announcement that tulu plants less than 30 weeks old cannot be effectively tested for fungal rot",
+        "B": "Requiring all tulu plants less than 30 weeks old to be labeled as such",
+        "C": "Researching possible ways to test tulu plants less than 24 weeks old for fungal rot",
+        "D": "Ensuring that tulu plants not be sold before they are 30 weeks old",
+        "E": "Quarantining all tulu plants from horticultural companies at which any case of fungal rot has been detected until those tulu plants can be tested for fungal rot"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 30,
+      "question": "The Eurasian ruffe, a fish species inadvertently introduced into North America’s Great Lakes in recent years, feeds on the eggs of lake whitefish, a native species, thus threatening the lakes’ natural ecosystem. To help track the ruffe’s spread, government agencies have produced wallet-sized cards about the ruffe. The cards contain pictures of the ruffe and explain the danger they pose; the cards also request anglers to report any ruffe they catch. Which of the following, if true, would provide most support for the prediction that the agencies’ action will have its intended effect?",
+      "options": {
+        "A": "The ruffe has spiny fins that make it unattractive as prey.",
+        "B": "Ruffe generally feed at night, but most recreational fishing on the Great Lakes is done during daytime hours.",
+        "C": "Most people who fish recreationally on the Great Lakes are interested in the preservation of the lake whitefish because it is a highly prized game fish.",
+        "D": "The ruffe is one of several nonnative species in the Great Lakes whose existence threatens the survival of lake whitefish populations there.",
+        "E": "The bait that most people use when fishing for whitefish on the Great Lakes is not attractive to ruffe."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "Which of the following most logically completes the argument? Ferber’s syndrome, a viral disease that frequently affects cattle, is transmitted to these animals through infected feed. Even though chickens commercially raised for meat are often fed the type of feed identified as the source of infection in cattle, Ferber’s syndrome is only rarely observed in chickens. This fact, however, does not indicate that most chickens are immune to the virus that causes Ferber’s syndrome, since",
+      "options": {
+        "A": "chickens and cattle are not the only kinds of farm animal that are typically fed the type of feed liable to be contaminated with the virus that causes Ferber’s syndrome",
+        "B": "Ferber’s syndrome has been found in animals that have not been fed the type of feed liable to be contaminated with the virus that can cause the disease",
+        "C": "resistance to some infectious organisms such as the virus that causes Ferber’s syndrome can be acquired by exposure to a closely related infectious organism",
+        "D": "chickens and cattle take more than a year to show symptoms of Ferber’s syndrome, and chickens commercially raised for meat, unlike cattle, are generally brought to market during the first year of life",
+        "E": "the type of feed liable to be infected with the virus that causes Ferber’s syndrome generally constitutes a larger proportion of the diet of commercially raised chickens than of commercially raised cattle"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 32,
+      "question": "Last year the rate of inflation was 1.2 percent, but for the current year it has been 4 percent. We can conclude that inflation is on an upward trend and the rate will be still higher next year. Which of the following, if true, most seriously weakens the conclusion above?",
+      "options": {
+        "A": "The inflation figures were computed on the basis of a representative sample of economic data rather than all of the available data.",
+        "B": "Last year a dip in oil prices brought inflation temporarily below its recent stable annual level of 4 percent.",
+        "C": "Increases in the pay of some workers are tied to the level of inflation, and at an inflation rate of 4 percent or above, these pay raises constitute a force causing further inflation.",
+        "D": "The 1.2 percent rate of inflation last year represented a 10-year low.",
+        "E": "Government intervention cannot affect the rate of inflation to any significant degree."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 33,
+      "question": "Which of the following most logically completes the argument? Although the number of large artificial satellites orbiting the Earth is small compared to the number of small pieces of debris in orbit, the large satellites interfere more seriously with telescope observations because of the strong reflections they produce. Because many of those large satellites have ceased to function, the proposal has recently been made to eliminate interference from nonfunctioning satellites by exploding them in space. This proposal, however, is ill conceived, since",
+      "options": {
+        "A": "many nonfunctioning satellites remain in orbit for years",
+        "B": "for satellites that have ceased to function, repairing them while they are in orbit would be prohibitively expensive",
+        "C": "there are no known previous instances of satellites’ having been exploded on purpose",
+        "D": "the only way to make telescope observations without any interference from debris in orbit is to use telescopes launched into extremely high orbits around the Earth",
+        "E": "a greatly increased number of small particles in Earth’s orbit would result in a blanket of reflections that would make certain valuable telescope observations impossible"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 34,
+      "question": "Thyrian lawmaker: Thyria’s Cheese Importation Board inspects all cheese shipments to Thyria and rejects shipments not meeting specified standards. Yet only 1 percent is ever rejected. Therefore, since the health consequences and associated economic costs of not rejecting that 1 percent are negligible, whereas the board’s operating costs are considerable, for economic reasons alone the board should be disbanded. Consultant: I disagree. The threat of having their shipments rejected deters many cheese exporters from shipping substandard product. The consultant responds to the lawmaker’s argument by",
+      "options": {
+        "A": "rejecting the lawmaker’s argument while proposing that the standards according to which the board inspects imported cheese should be raised",
+        "B": "providing evidence that the lawmaker’s argument has significantly overestimated the cost of maintaining the board",
+        "C": "objecting to the lawmaker’s introducing into the discussion factors that are not strictly economic",
+        "D": "pointing out a benefit of maintaining the board, which the lawmaker’s argument has failed to consider",
+        "E": "shifting the discussion from the argument at hand to an attack on the integrity of the cheese inspectors"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 35,
+      "question": "Which of the following best completes the passage below? The computer industry’s estimate that it loses millions of dollars when users illegally copy programs without paying for them is greatly exaggerated. Most of the illegal copying is done by people with no serious interest in the programs. Thus, the loss to the industry is quite small, because",
+      "options": {
+        "A": "many users who illegally copy programs never find any use for them",
+        "B": "most people who illegally copy programs would not purchase them even if purchasing them were the only way to obtain them",
+        "C": "even if the computer industry received all the revenue it claims to be losing, it would still be experiencing financial difficulties",
+        "D": "the total market value of all illegal copies is low in comparison to the total revenue of the computer industry",
+        "E": "the number of programs that are frequently copied illegally is low in comparison to the number of programs available for sale"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 36,
+      "question": "The growing popularity of computer-based activities was widely expected to result in a decline in television viewing, since it had been assumed that people lack sufficient free time to maintain current television viewing levels while spending increasing amounts of free time on the computer. That assumption, however, is evidently false: In a recent mail survey concerning media use, a very large majority of respondents who report increasing time spent per week using computers report no change in time spent watching television. Which of the following would it be most useful to determine in order to evaluate the argument?",
+      "options": {
+        "A": "Whether a large majority of the survey respondents reported watching television regularly",
+        "B": "Whether the amount of time spent watching television is declining among people who report that they rarely or never use computers",
+        "C": "Whether the type of television programs a person watches tends to change as the amount of time spent per week using computers increases",
+        "D": "Whether a large majority of the computer owners in the survey reported spending increasing amounts of time per week using computers",
+        "E": "Whether the survey respondents’ reports of time spent using computers included time spent using computers at work"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 37,
+      "question": "In the last decade there has been a significant decrease in coffee consumption. During this same time, there has been increasing publicity about the adverse long-term effects on health of the caffeine in coffee. Therefore, the decrease in coffee consumption must have been caused by consumers’ awareness of the harmful effects of caffeine. Which of the following, if true, most seriously calls into question the explanation above?",
+      "options": {
+        "A": "On average, people consume 30 percent less coffee today than they did 10 years ago.",
+        "B": "Heavy coffee drinkers may have mild withdrawal symptoms, such as headaches, for a day or so after significantly decreasing their coffee consumption.",
+        "C": "Sales of specialty types of coffee have held steady as sales of regular brands have declined.",
+        "D": "The consumption of fruit juices and caffeine-free herbal teas has increased over the past decade.",
+        "E": "Coffee prices increased steadily in the past decade because of unusually severe frosts in coffee-growing nations."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following best completes the passage below? When the products of several competing suppliers are perceived by consumers to be essentially the same, classical economics predicts that price competition will reduce prices to the same minimal levels and all suppliers’ profits to the same minimal levels. Therefore, if classical economics is true, and given suppliers’ desire to make as much profit as possible, it should be expected that",
+      "options": {
+        "A": "in a crowded market widely differing prices will be charged for products that are essentially the same as each other",
+        "B": "as a market becomes less crowded as suppliers leave, the profits of the remaining suppliers will tend to decrease",
+        "C": "each supplier in a crowded market will try to convince consumers that its product differs significantly from its competitors’ products",
+        "D": "when consumers are unable to distinguish the products in a crowded market, consumers will judge that the higher-priced products are of higher quality",
+        "E": "suppliers in crowded markets will have more incentive to reduce prices and thus increase sales than to introduce innovations that would distinguish their product from their competitors’ products"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 39,
+      "question": "Which of the following most logically completes the argument? Sviatovin is a medieval Moringian text whose author and exact date of composition are unknown. However, the events in the life of Prince Sviatov that the text describes occurred in 1165, and in the diagram of Sviatov’s family that accompanies the text his father, who died in 1167, is identified as still living. Thus Sviatovin must have been written between 1165 and 1167, assuming that",
+      "options": {
+        "A": "the life of Prince Sviatov is not the subject of any other medieval Moringian texts",
+        "B": "the author of Sviatovin intended it to provide as accurate a report about Prince Sviatov’s exploits as possible",
+        "C": "the diagram accurately represents the composition of Sviatov’s family at the time Sviatovin was written",
+        "D": "Sviatovin is the earliest Moringian text whose composition can be dated to within a few years",
+        "E": "Sviatovin was not written by Sviatov’s father himself"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 40,
+      "question": "Crowding on Mooreville’s subway frequently leads to delays, because it is difficult for passengers to exit from the trains. Subway ridership is projected to increase by 20 percent over the next 10 years. The Mooreville Transit Authority plans to increase the number of daily train trips by only 5 percent over the same period. Officials predict that this increase is sufficient to ensure that the incidence of delays due to crowding does not increase. Which of the following, if true, provides the strongest grounds for the officials’ prediction?",
+      "options": {
+        "A": "By changing maintenance schedules, the Transit Authority can achieve the 5 percent increase in train trips without purchasing any new subway cars.",
+        "B": "The Transit Authority also plans a 5 percent increase in the number of bus trips on routes that connect to subways.",
+        "C": "For most commuters who use the subway system, there is no practical alternative public transportation available.",
+        "D": "Most of the projected increase in ridership is expected to occur in off-peak hours when trains are now sparsely used.",
+        "E": "The 5 percent increase in the number of train trips can be achieved without an equal increase in Transit Authority operational costs."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 41,
+      "question": "Installing scrubbers in smokestacks and switching to cleaner-burning fuel are the two methods available to Northern Power for reducing harmful emissions from its plants. Scrubbers will reduce harmful emissions more than cleaner-burning fuels will. Therefore, by installing scrubbers, Northern Power will be doing the most that can be done to reduce harmful emissions from its plants. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "Switching to cleaner-burning fuel will not be more expensive than installing scrubbers.",
+        "B": "Northern Power can choose from among various kinds of scrubbers, some of which are more effective than others.",
+        "C": "Northern Power is not necessarily committed to reducing harmful emissions from its plants.",
+        "D": "Harmful emissions from Northern Power’s plants cannot be reduced more by using both methods together than by the installation of scrubbers alone.",
+        "E": "Aside from harmful emissions from the smokestacks of its plants, the activities of Northern Power do not cause significant air pollution."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 42,
+      "question": "Trancorp currently transports all its goods to Burland Island by truck. The only bridge over the channel separating Burland from the mainland is congested, and trucks typically spend hours in traffic. Trains can reach the channel more quickly than trucks, and freight cars can be transported to Burland by barges that typically cross the channel in an hour. Therefore, to reduce shipping time, Trancorp plans to switch to trains and barges to transport goods to Burland. Which of the following would be most important to know in determining whether Trancorp’s plan, if implemented, is likely to achieve its goal?",
+      "options": {
+        "A": "Whether transportation by train and barge would be substantially less expensive than transportation by truck",
+        "B": "Whether there are boats that can make the trip between the mainland and Burland faster than barges can",
+        "C": "Whether loading the freight cars onto barges is very time consuming",
+        "D": "Whether the average number of vehicles traveling over the bridge into Burland has been relatively constant in recent years",
+        "E": "Whether most trucks transporting goods into Burland return to the mainland empty"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 43,
+      "question": "Some anthropologists study modern-day societies of foragers in an effort to learn about our ancient ancestors who were also foragers. A flaw in this strategy is that forager societies are extremely varied. Indeed, any forager society with which anthropologists are familiar has had considerable contact with modern, non-forager societies. Which of the following, if true, would most weaken the criticism made above of the anthropologists’ strategy?",
+      "options": {
+        "A": "All forager societies throughout history have had a number of important features in common that are absent from other types of societies.",
+        "B": "Most ancient forager societies either dissolved or made a transition to another way of life.",
+        "C": "All anthropologists study one kind or another of modern-day society.",
+        "D": "Many anthropologists who study modern-day forager societies do not draw inferences about ancient societies on the basis of their studies.",
+        "E": "Even those modern-day forager societies that have not had significant contact with modern societies are importantly different from ancient forager societies."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 44,
+      "question": "Contrary to earlier predictions, demand for sugarcane has not increased in recent years. Yet, even though prices and production amounts have also been stable during the last three years, sugarcane growers last year increased their profits by more than 10 percent over the previous year’s level. Any of the following statements, if true about last year, helps to explain the rise in profits EXCEPT:",
+      "options": {
+        "A": "Many countries that are large consumers of sugarcane increased their production of sugarcane-based ethanol, yet their overall consumption of sugarcane decreased.",
+        "B": "Sugarcane growers have saved money on wages by switching from paying laborers an hourly wage to paying them by the amount harvested.",
+        "C": "The price of oil, the major energy source used by sugarcane growers in harvesting their crops, dropped by over 20 percent.",
+        "D": "Many small sugarcane growers joined together to form an association of sugarcane producers and began to buy supplies at low group rates.",
+        "E": "Rainfall in sugarcane-growing regions was higher than it had been during the previous year, allowing the growers to save money on expensive artificial irrigation."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 45,
+      "question": "Which of the following most logically completes the argument below? Davison River farmers are currently deciding between planting winter wheat this fall or spring wheat next spring. Winter wheat and spring wheat are usually about equally profitable. Because of new government restrictions on the use of Davison River water for irrigation, per acre yields for winter wheat, though not for spring wheat, would be much lower than average. Therefore, planting spring wheat will be more profitable than planting winter wheat, since",
+      "options": {
+        "A": "the smaller-than-average size of a winter wheat harvest this year would not be compensated for by higher winter wheat prices",
+        "B": "new crops of spring wheat must be planted earlier than the time at which standing crops of winter wheat are ready to be harvested",
+        "C": "the spring wheat that farmers in the Davison River region plant is well adapted to the soil of the region",
+        "D": "spring wheat has uses that are different from those of winter wheat",
+        "E": "planting spring wheat is more profitable than planting certain other crops, such as rye"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 46,
+      "question": "If the county continues to collect residential trash at current levels, landfills will soon be overflowing and parkland will need to be used in order to create more space. Charging each household a fee for each pound of trash it puts out for collection will induce residents to reduce the amount of trash they create; this charge will therefore protect the remaining county parkland. Which of the following is an assumption made in drawing the conclusion above?",
+      "options": {
+        "A": "Residents will reduce the amount of trash they put out for collection by reducing the number of products they buy.",
+        "B": "The collection fee will not significantly affect the purchasing power of most residents, even if their households do not reduce the amount of trash they put out.",
+        "C": "The collection fee will not induce residents to dump their trash in the parklands illegally.",
+        "D": "The beauty of county parkland is an important issue for most of the county’s residents.",
+        "E": "Landfills outside the county’s borders could be used as dumping sites for the county’s trash."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 47,
+      "question": "Certain genetically modified strains of maize produce a powerful natural insecticide. The insecticide occurs throughout the plant, including its pollen. Maize pollen is dispersed by the wind and frequently blows onto milkweed plants that grow near maize fields. Caterpillars of monarch butterflies feed exclusively on milkweed leaves. When these caterpillars are fed milkweed leaves dusted with pollen from modified maize plants, they die. Therefore, by using genetically modified maize, farmers put monarch butterflies at risk. Which of the following would it be most useful to determine in order to evaluate the argument?",
+      "options": {
+        "A": "Whether the natural insecticide is as effective against maize-eating insects as commercial insecticides typically used on maize are",
+        "B": "Whether the pollen of genetically modified maize contains as much insecticide as other parts of these plants",
+        "C": "Whether monarch butterfly caterpillars are actively feeding during the part of the growing season when maize is releasing pollen",
+        "D": "Whether insects that feed on genetically modified maize plants are likely to be killed by insecticide from the plant’s pollen",
+        "E": "Whether any maize-eating insects compete with monarch caterpillars for the leaves of milkweed plants growing near maize fields"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 48,
+      "question": "Although computers can enhance people’s ability to communicate, computer games are a cause of underdeveloped communication skills in children. After-school hours spent playing computer games are hours not spent talking with people. Therefore, children who spend all their spare time playing these games have less experience in interpersonal communication than other children have. The argument depends on which of the following assumptions?",
+      "options": {
+        "A": "Passive activities such as watching television and listening to music do not hinder the development of communication skills in children.",
+        "B": "Most children have other opportunities, in addition to after-school hours, in which they can choose whether to play computer games or to interact with other people.",
+        "C": "Children who do not spend all of their after school hours playing computer games spend at least some of that time talking with other people.",
+        "D": "Formal instruction contributes little or nothing to children’s acquisition of communication skills.",
+        "E": "The mental skills developed through playing computer games do not contribute significantly to children’s intellectual development."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 49,
+      "question": "Maize contains the vitamin niacin, but not in a form the body can absorb. Pellagra is a disease that results from niacin deficiency. When maize was introduced into southern Europe from the Americas in the eighteenth century, it quickly became a dietary staple, and many Europeans who came to subsist primarily on maize developed pellagra. Pellagra was virtually unknown at that time in the Americas, however, even among people who subsisted primarily on maize. Which of the following, if true, most helps to explain the contrasting incidence of pellagra described above?",
+      "options": {
+        "A": "Once introduced into southern Europe, maize became popular with landowners because of its high yields relative to other cereal crops.",
+        "B": "Maize grown in the Americas contained more niacin than maize grown in Europe did.",
+        "C": "Traditional ways of preparing maize in the Americas convert maize’s niacin into a nutritionally useful form.",
+        "D": "In southern Europe many of the people who consumed maize also ate niacin-rich foods.",
+        "E": "Before the discovery of pellagra’s link with niacin, it was widely believed that the disease was an infection that could be transmitted from person to person."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 50,
+      "question": "One variety of partially biodegradable plastic beverage container is manufactured from small bits of plastic bound together by a degradable bonding agent such as cornstarch. Since only the bonding agent degrades, leaving the small bits of plastic, no less plastic refuse per container is produced when such containers are discarded than when comparable nonbiodegradable containers are discarded. Which of the following, if true, most strengthens the argument above?",
+      "options": {
+        "A": "Both partially biodegradable and nonbiodegradable plastic beverage containers can be crushed completely flat by refuse compactors.",
+        "B": "The partially biodegradable plastic beverage containers are made with more plastic than comparable nonbiodegradable ones in order to compensate for the weakening effect of the bonding agents.",
+        "C": "Many consumers are ecology-minded and prefer to buy a product sold in the partially biodegradable plastic beverage containers rather than in nonbiodegradable containers, even if the price is higher.",
+        "D": "The manufacturing process for the partially biodegradable plastic beverage containers results in less plastic waste than the manufacturing process for nonbiodegradable plastic beverage containers.",
+        "E": "Technological problems with recycling currently prevent the reuse as food or beverage containers of the plastic from either type of plastic beverage container."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 51,
+      "question": "Rye sown in the fall and plowed into the soil in early spring leaves a residue that is highly effective at controlling broad-leaved weeds, but unfortunately for only about forty-five days. No major agricultural crop matures from seed in as little as forty-five days. Synthetic herbicides, on the other hand, although not any longer-lasting, can be reapplied as the crop grows. Clearly, therefore, for major agricultural crops, plowing rye into the soil can play no part in effective weed control. The argument is most vulnerable to the objection that it fails to",
+      "options": {
+        "A": "consider that there might be minor, quick-growing crops that do mature in forty-five days or less",
+        "B": "identify any alternative method of weed control that could be used instead of the method it rejects",
+        "C": "distinguish among the various kinds of synthetic herbicides",
+        "D": "allow for the possibility of combining the two weed-control methods it mentions",
+        "E": "allow for the possibility that plants other than rye, handled the same way, might have the same effect"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 52,
+      "question": "Most employees in the computer industry move from company to company, changing jobs several times in their careers. However, Summit Computers is known throughout the industry for retaining its employees. Summit credits its success in retaining employees to its informal, nonhierarchical work environment. Which of the following, if true, most strongly supports Summit’s explanation of its success in retaining employees?",
+      "options": {
+        "A": "Some people employed in the computer industry change jobs if they become bored with their current projects.",
+        "B": "A hierarchical work environment hinders the cooperative exchange of ideas that computer industry employees consider necessary for their work.",
+        "C": "Many of Summit’s senior employees had previously worked at only one other computer company.",
+        "D": "In a nonhierarchical work environment, people avoid behavior that might threaten group harmony and thus avoid discussing with their colleagues any dissatisfaction they might have with their jobs.",
+        "E": "The cost of living near Summit is relatively low compared to areas in which some other computer companies are located."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 53,
+      "question": "Insurance Company X is considering issuing a new policy to cover services required by elderly people who suffer from diseases that afflict the elderly. Premiums for the policy must be low enough to attract customers. Therefore, Company X is concerned that the income from the policies would not be sufficient to pay for the claims that would be made. Which of the following strategies would be most likely to minimize Company X’s losses on the policies?",
+      "options": {
+        "A": "Attracting middle-aged customers unlikely to submit claims for benefits for many years",
+        "B": "Insuring only those individuals who did not suffer any serious diseases as children",
+        "C": "Including a greater number of services in the policy than are included in other policies of lower cost",
+        "D": "Insuring only those individuals who were rejected by other companies for similar policies",
+        "E": "Insuring only those individuals who are wealthy enough to pay for the medical services"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 54,
+      "question": "The fewer restrictions there are on the advertising of legal services, the more lawyers there are who advertise their services, and the lawyers who advertise a specific service usually charge less for that service than the lawyers who do not advertise. Therefore, if the state removes any of its current restrictions, such as the one against advertisements that do not specify fee arrangements, overall consumer legal costs will be lower than if the state retains its current restrictions. If the statements above are true, which of the following must be true?",
+      "options": {
+        "A": "Some lawyers who now advertise will charge more for specific services if they do not have to specify fee arrangements in the advertisements.",
+        "B": "More consumers will use legal services if there are fewer restrictions on the advertising of legal services.",
+        "C": "If the restriction against advertisements that do not specify fee arrangements is removed, more lawyers will advertise their services.",
+        "D": "If more lawyers advertise lower prices for specific services, some lawyers who do not advertise will also charge less than they currently charge for those services.",
+        "E": "If the only restrictions on the advertising of legal services were those that apply to every type of advertising, most lawyers would advertise their services."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 55,
+      "question": "Which of the following most logically completes the passage? People in isolated rain-forest communities tend to live on a largely vegetarian diet, and they eat little salt. Few of them suffer from high blood pressure, and their blood pressure does not tend to increase with age, as is common in industrialized countries. Such people often do develop high blood pressure when they move to cities and adopt high-salt diets. Though suggestive, these facts do not establish salt as the culprit in high blood pressure, however, because",
+      "options": {
+        "A": "genetic factors could account for the lack of increase of blood pressure with age among such people",
+        "B": "people eating high-salt diets and living from birth in cities in industrialized societies generally have a tendency to have high blood pressure",
+        "C": "it is possible to have a low-salt diet while living in a city in an industrialized country",
+        "D": "there are changes in other aspects of diet when such people move to the city",
+        "E": "salt is a necessity for human life, and death can occur when the body loses too much salt"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 56,
+      "question": "Even though most universities retain the royalties from faculty members’ inventions, the faculty members retain the royalties from books and articles they write. Therefore, faculty members should retain the royalties from the educational computer software they develop. The conclusion above would be more reasonably drawn if which of the following were inserted into the argument as an additional premise?",
+      "options": {
+        "A": "Royalties from inventions are higher than royalties from educational software programs.",
+        "B": "Faculty members are more likely to produce educational software programs than inventions.",
+        "C": "Inventions bring more prestige to universities than do books and articles.",
+        "D": "In the experience of most universities, educational software programs are more marketable than are books and articles.",
+        "E": "In terms of the criteria used to award royalties, educational software programs are more nearly comparable to books and articles than to inventions."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 57,
+      "question": "In order to withstand tidal currents, juvenile horseshoe crabs frequently burrow in the sand. Such burrowing discourages barnacles from clinging to their shells. When fully grown, however, the crabs can readily withstand tidal currents without burrowing, and thus they acquire substantial populations of barnacles. Surprisingly, in areas where tidal currents are very weak, juvenile horseshoe crabs are found not to have significant barnacle populations, even though they seldom burrow. Which of the following, if true, most helps to explain the surprising finding?",
+      "options": {
+        "A": "Tidal currents do not themselves dislodge barnacles from the shells of horseshoe crabs.",
+        "B": "Barnacles most readily attach themselves to horseshoe crabs in areas where tidal currents are weakest.",
+        "C": "The strength of the tidal currents in a given location varies widely over the course of a day.",
+        "D": "A very large barnacle population can significantly decrease the ability of a horseshoe crab to find food.",
+        "E": "Until they are fully grown, horseshoe crabs shed their shells and grow new ones several times a year."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 58,
+      "question": "Red blood cells in which the malarial-fever parasite resides are eliminated from a person’s body after 120 days. Because the parasite cannot travel to a new generation of red blood cells, any fever that develops in a person more than 120 days after that person has moved to a malaria-free region is not due to the malarial parasite. Which of the following, if true, most seriously weakens the conclusion above?",
+      "options": {
+        "A": "The fever caused by the malarial parasite may resemble the fever caused by flu viruses.",
+        "B": "The anopheles mosquito, which is the principal insect carrier of the malarial parasite, has been eradicated in many parts of the world.",
+        "C": "Many malarial symptoms other than the fever, which can be suppressed with antimalarial medication, can reappear within 120 days after the medication is discontinued.",
+        "D": "In some cases, the parasite that causes malarial fever travels to cells of the spleen, which are less frequently eliminated from a person’s body than are red blood cells.",
+        "E": "In any region infested with malaria-carrying mosquitoes, there are individuals who appear to be immune to malaria."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 59,
+      "question": "Which of the following most logically completes the passage? A recent government study links the high rates of respiratory ailments in Groverston to airborne pollutants released by the Woodco plywood manufacturing plant there. To address the problem, the government imposed strict regulations on emissions which will go into effect in four years. Although Woodco plans to cut its emissions in half two years ahead of schedule, it is unlikely that the rate of respiratory ailments will decline before the regulations go into effect, since",
+      "options": {
+        "A": "the number of facilities capable of treating respiratory ailments is not likely to increase",
+        "B": "reducing emissions even further than planned would necessitate decreasing production at Woodco",
+        "C": "it is difficult to make accurate, long-term predictions about emissions",
+        "D": "not all respiratory ailments are caused by airborne pollutants",
+        "E": "three new plywood manufacturing plants are about to go into production in Groverston"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 60,
+      "question": "Neither a rising standard of living nor balanced trade, by itself, establishes a country’s ability to compete in the international marketplace. Both are required simultaneously since standards of living can rise because of growing trade deficits and trade can be balanced by means of a decline in a country’s standard of living. If the facts stated in the passage above are true, a proper test of a country’s ability to be competitive is its ability to",
+      "options": {
+        "A": "balance its trade while its standard of living rises",
+        "B": "balance its trade while its standard of living falls",
+        "C": "increase trade deficits while its standard of living rises",
+        "D": "decrease trade deficits while its standard of living falls",
+        "E": "keep its standard of living constant while trade deficits rise"
+      },
+      "correct": "A"
+    }
+  ]
+}

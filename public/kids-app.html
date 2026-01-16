@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
     <link rel="canonical" href="https://goquiz.app/" />
-    <meta name="description" content="GoQuiz Academy: Fun quizzes, past questions, teacher connections, and used books for kids learning.">
+    
     <meta name="robots" content="index, follow">
     <title>GoQuiz Academy</title>
+    
+    <meta name="description" content="GoQuiz Academy helps kids learn smarter with fun quizzes, past questions, and ACCA-style MTQs. Practice, get instant feedback, and grow confidently." />
+
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Google Fonts: Inter + Material Icons + Comic Neue -->
@@ -279,6 +283,10 @@
 </header>
 </div>
 </div>
+
+<h1 class="sr-only">
+  GoQuiz Academy – Fun Quizzes, Past Questions & ACCA-Style MTQs for Kids
+</h1>
 
 
 
@@ -647,7 +655,11 @@
           <li><button onclick="loadPastQuestions(13, 'problemSolving3', 'GMAT')" class="subject-btn">Problem Solving Part3</button></li><br>
           <li><button onclick="loadPastQuestions(13, 'problemSolving4', 'GMAT')" class="subject-btn">Problem Solving Part4</button></li><br>
           <li><button onclick="loadPastQuestions(13, 'problemSolving5', 'GMAT')" class="subject-btn">Problem Solving Part5</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving6', 'GMAT')" class="subject-btn">Problem Solving Part6</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving6', 'GMAT')" class="subject-btn">Problem Solving Part6</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'dataSufficiency', 'GMAT')" class="subject-btn">Data Sufficiency</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'criticalReasoning1', 'GMAT')" class="subject-btn">Critical Reasoning Part1</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'criticalReasoning2', 'GMAT')" class="subject-btn">Critical Reasoning Part2</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'sentenceCorrection1', 'GMAT')" class="subject-btn">Sentence Correction Part1</button></li><br>
         </ul>  
     </div>
 
@@ -1221,6 +1233,9 @@ const appState = {
     userAnswers: [],
     score: 0
 };
+
+
+
 
 
 let selectedDateTime = null;

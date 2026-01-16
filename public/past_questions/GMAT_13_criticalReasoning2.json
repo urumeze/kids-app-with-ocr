@@ -1,0 +1,775 @@
+{
+  "subject": "GMAT Critical Reasoning",
+  "year": 2013,
+  "source": "The Official Guide for GMAT Review 13th Edition",
+  "quiz": [
+    {
+      "id": 61,
+      "question": "When there is less rainfall than normal, the water level of Australian rivers falls and the rivers flow more slowly. Because algae whose habitat is river water grow best in slow-moving water, the amount of algae per unit of water generally increases when there has been little rain. By contrast, however, following a period of extreme drought, algae levels are low even in very slow-moving river water. Which of the following, if true, does most to explain the contrast described above?",
+      "options": {
+        "A": "During periods of extreme drought, the populations of some of the species that feed on algae tend to fall.",
+        "B": "The more slowly water moves, the more conducive its temperature is to the growth of algae.",
+        "C": "When algae populations reach very high levels, conditions within the river can become toxic for some of the other species that normally live there.",
+        "D": "Australian rivers dry up completely for short intervals in periods of extreme drought.",
+        "E": "Except during periods of extreme drought, algae levels tend to be higher in rivers in which the flow has been controlled by damming than in rivers that flow freely."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 62,
+      "question": "When hypnotized subjects are told that they are deaf and are then asked whether they can hear the hypnotist, they reply, “No.” Some theorists try to explain this result by arguing that the selves of hypnotized subjects are dissociated into separate parts, and that the part that is deaf is dissociated from the part that replies. Which of the following challenges indicates the most serious weakness in the attempted explanation described above?",
+      "options": {
+        "A": "Why does the part that replies not answer, “Yes”?",
+        "B": "Why are the observed facts in need of any special explanation?",
+        "C": "Why do the subjects appear to accept the hypnotist’s suggestion that they are deaf?",
+        "D": "Why do hypnotized subjects all respond the same way in the situation described?",
+        "E": "Why are the separate parts of the self the same for all subjects?"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 63,
+      "question": "A prominent investor who holds a large stake in the Burton Tool Company has recently claimed that the company is mismanaged, citing as evidence the company’s failure to slow production in response to a recent rise in its inventory of finished products. It is doubtful whether an investor’s sniping at management can ever be anything other than counterproductive, but in this case it is clearly not justified. It is true that an increased inventory of finished products often indicates that production is outstripping demand, but in Burton’s case it indicates no such thing. Rather, the increase in inventory is entirely attributable to products that have already been assigned to orders received from customers. In the argument given, the two boldfaced portions play which of the following roles?",
+      "options": {
+        "A": "The first states the position that the argument as a whole opposes; the second provides evidence to undermine the support for the position being opposed.",
+        "B": "The first states the position that the argument as a whole opposes; the second is evidence that has been used to support the position being opposed.",
+        "C": "The first states the position that the argument as a whole opposes; the second states the conclusion of the argument as a whole.",
+        "D": "The first is evidence that has been used to support a position that the argument as a whole opposes; the second provides information to undermine the force of that evidence.",
+        "E": "The first is evidence that has been used to support a position that the argument as a whole opposes; the second states the conclusion of the argument as a whole."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 64,
+      "question": "Excavation of the ancient city of Kourion on the island of Cyprus revealed a pattern of debris and collapsed buildings typical of towns devastated by earthquakes. Archaeologists have hypothesized that the destruction was due to a major earthquake known to have occurred near the island in A.D. 365. Which of the following, if true, most strongly supports the archaeologists’ hypothesis?",
+      "options": {
+        "A": "Bronze ceremonial drinking vessels that are often found in graves dating from years preceding and following A.D. 365 were also found in several graves near Kourion.",
+        "B": "No coins minted after A.D. 365 were found in Kourion, but coins minted before that year were found in abundance.",
+        "C": "Most modern histories of Cyprus mention that an earthquake occurred near the island in A.D. 365.",
+        "D": "Several small statues carved in styles current in Cyprus in the century between A.D. 300 and A.D. 400 were found in Kourion.",
+        "E": "Stone inscriptions in a form of the Greek alphabet that was definitely used in Cyprus after A.D. 365 were found in Kourion."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 65,
+      "question": "Which of the following most logically completes the argument? Pecan growers get a high price for their crop when pecans are comparatively scarce, but the price drops sharply when pecans are abundant. Thus, in high-yield years, growers often hold back part of their crop in refrigerated warehouses for one or two years, hoping for higher prices in the future. This year’s pecan crop was the smallest in five years. It is nonetheless quite possible that a portion of this year’s crop will be held back, since",
+      "options": {
+        "A": "each of the last two years produced record-breaking pecan yields",
+        "B": "the quality of this year’s pecan crop is no worse than the quality of the pecan crops of the previous five years",
+        "C": "pecan prices have not been subject to sharp fluctuations in recent years",
+        "D": "for some pecan growers, this year’s crop was no smaller than last year’s",
+        "E": "the practice of holding back part of one year’s crop had not yet become widespread the last time the pecan crop was as small as it was this year"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 66,
+      "question": "To protect certain fledgling industries, the government of Country Z banned imports of the types of products those industries were starting to make. As a direct result, the cost of those products to the buyers, several export-dependent industries in Z, went up, sharply limiting the ability of those industries to compete effectively in their export markets. Which of the following conclusions about Country Z’s adversely affected export-dependent industries is best supported by the passage?",
+      "options": {
+        "A": "Profit margins in those industries were not high enough to absorb the rise in costs mentioned above.",
+        "B": "Those industries had to contend with the fact that other countries banned imports from Country Z.",
+        "C": "Those industries succeeded in expanding the domestic market for their products.",
+        "D": "Steps to offset rising materials costs by decreasing labor costs were taken in those industries.",
+        "E": "Those industries started to move into export markets that they had previously judged unprofitable."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 67,
+      "question": "Several industries have recently switched at least partly from older technologies powered by fossil fuels to new technologies powered by electricity. It is thus evident that less fossil fuel is being used as a result of the operations of these industries than would have been used if these industries had retained their older technologies. Which of the following, if true, most strengthens the argument above?",
+      "options": {
+        "A": "Many of the industries that have switched at least partly to the new technologies have increased their output.",
+        "B": "Less fossil fuel was used to manufacture the machinery employed in the new technologies than was originally used to manufacture the machinery employed in the older technologies.",
+        "C": "More electricity is used by those industries that have switched at least partly to the new technologies than by those industries that have not switched.",
+        "D": "Some of the industries that have switched at least partly to the new technologies still use primarily technologies that are powered by fossil fuels.",
+        "E": "The amount of fossil fuel used to generate the electricity needed to power the new technologies is less than the amount that would have been used to power the older technologies."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 68,
+      "question": "Scientists have modified feed corn genetically, increasing its resistance to insect pests. Farmers who tried out the genetically modified corn last season applied less insecticide to their corn fields and still got yields comparable to those they would have gotten with ordinary corn. Ordinary corn seed, however, costs less, and what these farmers saved on insecticide rarely exceeded their extra costs for seed. Therefore, for most feed-corn farmers, switching to genetically modified seed would be unlikely to increase profits. Which of the following would it be most useful to know in order to evaluate the argument?",
+      "options": {
+        "A": "Whether there are insect pests that sometimes reduce feed-corn yields, but against which commonly used insecticides and the genetic modification are equally ineffective",
+        "B": "Whether the price that farmers receive for feed corn has remained steady over the past few years",
+        "C": "Whether the insecticides typically used on feed corn tend to be more expensive than insecticides typically used on other crops",
+        "D": "Whether most of the farmers who tried the genetically modified corn last season applied more insecticide than was actually necessary",
+        "E": "Whether, for most farmers who plant feed corn, it is their most profitable crop"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 69,
+      "question": "Which of the following most logically completes the argument? By competing with rodents for seeds, black ants help control rodent populations that pose a public health risk. However, a very aggressive species of black ant, the Loma ant, which has recently invaded a certain region, has a venomous sting that is often fatal to humans. Therefore, the planned introduction into that region of ant flies, which prey on Loma ants, would benefit public health, since",
+      "options": {
+        "A": "ant flies do not attack black ants other than Loma ants",
+        "B": "Loma ants are less effective than many bird species in competing with rodents for seeds",
+        "C": "certain other species of black ants are more effective than Loma ants in competing with rodents for seeds",
+        "D": "the sting of Loma ants can also be fatal to rodents",
+        "E": "some pesticides that could be used to control Loma ants are harmful to the environment"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 70,
+      "question": "Community activist: If Morganville wants to keep its central shopping district healthy, it should prevent the opening of a huge SaveAll discount department store on the outskirts of Morganville. Records from other small towns show that whenever SaveAll has opened a store outside the central shopping district of a small town, within five years the town has experienced the bankruptcies of more than a quarter of the stores in the shopping district. The answer to which of the following would be most useful for evaluating the community activist’s reasoning?",
+      "options": {
+        "A": "Have community activists in other towns successfully campaigned against the opening of a SaveAll store on the outskirts of their towns?",
+        "B": "Do a large percentage of the residents of Morganville currently do almost all of their shopping at stores in Morganville?",
+        "C": "In towns with healthy central shopping districts, what proportion of the stores in those districts suffer bankruptcy during a typical five-year period?",
+        "D": "What proportion of the employees at the SaveAll store on the outskirts of Morganville will be drawn from Morganville?",
+        "E": "Do newly opened SaveAll stores ever lose money during their first five years of operation?"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 71,
+      "question": "In comparison to the standard typewriter keyboard, the EFCO keyboard, which places the most-used keys nearest the typist’s strongest fingers, allows faster typing and results in less fatigue. Therefore, replacement of standard keyboards with the EFCO keyboard will result in an immediate reduction of typing costs. Which of the following, if true, would most weaken the conclusion drawn above?",
+      "options": {
+        "A": "People who use both standard and EFCO keyboards report greater difficulty in the transition from the EFCO keyboard to the standard keyboard than in the transition from the standard keyboard to the EFCO keyboard.",
+        "B": "EFCO keyboards are no more expensive to manufacture than are standard keyboards and require less frequent repair than do standard keyboards.",
+        "C": "The number of businesses and government agencies that use EFCO keyboards is increasing each year.",
+        "D": "The more training and experience an employee has had with the standard keyboard, the more costly it is to train that employee to use the EFCO keyboard.",
+        "E": "Novice typists can learn to use the EFCO keyboard in about the same amount of time that it takes them to learn to use the standard keyboard."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 72,
+      "question": "In the past the country of Malvernia has relied heavily on imported oil. Malvernia recently implemented a program to convert heating systems from oil to natural gas. Malvernia currently produces more natural gas each year than it uses, and oil production in Malvernian oil fields is increasing at a steady pace. If these trends in fuel production and usage continue, therefore, Malvernian reliance on foreign sources for fuel is likely to decline soon. Which of the following would it be most useful to establish in evaluating the argument?",
+      "options": {
+        "A": "When, if ever, will production of oil in Malvernia outstrip production of natural gas?",
+        "B": "Is Malvernia among the countries that rely most on imported oil?",
+        "C": "What proportion of Malvernia’s total energy needs is met by hydroelectric, solar, and nuclear power?",
+        "D": "Is the amount of oil used each year in Malvernia for generating electricity and fuel for transportation increasing?",
+        "E": "Have any existing oil-burning heating systems in Malvernia already been converted to natural-gas-burning heating systems?"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 73,
+      "question": "An overly centralized economy, not the changes in the climate, is responsible for the poor agricultural production in Country X since its new government came to power. Neighboring Country Y has experienced the same climatic conditions, but while agricultural production has been falling in Country X, it has been rising in Country Y. Which of the following, if true, most weakens the argument above?",
+      "options": {
+        "A": "Industrial production also is declining in Country X.",
+        "B": "Whereas Country Y is landlocked, Country X has a major seaport.",
+        "C": "Both Country X and Country Y have been experiencing drought conditions.",
+        "D": "The crops that have always been grown in Country X are different from those that have always been grown in Country Y.",
+        "E": "Country X’s new government instituted a centralized economy with the intention of ensuring an equitable distribution of goods."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 74,
+      "question": "Which of the following most logically completes the passage? When the products of several competing suppliers are perceived by consumers to be essentially the same, classical economics predicts that price competition will reduce prices to the same minimal levels and all suppliers’ profits to the same minimal levels. Therefore, if classical economics is true, and given suppliers’ desire to make as much profit as possible, it should be expected that",
+      "options": {
+        "A": "in a crowded market widely differing prices will be charged for products that are essentially the same as each other",
+        "B": "as a market becomes less crowded as suppliers leave, the profits of the remaining suppliers will tend to decrease",
+        "C": "each supplier in a crowded market will try to convince consumers that its product differs significantly from its competitors’ products",
+        "D": "when consumers are unable to distinguish the products in a crowded market, consumers will judge that the higher-priced products are of higher quality",
+        "E": "suppliers in crowded markets will have more incentive to reduce prices and thus increase sales than to introduce innovations that would distinguish their product from their competitors’ products"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 75,
+      "question": "Which of the following most logically completes the argument? Although the number of large artificial satellites orbiting the Earth is small compared to the number of small pieces of debris in orbit, the large satellites interfere more seriously with telescope observations because of the strong reflections they produce. Because many of those large satellites have ceased to function, the proposal has recently been made to eliminate interference from nonfunctioning satellites by exploding them in space. This proposal, however, is ill conceived, since",
+      "options": {
+        "A": "many nonfunctioning satellites remain in orbit for years",
+        "B": "for satellites that have ceased to function, repairing them while they are in orbit would be prohibitively expensive",
+        "C": "there are no known previous instances of satellites’ having been exploded on purpose",
+        "D": "the only way to make telescope observations without any interference from debris in orbit is to use telescopes launched into extremely high orbits around the Earth",
+        "E": "a greatly increased number of small particles in Earth’s orbit would result in a blanket of reflections that would make certain valuable telescope observations impossible"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 76,
+      "question": "Although the earliest surviving Greek inscriptions written in an alphabet date from the eighth century B.C., the fact that the text of these Greek inscriptions sometimes runs from right to left and sometimes from left to right indicates that the Greeks adopted alphabetic writing at least two centuries before these inscriptions were produced. After all, the Greeks learned alphabetic writing from the Phoenicians, and presumably, along with the alphabet, they also adopted the then-current Phoenician practice with respect to the direction of text. And although Phoenician writing was originally inconsistent in direction, by the eighth century B.C. Phoenician was consistently written from right to left and had been for about two centuries. In the argument given, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first and the second each describe evidence that has been used to challenge the position that the argument seeks to establish.",
+        "B": "The first describes evidence that forms the basis for an objection to the position that the argument seeks to establish; the second is that position.",
+        "C": "The first describes evidence that forms the basis for an objection to the position that the argument seeks to establish; the second is a consideration that is introduced to counter the force of that evidence.",
+        "D": "The first and the second each provide evidence in support of the position that the argument seeks to establish.",
+        "E": "The first provides evidence in support of the position that the argument seeks to establish; the second is that position."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 77,
+      "question": "A recent report determined that although only 3 percent of drivers on Maryland highways equipped their vehicles with radar detectors, 33 percent of all vehicles ticketed for exceeding the speed limit were equipped with them. Clearly, drivers who equip their vehicles with radar detectors are more likely to exceed the speed limit regularly than are drivers who do not. The conclusion drawn above depends on which of the following assumptions?",
+      "options": {
+        "A": "Drivers who equip their vehicles with radar detectors are less likely to be ticketed for exceeding the speed limit than are drivers who do not.",
+        "B": "Drivers who are ticketed for exceeding the speed limit are more likely to exceed the speed limit regularly than are drivers who are not ticketed.",
+        "C": "The number of vehicles that were ticketed for exceeding the speed limit was greater than the number of vehicles that were equipped with radar detectors.",
+        "D": "Many of the vehicles that were ticketed for exceeding the speed limit were ticketed more than once in the time period covered by the report.",
+        "E": "Drivers on Maryland highways exceeded the speed limit more often than did drivers on other state highways not covered in the report."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 78,
+      "question": "In countries where automobile insurance includes compensation for whiplash injuries sustained in automobile accidents, reports of having suffered such injuries are twice as frequent as they are in countries where whiplash is not covered. Presently, no objective test for whiplash exists, so it is true that spurious reports of whiplash injuries cannot be readily identified. Nevertheless, these facts do not warrant the conclusion drawn by some commentators that in the countries with the higher rates of reported whiplash injuries, half of the reported cases are spurious. Clearly, in countries where automobile insurance does not include compensation for whiplash, people often have little incentive to report whiplash injuries that they actually have suffered. In the argument given, the two boldfaced portions play which of the following roles?",
+      "options": {
+        "A": "The first is a claim that the argument disputes; the second is a conclusion that has been based on that claim.",
+        "B": "The first is a claim that has been used to support a conclusion that the argument accepts; the second is that conclusion.",
+        "C": "The first is evidence that has been used to support an explanation that the argument challenges; the second is that explanation.",
+        "D": "The first is a finding whose implications are at issue in the argument; the second is a claim presented in order to argue against deriving certain implications from that finding.",
+        "E": "The first is a finding whose accuracy is evaluated in the argument; the second is evidence presented to establish that the finding is accurate."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 79,
+      "question": "When demand for a factory’s products is high, more money is spent at the factory for safety precautions and machinery maintenance than when demand is low. Thus the average number of on-the-job accidents per employee each month should be lower during periods when demand is high than when demand is low and less money is available for safety precautions and machinery maintenance. Which of the following, if true about a factory when demand for its products is high, casts the most serious doubt on the conclusion drawn above?",
+      "options": {
+        "A": "Its employees ask for higher wages than they do at other times.",
+        "B": "Its management hires new workers but lacks the time to train them properly.",
+        "C": "Its employees are less likely to lose their jobs than they are at other times.",
+        "D": "Its management sponsors a monthly safety award for each division in the factory.",
+        "E": "Its old machinery is replaced with modern, automated models."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 80,
+      "question": "A sudden increase in the production of elephant ivory artifacts on the Mediterranean coast of North Africa occurred in the tenth century. Historians explain this increase as the result of an area opening up as a new source of ivory and argue on this basis that the important medieval trade between North Africa and East Africa began at this period. Each of the following, if true, provides some support for the historians’ account described above EXCEPT:",
+      "options": {
+        "A": "In East Africa gold coins from Mediterranean North Africa have been found at a tenth-century site but at no earlier sites.",
+        "B": "The many surviving letters of pre-tenth-century North African merchants include no mention of business transactions involving East Africa.",
+        "C": "Excavations in East Africa reveal a tenth-century change in architectural style to reflect North African patterns.",
+        "D": "Documents from Mediterranean Europe and North Africa that date back earlier than the tenth century show knowledge of East African animals.",
+        "E": "East African carvings in a style characteristic of the tenth century depict seagoing vessels very different from those used by local sailors but of a type common in the Mediterranean."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 81,
+      "question": "Which of the following most logically completes the argument? Codex Berinensis, a Florentine copy of an ancient Roman medical treatise, is undated but contains clues to when it was produced. Its first 80 pages are by a single copyist, but the remaining 20 pages are by three different copyists, which indicates some significant disruption. Since a letter in handwriting identified as that of the fourth copyist mentions a plague that killed many people in Florence in 1148, Codex Berinensis was probably produced in that year. Which of the following, if true, most strongly supports the hypothesis that Codex Berinensis was produced in 1148?",
+      "options": {
+        "A": "Other than Codex Berinensis, there are no known samples of the handwriting of the first three copyists.",
+        "B": "According to the account by the fourth copyist, the plague went on for 10 months.",
+        "C": "A scribe would be able to copy a page of text the size and style of Codex Berinensis in a day.",
+        "D": "There was only one outbreak of plague in Florence in the 1100s.",
+        "E": "The number of pages of Codex Berinensis produced by a single scribe becomes smaller with each successive change of copyist."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 82,
+      "question": "The spacing of the four holes on a fragment of a bone flute excavated at a Neanderthal campsite is just what is required to play the third through sixth notes of the diatonic scale—the seven-note musical scale used in much of Western music since the Renaissance. Musicologists therefore hypothesize that the diatonic musical scale was developed and used thousands of years before it was adopted by Western musicians. Which of the following, if true, most strongly supports the hypothesis?",
+      "options": {
+        "A": "Bone flutes were probably the only musical instrument made by Neanderthals.",
+        "B": "No musical instrument that is known to have used a diatonic scale is of an earlier date than the flute found at the Neanderthal campsite.",
+        "C": "The flute was made from a cave-bear bone and the campsite at which the flute fragment was excavated was in a cave that also contained skeletal remains of cave bears.",
+        "D": "Flutes are the simplest wind instrument that can be constructed to allow playing a diatonic scale.",
+        "E": "The cave-bear leg bone used to make the Neanderthal flute would have been long enough to make a flute capable of playing a complete diatonic scale."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 83,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 84,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 85,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 86,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 87,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 88,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 89,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 90,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 91,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 92,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 93,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 94,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 95,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 96,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 97,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 98,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 99,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 100,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 101,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 102,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 103,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 104,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 105,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 106,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 107,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 108,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 109,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 110,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 111,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 112,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 113,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 114,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 115,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 116,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 117,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 118,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 119,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 120,
+      "question": "Although the discount stores in Goreville’s central shopping district are expected to close within five years as a result of competition from a SpendLess discount department store that just opened, those locations will not stay vacant for long. In the five years since the opening of Colson’s, a nondiscount department store, a new store has opened at the location of every store in the shopping district that closed because it could not compete with Colson’s. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Many customers of Colson’s are expected to do less shopping there than they did before the SpendLess store opened.",
+        "B": "Increasingly, the stores that have opened in the central shopping district since Colson’s opened have been discount stores.",
+        "C": "At present, the central shopping district has as many stores operating in it as it ever had.",
+        "D": "Over the course of the next five years, it is expected that Goreville’s population will grow at a faster rate than it has for the past several decades.",
+        "E": "Many stores in the central shopping district sell types of merchandise that are not available at either SpendLess or Colson’s."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 121,
+      "question": "Kale has more nutritional value than spinach. But since collard greens have more nutritional value than lettuce, it follows that kale has more nutritional value than lettuce. Any of the following, if introduced into the argument as an additional premise, makes the argument above logically correct EXCEPT:",
+      "options": {
+        "A": "Collard greens have more nutritional value than kale.",
+        "B": "Spinach has more nutritional value than lettuce.",
+        "C": "Spinach has more nutritional value than collard greens.",
+        "D": "Spinach and collard greens have the same nutritional value.",
+        "E": "Kale and collard greens have the same nutritional value."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 122,
+      "question": "Museums that house Renaissance oil paintings typically store them in environments that are carefully kept within narrow margins of temperature and humidity to inhibit any deterioration. Laboratory tests have shown that the kind of oil paint used in these paintings actually adjusts to climatic changes quite well. If, as some museum directors believe, paint is the most sensitive substance in these works, then by relaxing the standards for temperature and humidity control, museums can reduce energy costs without risking damage to these paintings. Museums would be rash to relax those standards, however, since results of preliminary tests indicate that gesso, a compound routinely used by Renaissance artists to help paint adhere to the canvas, is unable to withstand significant variations in humidity. In the argument above, the two portions in boldface play which of the following roles?",
+      "options": {
+        "A": "The first is an objection that has been raised against the position taken by the argument; the second is the position taken by the argument.",
+        "B": "The first is the position taken by the argument; the second is the position that the argument calls into question.",
+        "C": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is a circumstance on which that judgment is, in part, based.",
+        "D": "The first is a judgment that has been offered in support of the position that the argument calls into question; the second is that position.",
+        "E": "The first is a claim that the argument calls into question; the second is the position taken by the argument."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 123,
+      "question": "The cost of producing radios in Country Q is 10 percent less than the cost of producing radios in Country Y. Even after transportation fees and tariff charges are added, it is still cheaper for a company to import radios from Country Q to Country Y than to produce radios in Country Y. The statements above, if true, best support which of the following assertions?",
+      "options": {
+        "A": "Labor costs in Country Q are 10 percent below those in Country Y.",
+        "B": "Importing radios from Country Q to Country Y will eliminate 10 percent of the manufacturing jobs in Country Y.",
+        "C": "The tariff on a radio imported from Country Q to Country Y is less than 10 percent of the cost of manufacturing the radio in Country Y.",
+        "D": "The fee for transporting a radio from Country Q to Country Y is more than 10 percent of the cost of manufacturing the radio in Country Q.",
+        "E": "It takes 10 percent less time to manufacture a radio in Country Q than it does in Country Y."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 124,
+      "question": "Exposure to certain chemicals commonly used in elementary schools as cleaners or pesticides causes allergic reactions in some children. Elementary school nurses in Renston report that the proportion of schoolchildren sent to them for treatment of allergic reactions to those chemicals has increased significantly over the past ten years. Therefore, either Renston’s schoolchildren have been exposed to greater quantities of the chemicals, or they are more sensitive to them than schoolchildren were ten years ago. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The number of school nurses employed by Renston’s elementary schools has not decreased over the past ten years.",
+        "B": "Children who are allergic to the chemicals are no more likely than other children to have allergies to other substances.",
+        "C": "Children who have allergic reactions to the chemicals are not more likely to be sent to a school nurse now than they were ten years ago.",
+        "D": "The chemicals are not commonly used as cleaners or pesticides in houses and apartment buildings in Renston.",
+        "E": "Children attending elementary school do not make up a larger proportion of Renston’s population now than they did ten years ago."
+      },
+      "correct": "C"
+    }
+  ]
+}

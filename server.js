@@ -15,6 +15,21 @@ import firebasePostsRouter from "./routes/firebasePosts.js";
 import uploadRoutes from "./routes/upload.js"; 
 
 
+app.use('/api', (req, res, next) => {
+  const isBot = /bot|google|bing|crawl|spider/i.test(
+    req.headers['user-agent'] || ''
+  );
+
+  if (isBot) {
+    return res.status(410).send('Gone');
+  }
+
+  next();
+});
+
+app.get("/api/*", (req, res) => {
+  res.status(404).send("Not Found");
+});
 
 
 

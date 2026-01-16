@@ -1,0 +1,847 @@
+{
+  "subject": "GMAT Sentence Correction",
+  "year": 2013,
+  "source": "The Official Guide for GMAT Review 13th Edition",
+  "quiz": [
+    {
+      "id": 71,
+      "question": "Along the major rivers that traverse the deserts of northeast Africa, the Middle East, and northwest India, the combination of a reliable supply of water and good growing conditions both encouraged farming traditions that, in places, endure in at least 6,000 years.",
+      "options": {
+        "A": "good growing conditions both encouraged farming traditions that, in places, endure in",
+        "B": "good growing conditions encouraged farming traditions that have, in places, endured for",
+        "C": "of good growing conditions have encouraged farming traditions that, in places, endured for",
+        "D": "of good growing conditions both encouraged farming traditions that have, in places, endured",
+        "E": "of good growing conditions encouraged farming traditions that have, in places, been enduring for"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 72,
+      "question": "His studies of ice-polished rocks in his Alpine homeland, far outside the range of present-day glaciers, led Louis Agassiz in 1837 to propose the concept of an age in which great ice sheets had existed in now currently temperate areas.",
+      "options": {
+        "A": "in which great ice sheets had existed in now currently temperate areas",
+        "B": "in which great ice sheets existed in what are now temperate areas",
+        "C": "when great ice sheets existed where there were areas now temperate",
+        "D": "when great ice sheets had existed in current temperate areas",
+        "E": "when great ice sheets existed in areas now that are temperate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 73,
+      "question": "Unlike the original National Museum of Science and Technology in Italy, where the models are encased in glass or operated only by staff members, the Virtual Leonardo Project, an online version of the museum, encourages visitors to “touch” each exhibit, which thereby activates the animated functions of the piece.",
+      "options": {
+        "A": "exhibit, which thereby activates",
+        "B": "exhibit, in turn an activation of",
+        "C": "exhibit, and it will activate",
+        "D": "exhibit and thereby activate",
+        "E": "exhibit which, as a result, activates"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 74,
+      "question": "Despite its covering the entire planet, Earth has a crust that is not seamless or stationary, rather it is fragmented into mobile semirigid plates.",
+      "options": {
+        "A": "Despite its covering the entire planet, Earth has a crust that is not seamless or stationary, rather it is",
+        "B": "Despite the fact that it covers the entire planet, Earth’s crust is neither seamless nor is it stationary, but is",
+        "C": "Despite covering the entire planet, Earth’s crust is neither seamless nor is it stationary, but rather",
+        "D": "Although it covers the entire planet, Earth’s crust is neither seamless nor stationary, but rather",
+        "E": "Although covering the entire planet, Earth has a crust that is not seamless or stationary, but"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 75,
+      "question": "More and more in recent years, cities are stressing the arts as a means to greater economic development and investing millions of dollars in cultural activities, despite strained municipal budgets and fading federal support.",
+      "options": {
+        "A": "to greater economic development and investing",
+        "B": "to greater development economically and investing",
+        "C": "of greater economic development and invest",
+        "D": "of greater development economically and invest",
+        "E": "for greater economic development and the investment of"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 76,
+      "question": "Combining enormous physical strength with higher intelligence, the Neanderthals appear as equipped for facing any obstacle the environment could put in their path, but their relatively sudden disappearance during the Paleolithic era indicates that an inability to adapt to some environmental change led to their extinction.",
+      "options": {
+        "A": "appear as equipped for facing any obstacle the environment could put in their path,",
+        "B": "appear to have been equipped to face any obstacle the environment could put in their path,",
+        "C": "appear as equipped to face any obstacle the environment could put in their paths,",
+        "D": "appeared as equipped to face any obstacle the environment could put in their paths,",
+        "E": "appeared to have been equipped for facing any obstacle the environment could put in their path,"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 77,
+      "question": "A 1972 agreement between Canada and the United States reduced the amount of phosphates that municipalities had been allowed to dump into the Great Lakes.",
+      "options": {
+        "A": "reduced the amount of phosphates that municipalities had been allowed to dump",
+        "B": "reduced the phosphate amount that municipalities had been dumping",
+        "C": "reduces the phosphate amount municipalities have been allowed to dump",
+        "D": "reduced the amount of phosphates that municipalities are allowed to dump",
+        "E": "reduces the amount of phosphates allowed for dumping by municipalities"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 78,
+      "question": "A proposal has been made to trim the horns from rhinoceroses to discourage poachers; the question is whether tourists will continue to visit game parks and see rhinoceroses after their horns are trimmed.",
+      "options": {
+        "A": "whether tourists will continue to visit game parks and see rhinoceroses after their horns are",
+        "B": "whether tourists will continue to visit game parks to see one once their horns are",
+        "C": "whether tourists will continue to visit game parks to see rhinoceroses once the animals’ horns have been",
+        "D": "if tourists will continue to visit game parks and see rhinoceroses once the animals’ horns are",
+        "E": "if tourists will continue to visit game parks to see one after the animals’ horns have been"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 79,
+      "question": "Ryūnosuke Akutagawa’s knowledge of the literatures of Europe, China, and that of Japan were instrumental in his development as a writer, informing his literary style as much as the content of his fiction.",
+      "options": {
+        "A": "that of Japan were instrumental in his development as a writer, informing his literary style as much as",
+        "B": "that of Japan was instrumental in his development as a writer, and it informed both his literary style as well as",
+        "C": "Japan was instrumental in his development as a writer, informing both his literary style and",
+        "D": "Japan was instrumental in his development as a writer, as it informed his literary style as much as",
+        "E": "Japan were instrumental in his development as a writer, informing both his literary style in addition to"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 80,
+      "question": "The only way for growers to salvage frozen citrus is to process them quickly into juice concentrate before they rot when warmer weather returns.",
+      "options": {
+        "A": "to process them quickly into juice concentrate before they rot when warmer weather returns",
+        "B": "if they are quickly processed into juice concentrate before warmer weather returns to rot them",
+        "C": "for them to be processed quickly into juice concentrate before the fruit rots when warmer weather returns",
+        "D": "if the fruit is quickly processed into juice concentrate before they rot when warmer weather returns",
+        "E": "to have it quickly processed into juice concentrate before warmer weather returns and rots the fruit"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 81,
+      "question": "Fossils of the arm of a sloth found in Puerto Rico in 1991, and dated at 34 million years old, made it the earliest known mammal of the Greater Antilles Islands.",
+      "options": {
+        "A": "sloth found in Puerto Rico in 1991, and dated at 34 million years old, made it the earliest known mammal of",
+        "B": "sloth, that they found in Puerto Rico in 1991, has been dated at 34 million years old, thus making it the earliest mammal known on",
+        "C": "sloth that was found in Puerto Rico in 1991, was dated at 34 million years old, making this the earliest known mammal of",
+        "D": "sloth, found in Puerto Rico in 1991, have been dated at 34 million years old, making the sloth the earliest known mammal on",
+        "E": "sloth which, found in Puerto Rico in 1991, was dated at 34 million years old, made the sloth the earliest known mammal of"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 82,
+      "question": "Defense attorneys have occasionally argued that their clients’ misconduct stemmed from a reaction to something ingested, but in attributing criminal or delinquent behavior to some food allergy, the perpetrators are in effect told that they are not responsible for their actions.",
+      "options": {
+        "A": "in attributing criminal or delinquent behavior to some food allergy,",
+        "B": "if criminal or delinquent behavior is attributed to an allergy to some food,",
+        "C": "in attributing behavior that is criminal or delinquent to an allergy to some food,",
+        "D": "if some food allergy is attributed as the cause of criminal or delinquent behavior,",
+        "E": "in attributing a food allergy as the cause of criminal or delinquent behavior,"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 83,
+      "question": "A report by the American Academy for the Advancement of Science has concluded that much of the currently uncontrolled dioxins to which North Americans are exposed comes from the incineration of wastes.",
+      "options": {
+        "A": "much of the currently uncontrolled dioxins to which North Americans are exposed comes",
+        "B": "much of the currently uncontrolled dioxins that North Americans are exposed to come",
+        "C": "much of the dioxins that are currently uncontrolled and that North Americans are exposed to comes",
+        "D": "many of the dioxins that are currently uncontrolled and North Americans are exposed to come",
+        "E": "many of the currently uncontrolled dioxins to which North Americans are exposed come"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 84,
+      "question": "Recently physicians have determined that stomach ulcers are not caused by stress, alcohol, or rich foods, but a bacterium that dwells in the mucous lining of the stomach.",
+      "options": {
+        "A": "not caused by stress, alcohol, or rich foods, but",
+        "B": "not caused by stress, alcohol, or rich foods, but are by",
+        "C": "caused not by stress, alcohol, or rich foods, but by",
+        "D": "caused not by stress, alcohol, and rich foods, but",
+        "E": "caused not by stress, alcohol, and rich foods, but are by"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 85,
+      "question": "According to a recent poll, owning and living in a freestanding house on its own land is still a goal of a majority of young adults, like that of earlier generations.",
+      "options": {
+        "A": "like that of earlier generations",
+        "B": "as that for earlier generations",
+        "C": "just as earlier generations did",
+        "D": "as have earlier generations",
+        "E": "as it was of earlier generations"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 86,
+      "question": "In 2000, a mere two dozen products accounted for half the increase in spending on prescription drugs, a phenomenon that is explained not just because of more expensive drugs but by the fact that doctors are writing many more prescriptions for higher-cost drugs.",
+      "options": {
+        "A": "a phenomenon that is explained not just because of more expensive drugs but by the fact that doctors are writing",
+        "B": "a phenomenon that is explained not just by the fact that drugs are becoming more expensive but also by the fact that doctors are writing",
+        "C": "a phenomenon occurring not just because of drugs that are becoming more expensive but because of doctors having also written",
+        "D": "which occurred not just because drugs are becoming more expensive but doctors are also writing",
+        "E": "which occurred not just because of more expensive drugs but because doctors have also written"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 87,
+      "question": "According to scientists who monitored its path, an expanding cloud of energized particles ejected from the Sun recently triggered a large storm in the magnetic field that surrounds Earth, which brightened the Northern Lights and also possibly knocking out a communications satellite.",
+      "options": {
+        "A": "an expanding cloud of energized particles ejected from the Sun recently triggered a large storm in the magnetic field that surrounds Earth, which brightened the Northern Lights and also possibly knocking",
+        "B": "an expanding cloud of energized particles ejected from the Sun was what recently triggered a large storm in the magnetic field that surrounds Earth, and it brightened the Northern Lights and also possibly knocked",
+        "C": "an expanding cloud of energized particles ejected from the Sun recently triggered a large storm in the magnetic field that surrounds Earth, brightening the Northern Lights and possibly knocking",
+        "D": "a large storm in the magnetic field that surrounds Earth, recently triggered by an expanding cloud of energized particles, brightened the Northern Lights and it possibly knocked",
+        "E": "a large storm in the magnetic field surrounding Earth was recently triggered by an expanding cloud of energized particles, brightening the Northern Lights and it possibly knocked"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 88,
+      "question": "Often visible as smog, ozone is formed in the atmosphere from hydrocarbons and nitrogen oxides, two major pollutants emitted by automobiles, react with sunlight.",
+      "options": {
+        "A": "ozone is formed in the atmosphere from",
+        "B": "ozone is formed in the atmosphere when",
+        "C": "ozone is formed in the atmosphere, and when",
+        "D": "ozone, formed in the atmosphere when",
+        "E": "ozone, formed in the atmosphere from"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 89,
+      "question": "Salt deposits and moisture threaten to destroy the Mohenjo-Daro excavation in Pakistan, the site of an ancient civilization that flourished at the same time as the civilizations in the Nile Delta and the river valleys of the Tigris and Euphrates.",
+      "options": {
+        "A": "that flourished at the same time as the civilizations",
+        "B": "that had flourished at the same time as had the civilizations",
+        "C": "that flourished at the same time those",
+        "D": "flourishing at the same time as those did",
+        "E": "flourishing at the same time as those were"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 90,
+      "question": "The results of the company’s cost-cutting measures are evident in its profits, which increased 5 percent during the first 3 months of this year after it fell over the last two years.",
+      "options": {
+        "A": "which increased 5 percent during the first 3 months of this year after it fell",
+        "B": "which had increased 5 percent during the first 3 months of this year after it had fallen",
+        "C": "which have increased 5 percent during the first 3 months of this year after falling",
+        "D": "with a 5 percent increase during the first 3 months of this year after falling",
+        "E": "with a 5 percent increase during the first 3 months of this year after having fallen"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 91,
+      "question": "In an effort to reduce their inventories, Italian vintners have cut prices; their wines have been priced to sell, and they are.",
+      "options": {
+        "A": "have been priced to sell, and they are",
+        "B": "are priced to sell, and they have",
+        "C": "are priced to sell, and they do",
+        "D": "are being priced to sell, and have",
+        "E": "had been priced to sell, and they have"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 92,
+      "question": "Thelonious Monk, who was a jazz pianist and composer, produced a body of work both rooted in the stride-piano tradition of Willie (The Lion) Smith and Duke Ellington, yet in many ways he stood apart from the mainstream jazz repertory.",
+      "options": {
+        "A": "Thelonious Monk, who was a jazz pianist and composer, produced a body of work both rooted",
+        "B": "Thelonious Monk, the jazz pianist and composer, produced a body of work that was rooted both",
+        "C": "Jazz pianist and composer Thelonious Monk, who produced a body of work rooted",
+        "D": "Jazz pianist and composer Thelonious Monk produced a body of work that was rooted",
+        "E": "Jazz pianist and composer Thelonious Monk produced a body of work rooted both"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 93,
+      "question": "Nobody knows exactly how many languages there are in the world, partly because of the difficulty of distinguishing between a language and the sublanguages or dialects within it, but those who have tried to count typically have found about five thousand.",
+      "options": {
+        "A": "and the sublanguages or dialects within it, but those who have tried to count typically have found",
+        "B": "and the sublanguages or dialects within them, with those who have tried counting typically finding",
+        "C": "and the sublanguages or dialects within it, but those who have tried counting it typically find",
+        "D": "or the sublanguages or dialects within them, but those who tried to count them typically found",
+        "E": "or the sublanguages or dialects within them, with those who have tried to count typically finding"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 94,
+      "question": "Heating-oil prices are expected to be higher this year than last because refiners are paying about $5 a barrel more for crude oil than they were last year.",
+      "options": {
+        "A": "Heating-oil prices are expected to be higher this year than last because refiners are paying about $5 a barrel more for crude oil than they were",
+        "B": "Heating-oil prices are expected to rise higher this year over last because refiners pay about $5 a barrel for crude oil more than they did",
+        "C": "Expectations are for heating-oil prices to be higher this year than last year’s because refiners are paying about $5 a barrel for crude oil more than they did",
+        "D": "It is the expectation that heating-oil prices will be higher for this year over last because refiners are paying about $5 a barrel more for crude oil now than what they were",
+        "E": "It is expected that heating-oil prices will rise higher this year than last year’s because refiners pay about $5 a barrel for crude oil more than they did"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 95,
+      "question": "One of the primary distinctions between our intelligence with that of other primates may lay not so much in any specific skill but in our ability to extend knowledge gained in one context to new and different ones.",
+      "options": {
+        "A": "between our intelligence with that of other primates may lay not so much in any specific skill but",
+        "B": "between our intelligence with that of other primates may lie not so much in any specific skill but instead",
+        "C": "between our intelligence and that of other primates may lie not so much in any specific skill as",
+        "D": "our intelligence has from that of other primates may lie not in any specific skill as",
+        "E": "of our intelligence to that of other primates may lay not in any specific skill but"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 96,
+      "question": "Even though Clovis points, spear points with longitudinal grooves chipped onto their faces, have been found all over North America, they are named for the New Mexico site where they were first discovered in 1932.",
+      "options": {
+        "A": "Even though Clovis points, spear points with longitudinal grooves chipped onto their faces, have been found all over North America, they are named for the New Mexico site where they were first discovered in 1932.",
+        "B": "Although named for the New Mexico site where first discovered in 1932, Clovis points are spear points of longitudinal grooves chipped onto their faces and have been found all over North America.",
+        "C": "Named for the New Mexico site where they have been first discovered in 1932, Clovis points, spear points of longitudinal grooves chipped onto the faces, have been found all over North America.",
+        "D": "Spear points with longitudinal grooves that are chipped onto the faces, Clovis points, even though named for the New Mexico site where first discovered in 1932, but were found all over North America.",
+        "E": "While Clovis points are spear points whose faces have longitudinal grooves chipped into them, they have been found all over North America, and named for the New Mexico site where they have been first discovered in 1932."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 97,
+      "question": "Some anthropologists believe that the genetic homogeneity evident in the world’s people is the result of a “population bottleneck”—at some time in the past our ancestors suffered an event, greatly reducing their numbers and thus our genetic variation.",
+      "options": {
+        "A": "at some time in the past our ancestors suffered an event, greatly reducing their numbers",
+        "B": "that at some time in the past our ancestors suffered an event that greatly reduced their numbers",
+        "C": "that some time in the past our ancestors suffered an event so that their numbers were greatly reduced,",
+        "D": "some time in the past our ancestors suffered an event from which their numbers were greatly reduced",
+        "E": "some time in the past, that our ancestors suffered an event so as to reduce their numbers greatly,"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 98,
+      "question": "Ranked as one of the most important of Europe’s young playwrights, Franz Xaver Kroetz has written 40 plays; his works—translated into more than 30 languages—are produced more often than any contemporary German dramatist.",
+      "options": {
+        "A": "than any",
+        "B": "than any other",
+        "C": "than are any",
+        "D": "than those of any other",
+        "E": "as are those of any"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 99,
+      "question": "The stars, some of them at tremendous speeds, are in motion just as the planets are, yet being so far away from Earth that their apparent positions in the sky do not change enough for their movement to be observed during a single human lifetime.",
+      "options": {
+        "A": "The stars, some of them at tremendous speeds, are in motion just as the planets are, yet being",
+        "B": "Like the planets, the stars are in motion, some of them at tremendous speeds, but they are",
+        "C": "Although like the planets the stars are in motion, some of them at tremendous speeds, yet",
+        "D": "As the planets, the stars are in motion, some of them at tremendous speeds, but they are",
+        "E": "The stars are in motion like the planets, some of which at tremendous speeds are in motion but"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 100,
+      "question": "Heavy commitment by an executive to a course of action, especially if it has worked well in the past, makes it likely to miss signs of incipient trouble or misinterpret them when they do appear.",
+      "options": {
+        "A": "Heavy commitment by an executive to a course of action, especially if it has worked well in the past, makes it likely to miss signs of incipient trouble or misinterpret them when they do appear.",
+        "B": "An executive who is heavily committed to a course of action, especially one that worked well in the past, makes missing signs of incipient trouble or misinterpreting ones likely when they do appear.",
+        "C": "An executive who is heavily committed to a course of action is likely to miss or misinterpret signs of incipient trouble when they do appear, especially if it has worked well in the past.",
+        "D": "Executives’ being heavily committed to a course of action, especially if it has worked well in the past, makes them likely to miss signs of incipient trouble or misinterpreting them when they do appear.",
+        "E": "Being heavily committed to a course of action, especially one that has worked well in the past, is likely to make an executive miss signs of incipient trouble or misinterpret them when they do appear."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 101,
+      "question": "As rainfall began to decrease in the Southwest about the middle of the twelfth century, most of the Monument Valley Anasazi abandoned their homes to join other clans whose access to water was less limited.",
+      "options": {
+        "A": "whose access to water was less limited",
+        "B": "where there was access to water that was less limited",
+        "C": "where they had less limited water access",
+        "D": "with less limitations on water access",
+        "E": "having less limitations to water access"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 102,
+      "question": "Yellow jackets number among the 900 or so species of the world’s social wasps, wasps living in a highly cooperative and organized society where they consist almost entirely of females—the queen and her sterile female workers.",
+      "options": {
+        "A": "wasps living in a highly cooperative and organized society where they consist almost entirely of",
+        "B": "wasps that live in a highly cooperative and organized society consisting almost entirely of",
+        "C": "which means they live in a highly cooperative and organized society, almost all",
+        "D": "which means that their society is highly cooperative, organized, and it is almost entirely",
+        "E": "living in a society that is highly cooperative, organized, and it consists of almost all"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 103,
+      "question": "El Niño, the periodic abnormal warming of the sea surface off Peru, a phenomenon in which changes in the ocean and atmosphere combine allowing the warm water that has accumulated in the western Pacific to flow back to the east.",
+      "options": {
+        "A": "a phenomenon in which changes in the ocean and atmosphere combine allowing the warm water that has accumulated",
+        "B": "a phenomenon where changes in the ocean and atmosphere are combining to allow the warm water that is accumulating",
+        "C": "a phenomenon in which ocean and atmosphere changes combine and which allows the warm water that is accumulated",
+        "D": "is a phenomenon in which changes in the ocean and atmosphere combine to allow the warm water that has accumulated",
+        "E": "is a phenomenon where ocean and atmosphere changes are combining and allow the warm water accumulating"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 104,
+      "question": "Beatrix Potter, in her book illustrations, carefully coordinating them with her narratives, capitalized on her keen observation and love of the natural world.",
+      "options": {
+        "A": "Beatrix Potter, in her book illustrations, carefully coordinating them with her narratives,",
+        "B": "In her book illustrations, carefully coordinating them with her narratives, Beatrix Potter",
+        "C": "In her book illustrations, which she carefully coordinated with her narratives, Beatrix Potter",
+        "D": "Carefully coordinated with her narratives, Beatrix Potter, in her book illustrations",
+        "E": "Beatrix Potter, in her book illustrations, carefully coordinated them with her narratives and"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 105,
+      "question": "Marconi’s conception of the radio was as a substitute for the telephone, a tool for private conversation; instead, it is precisely the opposite, a tool for communicating with a large, public audience.",
+      "options": {
+        "A": "Marconi’s conception of the radio was as a substitute for the telephone, a tool for private conversation; instead, it is",
+        "B": "Marconi conceived of the radio as a substitute for the telephone, a tool for private conversation, but which is",
+        "C": "Marconi conceived of the radio as a tool for private conversation that could substitute for the telephone; instead, it has become",
+        "D": "Marconi conceived of the radio to be a tool for private conversation, a substitute for the telephone, which has become",
+        "E": "Marconi conceived of the radio to be a substitute for the telephone, a tool for private conversation, other than what it is,"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 106,
+      "question": "Originally developed for detecting air pollutants, a technique called proton-induced X-ray emission, which can quickly analyze the chemical elements in almost any substance without destroying it, is finding uses in medicine, archaeology, and criminology.",
+      "options": {
+        "A": "Originally developed for detecting air pollutants, a technique called proton-induced X-ray emission, which can quickly analyze the chemical elements in almost any substance without destroying it,",
+        "B": "Originally developed for detecting air pollutants, having the ability to analyze the chemical elements in almost any substance without destroying it, a technique called proton-induced X-ray emission",
+        "C": "A technique originally developed for detecting air pollutants, called proton-induced X-ray emission, which can quickly analyze the chemical elements in almost any substance without destroying it,",
+        "D": "A technique originally developed for detecting air pollutants, called proton-induced X-ray emission, which has the ability to analyze the chemical elements in almost any substance quickly and without destroying it,",
+        "E": "A technique that was originally developed for detecting air pollutants and has the ability to analyze the chemical elements in almost any substance quickly and without destroying the substance, called proton-induced X-ray emission,"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 107,
+      "question": "While it costs about the same to run nuclear plants as other types of power plants, it is the fixed costs that stem from building nuclear plants that makes it more expensive for them to generate electricity.",
+      "options": {
+        "A": "While it costs about the same to run nuclear plants as other types of power plants, it is the fixed costs that stem from building nuclear plants that makes it more expensive for them to generate electricity.",
+        "B": "While the cost of running nuclear plants is about the same as for other types of power plants, the fixed costs that stem from building nuclear plants make the electricity they generate more expensive.",
+        "C": "Even though it costs about the same to run nuclear plants as for other types of power plants, it is the fixed costs that stem from building nuclear plants that makes the electricity they generate more expensive.",
+        "D": "It costs about the same to run nuclear plants as for other types of power plants, whereas the electricity they generate is more expensive, stemming from the fixed costs of building nuclear plants.",
+        "E": "The cost of running nuclear plants is about the same as other types of power plants, but the electricity they generate is made more expensive because of the fixed costs stemming from building nuclear plants."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 108,
+      "question": "Authoritative parents are more likely than permissive parents to have children who as adolescents are self confident, high in self-esteem, and responsibly independent.",
+      "options": {
+        "A": "Authoritative parents are more likely than permissive parents to have children who as adolescents are self-confident, high in self esteem, and responsibly independent.",
+        "B": "Authoritative parents who are more likely than permissive parents to have adolescent children that are self-confident, high in self-esteem, and responsibly independent.",
+        "C": "Children of authoritative parents, rather than permissive parents, are the more likely to be self-confident, have a high self-esteem, and to be responsibly independent as adolescents.",
+        "D": "Children whose parents are authoritative rather than being permissive, are more likely to have self-confidence, a high self-esteem, and be responsibly independent when they are an adolescent.",
+        "E": "Rather than permissive parents, the children of authoritative parents are the more likely to have self-confidence, a high self-esteem, and to be responsibly independent as an adolescent."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 109,
+      "question": "Among the objects found in the excavated temple were small terra-cotta effigies left by supplicants who were either asking the goddess Bona Dea’s aid in healing physical and mental ills or thanking her for such help.",
+      "options": {
+        "A": "in healing physical and mental ills or thanking her for such help",
+        "B": "in healing physical and mental ills and to thank her for helping",
+        "C": "in healing physical and mental ills, and thanking her for helping",
+        "D": "to heal physical and mental ills or to thank her for such help",
+        "E": "to heal physical and mental ills or thanking her for such help"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 110,
+      "question": "Published in Harlem, the owner and editor of The Messenger were two young journalists, Chandler Owen and A. Philip Randolph, who would later make his reputation as a labor leader.",
+      "options": {
+        "A": "Published in Harlem, the owner and editor of The Messenger were two young journalists, Chandler Owen and A. Philip Randolph, who would later make his reputation as a labor leader.",
+        "B": "Published in Harlem, two young journalists, Chandler Owen and A. Philip Randolph, who would later make his reputation as a labor leader, were the owner and editor of The Messenger.",
+        "C": "Published in Harlem, The Messenger was owned and edited by two young journalists, A. Philip Randolph, who would later make his reputation as a labor leader, and Chandler Owen.",
+        "D": "The Messenger was owned and edited by two young journalists, Chandler Owen and A. Philip Randolph, who would later make his reputation as a labor leader, and published in Harlem.",
+        "E": "The owner and editor being two young journalists, Chandler Owen and A. Philip Randolph, who would later make his reputation as a labor leader, The Messenger was published in Harlem."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 111,
+      "question": "A mutual fund having billions of dollars in assets will typically invest that money in hundreds of companies, rarely holding more than one percent of the shares of any particular corporation.",
+      "options": {
+        "A": "companies, rarely holding more than one percent",
+        "B": "companies, and it is rare to hold at least one percent or more",
+        "C": "companies and rarely do they hold more than one percent",
+        "D": "companies, so that they rarely hold more than one percent",
+        "E": "companies; rarely do they hold one percent or more"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 112,
+      "question": "Construction of the Roman Colosseum, which was officially known as the Flavian Amphitheater, began in A.D. 69, during the reign of Vespasian, was completed a decade later, during the reign of Titus, who opened the Colosseum with a one-hundred-day cycle of religious pageants, gladiatorial games, and spectacles.",
+      "options": {
+        "A": "which was officially known as the Flavian Amphitheater, began in A.D. 69, during the reign of Vespasian,",
+        "B": "officially known as the Flavian Amphitheater, begun in A.D. 69, during the reign of Vespasian, and",
+        "C": "which was officially known as the Flavian Amphitheater, began in A.D. 69, during the reign of Vespasian, and",
+        "D": "officially known as the Flavian Amphitheater and begun in A.D. 69, during the reign of Vespasian it",
+        "E": "officially known as the Flavian Amphitheater, which was begun in A.D. 69, during the reign of Vespasian, and"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 113,
+      "question": "As a baby emerges from the darkness of the womb with a rudimentary sense of vision, it would be rated about 20/500, or legally blind if it were an adult with such vision.",
+      "options": {
+        "A": "As a baby emerges from the darkness of the womb with a rudimentary sense of vision, it would be rated about 20/500, or legally blind if it were an adult with such vision.",
+        "B": "A baby emerges from the darkness of the womb with a rudimentary sense of vision that would be rated about 20/500, or legally blind as an adult.",
+        "C": "As a baby emerges from the darkness of the womb, its rudimentary sense of vision would be rated about 20/500; qualifying it to be legally blind if an adult.",
+        "D": "A baby emerges from the darkness of the womb with a rudimentary sense of vision that would be rated about 20/500; an adult with such vision would be deemed legally blind.",
+        "E": "As a baby emerges from the darkness of the womb, its rudimentary sense of vision, which would deemed legally blind for an adult, would be rated about 20/500."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 114,
+      "question": "Starfish, with anywhere from five to eight arms, have a strong regenerative ability, and if one arm is lost it quickly replaces it, sometimes by the animal overcompensating and growing an extra one or two.",
+      "options": {
+        "A": "one arm is lost it quickly replaces it, sometimes by the animal overcompensating and",
+        "B": "one arm is lost it is quickly replaced, with the animal sometimes overcompensating and",
+        "C": "they lose one arm they quickly replace it, sometimes by the animal overcompensating,",
+        "D": "they lose one arm they are quickly replaced, with the animal sometimes overcompensating,",
+        "E": "they lose one arm it is quickly replaced, sometimes with the animal overcompensating,"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 115,
+      "question": "Because there are provisions of the new maritime code that provide that even tiny islets can be the basis for claims to the fisheries and oil fields of large sea areas, they have already stimulated international disputes over uninhabited islands.",
+      "options": {
+        "A": "Because there are provisions of the new maritime code that provide that even tiny islets can be the basis for claims to the fisheries and oil fields of large sea areas, they have already stimulated",
+        "B": "Because the new maritime code provides that even tiny islets can be the basis for claims to the fisheries and oil fields of large sea areas, it has already stimulated",
+        "C": "Even tiny islets can be the basis for claims to the fisheries and oil fields of large sea areas under provisions of the new maritime code, already stimulating",
+        "D": "Because even tiny islets can be the basis for claims to the fisheries and oil fields of large sea areas under provisions of the new maritime code, this has already stimulated",
+        "E": "Because even tiny islets can be the basis for claims to the fisheries and oil fields of large sea areas under provisions of the new maritime code, which is already stimulating"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 116,
+      "question": "The first trenches that were cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence for centrally administered complex societies in northern regions of the Middle East that were arising simultaneously with but independently of the more celebrated city-states of southern Mesopotamia, in what is now southern Iraq.",
+      "options": {
+        "A": "that were cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence for centrally administered complex societies in northern regions of the Middle East that were arising simultaneously with but",
+        "B": "that were cut into a 500-acre site at Tell Hamoukar, Syria, yields strong evidence that centrally administered complex societies in northern regions of the Middle East were arising simultaneously with but also",
+        "C": "having been cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence that centrally administered complex societies in northern regions of the Middle East were arising simultaneously but",
+        "D": "cut into a 500-acre site at Tell Hamoukar, Syria, yields strong evidence of centrally administered complex societies in northern regions of the Middle East arising simultaneously but also",
+        "E": "cut into a 500-acre site at Tell Hamoukar, Syria, have yielded strong evidence that centrally administered complex societies in northern regions of the Middle East arose simultaneously with but"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 117,
+      "question": "His studies of ice-polished rocks in his Alpine homeland, far outside the range of present-day glaciers, led Louis Agassiz in 1837 to propose the concept of an age in which great ice sheets had existed in now currently temperate areas.",
+      "options": {
+        "A": "in which great ice sheets had existed in now currently temperate areas",
+        "B": "in which great ice sheets existed in what are now temperate areas",
+        "C": "when great ice sheets existed where there were areas now temperate",
+        "D": "when great ice sheets had existed in current temperate areas",
+        "E": "when great ice sheets existed in areas now that are temperate"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 118,
+      "question": "Unlike the original National Museum of Science and Technology in Italy, where the models are encased in glass or operated only by staff members, the Virtual Leonardo Project, an online version of the museum, encourages visitors to “touch” each exhibit, which thereby activates the animated functions of the piece.",
+      "options": {
+        "A": "exhibit, which thereby activates",
+        "B": "exhibit, in turn an activation of",
+        "C": "exhibit, and it will activate",
+        "D": "exhibit and thereby activate",
+        "E": "exhibit which, as a result, activates"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 119,
+      "question": "Despite its covering the entire planet, Earth has a crust that is not seamless or stationary, rather it is fragmented into mobile semirigid plates.",
+      "options": {
+        "A": "Despite its covering the entire planet, Earth has a crust that is not seamless or stationary, rather it is",
+        "B": "Despite the fact that it covers the entire planet, Earth’s crust is neither seamless nor is it stationary, but is",
+        "C": "Despite covering the entire planet, Earth’s crust is neither seamless nor is it stationary, but rather",
+        "D": "Although it covers the entire planet, Earth’s crust is neither seamless nor stationary, but rather",
+        "E": "Although covering the entire planet, Earth has a crust that is not seamless or stationary, but"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 120,
+      "question": "More and more in recent years, cities are stressing the arts as a means to greater economic development and investing millions of dollars in cultural activities, despite strained municipal budgets and fading federal support.",
+      "options": {
+        "A": "to greater economic development and investing",
+        "B": "to greater development economically and investing",
+        "C": "of greater economic development and invest",
+        "D": "of greater development economically and invest",
+        "E": "for greater economic development and the investment of"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 121,
+      "question": "Combining enormous physical strength with higher intelligence, the Neanderthals appear as equipped for facing any obstacle the environment could put in their path, but their relatively sudden disappearance during the Paleolithic era indicates that an inability to adapt to some environmental change led to their extinction.",
+      "options": {
+        "A": "appear as equipped for facing any obstacle the environment could put in their path,",
+        "B": "appear to have been equipped to face any obstacle the environment could put in their path,",
+        "C": "appear as equipped to face any obstacle the environment could put in their paths,",
+        "D": "appeared as equipped to face any obstacle the environment could put in their paths,",
+        "E": "appeared to have been equipped for facing any obstacle the environment could put in their path,"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 122,
+      "question": "A 1972 agreement between Canada and the United States reduced the amount of phosphates that municipalities had been allowed to dump into the Great Lakes.",
+      "options": {
+        "A": "reduced the amount of phosphates that municipalities had been allowed to dump",
+        "B": "reduced the phosphate amount that municipalities had been dumping",
+        "C": "reduces the phosphate amount municipalities have been allowed to dump",
+        "D": "reduced the amount of phosphates that municipalities are allowed to dump",
+        "E": "reduces the amount of phosphates allowed for dumping by municipalities"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 123,
+      "question": "A proposal has been made to trim the horns from rhinoceroses to discourage poachers; the question is whether tourists will continue to visit game parks and see rhinoceroses after their horns are trimmed.",
+      "options": {
+        "A": "whether tourists will continue to visit game parks and see rhinoceroses after their horns are",
+        "B": "whether tourists will continue to visit game parks to see one once their horns are",
+        "C": "whether tourists will continue to visit game parks to see rhinoceroses once the animals’ horns have been",
+        "D": "if tourists will continue to visit game parks and see rhinoceroses once the animals’ horns are",
+        "E": "if tourists will continue to visit game parks to see one after the animals’ horns have been"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 124,
+      "question": "Ryūnosuke Akutagawa’s knowledge of the literatures of Europe, China, and that of Japan were instrumental in his development as a writer, informing his literary style as much as the content of his fiction.",
+      "options": {
+        "A": "that of Japan were instrumental in his development as a writer, informing his literary style as much as",
+        "B": "that of Japan was instrumental in his development as a writer, and it informed both his literary style as well as",
+        "C": "Japan was instrumental in his development as a writer, informing both his literary style and",
+        "D": "Japan was instrumental in his development as a writer, as it informed his literary style as much as",
+        "E": "Japan were instrumental in his development as a writer, informing both his literary style in addition to"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 125,
+      "question": "The only way for growers to salvage frozen citrus is to process them quickly into juice concentrate before they rot when warmer weather returns.",
+      "options": {
+        "A": "to process them quickly into juice concentrate before they rot when warmer weather returns",
+        "B": "if they are quickly processed into juice concentrate before warmer weather returns to rot them",
+        "C": "for them to be processed quickly into juice concentrate before the fruit rots when warmer weather returns",
+        "D": "if the fruit is quickly processed into juice concentrate before they rot when warmer weather returns",
+        "E": "to have it quickly processed into juice concentrate before warmer weather returns and rots the fruit"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 126,
+      "question": "Fossils of the arm of a sloth found in Puerto Rico in 1991, and dated at 34 million years old, made it the earliest known mammal of the Greater Antilles Islands.",
+      "options": {
+        "A": "sloth found in Puerto Rico in 1991, and dated at 34 million years old, made it the earliest known mammal of",
+        "B": "sloth, that they found in Puerto Rico in 1991, has been dated at 34 million years old, thus making it the earliest mammal known on",
+        "C": "sloth that was found in Puerto Rico in 1991, was dated at 34 million years old, making this the earliest known mammal of",
+        "D": "sloth, found in Puerto Rico in 1991, have been dated at 34 million years old, making the sloth the earliest known mammal on",
+        "E": "sloth which, found in Puerto Rico in 1991, was dated at 34 million years old, made the sloth the earliest known mammal of"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 127,
+      "question": "Defense attorneys have occasionally argued that their clients’ misconduct stemmed from a reaction to something ingested, but in attributing criminal or delinquent behavior to some food allergy, the perpetrators are in effect told that they are not responsible for their actions.",
+      "options": {
+        "A": "in attributing criminal or delinquent behavior to some food allergy,",
+        "B": "if criminal or delinquent behavior is attributed to an allergy to some food,",
+        "C": "in attributing behavior that is criminal or delinquent to an allergy to some food,",
+        "D": "if some food allergy is attributed as the cause of criminal or delinquent behavior,",
+        "E": "in attributing a food allergy as the cause of criminal or delinquent behavior,"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 128,
+      "question": "A report by the American Academy for the Advancement of Science has concluded that much of the currently uncontrolled dioxins to which North Americans are exposed comes from the incineration of wastes.",
+      "options": {
+        "A": "much of the currently uncontrolled dioxins to which North Americans are exposed comes",
+        "B": "much of the currently uncontrolled dioxins that North Americans are exposed to come",
+        "C": "much of the dioxins that are currently uncontrolled and that North Americans are exposed to comes",
+        "D": "many of the dioxins that are currently uncontrolled and North Americans are exposed to come",
+        "E": "many of the currently uncontrolled dioxins to which North Americans are exposed come"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 129,
+      "question": "Recently physicians have determined that stomach ulcers are not caused by stress, alcohol, or rich foods, but a bacterium that dwells in the mucous lining of the stomach.",
+      "options": {
+        "A": "not caused by stress, alcohol, or rich foods, but",
+        "B": "not caused by stress, alcohol, or rich foods, but are by",
+        "C": "caused not by stress, alcohol, or rich foods, but by",
+        "D": "caused not by stress, alcohol, and rich foods, but",
+        "E": "caused not by stress, alcohol, and rich foods, but are by"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 130,
+      "question": "According to a recent poll, owning and living in a freestanding house on its own land is still a goal of a majority of young adults, like that of earlier generations.",
+      "options": {
+        "A": "like that of earlier generations",
+        "B": "as that for earlier generations",
+        "C": "just as earlier generations did",
+        "D": "as have earlier generations",
+        "E": "as it was of earlier generations"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 131,
+      "question": "In 2000, a mere two dozen products accounted for half the increase in spending on prescription drugs, a phenomenon that is explained not just because of more expensive drugs but by the fact that doctors are writing many more prescriptions for higher-cost drugs.",
+      "options": {
+        "A": "a phenomenon that is explained not just because of more expensive drugs but by the fact that doctors are writing",
+        "B": "a phenomenon that is explained not just by the fact that drugs are becoming more expensive but also by the fact that doctors are writing",
+        "C": "a phenomenon occurring not just because of drugs that are becoming more expensive but because of doctors having also written",
+        "D": "which occurred not just because drugs are becoming more expensive but doctors are also writing",
+        "E": "which occurred not just because of more expensive drugs but because doctors have also written"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 132,
+      "question": "According to scientists who monitored its path, an expanding cloud of energized particles ejected from the Sun recently triggered a large storm in the magnetic field that surrounds Earth, which brightened the Northern Lights and also possibly knocking out a communications satellite.",
+      "options": {
+        "A": "an expanding cloud of energized particles ejected from the Sun recently triggered a large storm in the magnetic field that surrounds Earth, which brightened the Northern Lights and also possibly knocking",
+        "B": "an expanding cloud of energized particles ejected from the Sun was what recently triggered a large storm in the magnetic field that surrounds Earth, and it brightened the Northern Lights and also possibly knocked",
+        "C": "an expanding cloud of energized particles ejected from the Sun recently triggered a large storm in the magnetic field that surrounds Earth, brightening the Northern Lights and possibly knocking",
+        "D": "a large storm in the magnetic field that surrounds Earth, recently triggered by an expanding cloud of energized particles, brightened the Northern Lights and it possibly knocked",
+        "E": "a large storm in the magnetic field surrounding Earth was recently triggered by an expanding cloud of energized particles, brightening the Northern Lights and it possibly knocked"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 133,
+      "question": "Often visible as smog, ozone is formed in the atmosphere from hydrocarbons and nitrogen oxides, two major pollutants emitted by automobiles, react with sunlight.",
+      "options": {
+        "A": "ozone is formed in the atmosphere from",
+        "B": "ozone is formed in the atmosphere when",
+        "C": "ozone is formed in the atmosphere, and when",
+        "D": "ozone, formed in the atmosphere when",
+        "E": "ozone, formed in the atmosphere from"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 134,
+      "question": "Salt deposits and moisture threaten to destroy the Mohenjo-Daro excavation in Pakistan, the site of an ancient civilization that flourished at the same time as the civilizations in the Nile Delta and the river valleys of the Tigris and Euphrates.",
+      "options": {
+        "A": "that flourished at the same time as the civilizations",
+        "B": "that had flourished at the same time as had the civilizations",
+        "C": "that flourished at the same time those",
+        "D": "flourishing at the same time as those did",
+        "E": "flourishing at the same time as those were"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 135,
+      "question": "The results of the company’s cost-cutting measures are evident in its profits, which increased 5 percent during the first 3 months of this year after it fell over the last two years.",
+      "options": {
+        "A": "which increased 5 percent during the first 3 months of this year after it fell",
+        "B": "which had increased 5 percent during the first 3 months of this year after it had fallen",
+        "C": "which have increased 5 percent during the first 3 months of this year after falling",
+        "D": "with a 5 percent increase during the first 3 months of this year after falling",
+        "E": "with a 5 percent increase during the first 3 months of this year after having fallen"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 136,
+      "question": "In an effort to reduce their inventories, Italian vintners have cut prices; their wines have been priced to sell, and they are.",
+      "options": {
+        "A": "have been priced to sell, and they are",
+        "B": "are priced to sell, and they have",
+        "C": "are priced to sell, and they do",
+        "D": "are being priced to sell, and have",
+        "E": "had been priced to sell, and they have"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 137,
+      "question": "Thelonious Monk, who was a jazz pianist and composer, produced a body of work both rooted in the stride-piano tradition of Willie (The Lion) Smith and Duke Ellington, yet in many ways he stood apart from the mainstream jazz repertory.",
+      "options": {
+        "A": "Thelonious Monk, who was a jazz pianist and composer, produced a body of work both rooted",
+        "B": "Thelonious Monk, the jazz pianist and composer, produced a body of work that was rooted both",
+        "C": "Jazz pianist and composer Thelonious Monk, who produced a body of work rooted",
+        "D": "Jazz pianist and composer Thelonious Monk produced a body of work that was rooted",
+        "E": "Jazz pianist and composer Thelonious Monk produced a body of work rooted both"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 138,
+      "question": "Nobody knows exactly how many languages there are in the world, partly because of the difficulty of distinguishing between a language and the sublanguages or dialects within it, but those who have tried to count typically have found about five thousand.",
+      "options": {
+        "A": "and the sublanguages or dialects within it, but those who have tried to count typically have found",
+        "B": "and the sublanguages or dialects within them, with those who have tried counting typically finding",
+        "C": "and the sublanguages or dialects within it, but those who have tried counting it typically find",
+        "D": "or the sublanguages or dialects within them, but those who tried to count them typically found",
+        "E": "or the sublanguages or dialects within them, with those who have tried to count typically finding"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 139,
+      "question": "Heating-oil prices are expected to be higher this year than last because refiners are paying about $5 a barrel more for crude oil than they were last year.",
+      "options": {
+        "A": "Heating-oil prices are expected to be higher this year than last because refiners are paying about $5 a barrel more for crude oil than they were",
+        "B": "Heating-oil prices are expected to rise higher this year over last because refiners pay about $5 a barrel for crude oil more than they did",
+        "C": "Expectations are for heating-oil prices to be higher this year than last year’s because refiners are paying about $5 a barrel for crude oil more than they did",
+        "D": "It is the expectation that heating-oil prices will be higher for this year over last because refiners are paying about $5 a barrel more for crude oil now than what they were",
+        "E": "It is expected that heating-oil prices will rise higher this year than last year’s because refiners pay about $5 a barrel for crude oil more than they did"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 140,
+      "question": "One of the primary distinctions between our intelligence with that of other primates may lay not so much in any specific skill but in our ability to extend knowledge gained in one context to new and different ones.",
+      "options": {
+        "A": "between our intelligence with that of other primates may lay not so much in any specific skill but",
+        "B": "between our intelligence with that of other primates may lie not so much in any specific skill but instead",
+        "C": "between our intelligence and that of other primates may lie not so much in any specific skill as",
+        "D": "our intelligence has from that of other primates may lie not in any specific skill as",
+        "E": "of our intelligence to that of other primates may lay not in any specific skill but"
+      },
+      "correct": "C"
+    }
+  ]
+}

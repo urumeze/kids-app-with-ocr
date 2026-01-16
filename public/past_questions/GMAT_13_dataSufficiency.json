@@ -1,0 +1,2095 @@
+{
+  "subject": "GMAT Data Sufficiency",
+  "year": 2013,
+  "source": "The Official Guide for GMAT Review 13th Edition",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "For which type of investment, J or K, is the annual rate of return greater?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 2,
+      "question": "What percent of a group of people are women with red hair?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 3,
+      "question": "In a certain class, one student is to be selected at random to read. What is the probability that a boy will read?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 4,
+      "question": "If the two floors in a certain building are 9 feet apart, how many steps are there in a set of stairs that extends from the first floor to the second floor of the building?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "In College X the number of students enrolled in both a chemistry course and a biology course is how much less than the number of students enrolled in neither?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 6,
+      "question": "A certain expressway has Exits J, K, L, and M, in that order. What is the road distance from Exit K to Exit L?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 7,
+      "question": "If n is an integer, is n odd?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 8,
+      "question": "Type J returns $115 per $1,000 invested for any one-year period and type K returns $300 per $2,500 invested for any one-year period. The annual rate of return for an investment of type K is 12 percent.",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "question": "A citrus fruit grower receives $15 for each crate of oranges shipped and $18 for each crate of grapefruit shipped. How many crates of oranges did the grower ship last week?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 10,
+      "question": "If Pat saved $600 of his earnings last month, how much did Pat earn last month?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 11,
+      "question": "In the xy-plane above, is angle QPR a right angle?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "Water is pumped into a partially filled tank at a constant rate through an inlet pipe. At the same time, water is pumped out of the tank at a constant rate through an outlet pipe. At what rate, in gallons per minute, is the amount of water in the tank increasing?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 13,
+      "question": "Is x a negative number?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 14,
+      "question": "If i and j are integers, is i + j an even integer?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 15,
+      "question": "What is the cube root of w?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 16,
+      "question": "If Car X followed Car Y across a certain bridge that is 1 mile long, how many seconds did it take Car X to travel across the bridge?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 17,
+      "question": "If x + y = k, what is the value of k?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 18,
+      "question": "The number of seats in the first row of an auditorium is 18 and the number of seats in each row thereafter is 2 more than in the previous row. What is the total number of seats in the rows of the auditorium?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 19,
+      "question": "In triangle ABC, if AB = BC = CA, which of the three angles of triangle ABC has the greatest degree measure?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "question": "What is the value of n in the list above? n, 15, 12, 9, 20",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 21,
+      "question": "What percent of the drama club members enrolled at a certain school are female students?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 22,
+      "question": "On a recent trip, Mary drove 50 miles. What was the average speed at which she drove the 50 miles?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 23,
+      "question": "In Mr. Smith’s class, what is the ratio of the number of boys to the number of girls?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "If the sequence S has 300 terms, what is the 293rd term of S?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 25,
+      "question": "On a certain date, Hannah invested $5,000 at x percent simple annual interest and a different amount at y percent simple annual interest. What amount did Hannah invest at y percent simple annual interest?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 26,
+      "question": "The profit from the sale of a certain appliance increases, though not proportionally, with the number of units sold. Did the profit exceed $4 million on sales of 380,000 units?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 27,
+      "question": "If n is an integer, is n even?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 28,
+      "question": "Carmen currently works 30 hours per week at her part-time job. If her gross hourly wage were to increase by $1.50, how many fewer hours could she work per week and still earn the same gross weekly pay as before the increase?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 29,
+      "question": "If 90 students auditioned for the school musical, how many were accepted?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 30,
+      "question": "A circular tub has a band painted around its circumference, as shown above. What is the surface area of this painted band?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 31,
+      "question": "If t denotes the thousandths digit in the decimal representation of d above, what digit is t?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 32,
+      "question": "If A and B are positive integers, is the product AB even?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 33,
+      "question": "The weights of all dishes of type X are exactly the same, and the weights of all dishes of type Y are exactly the same. Is the weight of 1 dish of type X less than the weight of 1 dish of type Y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 34,
+      "question": "A certain high school with a total enrollment of 900 students held a science fair for three days last week. How many of the students enrolled in the high school attended the science fair on all three days?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 35,
+      "question": "The inside of a rectangular carton is 48 centimeters long, 32 centimeters wide, and 15 centimeters high. The carton is filled to capacity with k identical cylindrical cans of fruit that stand upright in rows and columns, as indicated in the figure above. If the cans are 15 centimeters high, what is the value of k?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 36,
+      "question": "For the system of equations given, what is the value of z?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 37,
+      "question": "The average (arithmetic mean) price of the 3 items that Kate purchased from a clothing store was $50. If there was no sales tax on any item that had a price of less than $80 and 6 percent sales tax on all other items, what was the total sales tax on the 3 items that Kate purchased?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 38,
+      "question": "A scientist recorded the number of eggs in each of 10 birds’ nests. What was the standard deviation of the numbers of eggs in the 10 nests?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 39,
+      "question": "Terry holds 12 cards, each of which is red, white, green, or blue. If a person is to select a card randomly from the cards Terry is holding, is the probability less than 1/2 that the card selected will be either red or white?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 40,
+      "question": "The selling price of an article is equal to the cost of the article plus the markup. The markup on a certain television set is what percent of the selling price?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 41,
+      "question": "Is 4x + y = 810?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 42,
+      "question": "Can a certain rectangular sheet of glass be positioned on a rectangular tabletop so that it covers the entire tabletop and its edges are parallel to the edges of the tabletop?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 43,
+      "question": "If p1 and p2 are the populations and r1 and r2 are the numbers of representatives of District 1 and District 2, respectively, the ratio of the population to the number of representatives is greater for which of the two districts?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 44,
+      "question": "In a random sample of 80 adults, how many are college graduates?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 45,
+      "question": "The table above shows the distance, in kilometers, by the most direct route, between any two of the four cities, R, S, T, and U. What is the value of x?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 46,
+      "question": "What is the tenths digit in the decimal representation of a certain number?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 47,
+      "question": "Robots X, Y, and Z each assemble components at their respective constant rates. Is Robot Z’s constant rate the greatest of the three?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 48,
+      "question": "If x + y = 10 and xy = 21, is x < y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 49,
+      "question": "How many people are directors of both Company K and Company R?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 50,
+      "question": "If x and y are positive, is x/y greater than 1?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 51,
+      "question": "A clothing store acquired an item at a cost of x dollars and sold the item for y dollars. The store’s gross profit from the item was what percent of its cost for the item?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 52,
+      "question": "If x and y are positive, is x < 10 < y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 53,
+      "question": "If x is an integer, is x/2 an integer?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 54,
+      "question": "A taxi company charges f cents for the first mile of the taxi ride and m cents for each additional mile. How much does the company charge for a 10-mile taxi ride?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 55,
+      "question": "Guy’s net income equals his gross income minus his deductions. By what percent did Guy’s net income change on January 1, 1989, when both his gross income and his deductions increased?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 56,
+      "question": "What is the value of z in the triangle above?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 57,
+      "question": "Each gift certificate sold yesterday by a certain bookstore cost either $10 or $50. If yesterday the bookstore sold more than 5 gift certificates that cost $50 each, what was the total number of gift certificates sold yesterday by the bookstore?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 58,
+      "question": "What is the tens digit of positive integer x?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 59,
+      "question": "Max has $125 consisting of bills each worth either $5 or $20. How many bills worth $5 does Max have?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 60,
+      "question": "What is the value of n in the equation n^2 + 3n + 2 = 0?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 61,
+      "question": "At a certain picnic, each of the guests was served either a single scoop or a double scoop of ice cream. How many of the guests were served a double scoop of ice cream?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 62,
+      "question": "Stores L and M each sell a certain product at a different regular price. If both stores discount their regular price of the product, is the discount price at Store M less than the discount price at Store L?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 63,
+      "question": "If d denotes a decimal, is d > 0.5?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 64,
+      "question": "How many integers are there between, but not including, integers r and s?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 65,
+      "question": "What is the total number of coins that Bert and Claire have?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 66,
+      "question": "In a survey of 200 college graduates, 30 percent said they had received student loans during their college careers, and 40 percent said they had received scholarships. What percent of those surveyed said that they had received neither student loans nor scholarships during their college careers?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 67,
+      "question": "What is the value of integer n?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 68,
+      "question": "Three machines, K, M, and P, working simultaneously and independently at their respective constant rates, can complete a certain task in 24 minutes. How long does it take Machine K, working alone at its constant rate, to complete the task?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 69,
+      "question": "Of the four numbers represented on the number line above, is r closest to zero?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 70,
+      "question": "At a certain company, a test was given to a group of men and women seeking promotions. If the average (arithmetic mean) score for the group was 80, was the average score for the women greater than 85?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 71,
+      "question": "Mary persuaded n friends to donate $500 each to her election campaign, and then each of these n friends persuaded n more people to donate $500 each to Mary’s campaign. What was the value of n?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 72,
+      "question": "If m is an integer, is m odd?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 73,
+      "question": "What is the area of triangular region ABC above?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 74,
+      "question": "In the xy-coordinate plane, is point R equidistant from points (–3,–3) and (1,–3)?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 75,
+      "question": "Is the positive two-digit integer N less than 40?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 76,
+      "question": "Each week a certain salesman is paid a fixed amount equal to $300, plus a commission equal to 5 percent of the amount of his sales that week over $1,000. What is the total amount the salesman was paid last week?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 77,
+      "question": "A total of $60,000 was invested for one year. Part of this amount earned simple annual interest at the rate of x percent per year, and the rest earned simple annual interest at the rate of y percent per year. If the total interest earned by the $60,000 for that year was $4,080, what is the value of x?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 78,
+      "question": "At a bakery, all donuts are priced equally and all bagels are priced equally. What is the total price of 5 donuts and 3 bagels at the bakery?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 79,
+      "question": "In the figure above, is the area of triangular region ABC equal to the area of triangular region DBA?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 80,
+      "question": "If r and s are positive integers, can the fraction r/s be expressed as a decimal with only a finite number of nonzero digits?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 81,
+      "question": "If the ratio of the number of teachers to the number of students is the same in School District M and School District P, what is the ratio of the number of students in School District M to the number of students in School District P?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 82,
+      "question": "If x + y = 10 and x – y = 4, is x > y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 83,
+      "question": "If k is an integer such that 56 < k < 66, what is the value of k?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 84,
+      "question": "What is the value of n in the list above? k, n, 12, 6, 17",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 85,
+      "question": "If x and y are integers, what is the value of x + y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 86,
+      "question": "What is the value of 2^x?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 87,
+      "question": "What is the average (arithmetic mean) of j and k?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 88,
+      "question": "Paula and Sandy were among those people who sold raffle tickets to raise money for Club X. If Paula and Sandy sold a total of 100 of the tickets, how many of the tickets did Paula sell?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 89,
+      "question": "A number of people each wrote down one of the first 30 positive integers. Were any of the integers written down by more than one of the people?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 90,
+      "question": "Is the number of seconds required to travel d1 feet at r1 feet per second greater than the number of seconds required to travel d2 feet at r2 feet per second?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 91,
+      "question": "Last year, if Arturo spent a total of $12,000 on his mortgage payments, real estate taxes, and home insurance, how much did he spend on his real estate taxes?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 92,
+      "question": "If a, b, c, and d are positive numbers, is (a + b)/(c + d) > a/c?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 93,
+      "question": "Is the number of members of Club X greater than the number of members of Club Y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 94,
+      "question": "In a certain office, 50 percent of the employees are college graduates and 60 percent of the employees are over 40 years old. If 30 percent of those over 40 have master’s degrees, how many of the employees over 40 have master’s degrees?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 95,
+      "question": "On the number line above, p, q, r, s, and t are five consecutive even integers in increasing order. What is the average (arithmetic mean) of these five integers?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 96,
+      "question": "If ⌈x⌉ denotes the least integer greater than or equal to x, is ⌈x⌉ = 1?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 97,
+      "question": "If x and y are integers, is x > y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 98,
+      "question": "Is x + y > 0?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 99,
+      "question": "If r and s are the roots of the equation x^2 + bx + c = 0, where b and c are constants, is rs < 0?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 100,
+      "question": "The figure above represents a circle graph of Company H’s total expenses broken down by the expenses for each of its five divisions. If O is the center of the circle and if Company H’s total expenses are $5,400,000, what are the expenses for Division R?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 101,
+      "question": "If x is negative, is x^2 > x?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 102,
+      "question": "What is the number of cans that can be packed in a certain carton?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 103,
+      "question": "Each of the letters in the table above represents one of the numbers 1, 2, or 3, and each of these numbers occurs exactly once in each row and exactly once in each column. What is the value of r?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 104,
+      "question": "If [x] denotes the greatest integer less than or equal to x, is [x] = 0?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 105,
+      "question": "Material A costs $3 per kilogram, and Material B costs $5 per kilogram. If 10 kilograms of Material K consists of x kilograms of Material A and y kilograms of Material B, is x > y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 106,
+      "question": "While on a straight road, Car X and Car Y are traveling at different constant rates. If Car X is now 1 mile ahead of Car Y, how many minutes from now will Car X be 2 miles ahead of Car Y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 107,
+      "question": "If a certain animated cartoon consists of a total of 17,280 frames on film, how many minutes will it take to run the cartoon?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 108,
+      "question": "At what speed was a train traveling on a trip when it had completed half of the total distance of the trip?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 109,
+      "question": "List M (not shown) consists of 8 different integers, each of which is in the list shown. What is the standard deviation of the numbers in list M?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 110,
+      "question": "Tom, Jane, and Sue each purchased a new house. The average (arithmetic mean) price of the three houses was $120,000. What was the median price of the three houses?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 111,
+      "question": "If x and y are integers, is xy even?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 112,
+      "question": "If the successive tick marks shown on the number line above are equally spaced and if x and y are the numbers designating the end points of intervals as shown, what is the value of y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 113,
+      "question": "In triangle ABC, point X is the midpoint of side AC and point Y is the midpoint of side BC. If point R is the midpoint of line segment XC and if point S is the midpoint of line segment YC, what is the area of triangular region RCS?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 114,
+      "question": "A department manager distributed a number of pens, pencils, and pads among the staff in the department, with each staff member receiving x pens, y pencils, and z pads. How many staff members were in the department?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 115,
+      "question": "Machines X and Y produced identical bottles at different constant rates. How many hours would it have taken Machine X operating alone to fill the entire production lot?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 116,
+      "question": "On a company-sponsored cruise, 3/4 of the passengers were company employees and the remaining passengers were their guests. If 1/5 of the company-employee passengers were managers, what was the number of company-employee passengers who were NOT managers?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 117,
+      "question": "The length of the edging that surrounds circular garden K is 3/2 the length of the edging that surrounds circular garden G. What is the area of garden K?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 118,
+      "question": "For any integers x and y, min(x, y) and max(x, y) denote the minimum and the maximum of x and y, respectively. For the integer w, what is the value of min(10, w)?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 119,
+      "question": "If arc PQR above is a semicircle, what is the length of diameter PR?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 120,
+      "question": "A certain bookcase has 2 shelves of books. On the upper shelf, the book with the greatest number of pages has 400 pages. On the lower shelf, the book with the least number of pages has 475 pages. What is the median number of pages for all of the books on the 2 shelves?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 121,
+      "question": "During a 6-day local trade show, the least number of people registered in a single day was 80. Was the average (arithmetic mean) number of people registered per day for the 6 days greater than 90?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 122,
+      "question": "In the figure above, points A, B, C, D, and E lie on a line. What is the area of the region inside the larger circle and outside the smaller circle?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 123,
+      "question": "The range of the numbers in set S is x, and the range of the numbers in set T is y. If all of the numbers in set T are also in set S, is x greater than y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 124,
+      "question": "An employee is paid 1.5 times the regular hourly rate for each hour worked in excess of 40 hours per week, excluding Sunday, and 2 times the regular hourly rate for each hour worked on Sunday. How much was the employee paid last week?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 125,
+      "question": "A box contains only red chips, white chips, and blue chips. If a chip is randomly selected from the box, what is the probability that the chip will be either white or blue?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 126,
+      "question": "What was the revenue that a theater received from the sale of 400 tickets, some of which were sold at the full price and the remainder of which were sold at a reduced price?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 127,
+      "question": "The annual rent collected by a corporation from a certain building was x percent more in 1998 than in 1997 and y percent less in 1999 than in 1998. Was the annual rent collected by the corporation from the building more in 1999 than in 1997?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 128,
+      "question": "The hypotenuse of a right triangle is 10 cm. What is the perimeter, in centimeters, of the triangle?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 129,
+      "question": "In the xy-plane, region R consists of all the points (x,y) such that x^2 + y^2 ≤ 25. Is the point (r,s) in region R?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 130,
+      "question": "What is the volume of a certain rectangular solid?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 131,
+      "question": "Six shipments of machine parts were shipped from a factory on two trucks... was S3 shipped on the first truck?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 132,
+      "question": "Joanna bought only $0.15 stamps and $0.29 stamps. How many $0.15 stamps did she buy?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 133,
+      "question": "If x, y, and z are three-digit positive integers and if x = y + z, is the hundreds digit of x equal to the sum of the hundreds digits of y and z?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 134,
+      "question": "The table above shows the results of a survey of 100 voters... What was the number of voters who responded “Favorable” for both candidates?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 135,
+      "question": "A school administrator will assign each student in a group of n students to one of m classrooms. If n/m is an integer, is it possible to assign each of the n students to one of the m classrooms so that each classroom has the same number of students assigned to it?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 136,
+      "question": "If * represents one of the operations +, −, ×, and ÷ for all numbers k, m, and n, is k * (m * n) = (k * m) * n?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 137,
+      "question": "How many of the 60 cars sold last month by a certain dealer had neither power windows nor a stereo?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 138,
+      "question": "In Jefferson School, 300 students study French or Spanish or both. If 100 of these students do not study French, how many of these students study both French and Spanish?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 139,
+      "question": "What is the median number of employees assigned per project for the projects at Company Z?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 140,
+      "question": "If Juan had a doctor’s appointment on a certain day, was the appointment on a Wednesday?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 141,
+      "question": "Last year, a certain company began manufacturing product X... did the company sell more than 21,000 units of product X last year?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 142,
+      "question": "When a player in a certain game tossed a coin a number of times, 4 more heads than tails resulted. How many times did heads result?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 143,
+      "question": "Beginning in January of last year, Carl made deposits of $120... what was the range of the monthly closing balances of Carl’s account last year?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 144,
+      "question": "Are all of the numbers in a certain list of 15 numbers equal?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 145,
+      "question": "Quadrilateral RSTU shown above is a site plan for a parking lot... What is the area of the parking lot?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 146,
+      "question": "If the average (arithmetic mean) of six numbers is 75, how many of the numbers are equal to 75?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 147,
+      "question": "What was the total amount of revenue that a theater received from the sale of 400 tickets, some of which were sold at x percent of full price and the rest of which were sold at full price?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 148,
+      "question": "Any decimal that has only a finite number of nonzero digits is a terminating decimal... is r/s a terminating decimal?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 149,
+      "question": "In the figure above, what is the value of x° + y°?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 150,
+      "question": "What amount did Jean earn from the commission on her sales in the first half of 1988?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 151,
+      "question": "The price per share of Stock X increased by 10 percent over the same time period that the price per share of Stock Y decreased by 10 percent. The reduced price per share of Stock Y was what percent of the original price per share of Stock X?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 152,
+      "question": "In the figure above, if the area of triangular region D is 4, what is the length of a side of square region A?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 153,
+      "question": "If Sara’s age is exactly twice Bill’s age, what is Sara’s age?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 154,
+      "question": "A report consisting of 2,600 words is divided into 23 paragraphs. A 2-paragraph preface is then added to the report. Is the average (arithmetic mean) number of words per paragraph for all 25 paragraphs less than 120?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 155,
+      "question": "In the rectangular coordinate system above, if y = mx + b, is the area of region OPQ greater than 48?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 156,
+      "question": "In the expression above, if x = 2, what is the value of S?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 157,
+      "question": "If n is a positive integer and k = 2^n, what is the value of k?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 158,
+      "question": "If Carmen had 12 more tapes, she would have twice as many tapes as Rafael. Does Carmen have fewer tapes than Rafael?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 159,
+      "question": "If x is an integer, is x^2 + 1 even?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 160,
+      "question": "If n is a positive integer, is the value of n^3 at least twice the value of n^2?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 161,
+      "question": "The inflation index for the year 1989 relative to the year 1970 was 3.56... what was the price of the mixer in 1970?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 162,
+      "question": "Is 5k less than 1,000?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 163,
+      "question": "Every member of a certain club volunteers to contribute equally to the purchase of a $60 gift certificate. How many members does the club have?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 164,
+      "question": "If x + y = z, is z > x?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 165,
+      "question": "What is the circumference of the circle above with center O?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 166,
+      "question": "What is the value of x° + w° in the figure above?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 167,
+      "question": "If n and k are positive integers, is n^k > k^n?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 168,
+      "question": "In a certain business, production index p is directly proportional to efficiency index e, which is in turn directly proportional to investment index i. What is p if i = 4?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 169,
+      "question": "If n is a positive integer, is n! + n even?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 170,
+      "question": "If n is a positive integer, what is the tens digit of n?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 171,
+      "question": "What is the value of 1/x + 1/y?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 172,
+      "question": "Is n an integer?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 173,
+      "question": "If x, y, and z are positive integers, is xyz odd?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 174,
+      "question": "Marcia’s bucket can hold a maximum of how many liters of water?",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "Both statements (1) and (2) TOGETHER are sufficient, but NEITHER statement ALONE is sufficient",
+        "D": "EACH statement ALONE is sufficient",
+        "E": "Statements (1) and (2) TOGETHER are NOT sufficient"
+      },
+      "correct": "B"
+    }
+  ]
+}

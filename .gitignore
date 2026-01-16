@@ -15,4 +15,7 @@ credentials.json
 *.key
 *.pem
 
+firebase-debug.log
+
+
 
