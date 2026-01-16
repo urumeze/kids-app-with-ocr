@@ -1,0 +1,427 @@
+{
+  "subject": "GMAT Problem Solving Practice Questions",
+  "source": "The Official Guide for GMAT Review 13th Edition - Section 5.3",
+  "batch": "Questions 36 to 70",
+  "quiz": [
+    {
+      "id": 36,
+      "question": "If O is the center of the circle above, what fraction of the circular region is shaded?",
+      "options": {
+        "A": "1/12",
+        "B": "1/9",
+        "C": "1/6",
+        "D": "1/4",
+        "E": "1/3"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 37,
+      "question": "Which of the following equations is NOT equivalent to 10y² = (x + 2)(x – 2)?",
+      "options": {
+        "A": "30y² = 3x² – 12",
+        "B": "20y² = (2x – 4)(x + 2)",
+        "C": "10y² + 4 = x²",
+        "D": "5y² = x² – 2",
+        "E": "y² = (x² – 4)/10"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 38,
+      "question": "If Juan takes 11 seconds to run y yards, how many seconds will it take him to run x yards at the same rate?",
+      "options": {
+        "A": "11x/y",
+        "B": "11y/x",
+        "C": "xy/11",
+        "D": "x/11y",
+        "E": "y/11x"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 39,
+      "question": "John has 10 pairs of matched socks. If he loses 7 individual socks, what is the greatest number of pairs of matched socks he can have left?",
+      "options": {
+        "A": "7",
+        "B": "6",
+        "C": "5",
+        "D": "4",
+        "E": "3"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 40,
+      "question": "What is the lowest positive integer that is divisible by each of the integers 1 through 7, inclusive?",
+      "options": {
+        "A": "420",
+        "B": "840",
+        "C": "1,260",
+        "D": "2,520",
+        "E": "5,040"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 41,
+      "question": "If x = 2 and y = –3, then |x – y| – |y – x| =",
+      "options": {
+        "A": "–4",
+        "B": "–0.25",
+        "C": "0.25",
+        "D": "0.75",
+        "E": "4"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 42,
+      "question": "If x + y = 8 and x – y = 4, then x =",
+      "options": {
+        "A": "–3.7",
+        "B": "0.1",
+        "C": "0.3",
+        "D": "0.5",
+        "E": "2.8"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 43,
+      "question": "In the figure above, the point on segment PQ that is twice as far from P as from Q is",
+      "options": {
+        "A": "(3,1)",
+        "B": "(2,1)",
+        "C": "(2,–1)",
+        "D": "(1.5,0.5)",
+        "E": "(1,0)"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 44,
+      "question": "If n is an integer, which of the following must be even?",
+      "options": {
+        "A": "n(n + 1)",
+        "B": "n(n + 2)",
+        "C": "2n",
+        "D": "n² + 1",
+        "E": "n²"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 45,
+      "question": "If 4 is one solution of the equation x² + kx – 12 = 0, where k is a constant, what is the other solution?",
+      "options": {
+        "A": "–7",
+        "B": "–4",
+        "C": "–3",
+        "D": "1",
+        "E": "6"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 46,
+      "question": "The sum 7 + 8 + 9 + … + 15 is between",
+      "options": {
+        "A": "100 and 110",
+        "B": "110 and 120",
+        "C": "120 and 130",
+        "D": "130 and 140",
+        "E": "140 and 150"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 47,
+      "question": "If x² + y² = 29 and x + y = 3, then for what value of t does x³ + y³ = t?",
+      "options": {
+        "A": "–18",
+        "B": "–9",
+        "C": "0",
+        "D": "9",
+        "E": "18"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 48,
+      "question": "If (x – 1)² = 0, then x =",
+      "options": {
+        "A": "–1",
+        "B": "0",
+        "C": "1",
+        "D": "2",
+        "E": "3"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 49,
+      "question": "Car X averages 25.0 miles per gallon of gasoline and Car Y averages 11.9 miles per gallon. If each car is driven 12,000 miles, approximately how many more gallons of gasoline will Car Y use than Car X?",
+      "options": {
+        "A": "320",
+        "B": "480",
+        "C": "520",
+        "D": "730",
+        "E": "920"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 50,
+      "question": "How many integers n are there such that 1 < n < 100 and n is a multiple of 3 or 5?",
+      "options": {
+        "A": "Five",
+        "B": "Four",
+        "C": "Three",
+        "D": "Two",
+        "E": "One"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 51,
+      "question": "If y is an integer, then the least possible value of |23 – 5y| is",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 52,
+      "question": "If 3^x = 27 and 4^y = 64, what is the value of (3^x)(4^y)?",
+      "options": {
+        "A": "81",
+        "B": "729",
+        "C": "1,728",
+        "D": "2,187",
+        "E": "100"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 53,
+      "question": "The average (arithmetic mean) of 10, 30, and 50 is 5 more than the average of 20, 40, and",
+      "options": {
+        "A": "15",
+        "B": "25",
+        "C": "35",
+        "D": "45",
+        "E": "55"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 54,
+      "question": "In the equation above, k is a constant. If y = 10 when x = 2, what is the value of y when x = 5?",
+      "options": {
+        "A": "34",
+        "B": "31",
+        "C": "14",
+        "D": "11",
+        "E": "7"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 55,
+      "question": "In the table above, what is the number of green marbles in Jar R?",
+      "options": {
+        "A": "70",
+        "B": "80",
+        "C": "90",
+        "D": "100",
+        "E": "110"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 56,
+      "question": "Four staff members at a certain company worked on a project. The amounts of time that the four staff members worked on the project were in the ratio 2 to 3 to 5 to 6. If one of the four staff members worked on the project for 30 hours, which of the following CANNOT be the total number of hours that the four staff members worked on the project?",
+      "options": {
+        "A": "80",
+        "B": "96",
+        "C": "160",
+        "D": "192",
+        "E": "240"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 57,
+      "question": "Company P had 15 percent more employees in December than it had in January. If Company P had 460 employees in December, how many employees did it have in January?",
+      "options": {
+        "A": "391",
+        "B": "400",
+        "C": "410",
+        "D": "423",
+        "E": "445"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 58,
+      "question": "A glass was filled with 10 ounces of water, and 0.01 ounce of the water evaporated each day during a 20-day period. What percent of the original amount of water evaporated during this period?",
+      "options": {
+        "A": "0.002%",
+        "B": "0.02%",
+        "C": "0.2%",
+        "D": "2%",
+        "E": "20%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 59,
+      "question": "A glucose solution contains 15 grams of glucose per 100 cubic centimeters of solution. If 45 cubic centimeters of the solution were poured into an empty container, how many grams of glucose would be in the container?",
+      "options": {
+        "A": "3.00",
+        "B": "5.00",
+        "C": "5.50",
+        "D": "6.50",
+        "E": "6.75"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 60,
+      "question": "On a certain day, orangeade was made by mixing a certain amount of orange juice with an equal amount of water. On the next day, orangeade was made by mixing the same amount of orange juice with twice the amount of water. On both days, all the orangeade that was made was sold. If the revenue from selling the orangeade was the same for both days and if the orangeade was sold at $0.60 per glass on the first day, what was the price per glass on the second day?",
+      "options": {
+        "A": "$0.15",
+        "B": "$0.20",
+        "C": "$0.30",
+        "D": "$0.40",
+        "E": "$0.45"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 61,
+      "question": "In the xy-plane, what is the slope of the line with equation 3x + 7y = 9?",
+      "options": {
+        "A": "-3/7",
+        "B": "-7/3",
+        "C": "3/7",
+        "D": "3",
+        "E": "7"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 62,
+      "question": "In the figure above, if PQRS is a parallelogram, then x =",
+      "options": {
+        "A": "30",
+        "B": "35",
+        "C": "40",
+        "D": "70",
+        "E": "100"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 63,
+      "question": "If 1 kilometer is approximately 0.6 mile, which of the following best approximates the number of kilometers in 2 miles?",
+      "options": {
+        "A": "1/3",
+        "B": "3",
+        "C": "3.3",
+        "D": "5",
+        "E": "6"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 64,
+      "question": "A certain fruit stand sold apples for $0.70 each and bananas for $0.50 each. If a customer purchased both apples and bananas from the stand for a total of $6.30, what total number of apples and bananas did the customer purchase?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "13",
+        "E": "14"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 65,
+      "question": "The average distance between the Sun and a certain planet is approximately 9.3 × 10^7 miles. Which of the following is closest to the average distance between the Sun and the planet, in kilometers? (1 kilometer is approximately 6 × 10^-1 miles.)",
+      "options": {
+        "A": "1.5 × 10^8",
+        "B": "1.5 × 10^11",
+        "C": "1.5 × 10^13",
+        "D": "5.6 × 10^10",
+        "E": "5.6 × 10^13"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 66,
+      "question": "At a certain school, the ratio of the number of second graders to the number of fourth graders is 8 to 5, and the ratio of the number of first graders to the number of second graders is 3 to 4. If the ratio of the number of third graders to the number of fourth graders is 3 to 2, what is the ratio of the number of first graders to the number of third graders?",
+      "options": {
+        "A": "16 to 15",
+        "B": "9 to 5",
+        "C": "5 to 16",
+        "D": "5 to 4",
+        "E": "4 to 5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 67,
+      "question": "If m is the average (arithmetic mean) of the first 10 positive multiples of 5 and if M is the median of the first 10 positive multiples of 5, what is the value of m – M?",
+      "options": {
+        "A": "–5",
+        "B": "0",
+        "C": "5",
+        "D": "25",
+        "E": "27.5"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 68,
+      "question": "Two integers will be randomly selected from the sets above, one integer from set A and one integer from set B. What is the probability that the sum of the two integers will equal 9?",
+      "options": {
+        "A": "0.15",
+        "B": "0.20",
+        "C": "0.25",
+        "D": "0.30",
+        "E": "0.33"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 69,
+      "question": "In the coordinate plane, a circle has center (2,–3) and passes through the point (5,0). What is the area of the circle?",
+      "options": {
+        "A": "3π",
+        "B": "6π",
+        "C": "9π",
+        "D": "12π",
+        "E": "25π"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 70,
+      "question": "At a certain instant in time, the number of cars, N, traveling on a portion of a certain highway can be estimated by the formula N = L × (d/0.5s), where L is the number of lanes in the same direction, d is the length of the portion of the highway, in feet, and s is the average speed of the cars, in miles per hour. Based on the formula, what is the estimated number of cars traveling on a 1/2 mile portion of the highway if the highway has 2 lanes in the same direction and the average speed of the cars is 40 miles per hour?",
+      "options": {
+        "A": "155",
+        "B": "96",
+        "C": "80",
+        "D": "48",
+        "E": "24"
+      },
+      "correct": "D"
+    }
+  ]
+}

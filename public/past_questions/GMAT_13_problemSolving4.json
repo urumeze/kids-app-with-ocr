@@ -1,0 +1,488 @@
+{
+  "subject": "GMAT Problem Solving Practice Questions",
+  "source": "The Official Guide for GMAT Review 13th Edition - Section 5.3",
+  "batch": "Questions 110 to 150",
+  "quiz": [
+   
+    {
+      "id": 111,
+      "question": "If 1/17 is expressed as a terminating decimal, how many zeros will t have between the decimal point and the first nonzero digit to the right of the decimal point?",
+      "options": {
+        "A": "Three",
+        "B": "Four",
+        "C": "Five",
+        "D": "Six",
+        "E": "Nine"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 112,
+      "question": "A certain characteristic in a large population has a distribution that is symmetric about the mean m. If 68 percent of the distribution lies within one standard deviation d of the mean, what percent of the distribution is less than m + d?",
+      "options": {
+        "A": "16%",
+        "B": "32%",
+        "C": "48%",
+        "D": "84%",
+        "E": "92%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 113,
+      "question": "In a certain district, the ratio of the number of registered Republicans to the number of registered Democrats was 3:5. After 600 additional Republicans and 500 additional Democrats registered, the ratio was 4:5. After these registrations, there were how many more voters in the district registered as Democrats than as Republicans?",
+      "options": {
+        "A": "100",
+        "B": "300",
+        "C": "400",
+        "D": "1,000",
+        "E": "2,500"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 114,
+      "question": "In Country C, the unemployment rate among construction workers dropped from 16 percent on September 1, 1992, to 9 percent on September 1, 1996. If the number of construction workers was 20 percent greater on September 1, 1996, than on September 1, 1992, what was the approximate percent change in the number of unemployed construction workers over this period?",
+      "options": {
+        "A": "50% decrease",
+        "B": "30% decrease",
+        "C": "15% decrease",
+        "D": "30% increase",
+        "E": "55% increase"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 115,
+      "question": "A pharmaceutical company received $3 million in royalties on the first $20 million in sales of the generic equivalent of one of its products and then $9 million in royalties on the next $108 million in sales. By approximately what percent did the ratio of royalties to sales decrease from the first $20 million in sales to the next $108 million in sales?",
+      "options": {
+        "A": "8%",
+        "B": "15%",
+        "C": "45%",
+        "D": "52%",
+        "E": "56%"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 116,
+      "question": "If p is the product of the integers from 1 to 30, inclusive, what is the greatest integer k for which 3^k is a factor of p?",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "14",
+        "D": "16",
+        "E": "18"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 117,
+      "question": "If n = 3^8 – 2^8, which of the following is NOT a factor of n?",
+      "options": {
+        "A": "97",
+        "B": "65",
+        "C": "35",
+        "D": "13",
+        "E": "5"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 118,
+      "question": "Club X has more than 10 but fewer than 40 members. Sometimes the members sit at tables with 3 members at one table and 4 members at each of the other tables, and sometimes they sit at tables with 3 members at one table and 5 members at each of the other tables. If they sit at tables with 6 members at each table except one and fewer than 6 members at that one table, how many members will be at the table that has fewer than 6 members?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 119,
+      "question": "In order to complete a reading assignment on time, Terry planned to read 90 pages per day. However, she read only 75 pages per day at first, leaving 690 pages to be read during the last 6 days before the assignment was to be completed. How many days in all did Terry have to complete the assignment on time?",
+      "options": {
+        "A": "15",
+        "B": "16",
+        "C": "25",
+        "D": "40",
+        "E": "46"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 120,
+      "question": "If 2^r = 3^s and r = 2s, what is r in terms of s?",
+      "options": {
+        "A": "2^s",
+        "B": "s^2",
+        "C": "s^3",
+        "D": "s^3",
+        "E": "s^4"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 121,
+      "question": "The front of a 6-foot-by-8-foot rectangular door has brass rectangular trim, as indicated by the shading in the figure above. If the trim is uniformly 1 foot wide, what fraction of the door’s front surface is covered by the trim?",
+      "options": {
+        "A": "1/4",
+        "B": "13/48",
+        "C": "5/12",
+        "D": "1/2",
+        "E": "11/12"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 122,
+      "question": "If x^y = x^(y+1), which of the following is true?",
+      "options": {
+        "A": "x = 1",
+        "B": "x = 0",
+        "C": "y = 0",
+        "D": "x = y",
+        "E": "y = 1"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 123,
+      "question": "Mary’s income is 60 percent more than Tim’s income, and Tim’s income is 40 percent less than Juan’s income. What percent of Juan’s income is Mary’s income?",
+      "options": {
+        "A": "124%",
+        "B": "120%",
+        "C": "96%",
+        "D": "80%",
+        "E": "64%"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 124,
+      "question": "Each • in the mileage table above represents an entry indicating the distance between a pair of the five cities. If the table were extended to represent the distances between all pairs of 30 cities and each distance were to be represented by only one entry, how many entries would the table then have?",
+      "options": {
+        "A": "60",
+        "B": "435",
+        "C": "450",
+        "D": "465",
+        "E": "900"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 125,
+      "question": "The ratio of the length to the width of a rectangular advertising display is approximately 3.3 to 2. If the width of the display is 8 meters, what is the approximate length of the display, in meters?",
+      "options": {
+        "A": "7",
+        "B": "11",
+        "C": "13",
+        "D": "16",
+        "E": "26"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 126,
+      "question": "An arithmetic sequence is a sequence in which each term after the first is equal to the sum of the preceding term and a constant. If the list of letters shown above is an arithmetic sequence, which of the following must also be an arithmetic sequence? I. 2p, 2r, 2s, 2t, 2u II. p/2, r/2, s/2, t/2, u/2 III. p^2, r^2, s^2, t^2, u^2",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "III only",
+        "D": "I and II",
+        "E": "II and III"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 127,
+      "question": "If 3 < x < 100, for how many values of x is x² the square of a prime number?",
+      "options": {
+        "A": "Two",
+        "B": "Three",
+        "C": "Four",
+        "D": "Five",
+        "E": "Nine"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 128,
+      "question": "A researcher plans to identify each participant in a certain medical experiment with a code consisting of either a single letter or a pair of distinct letters written in alphabetical order. What is the least number of letters that can be used if there are 12 participants, and each participant is to receive a different code?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7",
+        "E": "8"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 129,
+      "question": "An object thrown directly upward is at a height of h feet after t seconds, where h = –16(t – 3)² + 150. At what height, in feet, is the object 2 seconds after it reaches its maximum height?",
+      "options": {
+        "A": "6",
+        "B": "86",
+        "C": "134",
+        "D": "150",
+        "E": "166"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 130,
+      "question": "Which of the following is equivalent to the pair of inequalities x + 2 > 5 and x – 3 < 9?",
+      "options": {
+        "A": "x > 3",
+        "B": "x < 12",
+        "C": "3 < x < 12",
+        "D": "x > 3 or x < 12",
+        "E": "x < 3 or x > 12"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 131,
+      "question": "David has d books, which is 3 times as many as Jeff and 2/3 as many as Paula. How many books do the three of them have altogether, in terms of d?",
+      "options": {
+        "A": "d + d/3 + (3d/2)",
+        "B": "d + 3d + (3d/2)",
+        "C": "d + (d/3) + (3d/2)",
+        "D": "d + (d/3) + (2d/3)",
+        "E": "d + 3d + 2d"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 132,
+      "question": "If the median of the numbers in list I above is equal to the median of the numbers in list II above, what is the value of x?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9",
+        "E": "10"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 133,
+      "question": "There are 8 teams in a certain league and each team plays each of the other teams exactly once. If each game is played by 2 teams, what is the total number of games played?",
+      "options": {
+        "A": "15",
+        "B": "16",
+        "C": "28",
+        "D": "56",
+        "E": "64"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 134,
+      "question": "An operation ⊕ is defined by the equation a ⊕ b = (a + b)(a – b), for all numbers a and b such that a ≠ b. If a ⊕ 5 = 0 and b ⊕ 5 = 0, then a =",
+      "options": {
+        "A": "–5",
+        "B": "–1",
+        "C": "0",
+        "D": "1",
+        "E": "5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 135,
+      "question": "The price of lunch for 15 people was $207.00, including a 15 percent gratuity for service. What was the average price per person, EXCLUDING the gratuity?",
+      "options": {
+        "A": "$11.73",
+        "B": "$12.00",
+        "C": "$13.80",
+        "D": "$14.00",
+        "E": "$15.87"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 136,
+      "question": "In Town X, 64 percent of the population are employed, and 48 percent of the population are employed males. What percent of the employed people in Town X are females?",
+      "options": {
+        "A": "16%",
+        "B": "25%",
+        "C": "32%",
+        "D": "40%",
+        "E": "52%"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 137,
+      "question": "At his regular hourly rate, Don had estimated the labor cost of a repair job as $336 and he was paid that amount. However, the job took 4 hours longer than he had estimated and, consequently, he earned $2 per hour less than his regular hourly rate. What was the time Don had estimated for the job, in hours?",
+      "options": {
+        "A": "28",
+        "B": "24",
+        "C": "16",
+        "D": "14",
+        "E": "12"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 138,
+      "question": "If x/y = 3/4 and y/z = 5/6, and if x, y, and z are positive integers, which of the following must be greater than 1?",
+      "options": {
+        "A": "x/y",
+        "B": "y/x",
+        "C": "z/y",
+        "D": "x/z",
+        "E": "z/x"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 139,
+      "question": "It would take one machine 4 hours to complete a large production order and another machine 3 hours to complete the same order. How many hours would it take both machines, working simultaneously at their respective constant rates, to complete the order?",
+      "options": {
+        "A": "1",
+        "B": "1.2",
+        "C": "1.5",
+        "D": "1.8",
+        "E": "7"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 140,
+      "question": "To mail a package, the rate is x cents for the first pound and y cents for each additional pound, where x > y. Two packages weighing 3 pounds and 5 pounds, respectively, can be mailed separately or combined as one package. Which method is cheaper, and how much money is saved?",
+      "options": {
+        "A": "Combined, with a savings of (x – y) cents",
+        "B": "Combined, with a savings of (x – 3y) cents",
+        "C": "Combined, with a savings of x cents",
+        "D": "Separately, with a savings of (x – y) cents",
+        "E": "Separately, with a savings of y cents"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 141,
+      "question": "If money is invested at r percent interest, compounded annually, the amount of the investment will double in approximately 70/r years. If Pat’s parents invested $5,000 in a long-term bond that pays 8 percent interest, compounded annually, what will be the approximate total amount of the investment 18 years later, when Pat is ready for college?",
+      "options": {
+        "A": "$20,000",
+        "B": "$15,000",
+        "C": "$12,000",
+        "D": "$10,000",
+        "E": "$9,000"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 142,
+      "question": "On a recent trip, Cindy drove her car 290 miles, rounded to the nearest 10 miles, and used 12 gallons of gasoline, rounded to the nearest gallon. The actual number of miles per gallon that Cindy’s car got on this trip must have been between",
+      "options": {
+        "A": "20 and 30",
+        "B": "24 and 25",
+        "C": "24.5 and 25.5",
+        "D": "24 and 25",
+        "E": "24 and 26"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 143,
+      "question": "Which of the following inequalities is an algebraic expression for the shaded part of the number line above?",
+      "options": {
+        "A": "–3 < x < 2",
+        "B": "–3 ≤ x < 2",
+        "C": "–3 ≤ x ≤ 2",
+        "D": "x ≤ –3 or x ≥ 2",
+        "E": "x < –3 or x > 2"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 144,
+      "question": "A factory has 500 workers, 15 percent of whom are women. If 50 additional workers are to be hired and all of the present workers remain, how many of the additional workers must be women in order to raise the percent of women employees to 20 percent?",
+      "options": {
+        "A": "3",
+        "B": "10",
+        "C": "25",
+        "D": "30",
+        "E": "35"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 145,
+      "question": "In a small snack shop, the average (arithmetic mean) revenue was $400 per day over a 10-day period. During this period, if the average daily revenue was $360 for the first 6 days, what was the average daily revenue for the last 4 days?",
+      "options": {
+        "A": "$420",
+        "B": "$440",
+        "C": "$450",
+        "D": "$460",
+        "E": "$480"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 146,
+      "question": "A certain country had a total annual expenditure of $1,200,000,000 last year. If the population of the country was 240 million last year, what was the per capita expenditure?",
+      "options": {
+        "A": "$500",
+        "B": "$1,000",
+        "C": "$2,000",
+        "D": "$3,000",
+        "E": "$5,000"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 147,
+      "question": "A certain rectangular window is twice as long as it is wide. If its perimeter is 10 feet, then its dimensions in feet are",
+      "options": {
+        "A": "1 by 4",
+        "B": "2 by 4",
+        "C": "2 by 4",
+        "D": "3 by 6",
+        "E": "4 by 8"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 148,
+      "question": "The diagram above shows the various paths along which a mouse can travel from point X, where it is released, to point Y, where it is rewarded with a food pellet. How many different paths from X to Y can the mouse take if it goes directly from X to Y without retracing any point along a path?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "12",
+        "D": "14",
+        "E": "17"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 149,
+      "question": "If the operation * is defined by x * y = (x + y)(x – y), for all numbers x and y such that x ≠ y. If 5 * 3 = 8 * k, then k =",
+      "options": {
+        "A": "30",
+        "B": "60",
+        "C": "90",
+        "D": "120",
+        "E": "150"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 150,
+      "question": "A bar over a sequence of digits in a decimal indicates that the sequence repeats indefinitely. What is the value of 0.123 with a bar over 123?",
+      "options": {
+        "A": "0",
+        "B": "1/81",
+        "C": "1.2",
+        "D": "10",
+        "E": "12"
+      },
+      "correct": "E"
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "subject": "GMAT Verbal Diagnostic Test",
+  "year": "Official Guide 13th Edition",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "According to economic signaling theory, consumers may perceive the frequency with which an unfamiliar brand is advertised as a cue that the brand is of high quality. [...] Which of the following best describes the purpose of the sentence in lines 10–15?",
+      "options": {
+        "A": "To show that economic signaling theory fails to explain a finding",
+        "B": "To introduce a distinction not accounted for by economic signaling theory",
+        "C": "To account for an exception to a generalization suggested by Marquardt and McGann",
+        "D": "To explain why Marquardt and McGann’s research was conducted",
+        "E": "To offer an explanation for an observation reported by Marquardt and McGann"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 2,
+      "question": "The primary purpose of the passage is to",
+      "options": {
+        "A": "present findings that contradict one explanation for the effects of a particular advertising practice",
+        "B": "argue that theoretical explanations about the effects of a particular advertising practice are of limited value without empirical evidence",
+        "C": "discuss how and why particular advertising practices may affect consumers’ perceptions",
+        "D": "contrast the research methods used in two different studies of a particular advertising practice",
+        "E": "explain why a finding about consumer responses to a particular advertising practice was unexpected"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 3,
+      "question": "Kirmani’s research, as described in the passage, suggests which of the following regarding consumers’ expectations about the quality of advertised products?",
+      "options": {
+        "A": "Those expectations are likely to be highest if a manufacturer runs both black-and-white and color advertisements for the same product.",
+        "B": "Those expectations can be shaped by the presence of color in an advertisement as well as by the frequency with which an advertisement appears.",
+        "C": "Those expectations are usually high for frequently advertised new brands but not for frequently advertised familiar brands.",
+        "D": "Those expectations are likely to be higher for products whose black-and-white advertisements are often repeated than for those whose color advertisements are less often repeated.",
+        "E": "Those expectations are less definitively shaped by the manufacturer’s advertisements than by information that consumers gather from other sources."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "question": "Kirmani’s third study, as described in the passage, suggests which of the following conclusions about a black-and-white advertisement?",
+      "options": {
+        "A": "It can be repeated more frequently than a comparable color advertisement could before consumers begin to suspect low manufacturer confidence in the quality of the advertised product.",
+        "B": "It will have the greatest impact on consumers’ perceptions of the quality of the advertised product if it appears during periods when a color version of the same advertisement is also being used.",
+        "C": "It will attract more attention from readers of the print publication in which it appears if it is used only a few times.",
+        "D": "It may be perceived by some consumers as more expensive than a comparable color advertisement.",
+        "E": "It is likely to be perceived by consumers as a sign of higher manufacturer confidence in the quality of the advertised product than a comparable color advertisement would be."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "The passage suggests that Kirmani would be most likely to agree with which of the following statements about consumers’ perceptions of the relationship between the frequency with which a product is advertised and the product’s quality?",
+      "options": {
+        "A": "Consumers’ perceptions about the frequency with which an advertisement appears are their primary consideration when evaluating an advertisement’s claims about product quality.",
+        "B": "Because most consumers do not notice the frequency of advertisement, it has little impact on most consumers’ expectations regarding product quality.",
+        "C": "Consumers perceive frequency of advertisement as a signal about product quality only when the advertisement is for a product that is newly on the market.",
+        "D": "The frequency of advertisement is not always perceived by consumers to indicate that manufacturers are highly confident about their products’ quality.",
+        "E": "Consumers who try a new product that has been frequently advertised are likely to perceive the advertisement’s frequency as having been an accurate indicator of the product’s quality."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 6,
+      "question": "The main purpose of the passage is to",
+      "options": {
+        "A": "propose an experiment",
+        "B": "analyze a function",
+        "C": "refute an argument",
+        "D": "explain a contradiction",
+        "E": "simulate a process"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is most consistent with Searle’s reasoning as presented in the passage?",
+      "options": {
+        "A": "Meaning and content cannot be reduced to algorithms.",
+        "B": "The process of digestion can be simulated mechanically, but not on a computer.",
+        "C": "Simulated thoughts and real thoughts are essentially similar because they are composed primarily of information.",
+        "D": "A computer can use “causal powers” similar to those of the human brain when processing information.",
+        "E": "Computer simulations of the world can achieve the complexity of the brain’s representations of the world."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "The author of the passage would be most likely to agree with which of the following statements about the simulation of organ functions?",
+      "options": {
+        "A": "An artificial device that achieves the functions of the stomach could be considered a valid model of the stomach.",
+        "B": "Computer simulations of the brain are best used to crack the brain’s codes of meaning and content.",
+        "C": "Computer simulations of the brain challenge ideas that are fundamental to psychology and neuroscience.",
+        "D": "Because the brain and the stomach both act as processors, they can best be simulated by mechanical devices.",
+        "E": "The computer’s limitations in simulating digestion suggest equal limitations in computer simulated thinking."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 9,
+      "question": "It can be inferred that the author of the passage believes that Searle’s argument is flawed by its failure to",
+      "options": {
+        "A": "distinguish between syntactic and semantic operations",
+        "B": "explain adequately how people, unlike computers, are able to understand meaning",
+        "C": "provide concrete examples illustrating its claims about thinking",
+        "D": "understand how computers use algorithms to process information",
+        "E": "decipher the code that is transmitted from neuron to neuron in the brain"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 10,
+      "question": "From the passage, it can be inferred that the author would agree with Searle on which of the following points?",
+      "options": {
+        "A": "Computers operate by following algorithms.",
+        "B": "The human brain can never fully understand its own functions.",
+        "C": "The comparison of the brain to a machine is overly simplistic.",
+        "D": "The most accurate models of physical processes are computer simulations.",
+        "E": "Human thought and computer-simulated thought involve similar processes of representation."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 11,
+      "question": "Which of the following most accurately represents Searle’s criticism of the brain-as-computer metaphor, as that criticism is described in the passage?",
+      "options": {
+        "A": "The metaphor is not experimentally verifiable.",
+        "B": "The metaphor does not take into account the unique powers of the brain.",
+        "C": "The metaphor suggests that a brain’s functions can be simulated as easily as those of a stomach.",
+        "D": "The metaphor suggests that a computer can simulate the workings of the mind by using the codes of neural transmission.",
+        "E": "The metaphor is unhelpful because both the brain and the computer process information."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 12,
+      "question": "The primary purpose of the passage is to",
+      "options": {
+        "A": "explain why women reformers of the Progressive Era failed to achieve their goals",
+        "B": "discuss the origins of child labor laws in the late nineteenth and early twentieth centuries",
+        "C": "compare the living conditions of working-class and middle-class women in the Progressive Era",
+        "D": "discuss an oversight on the part of women reformers of the Progressive Era",
+        "E": "revise a traditional view of the role played by women reformers in enacting Progressive Era reforms"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "The view mentioned in line 17 of the passage refers to which of the following?",
+      "options": {
+        "A": "Women’s grassroots activism and their vision of a new civic consciousness lay at the heart of social reform in the United States throughout the Progressive Era",
+        "B": "Some working-class mothers’ resistance to the enforcement of child labor laws",
+        "C": "Reformers’ belief that child labor and industrial home work should be abolished",
+        "D": "Reformers’ opinions about how working-class families raised their children",
+        "E": "Working-class families’ fears about the adverse consequences that child labor laws would have on their ability to earn an adequate living"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 14,
+      "question": "The author of the passage mentions the observations of women historians (lines 15–17) most probably in order to",
+      "options": {
+        "A": "provide support for an assertion made in the preceding sentence (lines 10–12)",
+        "B": "raise a question that is answered in the last sentence of the passage (lines 27–32)",
+        "C": "introduce an opinion that challenges a statement made in the first sentence of the passage",
+        "D": "offer an alternative view to the one attributed in the passage to working-class mothers",
+        "E": "point out a contradiction inherent in the traditional view of child labor reform as it is presented in the passage"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 15,
+      "question": "The passage suggests that which of the following was a reason for the difference of opinion between working-class mothers and women reformers on the issue of child labor?",
+      "options": {
+        "A": "Reformers’ belief that industrial home work was preferable to child labor outside the home",
+        "B": "Reformers’ belief that child labor laws should pertain to working conditions but not to pay",
+        "C": "Working-class mothers’ resentment at reformers’ attempts to interfere with their parenting",
+        "D": "Working-class mothers’ belief that child labor was an inhumane practice",
+        "E": "Working-class families’ need for every employable member of their families to earn money"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 16,
+      "question": "The author of the passage asserts which of the following about women reformers who tried to abolish child labor?",
+      "options": {
+        "A": "They alienated working-class mothers by attempting to enlist them in agitating for progressive causes.",
+        "B": "They underestimated the prevalence of child labor among the working classes.",
+        "C": "They were correct in their conviction that child labor was deplorable but shortsighted about the impact of child labor legislation on working-class families.",
+        "D": "They were aggressive in their attempts to enforce child labor legislation, but were unable to prevent working-class families from circumventing them.",
+        "E": "They were prevented by their nearly total disenfranchisement from making significant progress in child labor reform."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 17,
+      "question": "According to the passage, one of the most striking achievements of white middle-class women reformers during the Progressive Era was",
+      "options": {
+        "A": "gaining the right to vote in school elections",
+        "B": "mobilizing working-class women in the fight against child labor",
+        "C": "uniting women of different classes in grassroots activism",
+        "D": "improving the economic conditions of working class families",
+        "E": "improving women’s and children’s working conditions"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 18,
+      "question": "Vasquez-Morrell Assurance specializes in insuring manufacturers. [...] Which of the following, if true, most seriously calls into question the consultants’ criterion for selecting the staff to be laid off?",
+      "options": {
+        "A": "If the time that Vasquez-Morrell takes to settle claims increases significantly, it could lose business to other insurers.",
+        "B": "Supervisors at Vasquez-Morrell tend to assign the most complex claims to the most capable adjusters.",
+        "C": "At Vasquez-Morrell, no insurance payments are made until a claims adjuster has reached a final determination on the claim.",
+        "D": "There are no positions at Vasquez-Morrell to which staff currently employed as claims adjusters could be reassigned.",
+        "E": "The premiums that Vasquez-Morrell currently charges are no higher than those charged for similar coverage by competitors."
+      },
+      "correct": "B"
+    },
+    {
+      "id": 19,
+      "question": "Prolonged spells of hot, dry weather at the end of the grape-growing season typically reduce a vineyard’s yield [...] Nonetheless, in regions where wine producers generally grow their own grapes, analysts typically expect a long, hot, dry spell late in the growing season to result in increased revenues for local wine producers. Which of the following, if true, does most to justify the analysts’ expectation?",
+      "options": {
+        "A": "The lower a vineyard’s yield, the less labor is required to harvest the grapes.",
+        "B": "Long, hot, dry spells at the beginning of the grape-growing season are rare, but they can have a devastating effect on a vineyard’s yield.",
+        "C": "Grapes grown for wine production are typically made into wine at or near the vineyard in which they were grown.",
+        "D": "When hot, dry spells are followed by heavy rains, the rains frequently destroy grape crops.",
+        "E": "Grapes that have matured in hot, dry weather make significantly better wine than ordinary grapes."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 20,
+      "question": "In the past, most children who went sledding in the winter snow in Verland used wooden sleds with runners and steering bars. [...] The concern that plastic sleds are more dangerous is clearly borne out by the fact that the number of children injured while sledding was much higher last winter than it was 10 years ago. Which of the following, if true in Verland, most seriously undermines the force of the evidence cited?",
+      "options": {
+        "A": "A few children still use traditional wooden sleds.",
+        "B": "Very few children wear any kind of protective gear, such as helmets, while sledding.",
+        "C": "Plastic sleds can be used in a much wider variety of snow conditions than wooden sleds can.",
+        "D": "Most sledding injuries occur when a sled collides with a tree, a rock, or another sled.",
+        "E": "Because the traditional wooden sleds can carry more than one rider, an accident involving a wooden sled can result in several children being injured."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 21,
+      "question": "Metal rings recently excavated from seventh-century settlements in the western part of Mexico were made using the same metallurgical techniques as those used by Ecuadorian artisans [...] Which of the following would it be most useful to establish in order to evaluate the archaeologists’ hypothesis?",
+      "options": {
+        "A": "Whether metal objects were traded from Ecuador to western Mexico during the seventh century",
+        "B": "Whether travel between western Mexico and Ecuador in the seventh century would have been primarily by land or by sea",
+        "C": "Whether artisans from western Mexico could have learned complex metallurgical techniques from their Ecuadorian counterparts without actually leaving western Mexico",
+        "D": "Whether metal tools were used in the seventh century settlements in western Mexico",
+        "E": "Whether any of the techniques used in the manufacture of the metal rings found in western Mexico are still practiced among artisans in Ecuador today"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 22,
+      "question": "Following several years of declining advertising sales, the Greenville Times reorganized its advertising sales force. [...] In assessing whether the improvement in advertising sales can properly be attributed to the reorganization, it would be most helpful to find out which of the following?",
+      "options": {
+        "A": "What proportion of the total revenue of the Greenville Times is generated by advertising sales?",
+        "B": "Has the circulation of the Greenville Times increased substantially in the last two years?",
+        "C": "Among all the types of industry and retailing that use the Greenville Times as an advertising vehicle, which type accounts for the largest proportion of the newspaper’s advertising sales?",
+        "D": "Do any clients of the sales representatives of the Greenville Times have a standing order with the Times for a fixed amount of advertising per month?",
+        "E": "Among the advertisers in the Greenville Times, are there more types of retail business or more types of industrial business?"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 23,
+      "question": "Motorists in a certain country frequently complain that traffic congestion is much worse now than it was 20 years ago. [...] Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Most automobile travel is local, and the networks of roads and streets in the country’s settled areas have changed little over the last 20 years.",
+        "B": "Gasoline prices are high, and miles traveled per car per year have not changed much over the last 20 years.",
+        "C": "The country’s urban centers have well-developed public transit systems that carry most of the people who commute into those centers.",
+        "D": "The average age of automobiles registered in the country is lower now than it was 20 years ago.",
+        "E": "Radio stations have long been broadcasting regular traffic reports that inform motorists about traffic congestion."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 24,
+      "question": "The percentage of households with an annual income of more than $40,000 is higher in Merton County than in any other county. However, the percentage of households with an annual income of $60,000 or more is higher in Sommer County. If the statements above are true, which of the following must also be true?",
+      "options": {
+        "A": "The percentage of households with an annual income of $80,000 is higher in Sommer County than in Merton County.",
+        "B": "Merton County has the second highest percentage of households with an annual income of $60,000 or more.",
+        "C": "Some households in Merton County have an annual income between $40,000 and $60,000.",
+        "D": "The number of households with an annual income of more than $40,000 is greater in Merton County than in Sommer County.",
+        "E": "Average annual household income is higher in Sommer County than in Merton County."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 25,
+      "question": "Tiger beetles are such fast runners that they can capture virtually any nonflying insect. [...] Which of the following, if discovered in experiments using artificially moved prey insects, would support one of the two hypotheses and undermine the other?",
+      "options": {
+        "A": "When a prey insect is moved directly toward a beetle that has been chasing it, the beetle immediately stops and runs away without its usual intermittent stopping.",
+        "B": "In pursuing a swerving insect, a beetle alters its course while running and its pauses become more frequent as the chase progresses.",
+        "C": "In pursuing a moving insect, a beetle usually responds immediately to changes in the insect’s direction, and it pauses equally frequently whether the chase is up or down an incline.",
+        "D": "If, when a beetle pauses, it has not gained on the insect it is pursuing, the beetle generally ends its pursuit.",
+        "E": "The faster a beetle pursues an insect fleeing directly away from it, the more frequently the beetle stops."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 26,
+      "question": "Guillemots are birds of Arctic regions. [...] Therefore, if the warming continues, the guillemots’ range will probably be enlarged by being extended northward along the coast. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Even if the warming trend continues, there will still be years in which guillemot chicks are killed by an unusually early snow.",
+        "B": "If the Arctic warming continues, guillemots’ current predators are likely to succeed in extending their own range farther north.",
+        "C": "Guillemots nest in coastal areas, where temperatures are generally higher than in inland areas.",
+        "D": "If the Arctic warming continues, much of the thin ice in the southern Arctic will disappear.",
+        "E": "The fish that guillemots eat are currently preyed on by a wider variety of predators in the southernmost Arctic regions than they are farther north."
+      },
+      "correct": "D"
+    },
+    {
+      "id": 27,
+      "question": "Some batches of polio vaccine used around 1960 were contaminated with SV40 [...] This claim is not undercut by the fact that a very careful survey made in the 1960s of people who had received the contaminated vaccine found no elevated incidence of any cancer, since ____________.",
+      "options": {
+        "A": "most cases of mesothelioma are caused by exposure to asbestos",
+        "B": "in some countries, there was no contamination of the vaccine",
+        "C": "SV40 is widely used in laboratories to produce cancers in animals",
+        "D": "mesotheliomas take several decades to develop",
+        "E": "mesothelioma was somewhat less common in 1960 than it is now"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 28,
+      "question": "Gortland has long been narrowly self-sufficient in both grain and meat. [...] Therefore, since per capita income continues to rise, whereas domestic grain production will not increase, Gortland will soon have to import either grain or meat or both. Which of the following is an assumption on which the argument depends?",
+      "options": {
+        "A": "The total acreage devoted to grain production in Gortland will soon decrease.",
+        "B": "Importing either grain or meat will not result in a significantly higher percentage of Gortlanders’ incomes being spent on food than is currently the case.",
+        "C": "The per capita consumption of meat in Gortland is increasing at roughly the same rate across all income levels.",
+        "D": "The per capita income of meat producers in Gortland is rising faster than the per capita income of grain producers.",
+        "E": "People in Gortland who increase their consumption of meat will not radically decrease their consumption of grain."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 29,
+      "question": "The Hazelton coal-processing plant is a major employer in the Hazelton area [...] In order to prevent a major increase in local unemployment, the Hazelton government is considering granting the plant’s request. Which of the following would be most important for the Hazelton government to determine before deciding whether to grant the plant’s request?",
+      "options": {
+        "A": "Whether the company that owns the plant would open a new plant in another area if the present plant were closed",
+        "B": "Whether the plant would employ far fewer workers when updated than it does now",
+        "C": "Whether the level of pollutants presently being emitted by the plant is high enough to constitute a health hazard for local residents",
+        "D": "Whether the majority of the coal processed by the plant is sold outside the Hazelton area",
+        "E": "Whether the plant would be able to process more coal when updated than it does now"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 30,
+      "question": "A physically active lifestyle has been shown to help increase longevity. [...] Clearly, this circumstance explains the long lives of people in Wistar. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "In Bellaria all medical expenses are paid by the government, so that personal income does not affect the quality of health care a person receives.",
+        "B": "The Wistar region is one of Bellaria’s least populated regions.",
+        "C": "Many people who live in the Wistar region have moved there in middle age or upon retirement.",
+        "D": "The many opportunities for hiking, skiing, and other outdoor activities that Wistar’s mountains offer make it a favorite destination for vacationing Bellarians.",
+        "E": "Per capita spending on recreational activities is no higher in Wistar than it is in other regions of Bellaria."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "Cheever College offers several online courses via remote computer connection [...] If the statements above are true, which of the following must also be true of Cheever College?",
+      "options": {
+        "A": "Among students who did not withdraw, students enrolled in online courses got higher grades, on average, than students enrolled in classroom-based courses.",
+        "B": "The number of students enrolled per course at the start of the school term is much higher, on average, for the online courses than for the classroom-based courses.",
+        "C": "There are no students who take both an online and a classroom-based course in the same school term.",
+        "D": "Among Cheever College students with the best grades, a significant majority take online, rather than classroom-based, courses.",
+        "E": "Courses offered online tend to deal with subject matter that is less challenging than that of classroom-based courses."
+      },
+      "correct": "A"
+    },
+    {
+      "id": 32,
+      "question": "For years the beautiful Renaissance buildings in Palitito have been damaged by exhaust from the many tour buses [...] The city has now provided parking that accommodates a third of the tour buses, so damage to Palitito’s buildings from the buses’ exhaust will diminish significantly. Which of the following, if true, most strongly supports the argument?",
+      "options": {
+        "A": "The exhaust from Palitito’s few automobiles is not a significant threat to Palitito’s buildings.",
+        "B": "Palitito’s Renaissance buildings are not threatened by pollution other than engine exhaust.",
+        "C": "Tour buses typically spend less than one-quarter of the time they are in Palitito transporting passengers from one site to another.",
+        "D": "More tourists come to Palitito by tour bus than by any other single means of transportation.",
+        "E": "Some of the tour buses that are unable to find parking drive around Palitito while their passengers are visiting a site."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 33,
+      "question": "During the 1980s and 1990s, the annual number of people who visited the Sordellian Mountains increased continually [...] Which of the following, if true in the Sordellian Mountains during the 1980s and 1990s, most helps to explain the decrease?",
+      "options": {
+        "A": "Avalanches were most likely to happen when a large new snowfall covered an older layer of snow.",
+        "B": "Avalanches destroyed at least some buildings in the Sordellian Mountains in every year.",
+        "C": "People planning new ski slopes and other resort facilities used increasingly accurate information about which locations are likely to be in the path of avalanches.",
+        "D": "The average length of stay for people visiting the Sordellian Mountains increased slightly.",
+        "E": "Construction of new ski resorts often led to the clearing of wooded areas that had helped to prevent avalanches."
+      },
+      "correct": "C"
+    },
+    {
+      "id": 34,
+      "question": "A year ago, Dietz Foods launched a yearlong advertising campaign for its canned tuna. [...] Clearly, therefore, the campaign did nothing to further Dietz’s economic interests. Which of the following, if true, most seriously weakens the argument?",
+      "options": {
+        "A": "Sales of canned tuna account for a relatively small percentage of Dietz Foods’ profits.",
+        "B": "Most of the people who bought Dietz’s canned tuna for the first time as a result of the campaign were already loyal customers of other Dietz products.",
+        "C": "A less expensive advertising campaign would have brought in significantly fewer new customers for Dietz’s canned tuna than did the campaign Dietz Foods launched last year.",
+        "D": "Dietz made money on sales of canned tuna last year.",
+        "E": "In each of the past five years, there was a steep, industry-wide decline in sales of canned tuna."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 35,
+      "question": "Unlike the buildings in Mesopotamian cities, which were arranged haphazardly, the same basic plan was followed for all cities of the Indus Valley: with houses laid out on a north-south, east-west grid, and houses and walls were built of standard-size bricks.",
+      "options": {
+        "A": "the buildings in Mesopotamian cities, which were arranged haphazardly, the same basic plan was followed for all cities of the Indus Valley: with houses",
+        "B": "the buildings in Mesopotamian cities, which were haphazard in arrangement, the same basic plan was used in all cities of the Indus Valley: houses were",
+        "C": "the arrangement of buildings in Mesopotamian cities, which were haphazard, the cities of the Indus Valley all followed the same basic plan: houses",
+        "D": "Mesopotamian cities, in which buildings were arranged haphazardly, the cities of the Indus Valley all followed the same basic plan: houses were",
+        "E": "Mesopotamian cities, which had buildings that were arranged haphazardly, the same basic plan was used for all cities in the Indus Valley: houses that were"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 36,
+      "question": "New data from United States Forest Service ecologists show that for every dollar spent on controlled small scale burning, forest thinning, and the training of fire management personnel, it saves seven dollars that would not be spent on having to extinguish big fires.",
+      "options": {
+        "A": "that for every dollar spent on controlled small scale burning, forest thinning, and the training of fire-management personnel, it saves seven dollars that would not be spent on having to extinguish",
+        "B": "that for every dollar spent on controlled small scale burning, forest thinning, and the training of fire-management personnel, seven dollars are saved that would have been spent on extinguishing",
+        "C": "that for every dollar spent on controlled small scale burning, forest thinning, and the training of fire-management personnel saves seven dollars on not having to extinguish",
+        "D": "for every dollar spent on controlled small-scale burning, forest thinning, and the training of fire management personnel, that it saves seven dollars on not having to extinguish",
+        "E": "for every dollar spent on controlled small-scale burning, forest thinning, and the training of fire management personnel, that seven dollars are saved that would not have been spent on extinguishing"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 37,
+      "question": "Like the grassy fields and old pastures that the upland sandpiper needs for feeding and nesting when it returns in May after wintering in the Argentine Pampas, the sandpipers vanishing in the northeastern United States is a result of residential and industrial development and of changes in farming practices.",
+      "options": {
+        "A": "the sandpipers vanishing in the northeastern United States is a result of residential and industrial development and of changes in",
+        "B": "the bird itself is vanishing in the northeastern United States as a result of residential and industrial development and of changes in",
+        "C": "that the birds themselves are vanishing in the northeastern United States is due to residential and industrial development and changes to",
+        "D": "in the northeastern United States, sandpipers’ vanishing due to residential and industrial development and to changes in",
+        "E": "in the northeastern United States, the sandpipers’ vanishing, a result of residential and industrial development and changing"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 38,
+      "question": "The results of two recent unrelated studies support the idea that dolphins may share certain cognitive abilities with humans and great apes; the studies indicate dolphins as capable of recognizing themselves in mirrors—an ability that is often considered a sign of self-awareness—and to grasp spontaneously the mood or intention of humans.",
+      "options": {
+        "A": "dolphins as capable of recognizing themselves in mirrors—an ability that is often considered a sign of self-awareness—and to grasp spontaneously",
+        "B": "dolphins’ ability to recognize themselves in mirrors—an ability that is often considered as a sign of self-awareness—and of spontaneously grasping",
+        "C": "dolphins to be capable of recognizing themselves in mirrors—an ability that is often considered a sign of self-awareness—and to grasp spontaneously",
+        "D": "that dolphins have the ability of recognizing themselves in mirrors—an ability that is often considered as a sign of self-awareness—and spontaneously grasping",
+        "E": "that dolphins are capable of recognizing themselves in mirrors—an ability that is often considered a sign of self-awareness—and of spontaneously grasping"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 39,
+      "question": "According to scholars, the earliest writing was probably not a direct rendering of speech, but was more likely to begin as a separate and distinct symbolic system of communication, and only later merged with spoken language.",
+      "options": {
+        "A": "was more likely to begin as",
+        "B": "more than likely began as",
+        "C": "more than likely beginning from",
+        "D": "it was more than likely begun from",
+        "E": "it was more likely that it began"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 40,
+      "question": "In 1995 Richard Stallman, a well-known critic of the patent system, testified in Patent Office hearings that, to test the system, a colleague of his had managed to win a patent for one of Kirchhoff’s laws, an observation about electric current first made in 1845 and now included in virtually every textbook of elementary physics.",
+      "options": {
+        "A": "laws, an observation about electric current first made in 1845 and",
+        "B": "laws, which was an observation about electric current first made in 1845 and it is",
+        "C": "laws, namely, it was an observation about electric current first made in 1845 and",
+        "D": "laws, an observation about electric current first made in 1845, it is",
+        "E": "laws that was an observation about electric current, first made in 1845, and is"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 41,
+      "question": "Excavators at the Indus Valley site of Harappa in eastern Pakistan say the discovery of inscribed shards dating to circa 2800–2600 B.C. indicate their development of a Harappan writing system, the use of inscribed seals impressed into clay for marking ownership, and the standardization of weights for trade or taxation occurred many decades, if not centuries, earlier than was previously believed.",
+      "options": {
+        "A": "indicate their development of a Harappan writing system, the use of",
+        "B": "indicate that the development of a Harappan writing system, using",
+        "C": "indicates that their development of a Harappan writing system, using",
+        "D": "indicates the development of a Harappan writing system, their use of",
+        "E": "indicates that the development of a Harappan writing system, the use of"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 42,
+      "question": "The Supreme Court has ruled that public universities can collect student activity fees even with students’ objections to particular activities, so long as the groups they give money to will be chosen without regard to their views.",
+      "options": {
+        "A": "with students’ objections to particular activities, so long as the groups they give money to will be",
+        "B": "if they have objections to particular activities and the groups that are given the money are",
+        "C": "if they object to particular activities, but the groups that the money is given to have to be",
+        "D": "from students who object to particular activities, so long as the groups given money are",
+        "E": "though students have an objection to particular activities, but the groups that are given the money be"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 43,
+      "question": "Despite the increasing number of women graduating from law school and passing bar examinations, the proportion of judges and partners at major law firms who are women have not risen to a comparable extent.",
+      "options": {
+        "A": "the proportion of judges and partners at major law firms who are women have not risen to a comparable extent",
+        "B": "the proportion of women judges and partners at major law firms have not risen comparably",
+        "C": "the proportion of judges and partners at major law firms who are women has not risen comparably",
+        "D": "yet the proportion of women judges and partners at major law firms has not risen to a comparable extent",
+        "E": "yet the proportion of judges and partners at major law firms who are women has not risen comparably"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 44,
+      "question": "Seldom more than 40 feet wide and 12 feet deep, but it ran 363 miles across the rugged wilderness of upstate New York, the Erie Canal connected the Hudson River at Albany to the Great Lakes at Buffalo, providing the port of New York City with a direct water link to the heartland of the North American continent.",
+      "options": {
+        "A": "Seldom more than 40 feet wide and 12 feet deep, but it ran 363 miles across the rugged wilderness of upstate New York, the Erie Canal connected",
+        "B": "Seldom more than 40 feet wide or 12 feet deep but running 363 miles across the rugged wilderness of upstate New York, the Erie Canal connected",
+        "C": "It was seldom more than 40 feet wide and 12 feet deep, and ran 363 miles across the rugged wilderness of upstate New York, but the Erie Canal, connecting",
+        "D": "The Erie Canal was seldom more than 40 feet wide or 12 feet deep and it ran 363 miles across the rugged wilderness of upstate New York, which connected",
+        "E": "The Erie Canal, seldom more than 40 feet wide and 12 feet deep, but running 363 miles across the rugged wilderness of upstate New York, connecting"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 45,
+      "question": "In 1923, the Supreme Court declared a minimum wage for women and children in the District of Columbia as unconstitutional, and ruling that it was a form of price fixing and, as such, an abridgment of the right of contract.",
+      "options": {
+        "A": "the Supreme Court declared a minimum wage for women and children in the District of Columbia as unconstitutional, and",
+        "B": "the Supreme Court declared as unconstitutional a minimum wage for women and children in the District of Columbia, and",
+        "C": "the Supreme Court declared unconstitutional a minimum wage for women and children in the District of Columbia,",
+        "D": "a minimum wage for women and children in the District of Columbia was declared unconstitutional by the Supreme Court,",
+        "E": "when the Supreme Court declared a minimum wage for women and children in the District of Columbia as unconstitutional,"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 46,
+      "question": "Researchers have found that individuals who have been blind from birth, and who thus have never seen anyone gesture, nevertheless make hand motions when speaking just as frequently and in virtually the same way as sighted people do, and that they will gesture even when conversing with another blind person.",
+      "options": {
+        "A": "who thus have never seen anyone gesture, nevertheless make hand motions when speaking just as frequently and in virtually the same way as sighted people do, and that they will gesture",
+        "B": "who thus never saw anyone gesturing, nevertheless make hand motions when speaking just as frequent and in virtually the same way as sighted people did, and that they will gesture",
+        "C": "who thus have never seen anyone gesture, nevertheless made hand motions when speaking just as frequently and in virtually the same way as sighted people do, as well as gesturing",
+        "D": "thus never having seen anyone gesture, nevertheless made hand motions when speaking just as frequent and in virtually the same way as sighted people did, as well as gesturing",
+        "E": "thus never having seen anyone gesture, nevertheless to make hand motions when speaking just as frequently and in virtually the same way as sighted people do, and to gesture"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 47,
+      "question": "Like embryonic germ cells, which are cells that develop early in the formation of the fetus and that later generate eggs or sperm, embryonic stem cells have the ability of developing themselves into different kinds of body tissue.",
+      "options": {
+        "A": "embryonic stem cells have the ability of developing themselves into different kinds of body tissue",
+        "B": "embryonic stem cells have the ability to develop into different kinds of body tissue",
+        "C": "in embryonic stem cells there is the ability to develop into different kinds of body tissue",
+        "D": "the ability to develop themselves into different kinds of body tissue characterizes embryonic stem cells",
+        "E": "the ability of developing into different kinds of body tissue characterizes embryonic stem cells"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 48,
+      "question": "Critics contend that the new missile is a weapon whose importance is largely symbolic, more a tool for manipulating people’s perceptions than to fulfill a real military need.",
+      "options": {
+        "A": "for manipulating people’s perceptions than to fulfill",
+        "B": "for manipulating people’s perceptions than for fulfilling",
+        "C": "to manipulate people’s perceptions rather than that it fulfills",
+        "D": "to manipulate people’s perceptions rather than fulfilling",
+        "E": "to manipulate people’s perceptions than for fulfilling"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 49,
+      "question": "As an actress and, more importantly, as a teacher of acting, Stella Adler was one of the most influential artists in the American theater, who trained several generations of actors including Marlon Brando and Robert De Niro.",
+      "options": {
+        "A": "Stella Adler was one of the most influential artists in the American theater, who trained several generations of actors including",
+        "B": "Stella Adler, one of the most influential artists in the American theater, trained several generations of actors who include",
+        "C": "Stella Adler was one of the most influential artists in the American theater, training several generations of actors whose ranks included",
+        "D": "one of the most influential artists in the American theater was Stella Adler, who trained several generations of actors including",
+        "E": "one of the most influential artists in the American theater, Stella Adler, trained several generations of actors whose ranks included"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 50,
+      "question": "By developing the Secure Digital Music Initiative, the recording industry associations of North America, Japan, and Europe hope to create a standardized way of distributing songs and full-length recordings on the Internet that will protect copyright holders and foil the many audio pirates who copy and distribute digital music illegally.",
+      "options": {
+        "A": "of distributing songs and full-length recordings on the Internet that will protect copyright holders and foil the many audio pirates who copy and distribute",
+        "B": "of distributing songs and full-length recordings on the Internet and to protect copyright holders and foiling the many audio pirates copying and distributing",
+        "C": "for distributing songs and full-length recordings on the Internet while it protects copyright holders and foils the many audio pirates who copy and distribute",
+        "D": "to distribute songs and full-length recordings on the Internet while they will protect copyright holders and foil the many audio pirates copying and distributing",
+        "E": "to distribute songs and full-length recordings on the Internet and it will protect copyright holders and foiling the many audio pirates who copy and distribute"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 51,
+      "question": "Whereas a ramjet generally cannot achieve high speeds without the initial assistance of a rocket, high speeds can be attained by scramjets, or supersonic combustion ramjets, in that they reduce airflow compression at the entrance of the engine and letting air pass through at supersonic speeds.",
+      "options": {
+        "A": "high speeds can be attained by scramjets, or supersonic combustion ramjets, in that they reduce",
+        "B": "that high speeds can be attained by scramjets, or supersonic combustion ramjets, is a result of their reducing",
+        "C": "the ability of scramjets, or supersonic combustion ramjets, to achieve high speeds is because they reduce",
+        "D": "scramjets, or supersonic combustion ramjets, have the ability of attaining high speeds when reducing",
+        "E": "scramjets, or supersonic combustion ramjets, can attain high speeds by reducing"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 52,
+      "question": "It will not be possible to implicate melting sea ice in the coastal flooding that many global warming models have projected: just like a glass of water that will not overflow due to melting ice cubes, so melting sea ice does not increase oceanic volume.",
+      "options": {
+        "A": "like a glass of water that will not overflow due to melting ice cubes,",
+        "B": "like melting ice cubes that do not cause a glass of water to overflow,",
+        "C": "a glass of water will not overflow because of melting ice cubes,",
+        "D": "as melting ice cubes that do not cause a glass of water to overflow,",
+        "E": "as melting ice cubes do not cause a glass of water to overflow,"
+      },
+      "correct": "E"
+    }
+  ]
+}

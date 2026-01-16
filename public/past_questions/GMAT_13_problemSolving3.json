@@ -1,0 +1,487 @@
+{
+  "subject": "GMAT Problem Solving Practice Questions",
+  "source": "The Official Guide for GMAT Review 13th Edition - Section 5.3",
+  "batch": "Questions 71 to 110",
+  "quiz": [
+    {
+      "id": 71,
+      "question": "Yesterday’s closing prices of 2,420 different stocks listed on a certain stock exchange were all different from today’s closing prices. The number of stocks that closed at a higher price today than yesterday was 20 percent greater than the number that closed at a lower price. How many of the stocks closed at a higher price today than yesterday?",
+      "options": {
+        "A": "484",
+        "B": "726",
+        "C": "1,100",
+        "D": "1,320",
+        "E": "1,694"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 72,
+      "question": "If (x + y)/x = 5 and (x + y)/y = 3, then x/y =",
+      "options": {
+        "A": "1/2",
+        "B": "2/3",
+        "C": "3/2",
+        "D": "2",
+        "E": "3"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 73,
+      "question": "If 0 < x < 1 and 0 < y < 1, the value of x must be between which of the following pairs of numbers?",
+      "options": {
+        "A": "–3 and 10",
+        "B": "–3 and 4",
+        "C": "2 and 7",
+        "D": "3 and 4",
+        "E": "3 and 10"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 74,
+      "question": "A gym class can be divided into 8 teams with an equal number of players on each team or into 12 teams with an equal number of players on each team. What is the lowest possible number of students in the class?",
+      "options": {
+        "A": "20",
+        "B": "24",
+        "C": "36",
+        "D": "48",
+        "E": "96"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 75,
+      "question": "In the figure above, triangle ABC is equilateral, and point P is equidistant from vertices A, B, and C. If triangle ABC is rotated clockwise about point P, what is the minimum number of degrees the triangle must be rotated so that point B will be in the position where point A is now?",
+      "options": {
+        "A": "60",
+        "B": "120",
+        "C": "180",
+        "D": "240",
+        "E": "270"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 76,
+      "question": "At least 2/3 of the 40 members of a committee must vote in favor of a resolution for it to pass. What is the greatest number of members who could vote against the resolution and still have it pass?",
+      "options": {
+        "A": "19",
+        "B": "17",
+        "C": "16",
+        "D": "14",
+        "E": "13"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 77,
+      "question": "If n = 20! + 17, then n is divisible by which of the following? I. 15 II. 17 III. 19",
+      "options": {
+        "A": "None",
+        "B": "I only",
+        "C": "II only",
+        "D": "I and II",
+        "E": "II and III"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 78,
+      "question": "In the rectangular solid above, the three sides shown have areas 12, 15, and 20, respectively. What is the volume of the solid?",
+      "options": {
+        "A": "60",
+        "B": "120",
+        "C": "450",
+        "D": "1,800",
+        "E": "3,600"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 79,
+      "question": "After driving to a riverfront parking lot, Bob plans to run south along the river, turn around, and return to the parking lot, running north along the same path. After running 3.25 miles south, he decides to run for only 50 minutes more. If Bob runs at a constant rate of 8 minutes per mile, how many miles farther south can he run and still be able to return to the parking lot in 50 minutes?",
+      "options": {
+        "A": "1.5",
+        "B": "2.25",
+        "C": "3.0",
+        "D": "3.25",
+        "E": "4.75"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 80,
+      "question": "M is the sum of the reciprocals of the consecutive integers from 201 to 300, inclusive. Which of the following is true?",
+      "options": {
+        "A": "1/2 < M < 1",
+        "B": "0 < M < 1/2",
+        "C": "1 < M < 3/2",
+        "D": "3/2 < M < 2",
+        "E": "M > 2"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 81,
+      "question": "Working simultaneously at their respective constant rates, Machines A and B produce 800 nails in x hours. Working alone at its constant rate, Machine A produces 800 nails in y hours. In terms of x and y, how many hours does it take Machine B, working alone at its constant rate, to produce 800 nails?",
+      "options": {
+        "A": "x + y",
+        "B": "xy/(x + y)",
+        "C": "xy/(y – x)",
+        "D": "xy/(x – y)",
+        "E": "xy/(y – x)"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 82,
+      "question": "In the Johnsons’ monthly budget, the dollar amounts allocated to household expenses, food, and miscellaneous items are in the ratio 5:2:1, respectively. If the total amount allocated to these three categories is $1,800, what is the amount allocated to food?",
+      "options": {
+        "A": "$900",
+        "B": "$720",
+        "C": "$675",
+        "D": "$450",
+        "E": "$225"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 83,
+      "question": "There are 4 more women than men on Centerville’s board of education. If there are 10 members on the board, how many are women?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "7",
+        "E": "8"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 84,
+      "question": "Leona bought a 1-year, $10,000 certificate of deposit that paid interest at an annual rate of 8 percent compounded semiannually. What was the total amount of interest paid on this certificate at maturity?",
+      "options": {
+        "A": "$10,464",
+        "B": "$864",
+        "C": "$816",
+        "D": "$800",
+        "E": "$480"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 85,
+      "question": "What is the value of (0.00000023) × 100,000?",
+      "options": {
+        "A": "840.0",
+        "B": "84.0",
+        "C": "8.4",
+        "D": "0.84",
+        "E": "0.084"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 86,
+      "question": "Machine A produces bolts at a uniform rate of 120 every 40 seconds, and Machine B produces bolts at a uniform rate of 100 every 20 seconds. If the two machines run simultaneously, how many seconds will it take for them to produce a total of 200 bolts?",
+      "options": {
+        "A": "22",
+        "B": "25",
+        "C": "28",
+        "D": "32",
+        "E": "56"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 87,
+      "question": "If n is an integer greater than 6, which of the following must be divisible by 3?",
+      "options": {
+        "A": "n(n + 1)(n – 1)",
+        "B": "n(n + 2)(n – 2)",
+        "C": "n(n + 3)(n – 3)",
+        "D": "n(n + 4)(n – 4)",
+        "E": "n(n + 5)(n – 5)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 88,
+      "question": "The total cost for Company X to produce a batch of tools is $10,000 plus $3 per tool. Each tool sells for $8. The gross profit earned from producing and selling these tools is the total income from sales minus the total production cost. If a batch of 20,000 tools is produced and sold, then Company X’s gross profit per tool is",
+      "options": {
+        "A": "$3.00",
+        "B": "$3.75",
+        "C": "$4.50",
+        "D": "$5.00",
+        "E": "$5.50"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 89,
+      "question": "A dealer originally bought 100 identical batteries at a total cost of q dollars. If each battery was sold at 50 percent above the original cost per battery, then, in terms of q, for how many dollars was each battery sold?",
+      "options": {
+        "A": "1.5q",
+        "B": "q/1.5",
+        "C": "150q",
+        "D": "q + 0.5q",
+        "E": "q/100"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 90,
+      "question": "In an increasing sequence of 10 consecutive integers, the sum of the first 5 integers is 560. What is the sum of the last 5 integers in the sequence?",
+      "options": {
+        "A": "585",
+        "B": "580",
+        "C": "575",
+        "D": "570",
+        "E": "565"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 91,
+      "question": "If Q is an odd number and the median of Q consecutive integers is 120, what is the largest of these integers?",
+      "options": {
+        "A": "120 + (Q – 1)/2",
+        "B": "120 + Q/2",
+        "C": "120 + (Q + 1)/2",
+        "D": "120 + Q – 1",
+        "E": "120 + Q"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 92,
+      "question": "A ladder of a fire truck is elevated to an angle of 60° and extended to a length of 70 feet. If the base of the ladder is 7 feet above the ground, how many feet above the ground does the ladder reach?",
+      "options": {
+        "A": "35",
+        "B": "42",
+        "C": "60.6",
+        "D": "63.6",
+        "E": "70"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 93,
+      "question": "If Jake loses 8 pounds, he will weigh twice as much as his sister. Together they now weigh 278 pounds. What is Jake’s present weight, in pounds?",
+      "options": {
+        "A": "131",
+        "B": "135",
+        "C": "139",
+        "D": "147",
+        "E": "188"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 94,
+      "question": "A store reported total sales of $385 million for February of this year. If the total sales for the same month last year was $320 million, approximately what was the percent increase in sales?",
+      "options": {
+        "A": "2%",
+        "B": "17%",
+        "C": "20%",
+        "D": "65%",
+        "E": "83%"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 95,
+      "question": "When positive integer x is divided by positive integer y, the remainder is 9. If x/y = 4.125, what is the value of y?",
+      "options": {
+        "A": "96",
+        "B": "75",
+        "C": "48",
+        "D": "25",
+        "E": "12"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 96,
+      "question": "In a certain city, 60 percent of the registered voters are Democrats and the rest are Republicans. In a mayoral race, if 75 percent of the registered voters who are Democrats and 20 percent of the registered voters who are Republicans are expected to vote for Candidate A, what percent of the registered voters are expected to vote for Candidate A?",
+      "options": {
+        "A": "50%",
+        "B": "53%",
+        "C": "54%",
+        "D": "55%",
+        "E": "57%"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 97,
+      "question": "What is the value of (0.00000023) × 100,000?",
+      "options": {
+        "A": "0.000023",
+        "B": "0.00023",
+        "C": "0.0023",
+        "D": "0.023",
+        "E": "0.23"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 98,
+      "question": "Water consists of hydrogen and oxygen, and the approximate ratio, by mass, of hydrogen to oxygen is 2:16. Approximately how many grams of oxygen are there in 144 grams of water?",
+      "options": {
+        "A": "16",
+        "B": "72",
+        "C": "112",
+        "D": "128",
+        "E": "142"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 99,
+      "question": "If x = –2 and y = 3, then (x – y)(y – x) =",
+      "options": {
+        "A": "–9",
+        "B": "–1",
+        "C": "0",
+        "D": "1",
+        "E": "9"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 100,
+      "question": "On a scale that measures the intensity of a certain phenomenon, a reading of n corresponds to an intensity that is 10 times the intensity corresponding to a reading of n – 1. On that scale, the intensity corresponding to a reading of 8 is how many times as great as the intensity corresponding to a reading of 3?",
+      "options": {
+        "A": "5",
+        "B": "50",
+        "C": "10^5",
+        "D": "5 × 10",
+        "E": "10^5"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 101,
+      "question": "For the positive numbers, n, n + 1/2, n + 1, n + 3/2, and n + 2, the mean is how much greater than the median?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "1/2",
+        "D": "3/2",
+        "E": "2"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 102,
+      "question": "If x^2 + 4x + 4 = 0, then x =",
+      "options": {
+        "A": "–3.7",
+        "B": "0.1",
+        "C": "0.3",
+        "D": "0.5",
+        "E": "–2"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 103,
+      "question": "The water from one outlet, flowing at a constant rate, can fill a swimming pool in 9 hours. The water from a second outlet, flowing at a constant rate, can fill the same pool in 5 hours. If both outlets are used at the same time, approximately what is the number of hours required to fill the pool?",
+      "options": {
+        "A": "0.22",
+        "B": "0.31",
+        "C": "2.50",
+        "D": "3.21",
+        "E": "4.56"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 104,
+      "question": "If a square mirror has a 20-inch diagonal, what is the approximate perimeter of the mirror, in inches?",
+      "options": {
+        "A": "40",
+        "B": "60",
+        "C": "80",
+        "D": "100",
+        "E": "120"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 105,
+      "question": "The present ratio of students to teachers at a certain school is 30 to 1. If the student enrollment were to increase by 50 students and the number of teachers were to increase by 5, the ratio of students to teachers would then be 25 to 1. What is the present number of teachers?",
+      "options": {
+        "A": "5",
+        "B": "8",
+        "C": "10",
+        "D": "12",
+        "E": "15"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 106,
+      "question": "What is the smallest integer n for which 2^n > 1,000,000?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9",
+        "E": "10"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 107,
+      "question": "Sixty percent of the members of a study group are women, and 45 percent of those women are lawyers. If one member of the study group is to be selected at random, what is the probability that the member selected is a woman lawyer?",
+      "options": {
+        "A": "0.10",
+        "B": "0.15",
+        "C": "0.27",
+        "D": "0.33",
+        "E": "0.45"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 108,
+      "question": "Each year for 4 years, a farmer increased the number of trees in a certain orchard by 1/4 of the number of trees in the orchard the preceding year. If all of the trees thrived and there were 6,250 trees in the orchard at the end of the 4-year period, how many trees were in the orchard at the beginning of the 4-year period?",
+      "options": {
+        "A": "1,250",
+        "B": "1,563",
+        "C": "2,250",
+        "D": "2,560",
+        "E": "2,752"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 109,
+      "question": "According to the chart shown, which of the following is closest to the median annual number of shipments of manufactured homes in the United States for the years from 1990 to 2000, inclusive?",
+      "options": {
+        "A": "250,000",
+        "B": "280,000",
+        "C": "310,000",
+        "D": "325,000",
+        "E": "340,000"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 110,
+      "question": "For the positive integers a, b, and k, a^k || b means that a^k is a divisor of b, but a^(k + 1) is not a divisor of b. If k is a positive integer and 2^k || 32, then k is equal to",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "8",
+        "E": "18"
+      },
+      "correct": "B"
+    }
+  ]
+}

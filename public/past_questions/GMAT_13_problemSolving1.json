@@ -1,0 +1,428 @@
+{
+  "subject": "GMAT Problem Solving Practice Questions",
+  "source": "The Official Guide for GMAT Review 13th Edition - Section 5.3",
+  "totalQuestions": 230,
+  "quiz": [
+    {
+      "id": 1,
+      "question": "A project scheduled to be carried out over a single fiscal year has a budget of $12,600, divided into 12 equal monthly allocations. At the end of the fourth month of that fiscal year, the total amount actually spent on the project was $4,580. By how much was the project over its budget?",
+      "options": {
+        "A": "$380",
+        "B": "$540",
+        "C": "$1,050",
+        "D": "$1,380",
+        "E": "$1,430"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "For which of the following values of n is 10^n NOT an integer?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 3,
+      "question": "Rectangular Floors X and Y have equal area. If Floor X is 12 feet by 18 feet and Floor Y is 9 feet wide, what is the length of Floor Y, in feet?",
+      "options": {
+        "A": "12",
+        "B": "18",
+        "C": "24",
+        "D": "21",
+        "E": "24"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 4,
+      "question": "A case contains c cartons. Each carton contains b boxes, and each box contains 100 paper clips. How many paper clips are contained in 2 cases?",
+      "options": {
+        "A": "100bc",
+        "B": "200bc",
+        "C": "200bc",
+        "D": "100b/c",
+        "E": "200b/c"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 5,
+      "question": "The sum of prime numbers that are greater than 60 but less than 70 is",
+      "options": {
+        "A": "67",
+        "B": "128",
+        "C": "191",
+        "D": "197",
+        "E": "260"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 6,
+      "question": "A rainstorm increased the amount of water stored in State J reservoirs from 124 billion gallons to 138 billion gallons. If the storm increased the amount of water in the reservoirs to 82 percent of total capacity, approximately how many billion gallons of water were the reservoirs short of total capacity prior to the storm?",
+      "options": {
+        "A": "9",
+        "B": "14",
+        "C": "25",
+        "D": "30",
+        "E": "44"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 7,
+      "question": "On the graph above, when x = 0, y = 2; and when x = 2, y = 0. The graph is symmetric with respect to the vertical line at x = 1. According to the graph, when x = 3, y =",
+      "options": {
+        "A": "-1",
+        "B": "-0.5",
+        "C": "0",
+        "D": "0.5",
+        "E": "1"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 8,
+      "question": "When 20 percent of 5,000 is subtracted from 40 percent of 5,000, the difference is",
+      "options": {
+        "A": "0",
+        "B": "50",
+        "C": "450",
+        "D": "495",
+        "E": "500"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is the value of 0.000004 × 0.005?",
+      "options": {
+        "A": "0.00002",
+        "B": "0.00002",
+        "C": "0.000002",
+        "D": "0.00000002",
+        "E": "0.000000002"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "Raffle tickets numbered consecutively from 101 through 350 are placed in a box. What is the probability that a ticket selected at random will have a number with a hundreds digit of 2?",
+      "options": {
+        "A": "2/5",
+        "B": "2/7",
+        "C": "3/5",
+        "D": "3/7",
+        "E": "4/7"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 11,
+      "question": "When Leo imported a certain item, he paid a 7 percent import tax on the portion of the total value of the item in excess of $1,000. If the amount of the import tax that Leo paid was $87.50, what was the total value of the item?",
+      "options": {
+        "A": "$1,600",
+        "B": "$1,850",
+        "C": "$2,250",
+        "D": "$2,400",
+        "E": "$2,750"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "The numbers of cars sold at a certain dealership on six of the last seven business days were 4, 7, 2, 8, 3, and 6, respectively. If the number of cars sold on the seventh business day was either 2, 4, or 5, for which of the three values does the average (arithmetic mean) number of cars sold per business day for the seven business days equal the median number of cars sold per day for the seven days? I. 2 II. 4 III. 5",
+      "options": {
+        "A": "II only",
+        "B": "III only",
+        "C": "I and II only",
+        "D": "II and III only",
+        "E": "I, II, and III"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 13,
+      "question": "A rectangular garden is to be twice as long as it is wide. If 360 yards of fencing, including the gate, will completely enclose the garden, what will be the length of the garden, in yards?",
+      "options": {
+        "A": "120",
+        "B": "140",
+        "C": "160",
+        "D": "180",
+        "E": "200"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 14,
+      "question": "If x = 2y and x + 2y = 0, which of the following could be a value of y?",
+      "options": {
+        "A": "-11",
+        "B": "-5",
+        "C": "0",
+        "D": "11",
+        "E": "22"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 15,
+      "question": "At a supermarket, John spent 1/2 of his money on fresh fruits and vegetables, 1/3 on meat products, and 1/10 on bakery products. If he spent the remaining $6 on candy, how much did John spend at the supermarket?",
+      "options": {
+        "A": "$60",
+        "B": "$80",
+        "C": "$90",
+        "D": "$120",
+        "E": "$180"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 16,
+      "question": "On Monday, a person mailed 8 packages weighing an average (arithmetic mean) of 12.5 pounds, and on Tuesday, 4 packages weighing an average of 15.8 pounds. What was the average weight, in pounds, of all the packages the person mailed on both days?",
+      "options": {
+        "A": "13.6",
+        "B": "14.1",
+        "C": "14.5",
+        "D": "15.0",
+        "E": "15.9"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 17,
+      "question": "What is the value of 0.00000023 × 100,000?",
+      "options": {
+        "A": "0.0023",
+        "B": "0.023",
+        "C": "0.23",
+        "D": "2.3",
+        "E": "23"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 18,
+      "question": "A carpenter constructed a rectangular sandbox with a capacity of 10 cubic feet. If the carpenter were to make a similar sandbox twice as long, twice as wide, and twice as high as the first sandbox, what would be the capacity, in cubic feet, of the second sandbox?",
+      "options": {
+        "A": "20",
+        "B": "40",
+        "C": "60",
+        "D": "80",
+        "E": "100"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 19,
+      "question": "A bakery opened yesterday with its daily supply of 40 dozen rolls. Half of the rolls were sold by noon, and 80 percent of the remaining rolls were sold between noon and closing time. How many dozen rolls had not been sold when the bakery closed yesterday?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 20,
+      "question": "What is the 25th digit to the right of the decimal point in the decimal form of 1/17?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6",
+        "E": "7"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 21,
+      "question": "150 is what percent of 30?",
+      "options": {
+        "A": "5%",
+        "B": "20%",
+        "C": "50%",
+        "D": "200%",
+        "E": "500%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 22,
+      "question": "The ratio 2 to 3/5 is equal to the ratio",
+      "options": {
+        "A": "6 to 1",
+        "B": "5 to 1",
+        "C": "3 to 2",
+        "D": "2 to 3",
+        "E": "1 to 6"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 23,
+      "question": "Running at the same constant rate, 6 identical machines can produce a total of 270 bottles per minute. At this rate, how many bottles could 10 such machines produce in 4 minutes?",
+      "options": {
+        "A": "648",
+        "B": "1,800",
+        "C": "2,700",
+        "D": "10,800",
+        "E": "64,800"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 24,
+      "question": "Of the five coordinates associated with points A, B, C, D, and E on the number line above, which has the greatest absolute value?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 25,
+      "question": "Of the 50 researchers in a workgroup, 40 percent will be assigned to Team A and the remaining 60 percent to Team B. However, 70 percent of the researchers prefer Team A and 30 percent prefer Team B. What is the lowest possible number of researchers who will NOT be assigned to the team they prefer?",
+      "options": {
+        "A": "15",
+        "B": "17",
+        "C": "20",
+        "D": "25",
+        "E": "30"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 26,
+      "question": "If n is a prime number greater than 3, what is the remainder when n² is divided by 12?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3",
+        "E": "5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 27,
+      "question": "What is the value of (0.5)^0?",
+      "options": {
+        "A": "0",
+        "B": "0.25",
+        "C": "0.5",
+        "D": "1",
+        "E": "2"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 28,
+      "question": "In the figure above, the coordinates of point V are",
+      "options": {
+        "A": "(-7,5)",
+        "B": "(-5,7)",
+        "C": "(5,7)",
+        "D": "(7,5)",
+        "E": "(7,-5)"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 29,
+      "question": "A rope 40 feet long is cut into two pieces. If one piece is 18 feet longer than the other, what is the length, in feet, of the shorter piece?",
+      "options": {
+        "A": "9",
+        "B": "11",
+        "C": "18",
+        "D": "22",
+        "E": "29"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 30,
+      "question": "A student’s average (arithmetic mean) test score on 4 tests is 78. What must be the student’s score on a 5th test for the student’s average score on the 5 tests to be 80?",
+      "options": {
+        "A": "80",
+        "B": "82",
+        "C": "84",
+        "D": "86",
+        "E": "88"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 31,
+      "question": "Lucy invested $10,000 in a new mutual fund account exactly three years ago. The value of the account increased by 10 percent during the first year, increased by 5 percent during the second year, and decreased by 10 percent during the third year. What is the value of the account today?",
+      "options": {
+        "A": "$10,350",
+        "B": "$10,395",
+        "C": "$10,500",
+        "D": "$11,500",
+        "E": "$12,705"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 32,
+      "question": "If x/y is positive, which of the following must be true?",
+      "options": {
+        "A": "x and y are positive",
+        "B": "x and y are negative",
+        "C": "x is positive and y is negative",
+        "D": "x is negative and y is positive",
+        "E": "Either x and y are both positive or both negative"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 33,
+      "question": "The dots on the graph above indicate the weights and fuel efficiency ratings for 20 cars. How many of the cars weigh more than 2,500 pounds and also get more than 22 miles per gallon?",
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "8",
+        "D": "10",
+        "E": "11"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 34,
+      "question": "How many minutes does it take John to type y words if he types at the rate of x words per minute?",
+      "options": {
+        "A": "x/y",
+        "B": "y/x",
+        "C": "xy",
+        "D": "60x/y",
+        "E": "60y/x"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 35,
+      "question": "What is the value of 3^3 × 3^2?",
+      "options": {
+        "A": "3^5",
+        "B": "9^5",
+        "C": "27^5",
+        "D": "3^10",
+        "E": "9^10"
+      },
+      "correct": "A"
+    }
+    
+  ]
+}

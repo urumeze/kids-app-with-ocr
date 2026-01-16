@@ -1,0 +1,488 @@
+{
+  "subject": "GMAT Problem Solving Practice Questions",
+  "source": "The Official Guide for GMAT Review 13th Edition - Section 5.3",
+  "batch": "Questions 191 to 230 (Final Batch - Complete Set)",
+  "totalInBatch": 40,
+  "quiz": [
+    {
+      "id": 191,
+      "question": "If x² + y² = 29 and x + y = 3, then x² + y² =",
+      "options": {
+        "A": "–1",
+        "B": "1/2",
+        "C": "1",
+        "D": "2",
+        "E": "3"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 192,
+      "question": "Which of the following describes all values of x for which x² > x?",
+      "options": {
+        "A": "x < 0 or x > 1",
+        "B": "0 < x < 1",
+        "C": "x < 1",
+        "D": "x > 1",
+        "E": "x < 0 or x > 1"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 193,
+      "question": "The probability is 1/2 that a certain coin will turn up heads on any given toss. If the coin is to be tossed three times, what is the probability that on at least one of the tosses the coin will turn up tails?",
+      "options": {
+        "A": "1/8",
+        "B": "1/4",
+        "C": "3/8",
+        "D": "5/8",
+        "E": "7/8"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 194,
+      "question": "Of the final grades received by the students in a certain math course, 1/5 are A’s, 1/4 are B’s, 1/2 are C’s, and the remaining 10 grades are D’s. What is the number of students in the course?",
+      "options": {
+        "A": "80",
+        "B": "110",
+        "C": "160",
+        "D": "200",
+        "E": "400"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 195,
+      "question": "As x increases from 165 to 166, which of the following must increase? I. x² II. 1/x III. √x",
+      "options": {
+        "A": "I only",
+        "B": "III only",
+        "C": "I and II",
+        "D": "I and III",
+        "E": "II and III"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 196,
+      "question": "From the consecutive integers –10 to 10, inclusive, 20 integers are randomly chosen with repetitions allowed. What is the least possible value of the product of the 20 integers?",
+      "options": {
+        "A": "(–10)^20",
+        "B": "(–10)^10",
+        "C": "0",
+        "D": "–(10)^19",
+        "E": "–(10)^20"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 197,
+      "question": "A rectangular box is 10 inches wide, 10 inches long, and 5 inches high. What is the greatest possible (straight-line) distance, in inches, between any two points on the box?",
+      "options": {
+        "A": "15",
+        "B": "20",
+        "C": "25",
+        "D": "√(225)",
+        "E": "√(325)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 198,
+      "question": "Last Sunday a certain store sold copies of Newspaper A for $1.00 each and copies of Newspaper B for $1.25 each, and the store sold no other newspapers that day. If r percent of the store’s revenue from newspaper sales was from Newspaper A and if p percent of the newspapers that the store sold were copies of Newspaper A, which of the following expresses r in terms of p?",
+      "options": {
+        "A": "100p / (100 + 0.25p)",
+        "B": "100p / (100 + 0.25p)",
+        "C": "100p / (125 + 0.25p)",
+        "D": "100p / (125 + p)",
+        "E": "100p / (125 + 0.25p)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 199,
+      "question": "What is the value of 0.00000023 × 100,000?",
+      "options": {
+        "A": "10⁻⁸",
+        "B": "3(10⁻⁸)",
+        "C": "3(10⁻⁴)",
+        "D": "2(10⁻⁴)",
+        "E": "10⁻⁴"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 200,
+      "question": "The ratio, by volume, of soap to alcohol to water in a certain solution is 2:50:100. The solution will be altered so that the ratio of soap to alcohol is doubled while the ratio of soap to water is halved. If the altered solution will contain 100 cubic centimeters of alcohol, how many cubic centimeters of water will it contain?",
+      "options": {
+        "A": "50",
+        "B": "200",
+        "C": "400",
+        "D": "625",
+        "E": "800"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 201,
+      "question": "If 75 percent of a class answered the first question on a certain test correctly, 55 percent answered the second question on the test correctly, and 20 percent answered neither of the questions correctly, what percent answered both correctly?",
+      "options": {
+        "A": "10%",
+        "B": "20%",
+        "C": "30%",
+        "D": "50%",
+        "E": "65%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 202,
+      "question": "In the rectangular coordinate system above, the line y = x is the perpendicular bisector of segment AB (not shown), and the x-axis is the perpendicular bisector of segment BC (not shown). If the coordinates of point A are (2,3), what are the coordinates of point C?",
+      "options": {
+        "A": "(–3,–2)",
+        "B": "(–3,2)",
+        "C": "(2,–3)",
+        "D": "(3,–2)",
+        "E": "(2,3)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 203,
+      "question": "A store currently charges the same price for each towel that it sells. If the current price of each towel were to be increased by $1, 10 fewer of the towels could be bought for $120, excluding sales tax. What is the current price of each towel?",
+      "options": {
+        "A": "$1",
+        "B": "$2",
+        "C": "$3",
+        "D": "$4",
+        "E": "$12"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 204,
+      "question": "If n is a positive integer and 2^n || 32, how many different positive even divisors does n have, including n?",
+      "options": {
+        "A": "Two",
+        "B": "Three",
+        "C": "Four",
+        "D": "Six",
+        "E": "Eight"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 205,
+      "question": "John and Mary were each paid x dollars in advance to do a certain job together. John worked on the job for 10 hours and Mary worked 2 hours less than John. If Mary gave John y dollars of her payment so that they would have received the same hourly wage, what was the dollar amount, in terms of y, that John was paid in advance?",
+      "options": {
+        "A": "4y",
+        "B": "5y",
+        "C": "6y",
+        "D": "8y",
+        "E": "9y"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 206,
+      "question": "In the rectangular coordinate system above, if point R (not shown) lies on the positive y-axis and the area of triangle ORP is 12, what is the y-coordinate of point R?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12",
+        "E": "24"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 207,
+      "question": "Car A is 20 miles behind Car B, which is traveling in the same direction along the same route as Car A. Car A is traveling at a constant speed of 58 miles per hour and Car B is traveling at a constant speed of 50 miles per hour. How many hours will it take for Car A to overtake and drive 8 miles ahead of Car B?",
+      "options": {
+        "A": "1.5",
+        "B": "2.0",
+        "C": "2.5",
+        "D": "3.0",
+        "E": "3.5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 208,
+      "question": "For the past n days, the average (arithmetic mean) daily production at a company was 50 units. If today’s production of 90 units raises the average to 55 units per day, what is the value of n?",
+      "options": {
+        "A": "30",
+        "B": "18",
+        "C": "10",
+        "D": "9",
+        "E": "7"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 209,
+      "question": "If (x + 1)/(x – 1) = 3, and if x is replaced by 1/x everywhere in the expression above, then the resulting expression is equivalent to",
+      "options": {
+        "A": "3",
+        "B": "9",
+        "C": "1/3",
+        "D": "1/9",
+        "E": "0"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 210,
+      "question": "In the figure above, if x = 40 and y = 30, then z =",
+      "options": {
+        "A": "230",
+        "B": "250",
+        "C": "260",
+        "D": "270",
+        "E": "290"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 211,
+      "question": "In the coordinate system above, which of the following is the equation of line ℓ?",
+      "options": {
+        "A": "y = –x",
+        "B": "y = x – 1",
+        "C": "y = –x – 1",
+        "D": "y = x + 1",
+        "E": "y = –x + 1"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 212,
+      "question": "If a two-digit positive integer has its digits reversed, the resulting integer differs from the original by 27. By how much do the two digits differ?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6",
+        "E": "7"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 213,
+      "question": "The circle with center C shown above is tangent to both axes. If the distance from O to C is equal to k, what is the radius of the circle, in terms of k?",
+      "options": {
+        "A": "k",
+        "B": "k/√2",
+        "C": "k√2",
+        "D": "2k",
+        "E": "k²"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 214,
+      "question": "In an electric circuit, two resistors with resistances x and y are connected in parallel. In this case, if r is the combined resistance of these two resistors, then the reciprocal of r is equal to the sum of the reciprocals of x and y. What is r in terms of x and y?",
+      "options": {
+        "A": "xy",
+        "B": "x + y",
+        "C": "xy/(x + y)",
+        "D": "(x + y)/xy",
+        "E": "1/(x + y)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 215,
+      "question": "Xavier, Yvonne, and Zelda each try independently to solve a problem. If their individual probabilities for success are 1/4, 1/3, and 1/5, respectively, what is the probability that Xavier and Yvonne, but not Zelda, will solve the problem?",
+      "options": {
+        "A": "1/60",
+        "B": "1/20",
+        "C": "1/15",
+        "D": "1/12",
+        "E": "1/10"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 216,
+      "question": "If x² – 4x + 3 = 0, then x could be",
+      "options": {
+        "A": "0",
+        "B": "–1",
+        "C": "–2",
+        "D": "–3",
+        "E": "–4"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 217,
+      "question": "What is the value of (0.00000023) × 100,000?",
+      "options": {
+        "A": "0.000023",
+        "B": "0.00023",
+        "C": "0.0023",
+        "D": "0.023",
+        "E": "0.23"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 218,
+      "question": "List T consists of 30 positive decimals, none of which is an integer, and the sum of the 30 decimals is S. The estimated sum of the 30 decimals, E, is defined as follows. Each decimal in T whose tenths digit is even is rounded up to the nearest integer, and each decimal in T whose tenths digit is odd is rounded down to the nearest integer; E is the sum of the resulting integers. If 1/3 of the decimals in T have a tenths digit that is even, which of the following is a possible value of E – S? I. –16 II. 6 III. 10",
+      "options": {
+        "A": "I only",
+        "B": "I and II only",
+        "C": "I and III only",
+        "D": "II and III only",
+        "E": "I, II, and III"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 219,
+      "question": "In a certain game, a large container is filled with red, yellow, green, and blue beads worth, respectively, 7, 5, 3, and 2 points each. A number of beads are then removed from the container. If the product of the point values of the removed beads is 147,000, how many red beads were removed?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3",
+        "D": "2",
+        "E": "0"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 220,
+      "question": "If x = 2 and y = 3, then (x – y)(y – x) =",
+      "options": {
+        "A": "–2",
+        "B": "–1",
+        "C": "0",
+        "D": "2",
+        "E": "3"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 221,
+      "question": "If a, b, and c are consecutive positive integers and a × b × c is a perfect square, which of the following must be true? I. a is a perfect square II. abc is an even integer III. (a + b + c)/3 is an integer",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "I and II only",
+        "D": "II and III only",
+        "E": "I, II, and III"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 222,
+      "question": "Of the 200 students at College T majoring in one or more of the sciences, 130 are majoring in chemistry and 150 are majoring in biology. If at least 30 of the students are not majoring in either chemistry or biology, then the number of students majoring in both chemistry and biology could be any number from",
+      "options": {
+        "A": "20 to 50",
+        "B": "40 to 70",
+        "C": "50 to 130",
+        "D": "110 to 130",
+        "E": "110 to 150"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 223,
+      "question": "If x² + 4x + 4 = 0, then x has how many possible values?",
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "A finite number greater than two",
+        "E": "An infinite number"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 224,
+      "question": "Seed mixture X is 40 percent ryegrass and 60 percent bluegrass by weight; seed mixture Y is 25 percent ryegrass and 75 percent fescue. If a mixture of X and Y contains 30 percent ryegrass, what percent of the weight of the mixture is X?",
+      "options": {
+        "A": "10%",
+        "B": "33 1/3%",
+        "C": "40%",
+        "D": "50%",
+        "E": "66 2/3%"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 225,
+      "question": "If n is a positive integer, then n(n + 1) is",
+      "options": {
+        "A": "even only when n is even",
+        "B": "even only when n is odd",
+        "C": "odd whenever n is odd",
+        "D": "divisible by 3 only when n is odd",
+        "E": "divisible by 4 whenever n is even"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 226,
+      "question": "A straight pipe 1 yard in length was marked off in fourths and also in thirds. If the pipe was then cut into separate pieces at each of these markings, which of the following gives all the different lengths of the pieces, in fractions of a yard?",
+      "options": {
+        "A": "1/12 and 1/4 only",
+        "B": "1/12 and 1/3 only",
+        "C": "1/12, 1/6, and 1/4",
+        "D": "1/12, 1/6, and 1/3",
+        "E": "1/12, 1/4, and 1/3"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 227,
+      "question": "If x = 2 and y = 3, then (x – y)(y – x) =",
+      "options": {
+        "A": "9",
+        "B": "8",
+        "C": "7",
+        "D": "6",
+        "E": "5"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 228,
+      "question": "Right triangle PQR is to be constructed in the xy-plane so that the right angle is at P and QR is parallel to the x-axis. The x- and y-coordinates of P, Q, and R are to be integers that satisfy the inequalities –4 ≤ x ≤ 5 and –5 ≤ y ≤ 5. How many different triangles with these properties could be constructed?",
+      "options": {
+        "A": "110",
+        "B": "1,100",
+        "C": "9,900",
+        "D": "10,000",
+        "E": "12,100"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 229,
+      "question": "How many of the integers that satisfy the inequality (x + 2)(x + 3) > 0 are less than 5?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 230,
+      "question": "The value of 2^17 is how many times the value of 2^–17?",
+      "options": {
+        "A": "2^34",
+        "B": "2^17",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "A"
+    }
+  ]
+}

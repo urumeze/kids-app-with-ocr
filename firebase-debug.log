@@ -1,0 +1,49 @@
+[debug] [2026-01-15T17:24:39.673Z] ----------------------------------------------------------------------
+[debug] [2026-01-15T17:24:39.677Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rumsf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-01-15T17:24:39.678Z] CLI Version:   15.3.0
+[debug] [2026-01-15T17:24:39.678Z] Platform:      win32
+[debug] [2026-01-15T17:24:39.678Z] Node Version:  v24.13.0
+[debug] [2026-01-15T17:24:39.679Z] Time:          Thu Jan 15 2026 18:24:39 GMT+0100 (Central European Standard Time)
+[debug] [2026-01-15T17:24:39.679Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\rumsf\OneDrive\Desktop\website\kids-app-withOcrMutiplePagesOverlayVideoGoogle_acca_mcq_mtqCopy2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-01-15T17:24:47.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-15T17:24:47.882Z] > authorizing via signed-in user (rumsfield.operations@gmail.com)
+[debug] [2026-01-15T17:24:47.884Z] Checked if tokens are valid: true, expires at: 1768499710444
+[debug] [2026-01-15T17:24:47.884Z] Checked if tokens are valid: true, expires at: 1768499710444
+[debug] [2026-01-15T17:24:47.886Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kids-note-app [none]
+[debug] [2026-01-15T17:24:55.334Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kids-note-app 200
+[debug] [2026-01-15T17:24:55.334Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kids-note-app {"projectId":"kids-note-app","projectNumber":"845525258490","displayName":"GoQuiz","name":"projects/kids-note-app","resources":{"hostingSite":"kids-note-app"},"state":"ACTIVE","etag":"1_f0adb44a-5e62-46b1-9bfc-8991f1b1c847"}
+[info] i  Using project kids-note-app (GoQuiz) . 
+[info] 
+=== Hosting Setup
+[debug] [2026-01-15T17:24:55.353Z] Checked if tokens are valid: true, expires at: 1768499710444
+[debug] [2026-01-15T17:24:55.353Z] Checked if tokens are valid: true, expires at: 1768499710444
+[debug] [2026-01-15T17:24:55.353Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kids-note-app [none]
+[debug] [2026-01-15T17:24:56.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kids-note-app 200
+[debug] [2026-01-15T17:24:56.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kids-note-app {"projectId":"kids-note-app","projectNumber":"845525258490","displayName":"GoQuiz","name":"projects/kids-note-app","resources":{"hostingSite":"kids-note-app"},"state":"ACTIVE","etag":"1_f0adb44a-5e62-46b1-9bfc-8991f1b1c847"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

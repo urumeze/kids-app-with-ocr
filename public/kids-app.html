@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
+    <link rel="canonical" href="https://goquiz.app/" />
+    <meta name="description" content="GoQuiz Academy: Fun quizzes, past questions, teacher connections, and used books for kids learning.">
+    <meta name="robots" content="index, follow">
     <title>GoQuiz Academy</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -152,6 +155,8 @@
         .hidden { display: none; }
     </style>
 </head>
+
+
 <body class="design">
   
 <!-- Splash Screen -->
@@ -629,24 +634,26 @@
 <!-- 📚 MENU PANEL -->
 <div id="menuPanel"
      class="fixed left-0 top-0 h-full w-40 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
-  <div class="flex justify-end">
-  <button id="closeMenuBtn" 
-        class="
-          px-4 py-2 
-          bg-gray-500 hover:bg-gray-600 
-          text-white hover:text-white
-          rounded-lg 
-          fixed left-6 z-50 bottom-[15vh]
-          shadow-md
-        ">
-    close
-</button>
-
-  
-</div>
-
-<div class="scale-[0.7] mt-7">
+    
+    <div class="scale-[0.7] mt-7">
   <!-- Menu Content -->
+    <div class="p-4">
+        <button class="year-btn font-semibold text-gray-700 w-full text-left bg-red-100 rounded-lg" data-year="2020">GMAT▼</button>
+        <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">13th Edition ▼</button>
+        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
+          <li><button onclick="loadPastQuestions(13, 'Quantitative', 'GMAT')" class="subject-btn"> Quantitative</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving1', 'GMAT')" class="subject-btn"> Problem solving Part1</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving2', 'GMAT')" class="subject-btn">Problem Solving Part2</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving3', 'GMAT')" class="subject-btn">Problem Solving Part3</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving4', 'GMAT')" class="subject-btn">Problem Solving Part4</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving5', 'GMAT')" class="subject-btn">Problem Solving Part5</button></li><br>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving6', 'GMAT')" class="subject-btn">Problem Solving Part6</button></li>
+        </ul>  
+    </div>
+
+
+
+
 <div class="p-4 " >
 
   <!-- MAIN MENU BUTTON -->
@@ -662,8 +669,8 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left ">2020 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2020,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
-        <li><button onclick="loadPastQuestions(2020,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
+        <li><button onclick="loadPastQuestions(2020,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
+        <li><button onclick="loadPastQuestions(2020,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li><br>
         <li><button onclick="loadPastQuestions(2020,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
       </ul>
     </li>
@@ -672,9 +679,9 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2021 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2021,'english','common_entrance')" class="subject-btn">*English</button></li>
-        <li><button onclick="loadPastQuestions(2021,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
-        <li><button onclick="loadPastQuestions(2021,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
+        <li><button onclick="loadPastQuestions(2021,'english','common_entrance')" class="subject-btn">*English</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li><br>
         <li><button onclick="loadPastQuestions(2021,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
       </ul>
     </li>
@@ -683,9 +690,9 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2022 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2022,'english','common_entrance')" class="subject-btn">*English</button></li>
-        <li><button onclick="loadPastQuestions(2022,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
-        <li><button onclick="loadPastQuestions(2022,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
+        <li><button onclick="loadPastQuestions(2022,'english','common_entrance')" class="subject-btn">*English</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li><br>
         <li><button onclick="loadPastQuestions(2022,'basic_studies','common_entrance')" class="subject-btn">*Basic studies</button></li>
       </ul>
     </li>
@@ -694,9 +701,9 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2023 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2023,'english','common_entrance')" class="subject-btn">*English</button></li>
-        <li><button onclick="loadPastQuestions(2023,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
-        <li><button onclick="loadPastQuestions(2023,'Quantitative_aptitude','common_entrance')" class="subject-btn">Quantitative aptitude</button></li>
+        <li><button onclick="loadPastQuestions(2023,'english','common_entrance')" class="subject-btn">*English</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'Quantitative_aptitude','common_entrance')" class="subject-btn">Quantitative aptitude</button></li><br>
         <li><button onclick="loadPastQuestions(2023,'verbal_aptitude','common_entrance')" class="subject-btn">Verbal aptitude</button></li>
       </ul>
     </li>
@@ -705,13 +712,13 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2024 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2024,'english','common_entrance')" class="subject-btn">*English</button></li>
-        <li><button onclick="loadPastQuestions(2024,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li>
-        <li><button onclick="loadPastQuestions(2024,'basic_technology','common_entrance')" class="subject-btn">*Basic technology</button></li>
-        <li><button onclick="loadPastQuestions(2024,'social_studies','common_entrance')" class="subject-btn">*Social studies</button></li>
-        <li><button onclick="loadPastQuestions(2024,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
-        <li><button onclick="loadPastQuestions(2024,'civic_education','common_entrance')" class="subject-btn">*Civic education</button></li>
-        <li><button onclick="loadPastQuestions(2024,'computer_studies','common_entrance')" class="subject-btn">*Computer St.</button></li>
+        <li><button onclick="loadPastQuestions(2024,'english','common_entrance')" class="subject-btn">*English</button></li><br>
+        <li><button onclick="loadPastQuestions(2024,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
+        <li><button onclick="loadPastQuestions(2024,'basic_technology','common_entrance')" class="subject-btn">*Basic technology</button></li><br>
+        <li><button onclick="loadPastQuestions(2024,'social_studies','common_entrance')" class="subject-btn">*Social studies</button></li><br>
+        <li><button onclick="loadPastQuestions(2024,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li><br>
+        <li><button onclick="loadPastQuestions(2024,'civic_education','common_entrance')" class="subject-btn">*Civic education</button></li><br>
+        <li><button onclick="loadPastQuestions(2024,'computer_studies','common_entrance')" class="subject-btn">*Computer St.</button></li><br>
         <li><button onclick="loadPastQuestions(2024,'physical_and_health_education','common_entrance')" class="subject-btn">*PHE</button></li>
       </ul>
     </li>
@@ -734,12 +741,12 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left ">2020 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2020,'english','jamb')" class="subject-btn">English</button></li>
-        <li><button onclick="loadPastQuestions(2020,'maths','jamb')" class="subject-btn">Maths</button></li>
-        <li><button onclick="loadPastQuestions(2020,'physics','jamb')" class="subject-btn">Physics</button></li>
-        <li><button onclick="loadPastQuestions(2020,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
-        <li><button onclick="loadPastQuestions(2020,'biology','jamb')" class="subject-btn">Biology</button></li>
-        <li><button onclick="loadPastQuestions(2020,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2020,'english','jamb')" class="subject-btn">English</button></li><br>
+        <li><button onclick="loadPastQuestions(2020,'maths','jamb')" class="subject-btn">Maths</button></li><br>
+        <li><button onclick="loadPastQuestions(2020,'physics','jamb')" class="subject-btn">Physics</button></li><br>
+        <li><button onclick="loadPastQuestions(2020,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
+        <li><button onclick="loadPastQuestions(2020,'biology','jamb')" class="subject-btn">Biology</button></li><br>
+        <li><button onclick="loadPastQuestions(2020,'economics','jamb')" class="subject-btn">Economics</button></li><br>
         <li><button onclick="loadPastQuestions(2020,'literature','jamb')" class="subject-btn">English Literature</button></li>
       </ul>
     </li>
@@ -748,12 +755,12 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2021 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2021,'english','jamb')" class="subject-btn">English</button></li>
-        <li><button onclick="loadPastQuestions(2021,'maths','jamb')" class="subject-btn">Maths</button></li>
-        <li><button onclick="loadPastQuestions(2021,'physics','jamb')" class="subject-btn">Physics</button></li>
-        <li><button onclick="loadPastQuestions(2021,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
-        <li><button onclick="loadPastQuestions(2021,'biology','jamb')" class="subject-btn">Biology</button></li>
-        <li><button onclick="loadPastQuestions(2021,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2021,'english','jamb')" class="subject-btn">English</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'maths','jamb')" class="subject-btn">Maths</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'physics','jamb')" class="subject-btn">Physics</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'biology','jamb')" class="subject-btn">Biology</button></li><br>
+        <li><button onclick="loadPastQuestions(2021,'economics','jamb')" class="subject-btn">Economics</button></li><br>
         <li><button onclick="loadPastQuestions(2021,'literature','jamb')" class="subject-btn">English Literature</button></li>
       </ul>
     </li>
@@ -762,12 +769,12 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2022 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2022,'english','jamb')" class="subject-btn">English</button></li>
-        <li><button onclick="loadPastQuestions(2022,'maths','jamb')" class="subject-btn">Maths</button></li>
-        <li><button onclick="loadPastQuestions(2022,'physics','jamb')" class="subject-btn">Physics</button></li>
-        <li><button onclick="loadPastQuestions(2022,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
-        <li><button onclick="loadPastQuestions(2022,'biology','jamb')" class="subject-btn">Biology</button></li>
-        <li><button onclick="loadPastQuestions(2022,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2022,'english','jamb')" class="subject-btn">English</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'maths','jamb')" class="subject-btn">Maths</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'physics','jamb')" class="subject-btn">Physics</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'biology','jamb')" class="subject-btn">Biology</button></li><br>
+        <li><button onclick="loadPastQuestions(2022,'economics','jamb')" class="subject-btn">Economics</button></li><br>
         <li><button onclick="loadPastQuestions(2022,'literature','jamb')" class="subject-btn">English Literature</button></li>
       </ul>
     </li>
@@ -776,12 +783,12 @@
     <li>
       <button class="year-btn font-semibold text-gray-700 w-full text-left">2023 ▼</button>
       <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2023,'english','jamb')" class="subject-btn">English</button></li>
-        <li><button onclick="loadPastQuestions(2023,'maths','jamb')" class="subject-btn">Maths</button></li>
-        <li><button onclick="loadPastQuestions(2023,'physics','jamb')" class="subject-btn">Physics</button></li>
-        <li><button onclick="loadPastQuestions(2023,'chemistry','jamb')" class="subject-btn">Chemistry</button></li>
-        <li><button onclick="loadPastQuestions(2023,'biology','jamb')" class="subject-btn">Biology</button></li>
-        <li><button onclick="loadPastQuestions(2023,'economics','jamb')" class="subject-btn">Economics</button></li>
+        <li><button onclick="loadPastQuestions(2023,'english','jamb')" class="subject-btn">English</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'maths','jamb')" class="subject-btn">Maths</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'physics','jamb')" class="subject-btn">Physics</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'biology','jamb')" class="subject-btn">Biology</button></li><br>
+        <li><button onclick="loadPastQuestions(2023,'economics','jamb')" class="subject-btn">Economics</button></li><br>
         <li><button onclick="loadPastQuestions(2023,'literature','jamb')" class="subject-btn">English Literature</button></li>
       </ul>
     </li>
@@ -792,30 +799,45 @@
 
 
     <div class="p-4">
-    
-<button class="year-btn font-semibold text-gray-700 w-full text-left bg-red-100 rounded-lg" data-year="2020">ACCA▼</button>
-   
-      <!-- 2022 -->
-     
+        <button class="year-btn font-semibold text-gray-700 w-full text-left bg-red-100 rounded-lg" data-year="2020">ACCA▼</button>
         <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">2023 ▼</button>
         <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li>
-          <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li>
-          <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn">F3 Section B</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li><br>
+          <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li><br>
+          <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn">F3 Section B</button></li><br>
           <li><button onclick="loadMTQQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
-          
-         
         </ul>  
-  </div>
+    </div>
 
   
 
   
 </div>
+
+<div class="flex justify-end">
+        <button id="closeMenuBtn" 
+            class="
+            px-4 py-2 
+            bg-gray-500 hover:bg-gray-600 
+            text-white hover:text-white
+            rounded-lg 
+            fixed left-6 z-50 bottom-[15vh]
+            shadow-md
+            ">
+        close
+        </button>
+
+  
+    </div>
+
+
 </div>
+
+    
+     
 
 <!-- Public Feed -->
-<div id="feed" class="mt-6 space-y-4"></div> 
+    <div id="feed" class="mt-6 space-y-4"></div> 
 </div>
 
 
@@ -895,7 +917,7 @@
 
 
     <!-- Step 5: Quiz -->
-    <div id="step5" class="step hidden">
+    <div id="step5" class="step hidden scale-[0.99]">
       <h2 class="text-2xl font-bold text-indigo-600 mb-6">Step 5: Let's Test Your Knowledge!</h2>
       <div id="quizContainer" class="mb-8"></div>
       <div id="results" class="mt-6"></div>
@@ -1145,50 +1167,23 @@
 
 <script>
 
-  function safeAdsensePush(retries = 8) {
-    // 1️⃣ AdSense must exist
-    if (
-        typeof window.adsbygoogle === "undefined" ||
-        typeof window.adsbygoogle.push !== "function"
-    ) {
-        return;
-    }
+const firebaseConfig = {
+    apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
+    authDomain: "kids-note-app.firebaseapp.com",
+    projectId: "kids-note-app",
+    storageBucket: "kids-note-app.appspot.com",
+    messagingSenderId: "845525258490",
+    appId: "1:845525258490:web:16ab8dad0a98469456b943",
+    measurementId: "G-KHBK5Z52TL"
+  };
 
-    // 2️⃣ Find the next unprocessed ad
-    const ad = document.querySelector(
-        'ins.adsbygoogle:not([data-goquiz-loaded])'
-    );
-    if (!ad) return;
+firebase.initializeApp(firebaseConfig);
 
-    // 3️⃣ Ensure ad is actually visible in layout
-    const rect = ad.getBoundingClientRect();
-    const width = rect.width;
+const auth = firebase.auth();
+   
+const functions = firebase.functions();
 
-    if (width < 250) {
-        if (retries > 0) {
-            requestAnimationFrame(() => safeAdsensePush(retries - 1));
-        }
-        return;
-    }
-
-    // 4️⃣ Lock BEFORE pushing (prevents duplicates)
-    ad.dataset.goquizLoaded = "true";
-
-    // 5️⃣ Safe push
-    try {
-        window.adsbygoogle.push({});
-    } catch (e) {
-        console.warn("AdSense push failed", e);
-    }
-}
-
-
-
-
-
-
-
-  function handleCredentialResponse(response) {
+function handleCredentialResponse(response) {
   const credential = firebase.auth.GoogleAuthProvider.credential(response.credential);
 
   auth.signInWithCredential(credential)
@@ -1213,32 +1208,11 @@
 }
 
 
-
-
-const firebaseConfig = {
-    apiKey: "AIzaSyA2WYxbeUFMxy6UF_lP7B0PK01vhrwgSTI",
-    authDomain: "kids-note-app.firebaseapp.com",
-    projectId: "kids-note-app",
-    storageBucket: "kids-note-app.appspot.com",
-    messagingSenderId: "845525258490",
-    appId: "1:845525258490:web:16ab8dad0a98469456b943",
-    measurementId: "G-KHBK5Z52TL"
-  };
-
-   firebase.initializeApp(firebaseConfig);
-
-   const auth = firebase.auth();
-   
-
- const functions = firebase.functions();
-
-
-
  
   // ------------------------------
   // App State
   // ------------------------------
-  const appState = {
+const appState = {
     currentStep: 1,
     extractedText: '',
     simplifiedText: '',
@@ -1246,10 +1220,10 @@ const firebaseConfig = {
     quizData: [],
     userAnswers: [],
     score: 0
-  };
+};
 
 
-  let selectedDateTime = null;
+let selectedDateTime = null;
 
 flatpickr("#reqDateTime", {
   enableTime: true,
@@ -1365,7 +1339,7 @@ updateCoinDisplay(0);
 
     closeQuiz.addEventListener('click', () => {
     document.getElementById('app').classList.add('hidden');
-    document.getElementById('publicFeed').classList.remove('hidden');
+    home();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
@@ -1559,37 +1533,62 @@ async function extractTextFromImage(file) {
 
     // ✅ Added missing displayQuiz function
     function displayQuiz() {
-        const quizContainer = document.getElementById('quizContainer');
-        quizContainer.innerHTML = '';
-        appState.userAnswers = [];
-        appState.quizData.forEach((q, index) => {
-            const questionDiv = document.createElement('div');
-            questionDiv.className = "mb-6 p-4 bg-white shadow rounded-lg";
-            const questionText = document.createElement('h4');
-            questionText.className = "font-medium text-gray-800 mb-3";
-            questionText.textContent = `Q${index + 1}: ${q.question}`;
-            questionDiv.appendChild(questionText);
-            const optionsDiv = document.createElement('div');
-            optionsDiv.className = "grid grid-cols-1 gap-2";
-            q.options.forEach((option, optIndex) => {
-                const btn = document.createElement('button');
-                btn.textContent = option;
-                btn.className =
-                    "w-full text-left px-4 py-2 rounded-lg border border-gray-300 hover:bg-indigo-50 transition";
-                btn.addEventListener('click', () => {
-                    appState.userAnswers[index] = optIndex;
-                    Array.from(optionsDiv.children).forEach(child => {
-                        child.classList.remove("bg-indigo-200");
-                    });
-                    btn.classList.add("bg-indigo-200");
-                });
-                optionsDiv.appendChild(btn);
-            });
-            questionDiv.appendChild(optionsDiv);
-            quizContainer.appendChild(questionDiv);
-        });
-    }
-    
+  const quizContainer = document.getElementById('quizContainer');
+  if (!quizContainer) return;
+
+  // Guard: MCQ only
+  if (!appState.quizData?.length || !appState.quizData[0].options) {
+    console.warn("displayQuiz skipped (not MCQ data)");
+    return;
+  }
+
+  quizContainer.innerHTML = '';
+
+  // Initialize MCQ answers ONCE
+  if (!Array.isArray(appState.userAnswers) ||
+      appState.userAnswers.length !== appState.quizData.length) {
+    appState.userAnswers = new Array(appState.quizData.length).fill(null);
+  }
+
+  appState.quizData.forEach((q, index) => {
+    const questionDiv = document.createElement('div');
+    questionDiv.className = "mb-6 p-4 bg-white shadow rounded-lg";
+
+    const questionText = document.createElement('h4');
+    questionText.className = "font-medium text-gray-800 mb-3";
+    questionText.textContent = `Q${index + 1}: ${q.question}`;
+    questionDiv.appendChild(questionText);
+
+    const optionsDiv = document.createElement('div');
+    optionsDiv.className = "grid grid-cols-1 gap-2";
+
+    q.options.forEach((option, optIndex) => {
+      const btn = document.createElement('button');
+      btn.textContent = option;
+      btn.className =
+        "w-full text-left px-4 py-2 rounded-lg border border-gray-300 hover:bg-indigo-50 transition";
+
+      // Restore selection
+      if (appState.userAnswers[index] === optIndex) {
+        btn.classList.add("bg-indigo-200");
+      }
+
+      btn.addEventListener('click', () => {
+        appState.userAnswers[index] = optIndex;
+        Array.from(optionsDiv.children).forEach(child =>
+          child.classList.remove("bg-indigo-200")
+        );
+        btn.classList.add("bg-indigo-200");
+      });
+
+      optionsDiv.appendChild(btn);
+    });
+
+    questionDiv.appendChild(optionsDiv);
+    quizContainer.appendChild(questionDiv);
+  });
+}
+
 
     function calculateScore() {
     let correctCount = 0;
@@ -1754,6 +1753,7 @@ function indexToLetter(idx) {
 
 // Load MTQ quiz from JSON
 async function loadMTQQuestions(year, subject, category = 'ACCA') {
+    closeFeedBatch()
     const loader = document.getElementById('loading');
     if (loader) loader.style.display = 'block';
 
@@ -1840,7 +1840,8 @@ window.loadMTQQuestions = loadMTQQuestions;
 
 
 
-  async function loadPastQuestions(year, subject, category = 'jamb') {
+async function loadPastQuestions(year, subject, category = 'jamb') {
+    closeFeedBatch()
     const loader = document.getElementById('loading');
     if (loader) loader.style.display = 'block';
 
@@ -1989,7 +1990,7 @@ function showMTQResultsWithAd(results, correctTasks, totalTasks) {
 
         <div class="w-full max-w-lg mx-auto">
             <ins class="adsbygoogle"
-                style="display:block; width:100%; min-width:250px;"
+                style="display:block"
                 data-ad-format="fluid"
                 data-ad-layout-key="-e5+6n-34-bt+x0"
                 data-ad-client="ca-pub-2721836557124559"
@@ -2166,6 +2167,16 @@ async function loadPublicFeed() {
     }
 }
 
+function closeFeedBatch() {
+    const feed = document.getElementById("publicFeed");
+    if (feed) {
+        feed.classList.add("hidden");
+        // Also reset display style to ensure hidden takes effect
+        feed.style.display = "none"; 
+    }
+}
+
+
 
 function renderFeedBatch() {
     const feed = document.getElementById("publicFeed");
@@ -2236,7 +2247,7 @@ function renderFeedBatch() {
                     Sponsored
                 </div>
                 <ins class="adsbygoogle"
-                    style="display:block; width:100%; min-width:250px;"
+                    style="display:block; min-width:250px"
                     data-ad-format="fluid"
                     data-ad-layout-key="-eb+6a-2e-5p+jd"
                     data-ad-client="ca-pub-2721836557124559"
@@ -2289,6 +2300,7 @@ function showStep(n) {
     document.getElementById('app').classList.remove('hidden');
     document.getElementById('publicFeed').classList.add('hidden');
     if (steps[n - 1]) steps[n - 1].classList.remove('hidden');
+    window.scrollTo({top:0, behavior:"smooth"})
 }
 
 
@@ -3329,6 +3341,44 @@ function updateAdFreeButton() {
     status.textContent = "";
   }
 }
+
+  function safeAdsensePush(retries = 8) {
+    // 1️⃣ AdSense must exist
+    if (
+        typeof window.adsbygoogle === "undefined" ||
+        typeof window.adsbygoogle.push !== "function"
+    ) {
+        return;
+    }
+
+    // 2️⃣ Find the next unprocessed ad
+    const ad = document.querySelector(
+        'ins.adsbygoogle:not([data-goquiz-loaded])'
+    );
+    if (!ad) return;
+
+    // 3️⃣ Ensure ad is actually visible in layout
+    const rect = ad.getBoundingClientRect();
+    const width = rect.width;
+
+    if (width < 250) {
+        if (retries > 0) {
+            requestAnimationFrame(() => safeAdsensePush(retries - 1));
+        }
+        return;
+    }
+
+    // 4️⃣ Lock BEFORE pushing (prevents duplicates)
+    ad.dataset.goquizLoaded = "true";
+
+    // 5️⃣ Safe push
+    try {
+        window.adsbygoogle.push({});
+    } catch (e) {
+        console.warn("AdSense push failed", e);
+    }
+}
+
 
 function controlAdDisplay() {
   if (adFreeUntil > Date.now()) {

@@ -1,0 +1,567 @@
+{"quiz": [
+    {
+      "id": 1,
+      "question": "Last month a certain music club offered a discount to preferred customers. After the first compact disc purchased, preferred customers paid $3.99 for each additional compact disc purchased. If a preferred customer purchased a total of 6 compact discs and paid $15.95 for the first compact disc, then the dollar amount that the customer paid for the 6 compact discs is equivalent to which of the following?",
+      "options": {
+        "A": "$15.95 + 5($3.99)",
+        "B": "6($3.99)",
+        "C": "$15.95 + 6($3.99)",
+        "D": "6($15.95)",
+        "E": "$15.95 + ($3.99)"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "The average (arithmetic mean) of the integers from 200 to 400, inclusive, is how much greater than the average of the integers from 50 to 100, inclusive?",
+      "options": {
+        "A": "150",
+        "B": "175",
+        "C": "200",
+        "D": "225",
+        "E": "300"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 3,
+      "question": "The sequence a1, a2, a3, ..., an, ... is such that for all n ≥ 1, an+1 = 2an + 3. If a1 = 1 and a2 = 5, what is the value of a6?",
+      "options": {
+        "A": "12",
+        "B": "16",
+        "C": "20",
+        "D": "24",
+        "E": "28"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 4,
+      "question": "Among a group of 2,500 people, 35 percent invest in municipal bonds, 18 percent invest in oil stocks, and 7 percent invest in both municipal bonds and oil stocks. If 1 person is to be randomly selected from the 2,500 people, what is the probability that the person selected will be one who invests in municipal bonds but NOT in oil stocks?",
+      "options": {
+        "A": "0.07",
+        "B": "0.28",
+        "C": "0.35",
+        "D": "0.42",
+        "E": "0.65"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 5,
+      "question": "A closed cylindrical tank contains 36 cubic feet of water and is filled to half its capacity. When the tank is placed upright on its circular base on level ground, the height of the water in the tank is 2 feet. When the tank is placed on its side on level ground, what is the height, in feet, of the surface of the water above the ground?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6",
+        "E": "9"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "question": "A marketing firm determined that, of 200 households surveyed, 80 used neither Brand A nor Brand B soap, 60 used only Brand A soap, and for every household that used both brands of soap, 3 used only Brand B soap. How many of the 200 households surveyed used both brands of soap?",
+      "options": {
+        "A": "15",
+        "B": "20",
+        "C": "30",
+        "D": "40",
+        "E": "45"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 7,
+      "question": "A certain club has 10 members, including Harry. One of the 10 members is to be chosen at random to be the president, one of the remaining 9 members is to be chosen at random to be the secretary, and one of the remaining 8 members is to be chosen at random to be the treasurer. What is the probability that Harry will be either the member chosen to be the secretary or the member chosen to be the treasurer?",
+      "options": {
+        "A": "1/10",
+        "B": "1/9",
+        "C": "2/9",
+        "D": "1/5",
+        "E": "2/5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 8,
+      "question": "If a certain toy store’s revenue in November was 1/4 of its revenue in December and its revenue in January was 1/2 of its revenue in November, then the store’s revenue in December was how many times the average (arithmetic mean) of its revenues in November and January?",
+      "options": {
+        "A": "1/8",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "2",
+        "E": "4"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 9,
+      "question": "A researcher computed the mean, the median, and the standard deviation for a set of performance scores. If 5 were to be added to each score, which of these three statistics would change?",
+      "options": {
+        "A": "The mean only",
+        "B": "The median only",
+        "C": "The standard deviation only",
+        "D": "The mean and the median",
+        "E": "The mean and the standard deviation"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 10,
+      "question": "In the figure shown, what is the value of x° + y° + z°?",
+      "options": {
+        "A": "45",
+        "B": "90",
+        "C": "180",
+        "D": "270",
+        "E": "360"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 11,
+      "question": "Of the three-digit integers greater than 700, how many have two digits that are equal to each other and the remaining digit different from the other two?",
+      "options": {
+        "A": "90",
+        "B": "82",
+        "C": "80",
+        "D": "45",
+        "E": "36"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 12,
+      "question": "Positive integer y is 50 percent of 50 percent of positive integer x, and y percent of x equals 100. What is the value of x?",
+      "options": {
+        "A": "50",
+        "B": "100",
+        "C": "200",
+        "D": "1,000",
+        "E": "2,000"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 13,
+      "question": "If s and t are positive integers such that s/t = 64/5, which of the following could be the remainder when s is divided by t?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "8",
+        "D": "20",
+        "E": "45"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 14,
+      "question": "Of the 84 parents who attended a meeting at a school, 35 volunteered to supervise children during the school picnic and 11 volunteered both to supervise children during the picnic and to bring refreshments to the picnic. If the number of parents who volunteered to bring refreshments was 1.5 times the number of parents who neither volunteered to supervise children during the picnic nor volunteered to bring refreshments, how many of the parents volunteered to bring refreshments?",
+      "options": {
+        "A": "25",
+        "B": "36",
+        "C": "38",
+        "D": "42",
+        "E": "45"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 15,
+      "question": "The product of all the prime numbers less than 20 is closest to which of the following powers of 10?",
+      "options": {
+        "A": "10^9",
+        "B": "10^8",
+        "C": "10^7",
+        "D": "10^6",
+        "E": "10^5"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 16,
+      "question": "If x = 1 + 1/x, then x =",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "(√5 - 1)/2",
+        "D": "(√5 + 1)/2",
+        "E": "(1 + √5)/2"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 17,
+      "question": "If (2x + 3)(x - 4) = 0, what is the value of x?",
+      "options": {
+        "A": "-4/3 or 4",
+        "B": "-3/2 or 4",
+        "C": "-3/2 or -4",
+        "D": "3/2 or 4",
+        "E": "3/2 or -4"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 18,
+      "question": "If n is the product of the integers from 1 to 8, inclusive, how many different prime factors greater than 1 does n have?",
+      "options": {
+        "A": "Four",
+        "B": "Five",
+        "C": "Six",
+        "D": "Seven",
+        "E": "Eight"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 19,
+      "question": "If k is an integer and 2 ≤ k ≤ 7, for how many different values of k is there a triangle with sides of lengths 2, 7, and k?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four",
+        "E": "Five"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 20,
+      "question": "A right circular cone is inscribed in a hemisphere so that the base of the cone coincides with the base of the hemisphere. What is the ratio of the height of the cone to the radius of the hemisphere?",
+      "options": {
+        "A": "1:2",
+        "B": "1:1",
+        "C": "2:1",
+        "D": "√2:1",
+        "E": "2:1"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 21,
+      "question": "John deposited $10,000 to open a new savings account that earned 4 percent annual interest, compounded quarterly. If there were no other transactions in the account, what was the amount of money in John’s account 6 months after the account was opened?",
+      "options": {
+        "A": "$10,100",
+        "B": "$10,101",
+        "C": "$10,200",
+        "D": "$10,201",
+        "E": "$10,400"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 22,
+      "question": "A container in the shape of a right circular cylinder is full of water. If the volume of water in the container is 36 cubic inches and the height of the container is 9 inches, what is the diameter of the base of the cylinder, in inches?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "9",
+        "E": "18"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 23,
+      "question": "If the positive integer x is a multiple of 4 and the positive integer y is a multiple of 6, then xy must be a multiple of which of the following? I. 8 II. 12 III. 18",
+      "options": {
+        "A": "II only",
+        "B": "I and II only",
+        "C": "I and III only",
+        "D": "II and III only",
+        "E": "I, II, and III"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 24,
+      "question": "Aaron will jog from home at x miles per hour and then walk back home by the same route at y miles per hour. How many miles from home can Aaron jog so that he spends a total of t hours jogging and walking?",
+      "options": {
+        "A": "xt / (x + y)",
+        "B": "xyt / (x + y)",
+        "C": "xy / t(x + y)",
+        "D": "xyt / (x - y)",
+        "E": "xy / (x + y)"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 25,
+      "question": "If the units digit of integer n is greater than 2, what is the units digit of n^2?",
+      "options": {
+        "A": "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B": "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C": "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "D": "EACH statement ALONE is sufficient.",
+        "E": "Statements (1) and (2) TOGETHER are not sufficient."
+      },
+      "correct": "E"
+    },
+    {
+      "id": 26,
+      "question": "What is the value of the integer p?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 27,
+      "question": "If the length of Wanda’s telephone call was rounded up to the nearest whole minute by her telephone company, then Wanda was charged for how many minutes for her telephone call?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 28,
+      "question": "What is the perimeter of isosceles triangle MNP?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 29,
+      "question": "In a survey of retailers, what percent had purchased computers for business purposes?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 30,
+      "question": "The only gift certificates that a certain store sold yesterday were worth either $100 each or $10 each. If the store sold a total of 20 gift certificates yesterday, how many gift certificates worth $10 each did the store sell yesterday?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 31,
+      "question": "Is the standard deviation of the set of measurements x1, x2, x3, x4, ..., x20 less than 3?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 32,
+      "question": "Is the range of the integers 6, 3, y, 4, 5, and x greater than 9?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 33,
+      "question": "Is √(x + y) = √x + √y?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 34,
+      "question": "Of the companies surveyed about the skills they required in prospective employees, 20 percent required both computer skills and writing skills. What percent of the companies surveyed required neither computer skills nor writing skills?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 35,
+      "question": "What is the value of 1/(1 + 1/x)?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 36,
+      "question": "If X and Y are points in a plane and X lies inside the circle C with center O and radius 2, does Y lie inside circle C?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 37,
+      "question": "Is x > y?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 38,
+      "question": "If Paula drove the distance from her home to her college at an average speed that was greater than 70 kilometers per hour, did it take her less than 3 hours to drive this distance?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 39,
+      "question": "In the xy-plane, if line k has negative slope and passes through the point (−5, r), is the x-intercept of line k positive?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 40,
+      "question": "If $5,000 invested for one year at p percent simple annual interest yields $500, what amount must be invested at k percent simple annual interest for one year to yield the same number of dollars?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 41,
+      "question": "If xy ≠ 0, is (x/y) > 1?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 42,
+      "question": "Does the integer k have at least three different positive prime factors?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 43,
+      "question": "In City X last April, was the average (arithmetic mean) daily high temperature greater than the median daily high temperature?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 44,
+      "question": "If m and n are positive integers, is m/n an integer?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 45,
+      "question": "Of the 66 people in a certain auditorium, at most 6 people have their birthdays in any one given month. Does at least one person in the auditorium have a birthday in January?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 46,
+      "question": "Last year the average (arithmetic mean) salary of the 10 employees of Company X was $42,800. What is the average salary of the same 10 employees this year?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 47,
+      "question": "In a certain classroom, there are 80 books, of which 24 are fiction and 23 are written in Spanish. How many of the fiction books are written in Spanish?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "correct": "D"
+    }
+  ]
+}

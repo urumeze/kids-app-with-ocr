@@ -1,0 +1,487 @@
+{
+  "subject": "GMAT Problem Solving Practice Questions",
+  "source": "The Official Guide for GMAT Review 13th Edition - Section 5.3",
+  "batch": "Questions 151 to 190",
+  "quiz": [
+    {
+      "id": 151,
+      "question": "At a loading dock, each worker on the night crew loaded as many boxes as each worker on the day crew. If the night crew has 2/3 as many workers as the day crew, what fraction of all the boxes loaded by the two crews did the day crew load?",
+      "options": {
+        "A": "1/3",
+        "B": "2/5",
+        "C": "1/2",
+        "D": "3/5",
+        "E": "2/3"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 152,
+      "question": "A restaurant meal cost $35.50 and there was no tax. If the tip was more than 10 percent but less than 15 percent of the cost of the meal, then the total amount paid must have been between",
+      "options": {
+        "A": "$40 and $42",
+        "B": "$39 and $41",
+        "C": "$38 and $40",
+        "D": "$37 and $39",
+        "E": "$36 and $37"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 153,
+      "question": "In a weight-lifting competition, the total weight of Joe’s two lifts was 750 pounds. If twice the weight of his first lift was 300 pounds more than the weight of his second lift, what was the weight, in pounds, of his first lift?",
+      "options": {
+        "A": "225",
+        "B": "275",
+        "C": "325",
+        "D": "350",
+        "E": "400"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 154,
+      "question": "A club collected exactly $599 from its members. If each member contributed at least $12, what is the greatest number of members the club could have?",
+      "options": {
+        "A": "43",
+        "B": "44",
+        "C": "49",
+        "D": "50",
+        "E": "51"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 155,
+      "question": "If y is the smallest positive integer such that 3,150 multiplied by y is the square of an integer, then y must be",
+      "options": {
+        "A": "2",
+        "B": "5",
+        "C": "6",
+        "D": "7",
+        "E": "14"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 156,
+      "question": "If [x] is the greatest integer less than or equal to x, what is the value of [√(100 + √(100 + √(100 + √(100 + √(100 + √(100)))))]?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6",
+        "E": "7"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 157,
+      "question": "If x + y = 7 and xy = 12, what is the value of x² + y²?",
+      "options": {
+        "A": "–4",
+        "B": "–1",
+        "C": "0",
+        "D": "1",
+        "E": "2"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 158,
+      "question": "In the first week of the year, Nancy saved $1. In each of the next 51 weeks, she saved $1 more than she had saved in the previous week. What was the total amount that Nancy saved during the 52 weeks?",
+      "options": {
+        "A": "$1,326",
+        "B": "$1,352",
+        "C": "$1,378",
+        "D": "$2,652",
+        "E": "$2,756"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 159,
+      "question": "The trapezoid shown in the figure above represents a cross section of the rudder of a ship. If the distance from A to B is 13 feet, what is the area of the cross section of the rudder in square feet?",
+      "options": {
+        "A": "39",
+        "B": "40",
+        "C": "42",
+        "D": "45",
+        "E": "46.5"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 160,
+      "question": "In a certain sequence, the term x_n is given by the formula x_n = 2 × x_(n-1) – 3 for all n ≥ 2. If x_1 = 5 and x_2 = 7, what is the value of x_3?",
+      "options": {
+        "A": "2.5",
+        "B": "3.125",
+        "C": "4",
+        "D": "5",
+        "E": "6.75"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 161,
+      "question": "In the figure above, V represents an observation point at one end of a pool. From V, an object that is actually located on the bottom of the pool at point R appears to be at point S. If VR = 5 feet and VS = 10 feet, what is the distance RS, in feet, between the actual position and the perceived position of the object?",
+      "options": {
+        "A": "2.5",
+        "B": "3.75",
+        "C": "2",
+        "D": "3",
+        "E": "4"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 162,
+      "question": "During a trip, Francine traveled x percent of the total distance at an average speed of 40 miles per hour and the rest of the distance at an average speed of 60 miles per hour. In terms of x, what was Francine’s average speed for the entire trip?",
+      "options": {
+        "A": "50",
+        "B": "48",
+        "C": "46",
+        "D": "44",
+        "E": "40 + (1200)/(100 - x)"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 163,
+      "question": "If n = (3^3)^43 + (4^3)^33, what is the units digit of n?",
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "4",
+        "D": "6",
+        "E": "8"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 164,
+      "question": "If x^y = y^x and x ≠ y, then x/y =",
+      "options": {
+        "A": "1/2",
+        "B": "2/3",
+        "C": "3/2",
+        "D": "2",
+        "E": "3"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 165,
+      "question": "The shaded portion of the rectangular lot shown above represents a flower bed. If the area of the bed is 24 square yards and x + y + z = 30, then z equals",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "8",
+        "E": "10"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 166,
+      "question": "A border of uniform width is placed around a rectangular photograph that measures 8 inches by 10 inches. If the area of the border is 144 square inches, what is the width of the border, in inches?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "8",
+        "E": "9"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 167,
+      "question": "Jack is now 14 years older than Bill. If in 10 years Jack will be twice as old as Bill, how old will Jack be in 5 years?",
+      "options": {
+        "A": "9",
+        "B": "19",
+        "C": "21",
+        "D": "23",
+        "E": "33"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 168,
+      "question": "An empty pool being filled with water at a constant rate takes 8 hours to fill to 3/4 of its capacity. How much more time will it take to finish filling the pool?",
+      "options": {
+        "A": "5 hr 30 min",
+        "B": "5 hr 20 min",
+        "C": "4 hr 48 min",
+        "D": "3 hr 12 min",
+        "E": "2 hr 40 min"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 169,
+      "question": "A positive number x is multiplied by 2, and this product is then divided by 3. If the positive square root of the result of these two operations equals x, what is the value of x?",
+      "options": {
+        "A": "1/√6",
+        "B": "√(2/3)",
+        "C": "√(3/2)",
+        "D": "√6",
+        "E": "3/2"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 170,
+      "question": "If 1/17 is expressed as a terminating decimal, how many nonzero digits will d have?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Seven",
+        "E": "Ten"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 171,
+      "question": "A tank contains 10,000 gallons of a solution that is 5 percent sodium chloride by volume. If 2,500 gallons of water evaporate from the tank, the remaining solution will be approximately what percent sodium chloride?",
+      "options": {
+        "A": "1.25%",
+        "B": "3.75%",
+        "C": "6.25%",
+        "D": "6.67%",
+        "E": "11.7%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 172,
+      "question": "For any positive integer n, the sum of the first n positive integers equals n(n + 1)/2. What is the sum of all the even integers between 99 and 301?",
+      "options": {
+        "A": "10,100",
+        "B": "20,200",
+        "C": "22,650",
+        "D": "40,200",
+        "E": "45,150"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 173,
+      "question": "A committee is composed of w women and m men. If 3 women and 2 men are added to the committee, and if one person is selected at random from the enlarged committee, then the probability that a woman is selected can be represented by",
+      "options": {
+        "A": "(w + 3)/(w + m + 5)",
+        "B": "(w + 3)/(w + m + 2)",
+        "C": "(w + 3)/(w + m + 3)",
+        "D": "w/(w + m + 5)",
+        "E": "w/(w + m + 2)"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 174,
+      "question": "How many prime numbers between 1 and 100 are factors of 7,150?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four",
+        "E": "Five"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 175,
+      "question": "The figure above shows a circular flower bed, with its center at O, surrounded by a circular path that is 3 feet wide. What is the area of the path, in square feet?",
+      "options": {
+        "A": "9π",
+        "B": "18π",
+        "C": "27π",
+        "D": "36π",
+        "E": "45π"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 176,
+      "question": "The positive integer n is divisible by 25. If n/25 is greater than 25, which of the following could be the value of n/25?",
+      "options": {
+        "A": "22",
+        "B": "23",
+        "C": "24",
+        "D": "25",
+        "E": "26"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 177,
+      "question": "Last year the price per share of Stock X increased by k percent and the earnings per share of Stock X increased by m percent, where k is greater than m. By what percent did the ratio of price per share to earnings per share increase, in terms of k and m?",
+      "options": {
+        "A": "(k – m)%",
+        "B": "(k – m)%",
+        "C": "k/m %",
+        "D": "k(m – 1)%",
+        "E": "m(k – 1)%"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 178,
+      "question": "Of the 300 subjects who participated in an experiment using virtual-reality therapy to reduce their fear of heights, 40 percent experienced sweaty palms, 30 percent experienced vomiting, and 75 percent experienced dizziness. If all of the subjects experienced at least one of these effects and 35 percent of the subjects experienced exactly two of these effects, how many of the subjects experienced only one of these effects?",
+      "options": {
+        "A": "105",
+        "B": "125",
+        "C": "130",
+        "D": "180",
+        "E": "195"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 179,
+      "question": "A fruit-salad mixture consists of apples, peaches, and grapes in the ratio 6:5:2, respectively, by weight. If 39 pounds of the mixture is prepared, the mixture includes how many more pounds of apples than grapes?",
+      "options": {
+        "A": "15",
+        "B": "12",
+        "C": "9",
+        "D": "6",
+        "E": "4"
+      },
+      "correct": "B"
+    },
+    {
+      "id": 180,
+      "question": "If m = (3^2)(5^3)(7^4), then m–2 is equal to",
+      "options": {
+        "A": "–9",
+        "B": "–3",
+        "C": "1/9",
+        "D": "1/3",
+        "E": "9"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 181,
+      "question": "If x is m percent of y, then y is what percent of x?",
+      "options": {
+        "A": "100m",
+        "B": "m",
+        "C": "100/m",
+        "D": "m/100",
+        "E": "100/m"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 182,
+      "question": "A photography dealer ordered 60 Model X cameras to be sold for $250 each, which represents a 20 percent markup over the dealer’s initial cost for each camera. Of the cameras ordered, 6 were never sold and were returned to the manufacturer for a refund of 50 percent of the dealer’s initial cost. What was the dealer’s approximate profit or loss as a percent of the dealer’s initial cost for the 60 cameras?",
+      "options": {
+        "A": "7% loss",
+        "B": "13% loss",
+        "C": "7% profit",
+        "D": "13% profit",
+        "E": "15% profit"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 183,
+      "question": "Seven pieces of rope have an average (arithmetic mean) length of 68 centimeters and a median length of 84 centimeters. If the length of the longest piece of rope is 14 centimeters more than 4 times the length of the shortest piece of rope, what is the maximum possible length, in centimeters, of the longest piece of rope?",
+      "options": {
+        "A": "82",
+        "B": "118",
+        "C": "120",
+        "D": "134",
+        "E": "152"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 184,
+      "question": "Lois has x dollars more than Jim has, and together they have a total of y dollars. Which of the following represents the number of dollars that Jim has?",
+      "options": {
+        "A": "(y – x)/2",
+        "B": "(y + x)/2",
+        "C": "y – x",
+        "D": "y + x",
+        "E": "y – 2x"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 185,
+      "question": "During a certain season, a team won 80 percent of its first 100 games and 50 percent of its remaining games. If the team won 70 percent of its games for the entire season, what was the total number of games that the team played?",
+      "options": {
+        "A": "180",
+        "B": "170",
+        "C": "156",
+        "D": "150",
+        "E": "105"
+      },
+      "correct": "D"
+    },
+    {
+      "id": 186,
+      "question": "Of 30 applicants for a job, 14 had at least 4 years’ experience, 18 had degrees, and 3 had less than 4 years’ experience and did not have a degree. How many of the applicants had at least 4 years’ experience and a degree?",
+      "options": {
+        "A": "14",
+        "B": "13",
+        "C": "9",
+        "D": "7",
+        "E": "5"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 187,
+      "question": "If x^2 + y^2 = 29 and x + y = 3, then x^2 + y^2 =",
+      "options": {
+        "A": "–1",
+        "B": "1/2",
+        "C": "1",
+        "D": "2",
+        "E": "3"
+      },
+      "correct": "E"
+    },
+    {
+      "id": 188,
+      "question": "Last year, for every 100 million vehicles that traveled on a certain highway, 96 vehicles were involved in accidents. If 3 billion vehicles traveled on the highway last year, how many of those vehicles were involved in accidents?",
+      "options": {
+        "A": "288",
+        "B": "320",
+        "C": "2,880",
+        "D": "3,200",
+        "E": "28,800"
+      },
+      "correct": "C"
+    },
+    {
+      "id": 189,
+      "question": "Thirty percent of the members of a swim club have passed the lifesaving test. Among the members who have not passed the test, 12 have taken the preparatory course and 30 have not taken the course. How many members are there in the swim club?",
+      "options": {
+        "A": "60",
+        "B": "80",
+        "C": "100",
+        "D": "120",
+        "E": "140"
+      },
+      "correct": "A"
+    },
+    {
+      "id": 190,
+      "question": "What is the difference between the sixth and the fifth terms of the sequence 2, 4, 7, … whose nth term is n² – n + 1?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "6",
+        "D": "16",
+        "E": "17"
+      },
+      "correct": "E"
+    }
+  ]
+}
