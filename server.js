@@ -48,8 +48,16 @@ app.use("/api", uploadRoutes);
 
 // ❌ Catch invalid API routes (must come AFTER real API routes)
 app.all("/api/*", (req, res) => {
+  res.set("X-Robots-Tag", "noindex, nofollow");
   res.status(404).json({ error: "API endpoint not found" });
 });
+
+// Add this if you have a top-level /upload folder
+app.use("/upload", (req, res, next) => {
+  res.set("X-Robots-Tag", "noindex, nofollow");
+  next();
+});
+
 
 // -------------------------------------------------------------------
 // Google Vision Initialization

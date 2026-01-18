@@ -1,7 +1,6 @@
 User-agent: *
-Allow: /
-
 Disallow: /api/
 Disallow: /dashboard/
+Allow: /
 
 Sitemap: https://goquiz.app/sitemap.xml
