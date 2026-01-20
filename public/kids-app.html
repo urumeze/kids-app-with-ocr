@@ -157,6 +157,10 @@
         .menu-button:hover { background-color: #9333ea; transform: scale(1.1); }
 
         .hidden { display: none; }
+
+
+
+    
     </style>
 </head>
 
@@ -638,213 +642,251 @@
 
 
 
-
 <!-- 📚 MENU PANEL -->
 <div id="menuPanel"
-     class="fixed left-0 top-0 h-full w-40 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 z-40 overflow-y-auto">
+     class="fixed left-0 top-0 h-full w-80 bg-gradient-to-b from-white/95 to-indigo-50/80 backdrop-blur-xl shadow-2xl transform -translate-x-full transition-all duration-500 ease-out z-50 overflow-y-auto border-r border-indigo-100">
+
+  <!-- Inner wrapper with padding & modern scroll shadow -->
+  <div class="relative bottom-10 pb-24">
     
-    <div class="scale-[0.7] mt-7">
-  <!-- Menu Content -->
-    <div class="p-4">
-        <button class="year-btn font-semibold text-gray-700 w-full text-left bg-red-100 rounded-lg" data-year="2020">GMAT▼</button>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">13th Edition ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(13, 'Quantitative', 'GMAT')" class="subject-btn"> Quantitative</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving1', 'GMAT')" class="subject-btn"> Problem solving Part1</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving2', 'GMAT')" class="subject-btn">Problem Solving Part2</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving3', 'GMAT')" class="subject-btn">Problem Solving Part3</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving4', 'GMAT')" class="subject-btn">Problem Solving Part4</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving5', 'GMAT')" class="subject-btn">Problem Solving Part5</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'problemSolving6', 'GMAT')" class="subject-btn">Problem Solving Part6</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'dataSufficiency', 'GMAT')" class="subject-btn">Data Sufficiency</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'criticalReasoning1', 'GMAT')" class="subject-btn">Critical Reasoning Part1</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'criticalReasoning2', 'GMAT')" class="subject-btn">Critical Reasoning Part2</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'sentenceCorrection1', 'GMAT')" class="subject-btn">Sentence Correction Part1</button></li><br>
-          <li><button onclick="loadPastQuestions(13, 'sentenceCorrection2', 'GMAT')" class="subject-btn">Sentence Correction Part2</button></li><br>
-        </ul>  
-    </div>
+    <!-- Scroll indicator shadow -->
+    <div class="pointer-events-none absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-white/80 to-transparent z-10"></div>
+    <div class="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white/90 to-transparent z-10"></div>
 
+    <!-- Menu Content -->
+    <div class="p-6 space-y-8">
 
-
-
-<div class="p-4 " >
-
-  <!-- MAIN MENU BUTTON -->
-  <button class="year-btn font-semibold text-gray-700 w-full text-left bg-green-100 rounded-lg">
-  COMMON ENTRANCE ▼
-  </button>
-
-
-  <!-- MUST be a subject-list so the JS can toggle it -->
-  <ul class="subject-list hidden space-y-3">
-
-    <!-- 2020 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left ">2020 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2020,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li>
-      </ul>
-    </li>
-
-    <!-- 2021 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2021 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2021,'english','common_entrance')" class="subject-btn">*English</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn">Verbal & Vocational Aptitude</button></li>
-      </ul>
-    </li>
-
-    <!-- 2022 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2022 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2022,'english','common_entrance')" class="subject-btn">*English</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'basic_studies','common_entrance')" class="subject-btn">*Basic studies</button></li>
-      </ul>
-    </li>
-
-    <!-- 2023 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2023 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2023,'english','common_entrance')" class="subject-btn">*English</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'Quantitative_aptitude','common_entrance')" class="subject-btn">Quantitative aptitude</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'verbal_aptitude','common_entrance')" class="subject-btn">Verbal aptitude</button></li>
-      </ul>
-    </li>
-
-    <!-- 2024 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2024 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2024,'english','common_entrance')" class="subject-btn">*English</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'maths','common_entrance')" class="subject-btn">*Mathematics</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'basic_technology','common_entrance')" class="subject-btn">*Basic technology</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'social_studies','common_entrance')" class="subject-btn">*Social studies</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'basic_science','common_entrance')" class="subject-btn">*Basic science</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'civic_education','common_entrance')" class="subject-btn">*Civic education</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'computer_studies','common_entrance')" class="subject-btn">*Computer St.</button></li><br>
-        <li><button onclick="loadPastQuestions(2024,'physical_and_health_education','common_entrance')" class="subject-btn">*PHE</button></li>
-      </ul>
-    </li>
-
-  </ul>
-</div>
-
-
-
-
-<div class="p-4">
-
-  <!-- MAIN JAMB BUTTON -->
-  <button class="year-btn font-semibold text-gray-700 w-full text-left bg-blue-100 rounded-lg">JAMB ▼</button>
-
-  <!-- MUST be subject-list so JS can toggle it -->
-  <ul class="subject-list hidden space-y-3">
-
-    <!-- 2020 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left ">2020 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2020,'english','jamb')" class="subject-btn">English</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'maths','jamb')" class="subject-btn">Maths</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'physics','jamb')" class="subject-btn">Physics</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'biology','jamb')" class="subject-btn">Biology</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'economics','jamb')" class="subject-btn">Economics</button></li><br>
-        <li><button onclick="loadPastQuestions(2020,'literature','jamb')" class="subject-btn">English Literature</button></li>
-      </ul>
-    </li>
-
-    <!-- 2021 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2021 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2021,'english','jamb')" class="subject-btn">English</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'maths','jamb')" class="subject-btn">Maths</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'physics','jamb')" class="subject-btn">Physics</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'biology','jamb')" class="subject-btn">Biology</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'economics','jamb')" class="subject-btn">Economics</button></li><br>
-        <li><button onclick="loadPastQuestions(2021,'literature','jamb')" class="subject-btn">English Literature</button></li>
-      </ul>
-    </li>
-
-    <!-- 2022 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2022 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2022,'english','jamb')" class="subject-btn">English</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'maths','jamb')" class="subject-btn">Maths</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'physics','jamb')" class="subject-btn">Physics</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'biology','jamb')" class="subject-btn">Biology</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'economics','jamb')" class="subject-btn">Economics</button></li><br>
-        <li><button onclick="loadPastQuestions(2022,'literature','jamb')" class="subject-btn">English Literature</button></li>
-      </ul>
-    </li>
-
-    <!-- 2023 -->
-    <li>
-      <button class="year-btn font-semibold text-gray-700 w-full text-left">2023 ▼</button>
-      <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-        <li><button onclick="loadPastQuestions(2023,'english','jamb')" class="subject-btn">English</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'maths','jamb')" class="subject-btn">Maths</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'physics','jamb')" class="subject-btn">Physics</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'chemistry','jamb')" class="subject-btn">Chemistry</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'biology','jamb')" class="subject-btn">Biology</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'economics','jamb')" class="subject-btn">Economics</button></li><br>
-        <li><button onclick="loadPastQuestions(2023,'literature','jamb')" class="subject-btn">English Literature</button></li>
-      </ul>
-    </li>
-
-  </ul>
-
-</div>
-
-
-    <div class="p-4">
-        <button class="year-btn font-semibold text-gray-700 w-full text-left bg-red-100 rounded-lg" data-year="2020">ACCA▼</button>
-        <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">2023 ▼</button>
-        <ul class="subject-list hidden ml-4 mt-1 space-y-1">
-          <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')">F1</button></li><br>
-          <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn">F3 Section A</button></li><br>
-          <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn">F3 Section B</button></li><br>
-          <li><button onclick="loadMTQQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn">F3 Section C</button></li>
-        </ul>  
-    </div>
-
-  
-
-  
-</div>
-
-<div class="flex justify-end">
-        <button id="closeMenuBtn" 
-            class="
-            px-4 py-2 
-            bg-gray-500 hover:bg-gray-600 
-            text-white hover:text-white
-            rounded-lg 
-            fixed left-6 z-50 bottom-[15vh]
-            shadow-md
-            ">
-        close
+      <!-- === GMAT Section === -->
+      <div class="space-y-3">
+        <button class="year-btn group relative w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-red-50 to-rose-50 hover:from-red-100 hover:to-rose-100 border border-red-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between font-semibold text-gray-800 text-lg"
+                data-year="2020">
+          <span>GMAT</span>
+          <span class="material-icons transform transition-transform duration-300 group-[.open]:rotate-180">expand_more</span>
         </button>
 
-  
+        <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">13th Edition ▼</button>
+
+        <ul class="subject-list hidden space-y-2 pl-6 transition-all duration-400 ease-in-out">
+          <li><button onclick="loadPastQuestions(13, 'Quantitative', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span> Quantitative</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving1', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span> Problem solving Part1</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving2', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span> Problem Solving Part2</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving3', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span> Problem Solving Part3</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving4', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span> Problem Solving Part4</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving5', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span> Problem Solving Part5</button></li>
+          <li><button onclick="loadPastQuestions(13, 'problemSolving6', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span> Problem Solving Part6</button></li>
+          <li><button onclick="loadPastQuestions(13, 'dataSufficiency', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">insights</span> Data Sufficiency</button></li>
+          <li><button onclick="loadPastQuestions(13, 'criticalReasoning1', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">balance</span> Critical Reasoning Part1</button></li>
+          <li><button onclick="loadPastQuestions(13, 'criticalReasoning2', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">balance</span> Critical Reasoning Part2</button></li>
+          <li><button onclick="loadPastQuestions(13, 'sentenceCorrection1', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span> Sentence Correction Part1</button></li>
+          <li><button onclick="loadPastQuestions(13, 'sentenceCorrection2', 'GMAT')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span> Sentence Correction Part2</button></li>
+        </ul>
+      </div>
+
+      <!-- === COMMON ENTRANCE Section === -->
+      <div class="space-y-4">
+        <button class="year-btn group relative w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 border border-green-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between font-semibold text-gray-800 text-lg">
+          <span>COMMON ENTRANCE</span>
+          <span class="material-icons transform transition-transform duration-300 group-[.open]:rotate-180">expand_more</span>
+        </button>
+
+        <ul class="subject-list hidden space-y-4 pl-4 transition-all duration-400 ease-in-out">
+
+          <!-- 2020 -->
+          <li class="space-y-2">
+            <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+              <span>2020</span>
+              <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+            </button>
+            <ul class="subject-list hidden space-y-1.5 pl-6">
+              <li><button onclick="loadPastQuestions(2020,'maths','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>*Mathematics</button></li>
+              <li><button onclick="loadPastQuestions(2020,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span>Verbal & Vocational Aptitude</button></li>
+              <li><button onclick="loadPastQuestions(2020,'basic_science','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>*Basic science</button></li>
+            </ul>
+          </li>
+
+          <!-- 2021 -->
+          <li class="space-y-2">
+            <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+              <span>2021</span>
+              <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+            </button>
+            <ul class="subject-list hidden space-y-1.5 pl-6">
+              <li><button onclick="loadPastQuestions(2021,'english','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>*English</button></li>
+              <li><button onclick="loadPastQuestions(2021,'maths','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>*Mathematics</button></li>
+              <li><button onclick="loadPastQuestions(2021,'basic_science','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>*Basic science</button></li>
+              <li><button onclick="loadPastQuestions(2021,'verbal_and_vocational_aptitude','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span>Verbal & Vocational Aptitude</button></li>
+            </ul>
+          </li>
+
+          <!-- 2022 -->
+          <li class="space-y-2">
+            <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+              <span>2022</span>
+              <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+            </button>
+            <ul class="subject-list hidden space-y-1.5 pl-6">
+              <li><button onclick="loadPastQuestions(2022,'english','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>*English</button></li>
+              <li><button onclick="loadPastQuestions(2022,'maths','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>*Mathematics</button></li>
+              <li><button onclick="loadPastQuestions(2022,'basic_science','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>*Basic science</button></li>
+              <li><button onclick="loadPastQuestions(2022,'basic_studies','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">school</span>*Basic studies</button></li>
+            </ul>
+          </li>
+
+          <!-- 2023 -->
+          <li class="space-y-2">
+            <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+              <span>2023</span>
+              <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+            </button>
+            <ul class="subject-list hidden space-y-1.5 pl-6">
+              <li><button onclick="loadPastQuestions(2023,'english','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>*English</button></li>
+              <li><button onclick="loadPastQuestions(2023,'maths','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>*Mathematics</button></li>
+              <li><button onclick="loadPastQuestions(2023,'Quantitative_aptitude','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">insights</span>Quantitative aptitude</button></li>
+              <li><button onclick="loadPastQuestions(2023,'verbal_aptitude','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">psychology</span>Verbal aptitude</button></li>
+            </ul>
+          </li>
+
+          <!-- 2024 -->
+          <li class="space-y-2">
+            <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+              <span>2024</span>
+              <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+            </button>
+            <ul class="subject-list hidden space-y-1.5 pl-6">
+              <li><button onclick="loadPastQuestions(2024,'english','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>*English</button></li>
+              <li><button onclick="loadPastQuestions(2024,'maths','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>*Mathematics</button></li>
+              <li><button onclick="loadPastQuestions(2024,'basic_technology','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">build</span>*Basic technology</button></li>
+              <li><button onclick="loadPastQuestions(2024,'social_studies','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">group</span>*Social studies</button></li>
+              <li><button onclick="loadPastQuestions(2024,'basic_science','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>*Basic science</button></li>
+              <li><button onclick="loadPastQuestions(2024,'civic_education','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">school</span>*Civic education</button></li>
+              <li><button onclick="loadPastQuestions(2024,'computer_studies','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">computer</span>*Computer St.</button></li>
+              <li><button onclick="loadPastQuestions(2024,'physical_and_health_education','common_entrance')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">fitness_center</span>*PHE</button></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- === JAMB Section === -->
+<div class="space-y-4">
+  <button class="year-btn group relative w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 border border-blue-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between font-semibold text-gray-800 text-lg">
+    <span>JAMB</span>
+    <span class="material-icons transform transition-transform duration-300 group-[.open]:rotate-180">expand_more</span>
+  </button>
+
+  <ul class="subject-list hidden space-y-4 pl-4 transition-all duration-400 ease-in-out">
+
+    <!-- 2020 -->
+    <li class="space-y-2">
+      <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+        <span>2020</span>
+        <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+      </button>
+      <ul class="subject-list hidden space-y-1.5 pl-6">
+        <li><button onclick="loadPastQuestions(2020,'english','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>English</button></li>
+        <li><button onclick="loadPastQuestions(2020,'maths','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>Maths</button></li>
+        <li><button onclick="loadPastQuestions(2020,'physics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Physics</button></li>
+        <li><button onclick="loadPastQuestions(2020,'chemistry','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2020,'biology','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Biology</button></li>
+        <li><button onclick="loadPastQuestions(2020,'economics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">trending_up</span>Economics</button></li>
+        <li><button onclick="loadPastQuestions(2020,'literature','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">auto_stories</span>English Literature</button></li>
+      </ul>
+    </li>
+
+    <!-- 2021 -->
+    <li class="space-y-2">
+      <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+        <span>2021</span>
+        <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+      </button>
+      <ul class="subject-list hidden space-y-1.5 pl-6">
+        <li><button onclick="loadPastQuestions(2021,'english','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>English</button></li>
+        <li><button onclick="loadPastQuestions(2021,'maths','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>Maths</button></li>
+        <li><button onclick="loadPastQuestions(2021,'physics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Physics</button></li>
+        <li><button onclick="loadPastQuestions(2021,'chemistry','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2021,'biology','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Biology</button></li>
+        <li><button onclick="loadPastQuestions(2021,'economics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">trending_up</span>Economics</button></li>
+        <li><button onclick="loadPastQuestions(2021,'literature','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">auto_stories</span>English Literature</button></li>
+      </ul>
+    </li>
+
+    <!-- 2022 -->
+    <li class="space-y-2">
+      <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+        <span>2022</span>
+        <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+      </button>
+      <ul class="subject-list hidden space-y-1.5 pl-6">
+        <li><button onclick="loadPastQuestions(2022,'english','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>English</button></li>
+        <li><button onclick="loadPastQuestions(2022,'maths','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>Maths</button></li>
+        <li><button onclick="loadPastQuestions(2022,'physics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Physics</button></li>
+        <li><button onclick="loadPastQuestions(2022,'chemistry','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2022,'biology','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Biology</button></li>
+        <li><button onclick="loadPastQuestions(2022,'economics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">trending_up</span>Economics</button></li>
+        <li><button onclick="loadPastQuestions(2022,'literature','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">auto_stories</span>English Literature</button></li>
+      </ul>
+    </li>
+
+    <!-- 2023 -->
+    <li class="space-y-2">
+      <button class="year-btn w-full text-left px-5 py-3 rounded-xl bg-white/70 hover:bg-white/90 border border-gray-200 shadow-sm hover:shadow transition-all duration-200 flex items-center justify-between text-gray-700 font-medium">
+        <span>2023</span>
+        <span class="material-icons text-sm transform transition-transform duration-300 group-[.open]:rotate-180">chevron_right</span>
+      </button>
+      <ul class="subject-list hidden space-y-1.5 pl-6">
+        <li><button onclick="loadPastQuestions(2023,'english','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">edit</span>English</button></li>
+        <li><button onclick="loadPastQuestions(2023,'maths','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>Maths</button></li>
+        <li><button onclick="loadPastQuestions(2023,'physics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Physics</button></li>
+        <li><button onclick="loadPastQuestions(2023,'chemistry','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Chemistry</button></li>
+        <li><button onclick="loadPastQuestions(2023,'biology','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">science</span>Biology</button></li>
+        <li><button onclick="loadPastQuestions(2023,'economics','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">trending_up</span>Economics</button></li>
+        <li><button onclick="loadPastQuestions(2023,'literature','jamb')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">auto_stories</span>English Literature</button></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+      <!-- === ACCA Section === -->
+      <div class="space-y-3">
+        <button class="year-btn group relative w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-red-50 to-rose-50 hover:from-red-100 hover:to-rose-100 border border-red-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between font-semibold text-gray-800 text-lg"
+                data-year="2020">
+          <span>ACCA</span>
+          <span class="material-icons transform transition-transform duration-300 group-[.open]:rotate-180">expand_more</span>
+        </button>
+
+        <button class="year-btn font-semibold text-gray-700 w-full text-left hidden" data-year="2020">2023 ▼</button>
+
+        <ul class="subject-list hidden space-y-2 pl-6 transition-all duration-400 ease-in-out">
+          <li><button onclick="loadPastQuestions(2023, 'F1', 'ACCA')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">account_balance</span>F1</button></li>
+          <li><button onclick="loadPastQuestions(2023, 'F3_A', 'ACCA')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">calculate</span>F3 Section A</button></li>
+          <li><button onclick="loadMTQQuestions(2023, 'F3_B', 'ACCA')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">quiz</span>F3 Section B</button></li>
+          <li><button onclick="loadMTQQuestions(2023, 'F3_C', 'ACCA')" class="subject-btn w-full text-left px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-sm active:scale-[0.98] transition-all duration-200 flex items-center gap-3"><span class="material-icons text-indigo-500 text-sm">quiz</span>F3 Section C</button></li>
+        </ul>
+      </div>
+
     </div>
 
+    
+    <!-- FIXED CLOSE BUTTON - always at bottom, visible on scroll -->
+  <div class="bottom-10 left-0 right-0 z-10 bg-gradient-to-t from-white via-white/95 to-transparent pt-6 pb-8 px-6 border-t border-gray-200/50">
+    <button id="closeMenuBtn"
+            class="w-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-full shadow-2xl hover:shadow-3xl active:scale-[0.97] transition-all duration-300 flex items-center justify-center gap-3 text-lg group relative overflow-hidden">
+      
+      <!-- Ripple effect on click -->
+      <span class="absolute inset-0 rounded-full bg-white/20 scale-0 group-active:scale-150 group-active:opacity-0 transition-all duration-500 pointer-events-none"></span>
+      
+      <span class="material-icons text-2xl group-hover:rotate-90 transition-transform duration-300">close</span>
+      Close Menu
+    </button>
+  </div>
 
+  </div>
 </div>
+
+
+
+
+
 
     
      
@@ -3469,6 +3511,96 @@ document.getElementById("removeAdsBtn")?.addEventListener("click", async () => {
 });
 
 
+// Modern, safe, accessible accordion for your #menuPanel
+document.addEventListener('DOMContentLoaded', () => {
+  // Only target top-level and nested year buttons that actually control a list
+  document.querySelectorAll('.year-btn').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      // Prevent default only if it's acting as a toggle (not a real link)
+      e.preventDefault();
+
+      const content = this.nextElementSibling;
+
+      // Only proceed if there's actually a subject-list (or nested list) to toggle
+      if (!content || !content.classList.contains('subject-list')) {
+        return;
+      }
+
+      const isOpen = this.classList.toggle('open');
+      content.classList.toggle('hidden');
+
+      // Accessibility: update ARIA
+      this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      content.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+
+      // Optional: only-one-open behavior (but only for same nesting level)
+      // We skip this for nested years so users can open multiple years
+      // If you want strict accordion everywhere, uncomment:
+      /*
+      document.querySelectorAll('.year-btn.open').forEach(other => {
+        if (other !== this && other.parentElement === this.parentElement) {
+          other.classList.remove('open');
+          const otherContent = other.nextElementSibling;
+          if (otherContent) {
+            otherContent.classList.add('hidden');
+            other.setAttribute('aria-expanded', 'false');
+            otherContent.setAttribute('aria-hidden', 'true');
+          }
+        }
+      });
+      */
+    });
+  });
+
+  // Improved naming + safer logic
+document.querySelectorAll('.year-btn').forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const content = this.nextElementSibling;
+    if (!content || !content.classList.contains('subject-list')) return;
+
+    // Use more descriptive class name
+    const isExpanded = this.classList.toggle('is-expanded');
+
+    content.classList.toggle('hidden');
+
+    // Accessibility
+    this.setAttribute('aria-expanded', isExpanded);
+    content.setAttribute('aria-hidden', !isExpanded);
+
+    // Close others at the same level (optional)
+    // document.querySelectorAll('.year-btn.is-expanded').forEach(other => {
+    //   if (other !== this && other.parentElement === this.parentElement) {
+    //     other.classList.remove('is-expanded');
+    //     const otherContent = other.nextElementSibling;
+    //     if (otherContent) {
+    //       otherContent.classList.add('hidden');
+    //       other.setAttribute('aria-expanded', 'false');
+    //       otherContent.setAttribute('aria-hidden', 'true');
+    //     }
+    //   }
+    // });
+  });
+});
+
+  // Bonus: Add smooth height transition when opening (CSS needed too)
+  document.querySelectorAll('.subject-list').forEach(list => {
+    list.style.maxHeight = '0';
+    list.style.overflow = 'hidden';
+    list.style.transition = 'max-height 0.4s ease-out';
+
+    // Watch for class change
+    const observer = new MutationObserver(() => {
+      if (list.classList.contains('hidden')) {
+        list.style.maxHeight = '0';
+      } else {
+        list.style.maxHeight = list.scrollHeight + 'px';
+      }
+    });
+    observer.observe(list, { attributes: true, attributeFilter: ['class'] });
+  });
+});
 
 window.openTopupWalletModal = openTopupWalletModal;
 window.openCreateRequest = openCreateRequest; 
