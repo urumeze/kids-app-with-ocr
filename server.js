@@ -258,6 +258,27 @@ app.post("/api/mark-acca", async (req, res) => {
   }
 });
 
+// GET /api/leaderboard?limit=50
+app.get('/api/leaderboard', async (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 50;
+    const snapshot = await admin.firestore().collection('users')
+      .orderBy('userPoints', 'desc')
+      .limit(limit)
+      .get();
+
+    const data = snapshot.docs.map(doc => ({
+      uid: doc.id,
+      name: doc.data().displayName || doc.data().email.split('@')[0], // Anonymize
+      points: doc.data().userPoints || 0
+    }));
+
+    res.json({ success: true, data });
+  } catch (err) {
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
 // -------------------------------------------------------------------
 // Frontend fallback
 // -------------------------------------------------------------------

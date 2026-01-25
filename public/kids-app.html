@@ -7,7 +7,7 @@
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
     <link rel="canonical" href="https://www.goquiz.app/" />
     
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="index, follow">
     <title>Free JAMB,GMAT,WAEC </title>
     
     <meta name="description" content="GoQuiz Academy helps kids learn smarter with fun quizzes, past questions, and ACCA-style MTQs. Practice, get instant feedback, and grow confidently." />
@@ -210,6 +210,8 @@
         <div class="bg-gray-100 coin-number text-base font-bold px-2 py-0.5 rounded" id="coinNumber">0</div>
         <div id="pointsLabel" class="font-semibold text-sm text-gray-700">pts</div>
       </div>
+
+      <button onclick="openLeaderboard()" class="ml-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm">🏆 Leaderboard</button>
 
       <!-- REQUIRED WRAPPER FOR JS -->
       <!--div id="coinControls"-->
@@ -1089,7 +1091,15 @@
     <p class="text-xs text-purple-600 font-semibold"> post ad</p>
   </div>
 
-  
+  <!-- Leaderboard Modal -->
+<div id="leaderboardModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center py-10">
+  <div class="bg-white rounded-xl w-11/12 max-w-md p-6 shadow-2xl">
+    <h3 class="text-center font-bold text-lg mb-4 text-indigo-600">🏆 Leaderboard</h3>
+    <div id="leaderboardList" class="space-y-3 max-h-[50vh] overflow-y-auto"></div>
+    <p id="yourRank" class="text-center mt-4 text-sm text-gray-600"></p>
+    <button onclick="closeLeaderboardModal()" class="mt-4 w-full py-2 bg-gray-100 text-gray-600 rounded-lg">Close</button>
+  </div>
+</div>
 
   <!-- Profile -->
   <!--div onclick="openProfile()" class="text-center cursor-pointer">
@@ -2273,25 +2283,79 @@ function renderFeedBatch() {
         const optionsDiv = card.querySelector(".options");
 
         quiz.options.forEach((opt, i) => {
-            const btn = document.createElement("button");
-            btn.className =
-                "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
-            btn.textContent = opt;
+    const btn = document.createElement("button");
+    btn.className =
+        "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
+    btn.textContent = opt;
 
-            btn.addEventListener("click", () => {
-                if (i === quiz.correct) {
-                    btn.style.backgroundColor = "green";
-                    updateCoinDisplay(2);
-                } else {
-                    btn.style.backgroundColor = "red";
-                    updateCoinDisplay(-1);
-                }
-                Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+    btn.addEventListener("click", async () => {
+        // 1. Visual feedback & disable options immediately
+        const isCorrect = (i === quiz.correct);
+        btn.style.backgroundColor = isCorrect ? "green" : "red";
+        Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+
+        // 2. Calculate delta
+        const delta = isCorrect ? 2 : -1;
+
+        // 3. Try to save to server (this is the most important part)
+        try {
+            const user = firebase.auth().currentUser;
+
+            // If not logged in → just local update (no leaderboard contribution)
+            if (!user) {
+                userPoints += delta;
+                updateCoinDisplay(0);
+                return;
+            }
+
+            // Get fresh token
+            const token = await user.getIdToken();
+
+            const response = await fetch("/api/update-points", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
+                },
+                body: JSON.stringify({ delta })
             });
 
-            optionsDiv.appendChild(btn);
-        });
+            if (!response.ok) {
+                throw new Error(`Server responded ${response.status}`);
+            }
 
+            const data = await response.json();
+
+            if (data.success) {
+                // Use the trusted server value
+                userPoints = data.newBalance;
+                updateCoinDisplay(0); // just refresh the number display
+
+                // Nice animation only on correct answer
+                if (isCorrect) {
+                    const coinEl = document.getElementById("walletCoinNumber");
+                    if (coinEl) {
+                        coinEl.classList.add("flash");
+                        setTimeout(() => coinEl.classList.remove("flash"), 700);
+                    }
+                }
+            } else {
+                // Server said no → fallback to local
+                userPoints += delta;
+                updateCoinDisplay(0);
+                console.warn("Server rejected update:", data.error);
+            }
+
+        } catch (error) {
+            console.error("Failed to save points:", error);
+            // Optimistic fallback: still show change locally
+            userPoints += delta;
+            updateCoinDisplay(0);
+        }
+    });
+
+    optionsDiv.appendChild(btn);
+});
         feed.appendChild(card);
 
         // ✅ IN-FEED AD EVERY 5 CARDS
@@ -3601,6 +3665,58 @@ document.querySelectorAll('.year-btn').forEach(btn => {
     observer.observe(list, { attributes: true, attributeFilter: ['class'] });
   });
 });
+
+let leaderboardData = [];
+
+// Open + fetch
+function openLeaderboard() {
+  document.getElementById('leaderboardModal').classList.remove('hidden');
+  fetchLeaderboard();
+}
+
+// Close
+function closeLeaderboardModal() {
+  document.getElementById('leaderboardModal').classList.add('hidden');
+}
+
+// Fetch
+async function fetchLeaderboard() {
+  const list = document.getElementById('leaderboardList');
+  list.innerHTML = '<p class="text-center py-6 text-gray-500">Loading...</p>';
+
+  try {
+    const res = await fetch('/api/leaderboard?limit=50');
+    const { success, data } = await res.json();
+    if (!success) throw new Error('Fetch failed');
+
+    leaderboardData = data;
+    renderLeaderboard();
+
+    // Your rank
+    const user = firebase.auth().currentUser;
+    const myIndex = leaderboardData.findIndex(u => u.uid === user?.uid);
+    document.getElementById('yourRank').textContent = myIndex >= 0 ? `You are #${myIndex + 1}!` : 'Not in top 50 yet — keep quizzing!';
+
+  } catch (err) {
+    list.innerHTML = '<p class="text-center py-6 text-red-500">Error loading</p>';
+  }
+}
+
+// Render
+function renderLeaderboard() {
+  const list = document.getElementById('leaderboardList');
+  list.innerHTML = '';
+  leaderboardData.forEach((user, i) => {
+    const rank = i + 1;
+    const badge = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank;
+    const isMe = firebase.auth().currentUser?.uid === user.uid;
+    const card = `<div class="flex justify-between p-3 bg-gray-50 rounded-lg ${isMe ? 'border-2 border-indigo-600' : ''}">
+      <span>${badge} ${user.name}</span>
+      <span>${user.points} pts</span>
+    </div>`;
+    list.insertAdjacentHTML('beforeend', card);
+  });
+}
 
 window.openTopupWalletModal = openTopupWalletModal;
 window.openCreateRequest = openCreateRequest; 
