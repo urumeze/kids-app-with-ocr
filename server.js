@@ -91,6 +91,7 @@ app.post("/api/update-points", async (req, res) => {
     console.error("🔥 update-points error:", err);
     res.status(500).json({ success: false, error: "Server error" });
   }
+  console.log("OLD update-points called – simple version");
 });
 
 
@@ -458,6 +459,7 @@ app.post("/api/update-points", async (req, res) => {
     console.error("🔥 update-points error:", err);
     res.status(500).json({ success: false, error: "Server error" });
   }
+  console.log("NEW update-points called – transaction + streaks");
 });
 
 

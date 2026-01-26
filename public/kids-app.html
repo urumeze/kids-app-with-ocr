@@ -3691,7 +3691,7 @@ async function fetchLeaderboard() {
 
 (async () => {
   const user = firebase.auth().currentUser;
-  if (!user) return alert("Not logged in");
+  if (!user) return alert("you can now log in");
   const token = await user.getIdToken();
   
   const response = await fetch("/api/update-points", {
