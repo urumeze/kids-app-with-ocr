@@ -56,43 +56,7 @@ app.use("/api", (req, res, next) => {
 app.use("/firebase-posts", firebasePostsRouter);
 app.use("/api", uploadRoutes);
 
-app.post("/api/update-points", async (req, res) => {
-  try {
-    const authHeader = req.headers.authorization || "";
-    const token = authHeader.startsWith("Bearer ")
-      ? authHeader.split(" ")[1]
-      : null;
 
-    if (!token) {
-      return res.status(401).json({ success: false, error: "Missing token" });
-    }
-
-    const decoded = await auth.verifyIdToken(token);
-    const uid = decoded.uid;
-
-    const { delta } = req.body;
-    if (!Number.isInteger(delta) || delta < -5 || delta > 5) {
-      return res.status(400).json({ success: false, error: "Invalid delta" });
-    }
-
-    const userRef = firestore.collection("users").doc(uid);
-
-    await userRef.set(
-      { userPoints: FieldValue.increment(delta) },
-      { merge: true }
-    );
-
-    const snap = await userRef.get();
-    const newBalance = snap.data()?.userPoints || 0;
-
-    res.json({ success: true, newBalance });
-
-  } catch (err) {
-    console.error("🔥 update-points error:", err);
-    res.status(500).json({ success: false, error: "Server error" });
-  }
-  console.log("OLD update-points called – simple version");
-});
 
 
 
