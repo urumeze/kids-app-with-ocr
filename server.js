@@ -1,6 +1,8 @@
 // server.js
 import dotenv from "dotenv";
 dotenv.config();
+import { firestore, auth } from "./config/firebaseAdmin.js";
+import { FieldValue } from "firebase-admin/firestore";
 
 import express from "express";
 import fetch from "node-fetch";
@@ -28,7 +30,15 @@ const __dirname = path.dirname(__filename);
 // -------------------------------------------------------------------
 // Middleware
 // -------------------------------------------------------------------
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:3000", "http://127.0.0.1:3000"],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
+
+app.options("*", cors());
+
 
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
@@ -46,17 +56,45 @@ app.use("/api", (req, res, next) => {
 app.use("/firebase-posts", firebasePostsRouter);
 app.use("/api", uploadRoutes);
 
-// ❌ Catch invalid API routes (must come AFTER real API routes)
-app.all("/api/*", (req, res) => {
-  res.set("X-Robots-Tag", "noindex, nofollow");
-  res.status(404).json({ error: "API endpoint not found" });
+app.post("/api/update-points", async (req, res) => {
+  try {
+    const authHeader = req.headers.authorization || "";
+    const token = authHeader.startsWith("Bearer ")
+      ? authHeader.split(" ")[1]
+      : null;
+
+    if (!token) {
+      return res.status(401).json({ success: false, error: "Missing token" });
+    }
+
+    const decoded = await auth.verifyIdToken(token);
+    const uid = decoded.uid;
+
+    const { delta } = req.body;
+    if (!Number.isInteger(delta) || delta < -5 || delta > 5) {
+      return res.status(400).json({ success: false, error: "Invalid delta" });
+    }
+
+    const userRef = firestore.collection("users").doc(uid);
+
+    await userRef.set(
+      { userPoints: FieldValue.increment(delta) },
+      { merge: true }
+    );
+
+    const snap = await userRef.get();
+    const newBalance = snap.data()?.userPoints || 0;
+
+    res.json({ success: true, newBalance });
+
+  } catch (err) {
+    console.error("🔥 update-points error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
 });
 
-// Add this if you have a top-level /upload folder
-app.use("/upload", (req, res, next) => {
-  res.set("X-Robots-Tag", "noindex, nofollow");
-  next();
-});
+
+
 
 
 // -------------------------------------------------------------------
@@ -258,25 +296,181 @@ app.post("/api/mark-acca", async (req, res) => {
   }
 });
 
-// GET /api/leaderboard?limit=50
-app.get('/api/leaderboard', async (req, res) => {
+
+// NEW: Leaderboard Endpoint
+app.get("/api/leaderboard", async (req, res) => {
   try {
-    const limit = parseInt(req.query.limit) || 50;
-    const snapshot = await admin.firestore().collection('users')
-      .orderBy('userPoints', 'desc')
-      .limit(limit)
+    const { timeframe = "daily", limit = 50 } = req.query; // daily or alltime
+
+    // Verify token to get uid (like update-points)
+    const authHeader = req.headers.authorization || "";
+    const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : null;
+    let uid = null;
+    if (token) {
+      const decoded = await auth.verifyIdToken(token);
+      uid = decoded.uid;
+    }
+
+    let orderField = timeframe === "daily" ? "dailyPoints" : "allTimePoints";
+
+    // Fetch top users
+    const snapshot = await firestore
+      .collection("users")
+      .orderBy(orderField, "desc")
+      .limit(parseInt(limit))
       .get();
 
-    const data = snapshot.docs.map(doc => ({
-      uid: doc.id,
-      name: doc.data().displayName || doc.data().email.split('@')[0], // Anonymize
-      points: doc.data().userPoints || 0
-    }));
+    const leaderboard = [];
+    let myRank = null;
+    let myEntry = null;
+    let pointsToNext = null;
+    let rank = 1;
 
-    res.json({ success: true, data });
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+      const entry = {
+        rank,
+        uid: doc.id,
+        name: data.displayName || data.email?.split("@")[0] || "Anonymous",
+        avatar: data.avatar || "🟡", // Add avatar field later
+        points: data[orderField] || 0,
+        streak: data.streakCount || 0,
+      };
+
+      leaderboard.push(entry);
+
+      if (uid === doc.id) {
+        myRank = rank;
+        myEntry = entry;
+      }
+
+      rank++;
+    });
+
+    // If user not in top, fetch their rank separately (extra read, but addictive)
+    if (uid && !myEntry) {
+      const userSnap = await firestore.collection("users").doc(uid).get();
+      if (userSnap.exists) {
+        const userPoints = userSnap.data()[orderField] || 0;
+        // Count how many have more points (simple but scans all – optimize with indexes later)
+        const higherCount = await firestore
+          .collection("users")
+          .where(orderField, ">", userPoints)
+          .count()
+          .get();
+        myRank = higherCount.data().count + 1;
+        myEntry = {
+          rank: myRank,
+          uid,
+          name: userSnap.data().displayName || "You",
+          avatar: userSnap.data().avatar || "🟡",
+          points: userPoints,
+          streak: userSnap.data().streakCount || 0,
+        };
+
+        // Points to next: fetch the person just above
+        const aboveSnap = await firestore
+          .collection("users")
+          .orderBy(orderField, "desc")
+          .startAfter(userPoints) // Skip those equal or below
+          .limit(1)
+          .get();
+        if (!aboveSnap.empty) {
+          pointsToNext = aboveSnap.docs[0].data()[orderField] - userPoints + 1; // +1 to overtake
+        }
+      }
+    }
+
+    res.json({
+      success: true,
+      timeframe,
+      leaderboard,
+      myRank,
+      myEntry,
+      pointsToNext,
+    });
   } catch (err) {
-    res.status(500).json({ error: 'Server error' });
+    console.error("Leaderboard error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
   }
+});
+
+// NEW: Enhance /api/update-points to handle daily/all-time + streaks
+// Replace your existing /api/update-points with this upgraded version
+app.post("/api/update-points", async (req, res) => {
+  try {
+    const authHeader = req.headers.authorization || "";
+    const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : null;
+
+    if (!token) {
+      return res.status(401).json({ success: false, error: "Missing token" });
+    }
+
+    const decoded = await auth.verifyIdToken(token);
+    const uid = decoded.uid;
+
+    const { delta } = req.body;
+    if (!Number.isInteger(delta) || delta < -5 || delta > 5) {
+      return res.status(400).json({ success: false, error: "Invalid delta" });
+    }
+
+    const userRef = firestore.collection("users").doc(uid);
+    const now = new Date();
+    const todayStr = now.toISOString().split("T")[0]; // YYYY-MM-DD
+
+    await firestore.runTransaction(async (transaction) => {
+      const userSnap = await transaction.get(userRef);
+      const userData = userSnap.data() || {};
+
+      // Reset daily if new day (client could do, but server safer)
+      const lastQuizDate = userData.lastQuizDate;
+      let dailyPoints = userData.dailyPoints || 0;
+      let streakCount = userData.streakCount || 0;
+
+      if (lastQuizDate !== todayStr) {
+        // New day: reset daily, update streak
+        dailyPoints = 0;
+        if (lastQuizDate === new Date(now.getTime() - 86400000).toISOString().split("T")[0]) {
+          streakCount++;
+        } else {
+          streakCount = 1; // Reset streak if missed a day
+        }
+      }
+
+      // Increment
+      dailyPoints += delta;
+      const allTimePoints = (userData.allTimePoints || 0) + delta;
+
+      transaction.set(userRef, {
+        allTimePoints,
+        dailyPoints,
+        streakCount,
+        lastQuizDate: todayStr,
+        userPoints: FieldValue.increment(delta), // Keep your old field for compat
+      }, { merge: true });
+    });
+
+    const snap = await userRef.get();
+    const newBalance = snap.data()?.allTimePoints || 0;
+
+    res.json({ success: true, newBalance });
+  } catch (err) {
+    console.error("🔥 update-points error:", err);
+    res.status(500).json({ success: false, error: "Server error" });
+  }
+});
+
+
+// ❌ Catch invalid API routes (must come AFTER real API routes)
+app.all("/api/*", (req, res) => {
+  res.set("X-Robots-Tag", "noindex, nofollow");
+  res.status(404).json({ error: "API endpoint not found" });
+});
+
+// Add this if you have a top-level /upload folder
+app.use("/upload", (req, res, next) => {
+  res.set("X-Robots-Tag", "noindex, nofollow");
+  next();
 });
 
 // -------------------------------------------------------------------

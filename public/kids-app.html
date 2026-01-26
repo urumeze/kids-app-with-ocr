@@ -7,7 +7,7 @@
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
     <link rel="canonical" href="https://www.goquiz.app/" />
     
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex">
     <title>Free JAMB,GMAT,WAEC </title>
     
     <meta name="description" content="GoQuiz Academy helps kids learn smarter with fun quizzes, past questions, and ACCA-style MTQs. Practice, get instant feedback, and grow confidently." />
@@ -55,7 +55,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2721836557124559"
      crossorigin="anonymous"></script>
     
-   
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
       
 
     <!-- Your Custom Styles -->
@@ -158,7 +158,11 @@
 
         .hidden { display: none; }
 
-
+.tab-btn { flex: 1; padding: 8px; background: #eee; border: 1px solid #ddd; }
+.tab-btn.active { background: #5c7cfa; color: white; }
+.rank-row { display: flex; justify-content: space-between; padding: 8px; border-bottom: 1px solid #eee; }
+.my-row { background: #d1fae5; font-weight: bold; border: 2px solid #10b981; }
+.streak { color: #ef4444; } /* 🔥 */
 
     
     </style>
@@ -211,27 +215,9 @@
         <div id="pointsLabel" class="font-semibold text-sm text-gray-700">pts</div>
       </div>
 
-      <button onclick="openLeaderboard()" class="ml-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm">🏆 Leaderboard</button>
+     <!-- NEW: Leaderboard Button in Header -->
+<button id="leaderboardBtn" class="bg-blue-500 text-white px-4 py-2 rounded ml-4">🏆 Leaderboard</button>
 
-      <!-- REQUIRED WRAPPER FOR JS -->
-      <!--div id="coinControls"-->
-
-        <!-- Convert Button -->
-        <!--button 
-          class="flex items-center px-2 py-1 bg-green-500 text-white rounded-md 
-                 hover:bg-green-600 transition duration-300 ease-in-out group text-sm shadow">
-            <span class="mr-1">Convert</span>
-            <span class="text-xl transition-transform duration-500 ease-in-out 
-                         group-hover:[transform:rotate(180deg)]">
-              →
-            </span>
-        </button>
-
-      </div-->
-
-      <!--span class="font-bold text-lg" id="walletCoinNumber">0</span-->
-
-      <!-- GQ Count + Coin -->
       <div class="flex items-center gap-1">
 
         <div 
@@ -622,6 +608,26 @@
   </div>
 </div>
 
+<!-- NEW: Leaderboard Modal -->
+<div id="leaderboardModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+    <h2 class="text-2xl font-bold mb-4">GoQuiz Leaderboard</h2>
+    
+    <!-- Tabs -->
+    <div class="flex mb-4">
+      <button class="tab-btn active" data-timeframe="daily">Daily 🔥</button>
+      <button class="tab-btn" data-timeframe="alltime">All-Time 🏆</button>
+    </div>
+    
+    <!-- List -->
+    <div id="leaderboardList" class="overflow-y-auto max-h-80"></div>
+    
+    <!-- Your Stats -->
+    <div id="myStats" class="mt-4 p-3 bg-gray-100 rounded"></div>
+    
+    <button id="closeLeaderboard" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</button>
+  </div>
+</div>
 
 
 
@@ -1091,15 +1097,7 @@
     <p class="text-xs text-purple-600 font-semibold"> post ad</p>
   </div>
 
-  <!-- Leaderboard Modal -->
-<div id="leaderboardModal" class="fixed inset-0 bg-black bg-opacity-40 hidden z-50 flex items-center justify-center py-10">
-  <div class="bg-white rounded-xl w-11/12 max-w-md p-6 shadow-2xl">
-    <h3 class="text-center font-bold text-lg mb-4 text-indigo-600">🏆 Leaderboard</h3>
-    <div id="leaderboardList" class="space-y-3 max-h-[50vh] overflow-y-auto"></div>
-    <p id="yourRank" class="text-center mt-4 text-sm text-gray-600"></p>
-    <button onclick="closeLeaderboardModal()" class="mt-4 w-full py-2 bg-gray-100 text-gray-600 rounded-lg">Close</button>
-  </div>
-</div>
+  
 
   <!-- Profile -->
   <!--div onclick="openProfile()" class="text-center cursor-pointer">
@@ -2283,79 +2281,25 @@ function renderFeedBatch() {
         const optionsDiv = card.querySelector(".options");
 
         quiz.options.forEach((opt, i) => {
-    const btn = document.createElement("button");
-    btn.className =
-        "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
-    btn.textContent = opt;
+            const btn = document.createElement("button");
+            btn.className =
+                "bg-indigo-600 text-white px-4 py-2 rounded-full text-sm hover:bg-indigo-700 transition";
+            btn.textContent = opt;
 
-    btn.addEventListener("click", async () => {
-        // 1. Visual feedback & disable options immediately
-        const isCorrect = (i === quiz.correct);
-        btn.style.backgroundColor = isCorrect ? "green" : "red";
-        Array.from(optionsDiv.children).forEach(b => b.disabled = true);
-
-        // 2. Calculate delta
-        const delta = isCorrect ? 2 : -1;
-
-        // 3. Try to save to server (this is the most important part)
-        try {
-            const user = firebase.auth().currentUser;
-
-            // If not logged in → just local update (no leaderboard contribution)
-            if (!user) {
-                userPoints += delta;
-                updateCoinDisplay(0);
-                return;
-            }
-
-            // Get fresh token
-            const token = await user.getIdToken();
-
-            const response = await fetch("/api/update-points", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`
-                },
-                body: JSON.stringify({ delta })
+            btn.addEventListener("click", () => {
+                if (i === quiz.correct) {
+                    btn.style.backgroundColor = "green";
+                    updateCoinDisplay(2);
+                } else {
+                    btn.style.backgroundColor = "red";
+                    updateCoinDisplay(-1);
+                }
+                Array.from(optionsDiv.children).forEach(b => b.disabled = true);
             });
 
-            if (!response.ok) {
-                throw new Error(`Server responded ${response.status}`);
-            }
+            optionsDiv.appendChild(btn);
+        });
 
-            const data = await response.json();
-
-            if (data.success) {
-                // Use the trusted server value
-                userPoints = data.newBalance;
-                updateCoinDisplay(0); // just refresh the number display
-
-                // Nice animation only on correct answer
-                if (isCorrect) {
-                    const coinEl = document.getElementById("walletCoinNumber");
-                    if (coinEl) {
-                        coinEl.classList.add("flash");
-                        setTimeout(() => coinEl.classList.remove("flash"), 700);
-                    }
-                }
-            } else {
-                // Server said no → fallback to local
-                userPoints += delta;
-                updateCoinDisplay(0);
-                console.warn("Server rejected update:", data.error);
-            }
-
-        } catch (error) {
-            console.error("Failed to save points:", error);
-            // Optimistic fallback: still show change locally
-            userPoints += delta;
-            updateCoinDisplay(0);
-        }
-    });
-
-    optionsDiv.appendChild(btn);
-});
         feed.appendChild(card);
 
         // ✅ IN-FEED AD EVERY 5 CARDS
@@ -3666,57 +3610,105 @@ document.querySelectorAll('.year-btn').forEach(btn => {
   });
 });
 
-let leaderboardData = [];
+// NEW: Leaderboard JS
+let currentTimeframe = "daily";
+let lastMyRank = null; // For detecting climbs
 
-// Open + fetch
-function openLeaderboard() {
-  document.getElementById('leaderboardModal').classList.remove('hidden');
-  fetchLeaderboard();
+document.getElementById("leaderboardBtn")?.addEventListener("click", openLeaderboard);
+document.getElementById("closeLeaderboard")?.addEventListener("click", () => {
+  document.getElementById("leaderboardModal").classList.add("hidden");
+});
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+    e.target.classList.add("active");
+    currentTimeframe = e.target.dataset.timeframe;
+    fetchLeaderboard();
+  });
+});
+
+async function openLeaderboard() {
+  document.getElementById("leaderboardModal").classList.remove("hidden");
+  await fetchLeaderboard();
+  setInterval(fetchLeaderboard, 30000); // Refresh every 30s for live feel
 }
 
-// Close
-function closeLeaderboardModal() {
-  document.getElementById('leaderboardModal').classList.add('hidden');
-}
-
-// Fetch
 async function fetchLeaderboard() {
-  const list = document.getElementById('leaderboardList');
-  list.innerHTML = '<p class="text-center py-6 text-gray-500">Loading...</p>';
+  const list = document.getElementById("leaderboardList");
+  const myStats = document.getElementById("myStats");
+  list.innerHTML = "<p>Loading...</p>";
 
   try {
-    const res = await fetch('/api/leaderboard?limit=50');
-    const { success, data } = await res.json();
-    if (!success) throw new Error('Fetch failed');
-
-    leaderboardData = data;
-    renderLeaderboard();
-
-    // Your rank
     const user = firebase.auth().currentUser;
-    const myIndex = leaderboardData.findIndex(u => u.uid === user?.uid);
-    document.getElementById('yourRank').textContent = myIndex >= 0 ? `You are #${myIndex + 1}!` : 'Not in top 50 yet — keep quizzing!';
+    if (!user) throw new Error("Login to see leaderboard");
 
+    const token = await user.getIdToken();
+    const res = await fetch(`/api/leaderboard?timeframe=${currentTimeframe}&limit=50`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = await res.json();
+
+    if (!data.success) throw new Error("Fetch failed");
+
+    // Render list
+    list.innerHTML = "";
+    data.leaderboard.forEach((entry) => {
+      const isMe = entry.uid === user.uid;
+      const streakEmojis = "🔥".repeat(Math.min(entry.streak, 5));
+      const row = `
+        <div class="rank-row ${isMe ? "my-row" : ""}">
+          <span>#${entry.rank} ${entry.avatar}</span>
+          <span>${entry.name}</span>
+          <span>${entry.points} pts <span class="streak">${streakEmojis}</span></span>
+        </div>
+      `;
+      list.insertAdjacentHTML("beforeend", row);
+    });
+
+    // Your stats
+    if (data.myEntry) {
+      const change = lastMyRank ? lastMyRank - data.myRank : 0;
+      const arrow = change > 0 ? "↑" + change : change < 0 ? "↓" + Math.abs(change) : "";
+      myStats.innerHTML = `
+        <p>Your Rank: #${data.myRank} ${arrow}</p>
+        <p>Points: ${data.myEntry.points}</p>
+        ${data.pointsToNext ? `<p>${data.pointsToNext} pts to next rank!</p>` : ""}
+      `;
+
+      // Confetti if climbed
+      if (change > 0) {
+        confetti({ particleCount: 100, spread: 70 });
+      }
+      lastMyRank = data.myRank;
+    } else {
+      myStats.innerHTML = "<p>Play quizzes to rank up!</p>";
+    }
   } catch (err) {
-    list.innerHTML = '<p class="text-center py-6 text-red-500">Error loading</p>';
+    list.innerHTML = "<p>Error loading leaderboard</p>";
   }
 }
 
-// Render
-function renderLeaderboard() {
-  const list = document.getElementById('leaderboardList');
-  list.innerHTML = '';
-  leaderboardData.forEach((user, i) => {
-    const rank = i + 1;
-    const badge = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank;
-    const isMe = firebase.auth().currentUser?.uid === user.uid;
-    const card = `<div class="flex justify-between p-3 bg-gray-50 rounded-lg ${isMe ? 'border-2 border-indigo-600' : ''}">
-      <span>${badge} ${user.name}</span>
-      <span>${user.points} pts</span>
-    </div>`;
-    list.insertAdjacentHTML('beforeend', card);
+(async () => {
+  const user = firebase.auth().currentUser;
+  if (!user) return alert("Not logged in");
+  const token = await user.getIdToken();
+  
+  const response = await fetch("/api/update-points", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${token}`
+    },
+    body: JSON.stringify({ delta: 25 })
   });
-}
+  
+  const data = await response.json();
+  console.log("Update result:", data);
+  
+  // Then refresh leaderboard
+  fetchLeaderboard();  // if the function is already in scope
+})();
 
 window.openTopupWalletModal = openTopupWalletModal;
 window.openCreateRequest = openCreateRequest; 
