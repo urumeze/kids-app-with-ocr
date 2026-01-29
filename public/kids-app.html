@@ -7,7 +7,8 @@
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
     <link rel="canonical" href="https://www.goquiz.app/" />
     
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="index, follow">
+
     <title>Free JAMB,GMAT,WAEC </title>
     
     <meta name="description" content="GoQuiz Academy helps kids learn smarter with fun quizzes, past questions, and ACCA-style MTQs. Practice, get instant feedback, and grow confidently." />
@@ -3691,7 +3692,7 @@ async function fetchLeaderboard() {
 
 (async () => {
   const user = firebase.auth().currentUser;
-  if (!user) return alert("you can now log in");
+  if (!user) return alert("Click Ok to continue");
   const token = await user.getIdToken();
   
   const response = await fetch("/api/update-points", {
