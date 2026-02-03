@@ -360,12 +360,14 @@ app.get("/api/leaderboard", async (req, res) => {
   }
 });
 
-// NEW: Enhance /api/update-points to handle daily/all-time + streaks
-// Replace your existing /api/update-points with this upgraded version
-app.post("/api/update-points", async (req, res) => {
+
+
+  app.post("/api/update-points", async (req, res) => {
   try {
     const authHeader = req.headers.authorization || "";
-    const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : null;
+    const token = authHeader.startsWith("Bearer ")
+      ? authHeader.split(" ")[1]
+      : null;
 
     if (!token) {
       return res.status(401).json({ success: false, error: "Missing token" });
@@ -380,50 +382,96 @@ app.post("/api/update-points", async (req, res) => {
     }
 
     const userRef = firestore.collection("users").doc(uid);
-    const now = new Date();
-    const todayStr = now.toISOString().split("T")[0]; // YYYY-MM-DD
 
-    await firestore.runTransaction(async (transaction) => {
-      const userSnap = await transaction.get(userRef);
-      const userData = userSnap.data() || {};
+    const result = await firestore.runTransaction(async (t) => {
+      const userSnap = await t.get(userRef);
+      let userData = userSnap.data() || {};
 
-      // Reset daily if new day (client could do, but server safer)
-      const lastQuizDate = userData.lastQuizDate;
-      let dailyPoints = userData.dailyPoints || 0;
-      let streakCount = userData.streakCount || 0;
+      // ───── Create user if missing ─────
+      if (!userSnap.exists) {
+        userData = {
+          createdAt: firestore.FieldValue.serverTimestamp(),
+          displayName:
+            decoded.name || decoded.email?.split("@")[0] || "Player",
+          allTimePoints: 0,
+          dailyPoints: 0,
+          streakCount: 0,
+          lastQuizDate: null,
+          userPoints: 0, // backward compat
+        };
 
-      if (lastQuizDate !== todayStr) {
-        // New day: reset daily, update streak
-        dailyPoints = 0;
-        if (lastQuizDate === new Date(now.getTime() - 86400000).toISOString().split("T")[0]) {
-          streakCount++;
-        } else {
-          streakCount = 1; // Reset streak if missed a day
-        }
+        t.set(userRef, userData);
+      } else {
+        // ───── Backfill missing leaderboard fields (legacy users) ─────
+        t.set(
+          userRef,
+          {
+            allTimePoints: userData.allTimePoints ?? 0,
+            dailyPoints: userData.dailyPoints ?? 0,
+            streakCount: userData.streakCount ?? 0,
+            lastQuizDate: userData.lastQuizDate ?? null,
+          },
+          { merge: true }
+        );
       }
 
-      // Increment
+      // ───────── Daily reset + streak logic ─────────
+      const now = new Date();
+      const todayStr = now.toISOString().split("T")[0];
+
+      let dailyPoints = userData.dailyPoints || 0;
+      let streakCount = userData.streakCount || 0;
+      const lastQuizDate = userData.lastQuizDate;
+
+      if (lastQuizDate !== todayStr) {
+        dailyPoints = 0;
+        const yesterday = new Date(now.getTime() - 86400000)
+          .toISOString()
+          .split("T")[0];
+        streakCount = lastQuizDate === yesterday ? streakCount + 1 : 1;
+      }
+
+      // ───────── Apply delta ─────────
       dailyPoints += delta;
       const allTimePoints = (userData.allTimePoints || 0) + delta;
+      const userPoints = (userData.userPoints || 0) + delta;
 
-      transaction.set(userRef, {
+      // ───────── Atomic update ─────────
+      t.update(userRef, {
         allTimePoints,
         dailyPoints,
         streakCount,
         lastQuizDate: todayStr,
-        userPoints: FieldValue.increment(delta), // Keep your old field for compat
-      }, { merge: true });
+        userPoints,
+        ...(decoded.name && { displayName: decoded.name }),
+      });
+
+      return {
+        allTimePoints,
+        dailyPoints,
+        streakCount,
+        userPoints,
+      };
     });
 
-    const snap = await userRef.get();
-    const newBalance = snap.data()?.allTimePoints || 0;
+    // ───────── Response ─────────
+    res.json({
+      success: true,
+      newBalance: result.allTimePoints,
+      dailyBalance: result.dailyPoints,
+      streak: result.streakCount,
+    });
 
-    res.json({ success: true, newBalance });
+    console.log(
+      `Points updated for ${uid}: +${delta} → allTime: ${result.allTimePoints}`
+    );
   } catch (err) {
-    console.error("🔥 update-points error:", err);
-    res.status(500).json({ success: false, error: "Server error" });
+    console.error("update-points failed:", err);
+    res.status(500).json({
+      success: false,
+      error: err.message || "Server error",
+    });
   }
-  console.log("NEW update-points called – transaction + streaks");
 });
 
 

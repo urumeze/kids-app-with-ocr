@@ -8,12 +8,17 @@ export async function initUser(uid, email) {
   if (!snap.exists) {
     console.log(`🎁 Initializing new user: ${uid}`);
     await userRef.set({
-      email: email || null,
-      coinBalance: 30, 
-      createdAt: Timestamp.now(),
-      // Adding a default role or status is common in 2026 apps
-      role: "user",
-      isVerified: false 
-    }, { merge: true }); 
+  email: email || null,
+  role: "user",
+  isVerified: false,
+  createdAt: Timestamp.now(),
+
+  // ✅ leaderboard canon fields
+  allTimePoints: 0,
+  dailyPoints: 0,
+  streakCount: 0,
+  lastQuizDate: null,
+}, { merge: true });
+ 
   }
 }
