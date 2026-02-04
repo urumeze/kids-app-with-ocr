@@ -3612,7 +3612,7 @@ document.querySelectorAll('.year-btn').forEach(btn => {
 
 // NEW: Leaderboard JS
 let currentTimeframe = "daily";
-let lastMyRank = null; // For detecting climbs
+
 
 document.getElementById("leaderboardBtn")?.addEventListener("click", openLeaderboard);
 document.getElementById("closeLeaderboard")?.addEventListener("click", () => {
@@ -3628,101 +3628,149 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   });
 });
 
+let leaderboardInterval = null;
+let lastMyRank = null;
+
+// -----------------------------
+// Open leaderboard modal
+// -----------------------------
 async function openLeaderboard() {
   document.getElementById("leaderboardModal").classList.remove("hidden");
   await fetchLeaderboard();
-  setInterval(fetchLeaderboard, 30000); // Refresh every 30s for live feel
+
+  if (!leaderboardInterval) {
+    leaderboardInterval = setInterval(fetchLeaderboard, 30000); // refresh every 30s
+  }
 }
 
+// Optional: call this when modal closes
+function closeLeaderboard() {
+  document.getElementById("leaderboardModal").classList.add("hidden");
+  if (leaderboardInterval) {
+    clearInterval(leaderboardInterval);
+    leaderboardInterval = null;
+  }
+}
+
+// -----------------------------
+// Fetch leaderboard
+// -----------------------------
 async function fetchLeaderboard() {
   const list = document.getElementById("leaderboardList");
   const myStats = document.getElementById("myStats");
+
   list.innerHTML = "<p>Loading...</p>";
+  myStats.innerHTML = "";
 
   try {
     const user = firebase.auth().currentUser;
-    if (!user) throw new Error("Login to see leaderboard");
+    if (!user) {
+      list.innerHTML = "<p>Login to view leaderboard</p>";
+      return;
+    }
 
-    const token = await user.getIdToken();
-    const res = await fetch(`/api/leaderboard?timeframe=${currentTimeframe}&limit=50`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const token = await user.getIdToken(true);
+
+    const res = await fetch(
+      `/api/leaderboard?timeframe=${currentTimeframe}&limit=50`,
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
+
     const data = await res.json();
+    if (!data.success) throw new Error("Leaderboard fetch failed");
 
-    if (!data.success) throw new Error("Fetch failed");
-
-    // Render list
+    // -----------------------------
+    // Render leaderboard rows
+    // -----------------------------
     list.innerHTML = "";
+
     data.leaderboard.forEach((entry) => {
       const isMe = entry.uid === user.uid;
-      const streakEmojis = "🔥".repeat(Math.min(entry.streak, 5));
+      const streakEmojis = "🔥".repeat(Math.min(entry.streak || 0, 5));
+
       const row = `
         <div class="rank-row ${isMe ? "my-row" : ""}">
-          <span>#${entry.rank} ${entry.avatar}</span>
+          <span>#${entry.rank} ${entry.avatar || "🟡"}</span>
           <span>${entry.name}</span>
-          <span>${entry.points} pts <span class="streak">${streakEmojis}</span></span>
+          <span>${entry.points || 0} pts <span class="streak">${streakEmojis}</span></span>
         </div>
       `;
+
       list.insertAdjacentHTML("beforeend", row);
     });
 
-    // Your stats
-    if (data.myEntry) {
-      const change = lastMyRank ? lastMyRank - data.myRank : 0;
-      const arrow = change > 0 ? "↑" + change : change < 0 ? "↓" + Math.abs(change) : "";
+    // -----------------------------
+    // Render my stats safely
+    // -----------------------------
+    if (data.myEntry && data.myRank !== null) {
+      const change =
+        lastMyRank !== null ? lastMyRank - data.myRank : 0;
+
+      const arrow =
+        change > 0 ? `↑${change}` :
+        change < 0 ? `↓${Math.abs(change)}` : "";
+
       myStats.innerHTML = `
         <p>Your Rank: #${data.myRank} ${arrow}</p>
         <p>Points: ${data.myEntry.points}</p>
         ${data.pointsToNext ? `<p>${data.pointsToNext} pts to next rank!</p>` : ""}
       `;
 
-      // Confetti if climbed
       if (change > 0) {
         confetti({ particleCount: 100, spread: 70 });
       }
+
       lastMyRank = data.myRank;
     } else {
       myStats.innerHTML = "<p>Play quizzes to rank up!</p>";
     }
   } catch (err) {
+    console.error("Leaderboard error:", err);
     list.innerHTML = "<p>Error loading leaderboard</p>";
   }
 }
 
-(async () => {
-  const user = firebase.auth().currentUser;
-  if (!user) return alert("Click Ok to continue");
-  const token = await user.getIdToken();
-  
-  const response = await fetch("/api/update-points", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${token}`
-    },
-    body: JSON.stringify({ delta: 5 })
+// -----------------------------
+// SAFE points update (auth-aware)
+// -----------------------------
+firebase.auth().onAuthStateChanged(async (user) => {
+  if (!user) return;
 
-  });
-  
-  const data = await response.json();
-  console.log("Update result:", data);
-  
-  // Then refresh leaderboard
-  fetchLeaderboard();  // if the function is already in scope
-})();
+  try {
+    const token = await user.getIdToken(true);
 
+    await fetch("/api/update-points", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({ delta: 5 }),
+    });
 
-  const isLocalhost =
-    location.hostname === "localhost" ||
-    location.hostname === "127.0.0.1";
-
-  if (!isLocalhost) {
-    const s = document.createElement("script");
-    s.src = "https://accounts.google.com/gsi/client";
-    s.async = true;
-    s.defer = true;
-    document.head.appendChild(s);
+    // Refresh leaderboard after update
+    fetchLeaderboard();
+  } catch (err) {
+    console.error("Point update failed:", err);
   }
+});
+
+// -----------------------------
+// Google Identity script loader
+// -----------------------------
+const isLocalhost =
+  location.hostname === "localhost" ||
+  location.hostname === "127.0.0.1";
+
+if (!isLocalhost) {
+  const s = document.createElement("script");
+  s.src = "https://accounts.google.com/gsi/client";
+  s.async = true;
+  s.defer = true;
+  document.head.appendChild(s);
+}
 
 
 

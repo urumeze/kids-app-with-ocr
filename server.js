@@ -410,9 +410,11 @@ app.get("/api/leaderboard", async (req, res) => {
             dailyPoints: userData.dailyPoints ?? 0,
             streakCount: userData.streakCount ?? 0,
             lastQuizDate: userData.lastQuizDate ?? null,
+            userPoints: userData.userPoints ?? userData.allTimePoints ?? 0,
           },
           { merge: true }
         );
+
       }
 
       // ───────── Daily reset + streak logic ─────────
