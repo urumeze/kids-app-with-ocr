@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-2721836557124559">
-    <link rel="canonical" href="https://www.goquiz.app/" />
+    <link rel="canonical" href="https://goquiz.app/" />
+ />
     
     <meta name="robots" content="index, follow">
 
@@ -3669,7 +3670,7 @@ async function fetchLeaderboard() {
       return;
     }
 
-    const token = await user.getIdToken(true);
+    const token = await user.getIdToken();
 
     const res = await fetch(
       `/api/leaderboard?timeframe=${currentTimeframe}&limit=50`,
